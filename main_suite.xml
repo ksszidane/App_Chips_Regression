@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ExtentReport" parallel="tests" thread-count="10">
+	<parameter name="hubAddress" value="http://0.0.0.0:4723/wd/hub"/>
+	<parameter name="Project" value="Chips"/>
+	<test name="Test_Project" preserve-order="true">
+		<parameter name="OS" value="Android" />
+		<parameter name="AppName" value="Chips" />
+		<parameter name="Server" value="PRD" /> <!-- 서버값 대문자로  : PRD, STG -->
+		<parameter name="TestPlace" value="in" /> <!-- 사내 : in  // 사외 : out-->
+		<parameter name="oAuth_Token_Chips" value="15F42AF9FF6F4099827D12877DCDB8AA"/> 
+		<parameter name="deviceID_Chips" value="ALDEPCKHWOK47386BED6"/>
+		<parameter name="userID_ksszidane" value="ALDF3NYA6C0D0C654DD2"/>
+		<parameter name="userID_ksszidane10" value="ALDF5TR5SNGZ8175DA16"/>
+		<parameter name="MobileDevice" value="ce12160cb994301d04"/>
+		
+		
+		<!--
+		R3CMA0GBTQ 
+		ce12160cb994301d04	>	8+
+		ce06171633774e37027e	>	note8
+		-->
+		
+		<classes>
+			<!--
+			-->
+		
+			<class name="Chips_001_실행.실행과로그인테스트" />
+		
+		
+			
+
+			
+
+			
+		</classes>
+	</test>
+	
+
+	
+
+</suite>
+

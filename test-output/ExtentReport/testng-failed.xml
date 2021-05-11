@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [ExtentReport]" parallel="tests">
+  <parameter name="userID_ksszidane10" value="ALDF5TR5SNGZ8175DA16"/>
+  <parameter name="Project" value="Chips"/>
+  <parameter name="MobileDevice" value="ce12160cb994301d04"/>
+  <parameter name="OS" value="Android"/>
+  <parameter name="Server" value="PRD"/>
+  <parameter name="oAuth_Token_Chips" value="15F42AF9FF6F4099827D12877DCDB8AA"/>
+  <parameter name="userID_ksszidane" value="ALDF3NYA6C0D0C654DD2"/>
+  <parameter name="TestPlace" value="in"/>
+  <parameter name="deviceID_Chips" value="ALDEPCKHWOK47386BED6"/>
+  <parameter name="hubAddress" value="http://0.0.0.0:4723/wd/hub"/>
+  <parameter name="AppName" value="Chips"/>
+  <test name="Test_Project">
+    <parameter name="userID_ksszidane10" value="ALDF5TR5SNGZ8175DA16"/>
+    <parameter name="MobileDevice" value="ce12160cb994301d04"/>
+    <parameter name="OS" value="Android"/>
+    <parameter name="Server" value="PRD"/>
+    <parameter name="oAuth_Token_Chips" value="15F42AF9FF6F4099827D12877DCDB8AA"/>
+    <parameter name="userID_ksszidane" value="ALDF3NYA6C0D0C654DD2"/>
+    <parameter name="TestPlace" value="in"/>
+    <parameter name="deviceID_Chips" value="ALDEPCKHWOK47386BED6"/>
+    <parameter name="AppName" value="Chips"/>
+    <classes>
+      <class name="Chips_001_실행.실행과로그인테스트"/>
+    </classes>
+  </test> <!-- Test_Project -->
+</suite> <!-- Failed suite [ExtentReport] -->
