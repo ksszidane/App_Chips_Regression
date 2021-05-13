@@ -16,8 +16,8 @@
 
 	<repositories>
  		<repository>
-    	<id>Applium-unit-lib</id>
-    	<url>https://github.com/ksszidane/Applium-unit-lib/tree/mvn-repo</url>
+    	<id>Appium-unit-lib</id>
+    	<url>https://github.com/ksszidane/Appium-unit-lib/tree/mvn-repo</url>
     	<snapshots>
         	<enabled>true</enabled>
         	<updatePolicy>always</updatePolicy>
@@ -30,8 +30,8 @@
     <!-- -->
   	<dependency>
   		<groupId>com.github.ksszidane</groupId>
-  		<artifactId>Applium-unit-lib</artifactId>
-  		<version>0.0.08</version>
+  		<artifactId>Appium-unit-lib</artifactId>
+  		<version>0.0.07</version>
 	</dependency>
 	
 	<dependency>
