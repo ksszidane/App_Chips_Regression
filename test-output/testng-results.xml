@@ -1,11 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="ExtentReport" duration-ms="7" started-at="2021-05-11T10:29:08Z" finished-at="2021-05-11T10:29:08Z">
+  <suite started-at="2021-05-14T11:58:54Z" name="ExtentReport" finished-at="2021-05-14T12:00:01Z" duration-ms="66717">
     <groups>
     </groups>
-    <test name="Test_Project" duration-ms="7" started-at="2021-05-11T10:29:08Z" finished-at="2021-05-11T10:29:08Z">
+    <test started-at="2021-05-14T11:58:54Z" name="Test_Project" finished-at="2021-05-14T12:00:01Z" duration-ms="66717">
+      <class name="Chips_001_실행.실행과로그인테스트">
+        <test-method is-config="true" signature="setupClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Chips_001_실행.실행과로그인테스트@7a35b0f5]" started-at="2021-05-14T20:58:54Z" name="setupClass" finished-at="2021-05-14T20:59:09Z" duration-ms="14455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chips]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://0.0.0.0:4723/wd/hub]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[PRD]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chips]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[out]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1c25b5ace00c7ece]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ALDF3NYA6C0D0C654DD2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[ALDF5TR5SNGZ8175DA16]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[ALDFHFMQC3RB935B4B02]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[A00F0CF74A6D44939610B1EE6D5FB4C0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_001_실행.실행과로그인테스트@7a35b0f5]" started-at="2021-05-14T20:59:09Z" name="BeforeMethod" finished-at="2021-05-14T20:59:09Z" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_001_실행.실행과로그인테스트.TC_앱실행_000(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_앱실행_000(java.lang.reflect.Method)[pri:0, instance:Chips_001_실행.실행과로그인테스트@7a35b0f5]" started-at="2021-05-14T20:59:09Z" name="TC_앱실행_000" description="칩스 리그레이션 TC : 실행_000" finished-at="2021-05-14T20:59:56Z" duration-ms="47363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_001_실행.실행과로그인테스트.TC_앱실행_000(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_앱실행_000 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_001_실행.실행과로그인테스트@7a35b0f5]" started-at="2021-05-14T20:59:56Z" name="AfterMethod" finished-at="2021-05-14T20:59:56Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_앱실행_000 status=SUCCESS method=실행과로그인테스트.TC_앱실행_000(java.lang.reflect.Method)[pri:0, instance:Chips_001_실행.실행과로그인테스트@7a35b0f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="tearDownClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Chips_001_실행.실행과로그인테스트@7a35b0f5]" started-at="2021-05-14T20:59:56Z" name="tearDownClass" finished-at="2021-05-14T21:00:01Z" duration-ms="4879" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PRD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chips]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[out]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1c25b5ace00c7ece]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ALDF3NYA6C0D0C654DD2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[ALDF5TR5SNGZ8175DA16]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[ALDFHFMQC3RB935B4B02]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[A00F0CF74A6D44939610B1EE6D5FB4C0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Chips_001_실행.실행과로그인테스트 -->
     </test> <!-- Test_Project -->
   </suite> <!-- ExtentReport -->
 </testng-results>
