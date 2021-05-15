@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="10" parallel="tests" name="Failed suite [ExtentReport]" guice-stage="DEVELOPMENT">
-  <parameter name="userID_ksszidane10" value="ALDF5TR5SNGZ8175DA16"/>
   <parameter name="Project" value="Chips"/>
-  <parameter name="MobileDevice" value="1c25b5ace00c7ece"/>
-  <parameter name="OS" value="Android"/>
-  <parameter name="Server" value="PRD"/>
-  <parameter name="oAuth_Token_Chips" value="A00F0CF74A6D44939610B1EE6D5FB4C0"/>
-  <parameter name="userID_ksszidane" value="ALDF3NYA6C0D0C654DD2"/>
-  <parameter name="TestPlace" value="out"/>
-  <parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
   <parameter name="hubAddress" value="http://0.0.0.0:4723/wd/hub"/>
-  <parameter name="AppName" value="Chips"/>
-  <test name="Test_Project">
+  <test thread-count="10" parallel="tests" name="Test_Project(failed)">
     <parameter name="userID_ksszidane10" value="ALDF5TR5SNGZ8175DA16"/>
     <parameter name="MobileDevice" value="1c25b5ace00c7ece"/>
     <parameter name="OS" value="Android"/>
     <parameter name="Server" value="PRD"/>
-    <parameter name="oAuth_Token_Chips" value="A00F0CF74A6D44939610B1EE6D5FB4C0"/>
     <parameter name="userID_ksszidane" value="ALDF3NYA6C0D0C654DD2"/>
     <parameter name="TestPlace" value="out"/>
     <parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
     <parameter name="AppName" value="Chips"/>
     <classes>
-      <class name="Chips_001_실행.실행과로그인테스트"/>
+      <class name="Chips_001_기본기능.기본기능_01_서비스호출">
+        <methods>
+          <include name="TC_0079_전원제어_발화체크" invocation-numbers="0"/>
+          <include name="BeforeMethod"/>
+          <include name="setupClass"/>
+          <include name="tearDownClass"/>
+          <include name="TC_0091_환경설정_발화체크" invocation-numbers="0"/>
+          <include name="AfterMethod"/>
+          <include name="TC_0094_미디어재생중_환경설정_발화체크" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Chips_001_기본기능.기본기능_01_서비스호출 -->
     </classes>
-  </test> <!-- Test_Project -->
+  </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->

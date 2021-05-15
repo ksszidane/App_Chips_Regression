@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,8 +24,9 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-ExtentReport" class="navigator-link">
-              <span class="suite-name border-passed">ExtentReport</span>
+              <span class="suite-name border-failed">ExtentReport</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">9 methods, 3 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ExtentReport" class="hide-methods failed suite-ExtentReport"> (hide)</a> <!-- hide-methods failed suite-ExtentReport -->
+                      <a href="#" panel-name="suite-ExtentReport" class="show-methods failed suite-ExtentReport"> (show)</a> <!-- show-methods failed suite-ExtentReport -->
+                    </span>
+                    <div class="method-list-content failed suite-ExtentReport">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ExtentReport" title="Chips_001_기본기능.기본기능_01_서비스호출" class="method navigator-link" hash-for-method="TC_0079_전원제어_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0079_전원제어_발화체크(java.lang.reflect.Method) throws java.lan...)">TC_0079_전원제어_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0079_전원제어_발화체크(java.lang.reflect.Method) throws java.lan...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ExtentReport" title="Chips_001_기본기능.기본기능_01_서비스호출" class="method navigator-link" hash-for-method="TC_0091_환경설정_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0091_환경설정_발화체크(java.lang.reflect.Method) throws java.lan...)">TC_0091_환경설정_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0091_환경설정_발화체크(java.lang.reflect.Method) throws java.lan...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ExtentReport" title="Chips_001_기본기능.기본기능_01_서비스호출" class="method navigator-link" hash-for-method="TC_0094_미디어재생중_환경설정_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0094_미디어재생중_환경설정_발화체크(java.lang.reflect.Method) throws j...)">TC_0094_미디어재생중_환경설정_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0094_미디어재생중_환경설정_발화체크(java.lang.reflect.Method) throws j...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ExtentReport -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +128,32 @@
                     <div class="method-list-content passed suite-ExtentReport">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ExtentReport" title="Chips_001_실행.실행과로그인테스트" class="method navigator-link" hash-for-method="TC_앱실행_000(public void Chips_001_실행.실행과로그인테스트.TC_앱실행_000(java.lang.reflect.Method) throws java.lang.Exception)">TC_앱실행_000(public void Chips_001_실행.실행과로그인테스트.TC_앱실행_000(java.lang.reflect.Method) throws java.lang.Exception)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ExtentReport" title="Chips_001_기본기능.기본기능_01_서비스호출" class="method navigator-link" hash-for-method="TC_0000_앱실행과AccessToken얻기(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws ...)">TC_0000_앱실행과AccessToken얻기(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ExtentReport" title="Chips_001_기본기능.기본기능_01_서비스호출" class="method navigator-link" hash-for-method="TC_0009_MIC버튼호출(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0009_MIC버튼호출(java.lang.reflect.Method) throws java.lang....)">TC_0009_MIC버튼호출(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0009_MIC버튼호출(java.lang.reflect.Method) throws java.lang....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ExtentReport" title="Chips_001_기본기능.기본기능_01_서비스호출" class="method navigator-link" hash-for-method="TC_0068_베터리잔량_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0068_베터리잔량_발화체크(java.lang.reflect.Method) throws java.la...)">TC_0068_베터리잔량_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0068_베터리잔량_발화체크(java.lang.reflect.Method) throws java.la...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ExtentReport" title="Chips_001_기본기능.기본기능_01_서비스호출" class="method navigator-link" hash-for-method="TC_0069_베터리잔량_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0069_베터리잔량_발화체크(java.lang.reflect.Method) throws java.la...)">TC_0069_베터리잔량_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0069_베터리잔량_발화체크(java.lang.reflect.Method) throws java.la...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ExtentReport" title="Chips_001_기본기능.기본기능_01_서비스호출" class="method navigator-link" hash-for-method="TC_0098_홈화면변경_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0098_홈화면변경_발화체크(java.lang.reflect.Method) throws java.la...)">TC_0098_홈화면변경_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0098_홈화면변경_발화체크(java.lang.reflect.Method) throws java.la...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ExtentReport" title="Chips_001_기본기능.기본기능_01_서비스호출" class="method navigator-link" hash-for-method="TC_0115_나이트모드_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0115_나이트모드_발화체크(java.lang.reflect.Method) throws java.la...)">TC_0115_나이트모드_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0115_나이트모드_발화체크(java.lang.reflect.Method) throws java.la...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-ExtentReport -->
@@ -117,20 +168,144 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ExtentReport" class="panel ExtentReport">
-          <div class="suite-ExtentReport-class-passed">
+          <div class="suite-ExtentReport-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Chips_001_실행.실행과로그인테스트</span>
+              <img src="failed.png"/>
+              <span class="class-name">Chips_001_기본기능.기본기능_01_서비스호출</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_앱실행_000(public void Chips_001_실행.실행과로그인테스트.TC_앱실행_000(java.lang.reflect.Method) throws java.lang.Exception)">
-                  </a> <!-- TC_앱실행_000(public void Chips_001_실행.실행과로그인테스트.TC_앱실행_000(java.lang.reflect.Method) throws java.lang.Exception) -->
-                  <span class="method-name">TC_앱실행_000</span>
-                  <span class="parameters">(public void Chips_001_실행.실행과로그인테스트.TC_앱실행_000(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <a name="TC_0079_전원제어_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0079_전원제어_발화체크(java.lang.reflect.Method) throws java.lan...)">
+                  </a> <!-- TC_0079_전원제어_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0079_전원제어_발화체크(java.lang.reflect.Method) throws java.lan...) -->
+                  <span class="method-name">TC_0079_전원제어_발화체크</span>
+                  <span class="parameters">(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0079_전원제어_발화체크(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at Chips_001_기본기능.기본기능_01_서비스호출.TC_0079_전원제어_발화체크(기본기능_01_서비스호출.java:136)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(칩스 리그레이션 TC : 실행_000)                  </em>
+(칩스 리그레이션 TC : 실행_0079)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_0091_환경설정_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0091_환경설정_발화체크(java.lang.reflect.Method) throws java.lan...)">
+                  </a> <!-- TC_0091_환경설정_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0091_환경설정_발화체크(java.lang.reflect.Method) throws java.lan...) -->
+                  <span class="method-name">TC_0091_환경설정_발화체크</span>
+                  <span class="parameters">(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0091_환경설정_발화체크(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at Chips_001_기본기능.기본기능_01_서비스호출.TC_0091_환경설정_발화체크(기본기능_01_서비스호출.java:152)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(칩스 리그레이션 TC : 실행_0091)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_0094_미디어재생중_환경설정_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0094_미디어재생중_환경설정_발화체크(java.lang.reflect.Method) throws j...)">
+                  </a> <!-- TC_0094_미디어재생중_환경설정_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0094_미디어재생중_환경설정_발화체크(java.lang.reflect.Method) throws j...) -->
+                  <span class="method-name">TC_0094_미디어재생중_환경설정_발화체크</span>
+                  <span class="parameters">(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0094_미디어재생중_환경설정_발화체크(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at Chips_001_기본기능.기본기능_01_서비스호출.TC_0094_미디어재생중_환경설정_발화체크(기본기능_01_서비스호출.java:174)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(칩스 리그레이션 TC : 실행_0094)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ExtentReport-class-failed -->
+          <div class="suite-ExtentReport-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Chips_001_기본기능.기본기능_01_서비스호출</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_0000_앱실행과AccessToken얻기(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws ...)">
+                  </a> <!-- TC_0000_앱실행과AccessToken얻기(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws ...) -->
+                  <span class="method-name">TC_0000_앱실행과AccessToken얻기</span>
+                  <span class="parameters">(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <em>
+(칩스 리그레이션 TC : 실행_0000)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_0009_MIC버튼호출(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0009_MIC버튼호출(java.lang.reflect.Method) throws java.lang....)">
+                  </a> <!-- TC_0009_MIC버튼호출(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0009_MIC버튼호출(java.lang.reflect.Method) throws java.lang....) -->
+                  <span class="method-name">TC_0009_MIC버튼호출</span>
+                  <span class="parameters">(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0009_MIC버튼호출(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <em>
+(칩스 리그레이션 TC : 실행_0009)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_0068_베터리잔량_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0068_베터리잔량_발화체크(java.lang.reflect.Method) throws java.la...)">
+                  </a> <!-- TC_0068_베터리잔량_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0068_베터리잔량_발화체크(java.lang.reflect.Method) throws java.la...) -->
+                  <span class="method-name">TC_0068_베터리잔량_발화체크</span>
+                  <span class="parameters">(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0068_베터리잔량_발화체크(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <em>
+(칩스 리그레이션 TC : 실행_0068)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_0069_베터리잔량_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0069_베터리잔량_발화체크(java.lang.reflect.Method) throws java.la...)">
+                  </a> <!-- TC_0069_베터리잔량_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0069_베터리잔량_발화체크(java.lang.reflect.Method) throws java.la...) -->
+                  <span class="method-name">TC_0069_베터리잔량_발화체크</span>
+                  <span class="parameters">(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0069_베터리잔량_발화체크(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <em>
+(칩스 리그레이션 TC : 실행_0069)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_0098_홈화면변경_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0098_홈화면변경_발화체크(java.lang.reflect.Method) throws java.la...)">
+                  </a> <!-- TC_0098_홈화면변경_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0098_홈화면변경_발화체크(java.lang.reflect.Method) throws java.la...) -->
+                  <span class="method-name">TC_0098_홈화면변경_발화체크</span>
+                  <span class="parameters">(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0098_홈화면변경_발화체크(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <em>
+(칩스 리그레이션 TC : 실행_0098)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_0115_나이트모드_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0115_나이트모드_발화체크(java.lang.reflect.Method) throws java.la...)">
+                  </a> <!-- TC_0115_나이트모드_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0115_나이트모드_발화체크(java.lang.reflect.Method) throws java.la...) -->
+                  <span class="method-name">TC_0115_나이트모드_발화체크</span>
+                  <span class="parameters">(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0115_나이트모드_발화체크(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <em>
+(칩스 리그레이션 TC : 실행_0115)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,22 +318,21 @@
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;ExtentReport&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;Project&quot; value=&quot;Chips&quot;/&gt;
   &lt;parameter name=&quot;hubAddress&quot; value=&quot;http://0.0.0.0:4723/wd/hub&quot;/&gt;
-  &lt;test name=&quot;Test_Project&quot;&gt;
+  &lt;test thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;Test_Project&quot;&gt;
     &lt;parameter name=&quot;userID_ksszidane10&quot; value=&quot;ALDF5TR5SNGZ8175DA16&quot;/&gt;
     &lt;parameter name=&quot;MobileDevice&quot; value=&quot;1c25b5ace00c7ece&quot;/&gt;
     &lt;parameter name=&quot;OS&quot; value=&quot;Android&quot;/&gt;
     &lt;parameter name=&quot;Server&quot; value=&quot;PRD&quot;/&gt;
-    &lt;parameter name=&quot;oAuth_Token_Chips&quot; value=&quot;A00F0CF74A6D44939610B1EE6D5FB4C0&quot;/&gt;
     &lt;parameter name=&quot;userID_ksszidane&quot; value=&quot;ALDF3NYA6C0D0C654DD2&quot;/&gt;
     &lt;parameter name=&quot;TestPlace&quot; value=&quot;out&quot;/&gt;
     &lt;parameter name=&quot;deviceID_Chips&quot; value=&quot;ALDFHFMQC3RB935B4B02&quot;/&gt;
     &lt;parameter name=&quot;AppName&quot; value=&quot;Chips&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Chips_001_실행.실행과로그인테스트&quot;/&gt;
+      &lt;class name=&quot;Chips_001_기본기능.기본기능_01_서비스호출&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test_Project --&gt;
 &lt;/suite&gt; &lt;!-- ExtentReport --&gt;
@@ -198,16 +372,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_앱실행_000')
-data.setCell(0, 2, 'Chips_001_실행.실행과로그인테스트')
-data.setCell(0, 3, 47363);
+data.setCell(0, 1, 'TC_0000_앱실행과AccessToken얻기')
+data.setCell(0, 2, 'Chips_001_기본기능.기본기능_01_서비스호출')
+data.setCell(0, 3, 39645);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC_0094_미디어재생중_환경설정_발화체크')
+data.setCell(1, 2, 'Chips_001_기본기능.기본기능_01_서비스호출')
+data.setCell(1, 3, 27896);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC_0068_베터리잔량_발화체크')
+data.setCell(2, 2, 'Chips_001_기본기능.기본기능_01_서비스호출')
+data.setCell(2, 3, 17354);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC_0115_나이트모드_발화체크')
+data.setCell(3, 2, 'Chips_001_기본기능.기본기능_01_서비스호출')
+data.setCell(3, 3, 17288);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC_0069_베터리잔량_발화체크')
+data.setCell(4, 2, 'Chips_001_기본기능.기본기능_01_서비스호출')
+data.setCell(4, 3, 17276);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC_0098_홈화면변경_발화체크')
+data.setCell(5, 2, 'Chips_001_기본기능.기본기능_01_서비스호출')
+data.setCell(5, 3, 17222);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC_0079_전원제어_발화체크')
+data.setCell(6, 2, 'Chips_001_기본기능.기본기능_01_서비스호출')
+data.setCell(6, 3, 14236);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC_0091_환경설정_발화체크')
+data.setCell(7, 2, 'Chips_001_기본기능.기본기능_01_서비스호출')
+data.setCell(7, 3, 14212);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC_0009_MIC버튼호출')
+data.setCell(8, 2, 'Chips_001_기본기능.기본기능_01_서비스호출')
+data.setCell(8, 3, 3094);
 window.suiteTableData['ExtentReport']= { tableData: data, tableDiv: 'times-div-ExtentReport'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-ExtentReport">
               </div> <!-- times-div-ExtentReport -->
             </div> <!-- times-div -->
@@ -233,30 +439,133 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Chips_001_실행.실행과로그인테스트</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Chips_001_기본기능.기본기능_01_서비스호출</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setupClass(Android, Chips, http://0.0.0.0:4723/wd/hub, PRD, Chips, out, 1c25b5ace00c7ece, ALDF3NYA6C0D0C654DD2,...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">BeforeMethod(public void Chips_001_실행.실행과로그인테스트.TC_앱실행_000(java.lang.reflect.Method) throws java.lang.Exception)</span>
-                <span class="method-start">14458 ms</span>
+                <span class="method-name">BeforeMethod(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws ...)</span>
+                <span class="method-start">14259 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC_앱실행_000(public void Chips_001_실행.실행과로그인테스트.TC_앱실행_000(java.lang.reflect.Method) throws java.lang.Exception)</span>
-                <span class="method-start">14464 ms</span>
+                <span class="method-name">TC_0000_앱실행과AccessToken얻기(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws ...)</span>
+                <span class="method-start">14266 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">AfterMethod([TestResult name=TC_앱실행_000 status=SUCCESS method=실행과로그인테스트.TC_앱실행_000(java.lang.reflect.Method)[pri...)</span>
-                <span class="method-start">61828 ms</span>
+                <span class="method-name">AfterMethod([TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=기본기능_01_서비스호출.TC_0000_앱실행과AccessTok...)</span>
+                <span class="method-start">53914 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0009_MIC버튼호출(java.lang.reflect.Method) throws java.lang....)</span>
+                <span class="method-start">53916 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_0009_MIC버튼호출(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0009_MIC버튼호출(java.lang.reflect.Method) throws java.lang....)</span>
+                <span class="method-start">53916 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod([TestResult name=TC_0009_MIC버튼호출 status=SUCCESS method=기본기능_01_서비스호출.TC_0009_MIC버튼호출(java.lang.refle...)</span>
+                <span class="method-start">57012 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0068_베터리잔량_발화체크(java.lang.reflect.Method) throws java.la...)</span>
+                <span class="method-start">57013 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_0068_베터리잔량_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0068_베터리잔량_발화체크(java.lang.reflect.Method) throws java.la...)</span>
+                <span class="method-start">57014 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod([TestResult name=TC_0068_베터리잔량_발화체크 status=SUCCESS method=기본기능_01_서비스호출.TC_0068_베터리잔량_발화체크(java.lang...)</span>
+                <span class="method-start">74370 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0069_베터리잔량_발화체크(java.lang.reflect.Method) throws java.la...)</span>
+                <span class="method-start">74372 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_0069_베터리잔량_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0069_베터리잔량_발화체크(java.lang.reflect.Method) throws java.la...)</span>
+                <span class="method-start">74373 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod([TestResult name=TC_0069_베터리잔량_발화체크 status=SUCCESS method=기본기능_01_서비스호출.TC_0069_베터리잔량_발화체크(java.lang...)</span>
+                <span class="method-start">91654 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0079_전원제어_발화체크(java.lang.reflect.Method) throws java.lan...)</span>
+                <span class="method-start">91656 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_0079_전원제어_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0079_전원제어_발화체크(java.lang.reflect.Method) throws java.lan...)</span>
+                <span class="method-start">91657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod([TestResult name=TC_0079_전원제어_발화체크 status=FAILURE method=기본기능_01_서비스호출.TC_0079_전원제어_발화체크(java.lang.r...)</span>
+                <span class="method-start">105897 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0091_환경설정_발화체크(java.lang.reflect.Method) throws java.lan...)</span>
+                <span class="method-start">106490 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_0091_환경설정_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0091_환경설정_발화체크(java.lang.reflect.Method) throws java.lan...)</span>
+                <span class="method-start">106491 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod([TestResult name=TC_0091_환경설정_발화체크 status=FAILURE method=기본기능_01_서비스호출.TC_0091_환경설정_발화체크(java.lang.r...)</span>
+                <span class="method-start">120705 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0094_미디어재생중_환경설정_발화체크(java.lang.reflect.Method) throws j...)</span>
+                <span class="method-start">121197 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_0094_미디어재생중_환경설정_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0094_미디어재생중_환경설정_발화체크(java.lang.reflect.Method) throws j...)</span>
+                <span class="method-start">121197 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod([TestResult name=TC_0094_미디어재생중_환경설정_발화체크 status=FAILURE method=기본기능_01_서비스호출.TC_0094_미디어재생중_환경설정_발화...)</span>
+                <span class="method-start">149096 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0098_홈화면변경_발화체크(java.lang.reflect.Method) throws java.la...)</span>
+                <span class="method-start">149624 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_0098_홈화면변경_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0098_홈화면변경_발화체크(java.lang.reflect.Method) throws java.la...)</span>
+                <span class="method-start">149624 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod([TestResult name=TC_0098_홈화면변경_발화체크 status=SUCCESS method=기본기능_01_서비스호출.TC_0098_홈화면변경_발화체크(java.lang...)</span>
+                <span class="method-start">166849 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0115_나이트모드_발화체크(java.lang.reflect.Method) throws java.la...)</span>
+                <span class="method-start">166852 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_0115_나이트모드_발화체크(public void Chips_001_기본기능.기본기능_01_서비스호출.TC_0115_나이트모드_발화체크(java.lang.reflect.Method) throws java.la...)</span>
+                <span class="method-start">166853 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod([TestResult name=TC_0115_나이트모드_발화체크 status=SUCCESS method=기본기능_01_서비스호출.TC_0115_나이트모드_발화체크(java.lang...)</span>
+                <span class="method-start">184147 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
-                <span class="method-name">tearDownClass(PRD, Chips, out, 1c25b5ace00c7ece, ALDF3NYA6C0D0C654DD2, ALDF5TR5SNGZ8175DA16, ALDFHFMQC3RB935B4B02,...)</span>
-                <span class="method-start">61829 ms</span>
+                <span class="method-name">tearDownClass(PRD, Chips, out, 1c25b5ace00c7ece, ALDF3NYA6C0D0C654DD2, ALDF5TR5SNGZ8175DA16, ALDFHFMQC3RB935B4B02)</span>
+                <span class="method-start">184153 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>
