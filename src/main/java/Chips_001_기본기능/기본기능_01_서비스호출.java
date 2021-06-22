@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
+import TestNG_Set.Chips_TestCase;
 import junit.framework.Assert;
-import unit.Chips_TestCase;
 
 public class 기본기능_01_서비스호출 extends Chips_TestCase {
 	
@@ -45,6 +45,9 @@ public class 기본기능_01_서비스호출 extends Chips_TestCase {
 
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
 	    util.switchContext("NATIVE_APP");
+	    
+	    //test.log(Status.INFO, "Chips 업데이트 팝업 확인");
+	    //util.chips_update_check(ServerName);
 		
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
 		util.click(By.xpath("//android.widget.Button[@text='접근 권한 허용']"));
@@ -57,9 +60,11 @@ public class 기본기능_01_서비스호출 extends Chips_TestCase {
 	    
 	    test.log(Status.INFO, "NUGU CHIPS 빠른 설정 가이드 [X]버튼 닫기 "); 
 	    util.click(By.id("btn_close"));
+	    Thread.sleep(2000);
 	    
 	    test.log(Status.INFO, "세션 만료 후 로그인 시도"); 
 	    util.click(By.id("loginButton"));
+	    Thread.sleep(1000);
 	    
 	    test.log(Status.INFO, "WEBVIEW로 화면 전환");
         util.switchContext("WEBVIEW");
@@ -92,6 +97,7 @@ public class 기본기능_01_서비스호출 extends Chips_TestCase {
 	    util.Android_BackKey();
 		
 	}
+	
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0068")
 	public void TC_0068_베터리잔량_발화체크(Method method) throws Exception {
