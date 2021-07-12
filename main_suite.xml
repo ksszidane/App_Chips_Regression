@@ -10,10 +10,11 @@
 		<parameter name="Server" value="RTG" /> <!-- 서버값 대문자로  : PRD, RTG, STG -->
 		<parameter name="TestPlace" value="out" /> <!-- 사내 : in  // 사외 : out-->
 		<parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
+		<parameter name="deviceID_Chips10" value="ALDFHFMSG34WDF6CD40E"/>
 		<parameter name="userID_ksszidane" value="ALDF3NYA6C0D0C654DD2"/>
 		<parameter name="userID_ksszidane10" value="ALDF5TR5SNGZ8175DA16"/>
 		<parameter name="userID_nuguqa001" value="ALDFH3D1Q7W6071EFE41"/>
-		<parameter name="MobileDevice" value="ce12160cb994301d04"/>
+		<parameter name="MobileDevice" value="ce06171633774e37027e"/>
 		
 		<!--
 		R3CMA0GBTQ 
@@ -24,11 +25,18 @@
 		
 		<classes>
 			<!--
-			<class name="Chips_001_기본기능.기본기능_01_서비스호출" />
+			<class name="Chips_001_기본기능.기본기능_01_기본기능" />
 			<class name="Chips_001_기본기능.기본기능_02_홈화면최초진입" />
+			<class name="Chips_001_기본기능.기본기능_03_부가기능" />
+			<class name="Chips_002_음원.음원_01_멜론" />
+			<class name="Chips_002_음원.음원_02_FLO_미로그인" />
+			<class name="Chips_002_음원.음원_03_FLO_로그인" />
 			-->
+
+	
+			<class name="Chips_002_음원.음원_03_FLO_로그인" />
 		
-			<class name="Chips_001_기본기능.기본기능_01_서비스호출" />
+			
 			
 		
 		

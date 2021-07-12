@@ -5,30 +5,27 @@
   <parameter name="hubAddress" value="http://0.0.0.0:4723/wd/hub"/>
   <test thread-count="10" parallel="tests" name="Test_Project(failed)">
     <parameter name="userID_ksszidane10" value="ALDF5TR5SNGZ8175DA16"/>
-    <parameter name="MobileDevice" value="ce12160cb994301d04"/>
+    <parameter name="MobileDevice" value="ce06171633774e37027e"/>
     <parameter name="OS" value="Android"/>
     <parameter name="Server" value="RTG"/>
     <parameter name="userID_ksszidane" value="ALDF3NYA6C0D0C654DD2"/>
     <parameter name="TestPlace" value="out"/>
     <parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
+    <parameter name="deviceID_Chips10" value="ALDFHFMSG34WDF6CD40E"/>
     <parameter name="AppName" value="Chips"/>
     <parameter name="userID_nuguqa001" value="ALDFH3D1Q7W6071EFE41"/>
     <classes>
-      <class name="Chips_001_기본기능.기본기능_01_서비스호출">
+      <class name="Chips_002_음원.음원_03_FLO_로그인">
         <methods>
-          <include name="TC_0079_전원제어_발화체크" invocation-numbers="0"/>
           <include name="setupClass"/>
-          <include name="TC_0069_베터리잔량_발화체크" invocation-numbers="0"/>
           <include name="tearDownClass"/>
           <include name="BeforeMethod"/>
+          <include name="TC_0225_Chips_FLO로그인_좋아요노래_확인" invocation-numbers="0"/>
+          <include name="TC_0228_Chips_FLO로그인_셔플해줘_확인" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-          <include name="TC_0098_홈화면변경_발화체크" invocation-numbers="0"/>
-          <include name="TC_0091_환경설정_발화체크" invocation-numbers="0"/>
-          <include name="TC_0115_나이트모드_발화체크" invocation-numbers="0"/>
-          <include name="TC_0094_미디어재생중_환경설정_발화체크" invocation-numbers="0"/>
-          <include name="TC_0068_베터리잔량_발화체크" invocation-numbers="0"/>
+          <include name="TC_0229_Chips_FLO로그인_셔플해제_확인" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Chips_001_기본기능.기본기능_01_서비스호출 -->
+      </class> <!-- Chips_002_음원.음원_03_FLO_로그인 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->
