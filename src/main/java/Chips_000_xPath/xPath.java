@@ -28,6 +28,7 @@ public class xPath {
 	public static String FLO프로그레스바 = "//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.view.View[3]";
 	public static String FLO반복버튼 = "//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.widget.Button[4]";
 	public static String FLO랜덤버튼 = "//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.widget.Button[5]";
+	public static String FLO좋아요 = "//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.widget.Button[6]";
 	public static String FLO현재재생시간 = "//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.widget.TextView[2]";
 	public static String FLO재생곡전체시간 = "//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.widget.TextView[3]";
 	public static String FLO재생버튼 = "//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.widget.Button[2]"; //재생버튼 focuse false
@@ -46,7 +47,7 @@ public class xPath {
 	
 	//webview
 	public static String 좋아요On_web = "//button[@class='btn favorite on']";
-	public static String 좋아요Off_web = "//button[@class='btn favorite on']";
+	public static String 좋아요Off_web = "//button[@class='btn favorite']";
 	public static String 전체반복_web = "//button[@class='btn repeat all']";
 	public static String 한곡반복_web = "//button[@class='btn repeat one']";
 	public static String 반복해제_web = "//button[@class='btn repeat']";

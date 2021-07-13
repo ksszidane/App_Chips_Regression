@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="11" passed="8" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-12T21:26:58 KST" name="ExtentReport" finished-at="2021-07-12T21:32:50 KST" duration-ms="351829">
+  <suite started-at="2021-07-13T20:47:05 KST" name="ExtentReport" finished-at="2021-07-13T20:52:48 KST" duration-ms="343610">
     <groups>
     </groups>
-    <test started-at="2021-07-12T21:26:58 KST" name="Test_Project" finished-at="2021-07-12T21:32:50 KST" duration-ms="351829">
+    <test started-at="2021-07-13T20:47:05 KST" name="Test_Project" finished-at="2021-07-13T20:52:48 KST" duration-ms="343610">
       <class name="Chips_002_음원.음원_03_FLO_로그인">
-        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:26:58 KST" name="setupClass" finished-at="2021-07-12T21:27:16 KST" duration-ms="18082" status="PASS">
+        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:47:05 KST" name="setupClass" finished-at="2021-07-13T20:47:21 KST" duration-ms="16420" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,7 +73,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:27:16 KST" name="BeforeMethod" finished-at="2021-07-12T21:27:16 KST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:47:21 KST" name="BeforeMethod" finished-at="2021-07-13T20:47:21 KST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,7 +84,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:27:16 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-07-12T21:28:14 KST" duration-ms="57761" status="PASS">
+        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:47:21 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-07-13T20:48:21 KST" duration-ms="59420" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,18 +95,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0000_앱실행과AccessToken얻기 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:28:14 KST" name="AfterMethod" finished-at="2021-07-12T21:28:14 KST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:48:21 KST" name="AfterMethod" finished-at="2021-07-13T20:48:21 KST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=음원_03_FLO_로그인.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=음원_03_FLO_로그인.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:28:14 KST" name="BeforeMethod" finished-at="2021-07-12T21:28:14 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:48:21 KST" name="BeforeMethod" finished-at="2021-07-13T20:48:21 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0220_Chips_FLO로그인_아티스트노래_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:28:14 KST" name="TC_0220_Chips_FLO로그인_아티스트노래_확인" description="칩스 리그레이션 TC : 실행_0220" finished-at="2021-07-12T21:28:40 KST" duration-ms="26184" status="PASS">
+        <test-method signature="TC_0220_Chips_FLO로그인_아티스트노래_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:48:21 KST" name="TC_0220_Chips_FLO로그인_아티스트노래_확인" description="칩스 리그레이션 TC : 실행_0220" finished-at="2021-07-13T20:48:47 KST" duration-ms="26566" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,18 +128,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0220_Chips_FLO로그인_아티스트노래_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:28:40 KST" name="AfterMethod" finished-at="2021-07-12T21:28:40 KST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:48:47 KST" name="AfterMethod" finished-at="2021-07-13T20:48:47 KST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0220_Chips_FLO로그인_아티스트노래_확인 status=SUCCESS method=음원_03_FLO_로그인.TC_0220_Chips_FLO로그인_아티스트노래_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0220_Chips_FLO로그인_아티스트노래_확인 status=SUCCESS method=음원_03_FLO_로그인.TC_0220_Chips_FLO로그인_아티스트노래_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:28:40 KST" name="BeforeMethod" finished-at="2021-07-12T21:28:40 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:48:47 KST" name="BeforeMethod" finished-at="2021-07-13T20:48:47 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -150,7 +150,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0221_Chips_FLO로그인_아티스트노래_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:28:40 KST" name="TC_0221_Chips_FLO로그인_아티스트노래_확인" description="칩스 리그레이션 TC : 실행_0221" finished-at="2021-07-12T21:29:07 KST" duration-ms="26763" status="PASS">
+        <test-method signature="TC_0221_Chips_FLO로그인_아티스트노래_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:48:47 KST" name="TC_0221_Chips_FLO로그인_아티스트노래_확인" description="칩스 리그레이션 TC : 실행_0221" finished-at="2021-07-13T20:49:13 KST" duration-ms="26037" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -161,29 +161,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0221_Chips_FLO로그인_아티스트노래_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:29:07 KST" name="AfterMethod" finished-at="2021-07-12T21:29:07 KST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:49:13 KST" name="AfterMethod" finished-at="2021-07-13T20:49:13 KST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0221_Chips_FLO로그인_아티스트노래_확인 status=SUCCESS method=음원_03_FLO_로그인.TC_0221_Chips_FLO로그인_아티스트노래_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0221_Chips_FLO로그인_아티스트노래_확인 status=SUCCESS method=음원_03_FLO_로그인.TC_0221_Chips_FLO로그인_아티스트노래_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:29:07 KST" name="BeforeMethod" finished-at="2021-07-12T21:29:07 KST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_002_음원.음원_03_FLO_로그인.TC_0222_Chips_FLO로그인_최신음악_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0222_Chips_FLO로그인_최신음악_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:29:07 KST" name="TC_0222_Chips_FLO로그인_최신음악_확인" description="칩스 리그레이션 TC : 실행_0222" finished-at="2021-07-12T21:29:32 KST" duration-ms="25723" status="PASS">
+        <test-method signature="TC_0222_Chips_FLO로그인_최신음악_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:49:13 KST" name="TC_0222_Chips_FLO로그인_최신음악_확인" description="칩스 리그레이션 TC : 실행_0222" finished-at="2021-07-13T20:49:40 KST" duration-ms="26569" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -194,18 +183,40 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0222_Chips_FLO로그인_최신음악_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:29:32 KST" name="AfterMethod" finished-at="2021-07-12T21:29:32 KST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:49:13 KST" name="BeforeMethod" finished-at="2021-07-13T20:49:13 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0222_Chips_FLO로그인_최신음악_확인 status=SUCCESS method=음원_03_FLO_로그인.TC_0222_Chips_FLO로그인_최신음악_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3] output={null}]]]>
+                <![CDATA[public void Chips_002_음원.음원_03_FLO_로그인.TC_0222_Chips_FLO로그인_최신음악_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:49:40 KST" name="AfterMethod" finished-at="2021-07-13T20:49:40 KST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0222_Chips_FLO로그인_최신음악_확인 status=SUCCESS method=음원_03_FLO_로그인.TC_0222_Chips_FLO로그인_최신음악_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0223_Chips_FLO로그인_실시간차트_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:29:32 KST" name="TC_0223_Chips_FLO로그인_실시간차트_확인" description="칩스 리그레이션 TC : 실행_0223" finished-at="2021-07-12T21:29:58 KST" duration-ms="25808" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:49:40 KST" name="BeforeMethod" finished-at="2021-07-13T20:49:40 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_음원.음원_03_FLO_로그인.TC_0223_Chips_FLO로그인_실시간차트_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0223_Chips_FLO로그인_실시간차트_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:49:40 KST" name="TC_0223_Chips_FLO로그인_실시간차트_확인" description="칩스 리그레이션 TC : 실행_0223" finished-at="2021-07-13T20:50:06 KST" duration-ms="26170" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -216,40 +227,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0223_Chips_FLO로그인_실시간차트_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:29:32 KST" name="BeforeMethod" finished-at="2021-07-12T21:29:32 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:50:06 KST" name="AfterMethod" finished-at="2021-07-13T20:50:06 KST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_002_음원.음원_03_FLO_로그인.TC_0223_Chips_FLO로그인_실시간차트_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:29:58 KST" name="AfterMethod" finished-at="2021-07-12T21:29:58 KST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0223_Chips_FLO로그인_실시간차트_확인 status=SUCCESS method=음원_03_FLO_로그인.TC_0223_Chips_FLO로그인_실시간차트_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0223_Chips_FLO로그인_실시간차트_확인 status=SUCCESS method=음원_03_FLO_로그인.TC_0223_Chips_FLO로그인_실시간차트_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:29:58 KST" name="BeforeMethod" finished-at="2021-07-12T21:29:58 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_002_음원.음원_03_FLO_로그인.TC_0224_Chips_FLO로그인_가수곡_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0224_Chips_FLO로그인_가수곡_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:29:58 KST" name="TC_0224_Chips_FLO로그인_가수곡_확인" description="칩스 리그레이션 TC : 실행_0224" finished-at="2021-07-12T21:30:24 KST" duration-ms="26028" status="PASS">
+        <test-method signature="TC_0224_Chips_FLO로그인_가수곡_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:50:06 KST" name="TC_0224_Chips_FLO로그인_가수곡_확인" description="칩스 리그레이션 TC : 실행_0224" finished-at="2021-07-13T20:50:31 KST" duration-ms="25337" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -260,18 +249,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0224_Chips_FLO로그인_가수곡_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:30:24 KST" name="AfterMethod" finished-at="2021-07-12T21:30:24 KST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:50:06 KST" name="BeforeMethod" finished-at="2021-07-13T20:50:06 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0224_Chips_FLO로그인_가수곡_확인 status=SUCCESS method=음원_03_FLO_로그인.TC_0224_Chips_FLO로그인_가수곡_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3] output={null}]]]>
+                <![CDATA[public void Chips_002_음원.음원_03_FLO_로그인.TC_0224_Chips_FLO로그인_가수곡_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:50:31 KST" name="AfterMethod" finished-at="2021-07-13T20:50:31 KST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0224_Chips_FLO로그인_가수곡_확인 status=SUCCESS method=음원_03_FLO_로그인.TC_0224_Chips_FLO로그인_가수곡_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:30:24 KST" name="BeforeMethod" finished-at="2021-07-12T21:30:24 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:50:31 KST" name="BeforeMethod" finished-at="2021-07-13T20:50:31 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -282,7 +282,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0225_Chips_FLO로그인_좋아요노래_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:30:24 KST" name="TC_0225_Chips_FLO로그인_좋아요노래_확인" description="칩스 리그레이션 TC : 실행_0225" finished-at="2021-07-12T21:30:55 KST" duration-ms="30371" status="FAIL">
+        <test-method signature="TC_0225_Chips_FLO로그인_좋아요노래_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:50:31 KST" name="TC_0225_Chips_FLO로그인_좋아요노래_확인" description="칩스 리그레이션 TC : 실행_0225" finished-at="2021-07-13T20:51:00 KST" duration-ms="28719" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -326,18 +326,18 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0225_Chips_FLO로그인_좋아요노래_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:30:55 KST" name="AfterMethod" finished-at="2021-07-12T21:30:57 KST" duration-ms="2586" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:51:00 KST" name="AfterMethod" finished-at="2021-07-13T20:51:03 KST" duration-ms="2586" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0225_Chips_FLO로그인_좋아요노래_확인 status=FAILURE method=음원_03_FLO_로그인.TC_0225_Chips_FLO로그인_좋아요노래_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0225_Chips_FLO로그인_좋아요노래_확인 status=FAILURE method=음원_03_FLO_로그인.TC_0225_Chips_FLO로그인_좋아요노래_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:30:57 KST" name="BeforeMethod" finished-at="2021-07-12T21:30:57 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:51:03 KST" name="BeforeMethod" finished-at="2021-07-13T20:51:03 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -348,7 +348,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0226_Chips_FLO로그인_플레이리스트_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:30:57 KST" name="TC_0226_Chips_FLO로그인_플레이리스트_확인" description="칩스 리그레이션 TC : 실행_0226" finished-at="2021-07-12T21:31:23 KST" duration-ms="25870" status="PASS">
+        <test-method signature="TC_0226_Chips_FLO로그인_플레이리스트_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:51:03 KST" name="TC_0226_Chips_FLO로그인_플레이리스트_확인" description="칩스 리그레이션 TC : 실행_0226" finished-at="2021-07-13T20:51:28 KST" duration-ms="25751" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -359,18 +359,18 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0226_Chips_FLO로그인_플레이리스트_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:31:23 KST" name="AfterMethod" finished-at="2021-07-12T21:31:23 KST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:51:28 KST" name="AfterMethod" finished-at="2021-07-13T20:51:28 KST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0226_Chips_FLO로그인_플레이리스트_확인 status=SUCCESS method=음원_03_FLO_로그인.TC_0226_Chips_FLO로그인_플레이리스트_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0226_Chips_FLO로그인_플레이리스트_확인 status=SUCCESS method=음원_03_FLO_로그인.TC_0226_Chips_FLO로그인_플레이리스트_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:31:23 KST" name="BeforeMethod" finished-at="2021-07-12T21:31:23 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:51:28 KST" name="BeforeMethod" finished-at="2021-07-13T20:51:28 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -381,7 +381,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0227_Chips_FLO로그인_최근들은음악_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:31:23 KST" name="TC_0227_Chips_FLO로그인_최근들은음악_확인" description="칩스 리그레이션 TC : 실행_0227" finished-at="2021-07-12T21:31:55 KST" duration-ms="31995" status="PASS">
+        <test-method signature="TC_0227_Chips_FLO로그인_최근들은음악_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:51:28 KST" name="TC_0227_Chips_FLO로그인_최근들은음악_확인" description="칩스 리그레이션 TC : 실행_0227" finished-at="2021-07-13T20:51:54 KST" duration-ms="25995" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -392,18 +392,18 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0227_Chips_FLO로그인_최근들은음악_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:31:55 KST" name="AfterMethod" finished-at="2021-07-12T21:31:55 KST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:51:54 KST" name="AfterMethod" finished-at="2021-07-13T20:51:54 KST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0227_Chips_FLO로그인_최근들은음악_확인 status=SUCCESS method=음원_03_FLO_로그인.TC_0227_Chips_FLO로그인_최근들은음악_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0227_Chips_FLO로그인_최근들은음악_확인 status=SUCCESS method=음원_03_FLO_로그인.TC_0227_Chips_FLO로그인_최근들은음악_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:31:55 KST" name="BeforeMethod" finished-at="2021-07-12T21:31:55 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:51:54 KST" name="BeforeMethod" finished-at="2021-07-13T20:51:54 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -414,7 +414,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0228_Chips_FLO로그인_셔플해줘_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:31:55 KST" name="TC_0228_Chips_FLO로그인_셔플해줘_확인" description="칩스 리그레이션 TC : 실행_0228" finished-at="2021-07-12T21:32:28 KST" duration-ms="33379" status="FAIL">
+        <test-method signature="TC_0228_Chips_FLO로그인_셔플해줘_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:51:54 KST" name="TC_0228_Chips_FLO로그인_셔플해줘_확인" description="칩스 리그레이션 TC : 실행_0228" finished-at="2021-07-13T20:52:26 KST" duration-ms="32080" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -428,7 +428,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
 at junit.framework.Assert.fail(Assert.java:47)
 at junit.framework.Assert.assertTrue(Assert.java:20)
 at junit.framework.Assert.assertTrue(Assert.java:27)
-at Chips_002_음원.음원_03_FLO_로그인.TC_0228_Chips_FLO로그인_셔플해줘_확인(음원_03_FLO_로그인.java:579)
+at Chips_002_음원.음원_03_FLO_로그인.TC_0228_Chips_FLO로그인_셔플해줘_확인(음원_03_FLO_로그인.java:585)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -458,29 +458,18 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0228_Chips_FLO로그인_셔플해줘_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:32:28 KST" name="AfterMethod" finished-at="2021-07-12T21:32:30 KST" duration-ms="1239" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:52:26 KST" name="AfterMethod" finished-at="2021-07-13T20:52:29 KST" duration-ms="2392" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0228_Chips_FLO로그인_셔플해줘_확인 status=FAILURE method=음원_03_FLO_로그인.TC_0228_Chips_FLO로그인_셔플해줘_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0228_Chips_FLO로그인_셔플해줘_확인 status=FAILURE method=음원_03_FLO_로그인.TC_0228_Chips_FLO로그인_셔플해줘_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:32:30 KST" name="BeforeMethod" finished-at="2021-07-12T21:32:30 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_002_음원.음원_03_FLO_로그인.TC_0229_Chips_FLO로그인_셔플해제_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0229_Chips_FLO로그인_셔플해제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:32:30 KST" name="TC_0229_Chips_FLO로그인_셔플해제_확인" description="칩스 리그레이션 TC : 실행_0229" finished-at="2021-07-12T21:32:46 KST" duration-ms="16173" status="FAIL">
+        <test-method signature="TC_0229_Chips_FLO로그인_셔플해제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:52:29 KST" name="TC_0229_Chips_FLO로그인_셔플해제_확인" description="칩스 리그레이션 TC : 실행_0229" finished-at="2021-07-13T20:52:43 KST" duration-ms="14233" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -494,7 +483,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
 at junit.framework.Assert.fail(Assert.java:47)
 at junit.framework.Assert.assertTrue(Assert.java:20)
 at junit.framework.Assert.assertTrue(Assert.java:27)
-at Chips_002_음원.음원_03_FLO_로그인.TC_0229_Chips_FLO로그인_셔플해제_확인(음원_03_FLO_로그인.java:598)
+at Chips_002_음원.음원_03_FLO_로그인.TC_0229_Chips_FLO로그인_셔플해제_확인(음원_03_FLO_로그인.java:605)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -524,18 +513,29 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0229_Chips_FLO로그인_셔플해제_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:32:46 KST" name="AfterMethod" finished-at="2021-07-12T21:32:47 KST" duration-ms="1178" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:52:29 KST" name="BeforeMethod" finished-at="2021-07-13T20:52:29 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0229_Chips_FLO로그인_셔플해제_확인 status=FAILURE method=음원_03_FLO_로그인.TC_0229_Chips_FLO로그인_셔플해제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3] output={null}]]]>
+                <![CDATA[public void Chips_002_음원.음원_03_FLO_로그인.TC_0229_Chips_FLO로그인_셔플해제_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:52:43 KST" name="AfterMethod" finished-at="2021-07-13T20:52:46 KST" duration-ms="2511" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0229_Chips_FLO로그인_셔플해제_확인 status=FAILURE method=음원_03_FLO_로그인.TC_0229_Chips_FLO로그인_셔플해제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@2f67a4d3]" started-at="2021-07-12T21:32:47 KST" name="tearDownClass" finished-at="2021-07-12T21:32:50 KST" duration-ms="2556" status="PASS">
+        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_002_음원.음원_03_FLO_로그인@7dc3712]" started-at="2021-07-13T20:52:46 KST" name="tearDownClass" finished-at="2021-07-13T20:52:48 KST" duration-ms="2735" status="PASS">
           <params>
             <param index="0">
               <value>

@@ -11,7 +11,7 @@ import Chips_000_xPath.xPath;
 import TestNG_Set.Chips_TestCase;
 import junit.framework.Assert;
 
-public class 음원_03_FLO_로그인 extends Chips_TestCase {
+public class 음원_04_FLO_장르테마 extends Chips_TestCase {
 	
 	String AccessToken;
 	
@@ -85,15 +85,15 @@ public class 음원_03_FLO_로그인 extends Chips_TestCase {
 	    
 	}
 	
-	@Test(description = "칩스 리그레이션 TC : 실행_0220")
-	public void TC_0220_Chips_FLO로그인_아티스트노래_확인(Method method) throws Exception {
+	@Test(description = "칩스 리그레이션 TC : 실행_0230")
+	public void TC_0230_Chips_FLO_장르_걸그룹노래_확인(Method method) throws Exception {
 		 
-		test.log(Status.INFO, "W,  빅뱅 노래 틀어줘 - 발화");
-		util.SWFsendPost("빅뱅 노래 틀어줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, 걸그룹 노래 틀어줘 - 발화");
+		util.SWFsendPost("걸그룹 노래 틀어줘", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "아티스트 노래 재생 TTS 확인");
+		test.log(Status.INFO, "걸그룹 장르 노래 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("BIGBANG의"));
+		Assert.assertTrue(tts.contains("걸그룹의 활기찬 노래"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
@@ -144,15 +144,15 @@ public class 음원_03_FLO_로그인 extends Chips_TestCase {
 
 	}
 	
-	@Test(description = "칩스 리그레이션 TC : 실행_0221")
-	public void TC_0221_Chips_FLO로그인_아티스트노래_확인(Method method) throws Exception {
+	@Test(description = "칩스 리그레이션 TC : 실행_0231")
+	public void TC_0231_Chips_FLO_장르_크로스오버음악_확인(Method method) throws Exception {
 		 
-		test.log(Status.INFO, "W,  서태지 음악 재생 - 발화");
-		util.SWFsendPost("서태지 음악 재생", ServerName, AccessToken);
+		test.log(Status.INFO, "W, 크로스오버 음악 틀어줘 - 발화");
+		util.SWFsendPost("크로스오버 음악 틀어줘", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "아티스트 노래 재생 TTS 확인");
+		test.log(Status.INFO, "걸그룹 장르 노래 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("서태지"));
+		Assert.assertTrue(tts.contains("크로스오버를"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
@@ -203,133 +203,15 @@ public class 음원_03_FLO_로그인 extends Chips_TestCase {
 
 	}
 	
-	@Test(description = "칩스 리그레이션 TC : 실행_0222")
-	public void TC_0222_Chips_FLO로그인_최신음악_확인(Method method) throws Exception {
+	@Test(description = "칩스 리그레이션 TC : 실행_0232")
+	public void TC_0232_Chips_FLO_테마_공룡테마_확인(Method method) throws Exception {
 		 
-		test.log(Status.INFO, "W, 뮤직메이트에서 최신 곡 틀어줘- 발화");
-		util.SWFsendPost("뮤직메이트에서 최신 곡 틀어줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, 공룡 노래 들려줘 - 발화");
+		util.SWFsendPost("공룡 노래 들려줘", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "최신음악 노래 재생 TTS 확인");
+		test.log(Status.INFO, "공룡노래 테마 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("최신 음악을"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
-		
-		test.log(Status.INFO, "FLO 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "최신 음악");
-		
-		test.log(Status.INFO, "앨범아트 확인");
-		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(앨범아트);
-		
-		test.log(Status.INFO, "곡명 확인");
-		boolean 곡명 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(곡명);
-		
-		test.log(Status.INFO, "아티스트 확인");
-		boolean 아티스트 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(아티스트);
-		
-		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
-		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
-
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
-	
-		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
-		
-		test.log(Status.INFO, "반복 버튼 확인");
-		boolean 반복 = util.isElementPresent(By.xpath(xPath.FLO반복버튼));
-		Assert.assertTrue(반복);
-		
-		test.log(Status.INFO, "랜덤 버튼 확인");
-		boolean 랜덤 = util.isElementPresent(By.xpath(xPath.FLO랜덤버튼));
-		Assert.assertTrue(랜덤);
-		
-		test.log(Status.INFO, "재생시간 확인");
-		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
-		Assert.assertTrue(재생시간);
-		util.context("NATIVE_APP");
-		
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
-
-	}
-	
-	@Test(description = "칩스 리그레이션 TC : 실행_0223")
-	public void TC_0223_Chips_FLO로그인_실시간차트_확인(Method method) throws Exception {
-		 
-		test.log(Status.INFO, "W, 인기 플로 노래 틀어줘 - 발화");
-		util.SWFsendPost("인기 플로 노래 틀어줘", ServerName, AccessToken);
-		
-		test.log(Status.INFO, "최신음악 노래 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("Flo 실시간 차트를"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
-		
-		test.log(Status.INFO, "FLO 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "실시간 차트");
-		
-		test.log(Status.INFO, "앨범아트 확인");
-		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(앨범아트);
-		
-		test.log(Status.INFO, "곡명 확인");
-		boolean 곡명 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(곡명);
-		
-		test.log(Status.INFO, "아티스트 확인");
-		boolean 아티스트 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(아티스트);
-		
-		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
-		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
-
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
-	
-		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
-		
-		test.log(Status.INFO, "반복 버튼 확인");
-		boolean 반복 = util.isElementPresent(By.xpath(xPath.FLO반복버튼));
-		Assert.assertTrue(반복);
-		
-		test.log(Status.INFO, "랜덤 버튼 확인");
-		boolean 랜덤 = util.isElementPresent(By.xpath(xPath.FLO랜덤버튼));
-		Assert.assertTrue(랜덤);
-		
-		test.log(Status.INFO, "재생시간 확인");
-		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
-		Assert.assertTrue(재생시간);
-		util.context("NATIVE_APP");
-		
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
-
-	}
-	
-	@Test(description = "칩스 리그레이션 TC : 실행_0224")
-	public void TC_0224_Chips_FLO로그인_가수곡_확인(Method method) throws Exception {
-		 
-		test.log(Status.INFO, "W, jeebanoff의 LEAVE ME 틀어줘 - 발화");
-		util.SWFsendPost("jeebanoff의 LEAVE ME 틀어줘", ServerName, AccessToken);
-		
-		test.log(Status.INFO, "가수+곡 노래 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("jeebanoff (지바노프)의 LEAVE ME. "));
+		Assert.assertTrue(tts.contains("옛날 옛적 지구의 지배자, 공룡 노래를"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
@@ -380,86 +262,20 @@ public class 음원_03_FLO_로그인 extends Chips_TestCase {
 
 	}
 	
-	@Test(description = "칩스 리그레이션 TC : 실행_0225")
-	public void TC_0225_Chips_FLO로그인_좋아요노래_확인(Method method) throws Exception {
+	@Test(description = "칩스 리그레이션 TC : 실행_0233")
+	public void TC_0233_Chips_FLO_테마_매장음악_확인(Method method) throws Exception {
 		 
-		test.log(Status.INFO, "W, 좋아요 음악 틀어 - 발화");
-		util.SWFsendPost("좋아요 음악 틀어", ServerName, AccessToken);
+		test.log(Status.INFO, "W, 매장 음악 틀어줘 - 발화");
+		util.SWFsendPost("매장 음악 틀어줘", ServerName, AccessToken);
 		
-		test.log(Status.INFO, " 좋아요 노래 재생 TTS 확인");
+		test.log(Status.INFO, "매장 음악 테마 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("당신이 Flo에서 좋아요 하신 음악을"));
+		Assert.assertTrue(tts.contains("매장 음악을"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
 		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "좋아요 한 음악");
-		
-		test.log(Status.INFO, "앨범아트 확인");
-		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(앨범아트);
-		
-		test.log(Status.INFO, "곡명 확인");
-		boolean 곡명 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(곡명);
-		
-		test.log(Status.INFO, "아티스트 확인");
-		boolean 아티스트 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(아티스트);
-		
-		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
-		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
-
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
-	
-		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
-		
-		test.log(Status.INFO, "반복 버튼 확인");
-		boolean 반복 = util.isElementPresent(By.xpath(xPath.FLO반복버튼));
-		Assert.assertTrue(반복);
-		
-		test.log(Status.INFO, "랜덤 버튼 확인");
-		boolean 랜덤 = util.isElementPresent(By.xpath(xPath.FLO랜덤버튼));
-		Assert.assertTrue(랜덤);
-		
-		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
-		boolean 좋아요버튼활성화 = util.isElementPresent(By.xpath(xPath.좋아요On_web));
-		Assert.assertTrue(좋아요버튼활성화);
-		util.context("NATIVE_APP");
-		
-		test.log(Status.INFO, "재생시간 확인");
-		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
-		Assert.assertTrue(재생시간);
-		
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
-
-	}
-	
-	@Test(description = "칩스 리그레이션 TC : 실행_0226")
-	public void TC_0226_Chips_FLO로그인_플레이리스트_확인(Method method) throws Exception {
-		 
-		util.context("NATIVE_APP");
-		test.log(Status.INFO, "W, 플레이리스트 틀어줘 - 발화");
-		util.SWFsendPost("플레이리스트 틀어줘", ServerName, AccessToken);
-		
-		test.log(Status.INFO, "최신음악 노래 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("Flo에서 테스트 1 내 리스트"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
-		
-		test.log(Status.INFO, "FLO 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "내 리스트");
+		Assert.assertEquals(FLOtxt, "FLO");
 		
 		test.log(Status.INFO, "앨범아트 확인");
 		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
@@ -505,20 +321,20 @@ public class 음원_03_FLO_로그인 extends Chips_TestCase {
 
 	}
 	
-	@Test(description = "칩스 리그레이션 TC : 실행_0227")
-	public void TC_0227_Chips_FLO로그인_최근들은음악_확인(Method method) throws Exception {
+	@Test(description = "칩스 리그레이션 TC : 실행_0234")
+	public void TC_0234_Chips_FLO_큐레이션_신나는음악_확인(Method method) throws Exception {
 		 
-		test.log(Status.INFO, "W, 최근에 들은 음악 틀어줘 - 발화");
-		util.SWFsendPost("최근에 들은 음악 틀어줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, 신나는 음악 틀어줘 - 발화");
+		util.SWFsendPost("신나는 음악 틀어줘", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "최신음악 노래 재생 TTS 확인");
+		test.log(Status.INFO, "신나는음악 큐레이션 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("최근에 Flo에서 들은 음악을"));
+		Assert.assertTrue(tts.contains("신나는, 노래를"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
 		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "최근들은 음악");
+		Assert.assertEquals(FLOtxt, "FLO");
 		
 		test.log(Status.INFO, "앨범아트 확인");
 		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
@@ -564,47 +380,6 @@ public class 음원_03_FLO_로그인 extends Chips_TestCase {
 
 	}
 	
-	@Test(description = "칩스 리그레이션 TC : 실행_0228")
-	public void TC_0228_Chips_FLO로그인_셔플해줘_확인(Method method) throws Exception {
-		
-		test.log(Status.INFO, "W, jeebanoff 노래 들려줘 - 발화");
-		util.SWFsendPost("jeebanoff 노래 들려줘", ServerName, AccessToken);
-		Thread.sleep(10000);
-		
-		test.log(Status.INFO, "셔플 버튼 클릭");
-		util.click(By.xpath(xPath.FLO랜덤버튼));
-		
-		test.log(Status.INFO, "셔플 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("셔플할게요."));
-		
-		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
-		boolean 랜덤재생 = util.isElementPresent(By.xpath(xPath.랜덤재생On_web));
-		Assert.assertTrue(랜덤재생);
-		
-		
-	}
 	
-	@Test(description = "칩스 리그레이션 TC : 실행_0229")
-	public void TC_0229_Chips_FLO로그인_셔플해제_확인(Method method) throws Exception {
-		
-		util.context("NATIVE_APP");
-		test.log(Status.INFO, "셔플 버튼 클릭");
-		util.click(By.xpath(xPath.FLO랜덤버튼));
-		
-		test.log(Status.INFO, "셔플 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("셔플을 해제했어요"));
-		
-		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
-		boolean 랜덤재생해제 = util.isElementPresent(By.xpath(xPath.랜덤재생Off_web));
-		Assert.assertTrue(랜덤재생해제);
-		util.context("NATIVE_APP");
-		
-	}
 
 }

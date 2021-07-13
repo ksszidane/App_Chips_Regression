@@ -31,10 +31,14 @@
 			<class name="Chips_002_음원.음원_01_멜론" />
 			<class name="Chips_002_음원.음원_02_FLO_미로그인" />
 			<class name="Chips_002_음원.음원_03_FLO_로그인" />
+			<class name="Chips_002_음원.음원_04_FLO_장르테마" />
+			<class name="Chips_002_음원.음원_05_FLO_재생컨트롤러" />
 			-->
 
 	
-			<class name="Chips_002_음원.음원_03_FLO_로그인" />
+			
+			<class name="Chips_002_음원.음원_05_FLO_재생컨트롤러" />
+		
 		
 			
 			
