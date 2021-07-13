@@ -432,6 +432,7 @@ public class 음원_03_FLO_로그인 extends Chips_TestCase {
 		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
 		boolean 좋아요버튼활성화 = util.isElementPresent(By.xpath(xPath.좋아요On_web));
 		Assert.assertTrue(좋아요버튼활성화);
 		util.context("NATIVE_APP");
@@ -581,6 +582,7 @@ public class 음원_03_FLO_로그인 extends Chips_TestCase {
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
 		boolean 랜덤재생 = util.isElementPresent(By.xpath(xPath.랜덤재생On_web));
 		Assert.assertTrue(랜덤재생);
 		
@@ -601,6 +603,7 @@ public class 음원_03_FLO_로그인 extends Chips_TestCase {
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
 		boolean 랜덤재생해제 = util.isElementPresent(By.xpath(xPath.랜덤재생Off_web));
 		Assert.assertTrue(랜덤재생해제);
 		util.context("NATIVE_APP");

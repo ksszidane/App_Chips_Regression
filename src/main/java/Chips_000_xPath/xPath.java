@@ -53,5 +53,8 @@ public class xPath {
 	public static String 반복해제_web = "//button[@class='btn repeat']";
 	public static String 랜덤재생On_web = "//button[@class='btn random on']";
 	public static String 랜덤재생Off_web = "//button[@class='btn random']";
+	
+	//url
+	public static String Webview_URL = "rtg-template.sktnugu.com/view";
 
 }

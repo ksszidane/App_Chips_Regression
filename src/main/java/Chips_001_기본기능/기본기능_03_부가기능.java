@@ -122,6 +122,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		test.log(Status.INFO, "첫번쨰 FLO카드의 미디어바 pause 확인"); 
 		util.fastSwipe(131, 850, 960, 850);
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToWindwosURL(xPath.Webview_URL);
 		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.재생버튼_web));
 		Assert.assertTrue(재생버튼);
 		
@@ -134,6 +135,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		test.log(Status.INFO, "미디어 재생 확인"); 
 		Thread.sleep(500);
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToWindwosURL(xPath.Webview_URL);
 		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.일시정지버튼_web));
 		Assert.assertTrue(재생중확인);
 		

@@ -154,6 +154,7 @@ public class 음원_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
 		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.재생버튼_web));
 		Assert.assertTrue(재생버튼);
 
@@ -170,6 +171,7 @@ public class 음원_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
 		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.일시정지버튼_web));
 		Assert.assertTrue(재생버튼);
 
@@ -186,6 +188,7 @@ public class 음원_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
 		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.재생버튼_web));
 		Assert.assertTrue(재생버튼);
 
@@ -265,6 +268,7 @@ public class 음원_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		boolean 좋아요버튼활성화 = util.isElementPresent(By.xpath(xPath.좋아요On_web));
 		Assert.assertTrue(좋아요버튼활성화);
@@ -286,6 +290,7 @@ public class 음원_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
 		boolean 좋아요버튼비활성화 = util.isElementPresent(By.xpath(xPath.좋아요Off_web));
 		Assert.assertTrue(좋아요버튼비활성화);
 
@@ -297,6 +302,7 @@ public class 음원_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
 		util.SWFsendPost("다음 곡", ServerName, AccessToken);
+		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "제목 확인");
 		String 제목 = util.getText(By.xpath(xPath.FLO제목));
@@ -311,8 +317,10 @@ public class 음원_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0247")
 	public void TC_0247_Chips_FLO_컨트롤러_이전_확인(Method method) throws Exception {
 		
+		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 이전 곡 - 발화");
 		util.SWFsendPost("이전 곡", ServerName, AccessToken);
+		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "제목 확인");
 		String 제목 = util.getText(By.xpath(xPath.FLO제목));
@@ -337,6 +345,7 @@ public class 음원_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
 		boolean 랜덤재생 = util.isElementPresent(By.xpath(xPath.랜덤재생On_web));
 		Assert.assertTrue(랜덤재생);
 
@@ -348,6 +357,7 @@ public class 음원_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
 		util.SWFsendPost("다음 곡", ServerName, AccessToken);
+		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "제목 확인");
 		String 제목 = util.getText(By.xpath(xPath.FLO제목));
@@ -364,6 +374,7 @@ public class 음원_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 이전 곡 - 발화");
 		util.SWFsendPost("이전 곡", ServerName, AccessToken);
+		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "제목 확인");
 		String 제목 = util.getText(By.xpath(xPath.FLO제목));
@@ -389,6 +400,7 @@ public class 음원_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
 		boolean 랜덤재생해제 = util.isElementPresent(By.xpath(xPath.랜덤재생Off_web));
 		Assert.assertTrue(랜덤재생해제);
 		util.context("NATIVE_APP");
@@ -401,6 +413,7 @@ public class 음원_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
 		util.SWFsendPost("다음 곡", ServerName, AccessToken);
+		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "제목 확인");
 		String 제목 = util.getText(By.xpath(xPath.FLO제목));
