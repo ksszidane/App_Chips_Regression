@@ -203,14 +203,6 @@ public class 음원_07_ASMR extends Chips_TestCase {
 		String src = util.getAttribute(By.xpath(xPath.이미지커버src), "src");
 		Assert.assertTrue(src.contains("01_thumbnail.png"));
 		
-		test.log(Status.INFO, "한곡 반복 버튼 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
-		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 한곡반복 = util.isElementPresent(By.xpath(xPath.한곡반복_web));
-		Assert.assertTrue(한곡반복);
-		util.context("NATIVE_APP");
-		
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0318")
@@ -236,7 +228,7 @@ public class 음원_07_ASMR extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 자연의 소리 반복해서 틀어줘 - 발화");
-		util.SWFsendPost("힐링 사운드 재생", ServerName, AccessToken);
+		util.SWFsendPost("자연의 소리 반복해서 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ASMR 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
@@ -245,28 +237,6 @@ public class 음원_07_ASMR extends Chips_TestCase {
 		test.log(Status.INFO, "ASMR 타이틀 확인");
 		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
 		Assert.assertEquals(FLOtxt, "ASMR");
-		
-	}
-	
-	@Test(description = "칩스 리그레이션 TC : 실행_0320")
-	public void TC_0320_Chips_ASMR_이노래뭐야_확인(Method method) throws Exception {
-		
-		test.log(Status.INFO, "곡명 확인");
-		String 곡명 = util.getText(By.xpath(xPath.FLO제목));
-		
-		test.log(Status.INFO, "W, 이 노래 뭐야? - 발화");
-		util.SWFsendPost("이 노래 뭐야", ServerName, AccessToken);
-		
-		test.log(Status.INFO, "ASMR 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains(곡명));
-		
-		test.log(Status.INFO, "재생버튼으로 전환 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
-		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.일시정지버튼_web));
-		Assert.assertTrue(재생버튼);
 		
 	}
 	
