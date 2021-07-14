@@ -268,7 +268,7 @@ public class 음원_03_FLO_로그인 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 인기 플로 노래 틀어줘 - 발화");
 		util.SWFsendPost("인기 플로 노래 틀어줘", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "최신음악 노래 재생 TTS 확인");
+		test.log(Status.INFO, "인기음악 노래 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
 		Assert.assertTrue(tts.contains("Flo 실시간 차트를"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));

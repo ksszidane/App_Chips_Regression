@@ -9,6 +9,7 @@ import com.aventstack.extentreports.Status;
 
 import Chips_000_xPath.xPath;
 import TestNG_Set.Chips_TestCase;
+import junit.framework.Assert;
 
 public class 음원_06_자체소싱 extends Chips_TestCase {
 	
@@ -83,5 +84,303 @@ public class 음원_06_자체소싱 extends Chips_TestCase {
 	    accessToken얻기();
 	    
 	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0300")
+	public void TC_0300_Chips_자체소싱_재생_확인(Method method) throws Exception {
+		 
+		test.log(Status.INFO, "W, 부스트 파크 들려줘 - 발화");
+		util.SWFsendPost("부스트 파크 들려줘", ServerName, AccessToken);
+		
+		test.log(Status.INFO, "걸그룹 장르 노래 재생 TTS 확인");
+		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		Assert.assertTrue(tts.contains("부스트파크송"));
+		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		
+		test.log(Status.INFO, "FLO 타이틀 확인");
+		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
+		Assert.assertEquals(FLOtxt, "음악");
+		
+		test.log(Status.INFO, "앨범아트 확인");
+		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
+		Assert.assertTrue(앨범아트);
+		
+		test.log(Status.INFO, "곡명 확인");
+		boolean 곡명 = util.isElementPresent(By.xpath(xPath.FLO제목));
+		Assert.assertTrue(곡명);
+		
+		test.log(Status.INFO, "아티스트 확인");
+		boolean 아티스트 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
+		Assert.assertTrue(아티스트);
+		
+		test.log(Status.INFO, "미디어컨트롤러 확인");
+		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
+		Assert.assertEquals(일시정지, "재생/일시정지");
+		
+		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
+		Assert.assertTrue(이전);
 
+		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
+		Assert.assertTrue(다음);
+	
+		test.log(Status.INFO, "프로그래스 바 확인");
+		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
+		Assert.assertTrue(progress);
+		
+		test.log(Status.INFO, "반복 버튼 확인");
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
+		boolean 한곡반복 = util.isElementPresent(By.xpath(xPath.한곡반복_web));
+		Assert.assertTrue(한곡반복);
+		util.context("NATIVE_APP");
+		
+		test.log(Status.INFO, "랜덤 버튼 확인");
+		boolean 랜덤 = util.isElementPresent(By.xpath(xPath.FLO랜덤버튼));
+		Assert.assertTrue(랜덤);
+		
+		test.log(Status.INFO, "재생시간 확인");
+		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
+		Assert.assertTrue(재생시간);
+		util.context("NATIVE_APP");
+		
+		boolean chipListView = util.isElementPresent(By.id("chipListView"));
+		Assert.assertTrue(chipListView);
+
+	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0301")
+	public void TC_0301_Chips_자체소싱_재생_확인(Method method) throws Exception {
+		 
+		test.log(Status.INFO, "W, 부스트 파크 노래 들려줘 - 발화");
+		util.SWFsendPost("부스트 파크 노래 들려줘", ServerName, AccessToken);
+		
+		test.log(Status.INFO, "걸그룹 장르 노래 재생 TTS 확인");
+		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		Assert.assertTrue(tts.contains("SK텔레콤의 부스트파크송"));
+		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		
+		test.log(Status.INFO, "FLO 타이틀 확인");
+		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
+		Assert.assertEquals(FLOtxt, "음악");
+		
+		test.log(Status.INFO, "앨범아트 확인");
+		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
+		Assert.assertTrue(앨범아트);
+		
+		test.log(Status.INFO, "곡명 확인");
+		boolean 곡명 = util.isElementPresent(By.xpath(xPath.FLO제목));
+		Assert.assertTrue(곡명);
+		
+		test.log(Status.INFO, "아티스트 확인");
+		boolean 아티스트 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
+		Assert.assertTrue(아티스트);
+		
+		test.log(Status.INFO, "미디어컨트롤러 확인");
+		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
+		Assert.assertEquals(일시정지, "재생/일시정지");
+		
+		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
+		Assert.assertTrue(이전);
+
+		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
+		Assert.assertTrue(다음);
+	
+		test.log(Status.INFO, "프로그래스 바 확인");
+		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
+		Assert.assertTrue(progress);
+		
+		test.log(Status.INFO, "반복 버튼 확인");
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
+		boolean 한곡반복 = util.isElementPresent(By.xpath(xPath.한곡반복_web));
+		Assert.assertTrue(한곡반복);
+		util.context("NATIVE_APP");
+		
+		test.log(Status.INFO, "랜덤 버튼 확인");
+		boolean 랜덤 = util.isElementPresent(By.xpath(xPath.FLO랜덤버튼));
+		Assert.assertTrue(랜덤);
+		
+		test.log(Status.INFO, "재생시간 확인");
+		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
+		Assert.assertTrue(재생시간);
+		util.context("NATIVE_APP");
+		
+		boolean chipListView = util.isElementPresent(By.id("chipListView"));
+		Assert.assertTrue(chipListView);
+
+	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0302")
+	public void TC_0302_Chips_자체소싱_일시정지_확인(Method method) throws Exception {
+		 
+		util.context("NATIVE_APP");
+		test.log(Status.INFO, "W, 일시정지 - 발화");
+		util.SWFsendPost("일시정지", ServerName, AccessToken);
+		Thread.sleep(2000);
+		
+		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
+		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.재생버튼_web));
+		Assert.assertTrue(재생버튼);
+
+	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0241")
+	public void TC_0303_Chips_자체소싱_일시정지취소_확인(Method method) throws Exception {
+		 
+		util.context("NATIVE_APP");
+		test.log(Status.INFO, "W, 일시정지 취소 - 발화");
+		util.SWFsendPost("일시정지 취소", ServerName, AccessToken);
+		Thread.sleep(2000);
+		
+		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
+		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.일시정지버튼_web));
+		Assert.assertTrue(재생버튼);
+
+	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0304")
+	public void TC_0304_Chips_컨트롤러_좋아요_확인(Method method) throws Exception {
+		
+		util.context("NATIVE_APP");
+		test.log(Status.INFO, "좋아요 버튼 클릭 (미디어재생 상태 체크 불가로 발화테스트는 불가)");
+		util.click(By.xpath(xPath.FLO좋아요));
+		
+		test.log(Status.INFO, "좋아요 TTS 확인");
+		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		Assert.assertTrue(tts.contains("좋아요 기능을 지원하지 않는 곡이에요."));
+		
+		test.log(Status.INFO, "좋아요 버튼 비활성화 확인");
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
+		boolean 좋아요버튼비활성화 = util.isElementPresent(By.xpath(xPath.좋아요Off_web));
+		Assert.assertTrue(좋아요버튼비활성화);
+
+	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0305")
+	public void TC_0305_Chips_컨트롤러_좋아요취소_확인(Method method) throws Exception {
+		
+		util.context("NATIVE_APP");
+		test.log(Status.INFO, "좋아요 버튼 클릭 (미디어재생 상태 체크 불가로 발화테스트는 불가)");
+		util.click(By.xpath(xPath.FLO좋아요));
+		
+		test.log(Status.INFO, "좋아요 TTS 확인");
+		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		Assert.assertTrue(tts.contains("좋아요 기능을 지원하지 않는 곡이에요."));
+		
+		test.log(Status.INFO, "좋아요 버튼 비활성화 확인");
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
+		boolean 좋아요버튼비활성화 = util.isElementPresent(By.xpath(xPath.좋아요Off_web));
+		Assert.assertTrue(좋아요버튼비활성화);
+
+	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0306")
+	public void TC_0306_Chips_자체소싱_다음_확인(Method method) throws Exception {
+		
+		util.context("NATIVE_APP");
+		test.log(Status.INFO, "W, 다음 곡 - 발화");
+		util.SWFsendPost("다음 곡", ServerName, AccessToken);
+		Thread.sleep(2000);
+		
+		test.log(Status.INFO, "다음 TTS 확인");
+		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place, 5);
+		Assert.assertTrue(tts.contains("한곡 재생시에는 지원하지 않는 기능입니다."));
+
+	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0307")
+	public void TC_0307_Chips_자체소싱_이전_확인(Method method) throws Exception {
+		
+		util.context("NATIVE_APP");
+		test.log(Status.INFO, "W, 이전 곡 - 발화");
+		util.SWFsendPost("이전 곡", ServerName, AccessToken);
+		Thread.sleep(2000);
+		
+		test.log(Status.INFO, "이전 TTS 확인");
+		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		Assert.assertTrue(tts.contains("한곡 재생시에는 지원하지 않는 기능입니다."));
+	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0308")
+	public void TC_0308_Chips_자체소싱_셔플_확인(Method method) throws Exception {
+		
+		util.context("NATIVE_APP");
+		test.log(Status.INFO, "셔플 버튼 클릭");
+		util.click(By.xpath(xPath.FLO랜덤버튼));
+		Thread.sleep(2000);
+		
+		test.log(Status.INFO, "이전 TTS 확인");
+		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place, 5);
+		Assert.assertTrue(tts.contains("한곡 재생시에는 지원하지 않는 기능입니다."));
+	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0309")
+	public void TC_0309_Chips_자체소싱_이전_확인(Method method) throws Exception {
+		
+		util.context("NATIVE_APP");
+		test.log(Status.INFO, "W, 이전 곡 - 발화");
+		util.SWFsendPost("이전 곡", ServerName, AccessToken);
+		Thread.sleep(2000);
+		
+		test.log(Status.INFO, "이전 TTS 확인");
+		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		Assert.assertTrue(tts.contains("한곡 재생시에는 지원하지 않는 기능입니다."));
+	}
+
+	@Test(description = "칩스 리그레이션 TC : 실행_0310")
+	public void TC_0310_Chips_자체소싱_셔플_확인(Method method) throws Exception {
+		
+		util.context("NATIVE_APP");
+		test.log(Status.INFO, "셔플 버튼 클릭");
+		util.click(By.xpath(xPath.FLO랜덤버튼));
+		Thread.sleep(2000);
+		
+		test.log(Status.INFO, "셔플 TTS 확인");
+		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place, 5);
+		Assert.assertTrue(tts.contains("한곡 재생시에는 지원하지 않는 기능입니다."));
+	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0311")
+	public void TC_0311_Chips_자체소싱_다음_확인(Method method) throws Exception {
+		
+		util.context("NATIVE_APP");
+		test.log(Status.INFO, "W, 다음 곡 - 발화");
+		util.SWFsendPost("다음 곡", ServerName, AccessToken);
+		Thread.sleep(2000);
+		
+		test.log(Status.INFO, "다음 TTS 확인");
+		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		Assert.assertTrue(tts.contains("한곡 재생시에는 지원하지 않는 기능입니다."));
+
+	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0314")
+	public void TC_0314_Chips_자체소싱_종료_확인(Method method) throws Exception {
+		
+		util.context("NATIVE_APP");
+		test.log(Status.INFO, "W, 음악 꺼줘 - 발화");
+		util.SWFsendPost("꺼줘", ServerName, AccessToken);
+		Thread.sleep(2000);
+		
+		test.log(Status.INFO, "음악카드 종료되고 메인화면 확인");
+		boolean temperature = util.isElementPresent(By.id("temperature"));
+		Assert.assertTrue(temperature);
+		boolean temperature_format = util.isElementPresent(By.id("temperature_format"));
+		Assert.assertTrue(temperature_format);
+		boolean location = util.isElementPresent(By.id("location"));
+		Assert.assertTrue(location);
+		boolean weatherImageView = util.isElementPresent(By.id("weatherImageView"));
+		Assert.assertTrue(weatherImageView);
+	}
 }

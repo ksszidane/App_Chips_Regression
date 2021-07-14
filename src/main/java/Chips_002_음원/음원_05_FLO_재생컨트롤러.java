@@ -407,22 +407,23 @@ public class 음원_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 	}
 	
-	@Test(description = "칩스 리그레이션 TC : 실행_0252")
-	public void TC_0252_Chips_FLO_컨트롤러_다음_확인(Method method) throws Exception {
+	@Test(description = "칩스 리그레이션 TC : 실행_0255")
+	public void TC_0255_Chips_FLO_컨트롤러_종료_확인(Method method) throws Exception {
 		
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "W, 다음 곡 - 발화");
-		util.SWFsendPost("다음 곡", ServerName, AccessToken);
+		test.log(Status.INFO, "W, 음악 꺼줘 - 발화");
+		util.SWFsendPost("꺼줘", ServerName, AccessToken);
 		Thread.sleep(2000);
 		
-		test.log(Status.INFO, "제목 확인");
-		String 제목 = util.getText(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(제목.contains("거리의 악사"));
-		
-		test.log(Status.INFO, "가수 확인");
-		String 가수 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(가수.contains("봄여름가을겨울"));
-
+		test.log(Status.INFO, "음악카드 종료되고 메인화면 확인");
+		boolean temperature = util.isElementPresent(By.id("temperature"));
+		Assert.assertTrue(temperature);
+		boolean temperature_format = util.isElementPresent(By.id("temperature_format"));
+		Assert.assertTrue(temperature_format);
+		boolean location = util.isElementPresent(By.id("location"));
+		Assert.assertTrue(location);
+		boolean weatherImageView = util.isElementPresent(By.id("weatherImageView"));
+		Assert.assertTrue(weatherImageView);
 	}
 	
 	

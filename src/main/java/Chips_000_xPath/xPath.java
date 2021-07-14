@@ -56,5 +56,7 @@ public class xPath {
 	
 	//url
 	public static String Webview_URL = "rtg-template.sktnugu.com/view";
+	
+	public static String 이미지커버src = "//div[@class='player__detail__cover asmr']/img";
 
 }
