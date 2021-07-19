@@ -1,4 +1,4 @@
-package Chips_002_음원;
+package Chips_002_미디어;
 
 import java.lang.reflect.Method;
 
@@ -11,7 +11,7 @@ import Chips_000_xPath.xPath;
 import TestNG_Set.Chips_TestCase;
 import junit.framework.Assert;
 
-public class 음원_06_자체소싱 extends Chips_TestCase {
+public class 미디어_06_자체소싱 extends Chips_TestCase {
 	
 	String AccessToken;
 	
@@ -96,7 +96,7 @@ public class 음원_06_자체소싱 extends Chips_TestCase {
 		Assert.assertTrue(tts.contains("부스트파크송"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
-		test.log(Status.INFO, "FLO 타이틀 확인");
+		test.log(Status.INFO, "자체소싱 타이틀 확인");
 		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
 		Assert.assertEquals(FLOtxt, "음악");
 		
@@ -249,8 +249,8 @@ public class 음원_06_자체소싱 extends Chips_TestCase {
 	public void TC_0304_Chips_컨트롤러_좋아요_확인(Method method) throws Exception {
 		
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "좋아요 버튼 클릭 (미디어재생 상태 체크 불가로 발화테스트는 불가)");
-		util.click(By.xpath(xPath.FLO좋아요));
+		test.log(Status.INFO, "W, 좋아요 해줘 - 발화");
+		util.SWFsendPost_playStatus("좋아요 해줘", ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "좋아요 TTS 확인");
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
@@ -269,8 +269,8 @@ public class 음원_06_자체소싱 extends Chips_TestCase {
 	public void TC_0305_Chips_컨트롤러_좋아요취소_확인(Method method) throws Exception {
 		
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "좋아요 버튼 클릭 (미디어재생 상태 체크 불가로 발화테스트는 불가)");
-		util.click(By.xpath(xPath.FLO좋아요));
+		test.log(Status.INFO, "W, 좋아요 해제 - 발화");
+		util.SWFsendPost_playStatus("좋아요 해제", ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "좋아요 TTS 확인");
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
@@ -356,12 +356,38 @@ public class 음원_06_자체소싱 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
-		util.SWFsendPost("다음 곡", ServerName, AccessToken);
-		Thread.sleep(2000);
+		util.SWFsendPost_playStatus("다음 곡", ServerName, AccessToken, "music");
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "다음 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place, 5);
 		Assert.assertTrue(tts.contains("한곡 재생시에는 지원하지 않는 기능입니다."));
+
+	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0312")
+	public void TC_0312_Chips_자체소싱_20초뒤로_확인(Method method) throws Exception {
+		
+		util.context("NATIVE_APP");
+		test.log(Status.INFO, "W, 20초 뒤로 이동 - 발화");
+		util.SWFsendPost_playStatus("20초 뒤로 이동", ServerName, AccessToken, "music");
+		
+		test.log(Status.INFO, "20초뒤로 이동 TTS 확인");
+		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		Assert.assertTrue(tts.contains("뮤직 서비스에서는 지원하지 않는 기능이에요."));
+
+	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0313")
+	public void TC_0313_Chips_자체소싱_15초앞으로_확인(Method method) throws Exception {
+		
+		util.context("NATIVE_APP");
+		test.log(Status.INFO, "W, 15초 앞으로 이동 - 발화");
+		util.SWFsendPost_playStatus("15초 앞으로 이동", ServerName, AccessToken, "music");
+		
+		test.log(Status.INFO, "15초 앞으로 이동 TTS 확인");
+		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place, 5);
+		Assert.assertTrue(tts.contains("뮤직 서비스에서는 지원하지 않는 기능이에요."));
 
 	}
 	
@@ -371,7 +397,7 @@ public class 음원_06_자체소싱 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 음악 꺼줘 - 발화");
 		util.SWFsendPost("꺼줘", ServerName, AccessToken);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "음악카드 종료되고 메인화면 확인");
 		boolean temperature = util.isElementPresent(By.id("temperature"));
@@ -383,4 +409,6 @@ public class 음원_06_자체소싱 extends Chips_TestCase {
 		boolean weatherImageView = util.isElementPresent(By.id("weatherImageView"));
 		Assert.assertTrue(weatherImageView);
 	}
+	
+	
 }

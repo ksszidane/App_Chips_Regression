@@ -1,4 +1,4 @@
-package Chips_002_음원;
+package Chips_002_미디어;
 
 import java.lang.reflect.Method;
 
@@ -11,7 +11,7 @@ import Chips_000_xPath.xPath;
 import TestNG_Set.Chips_TestCase;
 import junit.framework.Assert;
 
-public class 음원_01_멜론 extends Chips_TestCase {
+public class 미디어_11_오디오북 extends Chips_TestCase {
 	
 	String AccessToken;
 	
@@ -40,7 +40,7 @@ public class 음원_01_멜론 extends Chips_TestCase {
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
 	    
 	    test.log(Status.INFO, "acceesToken : " + actn); 
-	    System.out.println(actn);
+	    System.out.println("토큰 값 : " + actn);
 	    AccessToken = actn;
 	    
 	}
@@ -85,69 +85,20 @@ public class 음원_01_멜론 extends Chips_TestCase {
 	    
 	}
 	
-	@Test(description = "칩스 리그레이션 TC : 실행_0146")
-	public void TC_0146_Chips_멜론미지원_확인(Method method) throws Exception {
+	@Test(description = "칩스 리그레이션 TC : 실행_0415")
+	public void TC_0415_Chips_오디오북_미지원_확인(Method method) throws Exception {
 		 
-		test.log(Status.INFO, "W, 멜론에서 음악 들려줘 - 발화");
-		util.SWFsendPost("멜론에서 음악 들려줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, 오디오북 - 발화");
+		util.SWFsendPost("오디오북", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "멜론 미지원 TTS 확인");
+		test.log(Status.INFO, "오디오북 미지원 TTS 확인");
 		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Equals(tts, data.OOS_set));
+		Assert.assertTrue(util.dataCheck_Contains(tts, data.CHIPS_USD_set));
 		
-		test.log(Status.INFO, "oos action_type 확인");
+		test.log(Status.INFO, "usd action_type 확인");
 		String usd = util.action_type_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(usd.contains("oos"));
-		
-		
-	}
-	
-	@Test(description = "칩스 리그레이션 TC : 실행_0235")
-	public void TC_0235_Chips_멜론미지원_확인(Method method) throws Exception {
-		 
-		test.log(Status.INFO, "W, 멜론에서 음악 재생 - 발화");
-		util.SWFsendPost("멜론에서 음악 재생", ServerName, AccessToken);
-		
-		test.log(Status.INFO, "멜론 미지원 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Equals(tts, data.OOS_set));
-		
-		test.log(Status.INFO, "oos action_type 확인");
-		String usd = util.action_type_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(usd.contains("oos"));
-		
-	}
-	
-	@Test(description = "칩스 리그레이션 TC : 실행_0236")
-	public void TC_0236_Chips_멜론미지원_확인(Method method) throws Exception {
-		 
-		test.log(Status.INFO, "W, 멜론에서 플레이리스트 틀어줘 - 발화");
-		util.SWFsendPost("멜론에서 플레이리스트 틀어줘", ServerName, AccessToken);
-		
-		test.log(Status.INFO, "멜론 미지원 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Equals(tts, data.OOS_set));
-		
-		test.log(Status.INFO, "oos action_type 확인");
-		String usd = util.action_type_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(usd.contains("oos"));
-		
-	}
-	
-	@Test(description = "칩스 리그레이션 TC : 실행_0237")
-	public void TC_0237_Chips_멜론미지원_확인(Method method) throws Exception {
-		 
-		test.log(Status.INFO, "W, 멜론에서 좋아요 한 음악 틀어줘 - 발화");
-		util.SWFsendPost("멜론에서 좋아요 한 음악 틀어줘", ServerName, AccessToken);
-		
-		test.log(Status.INFO, "멜론 미지원 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Equals(tts, data.OOS_set));
-		
-		test.log(Status.INFO, "oos action_type 확인");
-		String usd = util.action_type_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(usd.contains("oos"));
-		
+		Assert.assertTrue(usd.contains("usd"));
+
 	}
 
 }

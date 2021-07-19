@@ -162,9 +162,13 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 환경 설정 보여줘- 발화");
 		util.SWFsendPost("환경 설정 보여줘", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "환경설정 미지원 TTS 확인");
+		test.log(Status.INFO, "홈 화면 변경 미지원 TTS 확인");
 		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("아직 할 수 없는 일이에요. 이 기능은 배우고 있어요."));
+		Assert.assertTrue(util.dataCheck_Equals(tts, data.CHIPS_USD_set));
+		
+		test.log(Status.INFO, "usd action_type 확인");
+		String usd = util.action_type_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		Assert.assertTrue(usd.contains("usd"));
 
 	}
 	
@@ -180,9 +184,13 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 환경 설정 보여줘 - 발화");
 		util.SWFsendPost("환경 설정 보여줘", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "환경설정 미지원 TTS 확인");
+		test.log(Status.INFO, "홈 화면 변경 미지원 TTS 확인");
 		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("아직 할 수 없는 일이에요. 이 기능은 배우고 있어요."));
+		Assert.assertTrue(util.dataCheck_Equals(tts, data.CHIPS_USD_set));
+		
+		test.log(Status.INFO, "usd action_type 확인");
+		String usd = util.action_type_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		Assert.assertTrue(usd.contains("usd"));
 		
 		test.log(Status.INFO, "미디어 재생 종료");
 		util.SWFsendPost("그만", ServerName, AccessToken);

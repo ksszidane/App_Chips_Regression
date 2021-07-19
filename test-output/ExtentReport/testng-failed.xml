@@ -15,19 +15,15 @@
     <parameter name="AppName" value="Chips"/>
     <parameter name="userID_nuguqa001" value="ALDFH3D1Q7W6071EFE41"/>
     <classes>
-      <class name="Chips_002_음원.음원_05_FLO_재생컨트롤러">
+      <class name="Chips_004_생활정보.생활정보_06_날씨_현재기온">
         <methods>
           <include name="setupClass"/>
           <include name="tearDownClass"/>
+          <include name="TC_0745_Chips_날씨_현재온도_추워_확인" invocation-numbers="0"/>
           <include name="BeforeMethod"/>
-          <include name="TC_0247_Chips_FLO_컨트롤러_이전_확인" invocation-numbers="0"/>
-          <include name="TC_0252_Chips_FLO_컨트롤러_다음_확인" invocation-numbers="0"/>
-          <include name="TC_0249_Chips_FLO_컨트롤러_다음_확인" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-          <include name="TC_0250_Chips_FLO_컨트롤러_이전_확인" invocation-numbers="0"/>
-          <include name="TC_0246_Chips_FLO_컨트롤러_다음_확인" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Chips_002_음원.음원_05_FLO_재생컨트롤러 -->
+      </class> <!-- Chips_004_생활정보.생활정보_06_날씨_현재기온 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->

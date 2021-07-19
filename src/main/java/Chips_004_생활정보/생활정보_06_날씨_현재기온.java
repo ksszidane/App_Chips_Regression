@@ -1,7 +1,6 @@
-package Chips_001_기본기능;
+package Chips_004_생활정보;
 
 import java.lang.reflect.Method;
-import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
@@ -12,7 +11,7 @@ import Chips_000_xPath.xPath;
 import TestNG_Set.Chips_TestCase;
 import junit.framework.Assert;
 
-public class 기본기능_03_부가기능 extends Chips_TestCase {
+public class 생활정보_06_날씨_현재기온 extends Chips_TestCase {
 	
 	String AccessToken;
 	
@@ -28,9 +27,9 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "chips 선택"); 
 	    util.click(By.xpath(xPath.chips_1st));
-	  
-	    util.ProgressBar_Loading();
 	    
+	    util.ProgressBar_Loading();
+	  
 	    test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    
@@ -41,12 +40,10 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
 	    
 	    test.log(Status.INFO, "acceesToken : " + actn); 
-	    System.out.println(actn);
+	    System.out.println("토큰 값 : " + actn);
 	    AccessToken = actn;
 	    
-		
 	}
-
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0000")
 	public void TC_0000_앱실행과AccessToken얻기(Method method) throws Exception {
@@ -85,63 +82,33 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 	    util.ProgressBar_Loading();
 	    
 	    accessToken얻기();
-
+	    
 	}
 	
-	@Test(description = "칩스 리그레이션 TC : 실행_0145")
-	public void TC_0145_미디어재생중_infoPlay실행(Method method) throws Exception {
-		 
-		test.log(Status.INFO, "W, 노래 들려줘 - 발화");
-		util.SWFsendPost("FLO에서 Daft Punk 노래 들려줘", ServerName, AccessToken);
+	@Test(description = "칩스 리그레이션 TC : 실행_0745")
+	public void TC_0745_Chips_날씨_현재온도_추워_확인(Method method) throws Exception {
 		
-		test.log(Status.INFO, "FLO 미디어 실행 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		test.log(Status.INFO, "W, 지금 추워? - 발화");
+		util.SWFsendPost("지금 추워?", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
-		boolean closeSnackbar = util.isElementPresent(By.id("closeSnackbar"));
-		if(closeSnackbar == true) {
-			util.click(By.id("closeSnackbar"));
-		} else { 
-			Thread.sleep(1000);
-		}
-        
-		test.log(Status.INFO, "FLO 카드 노출 확인"); 
-		String FLO = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLO, "FLO");
+		test.log(Status.INFO, "지금 추워? TTS 확인");
+		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		Assert.assertTrue(tts.contains("현재 기온은"));
+		Assert.assertTrue(tts.contains("도 입니다."));
+	
+	}
+	
+	@Test(description = "칩스 리그레이션 TC : 실행_0746")
+	public void TC_0746_Chips_날씨_현재온도_더워_확인(Method method) throws Exception {
 		
-		Thread.sleep(3000);
-		test.log(Status.INFO,  "미디어 재생 중 W, 날씨 알려줘 - 발화");
-		util.SWFsendPost("날씨 알려줘", ServerName, AccessToken);
-		Thread.sleep(1000);
+		test.log(Status.INFO, "W, 지금 밖에 더워? - 발화");
+		util.SWFsendPost("지금 밖에 더워?", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "날씨 카드 노출 확인"); 
-		String 날씨 = util.getText(By.xpath(xPath.날씨카드타이틀));
-		Assert.assertTrue(날씨.contains("날씨"));
-		
-		test.log(Status.INFO, "첫번쨰 FLO카드의 미디어바 pause 확인"); 
-		util.fastSwipe(131, 850, 960, 850);
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		System.out.println(util.allWindwosIndexCount());
-		util.switchToWindwosIndex(1);
-		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.재생버튼_web));
-		Assert.assertTrue(재생버튼);
-		
-		test.log(Status.INFO, "두번째 날씨카드의 이동 후 닫기"); 
-		util.fastSwipe(960, 850, 131, 850);
-		Thread.sleep(500);
-		util.context("NATIVE_APP");
-		util.click(By.xpath(xPath.두번쨰카드닫기));
-		
-		test.log(Status.INFO, "미디어 재생 확인"); 
-		Thread.sleep(500);
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		System.out.println(util.allWindwosIndexCount());
-		util.switchToWindwosIndex(1);
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.일시정지버튼_web));
-		Assert.assertTrue(재생중확인);
-		
-		
+		test.log(Status.INFO, "지금 밖에 더워? TTS 확인");
+		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		Assert.assertTrue(tts.contains("현재 기온은"));
+		Assert.assertTrue(tts.contains("도 입니다."));
+
 	}
 
 }
