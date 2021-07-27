@@ -15,15 +15,31 @@
     <parameter name="AppName" value="Chips"/>
     <parameter name="userID_nuguqa001" value="ALDFH3D1Q7W6071EFE41"/>
     <classes>
-      <class name="Chips_004_생활정보.생활정보_06_날씨_현재기온">
+      <class name="Chips_006_금융.금융_01_삼성증권">
         <methods>
-          <include name="setupClass"/>
           <include name="tearDownClass"/>
-          <include name="TC_0745_Chips_날씨_현재온도_추워_확인" invocation-numbers="0"/>
-          <include name="BeforeMethod"/>
+          <include name="TC_0990_Chips_삼성증권_종목별주가_장전_전일휴일_확인" invocation-numbers="0"/>
+          <include name="TC_0960_1_Chips_삼성증권_종합주가지수_장전_확인" invocation-numbers="0"/>
+          <include name="TC_0962_1_Chips_삼성증권_종합주가지수_장전_확인" invocation-numbers="0"/>
           <include name="AfterMethod"/>
+          <include name="TC_0960_3_Chips_삼성증권_종합주가지수_장종_확인" invocation-numbers="0"/>
+          <include name="TC_0962_3_Chips_삼성증권_종합주가지수_장종_확인" invocation-numbers="0"/>
+          <include name="TC_0981_Chips_삼성증권_종목별주가_장중_상승_확인" invocation-numbers="0"/>
+          <include name="TC_0986_Chips_삼성증권_종목별주가_장종_하락_확인" invocation-numbers="0"/>
+          <include name="setupClass"/>
+          <include name="TC_0989_Chips_삼성증권_종목별주가_장전_확인" invocation-numbers="0"/>
+          <include name="BeforeMethod"/>
+          <include name="TC_0966_Chips_삼성증권_종합주가지수_코스닥_확인" invocation-numbers="0"/>
+          <include name="TC_0985_Chips_삼성증권_종목별주가_장종_상승_확인" invocation-numbers="0"/>
+          <include name="TC_0959_1_Chips_삼성증권_종합주가지수_장전_확인" invocation-numbers="0"/>
+          <include name="TC_0961_1_Chips_삼성증권_종합주가지수_장전_확인" invocation-numbers="0"/>
+          <include name="TC_0961_3_Chips_삼성증권_종합주가지수_장종_확인" invocation-numbers="0"/>
+          <include name="TC_0987_Chips_삼성증권_종목별주가_장종_보합_확인" invocation-numbers="0"/>
+          <include name="TC_0988_Chips_삼성증권_종목별주가_장종_정지_확인" invocation-numbers="0"/>
+          <include name="TC_0991_Chips_삼성증권_종목별주가_휴장일_확인" invocation-numbers="0"/>
+          <include name="TC_0959_3_Chips_삼성증권_종합주가지수_장종_확인" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_06_날씨_현재기온 -->
+      </class> <!-- Chips_006_금융.금융_01_삼성증권 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->

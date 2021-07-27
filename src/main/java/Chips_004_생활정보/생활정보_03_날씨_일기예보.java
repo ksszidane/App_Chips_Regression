@@ -237,13 +237,14 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 내일 날씨 - 발화");
 		util.SWFsendPost("내일날씨", ServerName, AccessToken);
+		Thread.sleep(1000);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		String txt = util.getText(By.xpath(xPath.날씨타이틀_web));
-		String 내일날짜 = util.getChangePreviousDate(+1);
+		String 내일날짜 = util.getChangePreviousDate(1);
 		System.out.println(내일날짜);
 		Assert.assertEquals(txt, 내일날짜 + " 날씨");
 		
@@ -370,12 +371,13 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "오늘 기준 날짜 데이터 생성");
-		String 모레날짜 = util.getChangePreviousDate(+2);
-		String 모레요일 = util.getDayOfWeek(+2);
+		String 모레날짜 = util.getChangePreviousDate(2);
+		String 모레요일 = util.getDayOfWeek(2);
 		
 		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 내일모레 날씨 - 발화");
 		util.SWFsendPost("내일모레 날씨", ServerName, AccessToken);
+		Thread.sleep(1000);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -516,6 +518,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 다음 주 날씨 알려줘 - 발화");
 		util.SWFsendPost("다음 주 날씨 알려줘", ServerName, AccessToken);
+		Thread.sleep(1000);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -544,7 +547,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		String 첫번째요일 = util.getText(By.xpath(xPath.주간날씨리스트_1st요일_web));
-		Assert.assertTrue(첫번째요일.contains(util.getDayOfWeek(0)));
+		Assert.assertTrue(첫번째요일.contains("월"));
 		
 		test.log(Status.INFO, "모레날씨 최저온도 확인");
 		boolean 최저온도 = util.isElementPresent(By.xpath(xPath.주간날씨리스트_1st최저기온_web));

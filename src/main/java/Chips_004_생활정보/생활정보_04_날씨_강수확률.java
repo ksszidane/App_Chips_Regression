@@ -257,7 +257,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		String 첫번째요일 = util.getText(By.xpath(xPath.주간날씨리스트_1st요일_web));
-		Assert.assertTrue(첫번째요일.contains(util.getDayOfWeek(0)));
+		Assert.assertTrue(첫번째요일.contains("월"));
 		
 		test.log(Status.INFO, "모레날씨 최저온도 확인");
 		boolean 최저온도 = util.isElementPresent(By.xpath(xPath.주간날씨리스트_1st최저기온_web));

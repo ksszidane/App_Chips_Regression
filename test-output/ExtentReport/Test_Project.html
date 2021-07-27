@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test_Project</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>29/2/15</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 19 21:50:42 KST 2021</td>
+<td>Started on:</td><td>Tue Jul 27 11:36:41 KST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>109 seconds (109241 ms)</td>
+<tr><td>Total time:</td><td>603 seconds (603066 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,102 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0981_Chips_삼성증권_종목별주가_장중_상승_확인()'><b>TC_0981_Chips_삼성증권_종목별주가_장중_상승_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0981<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0981_Chips_삼성증권_종목별주가_장중_상승_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at Chips_006_금융.금융_01_삼성증권.TC_0981_Chips_삼성증권_종목별주가_장중_상승_확인(금융_01_삼성증권.java:812)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace969984170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace969984170'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at Chips_006_금융.금융_01_삼성증권.TC_0981_Chips_삼성증권_종목별주가_장중_상승_확인(금융_01_삼성증권.java:812)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>18</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0966_Chips_삼성증권_종합주가지수_코스닥_확인()'><b>TC_0966_Chips_삼성증권_종합주가지수_코스닥_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0966<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0966_Chips_삼성증권_종합주가지수_코스닥_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at Chips_006_금융.금융_01_삼성증권.TC_0966_Chips_삼성증권_종합주가지수_코스닥_확인(금융_01_삼성증권.java:637)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace382558817", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace382558817'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at Chips_006_금융.금융_01_삼성증권.TC_0966_Chips_삼성증권_종합주가지수_코스닥_확인(금융_01_삼성증권.java:637)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,20 +171,728 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_06_날씨_현재기온.TC_0746_Chips_날씨_현재온도_더워_확인()'><b>TC_0746_Chips_날씨_현재온도_더워_확인</b><br>Test class: Chips_004_생활정보.생활정보_06_날씨_현재기온<br>Test method: 칩스 리그레이션 TC : 실행_0746<br>Parameters: public void Chips_004_생활정보.생활정보_06_날씨_현재기온.TC_0746_Chips_날씨_현재온도_더워_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0955_Chips_삼성증권_도움말_확인()'><b>TC_0955_Chips_삼성증권_도움말_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0955<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0955_Chips_삼성증권_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>15</td>
-<td>Chips_004_생활정보.생활정보_06_날씨_현재기온@6e2aa843</td></tr>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_06_날씨_현재기온.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_06_날씨_현재기온<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_06_날씨_현재기온.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0979_Chips_삼성증권_특정국가지수_일본지수_확인()'><b>TC_0979_Chips_삼성증권_특정국가지수_일본지수_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0979<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0979_Chips_삼성증권_특정국가지수_일본지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>58</td>
-<td>Chips_004_생활정보.생활정보_06_날씨_현재기온@6e2aa843</td></tr>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_06_날씨_현재기온.TC_0745_Chips_날씨_현재온도_추워_확인()'><b>TC_0745_Chips_날씨_현재온도_추워_확인</b><br>Test class: Chips_004_생활정보.생활정보_06_날씨_현재기온<br>Test method: 칩스 리그레이션 TC : 실행_0745<br>Parameters: public void Chips_004_생활정보.생활정보_06_날씨_현재기온.TC_0745_Chips_날씨_현재온도_추워_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0984_Chips_삼성증권_종목별주가_장중_정지_확인()'><b>TC_0984_Chips_삼성증권_종목별주가_장중_정지_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0984<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0984_Chips_삼성증권_종목별주가_장중_정지_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>15</td>
-<td>Chips_004_생활정보.생활정보_06_날씨_현재기온@6e2aa843</td></tr>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0974_Chips_삼성증권_미지원기능_확인()'><b>TC_0974_Chips_삼성증권_미지원기능_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0973<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0974_Chips_삼성증권_미지원기능_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0963_Chips_삼성증권_종합주가지수_어제_확인()'><b>TC_0963_Chips_삼성증권_종합주가지수_어제_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0963<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0963_Chips_삼성증권_종합주가지수_어제_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0959_2_Chips_삼성증권_종합주가지수_장중_확인()'><b>TC_0959_2_Chips_삼성증권_종합주가지수_장중_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0959<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0959_2_Chips_삼성증권_종합주가지수_장중_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0975_Chips_삼성증권_미지원기능_확인()'><b>TC_0975_Chips_삼성증권_미지원기능_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0975<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0975_Chips_삼성증권_미지원기능_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0982_Chips_삼성증권_종목별주가_장중_하락_확인()'><b>TC_0982_Chips_삼성증권_종목별주가_장중_하락_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0982<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0982_Chips_삼성증권_종목별주가_장중_하락_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0983_Chips_삼성증권_종목별주가_장중_보합_확인()'><b>TC_0983_Chips_삼성증권_종목별주가_장중_보합_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0983<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0983_Chips_삼성증권_종목별주가_장중_보합_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0977_Chips_삼성증권_정국가지수_미국지수_확인()'><b>TC_0977_Chips_삼성증권_정국가지수_미국지수_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0977<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0977_Chips_삼성증권_정국가지수_미국지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0964_Chips_삼성증권_종합주가지수_어제_확인()'><b>TC_0964_Chips_삼성증권_종합주가지수_어제_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0963<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0964_Chips_삼성증권_종합주가지수_어제_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0976_Chips_삼성증권_국외지수_확인()'><b>TC_0976_Chips_삼성증권_국외지수_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0976<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0976_Chips_삼성증권_국외지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0961_2_Chips_삼성증권_종합주가지수_장중_확인()'><b>TC_0961_2_Chips_삼성증권_종합주가지수_장중_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0961<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0961_2_Chips_삼성증권_종합주가지수_장중_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0953_Chips_삼성증권_도움말_확인()'><b>TC_0953_Chips_삼성증권_도움말_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0953<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0953_Chips_삼성증권_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0969_Chips_삼성증권_미지원기간_과거_확인()'><b>TC_0969_Chips_삼성증권_미지원기간_과거_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0969<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0969_Chips_삼성증권_미지원기간_과거_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0957_Chips_삼성증권_TmapPOI발화_확인()'><b>TC_0957_Chips_삼성증권_TmapPOI발화_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0957<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0957_Chips_삼성증권_TmapPOI발화_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0965_Chips_삼성증권_종합주가지수_코스닥_확인()'><b>TC_0965_Chips_삼성증권_종합주가지수_코스닥_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0965<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0965_Chips_삼성증권_종합주가지수_코스닥_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0980_Chips_삼성증권_특정국가지수_대만지수_확인()'><b>TC_0980_Chips_삼성증권_특정국가지수_대만지수_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0980<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0980_Chips_삼성증권_특정국가지수_대만지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0962_2_Chips_삼성증권_종합주가지수_장중_확인()'><b>TC_0962_2_Chips_삼성증권_종합주가지수_장중_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0961<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0962_2_Chips_삼성증권_종합주가지수_장중_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0954_Chips_삼성증권_도움말_확인()'><b>TC_0954_Chips_삼성증권_도움말_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0954<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0954_Chips_삼성증권_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0960_2_Chips_삼성증권_종합주가지수_장중_확인()'><b>TC_0960_2_Chips_삼성증권_종합주가지수_장중_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0960<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0960_2_Chips_삼성증권_종합주가지수_장중_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0972_Chips_삼성증권_미지원기간_미래_확인()'><b>TC_0972_Chips_삼성증권_미지원기간_미래_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0972<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0972_Chips_삼성증권_미지원기간_미래_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0971_Chips_삼성증권_미지원기간_과거_확인()'><b>TC_0971_Chips_삼성증권_미지원기간_과거_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0971<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0971_Chips_삼성증권_미지원기간_과거_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>61</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0956_Chips_삼성증권_도움말_확인()'><b>TC_0956_Chips_삼성증권_도움말_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0956<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0956_Chips_삼성증권_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0973_Chips_삼성증권_미지원기간_미래_확인()'><b>TC_0973_Chips_삼성증권_미지원기간_미래_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0973<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0973_Chips_삼성증권_미지원기간_미래_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0978_Chips_삼성증권_특정국가지수_홍콩지수_확인()'><b>TC_0978_Chips_삼성증권_특정국가지수_홍콩지수_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0978<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0978_Chips_삼성증권_특정국가지수_홍콩지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0958_Chips_삼성증권_TmapPOI발화_확인()'><b>TC_0958_Chips_삼성증권_TmapPOI발화_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0958<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0958_Chips_삼성증권_TmapPOI발화_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0970_Chips_삼성증권_미지원기간_과거_확인()'><b>TC_0970_Chips_삼성증권_미지원기간_과거_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0970<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0970_Chips_삼성증권_미지원기간_과거_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0961_3_Chips_삼성증권_종합주가지수_장종_확인()'><b>TC_0961_3_Chips_삼성증권_종합주가지수_장종_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0961<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0961_3_Chips_삼성증권_종합주가지수_장종_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0961_3_Chips_삼성증권_종합주가지수_장종_확인(금융_01_삼성증권.java:421)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace227493227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace227493227'><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0961_3_Chips_삼성증권_종합주가지수_장종_확인(금융_01_삼성증권.java:421)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0962_3_Chips_삼성증권_종합주가지수_장종_확인()'><b>TC_0962_3_Chips_삼성증권_종합주가지수_장종_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0961<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0962_3_Chips_삼성증권_종합주가지수_장종_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0962_3_Chips_삼성증권_종합주가지수_장종_확인(금융_01_삼성증권.java:509)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace142186749", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace142186749'><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0962_3_Chips_삼성증권_종합주가지수_장종_확인(금융_01_삼성증권.java:509)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0987_Chips_삼성증권_종목별주가_장종_보합_확인()'><b>TC_0987_Chips_삼성증권_종목별주가_장종_보합_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0987<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0987_Chips_삼성증권_종목별주가_장종_보합_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0987_Chips_삼성증권_종목별주가_장종_보합_확인(금융_01_삼성증권.java:997)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1276047659", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1276047659'><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0987_Chips_삼성증권_종목별주가_장종_보합_확인(금융_01_삼성증권.java:997)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0990_Chips_삼성증권_종목별주가_장전_전일휴일_확인()'><b>TC_0990_Chips_삼성증권_종목별주가_장전_전일휴일_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0990<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0990_Chips_삼성증권_종목별주가_장전_전일휴일_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 [장전]상태로 장전상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0990_Chips_삼성증권_종목별주가_장전_전일휴일_확인(금융_01_삼성증권.java:1091)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace624274782", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace624274782'><pre>org.testng.SkipException: 현재 [장전]상태로 장전상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0990_Chips_삼성증권_종목별주가_장전_전일휴일_확인(금융_01_삼성증권.java:1091)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0959_1_Chips_삼성증권_종합주가지수_장전_확인()'><b>TC_0959_1_Chips_삼성증권_종합주가지수_장전_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0959<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0959_1_Chips_삼성증권_종합주가지수_장전_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 [장중]상태로 장전상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0959_1_Chips_삼성증권_종합주가지수_장전_확인(금융_01_삼성증권.java:188)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1716587901", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1716587901'><pre>org.testng.SkipException: 현재 [장중]상태로 장전상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0959_1_Chips_삼성증권_종합주가지수_장전_확인(금융_01_삼성증권.java:188)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0961_1_Chips_삼성증권_종합주가지수_장전_확인()'><b>TC_0961_1_Chips_삼성증권_종합주가지수_장전_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0961<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0961_1_Chips_삼성증권_종합주가지수_장전_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 [장중]상태로 장전상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0961_1_Chips_삼성증권_종합주가지수_장전_확인(금융_01_삼성증권.java:367)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1953914586", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1953914586'><pre>org.testng.SkipException: 현재 [장중]상태로 장전상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0961_1_Chips_삼성증권_종합주가지수_장전_확인(금융_01_삼성증권.java:367)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0991_Chips_삼성증권_종목별주가_휴장일_확인()'><b>TC_0991_Chips_삼성증권_종목별주가_휴장일_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0991<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0991_Chips_삼성증권_종목별주가_휴장일_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 휴장일 상태가 아님 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0991_Chips_삼성증권_종목별주가_휴장일_확인(금융_01_삼성증권.java:1123)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2054703318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2054703318'><pre>org.testng.SkipException: 현재 휴장일 상태가 아님 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0991_Chips_삼성증권_종목별주가_휴장일_확인(금융_01_삼성증권.java:1123)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0988_Chips_삼성증권_종목별주가_장종_정지_확인()'><b>TC_0988_Chips_삼성증권_종목별주가_장종_정지_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0988<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0988_Chips_삼성증권_종목별주가_장종_정지_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0988_Chips_삼성증권_종목별주가_장종_정지_확인(금융_01_삼성증권.java:1029)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1713772244", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1713772244'><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0988_Chips_삼성증권_종목별주가_장종_정지_확인(금융_01_삼성증권.java:1029)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0959_3_Chips_삼성증권_종합주가지수_장종_확인()'><b>TC_0959_3_Chips_삼성증권_종합주가지수_장종_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0959<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0959_3_Chips_삼성증권_종합주가지수_장종_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0959_3_Chips_삼성증권_종합주가지수_장종_확인(금융_01_삼성증권.java:236)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1038009931", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1038009931'><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0959_3_Chips_삼성증권_종합주가지수_장종_확인(금융_01_삼성증권.java:236)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0989_Chips_삼성증권_종목별주가_장전_확인()'><b>TC_0989_Chips_삼성증권_종목별주가_장전_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0989<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0989_Chips_삼성증권_종목별주가_장전_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 [장전]상태로 장전상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0989_Chips_삼성증권_종목별주가_장전_확인(금융_01_삼성증권.java:1062)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1848928897", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1848928897'><pre>org.testng.SkipException: 현재 [장전]상태로 장전상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0989_Chips_삼성증권_종목별주가_장전_확인(금융_01_삼성증권.java:1062)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0960_3_Chips_삼성증권_종합주가지수_장종_확인()'><b>TC_0960_3_Chips_삼성증권_종합주가지수_장종_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0960<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0960_3_Chips_삼성증권_종합주가지수_장종_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0960_3_Chips_삼성증권_종합주가지수_장종_확인(금융_01_삼성증권.java:324)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1223047025", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1223047025'><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0960_3_Chips_삼성증권_종합주가지수_장종_확인(금융_01_삼성증권.java:324)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0986_Chips_삼성증권_종목별주가_장종_하락_확인()'><b>TC_0986_Chips_삼성증권_종목별주가_장종_하락_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0986<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0986_Chips_삼성증권_종목별주가_장종_하락_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0986_Chips_삼성증권_종목별주가_장종_하락_확인(금융_01_삼성증권.java:965)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1550670487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1550670487'><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0986_Chips_삼성증권_종목별주가_장종_하락_확인(금융_01_삼성증권.java:965)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0960_1_Chips_삼성증권_종합주가지수_장전_확인()'><b>TC_0960_1_Chips_삼성증권_종합주가지수_장전_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0960<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0960_1_Chips_삼성증권_종합주가지수_장전_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 [장중]상태로 장전상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0960_1_Chips_삼성증권_종합주가지수_장전_확인(금융_01_삼성증권.java:276)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1646445977", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1646445977'><pre>org.testng.SkipException: 현재 [장중]상태로 장전상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0960_1_Chips_삼성증권_종합주가지수_장전_확인(금융_01_삼성증권.java:276)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0962_1_Chips_삼성증권_종합주가지수_장전_확인()'><b>TC_0962_1_Chips_삼성증권_종합주가지수_장전_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0961<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0962_1_Chips_삼성증권_종합주가지수_장전_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 [장중]상태로 장전상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0962_1_Chips_삼성증권_종합주가지수_장전_확인(금융_01_삼성증권.java:461)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1967204506", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1967204506'><pre>org.testng.SkipException: 현재 [장중]상태로 장전상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0962_1_Chips_삼성증권_종합주가지수_장전_확인(금융_01_삼성증권.java:461)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
+<tr>
+<td title='Chips_006_금융.금융_01_삼성증권.TC_0985_Chips_삼성증권_종목별주가_장종_상승_확인()'><b>TC_0985_Chips_삼성증권_종목별주가_장종_상승_확인</b><br>Test class: Chips_006_금융.금융_01_삼성증권<br>Test method: 칩스 리그레이션 TC : 실행_0985<br>Parameters: public void Chips_006_금융.금융_01_삼성증권.TC_0985_Chips_삼성증권_종목별주가_장종_상승_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0985_Chips_삼성증권_종목별주가_장종_상승_확인(금융_01_삼성증권.java:934)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1560177729", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1560177729'><pre>org.testng.SkipException: 현재 [장중]상태로 장종상태 Test Skip
+	at Chips_006_금융.금융_01_삼성증권.TC_0985_Chips_삼성증권_종목별주가_장종_상승_확인(금융_01_삼성증권.java:934)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>Chips_006_금융.금융_01_삼성증권@3e78b6a5</td></tr>
 </table><p>
 </body>
 </html>

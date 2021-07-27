@@ -239,5 +239,16 @@ public class xPath {
 	public static String 내일초미세먼지상태_web = "//ul[@class='weather__dust__tomorrow__info']/li[2]/span[2]";
 	public static String 내일초미세먼지아이콘_web = "//ul[@class='weather__dust__tomorrow__info']/li[2]/div";
 
-
+	//키워드뉴스 
+	public static String 키워드뉴스이미지_web = "//div[@class='player__detail']/div/img";
+	public static String 키워드뉴스타이틀_web = "//h2[@class='title-multi']";
+	
+	//어학사전
+	public static String 한글소스_web = "//div[@class='translation__source']/span";
+	public static String 영문번역_web = "//div[@class='translation__cont']/p[1]/span";
+	
+	//누구백과
+	public static String 백과카드타이틀_web = "//span[@class='txt']";
+	public static String 백과타이틀_web = "//h2[@class='title']";
+	public static String 백과내용_web = "//p[@class='text']";
 }
