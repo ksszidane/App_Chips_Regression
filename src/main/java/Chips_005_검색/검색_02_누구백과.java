@@ -275,9 +275,6 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
 		Assert.assertTrue(tts.contains("이순신은 조선의 장군입니다"));
 		
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
-		
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0918")

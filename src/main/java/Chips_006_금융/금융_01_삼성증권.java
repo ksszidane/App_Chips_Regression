@@ -590,14 +590,14 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		if (장상태 == "장전") {
 			test.log(Status.INFO, "장전 주가지수 TTS 확인");
 			String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-			Assert.assertTrue(tts.contains("어제 코스닥는"));
+			Assert.assertTrue(tts.contains("어제 코스닥은"));
 			Assert.assertTrue(tts.contains("코스피은"));
 			Assert.assertTrue(tts.contains("포인트로 마감되었습니다."));
 		} else if (장상태 == "장전" && util.getDayOfWeek(0) == "월") {
 			test.log(Status.INFO, "장전 주가지수 TTS 확인");
 			String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
 			Assert.assertTrue(tts.contains("어제는 증시 휴장일이었어요"));
-			Assert.assertTrue(tts.contains("코스닥는"));
+			Assert.assertTrue(tts.contains("코스닥은"));
 			Assert.assertTrue(tts.contains("코스피은"));
 			Assert.assertTrue(tts.contains("포인트로 마감되었습니다."));
 		} else if (장상태 == "장중") {
@@ -1051,7 +1051,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			util.SWFsendPost("SK텔레콤 주식시세 알려줘", ServerName, AccessToken);
 			
 			String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-			Assert.assertTrue(tts.contains("SK텔레콤의 어제종가는"));
+			Assert.assertTrue(tts.contains("SK텔레콤의 어제 종가는"));
 			
 		} else if (장상태 == "장전" && util.getDayOfWeek(0) == "월") {
 			test.log(Status.INFO, "현재 [장전]상태로 장전-전일휴일 확인 Test Skip");

@@ -626,12 +626,12 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "세종병원 화재 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("세종병원 화재 관련 뉴스를 들려드릴게요."));
-		Assert.assertTrue(tts.contains("최근 뉴스가 없네요."));
+		Assert.assertTrue(tts.contains("세종병원 화재 관련"));
+		Assert.assertTrue(tts.contains("뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
 		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertTrue(FLOtxt.contains(" · 세종병원 화재"));
+		Assert.assertTrue(FLOtxt.contains("세종병원 화재"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -674,7 +674,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
 		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertTrue(FLOtxt.contains(" · 컴퓨터"));
+		Assert.assertTrue(FLOtxt.contains("컴퓨터"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -1199,10 +1199,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("그저께 스포츠 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
-		String[] result = tts.split(" ");
-		Assert.assertTrue(tts.contains(result[0]));
-		Assert.assertTrue(tts.contains(result[1]));
+		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
 		Assert.assertTrue(tts.contains("스포츠 관련 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
