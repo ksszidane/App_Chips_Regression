@@ -88,7 +88,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0361")
 	public void TC_0361_Chips_라디오_지원채널_SBS러브FM_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, SBS 러브 FM 틀어줘 - 발화");
 		util.SWFsendPost_playStatus("SBS 러브 FM 틀어줘", ServerName, AccessToken, "radio");
 		
@@ -109,7 +108,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0362")
 	public void TC_0362_Chips_라디오_지원채널_SBS파워FM_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, SBS 파워 FM 들려줘 - 발화");
 		util.SWFsendPost_playStatus("SBS 파워 FM 들려줘", ServerName, AccessToken, "radio");
 		
@@ -130,7 +128,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0363")
 	public void TC_0363_Chips_라디오_지원채널_교통방송FM_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 교통방송 FM 들려줘 - 발화");
 		util.SWFsendPost_playStatus("교통방송 FM 들려줘", ServerName, AccessToken, "radio");
 		
@@ -151,7 +148,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0364")
 	public void TC_0364_Chips_라디오_지원채널_TBSeFM_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, TBS eFM 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBS eFM 들려줘", ServerName, AccessToken, "radio");
 		
@@ -172,7 +168,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0366")
 	public void TC_0366_Chips_라디오_지원채널_TBN강원교통방송_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, TBN 강원교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 강원교통방송 들려줘", ServerName, AccessToken, "radio");
 		
@@ -193,7 +188,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0367")
 	public void TC_0367_Chips_라디오_지원채널_TBN경남교통방송_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, TBN 경남교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 경남교통방송 들려줘", ServerName, AccessToken, "radio");
 		
@@ -214,7 +208,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0368")
 	public void TC_0368_Chips_라디오_지원채널_TBN경북교통방송_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, TBN 경북교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 경북교통방송 들려줘", ServerName, AccessToken, "radio");
 		
@@ -235,7 +228,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0369")
 	public void TC_0369_Chips_라디오_지원채널_TBN경인교통방송_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, TBN 경인교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 경인교통방송 들려줘", ServerName, AccessToken, "radio");
 		
@@ -256,7 +248,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0370")
 	public void TC_0370_Chips_라디오_지원채널_TBN광주교통방송_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, TBN 광주교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 광주교통방송 들려줘", ServerName, AccessToken, "radio");
 		
@@ -277,7 +268,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0371")
 	public void TC_0371_Chips_라디오_지원채널_TBN대구교통방송_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, TBN 대구교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 대구교통방송 들려줘", ServerName, AccessToken, "radio");
 		
@@ -298,7 +288,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0372")
 	public void TC_0372_Chips_라디오_지원채널_TBN대전교통방송_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, TBN 대전교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 대전교통방송 들려줘", ServerName, AccessToken, "radio");
 		
@@ -318,8 +307,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0373")
 	public void TC_0373_Chips_라디오_지원채널_TBN부산교통방송_확인(Method method) throws Exception {
-		
-		util.context("NATIVE_APP");
+
 		test.log(Status.INFO, "W, TBN 부산교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 부산교통방송 들려줘", ServerName, AccessToken, "radio");
 		
@@ -340,7 +328,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0374")
 	public void TC_0374_Chips_라디오_지원채널_TBN울산교통방송_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, TBN 울산교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 울산교통방송 들려줘", ServerName, AccessToken, "radio");
 		
@@ -361,7 +348,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0375")
 	public void TC_0375_Chips_라디오_지원채널_TBN전북교통방송_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, TBN 전북교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 전북교통방송 들려줘", ServerName, AccessToken, "radio");
 		
@@ -382,7 +368,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0376")
 	public void TC_0376_Chips_라디오_지원채널_TBN제주교통방송_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, TBN 제주교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 제주교통방송 들려줘", ServerName, AccessToken, "radio");
 		
@@ -403,7 +388,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0378")
 	public void TC_0378_Chips_라디오_지원채널_아리랑FM_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 아리랑FM 들려줘 - 발화");
 		util.SWFsendPost_playStatus("아리랑FM 들려줘", ServerName, AccessToken, "radio");
 		
@@ -423,8 +407,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0379")
 	public void TC_0379_Chips_라디오_지원채널_극동방송_확인(Method method) throws Exception {
-		
-		util.context("NATIVE_APP");
+
 		test.log(Status.INFO, "W, 극동방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("극동방송 들려줘", ServerName, AccessToken, "radio");
 		
@@ -445,7 +428,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0380")
 	public void TC_0380_Chips_라디오_지원채널_불교방송_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 불교방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("불교방송 들려줘", ServerName, AccessToken, "radio");
 		
@@ -465,8 +447,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0381")
 	public void TC_0381_Chips_라디오_지원채널_BBSFM_확인(Method method) throws Exception {
-		
-		util.context("NATIVE_APP");
+
 		test.log(Status.INFO, "W, BBS FM 들려줘 - 발화");
 		util.SWFsendPost_playStatus("BBS FM 들려줘", ServerName, AccessToken, "radio");
 		
@@ -486,8 +467,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0382")
 	public void TC_0382_Chips_라디오_지원채널_CBS음악FM_확인(Method method) throws Exception {
-		
-		util.context("NATIVE_APP");
+
 		test.log(Status.INFO, "W, CBS 음악 FM 들려줘 - 발화");
 		util.SWFsendPost_playStatus("CBS 음악 FM 들려줘", ServerName, AccessToken, "radio");
 		
@@ -507,8 +487,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0383")
 	public void TC_0383_Chips_라디오_지원채널_CBS표준FM_확인(Method method) throws Exception {
-		
-		util.context("NATIVE_APP");
+
 		test.log(Status.INFO, "W, CBS 표준FM 들려줘 - 발화");
 		util.SWFsendPost_playStatus("CBS 표준FM 들려줘", ServerName, AccessToken, "radio");
 		
@@ -529,7 +508,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0384")
 	public void TC_0384_Chips_라디오_지원채널_CBS표준FM_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, CBS 표준FM 들려줘 - 발화");
 		util.SWFsendPost_playStatus("CBS 표준FM 들려줘", ServerName, AccessToken, "radio");
 		
@@ -550,7 +528,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0386")
 	public void TC_0386_Chips_라디오_지원채널_KBS1라디오_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, KBS 제1라디오 들려줘 - 발화");
 		util.SWFsendPost_playStatus("KBS 제1라디오 들려줘", ServerName, AccessToken, "radio");
 		
@@ -571,7 +548,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0387")
 	public void TC_0387_Chips_라디오_지원채널_KBS2라디오_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, KBS 제2라디오 들려줘 - 발화");
 		util.SWFsendPost_playStatus("KBS 제2라디오 들려줘", ServerName, AccessToken, "radio");
 		
@@ -592,7 +568,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0388")
 	public void TC_0388_Chips_라디오_지원채널_KBS3라디오_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, KBS 제3라디오 들려줘 - 발화");
 		util.SWFsendPost_playStatus("KBS 제3라디오 들려줘", ServerName, AccessToken, "radio");
 		
@@ -613,7 +588,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0389")
 	public void TC_0389_Chips_라디오_지원채널_KBS클래식FM_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, KBS 클래식FM 틀어줘 - 발화");
 		util.SWFsendPost_playStatus("KBS 클래식FM 틀어줘", ServerName, AccessToken, "radio");
 		
@@ -654,8 +628,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0391")
 	public void TC_0391_Chips_라디오_지원채널_KBSHappyFM_확인(Method method) throws Exception {
-		
-		util.context("NATIVE_APP");
+
 		test.log(Status.INFO, "W, KBS HappyFM 틀어줘 - 발화");
 		util.SWFsendPost_playStatus("KBS HappyFM 틀어줘", ServerName, AccessToken, "radio");
 		
@@ -676,7 +649,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0392")
 	public void TC_0392_Chips_라디오_지원채널_KBSworld_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, KBS 월드 라디오 들려줘 - 발화");
 		util.SWFsendPost_playStatus("KBS 월드 라디오 들려줘", ServerName, AccessToken, "radio");
 		
@@ -697,7 +669,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0393")
 	public void TC_0393_Chips_라디오_지원채널_KBS한민족방송_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, KBS 한민족방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("KBS 한민족방송 들려줘", ServerName, AccessToken, "radio");
 		
@@ -718,7 +689,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0396")
 	public void TC_0396_Chips_라디오_미지원채널_동양방송_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 동양방송 라디오 들려줘 - 발화");
 		util.SWFsendPost_playStatus("동양방송 라디오 들려줘", ServerName, AccessToken, "radio");
 		
@@ -731,7 +701,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0398")
 	public void TC_0398_Chips_라디오_미지원채널_가톨릭평화방송_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 가톨릭평화방송 FM - 발화");
 		util.SWFsendPost_playStatus("가톨릭평화방송 FM", ServerName, AccessToken, "radio");
 		
@@ -744,7 +713,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0399")
 	public void TC_0399_Chips_라디오_미지원채널_YTN뉴스FM_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, YTN 뉴스 FM 틀어줘 - 발화");
 		util.SWFsendPost_playStatus("YTN 뉴스 FM 틀어줘", ServerName, AccessToken, "radio");
 		

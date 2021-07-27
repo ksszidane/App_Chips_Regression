@@ -809,7 +809,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			util.SWFsendPost(상승종목 + " 주식시세 알려줘", ServerName, AccessToken);
 			
 			String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-			Assert.assertTrue(tts.contains("현재 "+상승종목+"는"));
+			Assert.assertTrue(tts.contains("현재 "+상승종목));
 			Assert.assertTrue(tts.contains("퍼센트 상승한"));
 		} else if (장상태 == "장종") {
 			test.log(Status.INFO, "현재 [장종]상태로 장중상태 Test Skip");
@@ -840,7 +840,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			util.SWFsendPost(하락종목 + " 주식시세 알려줘", ServerName, AccessToken);
 			
 			String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-			Assert.assertTrue(tts.contains("현재 "+하락종목+"는"));
+			Assert.assertTrue(tts.contains("현재 "+하락종목));
 			Assert.assertTrue(tts.contains("퍼센트 하락한"));
 		} else if (장상태 == "장종") {
 			test.log(Status.INFO, "현재 [장종]상태로 장중상태 Test Skip");
@@ -937,7 +937,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			util.SWFsendPost(상승종목 + " 주식시세 알려줘", ServerName, AccessToken);
 			
 			String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-			Assert.assertTrue(tts.contains("오늘 "+상승종목+"는"));
+			Assert.assertTrue(tts.contains("오늘 "+상승종목));
 			Assert.assertTrue(tts.contains("퍼센트 상승한"));
 		
 		}
@@ -969,7 +969,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			util.SWFsendPost(하락종목 + " 주식시세 알려줘", ServerName, AccessToken);
 			
 			String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-			Assert.assertTrue(tts.contains("오늘 "+하락종목+"는"));
+			Assert.assertTrue(tts.contains("오늘 "+하락종목));
 			Assert.assertTrue(tts.contains("퍼센트 하락한"));
 		
 		}
@@ -1132,9 +1132,9 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		util.SWFsendPost("삼성증권에서 오늘 추천하는 종목이 뭐야", ServerName, AccessToken);
 			
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("삼성증권에서 Premium List ten으로 선정한 종목중에"));
+		Assert.assertTrue(tts.contains("삼성증권에서"));
+		Assert.assertTrue(tts.contains("Premium List ten으로 선정한 종목중에"));
 		Assert.assertTrue(tts.contains("주식은 원금손실의 위험이 있으니, 투자 전 자세한 설명을 듣고 결정을 내리시기 바래요."));
-		Assert.assertTrue(tts.contains("투자 전 자세한 설명을 듣고 결정을 내리시기 바래요."));
 		
 	}
 	
@@ -1145,9 +1145,9 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		util.SWFsendPost("주식 추천해줘", ServerName, AccessToken);
 			
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("삼성증권에서 Premium List ten으로 선정한 종목중에"));
+		Assert.assertTrue(tts.contains("삼성증권에서"));
+		Assert.assertTrue(tts.contains("Premium List ten으로 선정한 종목중에"));
 		Assert.assertTrue(tts.contains("주식은 원금손실의 위험이 있으니, 투자 전 자세한 설명을 듣고 결정을 내리시기 바래요."));
-		Assert.assertTrue(tts.contains("투자 전 자세한 설명을 듣고 결정을 내리시기 바래요."));
 		
 	}
 

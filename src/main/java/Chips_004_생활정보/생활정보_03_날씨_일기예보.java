@@ -14,6 +14,7 @@ import junit.framework.Assert;
 public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	
 	String AccessToken;
+	String 현재위치 = "";
 	
 	public void accessToken얻기() throws Exception {
 		
@@ -91,7 +92,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		test.log(Status.INFO, "현재위치 정보값 저장");
 		String str = util.getText(By.id("location"));
 		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 날씨 - 발화");
 		util.SWFsendPost("날씨", ServerName, AccessToken);
@@ -158,10 +159,10 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	public void TC_0723_Chips_날씨_오늘날씨_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		//test.log(Status.INFO, "현재위치 정보값 저장");
+		//String str = util.getText(By.id("location"));
+		//String[] array = str.split(" ");
+		//String 현재위치 = array[2];
 		
 		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 일기예보 - 발화");
@@ -229,10 +230,10 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	public void TC_0724_Chips_날씨_내일날씨_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		//test.log(Status.INFO, "현재위치 정보값 저장");
+		//String str = util.getText(By.id("location"));
+		//String[] array = str.split(" ");
+		//String 현재위치 = array[2];
 		
 		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 내일 날씨 - 발화");
@@ -298,10 +299,10 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	public void TC_0725_Chips_날씨_내일날씨_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		//test.log(Status.INFO, "현재위치 정보값 저장");
+		//String str = util.getText(By.id("location"));
+		//String[] array = str.split(" ");
+		//String 현재위치 = array[2];
 		
 		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 내일 일기예보 - 발화");
@@ -365,10 +366,10 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	public void TC_0726_Chips_날씨_모레날씨_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		//test.log(Status.INFO, "현재위치 정보값 저장");
+		//String str = util.getText(By.id("location"));
+		//String[] array = str.split(" ");
+		//String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "오늘 기준 날짜 데이터 생성");
 		String 모레날짜 = util.getChangePreviousDate(2);
@@ -429,10 +430,10 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	public void TC_0727_Chips_날씨_이번주날씨_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		//test.log(Status.INFO, "현재위치 정보값 저장");
+		//String str = util.getText(By.id("location"));
+		//String[] array = str.split(" ");
+		//String 현재위치 = array[2];
 		
 		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 이번 주 날씨 알려줘 - 발화");
@@ -510,10 +511,10 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	public void TC_0728_Chips_날씨_다음주날씨_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		//test.log(Status.INFO, "현재위치 정보값 저장");
+		//String str = util.getText(By.id("location"));
+		//String[] array = str.split(" ");
+		//String 현재위치 = array[2];
 		
 		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 다음 주 날씨 알려줘 - 발화");
@@ -582,10 +583,10 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	public void TC_0729_Chips_날씨_이번주주말날씨_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		//test.log(Status.INFO, "현재위치 정보값 저장");
+		//String str = util.getText(By.id("location"));
+		//String[] array = str.split(" ");
+		//String 현재위치 = array[2];
 		
 		Thread.sleep(5000);
 		test.log(Status.INFO, "오늘 기준 주말(토요일) 날짜 계산");
@@ -610,10 +611,10 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	public void TC_0730_Chips_날씨_다음주주말날씨_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		//test.log(Status.INFO, "현재위치 정보값 저장");
+		//String str = util.getText(By.id("location"));
+		//String[] array = str.split(" ");
+		//String 현재위치 = array[2];
 		
 		Thread.sleep(5000);
 		test.log(Status.INFO, "오늘 기준 다음주 주말(토요일) 날짜 계산");
@@ -649,10 +650,10 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	public void TC_0731_Chips_날씨_현재요일날씨_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		//test.log(Status.INFO, "현재위치 정보값 저장");
+		//String str = util.getText(By.id("location"));
+		//String[] array = str.split(" ");
+		//String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "오늘 요일 구하기" + util.getDayOfWeek(0));
 		String 오늘요일 = util.getDayOfWeek(0);
@@ -721,10 +722,10 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	public void TC_0732_Chips_날씨_현재요일날씨_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		//test.log(Status.INFO, "현재위치 정보값 저장");
+		//String str = util.getText(By.id("location"));
+		//String[] array = str.split(" ");
+		//String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "오늘 요일 구하기" + util.getDayOfWeek(0));
 		String 오늘요일 = util.getDayOfWeek(0);
