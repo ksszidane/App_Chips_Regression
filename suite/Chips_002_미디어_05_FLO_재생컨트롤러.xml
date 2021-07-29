@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ExtentReport" parallel="tests" thread-count="10">
+	<parameter name="hubAddress" value="http://0.0.0.0:4723/wd/hub"/>
+	<parameter name="Project" value="Chips"/>
+	<test name="Test_Project" preserve-order="true">
+		<parameter name="OS" value="Android" />
+		<parameter name="AppName" value="Chips" />
+		<parameter name="Server" value="RTG" /> <!-- 서버값 대문자로  : PRD, RTG, STG -->
+		<parameter name="TestPlace" value="out" /> <!-- 사내 : in  // 사외 : out-->
+		<parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
+		<parameter name="deviceID_Chips10" value="ALDFHFMSG34WDF6CD40E"/>
+		<parameter name="userID_ksszidane" value="ALDF3NYA6C0D0C654DD2"/>
+		<parameter name="userID_ksszidane10" value="ALDF5TR5SNGZ8175DA16"/>
+		<parameter name="userID_nuguqa001" value="ALDFH3D1Q7W6071EFE41"/>
+		<parameter name="MobileDevice" value="ce06171633774e37027e"/>
+		
+		<!--
+		R3CMA0GBTQ 
+		ce12160cb994301d04	>	8+
+		ce06171633774e37027e	>	note8
+		1c25b5ace00c7ece > s9
+		-->
+		
+		<classes>
+			<!--
+			<class name="Chips_001_기본기능.기본기능_01_기본기능" />
+			<class name="Chips_001_기본기능.기본기능_02_홈화면최초진입" />
+			<class name="Chips_001_기본기능.기본기능_03_부가기능" />
+			<class name="Chips_002_미디어.미디어_01_멜론" />
+			<class name="Chips_002_미디어.미디어_02_FLO_미로그인" />
+			<class name="Chips_002_미디어.미디어_03_FLO_로그인" />
+			<class name="Chips_002_미디어.미디어_04_FLO_장르테마" />
+			<class name="Chips_002_미디어.미디어_05_FLO_재생컨트롤러" />
+			<class name="Chips_002_미디어.미디어_06_자체소싱" />
+			<class name="Chips_002_미디어.미디어_07_ASMR" />
+			<class name="Chips_002_미디어.미디어_08_라디오" />
+			<class name="Chips_002_미디어.미디어_09_라디오_채널확인" />
+			<class name="Chips_002_미디어.미디어_10_라디오_재생컨트롤러" />
+			<class name="Chips_002_미디어.미디어_11_오디오북" />
+			<class name="Chips_002_미디어.미디어_12_팟빵" />
+			<class name="Chips_003_편의기능.편의기능_01_알람" />
+			<class name="Chips_003_편의기능.편의기능_02_사칙연산" />
+			<class name="Chips_003_편의기능.편의기능_03_날짜시간" />
+			<class name="Chips_004_생활정보.생활정보_01_메뉴추천" />
+			<class name="Chips_004_생활정보.생활정보_02_감성대화" />
+			<class name="Chips_004_생활정보.생활정보_03_날씨_일기예보" />
+			<class name="Chips_004_생활정보.생활정보_04_날씨_강수확률" />
+			<class name="Chips_004_생활정보.생활정보_05_날씨_미세먼지" />
+			<class name="Chips_004_생활정보.생활정보_06_날씨_현재기온" />
+			<class name="Chips_004_생활정보.생활정보_07_날씨_자외선지수" />
+			<class name="Chips_004_생활정보.생활정보_08_날씨_습도" />
+			<class name="Chips_004_생활정보.생활정보_09_날씨_오존농도" />
+			<class name="Chips_004_생활정보.생활정보_10_날씨_일출시간" />
+			<class name="Chips_004_생활정보.생활정보_11_날씨_일몰시간" />
+			<class name="Chips_004_생활정보.생활정보_12_날씨_세차지수" />
+			<class name="Chips_004_생활정보.생활정보_13_운세" />
+			<class name="Chips_004_생활정보.생활정보_14_뉴스" />
+			<class name="Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러" />
+			<class name="Chips_005_검색.검색_01_어학사전" />
+			<class name="Chips_005_검색.검색_02_누구백과" />
+			<class name="Chips_006_금융.금융_01_삼성증권" />
+			<class name="Chips_007_연령특화.연령특화_01_ZEM키즈" />
+			<class name="Chips_008_CarLife.CarLife_01_스타벅스" />
+			-->
+	
+			<class name="Chips_002_미디어.미디어_05_FLO_재생컨트롤러" />
+
+		</classes>
+	</test>
+	
+
+	
+
+</suite>
+

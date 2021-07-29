@@ -495,7 +495,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("팟캐스트 꺼줘", ServerName, AccessToken, "podcast");
 		Thread.sleep(3000);
 		
-		test.log(Status.INFO, "음악카드 종료되고 메인화면 확인");
+		test.log(Status.INFO, "팟캐스트카드 종료되고 메인화면 확인");
 		boolean temperature = util.isElementPresent(By.id("temperature"));
 		Assert.assertTrue(temperature);
 		boolean temperature_format = util.isElementPresent(By.id("temperature_format"));
@@ -505,8 +505,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		boolean weatherImageView = util.isElementPresent(By.id("weatherImageView"));
 		Assert.assertTrue(weatherImageView);
 		
-		test.log(Status.INFO, "W, 팟빵에서 김어준의 뉴스공장 틀어줘 - 발화");
-		util.SWFsendPost("팟빵에서 김어준의 뉴스공장 틀어줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, 팟빵에서 두시탈출 컬투쇼 틀어줘 - 발화");
+		util.SWFsendPost("팟빵에서 두시탈출 컬투쇼 틀어줘", ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		util.context("NATIVE_APP");
@@ -550,12 +550,16 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0463")
 	public void TC_0464_Chips_팟빵_이전팟캐스트_확인(Method method) throws Exception {
 		 
-		test.log(Status.INFO, "현재 에피소드 저장");
-		String 현재에피소드 = util.getText(By.xpath(xPath.FLO아티스트));
+		test.log(Status.INFO, "W, 팟빵에서 김어준 뉴스 공장 틀어줘 - 발화");
+		util.SWFsendPost("팟빵에서 김어준 뉴스 공장 틀어줘", ServerName, AccessToken);
+		Thread.sleep(3000);
 		
-		test.log(Status.INFO, "W, 이전 팟캐스트 - 발화");
-		util.SWFsendPost_playStatus("이전 팟캐스트", ServerName, AccessToken, "podcast");
-		Thread.sleep(4000);
+		test.log(Status.INFO, "현재 에피소드 저장");
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
+		String 현재에피소드 = util.getText(By.xpath(xPath.팟빵에피소트명_web));
+		System.out.println(현재에피소드);
 		
 		test.log(Status.INFO, "W, 이전 팟캐스트 - 발화");
 		util.SWFsendPost_playStatus("이전 팟캐스트", ServerName, AccessToken, "podcast");
@@ -566,23 +570,36 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		Thread.sleep(4000);
 		
 		test.log(Status.INFO, "변경된 에피소드 확인");
-		String 변경에피소드 = util.getText(By.xpath(xPath.FLO아티스트));
+		String 변경에피소드 = util.getText(By.xpath(xPath.팟빵에피소트명_web));
+		System.out.println(변경에피소드);
 		Assert.assertFalse(현재에피소드.contains(변경에피소드));
 
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0465")
 	public void TC_0465_Chips_팟빵_다음팟캐스트__확인(Method method) throws Exception {
-		 
+		
 		test.log(Status.INFO, "현재 에피소드 저장");
-		String 현재에피소드 = util.getText(By.xpath(xPath.FLO아티스트));
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
+		String 현재에피소드 = util.getText(By.xpath(xPath.팟빵에피소트명_web));
+		System.out.println(현재에피소드);
+		
+		test.log(Status.INFO, "W, 다음 팟캐스트 - 발화");
+		util.SWFsendPost_playStatus("다음 팟캐스트", ServerName, AccessToken, "podcast");
+		Thread.sleep(4000);
 		
 		test.log(Status.INFO, "W, 다음 팟캐스트 - 발화");
 		util.SWFsendPost_playStatus("다음 팟캐스트", ServerName, AccessToken, "podcast");
 		Thread.sleep(4000);
 		
 		test.log(Status.INFO, "변경된 에피소드 확인");
-		String 변경에피소드 = util.getText(By.xpath(xPath.FLO아티스트));
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
+		String 변경에피소드 = util.getText(By.xpath(xPath.팟빵에피소트명_web));
+		System.out.println(변경에피소드);
 		Assert.assertFalse(현재에피소드.contains(변경에피소드));
 
 	}

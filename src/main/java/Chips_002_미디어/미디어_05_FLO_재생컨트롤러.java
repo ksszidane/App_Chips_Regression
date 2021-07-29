@@ -299,7 +299,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
-		util.SWFsendPost("다음 곡", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("다음 곡", ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "제목 확인");
@@ -317,7 +317,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 이전 곡 - 발화");
-		util.SWFsendPost("이전 곡", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("이전 곡", ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "제목 확인");
@@ -354,7 +354,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
-		util.SWFsendPost("다음 곡", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("다음 곡", ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "제목 확인");
@@ -371,7 +371,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0250_Chips_FLO_컨트롤러_이전_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 이전 곡 - 발화");
-		util.SWFsendPost("이전 곡", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("이전 곡", ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "제목 확인");
@@ -410,7 +410,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
-		util.SWFsendPost("다음 곡", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("다음 곡", ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "제목 확인");

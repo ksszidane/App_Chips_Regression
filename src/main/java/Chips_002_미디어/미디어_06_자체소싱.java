@@ -216,7 +216,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		 
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 일시정지 - 발화");
-		util.SWFsendPost("일시정지", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("일시정지 ", ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
@@ -233,7 +233,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		 
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 일시정지 취소 - 발화");
-		util.SWFsendPost("일시정지 취소", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("일시정지 취소 ", ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
@@ -290,7 +290,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
-		util.SWFsendPost("다음 곡", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("다음 곡", ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "다음 TTS 확인");
@@ -304,7 +304,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 이전 곡 - 발화");
-		util.SWFsendPost("이전 곡", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("이전 곡", ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "이전 TTS 확인");
@@ -330,7 +330,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 이전 곡 - 발화");
-		util.SWFsendPost("이전 곡", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("이전 곡", ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "이전 TTS 확인");

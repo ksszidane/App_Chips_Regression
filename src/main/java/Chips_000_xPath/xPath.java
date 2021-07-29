@@ -59,6 +59,9 @@ public class xPath {
 	
 	public static String 이미지커버src = "//div[@class='player__detail__cover asmr']/img";
 	
+	//팟빵
+	public static String 팟빵에피소트명_web = "//p[@class='artist']";
+	
 	//라디오카드
 	public static String 라디오타이틀 = "//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[1]/android.view.View";
 	public static String 라디오채널목록 = "//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.widget.ListView";

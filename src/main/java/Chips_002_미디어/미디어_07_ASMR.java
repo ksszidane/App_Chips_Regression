@@ -243,7 +243,6 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0319")
 	public void TC_0320_Chips_ASMR_이노래뭐야_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "곡명 확인");
 		String 곡명 = util.getText(By.xpath(xPath.FLO제목));
 		
@@ -348,7 +347,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		 
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 일시정지 - 발화");
-		util.SWFsendPost("일시정지", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
@@ -365,7 +364,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		 
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 일시정지 취소 - 발화");
-		util.SWFsendPost("일시정지 취소", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("일시정지 취소", ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
@@ -382,7 +381,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		 
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 일시정지 - 발화");
-		util.SWFsendPost("일시정지", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
@@ -483,7 +482,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		String 이전곡명 = util.getText(By.xpath(xPath.FLO제목));
 		
 		test.log(Status.INFO, "W, 다음거 - 발화");
-		util.SWFsendPost("다음 곡", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("다음 곡", ServerName, AccessToken, "music");
 		Thread.sleep(3000);
 
 		test.log(Status.INFO, "곡명 확인");
@@ -499,7 +498,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		String 이전곡명 = util.getText(By.xpath(xPath.FLO제목));
 		
 		test.log(Status.INFO, "W, 이전거 - 발화");
-		util.SWFsendPost("이전 곡", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("이전 곡", ServerName, AccessToken, "music");
 		Thread.sleep(3000);
 
 		test.log(Status.INFO, "곡명 확인");
@@ -535,7 +534,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		String 이전곡명 = util.getText(By.xpath(xPath.FLO제목));
 		
 		test.log(Status.INFO, "W, 다음거 - 발화");
-		util.SWFsendPost("다음 곡", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("다음 곡", ServerName, AccessToken, "music");
 		Thread.sleep(3000);
 
 		test.log(Status.INFO, "곡명 확인");
@@ -551,7 +550,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		String 이전곡명 = util.getText(By.xpath(xPath.FLO제목));
 		
 		test.log(Status.INFO, "W, 이전거 - 발화");
-		util.SWFsendPost("이전 곡", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("이전 곡", ServerName, AccessToken, "music");
 		Thread.sleep(3000);
 
 		test.log(Status.INFO, "곡명 확인");
@@ -588,7 +587,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		String 이전곡명 = util.getText(By.xpath(xPath.FLO제목));
 		
 		test.log(Status.INFO, "W, 다음거 - 발화");
-		util.SWFsendPost("다음 곡", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("다음 곡", ServerName, AccessToken, "music");
 		Thread.sleep(3000);
 
 		test.log(Status.INFO, "곡명 확인");
