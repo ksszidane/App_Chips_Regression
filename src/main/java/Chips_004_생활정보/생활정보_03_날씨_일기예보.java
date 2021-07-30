@@ -378,7 +378,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 내일모레 날씨 - 발화");
 		util.SWFsendPost("내일모레 날씨", ServerName, AccessToken);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -423,7 +423,6 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Assert.assertTrue(tts.contains("최저기온"));
 		Assert.assertTrue(tts.contains(모레날짜 + " " + 모레요일 + "요일 " + 현재위치));
 
-		util.context("NATIVE_APP");
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0727")
@@ -502,8 +501,6 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
 		Assert.assertTrue(tts.contains("낮기온"));
 		Assert.assertTrue(tts.contains("이번주 " + 현재위치));
-
-		util.context("NATIVE_APP");
 		
 	}
 	

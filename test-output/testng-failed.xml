@@ -15,579 +15,80 @@
     <parameter name="AppName" value="Chips"/>
     <parameter name="userID_nuguqa001" value="ALDFH3D1Q7W6071EFE41"/>
     <classes>
-      <class name="Chips_004_생활정보.생활정보_14_뉴스">
-        <methods>
-          <include name="TC_0830_Chips_뉴스_지난달뉴스_확인"/>
-          <include name="TC_0812_Chips_뉴스_기본설정_CBS뉴스_확인"/>
-          <include name="TC_0834_Chips_뉴스_어제뉴스_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0818_Chips_뉴스_스포츠특정뉴스_확인"/>
-          <include name="TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인"/>
-          <include name="TC_0824_Chips_뉴스_NUGU토픽_확인"/>
-          <include name="AfterMethod"/>
-          <include name="setupClass"/>
-          <include name="TC_0820_Chips_뉴스_미지원채널_확인"/>
-          <include name="TC_0817_Chips_뉴스_연예특정뉴스_확인"/>
-          <include name="TC_0813_Chips_뉴스_KBS뉴스_확인"/>
-          <include name="TC_0816_Chips_뉴스_오늘뉴스_확인"/>
-          <include name="TC_0815_1_Chips_뉴스_MBC뉴스_확인"/>
-          <include name="TC_0819_Chips_뉴스_미지원채널_확인"/>
-          <include name="TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인"/>
-          <include name="TC_0831_Chips_뉴스_지난달스포츠뉴스_확인"/>
-          <include name="TC_0836_Chips_뉴스_그저께스포츠뉴스_확인"/>
-          <include name="TC_0839_Chips_뉴스_미지원기간뉴스_모레_확인"/>
-          <include name="TC_0811_Chips_뉴스_기본설정_CBS뉴스_확인"/>
-          <include name="TC_0831_Chips_뉴스_지난달연예뉴스_확인"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0815_Chips_뉴스_SBS뉴스_확인"/>
-          <include name="TC_0815_2_Chips_뉴스_TBS뉴스_확인"/>
-          <include name="TC_0835_Chips_뉴스_그저께뉴스_확인"/>
-          <include name="TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인"/>
-          <include name="TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인"/>
-          <include name="TC_0827_Chips_뉴스_지난주연예뉴스_확인"/>
-          <include name="TC_0838_Chips_뉴스_미지원기간뉴스_내일_확인"/>
-          <include name="TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인"/>
-          <include name="TC_0826_Chips_뉴스_지난주뉴스_확인"/>
-          <include name="TC_0814_Chips_뉴스_CBS뉴스_확인"/>
-          <include name="TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0825_Chips_뉴스_키워드뉴스없음_확인"/>
-          <include name="TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인"/>
-          <include name="TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인"/>
-        </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_14_뉴스 -->
-      <class name="Chips_004_생활정보.생활정보_05_날씨_미세먼지">
-        <methods>
-          <include name="TC_0744_Chips_날씨_내일미세먼지_확인"/>
-          <include name="setupClass"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0743_Chips_날씨_오늘미세먼지_확인"/>
-          <include name="AfterMethod"/>
-        </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_05_날씨_미세먼지 -->
-      <class name="Chips_002_미디어.미디어_09_라디오_채널확인">
-        <methods>
-          <include name="TC_0368_Chips_라디오_지원채널_TBN경북교통방송_확인"/>
-          <include name="TC_0379_Chips_라디오_지원채널_극동방송_확인"/>
-          <include name="TC_0396_Chips_라디오_미지원채널_동양방송_확인"/>
-          <include name="TC_0386_Chips_라디오_지원채널_KBS1라디오_확인"/>
-          <include name="TC_0399_Chips_라디오_미지원채널_YTN뉴스FM_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0372_Chips_라디오_지원채널_TBN대전교통방송_확인"/>
-          <include name="TC_0378_Chips_라디오_지원채널_아리랑FM_확인"/>
-          <include name="TC_0381_Chips_라디오_지원채널_BBSFM_확인"/>
-          <include name="TC_0387_Chips_라디오_지원채널_KBS2라디오_확인"/>
-          <include name="TC_0391_Chips_라디오_지원채널_KBSHappyFM_확인"/>
-          <include name="setupClass"/>
-          <include name="TC_0369_Chips_라디오_지원채널_TBN경인교통방송_확인"/>
-          <include name="TC_0370_Chips_라디오_지원채널_TBN광주교통방송_확인"/>
-          <include name="TC_0383_Chips_라디오_지원채널_CBS표준FM_확인"/>
-          <include name="TC_0389_Chips_라디오_지원채널_KBS클래식FM_확인"/>
-          <include name="TC_0375_Chips_라디오_지원채널_TBN전북교통방송_확인"/>
-          <include name="TC_0380_Chips_라디오_지원채널_불교방송_확인"/>
-          <include name="TC_0374_Chips_라디오_지원채널_TBN울산교통방송_확인"/>
-          <include name="TC_0388_Chips_라디오_지원채널_KBS3라디오_확인"/>
-          <include name="TC_0373_Chips_라디오_지원채널_TBN부산교통방송_확인"/>
-          <include name="TC_0392_Chips_라디오_지원채널_KBSworld_확인"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0384_Chips_라디오_지원채널_CBS표준FM_확인"/>
-          <include name="TC_0393_Chips_라디오_지원채널_KBS한민족방송_확인"/>
-          <include name="TC_0371_Chips_라디오_지원채널_TBN대구교통방송_확인"/>
-          <include name="TC_0398_Chips_라디오_미지원채널_가톨릭평화방송_확인"/>
-          <include name="TC_0390_Chips_라디오_지원채널_KBScoolFM_확인"/>
-          <include name="TC_0382_Chips_라디오_지원채널_CBS음악FM_확인"/>
-          <include name="TC_0367_Chips_라디오_지원채널_TBN경남교통방송_확인" invocation-numbers="0"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0376_Chips_라디오_지원채널_TBN제주교통방송_확인"/>
-        </methods>
-      </class> <!-- Chips_002_미디어.미디어_09_라디오_채널확인 -->
       <class name="Chips_006_금융.금융_01_삼성증권">
         <methods>
-          <include name="TC_0955_Chips_삼성증권_도움말_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0960_3_Chips_삼성증권_종합주가지수_장종_확인"/>
-          <include name="TC_0981_Chips_삼성증권_종목별주가_장중_상승_확인"/>
-          <include name="TC_0977_Chips_삼성증권_정국가지수_미국지수_확인"/>
-          <include name="TC_0956_Chips_삼성증권_도움말_확인"/>
-          <include name="TC_0978_Chips_삼성증권_특정국가지수_홍콩지수_확인"/>
-          <include name="TC_0989_Chips_삼성증권_종목별주가_장전_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0980_Chips_삼성증권_특정국가지수_대만지수_확인"/>
-          <include name="TC_0979_Chips_삼성증권_특정국가지수_일본지수_확인"/>
-          <include name="TC_0987_Chips_삼성증권_종목별주가_장종_보합_확인"/>
-          <include name="TC_0957_Chips_삼성증권_TmapPOI발화_확인"/>
-          <include name="TC_0991_Chips_삼성증권_종목별주가_휴장일_확인"/>
-          <include name="TC_0961_2_Chips_삼성증권_종합주가지수_장중_확인"/>
-          <include name="TC_0984_Chips_삼성증권_종목별주가_장중_정지_확인"/>
-          <include name="TC_0962_1_Chips_삼성증권_종합주가지수_장전_확인"/>
-          <include name="TC_0954_Chips_삼성증권_도움말_확인"/>
-          <include name="TC_0958_Chips_삼성증권_TmapPOI발화_확인"/>
-          <include name="TC_0960_2_Chips_삼성증권_종합주가지수_장중_확인"/>
-          <include name="TC_0983_Chips_삼성증권_종목별주가_장중_보합_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0966_Chips_삼성증권_종합주가지수_코스닥_확인"/>
-          <include name="TC_0964_Chips_삼성증권_종합주가지수_어제_확인"/>
-          <include name="TC_0961_1_Chips_삼성증권_종합주가지수_장전_확인"/>
-          <include name="TC_0961_3_Chips_삼성증권_종합주가지수_장종_확인"/>
-          <include name="TC_0970_Chips_삼성증권_미지원기간_과거_확인"/>
-          <include name="TC_0992_Chips_삼성증권_종목추천_확인"/>
-          <include name="TC_0990_Chips_삼성증권_종목별주가_장전_전일휴일_확인"/>
-          <include name="TC_0960_1_Chips_삼성증권_종합주가지수_장전_확인"/>
-          <include name="TC_0963_Chips_삼성증권_종합주가지수_어제_확인"/>
-          <include name="TC_0962_3_Chips_삼성증권_종합주가지수_장종_확인"/>
-          <include name="TC_0972_Chips_삼성증권_미지원기간_미래_확인"/>
-          <include name="TC_0953_Chips_삼성증권_도움말_확인"/>
-          <include name="TC_0986_Chips_삼성증권_종목별주가_장종_하락_확인"/>
-          <include name="TC_0962_2_Chips_삼성증권_종합주가지수_장중_확인"/>
-          <include name="TC_0965_Chips_삼성증권_종합주가지수_코스닥_확인"/>
-          <include name="setupClass"/>
-          <include name="TC_0959_2_Chips_삼성증권_종합주가지수_장중_확인"/>
-          <include name="TC_0974_Chips_삼성증권_미지원기능_확인"/>
-          <include name="TC_0975_Chips_삼성증권_미지원기능_확인"/>
-          <include name="TC_0971_Chips_삼성증권_미지원기간_과거_확인"/>
+          <include name="TC_0961_2_Chips_삼성증권_종합주가지수_장중_확인" invocation-numbers="0"/>
+          <include name="TC_0984_Chips_삼성증권_종목별주가_장중_정지_확인" invocation-numbers="0"/>
           <include name="tearDownClass"/>
-          <include name="TC_0969_Chips_삼성증권_미지원기간_과거_확인"/>
-          <include name="TC_0993_Chips_삼성증권_종목추천_확인"/>
-          <include name="TC_0976_Chips_삼성증권_국외지수_확인"/>
-          <include name="TC_0973_Chips_삼성증권_미지원기간_미래_확인"/>
-          <include name="TC_0985_Chips_삼성증권_종목별주가_장종_상승_확인"/>
-          <include name="TC_0959_1_Chips_삼성증권_종합주가지수_장전_확인"/>
-          <include name="TC_0982_Chips_삼성증권_종목별주가_장중_하락_확인"/>
-          <include name="TC_0988_Chips_삼성증권_종목별주가_장종_정지_확인"/>
-          <include name="TC_0959_3_Chips_삼성증권_종합주가지수_장종_확인"/>
+          <include name="TC_0990_Chips_삼성증권_종목별주가_장전_전일휴일_확인" invocation-numbers="0"/>
+          <include name="AfterMethod"/>
+          <include name="TC_0960_3_Chips_삼성증권_종합주가지수_장종_확인" invocation-numbers="0"/>
+          <include name="TC_0962_3_Chips_삼성증권_종합주가지수_장종_확인" invocation-numbers="0"/>
+          <include name="TC_0981_Chips_삼성증권_종목별주가_장중_상승_확인" invocation-numbers="0"/>
+          <include name="TC_0986_Chips_삼성증권_종목별주가_장종_하락_확인" invocation-numbers="0"/>
+          <include name="TC_0960_2_Chips_삼성증권_종합주가지수_장중_확인" invocation-numbers="0"/>
+          <include name="TC_0962_2_Chips_삼성증권_종합주가지수_장중_확인" invocation-numbers="0"/>
+          <include name="TC_0965_Chips_삼성증권_종합주가지수_코스닥_확인" invocation-numbers="0"/>
+          <include name="TC_0983_Chips_삼성증권_종목별주가_장중_보합_확인" invocation-numbers="0"/>
+          <include name="setupClass"/>
+          <include name="TC_0959_2_Chips_삼성증권_종합주가지수_장중_확인" invocation-numbers="0"/>
+          <include name="BeforeMethod"/>
+          <include name="TC_0985_Chips_삼성증권_종목별주가_장종_상승_확인" invocation-numbers="0"/>
+          <include name="TC_0982_Chips_삼성증권_종목별주가_장중_하락_확인" invocation-numbers="0"/>
+          <include name="TC_0961_3_Chips_삼성증권_종합주가지수_장종_확인" invocation-numbers="0"/>
+          <include name="TC_0987_Chips_삼성증권_종목별주가_장종_보합_확인" invocation-numbers="0"/>
+          <include name="TC_0988_Chips_삼성증권_종목별주가_장종_정지_확인" invocation-numbers="0"/>
+          <include name="TC_0991_Chips_삼성증권_종목별주가_휴장일_확인" invocation-numbers="0"/>
+          <include name="TC_0959_3_Chips_삼성증권_종합주가지수_장종_확인" invocation-numbers="0"/>
         </methods>
       </class> <!-- Chips_006_금융.금융_01_삼성증권 -->
-      <class name="Chips_005_검색.검색_01_어학사전">
-        <methods>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0903_Chips_어학사전_문장번역_확인"/>
-          <include name="setupClass"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0899_Chips_어학사전_문장번역_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0897_Chips_어학사전_도움말_확인"/>
-          <include name="TC_0899_Chips_어학사전_단어번역_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0904_Chips_어학사전_문장번역_확인"/>
-          <include name="TC_0898_Chips_어학사전_도움말_확인"/>
-        </methods>
-      </class> <!-- Chips_005_검색.검색_01_어학사전 -->
-      <class name="Chips_005_검색.검색_02_누구백과">
-        <methods>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="tearDownClass"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0911_Chips_누구백과_도움말_확인"/>
-          <include name="TC_0918_Chips_누구백과_호출어생략_키워드_확인"/>
-          <include name="TC_0909_Chips_누구백과_도움말_확인"/>
-          <include name="TC_0915_Chips_누구백과_누구백과에서_확인"/>
-          <include name="setupClass"/>
-          <include name="TC_0914_Chips_누구백과_위키에서_확인"/>
-          <include name="TC_0916_Chips_누구백과_누구백과에서_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0920_Chips_누구백과_호출어생략_속성검색_확인"/>
-          <include name="TC_0910_Chips_누구백과_도움말_확인"/>
-          <include name="TC_0919_Chips_누구백과_호출어생략_속성검색_확인"/>
-          <include name="TC_0913_Chips_누구백과_위키에서_확인"/>
-          <include name="TC_0912_Chips_누구백과_도움말_확인"/>
-          <include name="TC_0917_Chips_누구백과_호출어생략_키워드_확인"/>
-        </methods>
-      </class> <!-- Chips_005_검색.검색_02_누구백과 -->
-      <class name="Chips_004_생활정보.생활정보_10_날씨_일출시간">
-        <methods>
-          <include name="TC_0776_Chips_날씨_지역_일출시간_확인"/>
-          <include name="setupClass"/>
-          <include name="tearDownClass"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0779_Chips_날씨_내일_일출시간_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0777_Chips_날씨_오늘_일출시간_확인"/>
-          <include name="TC_0775_Chips_날씨_일출시간_확인"/>
-          <include name="TC_0780_Chips_날씨_내일지역_일출시간_확인"/>
-          <include name="TC_0778_Chips_날씨_오늘지역_일출시간_확인"/>
-        </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_10_날씨_일출시간 -->
-      <class name="Chips_004_생활정보.생활정보_07_날씨_자외선지수">
-        <methods>
-          <include name="TC_0747_Chips_날씨_자외선지수_확인"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0753_Chips_날씨_자외선지수부재_어제_확인"/>
-          <include name="setupClass"/>
-          <include name="TC_0748_Chips_날씨_지역_자외선지수_확인"/>
-          <include name="TC_0751_Chips_날씨_모레_자외선지수_확인"/>
-          <include name="TC_0750_Chips_날씨_내일지역_자외선지수_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0754_Chips_날씨_자외선지수부재_특정일_확인"/>
-          <include name="TC_0756_Chips_날씨_자외선지수부재_지역아님_확인"/>
-          <include name="TC_0752_Chips_날씨_모레지역_자외선지수_확인"/>
-          <include name="TC_0749_Chips_날씨_내일_자외선지수_확인"/>
-          <include name="TC_0755_Chips_날씨_자외선지수부재_지역외_확인"/>
-        </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_07_날씨_자외선지수 -->
-      <class name="Chips_002_미디어.미디어_06_자체소싱">
-        <methods>
-          <include name="setupClass"/>
-          <include name="TC_0309_Chips_자체소싱_이전_확인" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
-          <include name="BeforeMethod"/>
-          <include name="AfterMethod"/>
-        </methods>
-      </class> <!-- Chips_002_미디어.미디어_06_자체소싱 -->
-      <class name="Chips_003_편의기능.편의기능_03_날짜시간">
-        <methods>
-          <include name="TC_0587_Chips_명절날짜_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="setupClass"/>
-          <include name="TC_0585_Chips_시간_확인"/>
-          <include name="tearDownClass"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0586_Chips_날짜_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0588_Chips_명절날짜_확인"/>
-        </methods>
-      </class> <!-- Chips_003_편의기능.편의기능_03_날짜시간 -->
-      <class name="Chips_003_편의기능.편의기능_02_사칙연산">
-        <methods>
-          <include name="TC_0548_Chips_사칙연산_도메인안내_확인"/>
-          <include name="TC_0562_Chips_사칙연산_미연산값_마이너스값_확인"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0552_Chips_사칙연산_나누기_도메인안내_확인"/>
-          <include name="TC_0557_Chips_사칙연산_나눗셈1_확인"/>
-          <include name="TC_0564_Chips_사칙연산_미연산값_3항이상연산자두개2_확인"/>
-          <include name="TC_0554_Chips_사칙연산_덧셈2_확인"/>
-          <include name="TC_0549_Chips_사칙연산_더하기_도메인안내_확인"/>
-          <include name="TC_0558_Chips_사칙연산_나눗셈2_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0551_Chips_사칙연산_곱하기_도메인안내_확인"/>
-          <include name="TC_0553_Chips_사칙연산_덧셈1_확인"/>
-          <include name="TC_0560_Chips_사칙연산_곱셈2_확인"/>
-          <include name="TC_0550_Chips_사칙연산_빼기_도메인안내_확인"/>
-          <include name="TC_0561_Chips_사칙연산_미연산값_분수형태_확인"/>
-          <include name="setupClass"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0555_Chips_사칙연산_뺄셈1_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0556_Chips_사칙연산_뺄셈2_확인"/>
-          <include name="TC_0563_Chips_사칙연산_미연산값_3항이상연산자두개_확인"/>
-          <include name="TC_0559_Chips_사칙연산_곱셈1_확인"/>
-        </methods>
-      </class> <!-- Chips_003_편의기능.편의기능_02_사칙연산 -->
       <class name="Chips_004_생활정보.생활정보_12_날씨_세차지수">
         <methods>
-          <include name="TC_0797_Chips_날씨_세차지수부재_지역아님_확인"/>
+          <include name="TC_0797_Chips_날씨_세차지수부재_지역아님_확인" invocation-numbers="0"/>
           <include name="tearDownClass"/>
-          <include name="TC_0787_Chips_날씨_세차지수_확인"/>
-          <include name="TC_0788_Chips_날씨_오늘세차지수_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
+          <include name="TC_0787_Chips_날씨_세차지수_확인" invocation-numbers="0"/>
+          <include name="TC_0788_Chips_날씨_오늘세차지수_확인" invocation-numbers="0"/>
+          <include name="TC_0000_앱실행과AccessToken얻기" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-          <include name="TC_0793_Chips_날씨_지정위치특별광역시_세차지수_확인"/>
-          <include name="TC_0796_Chips_날씨_세차지수부재_지역외_확인"/>
-          <include name="TC_0799_Chips_날씨_세차지수부재_다음주_확인"/>
-          <include name="TC_0800_Chips_날씨_세차지수부재_모레_확인"/>
+          <include name="TC_0793_Chips_날씨_지정위치특별광역시_세차지수_확인" invocation-numbers="0"/>
+          <include name="TC_0796_Chips_날씨_세차지수부재_지역외_확인" invocation-numbers="0"/>
+          <include name="TC_0799_Chips_날씨_세차지수부재_다음주_확인" invocation-numbers="0"/>
+          <include name="TC_0800_Chips_날씨_세차지수부재_모레_확인" invocation-numbers="0"/>
           <include name="setupClass"/>
-          <include name="TC_0798_Chips_날씨_세차지수부재_이번주_확인"/>
-          <include name="TC_0789_Chips_날씨_지정위치읍면동_세차지수_확인"/>
+          <include name="TC_0798_Chips_날씨_세차지수부재_이번주_확인" invocation-numbers="0"/>
+          <include name="TC_0789_Chips_날씨_지정위치읍면동_세차지수_확인" invocation-numbers="0"/>
           <include name="BeforeMethod"/>
-          <include name="TC_0791_Chips_날씨_지정위치읍면동_세차지수_확인"/>
-          <include name="TC_0790_Chips_날씨_지정위치읍면동_세차지수_확인"/>
-          <include name="TC_0792_Chips_날씨_지정위치특별광역시_세차지수_확인"/>
+          <include name="TC_0791_Chips_날씨_지정위치읍면동_세차지수_확인" invocation-numbers="0"/>
+          <include name="TC_0790_Chips_날씨_지정위치읍면동_세차지수_확인" invocation-numbers="0"/>
+          <include name="TC_0792_Chips_날씨_지정위치특별광역시_세차지수_확인" invocation-numbers="0"/>
         </methods>
       </class> <!-- Chips_004_생활정보.생활정보_12_날씨_세차지수 -->
-      <class name="Chips_002_미디어.미디어_07_ASMR">
+      <class name="Chips_003_편의기능.편의기능_02_사칙연산">
         <methods>
-          <include name="setupClass"/>
-          <include name="TC_0334_Chips_ASMR_다음ASMR_확인" invocation-numbers="0"/>
+          <include name="TC_0548_Chips_사칙연산_도메인안내_확인" invocation-numbers="0"/>
+          <include name="TC_0562_Chips_사칙연산_미연산값_마이너스값_확인" invocation-numbers="0"/>
           <include name="tearDownClass"/>
-          <include name="BeforeMethod"/>
+          <include name="TC_0552_Chips_사칙연산_나누기_도메인안내_확인" invocation-numbers="0"/>
+          <include name="TC_0557_Chips_사칙연산_나눗셈1_확인" invocation-numbers="0"/>
+          <include name="TC_0564_Chips_사칙연산_미연산값_3항이상연산자두개2_확인" invocation-numbers="0"/>
+          <include name="TC_0554_Chips_사칙연산_덧셈2_확인" invocation-numbers="0"/>
+          <include name="TC_0549_Chips_사칙연산_더하기_도메인안내_확인" invocation-numbers="0"/>
+          <include name="TC_0558_Chips_사칙연산_나눗셈2_확인" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-        </methods>
-      </class> <!-- Chips_002_미디어.미디어_07_ASMR -->
-      <class name="Chips_004_생활정보.생활정보_09_날씨_오존농도">
-        <methods>
-          <include name="TC_0769_Chips_날씨_내일_오존지수_확인"/>
-          <include name="TC_0774_Chips_날씨_오존지수부재_지역아님_확인"/>
-          <include name="tearDownClass"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0772_Chips_날씨_오존지수부재_특정일_확인"/>
-          <include name="TC_0771_Chips_날씨_오존지수부재_어제_확인"/>
-          <include name="TC_0770_Chips_날씨_내일지역_오존지수_확인"/>
-          <include name="setupClass"/>
-          <include name="TC_0768_Chips_날씨_지역_오존지수_확인"/>
-          <include name="TC_0767_Chips_날씨_오존지수_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0773Chips_날씨_오존지수부재_지역외_확인"/>
-        </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_09_날씨_오존농도 -->
-      <class name="Chips_002_미디어.미디어_05_FLO_재생컨트롤러">
-        <methods>
-          <include name="setupClass"/>
-          <include name="tearDownClass"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0252_Chips_FLO_컨트롤러_다음_확인" invocation-numbers="0"/>
-          <include name="AfterMethod"/>
-        </methods>
-      </class> <!-- Chips_002_미디어.미디어_05_FLO_재생컨트롤러 -->
-      <class name="Chips_004_생활정보.생활정보_08_날씨_습도">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="TC_0766_Chips_날씨_습도지수부재_지역아님_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0765_Chips_날씨_습도지수부재_지역외_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0758_Chips_날씨_지역_습도지수_확인"/>
-          <include name="TC_0759_Chips_날씨_내일_습도지수_확인"/>
-          <include name="setupClass"/>
-          <include name="TC_0761_Chips_날씨_모레_습도지수_확인"/>
-          <include name="TC_0762_Chips_날씨_모레지역_습도지수_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0760_Chips_날씨_내일지역_습도지수_확인"/>
-          <include name="TC_0763_Chips_날씨_습도지수부재_어제_확인"/>
-          <include name="TC_0757_Chips_날씨_습도지수_확인"/>
-          <include name="TC_0764_Chips_날씨_습도지수부재_특정일_확인"/>
-        </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_08_날씨_습도 -->
-      <class name="Chips_004_생활정보.생활정보_03_날씨_일기예보">
-        <methods>
-          <include name="TC_0733_Chips_날씨_제주도날씨_확인"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0728_Chips_날씨_다음주날씨_확인"/>
-          <include name="TC_0727_Chips_날씨_이번주날씨_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0724_Chips_날씨_내일날씨_확인"/>
-          <include name="TC_0730_Chips_날씨_다음주주말날씨_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0729_Chips_날씨_이번주주말날씨_확인"/>
-          <include name="TC_0734_Chips_날씨_파주시야동동날씨_확인"/>
-          <include name="setupClass"/>
-          <include name="TC_0726_Chips_날씨_모레날씨_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0722_Chips_날씨_오늘날씨_확인"/>
-          <include name="TC_0725_Chips_날씨_내일날씨_확인"/>
-          <include name="TC_0723_Chips_날씨_오늘날씨_확인"/>
-          <include name="TC_0732_Chips_날씨_현재요일날씨_확인"/>
-          <include name="TC_0731_Chips_날씨_현재요일날씨_확인"/>
-        </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_03_날씨_일기예보 -->
-      <class name="Chips_004_생활정보.생활정보_04_날씨_강수확률">
-        <methods>
-          <include name="TC_0737_Chips_날씨_현재_강수확률_확인"/>
-          <include name="setupClass"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0740_Chips_날씨_모레_강수확률_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0739_Chips_날씨_내일_강수확률_확인"/>
-          <include name="TC_0742_Chips_날씨_다음주날씨_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0738_Chips_날씨_오늘_강수확률_확인"/>
-          <include name="TC_0741_Chips_날씨_이번주날씨_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-        </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_04_날씨_강수확률 -->
-      <class name="Chips_004_생활정보.생활정보_13_운세">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0807_Chips_운세_생년별운세_확인"/>
-          <include name="TC_0802_Chips_운세_생년월일등록_확인"/>
-          <include name="TC_0803_Chips_운세_띠별운세_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="setupClass"/>
-          <include name="TC_0808_Chips_운세_다음주_미지원_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0801_Chips_운세_생년월일미등록_확인"/>
-          <include name="TC_0805_Chips_운세_생년별운세_확인"/>
-          <include name="TC_0804_Chips_운세_띠별운세_확인"/>
-          <include name="TC_0806_Chips_운세_생년별운세_확인"/>
-          <include name="TC_0809_Chips_운세_다음달_미지원_확인"/>
-          <include name="TC_0807_Chips_운세_이번주_미지원_확인"/>
-        </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_13_운세 -->
-      <class name="Chips_002_미디어.미디어_11_오디오북">
-        <methods>
-          <include name="setupClass"/>
-          <include name="TC_0415_Chips_오디오북_미지원_확인"/>
-          <include name="tearDownClass"/>
-          <include name="BeforeMethod"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-        </methods>
-      </class> <!-- Chips_002_미디어.미디어_11_오디오북 -->
-      <class name="Chips_003_편의기능.편의기능_01_알람">
-        <methods>
-          <include name="setupClass"/>
-          <include name="tearDownClass"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0486_Chips_알람_미지원_확인"/>
-          <include name="AfterMethod"/>
-        </methods>
-      </class> <!-- Chips_003_편의기능.편의기능_01_알람 -->
-      <class name="Chips_007_연령특화.연령특화_01_ZEM키즈">
-        <methods>
-          <include name="setupClass"/>
-          <include name="tearDownClass"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="AfterMethod"/>
-          <include name="TC_1062_ZEM키즈_미지원_확인"/>
-        </methods>
-      </class> <!-- Chips_007_연령특화.연령특화_01_ZEM키즈 -->
-      <class name="Chips_004_생활정보.생활정보_01_메뉴추천">
-        <methods>
-          <include name="TC_0698_Chips_제철메뉴_메뉴추천_확인"/>
-          <include name="TC_0709_Chips_메뉴추천_도움말_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0702_Chips_메뉴추천_테마테마_미지원_확인"/>
-          <include name="TC_0703_Chips_메뉴추천_테마테마_미지원_확인"/>
-          <include name="TC_0706_Chips_메뉴추천_다시_미지원_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0704_Chips_메뉴추천_TTS재생중_중지_확인"/>
-          <include name="TC_0701_Chips_메뉴추천_특정이벤트_확인"/>
-          <include name="TC_0708_Chips_메뉴추천_TTS재생중_이거뭐야_미지원_확인"/>
-          <include name="setupClass"/>
-          <include name="TC_0700_Chips_메뉴추천_테마2_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0699_Chips_메뉴추천_테마1_확인"/>
-          <include name="TC_0697_Chips_시간대별_메뉴추천_확인"/>
-          <include name="TC_0705_Chips_메뉴추천_닫아_미지원_확인"/>
-          <include name="TC_0707_Chips_다른메뉴추천_미지원_확인"/>
-        </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_01_메뉴추천 -->
-      <class name="Chips_008_CarLife.CarLife_01_스타벅스">
-        <methods>
-          <include name="setupClass"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="BeforeMethod"/>
-          <include name="AfterMethod"/>
-          <include name="TC_1243_스타벅스_미지원_확인"/>
-        </methods>
-      </class> <!-- Chips_008_CarLife.CarLife_01_스타벅스 -->
-      <class name="Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="TC_0855_Chips_뉴스_종료_확인"/>
-          <include name="TC_0847_Chips_뉴스_컨트롤러_일시정지_확인"/>
-          <include name="TC_0845_Chips_뉴스_컨트롤러_일시정지_확인"/>
-          <include name="TC_0854_Chips_뉴스_컨트롤러_이전_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0851_Chips_뉴스_컨트롤러_다음뉴스_확인"/>
-          <include name="TC_0849_Chips_뉴스_컨트롤러_좋아요해줘_확인"/>
-          <include name="TC_0850_Chips_뉴스_컨트롤러_좋아요취소_확인"/>
-          <include name="TC_0848_Chips_뉴스_컨트롤러_재생_확인"/>
+          <include name="TC_0551_Chips_사칙연산_곱하기_도메인안내_확인" invocation-numbers="0"/>
+          <include name="TC_0553_Chips_사칙연산_덧셈1_확인" invocation-numbers="0"/>
+          <include name="TC_0560_Chips_사칙연산_곱셈2_확인" invocation-numbers="0"/>
+          <include name="TC_0550_Chips_사칙연산_빼기_도메인안내_확인" invocation-numbers="0"/>
+          <include name="TC_0561_Chips_사칙연산_미연산값_분수형태_확인" invocation-numbers="0"/>
           <include name="setupClass"/>
           <include name="BeforeMethod"/>
-          <include name="TC_0846_Chips_뉴스_컨트롤러_일시정지취소_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0844_Chips_뉴스_연예키워드뉴스재생_확인"/>
-          <include name="TC_0853_Chips_뉴스_컨트롤러_다음_확인"/>
-          <include name="TC_0852_Chips_뉴스_컨트롤러_이전뉴스_확인"/>
+          <include name="TC_0555_Chips_사칙연산_뺄셈1_확인" invocation-numbers="0"/>
+          <include name="TC_0000_앱실행과AccessToken얻기" invocation-numbers="0"/>
+          <include name="TC_0556_Chips_사칙연산_뺄셈2_확인" invocation-numbers="0"/>
+          <include name="TC_0563_Chips_사칙연산_미연산값_3항이상연산자두개_확인" invocation-numbers="0"/>
+          <include name="TC_0559_Chips_사칙연산_곱셈1_확인" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러 -->
-      <class name="Chips_004_생활정보.생활정보_02_감성대화">
-        <methods>
-          <include name="TC_0714_Chips_감성대화_감사_확인"/>
-          <include name="setupClass"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0710_Chips_감성대화_안부인사_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0721_Chips_감성대화_고객센터번호_확인"/>
-          <include name="TC_0711_Chips_감성대화_이벤트절기상황1_확인"/>
-          <include name="TC_0713_Chips_감성대화_피곤질병_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0712_Chips_감성대화_이벤트절기상황2_확인"/>
-        </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_02_감성대화 -->
-      <class name="Chips_004_생활정보.생활정보_11_날씨_일몰시간">
-        <methods>
-          <include name="TC_0781_Chips_날씨_일몰시간_확인"/>
-          <include name="TC_0782_Chips_날씨_지역_일몰시간_확인"/>
-          <include name="TC_0784_Chips_날씨_오늘지역_일몰시간_확인"/>
-          <include name="setupClass"/>
-          <include name="tearDownClass"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0783_Chips_날씨_오늘_일몰시간_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0786_Chips_날씨_내일지역_일몰시간_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0785_Chips_날씨_내일_일몰시간_확인"/>
-        </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_11_날씨_일몰시간 -->
-      <class name="Chips_004_생활정보.생활정보_06_날씨_현재기온">
-        <methods>
-          <include name="setupClass"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0745_Chips_날씨_현재온도_추워_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0746_Chips_날씨_현재온도_더워_확인"/>
-          <include name="AfterMethod"/>
-        </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_06_날씨_현재기온 -->
-      <class name="Chips_002_미디어.미디어_12_팟빵">
-        <methods>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0456_Chips_팟빵_컨트롤러_일시정지_확인"/>
-          <include name="TC_0448_Chips_팟빵_종료예약_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0445_Chips_팟빵_구독_확인"/>
-          <include name="TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인"/>
-          <include name="TC_0461_Chips_팟빵_구독해제_확인"/>
-          <include name="TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인"/>
-          <include name="setupClass"/>
-          <include name="TC_0466_Chips_팟빵_재생시간앞으로이동_확인"/>
-          <include name="TC_0442_Chips_팟캐스트_재생_확인"/>
-          <include name="TC_0449_Chips_팟빵_종료예약_확인"/>
-          <include name="TC_0447_Chips_팟빵_재생시간이동_확인"/>
-          <include name="TC_0446_Chips_팟빵_구독삭제_확인"/>
-          <include name="TC_0467_Chips_팟빵_재생시간뒤으로이동_확인"/>
-          <include name="TC_0468_Chips_팟빵_종료_확인"/>
-          <include name="TC_0464_Chips_팟빵_이전팟캐스트_확인"/>
-          <include name="TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인"/>
-          <include name="TC_0465_Chips_팟빵_다음팟캐스트__확인"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0462_Chips_팟빵_이전_확인"/>
-          <include name="TC_0463_Chips_팟빵_다음_확인"/>
-          <include name="TC_0453_Chips_팟빵_티맵미지원컨텐츠_재생_확인"/>
-          <include name="TC_0458_Chips_팟빵_컨트롤러_일시정지_확인"/>
-          <include name="TC_0452_Chips_팟빵_티맵미지원컨텐츠_재생_확인"/>
-          <include name="TC_0460_Chips_팟빵_구독_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0443_Chips_팟빵_재생_확인"/>
-          <include name="TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인"/>
-        </methods>
-      </class> <!-- Chips_002_미디어.미디어_12_팟빵 -->
-      <class name="Chips_002_미디어.미디어_10_라디오_재생컨트롤러">
-        <methods>
-          <include name="TC_0406_Chips_라디오_다음라디오채널_확인"/>
-          <include name="TC_0407_Chips_라디오_이전라디오채널_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0412_Chips_라디오_다음라디오_확인"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0410_Chips_라디오_다음채널_확인"/>
-          <include name="TC_0401_Chips_라디오_재생_확인"/>
-          <include name="TC_0411_Chips_라디오_이전라디오방송_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0402_Chips_라디오_일시정지_확인"/>
-          <include name="TC_0405_Chips_라디오_재생_확인"/>
-          <include name="setupClass"/>
-          <include name="TC_0414_Chips_라디오_종료_확인"/>
-          <include name="TC_0408_Chips_라디오_다음_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0404_Chips_라디오_일시정지_확인"/>
-          <include name="TC_0409_Chips_라디오_이전_확인"/>
-          <include name="TC_0403_Chips_라디오_일시정지취소_확인"/>
-          <include name="TC_0413_Chips_라디오_종료예약_확인"/>
-        </methods>
-      </class> <!-- Chips_002_미디어.미디어_10_라디오_재생컨트롤러 -->
+      </class> <!-- Chips_003_편의기능.편의기능_02_사칙연산 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->

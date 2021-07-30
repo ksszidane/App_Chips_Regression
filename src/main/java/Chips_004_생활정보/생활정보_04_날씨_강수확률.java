@@ -160,10 +160,6 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		boolean 위치정보 = util.isElementPresent(By.xpath(xPath.날씨위치정보_web));
 		Assert.assertTrue(위치정보);
 		
-		test.log(Status.INFO, "주간날씨 리스트 확인");
-		boolean 주간날씨 = util.isElementPresent(By.xpath(xPath.주간날씨영역_web));
-		Assert.assertTrue(주간날씨);
-		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
@@ -171,10 +167,14 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 이번 주 비 와? - 발화");
 		util.SWFsendPost("이번 주 비 와?", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "첫번쨰 날짜 기준 금일 요일 확인");
+		test.log(Status.INFO, "주간날씨 리스트 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		boolean 주간날씨 = util.isElementPresent(By.xpath(xPath.주간날씨영역_web));
+		Assert.assertTrue(주간날씨);
+	
+		test.log(Status.INFO, "첫번쨰 날짜 기준 금일 요일 확인");
 		String 첫번째요일 = util.getText(By.xpath(xPath.주간날씨리스트_1st요일_web));
 		Assert.assertTrue(첫번째요일.contains(util.getDayOfWeek(0)));
 		
@@ -182,10 +182,6 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		String 두번째요일내일마킹 = util.getText(By.xpath(xPath.주간날씨내일마킹_web));
 		Assert.assertTrue(두번째요일내일마킹.contains("내일"));
 		
-		test.log(Status.INFO, "마지막 리스트 날짜 기준 금일 요일 확인");
-		String 마지막요일 = util.getText(By.xpath(xPath.주간날씨리스트_7st요일_web));
-		Assert.assertTrue(마지막요일.contains(util.getDayOfWeek(+6)));
-		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
@@ -193,10 +189,14 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 이번 주 비 와? - 발화");
 		util.SWFsendPost("이번 주 비 와?", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "모레날씨 최저온도 확인");
+		test.log(Status.INFO, "마지막 리스트 날짜 기준 금일 요일 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		String 마지막요일 = util.getText(By.xpath(xPath.주간날씨리스트_7st요일_web));
+		Assert.assertTrue(마지막요일.contains(util.getDayOfWeek(+6)));
+		
+		test.log(Status.INFO, "모레날씨 최저온도 확인");
 		boolean 최저온도 = util.isElementPresent(By.xpath(xPath.주간날씨리스트_3st최저기온_web));
 		Assert.assertTrue(최저온도);
 		
@@ -212,8 +212,6 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
 		Assert.assertTrue(tts.contains("낮기온"));
 		Assert.assertTrue(tts.contains("이번주 " + 현재위치));
-
-		util.context("NATIVE_APP");
 		
 	}
 	

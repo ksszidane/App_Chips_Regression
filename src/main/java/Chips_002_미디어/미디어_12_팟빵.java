@@ -565,7 +565,6 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("이전 팟캐스트", ServerName, AccessToken, "podcast");
 		Thread.sleep(4000);
 		
-		test.log(Status.INFO, "W, 이전 팟캐스트 - 발화");
 		util.SWFsendPost_playStatus("이전 팟캐스트", ServerName, AccessToken, "podcast");
 		Thread.sleep(4000);
 		
@@ -590,7 +589,9 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("다음 팟캐스트", ServerName, AccessToken, "podcast");
 		Thread.sleep(4000);
 		
-		test.log(Status.INFO, "W, 다음 팟캐스트 - 발화");
+		util.SWFsendPost_playStatus("다음 팟캐스트", ServerName, AccessToken, "podcast");
+		Thread.sleep(4000);
+		
 		util.SWFsendPost_playStatus("다음 팟캐스트", ServerName, AccessToken, "podcast");
 		Thread.sleep(4000);
 		
