@@ -70,7 +70,7 @@
 						</property>
 					</properties>
 					<suiteXmlFiles>
-                    	<suiteXmlFile>005_검색_suite.xml</suiteXmlFile>
+                    	<suiteXmlFile>main_suite.xml</suiteXmlFile>
                  	 </suiteXmlFiles>
 					<workingDirectory>target/</workingDirectory>
 					<argLine>
