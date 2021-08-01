@@ -66,6 +66,7 @@
 			-->
 
 			<class name="Chips_005_검색.검색_01_어학사전" />
+			<class name="Chips_005_검색.검색_02_누구백과" />
 
 		</classes>
 	</test>
