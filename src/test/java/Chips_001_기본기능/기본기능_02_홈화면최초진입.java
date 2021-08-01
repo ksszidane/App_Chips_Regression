@@ -17,17 +17,17 @@ public class 기본기능_02_홈화면최초진입 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0000")
 	public void TC_0000_앱실행과AccessToken얻기(Method method) throws Exception {
 
+		test.log(Status.INFO, "퍼미션 오디오 녹음 권한 허용 (ADB MiC permission On)");
+		adb.ChipsApp_permission_MIC_On(udid);
+		
+		test.log(Status.INFO, "퍼미션 위치 권한 허용 (ADB LOCATION permission On)");
+		adb.ChipsApp_permission_LOCATION_On(udid);
+		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
 		util.context("NATIVE_APP");
 		
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
 		util.click(By.xpath(xPath.접근권한허용버튼));
-		
-		test.log(Status.INFO, "퍼미션 오디오 녹음 권한 허용 "); 
-	    util.switchTo().alert().accept();
-	    
-	    test.log(Status.INFO, "퍼미션 위치 권한 허용 "); 
-	    util.switchTo().alert().accept();
 	    
 	    test.log(Status.INFO, "NUGU CHIPS 빠른 설정 가이드 [X]버튼 닫기 "); 
 	    util.click(By.id("btn_close"));
