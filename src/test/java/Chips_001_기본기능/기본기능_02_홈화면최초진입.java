@@ -31,9 +31,11 @@ public class 기본기능_02_홈화면최초진입 extends Chips_TestCase {
 	    
 	    test.log(Status.INFO, "NUGU CHIPS 빠른 설정 가이드 [X]버튼 닫기 "); 
 	    util.click(By.id("btn_close"));
+	    Thread.sleep(5000);
 	    
 	    test.log(Status.INFO, "세션 만료 후 로그인 시도"); 
 	    util.click(By.id("loginButton"));
+	    Thread.sleep(1000);
 	    
 	    test.log(Status.INFO, "WEBVIEW로 화면 전환");
         util.switchContext("WEBVIEW");

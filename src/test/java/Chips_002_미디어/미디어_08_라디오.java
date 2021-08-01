@@ -436,6 +436,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 일시정지 - 발화");
 		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "radio");
 		
+		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "radio");
+		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();

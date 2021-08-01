@@ -15,80 +15,16 @@
     <parameter name="AppName" value="Chips"/>
     <parameter name="userID_nuguqa001" value="ALDFH3D1Q7W6071EFE41"/>
     <classes>
-      <class name="Chips_006_금융.금융_01_삼성증권">
+      <class name="Chips_008_CarLife.CarLife_01_스타벅스">
         <methods>
-          <include name="TC_0961_2_Chips_삼성증권_종합주가지수_장중_확인" invocation-numbers="0"/>
-          <include name="TC_0984_Chips_삼성증권_종목별주가_장중_정지_확인" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0990_Chips_삼성증권_종목별주가_장전_전일휴일_확인" invocation-numbers="0"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0960_3_Chips_삼성증권_종합주가지수_장종_확인" invocation-numbers="0"/>
-          <include name="TC_0962_3_Chips_삼성증권_종합주가지수_장종_확인" invocation-numbers="0"/>
-          <include name="TC_0981_Chips_삼성증권_종목별주가_장중_상승_확인" invocation-numbers="0"/>
-          <include name="TC_0986_Chips_삼성증권_종목별주가_장종_하락_확인" invocation-numbers="0"/>
-          <include name="TC_0960_2_Chips_삼성증권_종합주가지수_장중_확인" invocation-numbers="0"/>
-          <include name="TC_0962_2_Chips_삼성증권_종합주가지수_장중_확인" invocation-numbers="0"/>
-          <include name="TC_0965_Chips_삼성증권_종합주가지수_코스닥_확인" invocation-numbers="0"/>
-          <include name="TC_0983_Chips_삼성증권_종목별주가_장중_보합_확인" invocation-numbers="0"/>
           <include name="setupClass"/>
-          <include name="TC_0959_2_Chips_삼성증권_종합주가지수_장중_확인" invocation-numbers="0"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0985_Chips_삼성증권_종목별주가_장종_상승_확인" invocation-numbers="0"/>
-          <include name="TC_0982_Chips_삼성증권_종목별주가_장중_하락_확인" invocation-numbers="0"/>
-          <include name="TC_0961_3_Chips_삼성증권_종합주가지수_장종_확인" invocation-numbers="0"/>
-          <include name="TC_0987_Chips_삼성증권_종목별주가_장종_보합_확인" invocation-numbers="0"/>
-          <include name="TC_0988_Chips_삼성증권_종목별주가_장종_정지_확인" invocation-numbers="0"/>
-          <include name="TC_0991_Chips_삼성증권_종목별주가_휴장일_확인" invocation-numbers="0"/>
-          <include name="TC_0959_3_Chips_삼성증권_종합주가지수_장종_확인" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- Chips_006_금융.금융_01_삼성증권 -->
-      <class name="Chips_004_생활정보.생활정보_12_날씨_세차지수">
-        <methods>
-          <include name="TC_0797_Chips_날씨_세차지수부재_지역아님_확인" invocation-numbers="0"/>
           <include name="tearDownClass"/>
-          <include name="TC_0787_Chips_날씨_세차지수_확인" invocation-numbers="0"/>
-          <include name="TC_0788_Chips_날씨_오늘세차지수_확인" invocation-numbers="0"/>
           <include name="TC_0000_앱실행과AccessToken얻기" invocation-numbers="0"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0793_Chips_날씨_지정위치특별광역시_세차지수_확인" invocation-numbers="0"/>
-          <include name="TC_0796_Chips_날씨_세차지수부재_지역외_확인" invocation-numbers="0"/>
-          <include name="TC_0799_Chips_날씨_세차지수부재_다음주_확인" invocation-numbers="0"/>
-          <include name="TC_0800_Chips_날씨_세차지수부재_모레_확인" invocation-numbers="0"/>
-          <include name="setupClass"/>
-          <include name="TC_0798_Chips_날씨_세차지수부재_이번주_확인" invocation-numbers="0"/>
-          <include name="TC_0789_Chips_날씨_지정위치읍면동_세차지수_확인" invocation-numbers="0"/>
           <include name="BeforeMethod"/>
-          <include name="TC_0791_Chips_날씨_지정위치읍면동_세차지수_확인" invocation-numbers="0"/>
-          <include name="TC_0790_Chips_날씨_지정위치읍면동_세차지수_확인" invocation-numbers="0"/>
-          <include name="TC_0792_Chips_날씨_지정위치특별광역시_세차지수_확인" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_12_날씨_세차지수 -->
-      <class name="Chips_003_편의기능.편의기능_02_사칙연산">
-        <methods>
-          <include name="TC_0548_Chips_사칙연산_도메인안내_확인" invocation-numbers="0"/>
-          <include name="TC_0562_Chips_사칙연산_미연산값_마이너스값_확인" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0552_Chips_사칙연산_나누기_도메인안내_확인" invocation-numbers="0"/>
-          <include name="TC_0557_Chips_사칙연산_나눗셈1_확인" invocation-numbers="0"/>
-          <include name="TC_0564_Chips_사칙연산_미연산값_3항이상연산자두개2_확인" invocation-numbers="0"/>
-          <include name="TC_0554_Chips_사칙연산_덧셈2_확인" invocation-numbers="0"/>
-          <include name="TC_0549_Chips_사칙연산_더하기_도메인안내_확인" invocation-numbers="0"/>
-          <include name="TC_0558_Chips_사칙연산_나눗셈2_확인" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-          <include name="TC_0551_Chips_사칙연산_곱하기_도메인안내_확인" invocation-numbers="0"/>
-          <include name="TC_0553_Chips_사칙연산_덧셈1_확인" invocation-numbers="0"/>
-          <include name="TC_0560_Chips_사칙연산_곱셈2_확인" invocation-numbers="0"/>
-          <include name="TC_0550_Chips_사칙연산_빼기_도메인안내_확인" invocation-numbers="0"/>
-          <include name="TC_0561_Chips_사칙연산_미연산값_분수형태_확인" invocation-numbers="0"/>
-          <include name="setupClass"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0555_Chips_사칙연산_뺄셈1_확인" invocation-numbers="0"/>
-          <include name="TC_0000_앱실행과AccessToken얻기" invocation-numbers="0"/>
-          <include name="TC_0556_Chips_사칙연산_뺄셈2_확인" invocation-numbers="0"/>
-          <include name="TC_0563_Chips_사칙연산_미연산값_3항이상연산자두개_확인" invocation-numbers="0"/>
-          <include name="TC_0559_Chips_사칙연산_곱셈1_확인" invocation-numbers="0"/>
+          <include name="TC_1243_스타벅스_미지원_확인" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Chips_003_편의기능.편의기능_02_사칙연산 -->
+      </class> <!-- Chips_008_CarLife.CarLife_01_스타벅스 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->
