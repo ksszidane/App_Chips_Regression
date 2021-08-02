@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="10" parallel="tests" name="Failed suite [ExtentReport]" guice-stage="DEVELOPMENT">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [ExtentReport]" parallel="tests">
   <parameter name="Project" value="Chips"/>
   <parameter name="hubAddress" value="http://0.0.0.0:4723/wd/hub"/>
-  <test thread-count="10" parallel="tests" name="Test_Project(failed)">
+  <test thread-count="10" name="Test_Project(failed)" parallel="tests">
     <parameter name="userID_ksszidane10" value="ALDF5TR5SNGZ8175DA16"/>
     <parameter name="MobileDevice" value="ce06171633774e37027e"/>
     <parameter name="OS" value="Android"/>
     <parameter name="Server" value="RTG"/>
     <parameter name="userID_ksszidane" value="ALDF3NYA6C0D0C654DD2"/>
-    <parameter name="TestPlace" value="out"/>
+    <parameter name="TestPlace" value="in"/>
     <parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
     <parameter name="deviceID_Chips10" value="ALDFHFMSG34WDF6CD40E"/>
     <parameter name="AppName" value="Chips"/>
     <parameter name="userID_nuguqa001" value="ALDFH3D1Q7W6071EFE41"/>
     <classes>
-      <class name="Chips_008_CarLife.CarLife_01_스타벅스">
+      <class name="Chips_001_기본기능.기본기능_03_부가기능">
         <methods>
           <include name="setupClass"/>
           <include name="tearDownClass"/>
-          <include name="TC_0000_앱실행과AccessToken얻기" invocation-numbers="0"/>
           <include name="BeforeMethod"/>
+          <include name="TC_0145_미디어재생중_infoPlay실행" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-          <include name="TC_1243_스타벅스_미지원_확인" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Chips_008_CarLife.CarLife_01_스타벅스 -->
+      </class> <!-- Chips_001_기본기능.기본기능_03_부가기능 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->
