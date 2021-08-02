@@ -66,7 +66,21 @@
 			-->
 
 			
+			<class name="Chips_004_생활정보.생활정보_01_메뉴추천" />
+			<class name="Chips_004_생활정보.생활정보_02_감성대화" />
+			<class name="Chips_004_생활정보.생활정보_03_날씨_일기예보" />
+			<class name="Chips_004_생활정보.생활정보_04_날씨_강수확률" />
 			<class name="Chips_004_생활정보.생활정보_05_날씨_미세먼지" />
+			<class name="Chips_004_생활정보.생활정보_06_날씨_현재기온" />
+			<class name="Chips_004_생활정보.생활정보_07_날씨_자외선지수" />
+			<class name="Chips_004_생활정보.생활정보_08_날씨_습도" />
+			<class name="Chips_004_생활정보.생활정보_09_날씨_오존농도" />
+			<class name="Chips_004_생활정보.생활정보_10_날씨_일출시간" />
+			<class name="Chips_004_생활정보.생활정보_11_날씨_일몰시간" />
+			<class name="Chips_004_생활정보.생활정보_12_날씨_세차지수" />
+			<class name="Chips_004_생활정보.생활정보_13_운세" />
+			<class name="Chips_004_생활정보.생활정보_14_뉴스" />
+			<class name="Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러" />
 			
 
 
