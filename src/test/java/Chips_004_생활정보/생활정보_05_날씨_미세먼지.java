@@ -248,9 +248,23 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		boolean 미세먼지문구 = util.isElementPresent(By.xpath(xPath.내일미세먼지_web));
 		Assert.assertTrue(미세먼지문구);
 		
+		util.context("NATIVE_APP");
+		test.log(Status.INFO, "play카드 닫기"); 
+	    util.view_close_btn_check();
+		
+		test.log(Status.INFO, "W, 내일 미세먼지 상태 알려줘 - 발화");
+		util.SWFsendPost("내일 미세먼지 상태 알려줘", ServerName, AccessToken);
+		
 		test.log(Status.INFO, "미세먼지 상태 확인");
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
 		boolean 미세먼지상태 = util.isElementPresent(By.xpath(xPath.내일미세먼지상태_web));
 		Assert.assertTrue(미세먼지상태);
+		
+		test.log(Status.INFO, "미세먼지 아이콘 확인");
+		boolean 미세먼지아이콘 = util.isElementPresent(By.xpath(xPath.내일미세먼지아이콘_web));
+		Assert.assertTrue(미세먼지아이콘);
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
@@ -259,14 +273,10 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 내일 미세먼지 상태 알려줘 - 발화");
 		util.SWFsendPost("내일 미세먼지 상태 알려줘", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "미세먼지 아이콘 확인");
+		test.log(Status.INFO, "초미세먼지 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 미세먼지아이콘 = util.isElementPresent(By.xpath(xPath.내일미세먼지아이콘_web));
-		Assert.assertTrue(미세먼지아이콘);
-		
-		test.log(Status.INFO, "초미세먼지 타이틀 확인");
 		boolean 초미세먼지문구 = util.isElementPresent(By.xpath(xPath.내일초미세먼지_web));
 		Assert.assertTrue(초미세먼지문구);
 		
