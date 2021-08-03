@@ -31,7 +31,7 @@
   	<dependency>
   		<groupId>com.github.ksszidane</groupId>
   		<artifactId>Appium-unit-lib</artifactId>
-  		<version>1.0.32</version>
+  		<version>1.0.34</version>
 	</dependency>
 	
 	<dependency>
