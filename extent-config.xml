@@ -43,7 +43,7 @@
             <![CDATA[
                 $(document).ready(function() {
                 
-                var cssUrl = "./extent.css";
+                var cssUrl = "http://nuguya-ci.duckdns.org:8088/job/08_Chips_App_CarLife/ws/extent.css";
 				var head = document.getElementsByTagName("head")[0];
 				var link = document.createElement("link");
 				link.rel = "stylesheet";
