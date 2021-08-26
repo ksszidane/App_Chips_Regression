@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-04T15:36:29 KST" name="ExtentReport" finished-at="2021-08-04T15:37:29 KST" duration-ms="59339">
+  <suite started-at="2021-08-09T12:57:26 KST" name="ExtentReport" finished-at="2021-08-09T12:58:52 KST" duration-ms="86614">
     <groups>
     </groups>
-    <test started-at="2021-08-04T15:36:29 KST" name="Test_Project" finished-at="2021-08-04T15:37:29 KST" duration-ms="59339">
-      <class name="Chips_008_CarLife.CarLife_01_스타벅스">
-        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-08-04T15:36:29 KST" name="setupClass" finished-at="2021-08-04T15:36:42 KST" duration-ms="13042" status="PASS">
+    <test started-at="2021-08-09T12:57:26 KST" name="Test_Project" finished-at="2021-08-09T12:58:52 KST" duration-ms="86614">
+      <class name="Chips_007_연령특화.연령특화_01_ZEM키즈">
+        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_007_연령특화.연령특화_01_ZEM키즈@1224144a]" started-at="2021-08-09T12:57:26 KST" name="setupClass" finished-at="2021-08-09T12:57:38 KST" duration-ms="12673" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,127 +73,65 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-08-04T15:36:42 KST" name="BeforeMethod" finished-at="2021-08-04T15:36:42 KST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_연령특화.연령특화_01_ZEM키즈@1224144a]" started-at="2021-08-09T12:57:39 KST" name="BeforeMethod" finished-at="2021-08-09T12:57:39 KST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_008_CarLife.CarLife_01_스타벅스.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_연령특화.연령특화_01_ZEM키즈.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-08-04T15:36:42 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-08-04T15:37:25 KST" duration-ms="42273" status="FAIL">
+        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_007_연령특화.연령특화_01_ZEM키즈@1224144a]" started-at="2021-08-09T12:57:39 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-08-09T12:58:34 KST" duration-ms="55346" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_008_CarLife.CarLife_01_스타벅스.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_연령특화.연령특화_01_ZEM키즈.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
-          <exception class="java.net.SocketTimeoutException">
-            <message>
-              <![CDATA[Connect timed out]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.net.SocketTimeoutException: Connect timed out
-at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
-at java.base/java.net.Socket.connect(Socket.java:648)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:127)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:268)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:176)
-at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:236)
-at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:109)
-at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:77)
-at okhttp3.internal.connection.Transmitter.newExchange$okhttp(Transmitter.kt:162)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:35)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:82)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:84)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:71)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.kt:184)
-at okhttp3.RealCall.execute(RealCall.kt:66)
-at unit.Utilities.NUGU_Insight_Token(Utilities.java:1909)
-at unit.Utilities.TransactionID_JsonParsing(Utilities.java:3071)
-at Chips_008_CarLife.CarLife_01_스타벅스.accessToken얻기(CarLife_01_스타벅스.java:37)
-at Chips_008_CarLife.CarLife_01_스타벅스.TC_0000_앱실행과AccessToken얻기(CarLife_01_스타벅스.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.net.SocketTimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0000_앱실행과AccessToken얻기 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-08-04T15:37:25 KST" name="AfterMethod" finished-at="2021-08-04T15:37:25 KST" duration-ms="434" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_연령특화.연령특화_01_ZEM키즈@1224144a]" started-at="2021-08-09T12:58:34 KST" name="AfterMethod" finished-at="2021-08-09T12:58:34 KST" duration-ms="11" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=FAILURE method=CarLife_01_스타벅스.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=연령특화_01_ZEM키즈.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_007_연령특화.연령특화_01_ZEM키즈@1224144a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-08-04T15:37:25 KST" name="BeforeMethod" finished-at="2021-08-04T15:37:25 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_연령특화.연령특화_01_ZEM키즈@1224144a]" started-at="2021-08-09T12:58:34 KST" name="BeforeMethod" finished-at="2021-08-09T12:58:34 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_008_CarLife.CarLife_01_스타벅스.TC_1243_스타벅스_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_연령특화.연령특화_01_ZEM키즈.TC_1062_ZEM키즈_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_1243_스타벅스_미지원_확인(java.lang.reflect.Method)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-08-04T15:37:25 KST" name="TC_1243_스타벅스_미지원_확인" description="칩스 리그레이션 TC : 실행_1243" finished-at="2021-08-04T15:37:25 KST" duration-ms="2" status="FAIL">
+        <test-method signature="TC_1062_ZEM키즈_미지원_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_연령특화.연령특화_01_ZEM키즈@1224144a]" started-at="2021-08-09T12:58:34 KST" name="TC_1062_ZEM키즈_미지원_확인" description="칩스 리그레이션 TC : 실행_1062" finished-at="2021-08-09T12:58:49 KST" duration-ms="15109" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_008_CarLife.CarLife_01_스타벅스.TC_1243_스타벅스_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_연령특화.연령특화_01_ZEM키즈.TC_1062_ZEM키즈_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Parameter specified as non-null is null: method okhttp3.Request$Builder.addHeader, parameter value]]>
-            </message>
+          <exception class="junit.framework.AssertionFailedError">
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.Request$Builder.addHeader, parameter value
-at okhttp3.Request$Builder.addHeader(Request.kt)
-at unit.Utilities.SWFsendPost(Utilities.java:1737)
-at Chips_008_CarLife.CarLife_01_스타벅스.TC_1243_스타벅스_미지원_확인(CarLife_01_스타벅스.java:92)
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at Chips_007_연령특화.연령특화_01_ZEM키즈.TC_1062_ZEM키즈_미지원_확인(연령특화_01_ZEM키즈.java:96)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -219,22 +157,22 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_1243_스타벅스_미지원_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-08-04T15:37:25 KST" name="AfterMethod" finished-at="2021-08-04T15:37:26 KST" duration-ms="411" status="PASS">
+        </test-method> <!-- TC_1062_ZEM키즈_미지원_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_연령특화.연령특화_01_ZEM키즈@1224144a]" started-at="2021-08-09T12:58:49 KST" name="AfterMethod" finished-at="2021-08-09T12:58:49 KST" duration-ms="471" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_1243_스타벅스_미지원_확인 status=FAILURE method=CarLife_01_스타벅스.TC_1243_스타벅스_미지원_확인(java.lang.reflect.Method)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a] output={null}]]]>
+                <![CDATA[[TestResult name=TC_1062_ZEM키즈_미지원_확인 status=FAILURE method=연령특화_01_ZEM키즈.TC_1062_ZEM키즈_미지원_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_연령특화.연령특화_01_ZEM키즈@1224144a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-08-04T15:37:26 KST" name="tearDownClass" finished-at="2021-08-04T15:37:29 KST" duration-ms="3131" status="PASS">
+        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_007_연령특화.연령특화_01_ZEM키즈@1224144a]" started-at="2021-08-09T12:58:49 KST" name="tearDownClass" finished-at="2021-08-09T12:58:52 KST" duration-ms="2957" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -285,7 +223,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- Chips_008_CarLife.CarLife_01_스타벅스 -->
+      </class> <!-- Chips_007_연령특화.연령특화_01_ZEM키즈 -->
     </test> <!-- Test_Project -->
   </suite> <!-- ExtentReport -->
 </testng-results>

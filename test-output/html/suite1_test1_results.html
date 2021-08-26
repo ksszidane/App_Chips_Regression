@@ -12,7 +12,7 @@
 <body>
 <h1>Test_Project</h1>
 <p>
-  Test duration: 59.301s
+  Test duration: 86.574s
 </p>
 
 
@@ -20,96 +20,28 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">Chips_008_CarLife.CarLife_01_스타벅스</td>
+        <td colspan="3" class="group">Chips_007_연령특화.연령특화_01_ZEM키즈</td>
       </tr>
             
 <tr>
   <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0000">TC_0000_앱실행과AccessToken얻기</span>
+                  <span class="description" title="칩스 리그레이션 TC : 실행_1062">TC_1062_ZEM키즈_미지원_확인</span>
       </td>
   <td class="duration">
-    42.273s
+    15.109s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">public void Chips_008_CarLife.CarLife_01_스타벅스.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</span><br />
+          <i>Method arguments: </i><span class="arguments">public void Chips_007_연령특화.연령특화_01_ZEM키즈.TC_1062_ZEM키즈_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.net.SocketTimeoutException: Connect timed out</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>junit.framework.AssertionFailedError</b></a><br />
     <div class="stackTrace" id="exception-0">
-              java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)<br />
-              java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)<br />
-              java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)<br />
-              java.base/java.net.Socket.connect(Socket.java:648)<br />
-              okhttp3.internal.platform.Platform.connectSocket(Platform.kt:127)<br />
-              okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:268)<br />
-              okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:176)<br />
-              okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:236)<br />
-              okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:109)<br />
-              okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:77)<br />
-              okhttp3.internal.connection.Transmitter.newExchange$okhttp(Transmitter.kt:162)<br />
-              okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:35)<br />
-              okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)<br />
-              okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)<br />
-              okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:82)<br />
-              okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)<br />
-              okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)<br />
-              okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:84)<br />
-              okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)<br />
-              okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:71)<br />
-              okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)<br />
-              okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)<br />
-              okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.kt:184)<br />
-              okhttp3.RealCall.execute(RealCall.kt:66)<br />
-              unit.Utilities.NUGU_Insight_Token(Utilities.java:1909)<br />
-              unit.Utilities.TransactionID_JsonParsing(Utilities.java:3071)<br />
-              Chips_008_CarLife.CarLife_01_스타벅스.accessToken얻기(CarLife_01_스타벅스.java:37)<br />
-              Chips_008_CarLife.CarLife_01_스타벅스.TC_0000_앱실행과AccessToken얻기(CarLife_01_스타벅스.java:84)<br />
-              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
-              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
-              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
-              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
-              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
-              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
-              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
-              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
-              org.testng.TestRunner.run(TestRunner.java:596)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:28)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)<br />
-              org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)<br />
-              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
-              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)<br />
-              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)<br />
-              java.base/java.lang.Thread.run(Thread.java:832)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_1243">TC_1243_스타벅스_미지원_확인</span>
-      </td>
-  <td class="duration">
-    0.002s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_008_CarLife.CarLife_01_스타벅스.TC_1243_스타벅스_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.Request$Builder.addHeader, parameter value</b></a><br />
-    <div class="stackTrace" id="exception-1">
-              okhttp3.Request$Builder.addHeader(Request.kt)<br />
-              unit.Utilities.SWFsendPost(Utilities.java:1737)<br />
-              Chips_008_CarLife.CarLife_01_스타벅스.TC_1243_스타벅스_미지원_확인(CarLife_01_스타벅스.java:92)<br />
+              junit.framework.Assert.fail(Assert.java:47)<br />
+              junit.framework.Assert.assertTrue(Assert.java:20)<br />
+              junit.framework.Assert.assertTrue(Assert.java:27)<br />
+              Chips_007_연령특화.연령특화_01_ZEM키즈.TC_1062_ZEM키즈_미지원_확인(연령특화_01_ZEM키즈.java:96)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -139,6 +71,28 @@
       </table>
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">Chips_007_연령특화.연령특화_01_ZEM키즈</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="칩스 리그레이션 TC : 실행_0000">TC_0000_앱실행과AccessToken얻기</span>
+      </td>
+  <td class="duration">
+    55.346s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void Chips_007_연령특화.연령특화_01_ZEM키즈.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</span><br />
+    
+        
+
+      </td>
+</tr>
+      </table>
   
 </body>
 </html>

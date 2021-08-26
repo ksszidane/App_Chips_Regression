@@ -15,16 +15,15 @@
     <parameter name="AppName" value="Chips"/>
     <parameter name="userID_nuguqa001" value="ALDFH3D1Q7W6071EFE41"/>
     <classes>
-      <class name="Chips_008_CarLife.CarLife_01_스타벅스">
+      <class name="Chips_007_연령특화.연령특화_01_ZEM키즈">
         <methods>
           <include name="setupClass"/>
           <include name="tearDownClass"/>
-          <include name="TC_0000_앱실행과AccessToken얻기" invocation-numbers="0"/>
           <include name="BeforeMethod"/>
           <include name="AfterMethod"/>
-          <include name="TC_1243_스타벅스_미지원_확인" invocation-numbers="0"/>
+          <include name="TC_1062_ZEM키즈_미지원_확인" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Chips_008_CarLife.CarLife_01_스타벅스 -->
+      </class> <!-- Chips_007_연령특화.연령특화_01_ZEM키즈 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->
