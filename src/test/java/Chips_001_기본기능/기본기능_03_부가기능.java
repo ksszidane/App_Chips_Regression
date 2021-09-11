@@ -84,6 +84,14 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 	    util.context("NATIVE_APP");
 	    util.ProgressBar_Loading();
 	    
+	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
+		boolean coach_mark = util.isElementPresent(By.id("negativeButton"));
+		if(coach_mark == true) {
+			util.click(By.id("negativeButton"));
+		} else { 
+			Thread.sleep(1000);
+		}
+	    
 	    accessToken얻기();
 
 	}
