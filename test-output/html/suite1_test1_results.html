@@ -12,7 +12,7 @@
 <body>
 <h1>Test_Project</h1>
 <p>
-  Test duration: 86.574s
+  Test duration: 38.638s
 </p>
 
 
@@ -25,10 +25,110 @@
             
 <tr>
   <td class="method">
+                  <span class="description" title="칩스 리그레이션 TC : 실행_0000">TC_0000_앱실행과AccessToken얻기</span>
+      </td>
+  <td class="duration">
+    20.944s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void Chips_007_연령특화.연령특화_01_ZEM키즈.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</span><br />
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>io.appium.java_client.NoSuchContextException: An unknown server-side error occurred while processing the command. Original error: A new session could not be created. Details: session not created: This version of ChromeDriver only supports Chrome version 91<br/>
+Current browser version is 93.0.4577.62 with package name com.android.chrome<br/>
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
+System info: host: &apos;DESKTOP-KEI&apos;, ip: &apos;172.27.24.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;<br/>
+Driver info: unit.Utilities<br/>
+Capabilities {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., databaseEnabled: false, desired: {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., deviceName: Android, extractChromeAndroidPackageFromContextName: true, focused: true, platformName: android, recreateChromeDriverSessions: false, showChromedriverLog: true, udid: R33M4000CY}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N976N, deviceName: R33M4000CY, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: R33M4000CY, extractChromeAndroidPackageFromContextName: true, focused: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, recreateChromeDriverSessions: false, showChromedriverLog: true, statBarHeight: 85, takesScreenshot: true, udid: R33M4000CY, viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: c26c0c91-fd6b-425e-9aa8-5c1a871f7d66</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              io.appium.java_client.AppiumDriver.context(AppiumDriver.java:232)<br />
+              unit.Utilities.switchContext(Utilities.java:1530)<br />
+              Chips_007_연령특화.연령특화_01_ZEM키즈.TC_0000_앱실행과AccessToken얻기(연령특화_01_ZEM키즈.java:75)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:28)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)<br />
+              org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)<br />
+              java.base/java.lang.Thread.run(Thread.java:832)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: A new session could not be created. Details: session not created: This version of ChromeDriver only supports Chrome version 91<br/>
+Current browser version is 93.0.4577.62 with package name com.android.chrome<br/>
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
+System info: host: &apos;DESKTOP-KEI&apos;, ip: &apos;172.27.24.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;<br/>
+Driver info: unit.Utilities<br/>
+Capabilities {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., databaseEnabled: false, desired: {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., deviceName: Android, extractChromeAndroidPackageFromContextName: true, focused: true, platformName: android, recreateChromeDriverSessions: false, showChromedriverLog: true, udid: R33M4000CY}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N976N, deviceName: R33M4000CY, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: R33M4000CY, extractChromeAndroidPackageFromContextName: true, focused: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, recreateChromeDriverSessions: false, showChromedriverLog: true, statBarHeight: 85, takesScreenshot: true, udid: R33M4000CY, viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: c26c0c91-fd6b-425e-9aa8-5c1a871f7d66</a><br />
+        <div class="stackTrace" id="exception-1">
+                      java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)<br />
+                      java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+                      java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+                      java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+                      io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)<br />
+                      io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+                      io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+                      io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+                      unit.Utilities.execute(Utilities.java:1)<br />
+                      io.appium.java_client.AppiumDriver.context(AppiumDriver.java:229)<br />
+                      unit.Utilities.switchContext(Utilities.java:1530)<br />
+                      Chips_007_연령특화.연령특화_01_ZEM키즈.TC_0000_앱실행과AccessToken얻기(연령특화_01_ZEM키즈.java:75)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+                      org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+                      org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+                      org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+                      org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+                      org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+                      java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+                      org.testng.TestRunner.run(TestRunner.java:596)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+                      org.testng.SuiteRunner.access$000(SuiteRunner.java:28)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)<br />
+                      org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)<br />
+                      java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)<br />
+                      java.base/java.lang.Thread.run(Thread.java:832)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
                   <span class="description" title="칩스 리그레이션 TC : 실행_1062">TC_1062_ZEM키즈_미지원_확인</span>
       </td>
   <td class="duration">
-    15.109s
+    0.004s
   </td>
   <td class="result">
         
@@ -36,12 +136,11 @@
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>junit.framework.AssertionFailedError</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              junit.framework.Assert.fail(Assert.java:47)<br />
-              junit.framework.Assert.assertTrue(Assert.java:20)<br />
-              junit.framework.Assert.assertTrue(Assert.java:27)<br />
-              Chips_007_연령특화.연령특화_01_ZEM키즈.TC_1062_ZEM키즈_미지원_확인(연령특화_01_ZEM키즈.java:96)<br />
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.Request$Builder.addHeader, parameter value</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              okhttp3.Request$Builder.addHeader(Request.kt)<br />
+              unit.Utilities.SWFsendPost(Utilities.java:1735)<br />
+              Chips_007_연령특화.연령특화_01_ZEM키즈.TC_1062_ZEM키즈_미지원_확인(연령특화_01_ZEM키즈.java:92)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -71,28 +170,6 @@
       </table>
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">Chips_007_연령특화.연령특화_01_ZEM키즈</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0000">TC_0000_앱실행과AccessToken얻기</span>
-      </td>
-  <td class="duration">
-    55.346s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_007_연령특화.연령특화_01_ZEM키즈.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-      </table>
   
 </body>
 </html>

@@ -20,6 +20,7 @@
           <include name="setupClass"/>
           <include name="tearDownClass"/>
           <include name="BeforeMethod"/>
+          <include name="TC_0000_앱실행과AccessToken얻기" invocation-numbers="0"/>
           <include name="AfterMethod"/>
           <include name="TC_1062_ZEM키즈_미지원_확인" invocation-numbers="0"/>
         </methods>

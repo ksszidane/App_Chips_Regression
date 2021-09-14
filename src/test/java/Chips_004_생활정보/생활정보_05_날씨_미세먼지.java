@@ -86,6 +86,8 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		boolean coach_mark = util.isElementPresent(By.id("negativeButton"));
 		if(coach_mark == true) {
 			util.click(By.id("negativeButton"));
+			test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 취소 클릭"); 
+			System.out.println("위치 서비스 사용 설정 안내 팝업 취소 클릭");
 		} else { 
 			Thread.sleep(1000);
 		}
