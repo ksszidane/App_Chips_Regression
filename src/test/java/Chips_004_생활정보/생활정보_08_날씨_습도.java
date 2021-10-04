@@ -119,7 +119,6 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 			test.log(Status.INFO, "[10월~4월] 습도 지수 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
 			Assert.assertTrue(tts.contains("현재 " + 현재위치 + " 습도는"));
-			Assert.assertTrue(data.습도지수체크(tts));
 		}
 	}
 	
@@ -142,7 +141,6 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 			test.log(Status.INFO, "[10월~4월] 습도 지수 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
 			Assert.assertTrue(tts.contains("현재 부산 습도는"));
-			Assert.assertTrue(data.습도지수체크(tts));
 		}
 	}
 	
@@ -170,7 +168,6 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 			test.log(Status.INFO, "[10월~4월] 습도 지수 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
 			Assert.assertTrue(tts.contains("내일 " + 현재위치 + " 습도는"));
-			Assert.assertTrue(data.습도지수체크(tts));
 		}
 	}
 	
@@ -193,7 +190,6 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 			test.log(Status.INFO, "[10월~4월] 습도 지수 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
 			Assert.assertTrue(tts.contains("내일 부산 습도는"));
-			Assert.assertTrue(data.습도지수체크(tts));
 		}
 	}
 	
@@ -223,7 +219,6 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 			test.log(Status.INFO, "[10월~4월] 습도 지수 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
 			Assert.assertTrue(tts.contains(모레날짜 + " " + 모레요일 + "요일 " + 현재위치 + " 습도는"));
-			Assert.assertTrue(data.습도지수체크(tts));
 		}
 	}
 	
@@ -248,7 +243,6 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 			test.log(Status.INFO, "[10월~4월] 습도 지수 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
 			Assert.assertTrue(tts.contains(모레날짜 + " " + 모레요일 + "요일 부산 습도는"));
-			Assert.assertTrue(data.습도지수체크(tts));
 		}
 	}
 	
