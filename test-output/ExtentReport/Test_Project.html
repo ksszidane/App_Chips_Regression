@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test_Project</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 13 13:32:51 KST 2021</td>
+<td>Started on:</td><td>Tue Oct 05 13:00:21 KST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>38 seconds (38675 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6259 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,152 +67,18 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Chips_007_연령특화.연령특화_01_ZEM키즈.TC_1062_ZEM키즈_미지원_확인()'><b>TC_1062_ZEM키즈_미지원_확인</b><br>Test class: Chips_007_연령특화.연령특화_01_ZEM키즈<br>Test method: 칩스 리그레이션 TC : 실행_1062<br>Parameters: public void Chips_007_연령특화.연령특화_01_ZEM키즈.TC_1062_ZEM키즈_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td><div><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.Request$Builder.addHeader, parameter value
-	at okhttp3.Request$Builder.addHeader(Request.kt)
-	at unit.Utilities.SWFsendPost(Utilities.java:1735)
-	at Chips_007_연령특화.연령특화_01_ZEM키즈.TC_1062_ZEM키즈_미지원_확인(연령특화_01_ZEM키즈.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace244683369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace244683369'><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.Request$Builder.addHeader, parameter value
-	at okhttp3.Request$Builder.addHeader(Request.kt)
-	at unit.Utilities.SWFsendPost(Utilities.java:1735)
-	at Chips_007_연령특화.연령특화_01_ZEM키즈.TC_1062_ZEM키즈_미지원_확인(연령특화_01_ZEM키즈.java:92)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-</pre></div></td>
-<td>0</td>
-<td>Chips_007_연령특화.연령특화_01_ZEM키즈@1224144a</td></tr>
-<tr>
-<td title='Chips_007_연령특화.연령특화_01_ZEM키즈.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_007_연령특화.연령특화_01_ZEM키즈<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_007_연령특화.연령특화_01_ZEM키즈.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td><div><pre>io.appium.java_client.NoSuchContextException: An unknown server-side error occurred while processing the command. Original error: A new session could not be created. Details: session not created: This version of ChromeDriver only supports Chrome version 91
-Current browser version is 93.0.4577.62 with package name com.android.chrome
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-KEI&apos;, ip: &apos;172.27.24.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: unit.Utilities
-Capabilities {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., databaseEnabled: false, desired: {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., deviceName: Android, extractChromeAndroidPackageFromContextName: true, focused: true, platformName: android, recreateChromeDriverSessions: false, showChromedriverLog: true, udid: R33M4000CY}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N976N, deviceName: R33M4000CY, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: R33M4000CY, extractChromeAndroidPackageFromContextName: true, focused: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, recreateChromeDriverSessions: false, showChromedriverLog: true, statBarHeight: 85, takesScreenshot: true, udid: R33M4000CY, viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: c26c0c91-fd6b-425e-9aa8-5c1a871f7d66
-	at io.appium.java_client.AppiumDriver.context(AppiumDriver.java:232)
-	at unit.Utilities.switchContext(Utilities.java:1530)
-	at Chips_007_연령특화.연령특화_01_ZEM키즈.TC_0000_앱실행과AccessToken얻기(연령특화_01_ZEM키즈.java:75)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: A new session could not be created. Details: session not created: This version of ChromeDriver only supports Chrome version 91
-Current browser version is 93.0.4577.62 with package name com.android.chrome
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-KEI&apos;, ip: &apos;172.27.24.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: unit.Utilities
-Capabilities {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., databaseEnabled: false, desired: {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., deviceName: Android, extractChromeAndroidPackageFromContextName: true, focused: true, platformName: android, recreateChromeDriverSessions: false, showChromedriverLog: true, udid: R33M4000CY}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N976N, deviceName: R33M4000CY, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: R33M4000CY, extractChromeAndroidPackageFromContextName: true, focused: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, recreateChromeDriverSessions: false, showChromedriverLog: true, statBarHeight: 85, takesScreenshot: true, udid: R33M4000CY, viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: c26c0c91-fd6b-425e-9aa8-5c1a871f7d66
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at unit.Utilities.execute(Utilities.java:1)
-	at io.appium.java_client.AppiumDriver.context(AppiumDriver.java:229)
-	... 25 more
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace737874740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace737874740'><pre>io.appium.java_client.NoSuchContextException: An unknown server-side error occurred while processing the command. Original error: A new session could not be created. Details: session not created: This version of ChromeDriver only supports Chrome version 91
-Current browser version is 93.0.4577.62 with package name com.android.chrome
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-KEI&apos;, ip: &apos;172.27.24.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: unit.Utilities
-Capabilities {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., databaseEnabled: false, desired: {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., deviceName: Android, extractChromeAndroidPackageFromContextName: true, focused: true, platformName: android, recreateChromeDriverSessions: false, showChromedriverLog: true, udid: R33M4000CY}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N976N, deviceName: R33M4000CY, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: R33M4000CY, extractChromeAndroidPackageFromContextName: true, focused: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, recreateChromeDriverSessions: false, showChromedriverLog: true, statBarHeight: 85, takesScreenshot: true, udid: R33M4000CY, viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: c26c0c91-fd6b-425e-9aa8-5c1a871f7d66
-	at io.appium.java_client.AppiumDriver.context(AppiumDriver.java:232)
-	at unit.Utilities.switchContext(Utilities.java:1530)
-	at Chips_007_연령특화.연령특화_01_ZEM키즈.TC_0000_앱실행과AccessToken얻기(연령특화_01_ZEM키즈.java:75)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: A new session could not be created. Details: session not created: This version of ChromeDriver only supports Chrome version 91
-Current browser version is 93.0.4577.62 with package name com.android.chrome
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;DESKTOP-KEI&apos;, ip: &apos;172.27.24.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: unit.Utilities
-Capabilities {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., databaseEnabled: false, desired: {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., deviceName: Android, extractChromeAndroidPackageFromContextName: true, focused: true, platformName: android, recreateChromeDriverSessions: false, showChromedriverLog: true, udid: R33M4000CY}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N976N, deviceName: R33M4000CY, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: R33M4000CY, extractChromeAndroidPackageFromContextName: true, focused: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, recreateChromeDriverSessions: false, showChromedriverLog: true, statBarHeight: 85, takesScreenshot: true, udid: R33M4000CY, viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: c26c0c91-fd6b-425e-9aa8-5c1a871f7d66
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at unit.Utilities.execute(Utilities.java:1)
-	at io.appium.java_client.AppiumDriver.context(AppiumDriver.java:229)
-	... 25 more
-</pre></div></td>
-<td>20</td>
-<td>Chips_007_연령특화.연령특화_01_ZEM키즈@1224144a</td></tr>
+<td title='Chips_Installer.Chips_Installer.Chips_Installer_실행()'><b>Chips_Installer_실행</b><br>Test class: Chips_Installer.Chips_Installer<br>Test method: 인스톨러 <br>Parameters: public void Chips_Installer.Chips_Installer.Chips_Installer_실행(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>3</td>
+<td>Chips_Installer.Chips_Installer@465232e9</td></tr>
 </table><p>
 </body>
 </html>

@@ -5,26 +5,25 @@
   <parameter name="hubAddress" value="http://0.0.0.0:4723/wd/hub"/>
   <test thread-count="10" parallel="tests" name="Test_Project(failed)">
     <parameter name="userID_ksszidane10" value="ALDF5TR5SNGZ8175DA16"/>
-    <parameter name="MobileDevice" value="R33M4000CY"/>
+    <parameter name="MobileDevice" value="ce06171633774e37027e"/>
     <parameter name="OS" value="Android"/>
-    <parameter name="Server" value="RTG"/>
+    <parameter name="Server" value="PRD"/>
     <parameter name="userID_ksszidane" value="ALDF3NYA6C0D0C654DD2"/>
-    <parameter name="TestPlace" value="out"/>
+    <parameter name="TestPlace" value="in"/>
     <parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
     <parameter name="deviceID_Chips10" value="ALDFHFMSG34WDF6CD40E"/>
     <parameter name="AppName" value="Chips"/>
     <parameter name="userID_nuguqa001" value="ALDFH3D1Q7W6071EFE41"/>
     <classes>
-      <class name="Chips_007_연령특화.연령특화_01_ZEM키즈">
+      <class name="Chips_Installer.Chips_Installer">
         <methods>
+          <include name="Chips_Installer_실행"/>
           <include name="setupClass"/>
           <include name="tearDownClass"/>
           <include name="BeforeMethod"/>
-          <include name="TC_0000_앱실행과AccessToken얻기" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-          <include name="TC_1062_ZEM키즈_미지원_확인" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Chips_007_연령특화.연령특화_01_ZEM키즈 -->
+      </class> <!-- Chips_Installer.Chips_Installer -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->
