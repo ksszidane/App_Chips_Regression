@@ -581,7 +581,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "다음주 날씨 TTS 확인");
 		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("낮기온"));
+		//Assert.assertTrue(tts.contains("낮기온"));
 		Assert.assertTrue(tts.contains("다음주 " + 현재위치));
 		
 	}

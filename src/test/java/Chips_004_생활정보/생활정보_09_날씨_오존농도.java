@@ -147,11 +147,11 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 		} else if (오존시간대.equals("B구간")) {
 			test.log(Status.INFO, "[10월15일~4월15일] 오존 지수 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
-			Assert.assertTrue(tts.contains("10월 15일부터 내년 4월 15일까지는 오늘의 오존 농도만 제공이 가능해요. 오늘의 오존 농도를 물어봐주세요."));
+			Assert.assertTrue(tts.contains("10월 15일부터 내년 4월 15일까지는 오늘의 오존 농도만 제공이 가능해요. 오늘의 오존 농도를 물어봐 주세요."));
 		} else if (오존시간대.equals("C구간")) {
 			test.log(Status.INFO, "[01월01일~04월15일] 오존 지수 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
-			Assert.assertTrue(tts.contains("작년 10월 15일부터 4월 15일까지는 오늘의 오존 농도만 제공이 가능해요. 오늘의 오존 농도를 물어봐 주세요."));
+			Assert.assertTrue(tts.contains("10월 15일부터 내년 4월 15일까지는 오늘의 오존 농도만 제공이 가능해요. 오늘의 오존 농도를 물어봐 주세요."));
 		}
 	}
 	
@@ -171,11 +171,11 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 		} else if (오존시간대.equals("B구간")) {
 			test.log(Status.INFO, "[10월15일~4월15일] 오존 지수 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
-			Assert.assertTrue(tts.contains("10월 15일부터 내년 4월 15일까지는 오늘의 오존 농도만 제공이 가능해요. 오늘의 오존 농도를 물어봐주세요."));
+			Assert.assertTrue(tts.contains("10월 15일부터 내년 4월 15일까지는 오늘의 오존 농도만 제공이 가능해요. 오늘의 오존 농도를 물어봐 주세요."));
 		} else if (오존시간대.equals("C구간")) {
 			test.log(Status.INFO, "[01월01일~04월15일] 오존 지수 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
-			Assert.assertTrue(tts.contains("작년 10월 15일부터 4월 15일까지는 오늘의 오존 농도만 제공이 가능해요. 오늘의 오존 농도를 물어봐 주세요."));
+			Assert.assertTrue(tts.contains("10월 15일부터 내년 4월 15일까지는 오늘의 오존 농도만 제공이 가능해요. 오늘의 오존 농도를 물어봐 주세요."));
 		}
 	}
 	
