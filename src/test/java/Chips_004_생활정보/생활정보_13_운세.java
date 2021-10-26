@@ -103,7 +103,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "운세 TTS 확인");
 		String tts = util.TTS_JsonParsing_most_recent(ksszidane10, Chips10_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("몇 년, 몇 월 며칠 생 운세를 알려 드릴까요?"));
+		Assert.assertTrue(tts.contains("생년월일과 함께  말씀해 보세요."));
 		
 	}
 	
