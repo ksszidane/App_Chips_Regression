@@ -438,8 +438,8 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0219")
 	public void TC_0219_Chips_FLO미로그인_음원없음_확인(Method method) throws Exception {
 		 
-		test.log(Status.INFO, "W, 세군데식당 노래 틀어줘 - 발화");
-		util.SWFsendPost("세군데식당 노래 틀어줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, 세군데 식당 노래 틀어줘 - 발화");
+		util.SWFsendPost("세군데 식당 노래 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
 		String tts = util.TTS_JsonParsing(ksszidane10, Chips10_did, ServerName, Place);
