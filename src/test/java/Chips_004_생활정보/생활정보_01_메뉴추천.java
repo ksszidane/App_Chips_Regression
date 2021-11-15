@@ -24,7 +24,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		} else { 
 			Thread.sleep(1000);
 		}
-		
+	
 		test.log(Status.INFO, "chips 선택"); 
 	    util.click(By.xpath(xPath.chips_1st));
 	    
@@ -34,7 +34,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -57,7 +57,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
 		util.context("NATIVE_APP");
 	    
-	    //test.log(Status.INFO, "Chips 업데이트 팝업 확인");
+		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
 		
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
@@ -75,7 +75,12 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
         util.switchContext("WEBVIEW");
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
-	    util.click(By.xpath(xPath.간편로그인_1st));
+        String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
+        if (id == "nuguqa001@sk.com") {
+        	util.click(By.xpath(xPath.간편로그인_1st));
+        } else {
+        	util.click(By.xpath(xPath.간편로그인_2st));
+        }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
 	    util.context("NATIVE_APP");
@@ -102,11 +107,11 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		util.SWFsendPost("점심 메뉴 추천해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "campaign Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(Domain, "campaign");
 		
 		test.log(Status.INFO, "campaign.menurecommendations intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(intent, "campaign.menurecommendations");
 	}
 	
@@ -117,11 +122,11 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		util.SWFsendPost("제철 메뉴 추천해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "campaign Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(Domain, "campaign");
 		
 		test.log(Status.INFO, "campaign.menurecommendations intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(intent, "campaign.menurecommendations");
 	}
 	
@@ -132,11 +137,11 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		util.SWFsendPost("술안주 추천", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "campaign Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(Domain, "campaign");
 		
 		test.log(Status.INFO, "campaign.menurecommendations intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(intent, "campaign.menurecommendations");
 	}
 	
@@ -147,11 +152,11 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		util.SWFsendPost("술안주 추천", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "campaign Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(Domain, "campaign");
 		
 		test.log(Status.INFO, "campaign.menurecommendations intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(intent, "campaign.menurecommendations");
 	}
 	
@@ -162,15 +167,15 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		util.SWFsendPost("크리스마스 메뉴 추천해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "메뉴추천 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("크리스마스"));
 		
 		test.log(Status.INFO, "campaign Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(Domain, "campaign");
 		
 		test.log(Status.INFO, "campaign.menurecommendations intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(intent, "campaign.menurecommendations");
 	}
 	
@@ -181,11 +186,11 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		util.SWFsendPost("매콤한 볶음 요리 추천해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "테마+테마 메뉴추천 미지원 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(util.dataCheck_Equals(tts, data.OOS_set));
 		
 		test.log(Status.INFO, "oos action_type 확인");
-		String usd = util.action_type_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String usd = util.action_type_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(usd.contains("oos"));
 	}
 	
@@ -196,7 +201,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		util.SWFsendPost("점심에 먹을 간단한 혼밥 메뉴 추천해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "beep action_type 확인");
-		String usd = util.action_type_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String usd = util.action_type_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(usd.contains("beep"));
 	}
 	
@@ -210,15 +215,15 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		util.SWFsendPost("그만", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "general Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(Domain, "general");
 		
 		test.log(Status.INFO, "stop intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(intent, "stop");
 		
 		test.log(Status.INFO, "stop action_type 확인");
-		String usd = util.action_type_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String usd = util.action_type_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(usd.contains("stop"));
 	}
 	
@@ -229,11 +234,11 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		util.SWFsendPost("메뉴추천 닫아", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "메뉴추천 닫아 미지원 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(util.dataCheck_Equals(tts, data.OOS_set));
 		
 		test.log(Status.INFO, "oos action_type 확인");
-		String usd = util.action_type_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String usd = util.action_type_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(usd.contains("oos"));
 	}
 	
@@ -244,11 +249,11 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		util.SWFsendPost("메뉴추천 다시", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "메뉴추천 다시 미지원 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(util.dataCheck_Equals(tts, data.OOS_set));
 		
 		test.log(Status.INFO, "oos action_type 확인");
-		String usd = util.action_type_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String usd = util.action_type_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(usd.contains("oos"));
 	}
 	
@@ -259,11 +264,11 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		util.SWFsendPost("다른 메뉴 추천해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "다른 메뉴 추천해줘 미지원 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(util.dataCheck_Equals(tts, data.OOS_set));
 		
 		test.log(Status.INFO, "oos action_type 확인");
-		String usd = util.action_type_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String usd = util.action_type_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(usd.contains("oos"));
 	}
 	
@@ -278,7 +283,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		util.SWFsendPost("이거 뭐야", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날짜 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("재생 정보가 없습니다."));
 	}
 	
@@ -289,7 +294,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 		util.SWFsendPost("메뉴추천 도움말", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "메뉴추천 도움말 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(util.dataCheck_Equals(tts, data.메뉴추천도움말_set));
 	}
 

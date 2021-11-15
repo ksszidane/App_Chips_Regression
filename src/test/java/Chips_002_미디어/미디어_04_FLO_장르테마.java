@@ -34,7 +34,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -57,11 +57,11 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
 		util.context("NATIVE_APP");
 	    
-	    //test.log(Status.INFO, "Chips 업데이트 팝업 확인");
+		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
 		
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
-		util.click(By.xpath(xPath.접근권한허용버튼));
+	    util.click(By.xpath(xPath.접근권한허용버튼));
 	    
 	    test.log(Status.INFO, "NUGU CHIPS 빠른 설정 가이드 [X]버튼 닫기 "); 
 	    util.click(By.id("btn_close"));
@@ -75,7 +75,12 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
         util.switchContext("WEBVIEW");
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
-	    util.click(By.xpath(xPath.간편로그인_1st));
+        String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
+        if (id == "nuguqa001@sk.com") {
+        	util.click(By.xpath(xPath.간편로그인_1st));
+        } else {
+        	util.click(By.xpath(xPath.간편로그인_2st));
+        }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
 	    util.context("NATIVE_APP");
@@ -102,7 +107,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 		util.SWFsendPost("걸그룹 노래 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "걸그룹 장르 노래 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("걸그룹의 활기찬 노래"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
@@ -161,7 +166,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 		util.SWFsendPost("크로스오버 음악 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "걸그룹 장르 노래 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("크로스오버를"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
@@ -220,8 +225,8 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 		util.SWFsendPost("공룡 노래 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "공룡노래 테마 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("옛날 옛적 지구의 지배자, 공룡 노래를"));
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
+		Assert.assertTrue(tts.contains("유아동요의 공룡"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
@@ -279,7 +284,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 		util.SWFsendPost("매장 음악 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "매장 음악 테마 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("매장 음악을"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
@@ -338,7 +343,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 		util.SWFsendPost("신나는 음악 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "신나는음악 큐레이션 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("신나는, 노래를"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		

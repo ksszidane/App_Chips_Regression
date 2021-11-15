@@ -34,7 +34,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -57,8 +57,8 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
 		util.context("NATIVE_APP");
 	    
-	    //test.log(Status.INFO, "Chips 업데이트 팝업 확인");
-	    //util.chips_update_check(ServerName);
+		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
+		//util.chips_update_check(ServerName);
 		
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
 		util.click(By.xpath(xPath.접근권한허용버튼));
@@ -75,7 +75,12 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
         util.switchContext("WEBVIEW");
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
-	    util.click(By.xpath(xPath.간편로그인_1st));
+        String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
+        if (id == "nuguqa001@sk.com") {
+        	util.click(By.xpath(xPath.간편로그인_1st));
+        } else {
+        	util.click(By.xpath(xPath.간편로그인_2st));
+        }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
 	    util.context("NATIVE_APP");
@@ -102,7 +107,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost("SBS파워FM 라디오 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("SBS 파워FM 라디오"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
@@ -189,7 +194,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("다음 라디오 채널", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "다음 채널 라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("TBN 강원교통방송 라디오"));
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
@@ -210,7 +215,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("이전 라디오 채널", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "이전 채널 라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("SBS 파워FM 라디오"));
 		
 		test.log(Status.INFO, "이전 라디오 재생중 버튼 활성화");
@@ -231,7 +236,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("다음", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "다음 채널 라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("TBN 강원교통방송 라디오"));
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
@@ -252,7 +257,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("이전", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "이전 채널 라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("SBS 파워FM 라디오"));
 		
 		test.log(Status.INFO, "이전 라디오 재생중 버튼 활성화");
@@ -273,7 +278,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("다음 채널", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "다음 채널 라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("TBN 강원교통방송 라디오"));
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
@@ -294,7 +299,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("이전 라디오 방송", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "이전 채널 라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("SBS 파워FM 라디오"));
 		
 		test.log(Status.INFO, "이전 라디오 재생중 버튼 활성화");
@@ -315,7 +320,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("다음 라디오", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "다음 채널 라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("TBN 강원교통방송 라디오"));
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
@@ -336,7 +341,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("2분 뒤에 라디오 꺼줘", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "종료예약 미지원 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.CHIPS_USD_set));
 
 	}

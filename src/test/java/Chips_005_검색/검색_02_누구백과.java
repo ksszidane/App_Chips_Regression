@@ -34,7 +34,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -75,7 +75,12 @@ public class 검색_02_누구백과 extends Chips_TestCase {
         util.switchContext("WEBVIEW");
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
-	    util.click(By.xpath(xPath.간편로그인_1st));
+        String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
+        if (id == "nuguqa001@sk.com") {
+        	util.click(By.xpath(xPath.간편로그인_1st));
+        } else {
+        	util.click(By.xpath(xPath.간편로그인_2st));
+        }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
 	    util.context("NATIVE_APP");
@@ -102,7 +107,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.SWFsendPost("누구 백과 찾아줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.백과도움말_set));
 		
 	}
@@ -114,7 +119,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.SWFsendPost("위키 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.백과도움말_set));
 		
 	}
@@ -126,7 +131,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.SWFsendPost("위키에서 찾아줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.백과도움말_set));
 		
 	}
@@ -138,7 +143,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.SWFsendPost("누구백과 도움말", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.백과도움말_set));
 		
 	}
@@ -147,7 +152,8 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 	public void TC_0913_Chips_누구백과_위키에서_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 위키에서 인도 수도 찾아줘 - 발화");
-		util.SWFsendPost("위키에서 인도 수도 찾아줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, 위키에서 인도 수도 찾아줘 - 발화");
+		util.SWFsendPost_fast("위키에서 인도 수도 찾아줘", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -166,7 +172,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(영문.contains("인도의 수도는 뉴델리입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("인도의 수도는 뉴델리입니다."));
 		
 	}
@@ -176,7 +182,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 위키에서 서울의 면적 찾아줘 - 발화");
-		util.SWFsendPost("위키에서 서울의 면적 찾아줘", ServerName, AccessToken);
+		util.SWFsendPost_fast("위키에서 서울의 면적 찾아줘", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -195,7 +201,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(영문.contains("서울특별시의 면적은 605.20 ㎢입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("서울특별시의 면적은 605.20 ㎢입니다."));
 		
 	}
@@ -205,7 +211,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 누구백과에서 인도 수도 찾아줘 - 발화");
-		util.SWFsendPost("누구백과에서 인도 수도 찾아줘", ServerName, AccessToken);
+		util.SWFsendPost_fast("누구백과에서 인도 수도 찾아줘", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -224,7 +230,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(영문.contains("인도의 수도는 뉴델리입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("인도의 수도는 뉴델리입니다."));
 		
 	}
@@ -234,7 +240,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 누구백과에서 서울의 면적 찾아줘 - 발화");
-		util.SWFsendPost("누구백과에서 서울의 면적 찾아줘", ServerName, AccessToken);
+		util.SWFsendPost_fast("누구백과에서 서울의 면적 찾아줘", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -253,7 +259,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(영문.contains("서울특별시의 면적은 605.20 ㎢입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("서울특별시의 면적은 605.20 ㎢입니다."));
 		
 	}
@@ -263,7 +269,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 이순신이 누구야 - 발화");
-		util.SWFsendPost("이순신이 누구야", ServerName, AccessToken);
+		util.SWFsendPost_fast("이순신이 누구야", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -282,7 +288,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(영문.contains("이순신은 조선의 장군입니다"));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("이순신은 조선의 장군입니다"));
 		
 	}
@@ -292,7 +298,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 고진감래가 무슨 뜻이야 - 발화");
-		util.SWFsendPost("고진감래가 무슨 뜻이야", ServerName, AccessToken);
+		util.SWFsendPost_fast("고진감래가 무슨 뜻이야", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -311,7 +317,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(영문.contains("고진감래는, 고생 끝에 낙이 찾아온다는 뜻"));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("고진감래는, 고생 끝에 낙이 찾아온다는 뜻"));
 		
 	}
@@ -321,7 +327,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 아이유의 본명을 알려줘 - 발화");
-		util.SWFsendPost("아이유의 본명을 알려줘", ServerName, AccessToken);
+		util.SWFsendPost_fast("아이유의 본명을 알려줘", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -340,7 +346,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(영문.contains("가수 아이유의 본명은 이지은입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("가수 아이유의 본명은 이지은입니다."));
 		
 	}
@@ -350,7 +356,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 인터스텔라 개봉일 찾아줘 - 발화");
-		util.SWFsendPost("인터스텔라 개봉일 찾아줘", ServerName, AccessToken);
+		util.SWFsendPost_fast("인터스텔라 개봉일 찾아줘", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -369,7 +375,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(영문.contains("영화 인터스텔라의 개봉일은 2014년 10월 26일입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("영화 인터스텔라의 개봉일은 2014년 10월 26일입니다."));
 		
 	}

@@ -34,7 +34,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(ksszidane10, Chips10_did, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa002, Chips_002, ServerName, Place);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -57,7 +57,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
 		util.context("NATIVE_APP");
 	    
-	    //test.log(Status.INFO, "Chips 업데이트 팝업 확인");
+		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
 		
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
@@ -75,7 +75,13 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
         util.switchContext("WEBVIEW");
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
-	    util.click(By.xpath(xPath.간편로그인_2st));
+        String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
+        if (id == "nuguqa002@sk.com") {
+        	util.click(By.xpath(xPath.간편로그인_1st));
+        } else {
+        	util.click(By.xpath(xPath.간편로그인_2st));
+        }
+        
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
 	    util.context("NATIVE_APP");
@@ -102,7 +108,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		util.SWFsendPost("뮤직메이트에서 노래 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane10, Chips10_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa002, Chips_002, ServerName, Place);
 		Assert.assertTrue(tts.contains("설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
 		
 		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
@@ -164,7 +170,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		util.SWFsendPost("음악 재생", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane10, Chips10_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa002, Chips_002, ServerName, Place);
 		Assert.assertTrue(tts.contains("설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
 		
 		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
@@ -226,7 +232,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		util.SWFsendPost("뮤직 플레이", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane10, Chips10_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa002, Chips_002, ServerName, Place);
 		Assert.assertTrue(tts.contains("설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
 		
 		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
@@ -289,8 +295,8 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		util.SWFsendPost("놀면뭐하니 노래 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane10, Chips10_did, ServerName, Place);
-		Assert.assertTrue(tts.contains("놀면 뭐하니 노래를 들려드릴게요. 설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
+		String tts = util.TTS_JsonParsing(nuguqa002, Chips_002, ServerName, Place);
+		Assert.assertTrue(tts.contains("설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
 		
 		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
 		boolean closeSnackbar = util.isElementPresent(By.id("closeSnackbar"));
@@ -351,7 +357,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		util.SWFsendPost("플로에서 최신 곡 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane10, Chips10_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa002, Chips_002, ServerName, Place);
 		Assert.assertTrue(tts.contains("설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
 		
 		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
@@ -413,7 +419,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		util.SWFsendPost("봄여름가을겨울의 거리의 악사 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane10, Chips10_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa002, Chips_002, ServerName, Place);
 		Assert.assertTrue(tts.contains("설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
 		
 		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
@@ -442,9 +448,9 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		util.SWFsendPost("세군데 식당 노래 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane10, Chips10_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa002, Chips_002, ServerName, Place);
 		Assert.assertTrue(tts.contains("원하시는 음악을 찾지 못했습니다. 다시 말씀해 주세요."));
-		
+
 	}
 
 }

@@ -7,13 +7,17 @@
 	<test name="Test_Project" preserve-order="true">
 		<parameter name="OS" value="Android" />
 		<parameter name="AppName" value="Chips" />
-		<parameter name="Server" value="RTG" /> <!-- 서버값 대문자로  : PRD, RTG, STG -->
-		<parameter name="TestPlace" value="in" /> <!-- 사내 : in  // 사외 : out-->
+		<parameter name="Server" value="STG" /> <!-- 서버값 대문자로  : PRD, RTG, STG -->
+		<parameter name="TestPlace" value="out" /> <!-- 사내 : in  // 사외 : out-->
 		<parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
 		<parameter name="deviceID_Chips10" value="ALDFHFMSG34WDF6CD40E"/>
 		<parameter name="userID_ksszidane" value="ALDF3NYA6C0D0C654DD2"/>
 		<parameter name="userID_ksszidane10" value="ALDF5TR5SNGZ8175DA16"/>
 		<parameter name="userID_nuguqa001" value="ALDFH3D1Q7W6071EFE41"/>
+		<parameter name="userID_nuguqa002" value="ALDFH6OQ9HG79986A4FA"/>
+		<parameter name="deviceID_Chips_001" value="ALDFHDFEBVOC7F098039"/>
+		<parameter name="deviceID_Chips_002" value="ALDG3Q4IA9EW3633F8EA"/>
+		
 		<parameter name="MobileDevice" value="ce06171633774e37027e"/>
 		
 		<!--
@@ -65,6 +69,7 @@
 			<class name="Chips_008_CarLife.CarLife_01_스타벅스" />
 			-->
 	
+			
 			<class name="Chips_002_미디어.미디어_01_멜론" />
 			<class name="Chips_002_미디어.미디어_02_FLO_미로그인" />
 			<class name="Chips_002_미디어.미디어_03_FLO_로그인" />
@@ -77,7 +82,11 @@
 			<class name="Chips_002_미디어.미디어_10_라디오_재생컨트롤러" />
 			<class name="Chips_002_미디어.미디어_11_오디오북" />
 			<class name="Chips_002_미디어.미디어_12_팟빵" />
+			
+	
 
+
+			
 		</classes>
 	</test>
 	

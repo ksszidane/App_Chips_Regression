@@ -34,7 +34,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -57,7 +57,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
 		util.context("NATIVE_APP");
 	    
-	    //test.log(Status.INFO, "Chips 업데이트 팝업 확인");
+		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
 		
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
@@ -75,7 +75,12 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
         util.switchContext("WEBVIEW");
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
-	    util.click(By.xpath(xPath.간편로그인_1st));
+        String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
+        if (id == "nuguqa001@sk.com") {
+        	util.click(By.xpath(xPath.간편로그인_1st));
+        } else {
+        	util.click(By.xpath(xPath.간편로그인_2st));
+        }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
 	    util.context("NATIVE_APP");
@@ -102,7 +107,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("뉴스", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "CBS 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -144,7 +149,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("데일리 브리핑", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "CBS 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -186,7 +191,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("KBS 뉴스 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "KBS 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최신 KBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -228,7 +233,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("CBS 뉴스 들려줘 ", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "CBS 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -270,7 +275,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("SBS 뉴스 들려줘 ", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "SBS 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최신 SBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -312,7 +317,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("MBC 뉴스 들려줘 ", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "MBC 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최신 MBC 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -354,7 +359,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("TBS 뉴스 들려줘 ", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "TBS 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최신 TBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -396,7 +401,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("연합뉴스 뉴스 들려줘 ", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "연합뉴스 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최신 연합뉴스 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -438,7 +443,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("오늘 뉴스 들려줘 ", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "연합뉴스 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -481,7 +486,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("연예 뉴스 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "연예 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("연예 관련, 최근 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -524,7 +529,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("스포츠 데일리 브리핑 해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("스포츠 관련, 최근 뉴스를 들려드릴게요."));
 		Thread.sleep(1000);
 		
@@ -567,7 +572,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("매경 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "매경 뉴스 미지원 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("아쉽게도, 아직 매경 뉴스는 제공하지 않아요."));
 		
 	}
@@ -579,7 +584,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("조선일보 뉴스 재생", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "조선일보 뉴스 미지원 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("아쉽게도, 아직 매경 뉴스는 제공하지 않아요."));
 		
 	}
@@ -592,7 +597,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("SK텔레콤 뉴스 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("SK텔레콤 관련, 최근 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -635,7 +640,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("세종병원 화재 뉴스 브리핑 해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "세종병원 화재 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("세종병원 화재 관련"));
 		Assert.assertTrue(tts.contains("뉴스를 들려드릴게요."));
 		
@@ -679,7 +684,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("컴퓨터 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "컴퓨터 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("컴퓨터 관련, 최근 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -722,7 +727,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("NUGU 토픽 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "NUGU 토픽 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("NUGU 토픽 입니다."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -764,7 +769,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("주식회사 티벨 박이슬 박사 뉴스 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "키워드뉴스없음 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("주식회사 티벨 박이슬 박사 관련 뉴스를 찾지 못했습니다."));
 		
 
@@ -777,7 +782,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("지난주 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지난주 뉴스 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -821,7 +826,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "연예 뉴스 재생 TTS 확인");
 		String 지난주주말 = util.getLastWeekSunday();
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains(지난주주말));
 		Assert.assertTrue(tts.contains("연예 관련 뉴스를 들려드릴게요."));
 		
@@ -867,7 +872,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(FLOtxt.contains("스포츠 뉴스"));
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		String[] result = tts.split(" ");
 		Assert.assertTrue(tts.contains(result[0]));
 		Assert.assertTrue(tts.contains(result[1]));
@@ -911,7 +916,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(FLOtxt.contains("SK텔레콤"));
 		
 		test.log(Status.INFO, "SK텔레콤 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		String[] result = tts.split(" ");
 		Assert.assertTrue(tts.contains(result[0]));
 		Assert.assertTrue(tts.contains(result[1]));
@@ -951,7 +956,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("지난주 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지난달 뉴스 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -993,7 +998,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("지난달 연예 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "연예 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		String[] result = tts.split(" ");
 		Assert.assertTrue(tts.contains(result[0]));
 		Assert.assertTrue(tts.contains(result[1]));
@@ -1037,7 +1042,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("지난달 스포츠 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		String[] result = tts.split(" ");
 		Assert.assertTrue(tts.contains(result[0]));
 		Assert.assertTrue(tts.contains(result[1]));
@@ -1081,7 +1086,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("지난달 SK텔레콤 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "SK텔레콤뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		String[] result = tts.split(" ");
 		Assert.assertTrue(tts.contains(result[0]));
 		Assert.assertTrue(tts.contains(result[1]));
@@ -1125,7 +1130,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("어제 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "어제 뉴스 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -1167,7 +1172,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("그저께 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "그저께 뉴스 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -1209,7 +1214,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("그저께 스포츠 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("스포츠 관련 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -1250,7 +1255,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("2018년 1월 1일 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "2018년 1월 1일 뉴스 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -1292,7 +1297,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("내일 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "내일 뉴스 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -1334,7 +1339,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("모레 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "모레 뉴스 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");

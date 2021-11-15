@@ -34,7 +34,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -57,7 +57,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
 		util.context("NATIVE_APP");
 	    
-	    //test.log(Status.INFO, "Chips 업데이트 팝업 확인");
+		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
 		
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
@@ -75,7 +75,12 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
         util.switchContext("WEBVIEW");
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
-	    util.click(By.xpath(xPath.간편로그인_1st));
+        String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
+        if (id == "nuguqa001@sk.com") {
+        	util.click(By.xpath(xPath.간편로그인_1st));
+        } else {
+        	util.click(By.xpath(xPath.간편로그인_2st));
+        }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
 	    util.context("NATIVE_APP");
@@ -107,7 +112,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 		util.SWFsendPost("오늘 오존 어때?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "오존 지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("오늘 " + 현재위치 + " 오존 농도는"));
 		Assert.assertTrue(tts.contains("ppm"));
 			
@@ -120,7 +125,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 		util.SWFsendPost("오늘 부산 오존 정보", ServerName, AccessToken);
 
 		test.log(Status.INFO, "오존 지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("오늘 부산 오존 농도는"));
 		Assert.assertTrue(tts.contains("ppm"));
 	
@@ -142,15 +147,15 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 		
 		if (오존시간대.equals("A구간")) {
 			test.log(Status.INFO, "[4월16일~10월14일] 오존 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("내일 " + 현재위치 + " 오존 농도는"));
 		} else if (오존시간대.equals("B구간")) {
 			test.log(Status.INFO, "[10월15일~4월15일] 오존 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("10월 15일부터 내년 4월 15일까지는 오늘의 오존 농도만 제공이 가능해요. 오늘의 오존 농도를 물어봐 주세요."));
 		} else if (오존시간대.equals("C구간")) {
 			test.log(Status.INFO, "[01월01일~04월15일] 오존 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("10월 15일부터 내년 4월 15일까지는 오늘의 오존 농도만 제공이 가능해요. 오늘의 오존 농도를 물어봐 주세요."));
 		}
 	}
@@ -166,15 +171,15 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 		
 		if (오존시간대.equals("A구간")) {
 			test.log(Status.INFO, "[4월16일~10월14일] 오존 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("내일 부산 오존 농도는"));
 		} else if (오존시간대.equals("B구간")) {
 			test.log(Status.INFO, "[10월15일~4월15일] 오존 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("10월 15일부터 내년 4월 15일까지는 오늘의 오존 농도만 제공이 가능해요. 오늘의 오존 농도를 물어봐 주세요."));
 		} else if (오존시간대.equals("C구간")) {
 			test.log(Status.INFO, "[01월01일~04월15일] 오존 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("10월 15일부터 내년 4월 15일까지는 오늘의 오존 농도만 제공이 가능해요. 오늘의 오존 농도를 물어봐 주세요."));
 		}
 	}
@@ -186,7 +191,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 		util.SWFsendPost("어제 오존 알려줘", ServerName, AccessToken);
 
 		test.log(Status.INFO, "어제 오존지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("저는 오늘과 내일의 오존 정보만 가지고 있어요."));
 	}
 	
@@ -200,7 +205,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 		util.SWFsendPost(그제날짜 + " 오존 정보 알려줘", ServerName, AccessToken);
 
 		test.log(Status.INFO, 그제날짜 + " 오존지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("저는 오늘과 내일의 오존 정보만 가지고 있어요."));
 	}
 	
@@ -211,7 +216,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 		util.SWFsendPost("로스앤젤레스 오존 알려줘", ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역외 오존지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("말씀하신 지역의 오존 정보는 가지고 있지 않습니다."));
 	}
 	
@@ -222,7 +227,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 		util.SWFsendPost("하이마트 오존 어때?", ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역아닌곳 오존지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("말씀하신 지역의 오존 정보는 가지고 있지 않습니다."));
 	}
 

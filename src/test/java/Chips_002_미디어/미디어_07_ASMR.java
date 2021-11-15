@@ -34,7 +34,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -57,8 +57,8 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
 		util.context("NATIVE_APP");
 	    
-	    //test.log(Status.INFO, "Chips 업데이트 팝업 확인");
-	    //util.chips_update_check(ServerName);
+		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
+		//util.chips_update_check(ServerName);
 		
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
 		util.click(By.xpath(xPath.접근권한허용버튼));
@@ -75,7 +75,12 @@ public class 미디어_07_ASMR extends Chips_TestCase {
         util.switchContext("WEBVIEW");
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
-	    util.click(By.xpath(xPath.간편로그인_1st));
+        String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
+        if (id == "nuguqa001@sk.com") {
+        	util.click(By.xpath(xPath.간편로그인_1st));
+        } else {
+        	util.click(By.xpath(xPath.간편로그인_2st));
+        }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
 	    util.context("NATIVE_APP");
@@ -102,7 +107,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost("ASMR 플레이", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ASMR 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("ASMR"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
@@ -157,7 +162,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost("과자 먹는 소리 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ASMR 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("과자 먹는 소리"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
@@ -194,7 +199,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost("빗소리 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ASMR 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("빗소리"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
@@ -223,7 +228,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost("힐링 사운드 재생", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ASMR 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("힐링사운드"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
@@ -241,7 +246,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost("자연의 소리 반복해서 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ASMR 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("자연의 소리 반복해드릴게요."));
 		
 		test.log(Status.INFO, "ASMR 타이틀 확인");
@@ -260,7 +265,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost_playStatus("이 노래 뭐야", ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "이 노래 뭐야 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains(곡명));
 		
 	}
@@ -304,7 +309,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost("자연의 소리 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "자연의 소리 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("자연의소리"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
@@ -411,7 +416,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost("자연의 소리 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "자연의 소리 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("자연의소리"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
@@ -467,7 +472,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost_playStatus("좋아요 해줘", ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "좋아요 해줘 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("좋아요 기능을 지원하지 않는 곡이에요."));
 		
 	}
@@ -480,7 +485,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost_playStatus("좋아요 취소", ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "좋아요 해줘 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("좋아요 기능을 지원하지 않는 곡이에요."));
 		
 	}
@@ -524,7 +529,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		
 		test.log(Status.INFO, "셔플 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("셔플할게요."));
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
@@ -577,7 +582,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		
 		test.log(Status.INFO, "셔플 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("셔플을 해제했어요"));
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
@@ -614,7 +619,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost_playStatus("20초 뒤로 이동", ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "20초뒤로 이동 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("뮤직 서비스에서는 지원하지 않는 기능이에요."));
 
 	}
@@ -627,7 +632,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost_playStatus("15초 앞으로 이동", ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "15초 앞으로 이동 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place, 5);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place, 5);
 		Assert.assertTrue(tts.contains("뮤직 서비스에서는 지원하지 않는 기능이에요."));
 
 	}

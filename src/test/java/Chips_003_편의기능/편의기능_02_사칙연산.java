@@ -34,7 +34,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -57,7 +57,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
 		util.context("NATIVE_APP");
 	    
-	    //test.log(Status.INFO, "Chips 업데이트 팝업 확인");
+		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
 	
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
@@ -75,7 +75,12 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
         util.switchContext("WEBVIEW");
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
-	    util.click(By.xpath(xPath.간편로그인_1st));
+        String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
+        if (id == "nuguqa001@sk.com") {
+        	util.click(By.xpath(xPath.간편로그인_1st));
+        } else {
+        	util.click(By.xpath(xPath.간편로그인_2st));
+        }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
 	    util.context("NATIVE_APP");
@@ -102,7 +107,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("계산해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("계산이 필요할 때, 칠 더하기 팔은 뭐야? 와 같이 말씀해 주세요."));
 	}
 	
@@ -113,7 +118,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("더하기", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("계산이 필요할 때, 칠 더하기 팔은 뭐야? 와 같이 말씀해 주세요."));
 	}
 	
@@ -124,7 +129,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("빼기", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("계산이 필요할 때, 칠 더하기 팔은 뭐야? 와 같이 말씀해 주세요."));
 	}
 	
@@ -135,7 +140,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("곱하기", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("계산이 필요할 때, 칠 더하기 팔은 뭐야? 와 같이 말씀해 주세요."));
 	}
 	
@@ -146,7 +151,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("나누기", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("계산이 필요할 때, 칠 더하기 팔은 뭐야? 와 같이 말씀해 주세요."));
 	}
 	
@@ -157,7 +162,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("15 더하기 94", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("15 더하기 94는, 109 입니다."));
 	}
 	
@@ -168,7 +173,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("12 플러스 3은?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("12 더하기 3은, 15 입니다."));
 	}
 	
@@ -179,7 +184,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("85 빼기 13", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("85 빼기 13은, 72 입니다."));
 	}
 	
@@ -190,7 +195,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("12 마이너스 3은?", ServerName, AccessToken);
 
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("12 빼기 3은, 9 입니다."));
 	}
 	
@@ -201,7 +206,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("10 나누기 3", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("10 나누기 3은, 3.33333 입니다."));
 	}
 	
@@ -212,7 +217,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("10 나누기 0", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("10 나누기 0은, 무한대 입니다."));
 	}
 	
@@ -223,7 +228,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("14 곱하기 14", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("14 곱하기 14는, 196 입니다."));
 	}
 	
@@ -234,7 +239,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("5 곱하기 0은?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("5 곱하기 0은, 0 입니다."));
 	}
 	
@@ -245,7 +250,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("5분의 1 더하기 3은?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 미연산값 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("일~경, 미만의 자연수만 말씀해 주세요."));
 	}
 	
@@ -256,7 +261,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("마이너스5 더하기 3은?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 미연산값 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("일~경, 미만의 자연수만 말씀해 주세요."));
 	}
 	
@@ -267,7 +272,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("3 더하기 2 곱하기 7은?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 미연산값 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("두 개의 숫자만, 계산할 수 있어요."));
 	}
 	
@@ -278,7 +283,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("2 곱하기 3 곱하기 마이너스9는?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 미연산값 안내 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("두 개의 숫자만, 계산할 수 있어요."));
 	}
 

@@ -34,7 +34,7 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -57,7 +57,7 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
 		util.context("NATIVE_APP");
 	    
-	    //test.log(Status.INFO, "Chips 업데이트 팝업 확인");
+		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
 		
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
@@ -75,7 +75,12 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
         util.switchContext("WEBVIEW");
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
-	    util.click(By.xpath(xPath.간편로그인_1st));
+        String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
+        if (id == "nuguqa001@sk.com") {
+        	util.click(By.xpath(xPath.간편로그인_1st));
+        } else {
+        	util.click(By.xpath(xPath.간편로그인_2st));
+        }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
 	    util.context("NATIVE_APP");
@@ -102,15 +107,15 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
 		util.SWFsendPost("MBN 시작", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "MBN 시작 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("MBN 뉴스에요. 뉴스 들려줘 라고 말씀해 보세요."));
 		
 		test.log(Status.INFO, "MBN 시작 도메인확인 확인");
-		String Domian = util.Domain_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String Domian = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(Domian.contains("play_mbn"));
 		
 		test.log(Status.INFO, "MBN 시작 인텐트 확인 확인");
-		String intent = util.intent_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(intent.contains("start"));
 		
 	}
@@ -122,15 +127,15 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
 		util.SWFsendPost("MBN 실행해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "MBN 시작 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("MBN 뉴스에요. 뉴스 들려줘 라고 말씀해 보세요."));
 		
 		test.log(Status.INFO, "MBN 시작 도메인확인 확인");
-		String Domian = util.Domain_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String Domian = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(Domian.contains("play_mbn"));
 		
 		test.log(Status.INFO, "MBN 시작 인텐트 확인 확인");
-		String intent = util.intent_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(intent.contains("start"));
 		
 	}
@@ -142,15 +147,15 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
 		util.SWFsendPost("MBN 오늘 뉴스 기사 읽어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "MBN 실행 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("김주하 AI 앵커가 전해 드리는 이 시각 MBN 주요뉴스입니다."));
 		
 		test.log(Status.INFO, "MBN 실행 도메인확인 확인");
-		String Domian = util.Domain_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String Domian = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(Domian.contains("play_mbn"));
 		
 		test.log(Status.INFO, "MBN 실행 인텐트 확인 확인");
-		String intent = util.intent_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(intent.contains("play.news"));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
@@ -200,7 +205,7 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
 		util.SWFsendPost("다음", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "MBN 실행 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("다음 뉴스가 없어요."));
 		
 	}
@@ -222,7 +227,7 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
 		util.SWFsendPost("MBN 뉴스 이전", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "MBN 실행 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("다음 뉴스가 없어요."));
 		
 	}

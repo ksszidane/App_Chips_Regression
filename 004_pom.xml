@@ -11,7 +11,8 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+	<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
   </properties>
 
 	<repositories>
@@ -31,7 +32,7 @@
   	<dependency>
   		<groupId>com.github.ksszidane</groupId>
   		<artifactId>Appium-unit-lib</artifactId>
-  		<version>1.0.40</version>
+  		<version>1.0.42</version>
 	</dependency>
 	
 	<dependency>

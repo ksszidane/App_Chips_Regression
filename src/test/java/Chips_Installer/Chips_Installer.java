@@ -12,7 +12,9 @@ import junit.framework.Assert;
 
 public class Chips_Installer extends App_Installer {
 	
-	private static String filePath = "C:\\Users\\kei\\git\\App_Chips_Regression\\apk\\nugu-friends-engRTG-vc10101-v1.1.1.apk";
+	//private static String filePath = "C:\\Users\\user\\.jenkins\\workspace\\Chips_Installer\\apk\\nugu-friends-engRTG-vc10101-v1.1.1.apk"; //RTG빌드
+	private static String filePath = "C:\\Users\\user\\.jenkins\\workspace\\Chips_Installer\\apk\\nugu-friends-eng-vc10101-v1.1.1.apk"; //STG빌드
+	
 	
 	@Test(description = "인스톨러 ")
 	public void Chips_Installer_실행(Method method) throws Exception {

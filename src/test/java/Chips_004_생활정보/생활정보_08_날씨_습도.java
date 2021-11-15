@@ -34,7 +34,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -57,7 +57,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
 		util.context("NATIVE_APP");
 	    
-	    //test.log(Status.INFO, "Chips 업데이트 팝업 확인");
+		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
 		
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
@@ -75,7 +75,12 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
         util.switchContext("WEBVIEW");
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
-	    util.click(By.xpath(xPath.간편로그인_1st));
+        String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
+        if (id == "nuguqa001@sk.com") {
+        	util.click(By.xpath(xPath.간편로그인_1st));
+        } else {
+        	util.click(By.xpath(xPath.간편로그인_2st));
+        }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
 	    util.context("NATIVE_APP");
@@ -111,13 +116,13 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 		
 		if (습도시간대.equals("A구간")) {
 			test.log(Status.INFO, "[5월~9월] 습도 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("현재 " + 현재위치 + " 습도는"));
 			Assert.assertTrue(data.습도지수체크(tts));
 			
 		} else if (습도시간대.equals("B구간")) {
 			test.log(Status.INFO, "[10월~4월] 습도 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("현재 " + 현재위치 + " 습도는"));
 		}
 	}
@@ -133,13 +138,13 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 		
 		if (습도시간대.equals("A구간")) {
 			test.log(Status.INFO, "[5월~9월] 습도 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("현재 부산 습도는"));
 			Assert.assertTrue(data.습도지수체크(tts));
 			
 		} else if (습도시간대.equals("B구간")) {
 			test.log(Status.INFO, "[10월~4월] 습도 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("현재 부산 습도는"));
 		}
 	}
@@ -160,13 +165,13 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 		
 		if (습도시간대.equals("A구간")) {
 			test.log(Status.INFO, "[5월~9월] 습도 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("내일 " + 현재위치 + " 습도는"));
 			Assert.assertTrue(data.습도지수체크(tts));
 			
 		} else if (습도시간대.equals("B구간")) {
 			test.log(Status.INFO, "[10월~4월] 습도 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("내일 " + 현재위치 + " 습도는"));
 		}
 	}
@@ -182,13 +187,13 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 		
 		if (습도시간대.equals("A구간")) {
 			test.log(Status.INFO, "[5월~9월] 습도 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("내일 부산 습도는"));
 			Assert.assertTrue(data.습도지수체크(tts));
 			
 		} else if (습도시간대.equals("B구간")) {
 			test.log(Status.INFO, "[10월~4월] 습도 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("내일 부산 습도는"));
 		}
 	}
@@ -211,13 +216,13 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 		
 		if (습도시간대.equals("A구간")) {
 			test.log(Status.INFO, "[5월~9월] 습도 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains(모레날짜 + " " + 모레요일 + "요일 " + 현재위치 + " 습도는"));
 			Assert.assertTrue(data.습도지수체크(tts));
 			
 		} else if (습도시간대.equals("B구간")) {
 			test.log(Status.INFO, "[10월~4월] 습도 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains(모레날짜 + " " + 모레요일 + "요일 " + 현재위치 + " 습도는"));
 		}
 	}
@@ -235,13 +240,13 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 		
 		if (습도시간대.equals("A구간")) {
 			test.log(Status.INFO, "[5월~9월] 습도 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains(모레날짜 + " " + 모레요일 + "요일 부산 습도는"));
 			Assert.assertTrue(data.습도지수체크(tts));
 			
 		} else if (습도시간대.equals("B구간")) {
 			test.log(Status.INFO, "[10월~4월] 습도 지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains(모레날짜 + " " + 모레요일 + "요일 부산 습도는"));
 		}
 	}
@@ -253,7 +258,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 		util.SWFsendPost("어제 습도 알려줘", ServerName, AccessToken);
 
 		test.log(Status.INFO, "어제 습도지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("저는 오늘부터 모레까지의 습도 정보만 가지고 있어요."));
 	}
 	
@@ -267,7 +272,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 		util.SWFsendPost(그제날짜 + " 습도 정보 알려줘", ServerName, AccessToken);
 
 		test.log(Status.INFO, 그제날짜 + " 습도지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("저는 오늘부터 모레까지의 습도 정보만 가지고 있어요."));
 	}
 	
@@ -278,7 +283,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 		util.SWFsendPost("로스앤젤레스 습도 알려줘", ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역외 습도지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("말씀하신 지역의 습도 정보는 가지고 있지 않습니다."));
 	}
 	
@@ -289,7 +294,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 		util.SWFsendPost("하이마트 습도 어때?", ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역아닌곳 습도지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("말씀하신 지역의 습도 정보는 가지고 있지 않습니다."));
 	}
 	

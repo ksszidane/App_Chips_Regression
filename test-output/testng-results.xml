@@ -2,34 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-05T13:00:21 KST" name="ExtentReport" finished-at="2021-10-05T13:00:27 KST" duration-ms="6259">
+  <suite started-at="2021-11-03T19:43:19 KST" name="ExtentReport" finished-at="2021-11-03T19:43:30 KST" duration-ms="10613">
     <groups>
     </groups>
-    <test started-at="2021-10-05T13:00:21 KST" name="Test_Project" finished-at="2021-10-05T13:00:27 KST" duration-ms="6259">
+    <test started-at="2021-11-03T19:43:19 KST" name="Test_Project" finished-at="2021-11-03T19:43:30 KST" duration-ms="10613">
       <class name="Chips_Installer.Chips_Installer">
-        <test-method is-config="true" signature="setupClass(java.lang.String)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-10-05T13:00:21 KST" name="setupClass" finished-at="2021-10-05T13:00:23 KST" duration-ms="2380" status="PASS">
+        <test-method is-config="true" signature="setupClass(java.lang.String)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-11-03T19:43:19 KST" name="setupClass" finished-at="2021-11-03T19:43:22 KST" duration-ms="2357" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[R33M4000CY]]>
+                <![CDATA[ce06171633774e37027e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method signature="Chips_Installer_실행(java.lang.reflect.Method)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-10-05T13:00:23 KST" name="Chips_Installer_실행" description="인스톨러 " finished-at="2021-10-05T13:00:26 KST" duration-ms="3374" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_Installer.Chips_Installer.Chips_Installer_실행(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Chips_Installer_실행 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-10-05T13:00:23 KST" name="BeforeMethod" finished-at="2021-10-05T13:00:23 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-11-03T19:43:22 KST" name="BeforeMethod" finished-at="2021-11-03T19:43:22 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,7 +29,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-10-05T13:00:26 KST" name="AfterMethod" finished-at="2021-10-05T13:00:26 KST" duration-ms="1" status="PASS">
+        <test-method signature="Chips_Installer_실행(java.lang.reflect.Method)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-11-03T19:43:22 KST" name="Chips_Installer_실행" description="인스톨러 " finished-at="2021-11-03T19:43:29 KST" duration-ms="7608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_Installer.Chips_Installer.Chips_Installer_실행(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Chips_Installer_실행 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-11-03T19:43:29 KST" name="AfterMethod" finished-at="2021-11-03T19:43:29 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,11 +51,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="tearDownClass(java.lang.String)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-10-05T13:00:26 KST" name="tearDownClass" finished-at="2021-10-05T13:00:27 KST" duration-ms="463" status="PASS">
+        <test-method is-config="true" signature="tearDownClass(java.lang.String)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-11-03T19:43:29 KST" name="tearDownClass" finished-at="2021-11-03T19:43:30 KST" duration-ms="609" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[R33M4000CY]]>
+                <![CDATA[ce06171633774e37027e]]>
               </value>
             </param>
           </params>

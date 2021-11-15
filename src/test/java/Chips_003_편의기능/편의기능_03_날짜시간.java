@@ -34,7 +34,7 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -57,7 +57,7 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
 		util.context("NATIVE_APP");
 	    
-	    //test.log(Status.INFO, "Chips 업데이트 팝업 확인");
+		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
 		
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
@@ -75,7 +75,12 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
         util.switchContext("WEBVIEW");
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
-	    util.click(By.xpath(xPath.간편로그인_1st));
+        String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
+        if (id == "nuguqa001@sk.com") {
+        	util.click(By.xpath(xPath.간편로그인_1st));
+        } else {
+        	util.click(By.xpath(xPath.간편로그인_2st));
+        }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
 	    util.context("NATIVE_APP");
@@ -102,15 +107,15 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 		util.SWFsendPost("시간", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "시간 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.시간_set));
 		
 		test.log(Status.INFO, "schedule Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(Domain, "schedule");
 		
 		test.log(Status.INFO, "ask.clock intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(intent, "ask.clock");
 	}
 	
@@ -121,15 +126,15 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 		util.SWFsendPost("며칠", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날짜 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.날짜_set));
 		
 		test.log(Status.INFO, "play_nugu_calendar Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(Domain, "play_nugu_calendar");
 		
 		test.log(Status.INFO, "ask.date intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(intent, "ask.date");
 	}
 	
@@ -140,17 +145,17 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 		util.SWFsendPost("추석이 무슨 요일이야", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날짜 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.날짜_set));
 		Assert.assertTrue(tts.contains("추석은"));
 		Assert.assertTrue(tts.contains("요일"));
 		
 		test.log(Status.INFO, "play_nugu_calendar Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(Domain, "play_nugu_calendar");
 		
 		test.log(Status.INFO, "ask.date.weekday intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(intent, "ask.date.weekday");
 	}
 	
@@ -161,16 +166,16 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 		util.SWFsendPost("이번 주 일요일 며칠이야", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날짜 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("이번 주 일요일은"));
 		Assert.assertTrue(tts.contains("일"));
 		
 		test.log(Status.INFO, "play_nugu_calendar Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(Domain, "play_nugu_calendar");
 		
 		test.log(Status.INFO, "ask.date intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(ksszidane, Chips_did, ServerName, Place);
+		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertEquals(intent, "ask.date");
 	}
 

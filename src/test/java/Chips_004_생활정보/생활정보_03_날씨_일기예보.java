@@ -25,7 +25,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		} else { 
 			Thread.sleep(1000);
 		}
-		
+	
 		test.log(Status.INFO, "chips 선택"); 
 	    util.click(By.xpath(xPath.chips_1st));
 	    
@@ -35,7 +35,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -58,7 +58,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
 		util.context("NATIVE_APP");
 	    
-	    //test.log(Status.INFO, "Chips 업데이트 팝업 확인");
+		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
 		
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
@@ -76,7 +76,12 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
         util.switchContext("WEBVIEW");
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
-	    util.click(By.xpath(xPath.간편로그인_1st));
+        String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
+        if (id == "nuguqa001@sk.com") {
+        	util.click(By.xpath(xPath.간편로그인_1st));
+        } else {
+        	util.click(By.xpath(xPath.간편로그인_2st));
+        }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
 	    util.context("NATIVE_APP");
@@ -158,7 +163,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Assert.assertTrue(시간대별날씨);
 		
 		test.log(Status.INFO, "오늘날씨 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최고기온"));
 		Assert.assertTrue(tts.contains("최저기온"));
 		Assert.assertTrue(tts.contains("오늘 " + 현재위치));
@@ -229,7 +234,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Assert.assertTrue(시간대별날씨);
 		
 		test.log(Status.INFO, "오늘날씨 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최고기온"));
 		Assert.assertTrue(tts.contains("최저기온"));
 		Assert.assertTrue(tts.contains("오늘 " + 현재위치));
@@ -298,7 +303,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Assert.assertTrue(시간대별날씨);
 		
 		test.log(Status.INFO, "내일 날씨 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최고기온"));
 		Assert.assertTrue(tts.contains("최저기온"));
 		Assert.assertTrue(tts.contains("내일 " + 현재위치));
@@ -365,7 +370,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Assert.assertTrue(시간대별날씨);
 		
 		test.log(Status.INFO, "내일 날씨 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최고기온"));
 		Assert.assertTrue(tts.contains("최저기온"));
 		Assert.assertTrue(tts.contains("내일 " + 현재위치));
@@ -428,7 +433,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Assert.assertTrue(마지막요일.contains(util.getDayOfWeek(+6)));
 		
 		test.log(Status.INFO, "모레 날씨 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최고기온"));
 		Assert.assertTrue(tts.contains("최저기온"));
 		Assert.assertTrue(tts.contains(모레날짜 + " " + 모레요일 + "요일 " + 현재위치));
@@ -508,7 +513,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Assert.assertTrue(날씨아이콘);
 		
 		test.log(Status.INFO, "이번주 날씨 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		//Assert.assertTrue(tts.contains("낮기온"));
 		Assert.assertTrue(tts.contains("이번주 " + 현재위치));
 		
@@ -580,7 +585,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Assert.assertTrue(날씨아이콘);
 		
 		test.log(Status.INFO, "다음주 날씨 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		//Assert.assertTrue(tts.contains("낮기온"));
 		Assert.assertTrue(tts.contains("다음주 " + 현재위치));
 		
@@ -603,7 +608,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		util.SWFsendPost("이번 주 주말 날씨 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "다음주 날씨 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최고 기온"));
 		Assert.assertTrue(tts.contains("최저 기온"));
 		Assert.assertTrue(tts.contains(이번주주말날짜 + " 토요일 " + 현재위치));
@@ -634,13 +639,13 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		if (다음주주말날짜차이 > 10 ) {
 			test.log(Status.INFO, "조건 : 다음 주 주말이 10일 이후인 경우");
 			test.log(Status.INFO, "다음주 주말 날씨 TTS 확인");
-			String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("저는 열흘 이내의 날씨 정보만 가지고 있어요."));
 	
 		} else if (다음주주말날짜차이 < 10 ) {
 			test.log(Status.INFO, "조건 : 다음 주 주말이 10일 이전인 경우");
 			test.log(Status.INFO, "다음주 주말 날씨 TTS 확인");
-			String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+			String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 			Assert.assertTrue(tts.contains("최고 기온"));
 			Assert.assertTrue(tts.contains("최저 기온"));
 			Assert.assertTrue(tts.contains(다음주주말날짜 + " 토요일 " + 현재위치));
@@ -719,7 +724,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Assert.assertTrue(시간대별날씨);
 		
 		test.log(Status.INFO, "오늘날씨 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최고기온"));
 		Assert.assertTrue(tts.contains("최저기온"));
 		Assert.assertTrue(tts.contains("오늘 " + 현재위치));
@@ -791,7 +796,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Assert.assertTrue(시간대별날씨);
 		
 		test.log(Status.INFO, "오늘날씨 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최고기온"));
 		Assert.assertTrue(tts.contains("최저기온"));
 		Assert.assertTrue(tts.contains("오늘 " + 현재위치));
@@ -855,7 +860,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Assert.assertTrue(시간대별날씨);
 		
 		test.log(Status.INFO, "오늘날씨 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최고기온"));
 		Assert.assertTrue(tts.contains("최저기온"));
 		Assert.assertTrue(tts.contains("오늘 제주도"));
@@ -918,7 +923,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Assert.assertTrue(시간대별날씨);
 		
 		test.log(Status.INFO, "오늘날씨 TTS 확인");
-		String tts = util.TTS_JsonParsing(ksszidane, Chips_did, ServerName, Place);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("최고기온"));
 		Assert.assertTrue(tts.contains("최저기온"));
 		Assert.assertTrue(tts.contains("오늘 파주시 야동동"));
