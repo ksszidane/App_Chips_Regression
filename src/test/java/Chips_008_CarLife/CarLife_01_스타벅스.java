@@ -75,12 +75,12 @@ public class CarLife_01_스타벅스 extends Chips_TestCase {
         util.switchContext("WEBVIEW");
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
-        String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
-        if (id == "nuguqa001@sk.com") {
-        	util.click(By.xpath(xPath.간편로그인_1st));
-        } else {
-        	util.click(By.xpath(xPath.간편로그인_2st));
-        }
+        //String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
+        //if (id == "nuguqa001@sk.com") {
+        //	util.click(By.xpath(xPath.간편로그인_1st));
+        //} else {
+        //	util.click(By.xpath(xPath.간편로그인_2st));
+        //}
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
 	    util.context("NATIVE_APP");
