@@ -145,8 +145,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		
 		Thread.sleep(3000);
 		test.log(Status.INFO, "W, 영어로 경찰이 뭐야? - 발화");
-		util.SWFsendPost_fast("영어로 경찰이 뭐야", ServerName, AccessToken);
-		util.SWFsendPost_fast("영어로 경찰이 뭐야", ServerName, AccessToken);
+		util.SWFsendPost("영어로 경찰이 뭐야", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "어학사전 카드 원문 노출 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -169,7 +168,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 	public void TC_0900_Chips_어학사전_문장번역_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 너는 천재야를 영어로 해줘 - 발화");
-		util.SWFsendPost_fast("너는 천재야를 영어로 해줘", ServerName, AccessToken);
+		util.SWFsendPost("너는 천재야를 영어로 해줘", ServerName, AccessToken);
 		Thread.sleep(1000);
 		
 		test.log(Status.INFO, "어학사전 카드 원문 노출 확인");
