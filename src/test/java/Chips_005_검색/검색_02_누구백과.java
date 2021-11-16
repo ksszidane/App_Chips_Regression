@@ -152,8 +152,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 	public void TC_0913_Chips_누구백과_위키에서_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 위키에서 인도 수도 찾아줘 - 발화");
-		test.log(Status.INFO, "W, 위키에서 인도 수도 찾아줘 - 발화");
-		util.SWFsendPost_fast("위키에서 인도 수도 찾아줘", ServerName, AccessToken);
+		util.SWFsendPost("위키에서 인도 수도 찾아줘", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -182,7 +181,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 위키에서 서울의 면적 찾아줘 - 발화");
-		util.SWFsendPost_fast("위키에서 서울의 면적 찾아줘", ServerName, AccessToken);
+		util.SWFsendPost("위키에서 서울의 면적 찾아줘", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -211,7 +210,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 누구백과에서 인도 수도 찾아줘 - 발화");
-		util.SWFsendPost_fast("누구백과에서 인도 수도 찾아줘", ServerName, AccessToken);
+		util.SWFsendPost("누구백과에서 인도 수도 찾아줘", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -240,7 +239,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 누구백과에서 서울의 면적 찾아줘 - 발화");
-		util.SWFsendPost_fast("누구백과에서 서울의 면적 찾아줘", ServerName, AccessToken);
+		util.SWFsendPost("누구백과에서 서울의 면적 찾아줘", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -269,7 +268,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 이순신이 누구야 - 발화");
-		util.SWFsendPost_fast("이순신이 누구야", ServerName, AccessToken);
+		util.SWFsendPost("이순신이 누구야", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -298,7 +297,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 고진감래가 무슨 뜻이야 - 발화");
-		util.SWFsendPost_fast("고진감래가 무슨 뜻이야", ServerName, AccessToken);
+		util.SWFsendPost("고진감래가 무슨 뜻이야", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -327,7 +326,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 아이유의 본명을 알려줘 - 발화");
-		util.SWFsendPost_fast("아이유의 본명을 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("아이유의 본명을 알려줘", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
@@ -356,7 +355,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 인터스텔라 개봉일 찾아줘 - 발화");
-		util.SWFsendPost_fast("인터스텔라 개봉일 찾아줘", ServerName, AccessToken);
+		util.SWFsendPost("인터스텔라 개봉일 찾아줘", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
