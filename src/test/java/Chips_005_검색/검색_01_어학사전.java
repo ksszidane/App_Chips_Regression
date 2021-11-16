@@ -146,11 +146,12 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		Thread.sleep(3000);
 		test.log(Status.INFO, "W, 영어로 경찰이 뭐야? - 발화");
 		util.SWFsendPost("영어로 경찰이 뭐야", ServerName, AccessToken);
+		util.SWFsendPost("영어로 경찰이 뭐야", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "어학사전 카드 원문 노출 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 한글소스 = util.getText(By.xpath(xPath.한글소스_web));
 		Assert.assertTrue(한글소스.contains("경찰"));
 		
