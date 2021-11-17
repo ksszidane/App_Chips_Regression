@@ -76,12 +76,12 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
         String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
-        if (id.equals("nuguqa001@sk.com")) {
+        if (id.equals("nuguqa002@sk.com")) {
         	util.click(By.xpath(xPath.간편로그인_1st));
-        	System.out.println("로그인id : nuguqa001@sk.com");
+        	System.out.println("[일치] 로그인id : nuguqa002@sk.com");
         } else {
         	util.click(By.xpath(xPath.간편로그인_2st));
-        	System.out.println("로그인id : nuguqa002@sk.com");
+        	System.out.println("[불일치] 로그인id : nuguqa002@sk.com");
         }
         
 	    
