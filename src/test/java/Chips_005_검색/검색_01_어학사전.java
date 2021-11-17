@@ -76,10 +76,12 @@ public class 검색_01_어학사전 extends Chips_TestCase {
         
         test.log(Status.INFO, "저장된 간편로그인 유효성 체크 및 클릭");
         String id = util.getText(By.xpath("//ul[@class='account-list']/li[1]/a/span[1]"));
-        if (id == "nuguqa001@sk.com") {
+        if (id.equals("nuguqa001@sk.com")) {
         	util.click(By.xpath(xPath.간편로그인_1st));
+        	System.out.println("로그인id : nuguqa001@sk.com");
         } else {
         	util.click(By.xpath(xPath.간편로그인_2st));
+        	System.out.println("로그인id : nuguqa002@sk.com");
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
@@ -143,15 +145,15 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0899")
 	public void TC_0899_Chips_어학사전_단어번역_확인(Method method) throws Exception {
 		
+		util.context("NATIVE_APP");
 		Thread.sleep(3000);
 		test.log(Status.INFO, "W, 영어로 경찰이 뭐야? - 발화");
-		util.SWFsendPost("영어로 경찰이 뭐야", ServerName, AccessToken);
 		util.SWFsendPost("영어로 경찰이 뭐야", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "어학사전 카드 원문 노출 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
+		util.switchToWindwosURL(xPath.Webview_URL);
 		String 한글소스 = util.getText(By.xpath(xPath.한글소스_web));
 		Assert.assertTrue(한글소스.contains("경찰"));
 		
