@@ -592,6 +592,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		test.log(Status.INFO, "셔플 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("셔플을 해제했어요"));
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
