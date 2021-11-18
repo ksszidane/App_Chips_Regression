@@ -223,6 +223,9 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0222")
 	public void TC_0222_Chips_FLO로그인_최신음악_확인(Method method) throws Exception {
 		 
+		test.log(Status.INFO, "W, 실행중인 음악 종료- 발화");
+		util.SWFsendPost("음악 종료", ServerName, AccessToken);
+		
 		test.log(Status.INFO, "W, 뮤직메이트에서 최신 곡 틀어줘- 발화");
 		util.SWFsendPost("뮤직메이트에서 최신 곡 틀어줘", ServerName, AccessToken);
 		
