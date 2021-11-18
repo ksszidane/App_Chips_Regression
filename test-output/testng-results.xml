@@ -1,68 +1,391 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-03T19:43:19 KST" name="ExtentReport" finished-at="2021-11-03T19:43:30 KST" duration-ms="10613">
+  <suite started-at="2021-11-17T18:12:28 KST" name="ExtentReport" finished-at="2021-11-17T18:16:29 KST" duration-ms="240655">
     <groups>
     </groups>
-    <test started-at="2021-11-03T19:43:19 KST" name="Test_Project" finished-at="2021-11-03T19:43:30 KST" duration-ms="10613">
-      <class name="Chips_Installer.Chips_Installer">
-        <test-method is-config="true" signature="setupClass(java.lang.String)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-11-03T19:43:19 KST" name="setupClass" finished-at="2021-11-03T19:43:22 KST" duration-ms="2357" status="PASS">
+    <test started-at="2021-11-17T18:12:28 KST" name="Test_Project" finished-at="2021-11-17T18:16:29 KST" duration-ms="240655">
+      <class name="Chips_005_검색.검색_01_어학사전">
+        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:12:28 KST" name="setupClass" finished-at="2021-11-17T18:12:41 KST" duration-ms="13343" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ce06171633774e37027e]]>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chips]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://0.0.0.0:4723/wd/hub]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[STG]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chips]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[out]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[R33M4000CY]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ALDF3NYA6C0D0C654DD2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[ALDF5TR5SNGZ8175DA16]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[ALDFH3D1Q7W6071EFE41]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[ALDFH6OQ9HG79986A4FA]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[ALDFHFMQC3RB935B4B02]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[ALDFHFMSG34WDF6CD40E]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[ALDFHDFEBVOC7F098039]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[ALDG3Q4IA9EW3633F8EA]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-11-03T19:43:22 KST" name="BeforeMethod" finished-at="2021-11-03T19:43:22 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:12:42 KST" name="BeforeMethod" finished-at="2021-11-17T18:12:42 KST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_Installer.Chips_Installer.Chips_Installer_실행(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_005_검색.검색_01_어학사전.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="Chips_Installer_실행(java.lang.reflect.Method)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-11-03T19:43:22 KST" name="Chips_Installer_실행" description="인스톨러 " finished-at="2021-11-03T19:43:29 KST" duration-ms="7608" status="PASS">
+        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:12:42 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-11-17T18:13:44 KST" duration-ms="62637" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_Installer.Chips_Installer.Chips_Installer_실행(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_005_검색.검색_01_어학사전.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Chips_Installer_실행 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-11-03T19:43:29 KST" name="AfterMethod" finished-at="2021-11-03T19:43:29 KST" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_0000_앱실행과AccessToken얻기 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:13:44 KST" name="AfterMethod" finished-at="2021-11-17T18:13:44 KST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Chips_Installer_실행 status=SUCCESS method=Chips_Installer.Chips_Installer_실행(java.lang.reflect.Method)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=검색_01_어학사전.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="tearDownClass(java.lang.String)[pri:0, instance:Chips_Installer.Chips_Installer@465232e9]" started-at="2021-11-03T19:43:29 KST" name="tearDownClass" finished-at="2021-11-03T19:43:30 KST" duration-ms="609" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:13:44 KST" name="BeforeMethod" finished-at="2021-11-17T18:13:44 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ce06171633774e37027e]]>
+                <![CDATA[public void Chips_005_검색.검색_01_어학사전.TC_0897_Chips_어학사전_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0897_Chips_어학사전_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:13:44 KST" name="TC_0897_Chips_어학사전_도움말_확인" description="칩스 리그레이션 TC : 실행_0897" finished-at="2021-11-17T18:14:19 KST" duration-ms="34426" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_005_검색.검색_01_어학사전.TC_0897_Chips_어학사전_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0897_Chips_어학사전_도움말_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:14:19 KST" name="AfterMethod" finished-at="2021-11-17T18:14:19 KST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0897_Chips_어학사전_도움말_확인 status=SUCCESS method=검색_01_어학사전.TC_0897_Chips_어학사전_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:14:19 KST" name="BeforeMethod" finished-at="2021-11-17T18:14:19 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_005_검색.검색_01_어학사전.TC_0898_Chips_어학사전_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0898_Chips_어학사전_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:14:19 KST" name="TC_0898_Chips_어학사전_도움말_확인" description="칩스 리그레이션 TC : 실행_0898" finished-at="2021-11-17T18:14:53 KST" duration-ms="34361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_005_검색.검색_01_어학사전.TC_0898_Chips_어학사전_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0898_Chips_어학사전_도움말_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:14:53 KST" name="AfterMethod" finished-at="2021-11-17T18:14:53 KST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0898_Chips_어학사전_도움말_확인 status=SUCCESS method=검색_01_어학사전.TC_0898_Chips_어학사전_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:14:53 KST" name="BeforeMethod" finished-at="2021-11-17T18:14:53 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_005_검색.검색_01_어학사전.TC_0899_Chips_어학사전_단어번역_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0899_Chips_어학사전_단어번역_확인(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:14:53 KST" name="TC_0899_Chips_어학사전_단어번역_확인" description="칩스 리그레이션 TC : 실행_0899" finished-at="2021-11-17T18:15:21 KST" duration-ms="27994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_005_검색.검색_01_어학사전.TC_0899_Chips_어학사전_단어번역_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0899_Chips_어학사전_단어번역_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:15:21 KST" name="AfterMethod" finished-at="2021-11-17T18:15:22 KST" duration-ms="1461" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0899_Chips_어학사전_단어번역_확인 status=SUCCESS method=검색_01_어학사전.TC_0899_Chips_어학사전_단어번역_확인(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:15:22 KST" name="BeforeMethod" finished-at="2021-11-17T18:15:22 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_005_검색.검색_01_어학사전.TC_0900_Chips_어학사전_문장번역_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0900_Chips_어학사전_문장번역_확인(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:15:22 KST" name="TC_0900_Chips_어학사전_문장번역_확인" description="칩스 리그레이션 TC : 실행_0900" finished-at="2021-11-17T18:15:47 KST" duration-ms="24362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_005_검색.검색_01_어학사전.TC_0900_Chips_어학사전_문장번역_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0900_Chips_어학사전_문장번역_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:15:47 KST" name="AfterMethod" finished-at="2021-11-17T18:15:48 KST" duration-ms="1467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0900_Chips_어학사전_문장번역_확인 status=SUCCESS method=검색_01_어학사전.TC_0900_Chips_어학사전_문장번역_확인(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0903_Chips_어학사전_문장번역_확인(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:15:48 KST" name="TC_0903_Chips_어학사전_문장번역_확인" description="칩스 리그레이션 TC : 실행_0899" finished-at="2021-11-17T18:16:06 KST" duration-ms="18181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_005_검색.검색_01_어학사전.TC_0903_Chips_어학사전_문장번역_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0903_Chips_어학사전_문장번역_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:15:48 KST" name="BeforeMethod" finished-at="2021-11-17T18:15:48 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_005_검색.검색_01_어학사전.TC_0903_Chips_어학사전_문장번역_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:16:06 KST" name="AfterMethod" finished-at="2021-11-17T18:16:06 KST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0903_Chips_어학사전_문장번역_확인 status=SUCCESS method=검색_01_어학사전.TC_0903_Chips_어학사전_문장번역_확인(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:16:06 KST" name="BeforeMethod" finished-at="2021-11-17T18:16:06 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_005_검색.검색_01_어학사전.TC_0904_Chips_어학사전_문장번역_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0904_Chips_어학사전_문장번역_확인(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:16:06 KST" name="TC_0904_Chips_어학사전_문장번역_확인" description="칩스 리그레이션 TC : 실행_0899" finished-at="2021-11-17T18:16:25 KST" duration-ms="18126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_005_검색.검색_01_어학사전.TC_0904_Chips_어학사전_문장번역_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0904_Chips_어학사전_문장번역_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:16:25 KST" name="AfterMethod" finished-at="2021-11-17T18:16:25 KST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0904_Chips_어학사전_문장번역_확인 status=SUCCESS method=검색_01_어학사전.TC_0904_Chips_어학사전_문장번역_확인(java.lang.reflect.Method)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_005_검색.검색_01_어학사전@1e16c0aa]" started-at="2021-11-17T18:16:25 KST" name="tearDownClass" finished-at="2021-11-17T18:16:29 KST" duration-ms="4190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[STG]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chips]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[out]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[R33M4000CY]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ALDF3NYA6C0D0C654DD2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[ALDF5TR5SNGZ8175DA16]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[ALDFH3D1Q7W6071EFE41]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ALDFH6OQ9HG79986A4FA]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[ALDFHFMQC3RB935B4B02]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[ALDFHFMSG34WDF6CD40E]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[ALDFHDFEBVOC7F098039]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[ALDG3Q4IA9EW3633F8EA]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- Chips_Installer.Chips_Installer -->
+      </class> <!-- Chips_005_검색.검색_01_어학사전 -->
     </test> <!-- Test_Project -->
   </suite> <!-- ExtentReport -->
 </testng-results>
