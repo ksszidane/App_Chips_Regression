@@ -285,6 +285,9 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0223")
 	public void TC_0223_Chips_FLO로그인_실시간차트_확인(Method method) throws Exception {
 		 
+		test.log(Status.INFO, "W, 실행중인 음악 종료- 발화");
+		util.SWFsendPost("음악 종료", ServerName, AccessToken);
+		
 		test.log(Status.INFO, "W, 인기 플로 노래 틀어줘 - 발화");
 		util.SWFsendPost("인기 플로 노래 틀어줘", ServerName, AccessToken);
 		
@@ -587,6 +590,9 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0228")
 	public void TC_0228_Chips_FLO로그인_셔플해줘_확인(Method method) throws Exception {
+		
+		test.log(Status.INFO, "W, 실행중인 음악 종료- 발화");
+		util.SWFsendPost("음악 종료", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "W, jeebanoff 노래 들려줘 - 발화");
 		util.SWFsendPost("jeebanoff 노래 들려줘", ServerName, AccessToken);
