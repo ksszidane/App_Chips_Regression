@@ -472,7 +472,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "최신음악 노래 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("Flo에서 테스트 1 내 리스트"));
+		Assert.assertTrue(tts.contains("Flo에서 ee 내 리스트"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
