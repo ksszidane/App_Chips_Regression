@@ -261,7 +261,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 		if (미지원기간.equals("A구간")) {
 			test.log(Status.INFO, "[4월~11월] 구간 이번주 운세 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("지금은 오늘과 내일의 운세만 알려드릴 수 있어요."));
+			Assert.assertTrue(tts.contains("저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
 		} else if (미지원기간.equals("B구간")) {
 			test.log(Status.INFO, "[12월~3월] 구간 이번주 운세 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
@@ -282,7 +282,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 		if (미지원기간.equals("A구간")) {
 			test.log(Status.INFO, "[4월~11월] 구간 다음주 운세 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("지금은 오늘과 내일의 운세만 알려드릴 수 있어요."));
+			Assert.assertTrue(tts.contains("저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
 		} else if (미지원기간.equals("B구간")) {
 			test.log(Status.INFO, "[12월~3월] 구간 다음주 운세 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
@@ -303,7 +303,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 		if (미지원기간.equals("A구간")) {
 			test.log(Status.INFO, "[4월~11월] 구간 다음달 운세 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("지금은 오늘과 내일의 운세만 알려드릴 수 있어요."));
+			Assert.assertTrue(tts.contains("저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
 		} else if (미지원기간.equals("B구간")) {
 			test.log(Status.INFO, "[12월~3월] 구간 다음달 운세 TTS 확인");
 			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
