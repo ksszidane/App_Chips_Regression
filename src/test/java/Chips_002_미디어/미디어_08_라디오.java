@@ -106,8 +106,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	public void TC_0341_Chips_라디오_재생_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "W, SBS파워FM 라디오 틀어줘 - 발화");
-		util.SWFsendPost("SBS파워FM 라디오 틀어줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, SBS파워FM 라디오 - 발화");
+		util.SWFsendPost("SBS파워FM 라디오", ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -275,8 +275,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	public void TC_0349_Chips_라디오_즐겨찾기1개재생중_다음_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "W, KBS 라디오 들려줘 - 발화");
-		util.SWFsendPost("KBS 라디오 들려줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, KBS CoolFM 라디오 - 발화");
+		util.SWFsendPost("KBS CoolFM 라디오", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "이전 채널 라디오 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
@@ -323,8 +323,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	public void TC_0350_Chips_라디오_즐겨찾기2개재생중_다음_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "W, CBS 라디오 들려줘 - 발화");
-		util.SWFsendPost("CBS 라디오 들려줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, CBS 라디오 - 발화");
+		util.SWFsendPost("CBS 라디오", ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "이전 채널 라디오 재생 TTS 확인");
@@ -388,8 +388,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	public void TC_0351_Chips_라디오_종료_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "W, CBS 라디오 들려줘 - 발화");
-		util.SWFsendPost("CBS 라디오 들려줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, CBS 라디오 - 발화");
+		util.SWFsendPost("CBS 라디오", ServerName, AccessToken);
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -423,8 +423,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	public void TC_0352_Chips_라디오_종료_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "W, KBS 라디오 들려줘 - 발화");
-		util.SWFsendPost("KBS 라디오 들려줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, KBS 라디오 - 발화");
+		util.SWFsendPost("KBS 라디오", ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -458,8 +458,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	public void TC_0353_Chips_라디오_일시정지상태_채널재생_확인(Method method) throws Exception {
 		
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "W, SBS파워FM 라디오 틀어줘 - 발화");
-		util.SWFsendPost("SBS파워FM 라디오 틀어줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, SBS파워FM 라디오 - 발화");
+		util.SWFsendPost("SBS파워FM 라디오", ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -496,8 +496,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	public void TC_0354_Chips_라디오_일시정지상태_채널재생_확인(Method method) throws Exception {
 		
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "W, SBS파워FM 라디오 틀어줘 - 발화");
-		util.SWFsendPost("SBS파워FM 라디오 틀어줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, SBS파워FM 라디오 - 발화");
+		util.SWFsendPost("SBS파워FM 라디오", ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -595,8 +595,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	public void TC_0357_Chips_라디오_실행중_즐겨찾기_확인(Method method) throws Exception {
 		
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "W, SBS파워FM 라디오 틀어줘 - 발화");
-		util.SWFsendPost("SBS파워FM 라디오 틀어줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, SBS파워FM 라디오 - 발화");
+		util.SWFsendPost("SBS파워FM 라디오", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
