@@ -148,8 +148,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    Thread.sleep(3000);
 		
-		test.log(Status.INFO, "W, FM 라디오 들려줘- 발화");
-		util.SWFsendPost("FM 라디오 들려줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, 라디오 들려줘- 발화");
+		util.SWFsendPost("라디오 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "최근에 재생한 라디오 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
