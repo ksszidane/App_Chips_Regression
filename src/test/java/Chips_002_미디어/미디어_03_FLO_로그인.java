@@ -596,7 +596,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		
 		test.log(Status.INFO, "셔플 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place, 5);
+		String tts = util.TTS_JsonParsing_delay(nuguqa001, Chips_001, ServerName, Place, 10000);
 		Assert.assertTrue(tts.contains("셔플할게요."));
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
@@ -617,7 +617,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		
 		test.log(Status.INFO, "셔플 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place, 5);
+		String tts = util.TTS_JsonParsing_delay(nuguqa001, Chips_001, ServerName, Place, 10000);
 		Assert.assertTrue(tts.contains("셔플을 해제했어요"));
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
