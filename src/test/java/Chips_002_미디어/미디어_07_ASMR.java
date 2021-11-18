@@ -113,6 +113,9 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		Assert.assertTrue(tts.contains("ASMR"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
 		
+		test.log(Status.INFO, "W, ASMR 플레이 - 발화");
+		util.SWFsendPost("ASMR 플레이", ServerName, AccessToken);
+		
 		test.log(Status.INFO, "ASMR 타이틀 확인");
 		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
 		Assert.assertEquals(FLOtxt, "ASMR");
@@ -167,6 +170,9 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("과자 먹는 소리"));
 		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		
+		test.log(Status.INFO, "W, 과자 먹는 소리 틀어줘 - 발화");
+		util.SWFsendPost("과자 먹는 소리 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ASMR 타이틀 확인");
 		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
