@@ -116,6 +116,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 날씨 - 발화");
 		util.SWFsendPost("날씨", ServerName, AccessToken);
+		util.SWFsendPost("날씨", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
