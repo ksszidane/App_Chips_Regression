@@ -229,10 +229,10 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0744")
 	public void TC_0744_Chips_날씨_내일미세먼지_확인(Method method) throws Exception {
 		 
-		//test.log(Status.INFO, "현재위치 정보값 저장");
-		//String str = util.getText(By.id("location"));
-		//String[] array = str.split(" ");
-		//String 현재위치 = array[2];
+		test.log(Status.INFO, "현재위치 정보값 저장");
+		String str = util.getText(By.id("location"));
+		String[] array = str.split(" ");
+		String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 내일 미세먼지 상태 알려줘 - 발화");
 		util.SWFsendPost("내일 미세먼지 상태 알려줘", ServerName, AccessToken);
