@@ -14,6 +14,7 @@ import junit.framework.Assert;
 public class 생활정보_10_날씨_일출시간 extends Chips_TestCase {
 	
 	String AccessToken;
+	String 현재위치;
 	
 	public void accessToken얻기() throws Exception {
 		
@@ -105,10 +106,13 @@ public class 생활정보_10_날씨_일출시간 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0775")
 	public void TC_0775_Chips_날씨_일출시간_확인(Method method) throws Exception {
 		
+		test.log(Status.INFO, "play카드 닫기"); 
+	    util.view_close_btn_check();
+		
 		test.log(Status.INFO, "현재위치 정보값 저장");
 		String str = util.getText(By.id("location"));
 		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 일출 시간 - 발화");
 		util.SWFsendPost("일출 시간", ServerName, AccessToken);
@@ -150,11 +154,6 @@ public class 생활정보_10_날씨_일출시간 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0777")
 	public void TC_0777_Chips_날씨_오늘_일출시간_확인(Method method) throws Exception {
 		
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
-		
 		test.log(Status.INFO, "W, 오늘 일출 시간 - 발화");
 		util.SWFsendPost("오늘 일출 시간", ServerName, AccessToken);
 		
@@ -177,11 +176,6 @@ public class 생활정보_10_날씨_일출시간 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0777")
 	public void TC_0779_Chips_날씨_내일_일출시간_확인(Method method) throws Exception {
-		
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 내일 일출 시간 - 발화");
 		util.SWFsendPost("내일 일출 시간", ServerName, AccessToken);

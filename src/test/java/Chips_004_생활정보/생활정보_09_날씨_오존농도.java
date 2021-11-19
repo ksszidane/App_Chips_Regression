@@ -14,6 +14,7 @@ import junit.framework.Assert;
 public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 	
 	String AccessToken;
+	String 현재위치;
 	
 	public void accessToken얻기() throws Exception {
 		
@@ -105,10 +106,13 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0767")
 	public void TC_0767_Chips_날씨_오존지수_확인(Method method) throws Exception {
 		
+		test.log(Status.INFO, "play카드 닫기"); 
+	    util.view_close_btn_check();
+		
 		test.log(Status.INFO, "현재위치 정보값 저장");
 		String str = util.getText(By.id("location"));
 		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 오늘 오존 어때? - 발화");
 		util.SWFsendPost("오늘 오존 어때?", ServerName, AccessToken);
@@ -135,11 +139,6 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0769")
 	public void TC_0769_Chips_날씨_내일_오존지수_확인(Method method) throws Exception {
-		
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 내일 오존 알려줘 - 발화");
 		util.SWFsendPost("내일 오존 알려줘", ServerName, AccessToken);

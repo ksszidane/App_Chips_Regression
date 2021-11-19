@@ -14,6 +14,7 @@ import junit.framework.Assert;
 public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	
 	String AccessToken;
+	String 현재위치;
 	
 	public void accessToken얻기() throws Exception {
 		
@@ -105,10 +106,13 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0787")
 	public void TC_0787_Chips_날씨_세차지수_확인(Method method) throws Exception {
 		
+		test.log(Status.INFO, "play카드 닫기"); 
+	    util.view_close_btn_check();
+		
 		test.log(Status.INFO, "현재위치 정보값 저장");
 		String str = util.getText(By.id("location"));
 		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 세차하기 어때? - 발화");
 		util.SWFsendPost("세차하기 어때?", ServerName, AccessToken);
@@ -122,11 +126,6 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0788")
 	public void TC_0788_Chips_날씨_오늘세차지수_확인(Method method) throws Exception {
-		
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 오늘 세차지수 알려줘 - 발화");
 		util.SWFsendPost("오늘 세차지수 알려줘", ServerName, AccessToken);

@@ -14,7 +14,7 @@ import junit.framework.Assert;
 public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	
 	String AccessToken;
-	String 현재위치 = "";
+	String 현재위치;
 	
 	public void accessToken얻기() throws Exception {
 		

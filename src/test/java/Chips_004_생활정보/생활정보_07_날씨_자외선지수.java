@@ -14,6 +14,7 @@ import junit.framework.Assert;
 public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 	
 	String AccessToken;
+	String 현재위치;
 	
 	public void accessToken얻기() throws Exception {
 		
@@ -105,10 +106,13 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0747")
 	public void TC_0747_Chips_날씨_자외선지수_확인(Method method) throws Exception {
 		
+		test.log(Status.INFO, "play카드 닫기"); 
+	    util.view_close_btn_check();
+		
 		test.log(Status.INFO, "현재위치 정보값 저장");
 		String str = util.getText(By.id("location"));
 		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 자외선 지수 - 발화");
 		util.SWFsendPost("자외선 지수", ServerName, AccessToken);
@@ -152,10 +156,13 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0749")
 	public void TC_0749_Chips_날씨_내일_자외선지수_확인(Method method) throws Exception {
 	    
+		test.log(Status.INFO, "play카드 닫기"); 
+	    util.view_close_btn_check();
+		
 		test.log(Status.INFO, "현재위치 정보값 저장");
 		String str = util.getText(By.id("location"));
 		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 내일 자외선 어때? - 발화");
 		util.SWFsendPost("내일 자외선 어때?", ServerName, AccessToken);
@@ -180,11 +187,6 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0751")
 	public void TC_0751_Chips_날씨_모레_자외선지수_확인(Method method) throws Exception {
-		
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 모레 자외선 지수 - 발화");
 		util.SWFsendPost("모레 자외선 지수", ServerName, AccessToken);

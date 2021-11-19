@@ -14,6 +14,7 @@ import junit.framework.Assert;
 public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 	
 	String AccessToken;
+	String 현재위치;
 	
 	public void accessToken얻기() throws Exception {
 		
@@ -105,10 +106,13 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0757")
 	public void TC_0757_Chips_날씨_습도지수_확인(Method method) throws Exception {
 		
+		test.log(Status.INFO, "play카드 닫기"); 
+	    util.view_close_btn_check();
+		
 		test.log(Status.INFO, "현재위치 정보값 저장");
 		String str = util.getText(By.id("location"));
 		String[] array = str.split(" ");
-		String 현재위치 = array[2];
+		현재위치 = array[2];
 		System.out.println("현재위치:"+현재위치);
 		
 		test.log(Status.INFO, "W, 오늘 습도 어때? - 발화");
@@ -155,11 +159,6 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0759")
 	public void TC_0759_Chips_날씨_내일_습도지수_확인(Method method) throws Exception {
 		
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
-		
 		test.log(Status.INFO, "W, 내일 습도 알려줘 - 발화");
 		util.SWFsendPost("내일 습도 알려줘", ServerName, AccessToken);
 		
@@ -203,11 +202,6 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0751")
 	public void TC_0761_Chips_날씨_모레_습도지수_확인(Method method) throws Exception {
-		
-		test.log(Status.INFO, "현재위치 정보값 저장");
-		String str = util.getText(By.id("location"));
-		String[] array = str.split(" ");
-		String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 모레 습도 상태 - 발화");
 		util.SWFsendPost("모레 습도 상태", ServerName, AccessToken);
