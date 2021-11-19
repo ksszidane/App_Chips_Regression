@@ -109,6 +109,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 		String str = util.getText(By.id("location"));
 		String[] array = str.split(" ");
 		String 현재위치 = array[2];
+		System.out.println("현재위치:"+현재위치);
 		
 		test.log(Status.INFO, "W, 오늘 습도 어때? - 발화");
 		util.SWFsendPost("오늘 습도 어때?", ServerName, AccessToken);
