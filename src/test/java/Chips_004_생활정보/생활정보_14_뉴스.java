@@ -594,6 +594,9 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0821")
 	public void TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인(Method method) throws Exception {
 		
+		test.log(Status.INFO, "play카드 닫기"); 
+	    util.view_close_btn_check();
+		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, SK텔레콤 뉴스 들려줘 - 발화");
 		util.SWFsendPost("SK텔레콤 뉴스 들려줘", ServerName, AccessToken);
