@@ -229,6 +229,9 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0744")
 	public void TC_0744_Chips_날씨_내일미세먼지_확인(Method method) throws Exception {
 		 
+		test.log(Status.INFO, "play카드 닫기"); 
+	    util.view_close_btn_check();
+		
 		test.log(Status.INFO, "현재위치 정보값 저장");
 		String str = util.getText(By.id("location"));
 		String[] array = str.split(" ");

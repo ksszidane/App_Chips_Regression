@@ -1047,7 +1047,6 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
 		String[] result = tts.split(" ");
 		Assert.assertTrue(tts.contains(result[0]));
-		Assert.assertTrue(tts.contains(result[1]));
 		Assert.assertTrue(tts.contains("스포츠 관련 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
