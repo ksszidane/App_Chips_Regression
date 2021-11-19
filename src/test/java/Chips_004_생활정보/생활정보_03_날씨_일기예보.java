@@ -464,6 +464,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 이번 주 날씨 알려줘 - 발화");
 		util.SWFsendPost("이번 주 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("이번 주 날씨 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
