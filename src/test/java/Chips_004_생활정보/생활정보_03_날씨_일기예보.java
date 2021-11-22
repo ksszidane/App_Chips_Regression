@@ -689,9 +689,6 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		//String[] array = str.split(" ");
 		//String 현재위치 = array[2];
 		
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
-		
 		test.log(Status.INFO, "오늘 요일 구하기" + util.getDayOfWeek(0));
 		String 오늘요일 = util.getDayOfWeek(0);
 		
@@ -899,10 +896,6 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0734")
 	public void TC_0734_Chips_날씨_파주시야동동날씨_확인(Method method) throws Exception {
-		
-		util.context("NATIVE_APP");
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
 		
 		test.log(Status.INFO, "W, 파주시 야동동 날씨 - 발화 ");
 		util.SWFsendPost("파주시 야동동 날씨", ServerName, AccessToken);
