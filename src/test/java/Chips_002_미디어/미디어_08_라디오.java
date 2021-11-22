@@ -273,6 +273,10 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0349")
 	public void TC_0349_Chips_라디오_즐겨찾기1개재생중_다음_확인(Method method) throws Exception {
+		
+		test.log(Status.INFO, "play카드 닫기"); 
+	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		 
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, KBS CoolFM 라디오 들려줘- 발화");
@@ -386,7 +390,11 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0351")
 	public void TC_0351_Chips_라디오_종료_확인(Method method) throws Exception {
-		 
+		
+		test.log(Status.INFO, "play카드 닫기"); 
+	    util.view_close_btn_check();
+	    Thread.sleep(5000); 
+		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, CBS 라디오 들려줘 - 발화");
 		util.SWFsendPost("CBS 라디오 들려줘", ServerName, AccessToken);
@@ -421,7 +429,11 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0352")
 	public void TC_0352_Chips_라디오_종료_확인(Method method) throws Exception {
-		 
+		
+		test.log(Status.INFO, "play카드 닫기"); 
+	    util.view_close_btn_check();
+	    Thread.sleep(5000); 
+		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, KBS 라디오 들려줘 - 발화");
 		util.SWFsendPost("KBS 라디오 들려줘", ServerName, AccessToken);
@@ -456,6 +468,10 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0353")
 	public void TC_0353_Chips_라디오_일시정지상태_채널재생_확인(Method method) throws Exception {
+		
+		test.log(Status.INFO, "play카드 닫기"); 
+	    util.view_close_btn_check();
+	    Thread.sleep(5000); 
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, SBS파워FM 라디오 들려줘 - 발화");
