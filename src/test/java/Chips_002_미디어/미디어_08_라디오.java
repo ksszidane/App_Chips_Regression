@@ -240,6 +240,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		test.log(Status.INFO, "다음 채널 라디오 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("SBS 파워FM 라디오를 들려드릴게요."));
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -261,6 +262,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		test.log(Status.INFO, "이전 채널 라디오 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("TBN 강원교통방송 라디오"));
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "이전 라디오 재생중 버튼 활성화");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -326,6 +328,10 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0350")
 	public void TC_0350_Chips_라디오_즐겨찾기2개재생중_다음_확인(Method method) throws Exception {
 		 
+		test.log(Status.INFO, "play카드 닫기"); 
+	    util.view_close_btn_check();
+	    Thread.sleep(5000);
+		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, CBS 라디오 들려줘- 발화");
 		util.SWFsendPost("CBS 라디오 들려줘", ServerName, AccessToken);
