@@ -935,8 +935,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 		
-		test.log(Status.INFO, "W, 제주도 날씨 알려줘 - 발화 ");
-		util.SWFsendPost("제주도 날씨 알려줘", ServerName, AccessToken);
+		test.log(Status.INFO, "W, 파주시 야동동 날씨 - 발화 ");
+		util.SWFsendPost("파주시 야동동 날씨", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
