@@ -327,7 +327,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		util.SWFsendPost("CBS 라디오 들려줘", ServerName, AccessToken);
 		Thread.sleep(3000);
 		
-		test.log(Status.INFO, "이전 채널 라디오 재생 TTS 확인");
+		test.log(Status.INFO, "채널 라디오 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("CBS 음악FM 라디오"));
 		
@@ -390,7 +390,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, CBS 라디오 들려줘 - 발화");
 		util.SWFsendPost("CBS 라디오 들려줘", ServerName, AccessToken);
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
