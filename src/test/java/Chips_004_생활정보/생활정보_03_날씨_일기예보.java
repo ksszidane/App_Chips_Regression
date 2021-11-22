@@ -258,7 +258,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 내일 날씨 - 발화");
-		util.SWFsendPost("내일날씨", ServerName, AccessToken);
+		util.SWFsendPost("내일 날씨", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -286,7 +286,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    util.view_close_btn_check();
 		
 		test.log(Status.INFO, "W, 내일 날씨 - 발화");
-		util.SWFsendPost("내일날씨", ServerName, AccessToken);
+		util.SWFsendPost("내일 날씨", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "내일날씨 최고온도 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
