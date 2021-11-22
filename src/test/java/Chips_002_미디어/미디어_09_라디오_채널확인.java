@@ -107,7 +107,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, SBS 러브 FM 틀어줘 - 발화");
 		util.SWFsendPost_playStatus("SBS 러브 FM 틀어줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("SBS 러브 FM 틀어줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -130,7 +129,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0362_Chips_라디오_지원채널_SBS파워FM_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, SBS 파워 FM 들려줘 - 발화");
-		util.SWFsendPost_playStatus("SBS 파워 FM 들려줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("SBS 파워 FM 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
@@ -155,7 +153,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 교통방송 FM 들려줘 - 발화");
 		util.SWFsendPost_playStatus("교통방송 FM 들려줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("교통방송 FM 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -178,7 +175,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0364_Chips_라디오_지원채널_TBSeFM_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, TBS eFM 들려줘 - 발화");
-		util.SWFsendPost_playStatus("TBS eFM 들려줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("TBS eFM 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
@@ -203,7 +199,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, TBN 강원교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 강원교통방송 들려줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("TBN 강원교통방송 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -226,7 +221,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0367_Chips_라디오_지원채널_TBN경남교통방송_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, TBN 경남교통방송 들려줘 - 발화");
-		util.SWFsendPost_playStatus("TBN 경남교통방송 들려줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("TBN 경남교통방송 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
@@ -251,7 +245,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, TBN 경북교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 경북교통방송 들려줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("TBN 경북교통방송 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -274,7 +267,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0369_Chips_라디오_지원채널_TBN경인교통방송_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, TBN 경인교통방송 들려줘 - 발화");
-		util.SWFsendPost_playStatus("TBN 경인교통방송 들려줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("TBN 경인교통방송 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
@@ -299,7 +291,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, TBN 광주교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 광주교통방송 들려줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("TBN 광주교통방송 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -322,7 +313,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0371_Chips_라디오_지원채널_TBN대구교통방송_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, TBN 대구교통방송 들려줘 - 발화");
-		util.SWFsendPost_playStatus("TBN 대구교통방송 들려줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("TBN 대구교통방송 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
@@ -347,7 +337,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, TBN 대전교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 대전교통방송 들려줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("TBN 대전교통방송 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -370,7 +359,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0373_Chips_라디오_지원채널_TBN부산교통방송_확인(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, TBN 부산교통방송 들려줘 - 발화");
-		util.SWFsendPost_playStatus("TBN 부산교통방송 들려줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("TBN 부산교통방송 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
@@ -395,7 +383,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, TBN 울산교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 울산교통방송 들려줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("TBN 울산교통방송 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -418,7 +405,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0375_Chips_라디오_지원채널_TBN전북교통방송_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, TBN 전북교통방송 들려줘 - 발화");
-		util.SWFsendPost_playStatus("TBN 전북교통방송 들려줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("TBN 전북교통방송 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
@@ -443,7 +429,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, TBN 제주교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 제주교통방송 들려줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("TBN 제주교통방송 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -466,7 +451,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0378_Chips_라디오_지원채널_아리랑FM_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 아리랑FM 들려줘 - 발화");
-		util.SWFsendPost_playStatus("아리랑FM 들려줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("아리랑FM 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
@@ -491,7 +475,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 
 		test.log(Status.INFO, "W, 극동방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("극동방송 들려줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("극동방송 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -514,7 +497,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0380_Chips_라디오_지원채널_불교방송_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 불교방송 들려줘 - 발화");
-		util.SWFsendPost_playStatus("불교방송 들려줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("불교방송 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
@@ -539,7 +521,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 
 		test.log(Status.INFO, "W, BBS FM 들려줘 - 발화");
 		util.SWFsendPost_playStatus("BBS FM 들려줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("BBS FM 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -562,7 +543,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0382_Chips_라디오_지원채널_CBS음악FM_확인(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, CBS 음악 FM 들려줘 - 발화");
-		util.SWFsendPost_playStatus("CBS 음악 FM 들려줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("CBS 음악 FM 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
@@ -587,7 +567,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 
 		test.log(Status.INFO, "W, CBS 표준FM 들려줘 - 발화");
 		util.SWFsendPost_playStatus("CBS 표준FM 들려줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("CBS 표준FM 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -610,7 +589,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0384_Chips_라디오_지원채널_CBS표준FM_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, CBS 표준FM 들려줘 - 발화");
-		util.SWFsendPost_playStatus("CBS 표준FM 들려줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("CBS 표준FM 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
@@ -635,7 +613,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, KBS 제1라디오 들려줘 - 발화");
 		util.SWFsendPost_playStatus("KBS 제1라디오 들려줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("KBS 제1라디오 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -658,7 +635,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0387_Chips_라디오_지원채널_KBS2라디오_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, KBS 제2라디오 들려줘 - 발화");
-		util.SWFsendPost_playStatus("KBS 제2라디오 들려줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("KBS 제2라디오 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
@@ -683,7 +659,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, KBS 제3라디오 들려줘 - 발화");
 		util.SWFsendPost_playStatus("KBS 제3라디오 들려줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("KBS 제3라디오 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -706,7 +681,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0389_Chips_라디오_지원채널_KBS클래식FM_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, KBS 클래식FM 틀어줘 - 발화");
-		util.SWFsendPost_playStatus("KBS 클래식FM 틀어줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("KBS 클래식FM 틀어줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
@@ -732,7 +706,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, KBS 쿨FM 들려줘 - 발화");
 		util.SWFsendPost_playStatus("KBS 쿨FM 들려줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("KBS 쿨FM 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -755,7 +728,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0391_Chips_라디오_지원채널_KBSHappyFM_확인(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, KBS HappyFM 틀어줘 - 발화");
-		util.SWFsendPost_playStatus("KBS HappyFM 틀어줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("KBS HappyFM 틀어줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
@@ -780,7 +752,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, KBS 월드 라디오 들려줘 - 발화");
 		util.SWFsendPost_playStatus("KBS 월드 라디오 들려줘", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("KBS 월드 라디오 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -803,7 +774,6 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0393_Chips_라디오_지원채널_KBS한민족방송_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, KBS 한민족방송 들려줘 - 발화");
-		util.SWFsendPost_playStatus("KBS 한민족방송 들려줘", ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("KBS 한민족방송 들려줘", ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
