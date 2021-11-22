@@ -161,7 +161,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "다음 라디오 재생 TTS 확인");
-		String next_tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place, 5);
+		String next_tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(next_tts.contains("TBN 강원교통방송 라디오"));
 		Assert.assertTrue(util.dataCheck_Contains(next_tts, data.음악시작_set));
 		
@@ -239,7 +239,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "다음 채널 라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place, 5);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("SBS 파워FM 라디오를 들려드릴게요."));
 		Thread.sleep(3000);
 		
@@ -261,7 +261,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "이전 채널 라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place, 5);
+		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(tts.contains("TBN 강원교통방송 라디오"));
 		Thread.sleep(3000);
 		
@@ -313,7 +313,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "다음 라디오 재생 TTS 확인");
-		String next_tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place, 5);
+		String next_tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(next_tts.contains("SBS 파워FM 라디오를 들려드릴게요."));
 		Assert.assertTrue(util.dataCheck_Contains(next_tts, data.음악시작_set));
 		
@@ -366,7 +366,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "다음 라디오 재생 TTS 확인");
-		String next_tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place, 5);
+		String next_tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(next_tts.contains("KBS CoolFM 라디오"));
 		Assert.assertTrue(util.dataCheck_Contains(next_tts, data.음악시작_set));
 		
@@ -382,7 +382,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "다음 라디오 재생 TTS 확인");
-		String next_tts2 = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place, 5);
+		String next_tts2 = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
 		Assert.assertTrue(next_tts2.contains("SBS 파워FM 라디오를 들려드릴게요."));
 		Assert.assertTrue(util.dataCheck_Contains(next_tts2, data.음악시작_set));
 		
