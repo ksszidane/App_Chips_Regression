@@ -105,9 +105,6 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0722")
 	public void TC_0722_Chips_날씨_오늘날씨_확인(Method method) throws Exception {
-		 
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
 		
 		test.log(Status.INFO, "현재위치 정보값 저장");
 		String str = util.getText(By.id("location"));
@@ -391,9 +388,6 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		//String[] array = str.split(" ");
 		//String 현재위치 = array[2];
 		
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
-		
 		test.log(Status.INFO, "오늘 기준 날짜 데이터 생성");
 		String 모레날짜 = util.getChangePreviousDate(2);
 		String 모레요일 = util.getDayOfWeek(2);
@@ -456,9 +450,6 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		//String str = util.getText(By.id("location"));
 		//String[] array = str.split(" ");
 		//String 현재위치 = array[2];
-		
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
 		
 		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 이번 주 날씨 알려줘 - 발화");
@@ -540,9 +531,6 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		//String[] array = str.split(" ");
 		//String 현재위치 = array[2];
 		
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
-		
 		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 다음 주 날씨 알려줘 - 발화");
 		util.SWFsendPost("다음 주 날씨 알려줘", ServerName, AccessToken);
@@ -615,9 +603,6 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		//String[] array = str.split(" ");
 		//String 현재위치 = array[2];
 		
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
-		
 		Thread.sleep(5000);
 		test.log(Status.INFO, "오늘 기준 주말(토요일) 날짜 계산");
 		String 이번주주말날짜 = util.getWeekSaturday();
@@ -645,9 +630,6 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		//String str = util.getText(By.id("location"));
 		//String[] array = str.split(" ");
 		//String 현재위치 = array[2];
-		
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
 		
 		Thread.sleep(5000);
 		test.log(Status.INFO, "오늘 기준 다음주 주말(토요일) 날짜 계산");
@@ -760,9 +742,6 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		//String[] array = str.split(" ");
 		//String 현재위치 = array[2];
 		
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
-		
 		test.log(Status.INFO, "오늘 요일 구하기" + util.getDayOfWeek(0));
 		String 오늘요일 = util.getDayOfWeek(0);
 		
@@ -830,8 +809,6 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	public void TC_0733_Chips_날씨_제주도날씨_확인(Method method) throws Exception {
 		
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
 		
 		test.log(Status.INFO, "W, 제주도 날씨 알려줘 - 발화 ");
 		util.SWFsendPost("제주도 날씨 알려줘", ServerName, AccessToken);
