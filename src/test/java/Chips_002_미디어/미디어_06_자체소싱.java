@@ -335,7 +335,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "셔플 버튼 클릭");
 		util.click(By.xpath(xPath.FLO랜덤버튼));
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 		
 		test.log(Status.INFO, "이전 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place, 5);
@@ -361,7 +361,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "셔플 버튼 클릭");
 		util.click(By.xpath(xPath.FLO랜덤버튼));
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 		
 		test.log(Status.INFO, "셔플 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place, 5);
