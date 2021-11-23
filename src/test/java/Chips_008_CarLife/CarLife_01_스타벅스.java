@@ -14,6 +14,7 @@ import junit.framework.Assert;
 public class CarLife_01_스타벅스 extends Chips_TestCase {
 	
 	String AccessToken;
+	int i = 0;
 	
 	public void accessToken얻기() throws Exception {
 		
@@ -109,12 +110,11 @@ public class CarLife_01_스타벅스 extends Chips_TestCase {
 		util.SWFsendPost("스타벅스 커피 주문해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스타벅스 미지원 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Equals(tts, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_Set(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
 		
 		test.log(Status.INFO, "usd action_type 확인");
-		String usd = util.action_type_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(usd.contains("usd"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "usd"));
+		
 
 	}
 
