@@ -110,7 +110,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.SWFsendPost("지금 비 와?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지금 비 와? TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.지금강수확률_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.지금강수확률_set));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0738")
@@ -120,7 +120,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.SWFsendPost("오늘 강수확률", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지금 비 와? TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.오늘강수확률_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.오늘강수확률_set));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0739")
@@ -130,7 +130,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.SWFsendPost("내일 비와?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지금 비 와? TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.내일강수확률_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.내일강수확률_set));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0740")
