@@ -107,7 +107,6 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "W, 안녕 - 발화");
 		util.SWFsendPost("안녕", ServerName, AccessToken);
-		util.SWFsendPost("안녕", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchatView / motionView 카드 노출 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chitchatView")));
@@ -124,7 +123,6 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 	public void TC_0711_Chips_감성대화_이벤트절기상황1_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 월요일이 또 왔어 - 발화");
-		util.SWFsendPost("월요일이 또 왔어", ServerName, AccessToken);
 		util.SWFsendPost("월요일이 또 왔어", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchatView / motionView 카드 노출 확인");
@@ -143,7 +141,6 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "W, 불금이야 - 발화");
 		util.SWFsendPost("불금이야", ServerName, AccessToken);
-		util.SWFsendPost("불금이야", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchatView / motionView 카드 노출 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chitchatView")));
@@ -161,7 +158,6 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "W, 피곤해 죽겠어 - 발화");
 		util.SWFsendPost("피곤해 죽겠어", ServerName, AccessToken);
-		util.SWFsendPost("피곤해 죽겠어", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchatView / motionView 카드 노출 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chitchatView")));
@@ -178,7 +174,6 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 	public void TC_0714_Chips_감성대화_감사_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 고마워 - 발화");
-		util.SWFsendPost("고마워", ServerName, AccessToken);
 		util.SWFsendPost("고마워", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchatView / motionView 카드 노출 확인");
