@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="34" passed="27" failed="7" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-24T21:47:41 KST" name="ExtentReport" finished-at="2021-11-24T21:49:25 KST" duration-ms="103325">
+  <suite started-at="2021-11-25T00:02:21 KST" name="ExtentReport" finished-at="2021-11-25T00:22:15 KST" duration-ms="1194149">
     <groups>
     </groups>
-    <test started-at="2021-11-24T21:47:41 KST" name="Test_Project" finished-at="2021-11-24T21:49:25 KST" duration-ms="103325">
-      <class name="Chips_008_CarLife.CarLife_01_스타벅스">
-        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-11-24T21:47:41 KST" name="setupClass" finished-at="2021-11-24T21:47:56 KST" duration-ms="14275" status="PASS">
+    <test started-at="2021-11-25T00:02:21 KST" name="Test_Project" finished-at="2021-11-25T00:22:15 KST" duration-ms="1194149">
+      <class name="Chips_002_미디어.미디어_09_라디오_채널확인">
+        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:02:21 KST" name="setupClass" finished-at="2021-11-25T00:02:33 KST" duration-ms="12684" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,73 +88,1360 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-11-24T21:47:56 KST" name="BeforeMethod" finished-at="2021-11-24T21:47:56 KST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:02:33 KST" name="BeforeMethod" finished-at="2021-11-25T00:02:33 KST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_008_CarLife.CarLife_01_스타벅스.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-11-24T21:47:56 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-11-24T21:48:58 KST" duration-ms="62563" status="PASS">
+        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:02:33 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-11-25T00:03:33 KST" duration-ms="59380" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_008_CarLife.CarLife_01_스타벅스.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0000_앱실행과AccessToken얻기 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-11-24T21:48:58 KST" name="AfterMethod" finished-at="2021-11-24T21:48:58 KST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:03:33 KST" name="AfterMethod" finished-at="2021-11-25T00:03:33 KST" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=CarLife_01_스타벅스.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-11-24T21:48:58 KST" name="BeforeMethod" finished-at="2021-11-24T21:48:58 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:03:33 KST" name="BeforeMethod" finished-at="2021-11-25T00:03:33 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_008_CarLife.CarLife_01_스타벅스.TC_1243_스타벅스_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0361_Chips_라디오_지원채널_SBS러브FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_1243_스타벅스_미지원_확인(java.lang.reflect.Method)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-11-24T21:48:58 KST" name="TC_1243_스타벅스_미지원_확인" description="칩스 리그레이션 TC : 실행_1243" finished-at="2021-11-24T21:49:20 KST" duration-ms="22224" status="PASS">
+        <test-method signature="TC_0361_Chips_라디오_지원채널_SBS러브FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:03:33 KST" name="TC_0361_Chips_라디오_지원채널_SBS러브FM_확인" description="칩스 리그레이션 TC : 실행_0361" finished-at="2021-11-25T00:04:07 KST" duration-ms="34450" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_008_CarLife.CarLife_01_스타벅스.TC_1243_스타벅스_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0361_Chips_라디오_지원채널_SBS러브FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_1243_스타벅스_미지원_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-11-24T21:49:20 KST" name="AfterMethod" finished-at="2021-11-24T21:49:20 KST" duration-ms="8" status="PASS">
+        </test-method> <!-- TC_0361_Chips_라디오_지원채널_SBS러브FM_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:04:07 KST" name="AfterMethod" finished-at="2021-11-25T00:04:09 KST" duration-ms="1581" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_1243_스타벅스_미지원_확인 status=SUCCESS method=CarLife_01_스타벅스.TC_1243_스타벅스_미지원_확인(java.lang.reflect.Method)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0361_Chips_라디오_지원채널_SBS러브FM_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0361_Chips_라디오_지원채널_SBS러브FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_008_CarLife.CarLife_01_스타벅스@1224144a]" started-at="2021-11-24T21:49:20 KST" name="tearDownClass" finished-at="2021-11-24T21:49:25 KST" duration-ms="4185" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:04:09 KST" name="BeforeMethod" finished-at="2021-11-25T00:04:09 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0362_Chips_라디오_지원채널_SBS파워FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0362_Chips_라디오_지원채널_SBS파워FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:04:09 KST" name="TC_0362_Chips_라디오_지원채널_SBS파워FM_확인" description="칩스 리그레이션 TC : 실행_0362" finished-at="2021-11-25T00:04:51 KST" duration-ms="42646" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0362_Chips_라디오_지원채널_SBS파워FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at Chips_002_미디어.미디어_09_라디오_채널확인.TC_0362_Chips_라디오_지원채널_SBS파워FM_확인(미디어_09_라디오_채널확인.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0362_Chips_라디오_지원채널_SBS파워FM_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:04:52 KST" name="AfterMethod" finished-at="2021-11-25T00:04:54 KST" duration-ms="2122" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0362_Chips_라디오_지원채널_SBS파워FM_확인 status=FAILURE method=미디어_09_라디오_채널확인.TC_0362_Chips_라디오_지원채널_SBS파워FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:04:54 KST" name="BeforeMethod" finished-at="2021-11-25T00:04:54 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0363_Chips_라디오_지원채널_교통방송FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0363_Chips_라디오_지원채널_교통방송FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:04:54 KST" name="TC_0363_Chips_라디오_지원채널_교통방송FM_확인" description="칩스 리그레이션 TC : 실행_0363" finished-at="2021-11-25T00:05:37 KST" duration-ms="42946" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0363_Chips_라디오_지원채널_교통방송FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at Chips_002_미디어.미디어_09_라디오_채널확인.TC_0363_Chips_라디오_지원채널_교통방송FM_확인(미디어_09_라디오_채널확인.java:160)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0363_Chips_라디오_지원채널_교통방송FM_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:05:37 KST" name="AfterMethod" finished-at="2021-11-25T00:05:39 KST" duration-ms="1978" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0363_Chips_라디오_지원채널_교통방송FM_확인 status=FAILURE method=미디어_09_라디오_채널확인.TC_0363_Chips_라디오_지원채널_교통방송FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:05:39 KST" name="BeforeMethod" finished-at="2021-11-25T00:05:39 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0364_Chips_라디오_지원채널_TBSeFM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0364_Chips_라디오_지원채널_TBSeFM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:05:39 KST" name="TC_0364_Chips_라디오_지원채널_TBSeFM_확인" description="칩스 리그레이션 TC : 실행_0364" finished-at="2021-11-25T00:06:09 KST" duration-ms="30692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0364_Chips_라디오_지원채널_TBSeFM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0364_Chips_라디오_지원채널_TBSeFM_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:06:09 KST" name="AfterMethod" finished-at="2021-11-25T00:06:11 KST" duration-ms="1600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0364_Chips_라디오_지원채널_TBSeFM_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0364_Chips_라디오_지원채널_TBSeFM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:06:11 KST" name="BeforeMethod" finished-at="2021-11-25T00:06:11 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0366_Chips_라디오_지원채널_TBN강원교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0366_Chips_라디오_지원채널_TBN강원교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:06:11 KST" name="TC_0366_Chips_라디오_지원채널_TBN강원교통방송_확인" description="칩스 리그레이션 TC : 실행_0366" finished-at="2021-11-25T00:06:42 KST" duration-ms="30664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0366_Chips_라디오_지원채널_TBN강원교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0366_Chips_라디오_지원채널_TBN강원교통방송_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:06:42 KST" name="AfterMethod" finished-at="2021-11-25T00:06:43 KST" duration-ms="1540" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0366_Chips_라디오_지원채널_TBN강원교통방송_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0366_Chips_라디오_지원채널_TBN강원교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0367_Chips_라디오_지원채널_TBN경남교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:06:43 KST" name="TC_0367_Chips_라디오_지원채널_TBN경남교통방송_확인" description="칩스 리그레이션 TC : 실행_0367" finished-at="2021-11-25T00:07:14 KST" duration-ms="30607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0367_Chips_라디오_지원채널_TBN경남교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0367_Chips_라디오_지원채널_TBN경남교통방송_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:06:43 KST" name="BeforeMethod" finished-at="2021-11-25T00:06:43 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0367_Chips_라디오_지원채널_TBN경남교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:07:14 KST" name="AfterMethod" finished-at="2021-11-25T00:07:15 KST" duration-ms="1558" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0367_Chips_라디오_지원채널_TBN경남교통방송_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0367_Chips_라디오_지원채널_TBN경남교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:07:15 KST" name="BeforeMethod" finished-at="2021-11-25T00:07:15 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0368_Chips_라디오_지원채널_TBN경북교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0368_Chips_라디오_지원채널_TBN경북교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:07:15 KST" name="TC_0368_Chips_라디오_지원채널_TBN경북교통방송_확인" description="칩스 리그레이션 TC : 실행_0368" finished-at="2021-11-25T00:07:46 KST" duration-ms="30615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0368_Chips_라디오_지원채널_TBN경북교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0368_Chips_라디오_지원채널_TBN경북교통방송_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:07:46 KST" name="AfterMethod" finished-at="2021-11-25T00:07:47 KST" duration-ms="1561" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0368_Chips_라디오_지원채널_TBN경북교통방송_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0368_Chips_라디오_지원채널_TBN경북교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:07:47 KST" name="BeforeMethod" finished-at="2021-11-25T00:07:47 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0369_Chips_라디오_지원채널_TBN경인교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0369_Chips_라디오_지원채널_TBN경인교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:07:47 KST" name="TC_0369_Chips_라디오_지원채널_TBN경인교통방송_확인" description="칩스 리그레이션 TC : 실행_0369" finished-at="2021-11-25T00:08:18 KST" duration-ms="30712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0369_Chips_라디오_지원채널_TBN경인교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0369_Chips_라디오_지원채널_TBN경인교통방송_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:08:18 KST" name="AfterMethod" finished-at="2021-11-25T00:08:20 KST" duration-ms="1563" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0369_Chips_라디오_지원채널_TBN경인교통방송_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0369_Chips_라디오_지원채널_TBN경인교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0370_Chips_라디오_지원채널_TBN광주교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:08:20 KST" name="TC_0370_Chips_라디오_지원채널_TBN광주교통방송_확인" description="칩스 리그레이션 TC : 실행_0370" finished-at="2021-11-25T00:08:50 KST" duration-ms="30613" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0370_Chips_라디오_지원채널_TBN광주교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0370_Chips_라디오_지원채널_TBN광주교통방송_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:08:20 KST" name="BeforeMethod" finished-at="2021-11-25T00:08:20 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0370_Chips_라디오_지원채널_TBN광주교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:08:50 KST" name="AfterMethod" finished-at="2021-11-25T00:08:52 KST" duration-ms="1485" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0370_Chips_라디오_지원채널_TBN광주교통방송_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0370_Chips_라디오_지원채널_TBN광주교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:08:52 KST" name="BeforeMethod" finished-at="2021-11-25T00:08:52 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0371_Chips_라디오_지원채널_TBN대구교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0371_Chips_라디오_지원채널_TBN대구교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:08:52 KST" name="TC_0371_Chips_라디오_지원채널_TBN대구교통방송_확인" description="칩스 리그레이션 TC : 실행_0371" finished-at="2021-11-25T00:09:22 KST" duration-ms="30524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0371_Chips_라디오_지원채널_TBN대구교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0371_Chips_라디오_지원채널_TBN대구교통방송_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:09:22 KST" name="AfterMethod" finished-at="2021-11-25T00:09:24 KST" duration-ms="1575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0371_Chips_라디오_지원채널_TBN대구교통방송_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0371_Chips_라디오_지원채널_TBN대구교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:09:24 KST" name="BeforeMethod" finished-at="2021-11-25T00:09:24 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0372_Chips_라디오_지원채널_TBN대전교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0372_Chips_라디오_지원채널_TBN대전교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:09:24 KST" name="TC_0372_Chips_라디오_지원채널_TBN대전교통방송_확인" description="칩스 리그레이션 TC : 실행_0372" finished-at="2021-11-25T00:09:55 KST" duration-ms="30640" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0372_Chips_라디오_지원채널_TBN대전교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0372_Chips_라디오_지원채널_TBN대전교통방송_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:09:55 KST" name="AfterMethod" finished-at="2021-11-25T00:09:56 KST" duration-ms="1545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0372_Chips_라디오_지원채널_TBN대전교통방송_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0372_Chips_라디오_지원채널_TBN대전교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:09:56 KST" name="BeforeMethod" finished-at="2021-11-25T00:09:56 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0373_Chips_라디오_지원채널_TBN부산교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0373_Chips_라디오_지원채널_TBN부산교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:09:56 KST" name="TC_0373_Chips_라디오_지원채널_TBN부산교통방송_확인" description="칩스 리그레이션 TC : 실행_0373" finished-at="2021-11-25T00:10:27 KST" duration-ms="30646" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0373_Chips_라디오_지원채널_TBN부산교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0373_Chips_라디오_지원채널_TBN부산교통방송_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:10:27 KST" name="AfterMethod" finished-at="2021-11-25T00:10:28 KST" duration-ms="1582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0373_Chips_라디오_지원채널_TBN부산교통방송_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0373_Chips_라디오_지원채널_TBN부산교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:10:28 KST" name="BeforeMethod" finished-at="2021-11-25T00:10:28 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0374_Chips_라디오_지원채널_TBN울산교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0374_Chips_라디오_지원채널_TBN울산교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:10:28 KST" name="TC_0374_Chips_라디오_지원채널_TBN울산교통방송_확인" description="칩스 리그레이션 TC : 실행_0374" finished-at="2021-11-25T00:10:59 KST" duration-ms="30536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0374_Chips_라디오_지원채널_TBN울산교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0374_Chips_라디오_지원채널_TBN울산교통방송_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:10:59 KST" name="AfterMethod" finished-at="2021-11-25T00:11:00 KST" duration-ms="1536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0374_Chips_라디오_지원채널_TBN울산교통방송_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0374_Chips_라디오_지원채널_TBN울산교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:11:00 KST" name="BeforeMethod" finished-at="2021-11-25T00:11:00 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0375_Chips_라디오_지원채널_TBN전북교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0375_Chips_라디오_지원채널_TBN전북교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:11:00 KST" name="TC_0375_Chips_라디오_지원채널_TBN전북교통방송_확인" description="칩스 리그레이션 TC : 실행_0375" finished-at="2021-11-25T00:11:31 KST" duration-ms="30732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0375_Chips_라디오_지원채널_TBN전북교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0375_Chips_라디오_지원채널_TBN전북교통방송_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:11:31 KST" name="AfterMethod" finished-at="2021-11-25T00:11:33 KST" duration-ms="1494" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0375_Chips_라디오_지원채널_TBN전북교통방송_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0375_Chips_라디오_지원채널_TBN전북교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:11:33 KST" name="BeforeMethod" finished-at="2021-11-25T00:11:33 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0376_Chips_라디오_지원채널_TBN제주교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0376_Chips_라디오_지원채널_TBN제주교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:11:33 KST" name="TC_0376_Chips_라디오_지원채널_TBN제주교통방송_확인" description="칩스 리그레이션 TC : 실행_0376" finished-at="2021-11-25T00:12:03 KST" duration-ms="30616" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0376_Chips_라디오_지원채널_TBN제주교통방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0376_Chips_라디오_지원채널_TBN제주교통방송_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:12:03 KST" name="AfterMethod" finished-at="2021-11-25T00:12:05 KST" duration-ms="1613" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0376_Chips_라디오_지원채널_TBN제주교통방송_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0376_Chips_라디오_지원채널_TBN제주교통방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:12:05 KST" name="BeforeMethod" finished-at="2021-11-25T00:12:05 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0378_Chips_라디오_지원채널_아리랑FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0378_Chips_라디오_지원채널_아리랑FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:12:05 KST" name="TC_0378_Chips_라디오_지원채널_아리랑FM_확인" description="칩스 리그레이션 TC : 실행_0378" finished-at="2021-11-25T00:13:05 KST" duration-ms="60015" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0378_Chips_라디오_지원채널_아리랑FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at Chips_002_미디어.미디어_09_라디오_채널확인.TC_0378_Chips_라디오_지원채널_아리랑FM_확인(미디어_09_라디오_채널확인.java:420)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0378_Chips_라디오_지원채널_아리랑FM_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:13:05 KST" name="AfterMethod" finished-at="2021-11-25T00:13:07 KST" duration-ms="2000" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0378_Chips_라디오_지원채널_아리랑FM_확인 status=FAILURE method=미디어_09_라디오_채널확인.TC_0378_Chips_라디오_지원채널_아리랑FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0379_Chips_라디오_지원채널_극동방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:13:07 KST" name="TC_0379_Chips_라디오_지원채널_극동방송_확인" description="칩스 리그레이션 TC : 실행_0379" finished-at="2021-11-25T00:13:50 KST" duration-ms="42858" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0379_Chips_라디오_지원채널_극동방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at Chips_002_미디어.미디어_09_라디오_채널확인.TC_0379_Chips_라디오_지원채널_극동방송_확인(미디어_09_라디오_채널확인.java:440)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0379_Chips_라디오_지원채널_극동방송_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:13:07 KST" name="BeforeMethod" finished-at="2021-11-25T00:13:07 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0379_Chips_라디오_지원채널_극동방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:13:50 KST" name="AfterMethod" finished-at="2021-11-25T00:13:52 KST" duration-ms="2034" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0379_Chips_라디오_지원채널_극동방송_확인 status=FAILURE method=미디어_09_라디오_채널확인.TC_0379_Chips_라디오_지원채널_극동방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:13:52 KST" name="BeforeMethod" finished-at="2021-11-25T00:13:52 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0380_Chips_라디오_지원채널_불교방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0380_Chips_라디오_지원채널_불교방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:13:52 KST" name="TC_0380_Chips_라디오_지원채널_불교방송_확인" description="칩스 리그레이션 TC : 실행_0380" finished-at="2021-11-25T00:14:22 KST" duration-ms="30686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0380_Chips_라디오_지원채널_불교방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0380_Chips_라디오_지원채널_불교방송_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:14:22 KST" name="AfterMethod" finished-at="2021-11-25T00:14:24 KST" duration-ms="1652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0380_Chips_라디오_지원채널_불교방송_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0380_Chips_라디오_지원채널_불교방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0381_Chips_라디오_지원채널_BBSFM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:14:24 KST" name="TC_0381_Chips_라디오_지원채널_BBSFM_확인" description="칩스 리그레이션 TC : 실행_0381" finished-at="2021-11-25T00:14:55 KST" duration-ms="30691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0381_Chips_라디오_지원채널_BBSFM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0381_Chips_라디오_지원채널_BBSFM_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:14:24 KST" name="BeforeMethod" finished-at="2021-11-25T00:14:24 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0381_Chips_라디오_지원채널_BBSFM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:14:55 KST" name="AfterMethod" finished-at="2021-11-25T00:14:56 KST" duration-ms="1549" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0381_Chips_라디오_지원채널_BBSFM_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0381_Chips_라디오_지원채널_BBSFM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0382_Chips_라디오_지원채널_CBS음악FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:14:56 KST" name="TC_0382_Chips_라디오_지원채널_CBS음악FM_확인" description="칩스 리그레이션 TC : 실행_0382" finished-at="2021-11-25T00:15:27 KST" duration-ms="30554" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0382_Chips_라디오_지원채널_CBS음악FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0382_Chips_라디오_지원채널_CBS음악FM_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:14:56 KST" name="BeforeMethod" finished-at="2021-11-25T00:14:56 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0382_Chips_라디오_지원채널_CBS음악FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:15:27 KST" name="AfterMethod" finished-at="2021-11-25T00:15:28 KST" duration-ms="1510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0382_Chips_라디오_지원채널_CBS음악FM_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0382_Chips_라디오_지원채널_CBS음악FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0383_Chips_라디오_지원채널_CBS표준FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:15:28 KST" name="TC_0383_Chips_라디오_지원채널_CBS표준FM_확인" description="칩스 리그레이션 TC : 실행_0383" finished-at="2021-11-25T00:16:11 KST" duration-ms="42784" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0383_Chips_라디오_지원채널_CBS표준FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at Chips_002_미디어.미디어_09_라디오_채널확인.TC_0383_Chips_라디오_지원채널_CBS표준FM_확인(미디어_09_라디오_채널확인.java:520)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0383_Chips_라디오_지원채널_CBS표준FM_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:15:28 KST" name="BeforeMethod" finished-at="2021-11-25T00:15:28 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0383_Chips_라디오_지원채널_CBS표준FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:16:11 KST" name="AfterMethod" finished-at="2021-11-25T00:16:13 KST" duration-ms="2015" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0383_Chips_라디오_지원채널_CBS표준FM_확인 status=FAILURE method=미디어_09_라디오_채널확인.TC_0383_Chips_라디오_지원채널_CBS표준FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:16:13 KST" name="BeforeMethod" finished-at="2021-11-25T00:16:13 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0384_Chips_라디오_지원채널_CBS표준FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0384_Chips_라디오_지원채널_CBS표준FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:16:13 KST" name="TC_0384_Chips_라디오_지원채널_CBS표준FM_확인" description="칩스 리그레이션 TC : 실행_0384" finished-at="2021-11-25T00:16:56 KST" duration-ms="42773" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0384_Chips_라디오_지원채널_CBS표준FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at Chips_002_미디어.미디어_09_라디오_채널확인.TC_0384_Chips_라디오_지원채널_CBS표준FM_확인(미디어_09_라디오_채널확인.java:540)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0384_Chips_라디오_지원채널_CBS표준FM_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:16:56 KST" name="AfterMethod" finished-at="2021-11-25T00:16:58 KST" duration-ms="2024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0384_Chips_라디오_지원채널_CBS표준FM_확인 status=FAILURE method=미디어_09_라디오_채널확인.TC_0384_Chips_라디오_지원채널_CBS표준FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0386_Chips_라디오_지원채널_KBS1라디오_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:16:58 KST" name="TC_0386_Chips_라디오_지원채널_KBS1라디오_확인" description="칩스 리그레이션 TC : 실행_0386" finished-at="2021-11-25T00:17:29 KST" duration-ms="30617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0386_Chips_라디오_지원채널_KBS1라디오_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0386_Chips_라디오_지원채널_KBS1라디오_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:16:58 KST" name="BeforeMethod" finished-at="2021-11-25T00:16:58 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0386_Chips_라디오_지원채널_KBS1라디오_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:17:29 KST" name="AfterMethod" finished-at="2021-11-25T00:17:30 KST" duration-ms="1515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0386_Chips_라디오_지원채널_KBS1라디오_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0386_Chips_라디오_지원채널_KBS1라디오_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0387_Chips_라디오_지원채널_KBS2라디오_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:17:30 KST" name="TC_0387_Chips_라디오_지원채널_KBS2라디오_확인" description="칩스 리그레이션 TC : 실행_0387" finished-at="2021-11-25T00:18:01 KST" duration-ms="30640" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0387_Chips_라디오_지원채널_KBS2라디오_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0387_Chips_라디오_지원채널_KBS2라디오_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:17:30 KST" name="BeforeMethod" finished-at="2021-11-25T00:17:30 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0387_Chips_라디오_지원채널_KBS2라디오_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:18:01 KST" name="AfterMethod" finished-at="2021-11-25T00:18:02 KST" duration-ms="1563" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0387_Chips_라디오_지원채널_KBS2라디오_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0387_Chips_라디오_지원채널_KBS2라디오_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:18:02 KST" name="BeforeMethod" finished-at="2021-11-25T00:18:02 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0388_Chips_라디오_지원채널_KBS3라디오_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0388_Chips_라디오_지원채널_KBS3라디오_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:18:02 KST" name="TC_0388_Chips_라디오_지원채널_KBS3라디오_확인" description="칩스 리그레이션 TC : 실행_0388" finished-at="2021-11-25T00:18:33 KST" duration-ms="30637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0388_Chips_라디오_지원채널_KBS3라디오_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0388_Chips_라디오_지원채널_KBS3라디오_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:18:33 KST" name="AfterMethod" finished-at="2021-11-25T00:18:34 KST" duration-ms="1485" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0388_Chips_라디오_지원채널_KBS3라디오_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0388_Chips_라디오_지원채널_KBS3라디오_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0389_Chips_라디오_지원채널_KBS클래식FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:18:34 KST" name="TC_0389_Chips_라디오_지원채널_KBS클래식FM_확인" description="칩스 리그레이션 TC : 실행_0389" finished-at="2021-11-25T00:19:05 KST" duration-ms="30596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0389_Chips_라디오_지원채널_KBS클래식FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0389_Chips_라디오_지원채널_KBS클래식FM_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:18:34 KST" name="BeforeMethod" finished-at="2021-11-25T00:18:34 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0389_Chips_라디오_지원채널_KBS클래식FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:19:05 KST" name="AfterMethod" finished-at="2021-11-25T00:19:07 KST" duration-ms="1572" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0389_Chips_라디오_지원채널_KBS클래식FM_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0389_Chips_라디오_지원채널_KBS클래식FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:19:07 KST" name="BeforeMethod" finished-at="2021-11-25T00:19:07 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0390_Chips_라디오_지원채널_KBScoolFM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0390_Chips_라디오_지원채널_KBScoolFM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:19:07 KST" name="TC_0390_Chips_라디오_지원채널_KBScoolFM_확인" description="칩스 리그레이션 TC : 실행_0390" finished-at="2021-11-25T00:19:37 KST" duration-ms="30612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0390_Chips_라디오_지원채널_KBScoolFM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0390_Chips_라디오_지원채널_KBScoolFM_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:19:37 KST" name="AfterMethod" finished-at="2021-11-25T00:19:39 KST" duration-ms="1553" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0390_Chips_라디오_지원채널_KBScoolFM_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0390_Chips_라디오_지원채널_KBScoolFM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:19:39 KST" name="BeforeMethod" finished-at="2021-11-25T00:19:39 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0391_Chips_라디오_지원채널_KBSHappyFM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0391_Chips_라디오_지원채널_KBSHappyFM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:19:39 KST" name="TC_0391_Chips_라디오_지원채널_KBSHappyFM_확인" description="칩스 리그레이션 TC : 실행_0391" finished-at="2021-11-25T00:20:09 KST" duration-ms="30589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0391_Chips_라디오_지원채널_KBSHappyFM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0391_Chips_라디오_지원채널_KBSHappyFM_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:20:09 KST" name="AfterMethod" finished-at="2021-11-25T00:20:11 KST" duration-ms="1581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0391_Chips_라디오_지원채널_KBSHappyFM_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0391_Chips_라디오_지원채널_KBSHappyFM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:20:11 KST" name="BeforeMethod" finished-at="2021-11-25T00:20:11 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0392_Chips_라디오_지원채널_KBSworld_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0392_Chips_라디오_지원채널_KBSworld_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:20:11 KST" name="TC_0392_Chips_라디오_지원채널_KBSworld_확인" description="칩스 리그레이션 TC : 실행_0392" finished-at="2021-11-25T00:20:42 KST" duration-ms="30771" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0392_Chips_라디오_지원채널_KBSworld_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0392_Chips_라디오_지원채널_KBSworld_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:20:42 KST" name="AfterMethod" finished-at="2021-11-25T00:20:43 KST" duration-ms="1537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0392_Chips_라디오_지원채널_KBSworld_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0392_Chips_라디오_지원채널_KBSworld_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:20:43 KST" name="BeforeMethod" finished-at="2021-11-25T00:20:43 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0393_Chips_라디오_지원채널_KBS한민족방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0393_Chips_라디오_지원채널_KBS한민족방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:20:43 KST" name="TC_0393_Chips_라디오_지원채널_KBS한민족방송_확인" description="칩스 리그레이션 TC : 실행_0393" finished-at="2021-11-25T00:21:26 KST" duration-ms="42767" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0393_Chips_라디오_지원채널_KBS한민족방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at Chips_002_미디어.미디어_09_라디오_채널확인.TC_0393_Chips_라디오_지원채널_KBS한민족방송_확인(미디어_09_라디오_채널확인.java:701)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0393_Chips_라디오_지원채널_KBS한민족방송_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:21:26 KST" name="AfterMethod" finished-at="2021-11-25T00:21:28 KST" duration-ms="2016" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0393_Chips_라디오_지원채널_KBS한민족방송_확인 status=FAILURE method=미디어_09_라디오_채널확인.TC_0393_Chips_라디오_지원채널_KBS한민족방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:21:28 KST" name="BeforeMethod" finished-at="2021-11-25T00:21:28 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0396_Chips_라디오_미지원채널_동양방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0396_Chips_라디오_미지원채널_동양방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:21:28 KST" name="TC_0396_Chips_라디오_미지원채널_동양방송_확인" description="칩스 리그레이션 TC : 실행_0396" finished-at="2021-11-25T00:21:42 KST" duration-ms="14117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0396_Chips_라디오_미지원채널_동양방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0396_Chips_라디오_미지원채널_동양방송_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:21:42 KST" name="AfterMethod" finished-at="2021-11-25T00:21:42 KST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0396_Chips_라디오_미지원채널_동양방송_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0396_Chips_라디오_미지원채널_동양방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:21:42 KST" name="BeforeMethod" finished-at="2021-11-25T00:21:42 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0398_Chips_라디오_미지원채널_가톨릭평화방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0398_Chips_라디오_미지원채널_가톨릭평화방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:21:42 KST" name="TC_0398_Chips_라디오_미지원채널_가톨릭평화방송_확인" description="칩스 리그레이션 TC : 실행_0398" finished-at="2021-11-25T00:21:56 KST" duration-ms="14129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0398_Chips_라디오_미지원채널_가톨릭평화방송_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0398_Chips_라디오_미지원채널_가톨릭평화방송_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:21:56 KST" name="AfterMethod" finished-at="2021-11-25T00:21:56 KST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0398_Chips_라디오_미지원채널_가톨릭평화방송_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0398_Chips_라디오_미지원채널_가톨릭평화방송_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:21:56 KST" name="BeforeMethod" finished-at="2021-11-25T00:21:56 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0399_Chips_라디오_미지원채널_YTN뉴스FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0399_Chips_라디오_미지원채널_YTN뉴스FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:21:56 KST" name="TC_0399_Chips_라디오_미지원채널_YTN뉴스FM_확인" description="칩스 리그레이션 TC : 실행_0399" finished-at="2021-11-25T00:22:10 KST" duration-ms="14130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_002_미디어.미디어_09_라디오_채널확인.TC_0399_Chips_라디오_미지원채널_YTN뉴스FM_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0399_Chips_라디오_미지원채널_YTN뉴스FM_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:22:10 KST" name="AfterMethod" finished-at="2021-11-25T00:22:10 KST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0399_Chips_라디오_미지원채널_YTN뉴스FM_확인 status=SUCCESS method=미디어_09_라디오_채널확인.TC_0399_Chips_라디오_미지원채널_YTN뉴스FM_확인(java.lang.reflect.Method)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_002_미디어.미디어_09_라디오_채널확인@24959ca4]" started-at="2021-11-25T00:22:10 KST" name="tearDownClass" finished-at="2021-11-25T00:22:15 KST" duration-ms="4388" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -220,7 +1507,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- Chips_008_CarLife.CarLife_01_스타벅스 -->
+      </class> <!-- Chips_002_미디어.미디어_09_라디오_채널확인 -->
     </test> <!-- Test_Project -->
   </suite> <!-- ExtentReport -->
 </testng-results>
