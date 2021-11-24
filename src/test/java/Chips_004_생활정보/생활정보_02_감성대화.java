@@ -105,6 +105,7 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0710")
 	public void TC_0710_Chips_감성대화_안부인사_확인(Method method) throws Exception {
 		 
+		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 안녕 - 발화");
 		util.SWFsendPost("안녕", ServerName, AccessToken);
 		
