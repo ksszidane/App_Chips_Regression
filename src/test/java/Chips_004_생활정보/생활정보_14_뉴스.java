@@ -263,7 +263,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		Assert.assertFalse(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -296,7 +296,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
+		Assert.assertFalse(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -501,7 +501,6 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, SK텔레콤 뉴스 들려줘 - 발화");
 		util.SWFsendPost("SK텔레콤 뉴스 들려줘", ServerName, AccessToken);
-		util.SWFsendPost("SK텔레콤 뉴스 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SK텔레콤 관련, 최근 뉴스를 들려드릴게요."));
@@ -534,9 +533,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0822")
 	public void TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 세종병원 화재 뉴스 브리핑 해줘 - 발화");
-		util.SWFsendPost("세종병원 화재 뉴스 브리핑 해줘", ServerName, AccessToken);
 		util.SWFsendPost("세종병원 화재 뉴스 브리핑 해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "세종병원 화재 재생 TTS 확인");
@@ -606,7 +603,6 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0824")
 	public void TC_0824_Chips_뉴스_NUGU토픽_확인(Method method) throws Exception {
 
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 누구토픽 들려줘 - 발화");
 		util.SWFsendPost("NUGU 토픽 들려줘", ServerName, AccessToken);
 		
@@ -824,11 +820,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0831")
 	public void TC_0831_Chips_뉴스_지난달연예뉴스_확인(Method method) throws Exception {
 		
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
-		
 		test.log(Status.INFO, "W, 지난달 연예 뉴스 틀어줘 - 발화");
-		util.SWFsendPost("지난달 연예 뉴스 틀어줘", ServerName, AccessToken);
 		util.SWFsendPost("지난달 연예 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "연예 뉴스 재생 TTS 확인");
@@ -862,11 +854,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0831")
 	public void TC_0831_Chips_뉴스_지난달스포츠뉴스_확인(Method method) throws Exception {
 		
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
-		
 		test.log(Status.INFO, "W, 지난달 스포츠 뉴스 틀어줘 - 발화");
-		util.SWFsendPost("지난달 스포츠 뉴스 틀어줘", ServerName, AccessToken);
 		util.SWFsendPost("지난달 스포츠 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
@@ -900,11 +888,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0832")
 	public void TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인(Method method) throws Exception {
 		
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
-		
 		test.log(Status.INFO, "W, 지난달 SK텔레콤 뉴스 틀어줘 - 발화");
-		util.SWFsendPost("지난달 SK텔레콤 뉴스 틀어줘", ServerName, AccessToken);
 		util.SWFsendPost("지난달 SK텔레콤 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "SK텔레콤뉴스 재생 TTS 확인");
