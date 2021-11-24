@@ -118,8 +118,7 @@ public class 생활정보_11_날씨_일몰시간 extends Chips_TestCase {
 		util.SWFsendPost("일몰 시간", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "일몰시간 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("오늘 " + 현재위치 + "일몰시각은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 " + 현재위치 + "일몰시각은"));
 	
 	}
 	
@@ -130,8 +129,7 @@ public class 생활정보_11_날씨_일몰시간 extends Chips_TestCase {
 		util.SWFsendPost("부산 해 지는 시간 알려줘", ServerName, AccessToken);
 
 		test.log(Status.INFO, "일몰시간 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("오늘 부산일몰시각은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 부산일몰시각은"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0783")
@@ -139,11 +137,9 @@ public class 생활정보_11_날씨_일몰시간 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 오늘 일몰 시간 - 발화");
 		util.SWFsendPost("오늘 일몰 시간", ServerName, AccessToken);
-		
 	
 		test.log(Status.INFO, "오늘 일몰시간 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("오늘 " + 현재위치 + "일몰시각은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 " + 현재위치 + "일몰시각은"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0784")
@@ -153,8 +149,7 @@ public class 생활정보_11_날씨_일몰시간 extends Chips_TestCase {
 		util.SWFsendPost("오늘 부산 해 지는 시간 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "오늘 일몰시간 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("오늘 부산일몰시각은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 부산일몰시각은"));
 		
 	}
 	
@@ -165,8 +160,7 @@ public class 생활정보_11_날씨_일몰시간 extends Chips_TestCase {
 		util.SWFsendPost("내일 일몰 시간", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "내일 일몰시간 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("내일 " + 현재위치 + "일몰시각은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "내일 " + 현재위치 + "일몰시각은"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0786")
@@ -176,8 +170,7 @@ public class 생활정보_11_날씨_일몰시간 extends Chips_TestCase {
 		util.SWFsendPost("내일 부산 해 지는 시간 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "내일 일몰시간 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("내일 부산일몰시각은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "내일 부산일몰시각은"));
 		
 	}
 

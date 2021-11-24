@@ -109,16 +109,13 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 		util.SWFsendPost("시간", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "시간 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.시간_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.시간_set));
 		
 		test.log(Status.INFO, "schedule Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(Domain, "schedule");
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "schedule"));
 		
 		test.log(Status.INFO, "ask.clock intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(intent, "ask.clock");
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "ask.clock"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0586")
@@ -128,16 +125,13 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 		util.SWFsendPost("며칠", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날짜 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.날짜_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.날짜_set));
 		
 		test.log(Status.INFO, "play_nugu_calendar Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(Domain, "play_nugu_calendar");
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "play_nugu_calendar"));
 		
 		test.log(Status.INFO, "ask.date intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(intent, "ask.date");
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "ask.date"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0587")
@@ -147,18 +141,15 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 		util.SWFsendPost("추석이 무슨 요일이야", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날짜 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.날짜_set));
-		Assert.assertTrue(tts.contains("추석은"));
-		Assert.assertTrue(tts.contains("요일"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.날짜_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "추석은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "요일"));
 		
-		test.log(Status.INFO, "play_nugu_calendar Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(Domain, "play_nugu_calendar");
+		test.log(Status.INFO, "play_nugu_calendar Domain 확인");;
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "play_nugu_calendar"));
 		
 		test.log(Status.INFO, "ask.date.weekday intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(intent, "ask.date.weekday");
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "ask.date.weekday"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0588")
@@ -168,17 +159,14 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 		util.SWFsendPost("이번 주 일요일 며칠이야", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날짜 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("이번 주 일요일은"));
-		Assert.assertTrue(tts.contains("일"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이번 주 일요일은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "일"));
 		
 		test.log(Status.INFO, "play_nugu_calendar Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(Domain, "play_nugu_calendar");
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "play_nugu_calendar"));
 		
 		test.log(Status.INFO, "ask.date intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(intent, "ask.date");
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "ask.date"));
 	}
 
 }

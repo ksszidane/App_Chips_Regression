@@ -122,13 +122,12 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 		
 		if (자외선시간대.equals("A구간")) {
 			test.log(Status.INFO, "[00:00~18:00] 시간대 자외선지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("오늘 " + 현재위치 + " 자외선 지수는"));
+			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 " + 현재위치 + " 자외선 지수는"));
 		
 		} else if (자외선시간대.equals("B구간")) {
 			test.log(Status.INFO, "[18:00~24:00] 시간대 자외선지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("이제 저녁시간이라 내일 자외선 지수를 알려드릴게요. 내일 " + 현재위치 + " 자외선 지수는"));
+			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이제 저녁시간이라 내일 자외선 지수를 알려드릴게요. 내일 " + 현재위치 + " 자외선 지수는"));
+			
 		}
 	}
 	
@@ -143,13 +142,11 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 		
 		if (자외선시간대.equals("A구간")) {
 			test.log(Status.INFO, "[00:00~18:00] 시간대 자외선지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("오늘 부산 자외선 지수는"));
+			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 부산 자외선 지수는"));
 			
 		} else if (자외선시간대.equals("B구간")) {
 			test.log(Status.INFO, "[18:00~24:00] 시간대 자외선지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("이제 저녁시간이라 내일 자외선 지수를 알려드릴게요. 내일 부산 자외선 지수는"));
+			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이제 저녁시간이라 내일 자외선 지수를 알려드릴게요. 내일 부산 자외선 지수는"));
 		}
 	}
 	
@@ -168,8 +165,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 		util.SWFsendPost("내일 자외선 어때?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "[00:00~18:00] 시간대 자외선지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("내일 " + 현재위치 + " 자외선 지수는"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "내일 " + 현재위치 + " 자외선 지수는"));
 			
 	}
 	
@@ -179,9 +175,8 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 내일 부산 자외선 상태 - 발화");
 		util.SWFsendPost("내일 부산 자외선 상태", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "[00:00~18:00] 시간대 자외선지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("내일 부산 자외선 지수는"));
+		test.log(Status.INFO, "내일 부산 자외선지수 TTS 확인");
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "내일 부산 자외선 지수는"));
 			
 	}
 	
@@ -198,13 +193,11 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 		
 		if (자외선시간대.equals("A구간")) {
 			test.log(Status.INFO, "[00:00~06:00] 시간대 자외선지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("내일 모레의 자외선 지수는 오전 6시 이후에 알려드릴 수 있어요."));
+			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "내일 모레의 자외선 지수는 오전 6시 이후에 알려드릴 수 있어요."));
 			
 		} else if (자외선시간대.equals("B구간")) {
 			test.log(Status.INFO, "[06:00~24:00] 시간대 자외선지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains(모레날짜 + " " + 모레요일 + "요일 " + 현재위치 + " 자외선 지수는"));
+			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, 모레날짜 + " " + 모레요일 + "요일 " + 현재위치 + " 자외선 지수는"));
 		}
 	}
 	
@@ -221,13 +214,11 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 		
 		if (자외선시간대.equals("A구간")) {
 			test.log(Status.INFO, "[00:00~06:00] 시간대 자외선지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("내일 모레의 자외선 지수는 오전 6시 이후에 알려드릴 수 있어요."));
+			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "내일 모레의 자외선 지수는 오전 6시 이후에 알려드릴 수 있어요."));
 			
 		} else if (자외선시간대.equals("B구간")) {
 			test.log(Status.INFO, "[06:00~24:00] 시간대 자외선지수 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains(모레날짜 + " " + 모레요일 + "요일 부산 자외선 지수는"));
+			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, 모레날짜 + " " + 모레요일 + "요일 부산 자외선 지수는"));
 		}
 	}
 	
@@ -238,8 +229,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 		util.SWFsendPost("어제 자외선 지수 알려줘", ServerName, AccessToken);
 
 		test.log(Status.INFO, "어제 자외선지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("저는 오늘부터 모레까지의 자외선 지수 정보만 가지고 있어요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘부터 모레까지의 자외선 지수 정보만 가지고 있어요."));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0754")
@@ -252,8 +242,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 		util.SWFsendPost(그제날짜 + " 자외선 지수 알려줘", ServerName, AccessToken);
 
 		test.log(Status.INFO, 그제날짜 + " 자외선지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("저는 오늘부터 모레까지의 자외선 지수 정보만 가지고 있어요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘부터 모레까지의 자외선 지수 정보만 가지고 있어요."));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0755")
@@ -263,8 +252,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 		util.SWFsendPost("로스앤젤레스 자외선 지수 알려줘", ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역외 자외선지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("말씀하신 지역의 자외선 지수 정보는 가지고 있지 않습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "말씀하신 지역의 자외선 지수 정보는 가지고 있지 않습니다."));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0756")
@@ -274,8 +262,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 		util.SWFsendPost("하이마트 자외선 지수 알려줘", ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역아닌곳 자외선지수 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("말씀하신 지역의 자외선 지수 정보는 가지고 있지 않습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "말씀하신 지역의 자외선 지수 정보는 가지고 있지 않습니다."));
 	}
 
 }

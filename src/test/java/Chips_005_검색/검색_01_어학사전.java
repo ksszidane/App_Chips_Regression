@@ -109,16 +109,13 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		util.SWFsendPost("한영사전", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "한영사전 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("궁금한 단어를 찾아보시려면 \"영어로 사과가 뭐야\" 라고 말씀해 주세요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "궁금한 단어를 찾아보시려면 \"영어로 사과가 뭐야\" 라고 말씀해 주세요."));
 		
 		test.log(Status.INFO, "한영사전 도메인확인 확인");
-		String Domian = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(Domian.contains("general"));
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "general"));
 		
 		test.log(Status.INFO, "한영사전 인텐트 확인 확인");
-		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(intent.contains("ask.help"));
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "ask.help"));
 		
 	}
 	
@@ -129,16 +126,13 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		util.SWFsendPost("어학사전", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "어학사전 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("궁금한 단어를 찾아보시려면 \"영어로 사과가 뭐야\" 라고 말씀해 주세요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "궁금한 단어를 찾아보시려면 \"영어로 사과가 뭐야\" 라고 말씀해 주세요."));
 		
 		test.log(Status.INFO, "어학사전 도메인확인 확인");
-		String Domian = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(Domian.contains("general"));
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "general"));
 		
 		test.log(Status.INFO, "어학사전 인텐트 확인 확인");
-		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(intent.contains("ask.help"));
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "ask.help"));
 		
 	}
 	
@@ -155,16 +149,13 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String 한글소스 = util.getText(By.xpath(xPath.한글소스_web));
-		Assert.assertTrue(한글소스.contains("경찰"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.한글소스_web), "경찰"));
 		
 		test.log(Status.INFO, "어학사전 카드 원문 노출 확인");
-		String 영문 = util.getText(By.xpath(xPath.영문번역_web));
-		Assert.assertTrue(영문.contains("police"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.영문번역_web), "police"));
 		
 		test.log(Status.INFO, "영어로 경찰이 뭐야? TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("경찰은 영어로"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "경찰은 영어로"));
 		
 	}
 	
@@ -179,17 +170,13 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String 한글소스 = util.getText(By.xpath(xPath.한글소스_web));
-		Assert.assertTrue(한글소스.contains("너는 천재야"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.한글소스_web), "너는 천재야"));
 		
 		test.log(Status.INFO, "어학사전 카드 원문 노출 확인");
-		String 영문 = util.getText(By.xpath(xPath.영문번역_web));
-		System.out.println(영문);
-		Assert.assertTrue(영문.contains("you are a genius"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.영문번역_web), "you are a genius"));
 		
 		test.log(Status.INFO, "너는 천재야를 영어로 해줘 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("너는 천재야는 영어로"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "너는 천재야는 영어로"));
 		
 	}
 	
@@ -200,8 +187,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		util.SWFsendPost("불어로 사과가 뭐야", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "불어로 사과가 뭐야 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("지금은 영어 단어 검색과 번역만 해드릴 수 있어요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "지금은 영어 단어 검색과 번역만 해드릴 수 있어요."));
 		
 	}
 	
@@ -212,8 +198,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		util.SWFsendPost("불어로 사과가 뭐야", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "불어로 사과가 뭐야 해줘 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("지금은 영어 단어 검색과 번역만 해드릴 수 있어요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "지금은 영어 단어 검색과 번역만 해드릴 수 있어요."));
 		
 	}
 

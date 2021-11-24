@@ -109,38 +109,29 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("뉴스", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "CBS 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최신 CBS 주요 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "CBS 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "CBS 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("CBS"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "CBS"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -151,38 +142,29 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("데일리 브리핑", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "CBS 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최신 CBS 주요 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "CBS 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "CBS 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("CBS"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "CBS"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -193,38 +175,29 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("KBS 뉴스 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "KBS 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최신 KBS 주요 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최신 KBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "KBS 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "KBS 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("KBS"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "KBS"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -235,38 +208,29 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("CBS 뉴스 들려줘 ", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "CBS 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최신 CBS 주요 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "CBS 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "CBS 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("CBS"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "CBS"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -277,38 +241,29 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("SBS 뉴스 들려줘 ", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "SBS 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최신 SBS 주요 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최신 SBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "SBS 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "SBS 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("SBS"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "SBS"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -319,38 +274,29 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("MBC 뉴스 들려줘 ", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "MBC 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최신 MBC 주요 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최신 MBC 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "MBC 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "MBC 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("MBC"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "MBC"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertFalse(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -361,38 +307,29 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("TBS 뉴스 들려줘 ", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "TBS 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최신 TBS 주요 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최신 TBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "TBS 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "TBS 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("TBS"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "TBS"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -403,38 +340,29 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("연합뉴스 뉴스 들려줘 ", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "연합뉴스 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최신 연합뉴스 주요 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최신 연합뉴스 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "연합뉴스 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "연합뉴스 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("연합뉴스"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "연합뉴스"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -444,39 +372,30 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 오늘 뉴스 들려줘 - 발화");
 		util.SWFsendPost("오늘 뉴스 들려줘 ", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "연합뉴스 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최신 CBS 주요 뉴스를 들려드릴게요."));
+		test.log(Status.INFO, "CBS 뉴스 재생 TTS 확인");
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "CBS 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "CBS 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("CBS"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "CBS"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -488,38 +407,30 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("연예 뉴스 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "연예 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("연예 관련, 최근 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "연예 관련, 최근 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertTrue(FLOtxt.contains("연예 뉴스"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "연예 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String src = util.getAttribute(By.xpath(xPath.키워드뉴스이미지_web), "src");
-		Assert.assertTrue(src.contains("news_motion.gif"));
+		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.키워드뉴스타이틀_web));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -531,39 +442,30 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("스포츠 데일리 브리핑 해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("스포츠 관련, 최근 뉴스를 들려드릴게요."));
-		Thread.sleep(1000);
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "스포츠 관련, 최근 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertTrue(FLOtxt.contains("스포츠 뉴스"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "스포츠 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String src = util.getAttribute(By.xpath(xPath.키워드뉴스이미지_web), "src");
-		Assert.assertTrue(src.contains("news_motion.gif"));
+		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.키워드뉴스타이틀_web));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -574,8 +476,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("매경 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "매경 뉴스 미지원 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("아쉽게도, 아직 매경 뉴스는 제공하지 않아요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "아쉽게도, 아직 매경 뉴스는 제공하지 않아요."));
 		
 	}
 	
@@ -586,8 +487,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("조선일보 뉴스 재생", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "조선일보 뉴스 미지원 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("아쉽게도, 아직 매경 뉴스는 제공하지 않아요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "아쉽게도, 아직 조선일보 뉴스는 제공하지 않아요."));
 		
 	}
 	
@@ -603,38 +503,30 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("SK텔레콤 뉴스 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("SK텔레콤 관련, 최근 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SK텔레콤 관련, 최근 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertTrue(FLOtxt.contains("SK텔레콤"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "텔레콤"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String src = util.getAttribute(By.xpath(xPath.키워드뉴스이미지_web), "src");
-		Assert.assertTrue(src.contains("news_motion.gif"));
+		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.키워드뉴스타이틀_web));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -646,39 +538,31 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("세종병원 화재 뉴스 브리핑 해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "세종병원 화재 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("세종병원 화재 관련"));
-		Assert.assertTrue(tts.contains("뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "세종병원 화재 관련"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertTrue(FLOtxt.contains("세종병원 화재"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "세종병원 화재"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String src = util.getAttribute(By.xpath(xPath.키워드뉴스이미지_web), "src");
-		Assert.assertTrue(src.contains("news_motion.gif"));
+		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.키워드뉴스타이틀_web));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -690,38 +574,30 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("컴퓨터 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "컴퓨터 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("컴퓨터 관련, 최근 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "컴퓨터 관련, 최근 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertTrue(FLOtxt.contains("컴퓨터"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "컴퓨터"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String src = util.getAttribute(By.xpath(xPath.키워드뉴스이미지_web), "src");
-		Assert.assertTrue(src.contains("news_motion.gif"));
+		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.키워드뉴스타이틀_web));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -733,38 +609,30 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("NUGU 토픽 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "NUGU 토픽 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("NUGU 토픽 입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "NUGU 토픽 입니다."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "NUGU 토픽");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "NUGU 토픽"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String src = util.getAttribute(By.xpath(xPath.키워드뉴스이미지_web), "src");
-		Assert.assertTrue(src.contains("news_motion.gif"));
+		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.키워드뉴스타이틀_web));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -775,8 +643,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("주식회사 티벨 박이슬 박사 뉴스 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "키워드뉴스없음 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("주식회사 티벨 박이슬 박사 관련 뉴스를 찾지 못했습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "주식회사 티벨 박이슬 박사 관련 뉴스를 찾지 못했습니다."));
 		
 
 	}
@@ -788,38 +655,29 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("지난주 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지난주 뉴스 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "CBS 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "CBS 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("CBS"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "CBS"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 			
 
 	}
@@ -832,38 +690,31 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "연예 뉴스 재생 TTS 확인");
 		String 지난주주말 = util.getLastWeekSunday();
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains(지난주주말));
-		Assert.assertTrue(tts.contains("연예 관련 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, 지난주주말));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "연예 관련 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, 지난주주말 + " 연예 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), 지난주주말 + " 연예 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String src = util.getAttribute(By.xpath(xPath.키워드뉴스이미지_web), "src");
-		Assert.assertTrue(src.contains("news_motion.gif"));
+		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.키워드뉴스타이틀_web));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
+
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -874,40 +725,30 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("1월 첫째주 스포츠 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertTrue(FLOtxt.contains("스포츠 뉴스"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "스포츠 뉴스"));
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		String[] result = tts.split(" ");
-		Assert.assertTrue(tts.contains(result[0]));
-		Assert.assertTrue(tts.contains(result[1]));
-		Assert.assertTrue(tts.contains("스포츠 관련 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "스포츠 관련 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String src = util.getAttribute(By.xpath(xPath.키워드뉴스이미지_web), "src");
-		Assert.assertTrue(src.contains("news_motion.gif"));
+		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.키워드뉴스타이틀_web));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
+
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -918,40 +759,30 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("지난 주 SK텔레콤 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertTrue(FLOtxt.contains("SK텔레콤"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "SK텔레콤"));
 		
 		test.log(Status.INFO, "SK텔레콤 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		String[] result = tts.split(" ");
-		Assert.assertTrue(tts.contains(result[0]));
-		Assert.assertTrue(tts.contains(result[1]));
-		Assert.assertTrue(tts.contains("SK텔레콤 관련 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SK텔레콤 관련 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String src = util.getAttribute(By.xpath(xPath.키워드뉴스이미지_web), "src");
-		Assert.assertTrue(src.contains("news_motion.gif"));
+		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.키워드뉴스타이틀_web));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
+
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -962,38 +793,29 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("지난주 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지난달 뉴스 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "CBS 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "CBS 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("CBS"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "CBS"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 	}
 	
@@ -1008,37 +830,30 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("지난달 연예 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "연예 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("연예 관련 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "연예 관련 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertTrue(FLOtxt.contains("연예 뉴스"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "연예 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String src = util.getAttribute(By.xpath(xPath.키워드뉴스이미지_web), "src");
-		Assert.assertTrue(src.contains("news_motion.gif"));
+		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.키워드뉴스타이틀_web));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
+
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -1053,37 +868,30 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("지난달 스포츠 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("스포츠 관련 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "스포츠 관련 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertTrue(FLOtxt.contains("스포츠 뉴스"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "스포츠 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String src = util.getAttribute(By.xpath(xPath.키워드뉴스이미지_web), "src");
-		Assert.assertTrue(src.contains("news_motion.gif"));
+		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.키워드뉴스타이틀_web));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
+
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -1098,37 +906,30 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("지난달 SK텔레콤 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "SK텔레콤뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("SK텔레콤 관련 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SK텔레콤 관련 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertTrue(FLOtxt.contains("SK텔레콤"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "SK텔레콤"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String src = util.getAttribute(By.xpath(xPath.키워드뉴스이미지_web), "src");
-		Assert.assertTrue(src.contains("news_motion.gif"));
+		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.키워드뉴스타이틀_web));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
+
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -1138,39 +939,30 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 어제 뉴스 틀어줘 - 발화");
 		util.SWFsendPost("어제 뉴스 틀어줘", ServerName, AccessToken);
 		
-		test.log(Status.INFO, "어제 뉴스 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
+		test.log(Status.INFO, "어제 뉴스 TTS 확인");;
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "CBS 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "CBS 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("CBS"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "CBS"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 	}
 	
@@ -1181,38 +973,29 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("그저께 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "그저께 뉴스 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "CBS 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "CBS 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("CBS"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "CBS"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 	}
 	
@@ -1223,37 +1006,30 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("그저께 스포츠 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("스포츠 관련 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "스포츠 관련 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertTrue(FLOtxt.contains("스포츠 뉴스"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "스포츠 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String src = util.getAttribute(By.xpath(xPath.키워드뉴스이미지_web), "src");
-		Assert.assertTrue(src.contains("news_motion.gif"));
+		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.키워드뉴스타이틀_web));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
+
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -1264,38 +1040,29 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("2018년 1월 1일 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "2018년 1월 1일 뉴스 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "CBS 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "CBS 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("CBS"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "CBS"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 	}
 	
@@ -1306,38 +1073,29 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("내일 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "내일 뉴스 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "CBS 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "CBS 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("CBS"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "CBS"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 	}
 	
@@ -1348,38 +1106,29 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		util.SWFsendPost("모레 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "모레 뉴스 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "CBS 뉴스");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "CBS 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 확인");
-		boolean 미디어이미지 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(미디어이미지);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "뉴스제공처 확인");
-		String 뉴스제공처 = util.getText(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(뉴스제공처.contains("CBS"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO아티스트), "CBS"));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 	}
 

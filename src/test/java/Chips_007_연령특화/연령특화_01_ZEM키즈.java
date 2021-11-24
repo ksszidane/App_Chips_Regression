@@ -109,12 +109,10 @@ public class 연령특화_01_ZEM키즈 extends Chips_TestCase {
 		util.SWFsendPost("ZEM 키즈 열어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ZEM 키즈 미지원 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Equals(tts, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
 		
 		test.log(Status.INFO, "usd action_type 확인");
-		String usd = util.action_type_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(usd.contains("usd"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "usd"));
 
 	}
 

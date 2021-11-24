@@ -110,7 +110,7 @@ public class CarLife_01_스타벅스 extends Chips_TestCase {
 		util.SWFsendPost("스타벅스 커피 주문해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스타벅스 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_Set(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
 		
 		test.log(Status.INFO, "usd action_type 확인");
 		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "usd"));

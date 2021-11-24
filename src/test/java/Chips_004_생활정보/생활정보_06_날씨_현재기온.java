@@ -109,9 +109,8 @@ public class 생활정보_06_날씨_현재기온 extends Chips_TestCase {
 		util.SWFsendPost("지금 추워?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지금 추워? TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("현재 기온은"));
-		Assert.assertTrue(tts.contains("도 입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 기온은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "도 입니다."));
 	
 	}
 	
@@ -122,9 +121,8 @@ public class 생활정보_06_날씨_현재기온 extends Chips_TestCase {
 		util.SWFsendPost("지금 밖에 더워?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지금 밖에 더워? TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("현재 기온은"));
-		Assert.assertTrue(tts.contains("도 입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 기온은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "도 입니다."));
 
 	}
 

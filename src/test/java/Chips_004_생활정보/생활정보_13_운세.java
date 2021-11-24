@@ -109,8 +109,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 		util.SWFsendPost("오늘의 운세 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "운세 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa002, Chips_002, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.미등록운세_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa002, Chips_002, ServerName, Place, data.미등록운세_set));
 		
 	}
 	
@@ -184,8 +183,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 		util.SWFsendPost("운세", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "운세 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("당신의 오늘의 운세를 알려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "당신의 오늘의 운세를 알려드릴게요."));
 		
 	}
 	
@@ -196,8 +194,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 		util.SWFsendPost("양띠 운세 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "양띠 운세 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("오늘의 양띠 운세를 알려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘의 양띠 운세를 알려드릴게요."));
 		
 	}
 	
@@ -208,8 +205,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 		util.SWFsendPost("쥐띠 내일 운세 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "양띠 운세 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("내일의 쥐띠 운세를 알려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "내일의 쥐띠 운세를 알려드릴게요."));
 		
 	}
 	
@@ -220,8 +216,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 		util.SWFsendPost("1979년 1월 4일 운세 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "생년 운세 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("79년 1월 4일생, 오늘의 운세를 알려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "79년 1월 4일생, 오늘의 운세를 알려드릴게요."));
 		
 	}
 	
@@ -232,8 +227,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 		util.SWFsendPost("음력 81년 8월 21일 운세", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "생년 운세 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("음력 81년 8월 21일생, 오늘의 운세를 알려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "음력 81년 8월 21일생, 오늘의 운세를 알려드릴게요."));
 		
 	}
 	
@@ -244,8 +238,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 		util.SWFsendPost("01년 1월 4일 오늘의 운세", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "생년 운세 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("01년 1월 4일생, 오늘의 운세를 알려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "01년 1월 4일생, 오늘의 운세를 알려드릴게요."));
 		
 	}
 	
@@ -260,12 +253,10 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 		
 		if (미지원기간.equals("A구간")) {
 			test.log(Status.INFO, "[4월~11월] 구간 이번주 운세 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
+			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
 		} else if (미지원기간.equals("B구간")) {
 			test.log(Status.INFO, "[12월~3월] 구간 이번주 운세 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
+			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
 		} 
 		
 	}
@@ -281,12 +272,10 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 		
 		if (미지원기간.equals("A구간")) {
 			test.log(Status.INFO, "[4월~11월] 구간 다음주 운세 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
+			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
 		} else if (미지원기간.equals("B구간")) {
 			test.log(Status.INFO, "[12월~3월] 구간 다음주 운세 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
+			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
 		} 
 		
 	}
@@ -302,12 +291,10 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 		
 		if (미지원기간.equals("A구간")) {
 			test.log(Status.INFO, "[4월~11월] 구간 다음달 운세 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
+			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
 		} else if (미지원기간.equals("B구간")) {
 			test.log(Status.INFO, "[12월~3월] 구간 다음달 운세 TTS 확인");
-			String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-			Assert.assertTrue(tts.contains("저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
+			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘과 내일의 운세만 알려드릴 수 있어요."));
 		} 
 		
 	}

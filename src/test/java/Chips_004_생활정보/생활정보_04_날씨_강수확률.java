@@ -110,8 +110,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.SWFsendPost("지금 비 와?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지금 비 와? TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Equals(tts, data.지금강수확률_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.지금강수확률_set));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0738")
@@ -121,8 +120,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.SWFsendPost("오늘 강수확률", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지금 비 와? TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Equals(tts, data.오늘강수확률_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.오늘강수확률_set));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0739")
@@ -132,8 +130,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.SWFsendPost("내일 비와?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지금 비 와? TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Equals(tts, data.내일강수확률_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.내일강수확률_set));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0740")
@@ -149,9 +146,8 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.SWFsendPost("모레 비와?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "모레 비와? TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains(모레날짜 + " " + 모레요일+ "요일은"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.모레강수확률_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, 모레날짜 + " " + 모레요일+ "요일은"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.모레강수확률_set));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0741")
@@ -166,7 +162,6 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		String[] array = str.split(" ");
 		현재위치 = array[2];
 		
-		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 이번 주 비 와? - 발화");
 		util.SWFsendPost("이번 주 비 와?", ServerName, AccessToken);
 		
@@ -174,12 +169,10 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String txt = util.getText(By.xpath(xPath.날씨타이틀_web));
-		Assert.assertEquals(txt, "주간 날씨");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), "주간 날씨"));
 		
 		test.log(Status.INFO, "날씨위치정보 확인");
-		boolean 위치정보 = util.isElementPresent(By.xpath(xPath.날씨위치정보_web));
-		Assert.assertTrue(위치정보);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.날씨위치정보_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
@@ -192,16 +185,13 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 주간날씨 = util.isElementPresent(By.xpath(xPath.주간날씨영역_web));
-		Assert.assertTrue(주간날씨);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨영역_web)));
 	
 		test.log(Status.INFO, "첫번쨰 날짜 기준 금일 요일 확인");
-		String 첫번째요일 = util.getText(By.xpath(xPath.주간날씨리스트_1st요일_web));
-		Assert.assertTrue(첫번째요일.contains(util.getDayOfWeek(0)));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.주간날씨리스트_1st요일_web), util.getDayOfWeek(0)));
 		
 		test.log(Status.INFO, "두번쨰 날짜 기준 내일 마킹확인");
-		String 두번째요일내일마킹 = util.getText(By.xpath(xPath.주간날씨내일마킹_web));
-		Assert.assertTrue(두번째요일내일마킹.contains("내일"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.주간날씨내일마킹_web), "내일"));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
@@ -214,25 +204,19 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String 마지막요일 = util.getText(By.xpath(xPath.주간날씨리스트_7st요일_web));
-		Assert.assertTrue(마지막요일.contains(util.getDayOfWeek(+6)));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.주간날씨리스트_7st요일_web), util.getDayOfWeek(+6)));
 		
 		test.log(Status.INFO, "모레날씨 최저온도 확인");
-		boolean 최저온도 = util.isElementPresent(By.xpath(xPath.주간날씨리스트_3st최저기온_web));
-		Assert.assertTrue(최저온도);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨리스트_3st최저기온_web)));
 		
 		test.log(Status.INFO, "모레날씨 최고온도 확인");
-		boolean 최고온도 = util.isElementPresent(By.xpath(xPath.주간날씨리스트_3st최고기온_web));
-		Assert.assertTrue(최고온도);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨리스트_3st최고기온_web)));
 		
 		test.log(Status.INFO, "모레날씨 아이콘 확인");
-		boolean 날씨아이콘 = util.isElementPresent(By.xpath(xPath.주간날씨리스트_3st아이콘_web));
-		Assert.assertTrue(날씨아이콘);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨리스트_3st아이콘_web)));
 		
 		test.log(Status.INFO, "이번주 날씨 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		//Assert.assertTrue(tts.contains("낮기온"));
-		Assert.assertTrue(tts.contains("이번주 " + 현재위치));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이번주 " + 현재위치));
 		
 	}
 	
@@ -245,7 +229,6 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		//String[] array = str.split(" ");
 		//String 현재위치 = array[2];
 		
-		Thread.sleep(5000);
 		test.log(Status.INFO, "W, 다음주 비 와? - 발화");
 		util.SWFsendPost("다음주 비 와?", ServerName, AccessToken);
 		
@@ -253,16 +236,13 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String txt = util.getText(By.xpath(xPath.날씨타이틀_web));
-		Assert.assertEquals(txt, "주간 날씨");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), "주간 날씨"));
 		
 		test.log(Status.INFO, "날씨위치정보 확인");
-		boolean 위치정보 = util.isElementPresent(By.xpath(xPath.날씨위치정보_web));
-		Assert.assertTrue(위치정보);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.날씨위치정보_web)));
 		
 		test.log(Status.INFO, "주간날씨 리스트 확인");
-		boolean 주간날씨 = util.isElementPresent(By.xpath(xPath.주간날씨영역_web));
-		Assert.assertTrue(주간날씨);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨영역_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
@@ -275,16 +255,13 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String 첫번째요일 = util.getText(By.xpath(xPath.주간날씨리스트_1st요일_web));
-		Assert.assertTrue(첫번째요일.contains("월"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.주간날씨리스트_1st요일_web), "월"));
 		
 		test.log(Status.INFO, "모레날씨 최저온도 확인");
-		boolean 최저온도 = util.isElementPresent(By.xpath(xPath.주간날씨리스트_1st최저기온_web));
-		Assert.assertTrue(최저온도);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨리스트_1st최저기온_web)));
 		
 		test.log(Status.INFO, "모레날씨 최고온도 확인");
-		boolean 최고온도 = util.isElementPresent(By.xpath(xPath.주간날씨리스트_2st최고기온_web));
-		Assert.assertTrue(최고온도);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨리스트_2st최고기온_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
@@ -297,14 +274,10 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 날씨아이콘 = util.isElementPresent(By.xpath(xPath.주간날씨리스트_3st아이콘_web));
-		Assert.assertTrue(날씨아이콘);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨리스트_3st아이콘_web)));
 		
 		test.log(Status.INFO, "다음주 날씨 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		//Assert.assertTrue(tts.contains("낮기온"));
-		Assert.assertTrue(tts.contains("다음주 " + 현재위치));
-		
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "다음주 " + 현재위치));
 	}
 
 }

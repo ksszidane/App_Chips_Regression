@@ -109,8 +109,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.SWFsendPost("누구 백과 찾아줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.백과도움말_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.백과도움말_set));
 		
 	}
 	
@@ -121,8 +120,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.SWFsendPost("위키 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.백과도움말_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.백과도움말_set));
 		
 	}
 	
@@ -133,8 +131,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.SWFsendPost("위키에서 찾아줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.백과도움말_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.백과도움말_set));
 		
 	}
 	
@@ -145,8 +142,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.SWFsendPost("누구백과 도움말", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.백과도움말_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.백과도움말_set));
 		
 	}
 	
@@ -161,20 +157,16 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.switchToWindwosURL(xPath.Webview_URL);
 		
 		test.log(Status.INFO, "누구백과 카드 타이틀 확인");
-		String 타이틀 = util.getText(By.xpath(xPath.백과카드타이틀_web));
-		Assert.assertTrue(타이틀.contains("NUGU 백과"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과카드타이틀_web), "NUGU 백과"));
 		
 		test.log(Status.INFO, "누구백과 카드 원문 노출 확인");
-		String 한글소스 = util.getText(By.xpath(xPath.백과타이틀_web));
-		Assert.assertTrue(한글소스.contains("인도"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과타이틀_web), "인도"));
 		
 		test.log(Status.INFO, "누구백과 원문 노출 확인");
-		String 영문 = util.getText(By.xpath(xPath.백과내용_web));
-		Assert.assertTrue(영문.contains("인도의 수도는 뉴델리입니다."));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "인도의 수도는 뉴델리입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("인도의 수도는 뉴델리입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "인도의 수도는 뉴델리입니다."));
 		
 	}
 	
@@ -190,20 +182,16 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.switchToWindwosURL(xPath.Webview_URL);
 		
 		test.log(Status.INFO, "누구백과 카드 타이틀 확인");
-		String 타이틀 = util.getText(By.xpath(xPath.백과카드타이틀_web));
-		Assert.assertTrue(타이틀.contains("NUGU 백과"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과카드타이틀_web), "NUGU 백과"));
 		
 		test.log(Status.INFO, "누구백과 카드 원문 노출 확인");
-		String 한글소스 = util.getText(By.xpath(xPath.백과타이틀_web));
-		Assert.assertTrue(한글소스.contains("서울특별시"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과타이틀_web), "서울특별시"));
 		
 		test.log(Status.INFO, "누구백과 원문 노출 확인");
-		String 영문 = util.getText(By.xpath(xPath.백과내용_web));
-		Assert.assertTrue(영문.contains("서울특별시의 면적은 605.20 ㎢입니다."));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "서울특별시의 면적은 605.20 ㎢입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("서울특별시의 면적은 605.20 ㎢입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "서울특별시의 면적은 605.20 ㎢입니다."));
 		
 	}
 	
@@ -219,20 +207,16 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.switchToWindwosURL(xPath.Webview_URL);
 		
 		test.log(Status.INFO, "누구백과 카드 타이틀 확인");
-		String 타이틀 = util.getText(By.xpath(xPath.백과카드타이틀_web));
-		Assert.assertTrue(타이틀.contains("NUGU 백과"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과카드타이틀_web), "NUGU 백과"));
 		
 		test.log(Status.INFO, "누구백과 카드 원문 노출 확인");
-		String 한글소스 = util.getText(By.xpath(xPath.백과타이틀_web));
-		Assert.assertTrue(한글소스.contains("인도"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과타이틀_web), "인도"));
 		
 		test.log(Status.INFO, "누구백과 원문 노출 확인");
-		String 영문 = util.getText(By.xpath(xPath.백과내용_web));
-		Assert.assertTrue(영문.contains("인도의 수도는 뉴델리입니다."));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "인도의 수도는 뉴델리입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("인도의 수도는 뉴델리입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "인도의 수도는 뉴델리입니다."));
 		
 	}
 	
@@ -248,20 +232,16 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.switchToWindwosURL(xPath.Webview_URL);
 		
 		test.log(Status.INFO, "누구백과 카드 타이틀 확인");
-		String 타이틀 = util.getText(By.xpath(xPath.백과카드타이틀_web));
-		Assert.assertTrue(타이틀.contains("NUGU 백과"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과카드타이틀_web), "NUGU 백과"));
 		
 		test.log(Status.INFO, "누구백과 카드 원문 노출 확인");
-		String 한글소스 = util.getText(By.xpath(xPath.백과타이틀_web));
-		Assert.assertTrue(한글소스.contains("서울특별시"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과타이틀_web), "서울특별시"));
 		
 		test.log(Status.INFO, "누구백과 원문 노출 확인");
-		String 영문 = util.getText(By.xpath(xPath.백과내용_web));
-		Assert.assertTrue(영문.contains("서울특별시의 면적은 605.20 ㎢입니다."));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "서울특별시의 면적은 605.20 ㎢입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("서울특별시의 면적은 605.20 ㎢입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "서울특별시의 면적은 605.20 ㎢입니다."));
 		
 	}
 	
@@ -277,20 +257,16 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.switchToWindwosURL(xPath.Webview_URL);
 		
 		test.log(Status.INFO, "누구백과 카드 타이틀 확인");
-		String 타이틀 = util.getText(By.xpath(xPath.백과카드타이틀_web));
-		Assert.assertTrue(타이틀.contains("NUGU 백과"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과카드타이틀_web), "NUGU 백과"));
 		
 		test.log(Status.INFO, "누구백과 카드 원문 노출 확인");
-		String 한글소스 = util.getText(By.xpath(xPath.백과타이틀_web));
-		Assert.assertTrue(한글소스.contains("이순신"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과타이틀_web), "이순신"));
 		
 		test.log(Status.INFO, "누구백과 원문 노출 확인");
-		String 영문 = util.getText(By.xpath(xPath.백과내용_web));
-		Assert.assertTrue(영문.contains("이순신은 조선의 장군입니다"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "이순신은 조선의 장군입니다"));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("이순신은 조선의 장군입니다"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이순신은 조선의 장군입니다"));
 		
 	}
 	
@@ -306,20 +282,16 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.switchToWindwosURL(xPath.Webview_URL);
 		
 		test.log(Status.INFO, "누구백과 카드 타이틀 확인");
-		String 타이틀 = util.getText(By.xpath(xPath.백과카드타이틀_web));
-		Assert.assertTrue(타이틀.contains("NUGU 백과"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과카드타이틀_web), "NUGU 백과"));
 		
 		test.log(Status.INFO, "누구백과 카드 원문 노출 확인");
-		String 한글소스 = util.getText(By.xpath(xPath.백과타이틀_web));
-		Assert.assertTrue(한글소스.contains("고진감래"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과타이틀_web), "고진감래"));
 		
 		test.log(Status.INFO, "누구백과 원문 노출 확인");
-		String 영문 = util.getText(By.xpath(xPath.백과내용_web));
-		Assert.assertTrue(영문.contains("고진감래는, 고생 끝에 낙이 찾아온다는 뜻"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "고진감래는, 고생 끝에 낙이 찾아온다는 뜻"));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("고진감래는, 고생 끝에 낙이 찾아온다는 뜻"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "고진감래는, 고생 끝에 낙이 찾아온다는 뜻ㅇㅇㅇ"));
 		
 	}
 	
@@ -335,20 +307,16 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.switchToWindwosURL(xPath.Webview_URL);
 		
 		test.log(Status.INFO, "누구백과 카드 타이틀 확인");
-		String 타이틀 = util.getText(By.xpath(xPath.백과카드타이틀_web));
-		Assert.assertTrue(타이틀.contains("NUGU 백과"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과카드타이틀_web), "NUGU 백과"));
 		
 		test.log(Status.INFO, "누구백과 카드 원문 노출 확인");
-		String 한글소스 = util.getText(By.xpath(xPath.백과타이틀_web));
-		Assert.assertTrue(한글소스.contains("아이유"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과타이틀_web), "아이유"));
 		
 		test.log(Status.INFO, "누구백과 원문 노출 확인");
-		String 영문 = util.getText(By.xpath(xPath.백과내용_web));
-		Assert.assertTrue(영문.contains("가수 아이유의 본명은 이지은입니다."));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "가수 아이유의 본명은 이지은입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("가수 아이유의 본명은 이지은입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "가수 아이유의 본명은 이지은입니다."));
 		
 	}
 	
@@ -364,20 +332,16 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.switchToWindwosURL(xPath.Webview_URL);
 		
 		test.log(Status.INFO, "누구백과 카드 타이틀 확인");
-		String 타이틀 = util.getText(By.xpath(xPath.백과카드타이틀_web));
-		Assert.assertTrue(타이틀.contains("NUGU 백과"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과카드타이틀_web), "NUGU 백과"));
 		
 		test.log(Status.INFO, "누구백과 카드 원문 노출 확인");
-		String 한글소스 = util.getText(By.xpath(xPath.백과타이틀_web));
-		Assert.assertTrue(한글소스.contains("인터스텔라"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과타이틀_web), "인터스텔라"));
 		
 		test.log(Status.INFO, "누구백과 원문 노출 확인");
-		String 영문 = util.getText(By.xpath(xPath.백과내용_web));
-		Assert.assertTrue(영문.contains("영화 인터스텔라의 개봉일은 2014년 10월 26일입니다."));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "영화 인터스텔라의 개봉일은 2014년 10월 26일입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("영화 인터스텔라의 개봉일은 2014년 10월 26일입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "영화 인터스텔라의 개봉일은 2014년 10월 26일입니다."));
 		
 	}
 

@@ -109,18 +109,14 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		util.SWFsendPost("안녕", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchatView / motionView 카드 노출 확인");
-		boolean chitchatVeiw = util.isElementPresent(By.id("chitchatView"));
-		Assert.assertTrue(chitchatVeiw);
-		boolean motionView = util.isElementPresent(By.id("motionView"));
-		Assert.assertTrue(motionView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chitchatView")));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("motionView")));
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(Domain, "chitchat");
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
 		
 		test.log(Status.INFO, "greet_001 intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(intent, "greet_001");
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "greet_001"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0711")
@@ -130,18 +126,14 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		util.SWFsendPost("월요일이 또 왔어", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchatView / motionView 카드 노출 확인");
-		boolean chitchatVeiw = util.isElementPresent(By.id("chitchatView"));
-		Assert.assertTrue(chitchatVeiw);
-		boolean motionView = util.isElementPresent(By.id("motionView"));
-		Assert.assertTrue(motionView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chitchatView")));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("motionView")));
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(Domain, "chitchat");
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
 		
 		test.log(Status.INFO, "company.day_001 intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(intent, "company.day_001");
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "company.day_001"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0712")
@@ -151,18 +143,14 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		util.SWFsendPost("불금이야", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchatView / motionView 카드 노출 확인");
-		boolean chitchatVeiw = util.isElementPresent(By.id("chitchatView"));
-		Assert.assertTrue(chitchatVeiw);
-		boolean motionView = util.isElementPresent(By.id("motionView"));
-		Assert.assertTrue(motionView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chitchatView")));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("motionView")));
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(Domain, "chitchat");
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
 		
 		test.log(Status.INFO, "event.date_002 intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(intent, "event.date_002");
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "event.date_002"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0713")
@@ -172,18 +160,14 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		util.SWFsendPost("피곤해 죽겠어", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchatView / motionView 카드 노출 확인");
-		boolean chitchatVeiw = util.isElementPresent(By.id("chitchatView"));
-		Assert.assertTrue(chitchatVeiw);
-		boolean motionView = util.isElementPresent(By.id("motionView"));
-		Assert.assertTrue(motionView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chitchatView")));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("motionView")));
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(Domain, "chitchat");
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
 		
 		test.log(Status.INFO, "sickness.tired_001 intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(intent, "sickness.tired_001");
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "sickness.tired_001"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0714")
@@ -193,18 +177,14 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		util.SWFsendPost("고마워", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchatView / motionView 카드 노출 확인");
-		boolean chitchatVeiw = util.isElementPresent(By.id("chitchatView"));
-		Assert.assertTrue(chitchatVeiw);
-		boolean motionView = util.isElementPresent(By.id("motionView"));
-		Assert.assertTrue(motionView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chitchatView")));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("motionView")));
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
-		String Domain = util.Domain_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(Domain, "chitchat");
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
 		
 		test.log(Status.INFO, "thanks_001 intent 확인");
-		String intent = util.intent_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertEquals(intent, "thanks_001");
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "thanks_001"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0721")
@@ -214,12 +194,10 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		util.SWFsendPost("고객센터 번호 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "고객센터 번호미지원 TTS 확인");
-		String tts = util.TTS_JsonParsing_most_recent(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Equals(tts, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
 		
 		test.log(Status.INFO, "usd action_type 확인");
-		String usd = util.action_type_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(usd.contains("usd"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "usd"));
 		
 	
 	}

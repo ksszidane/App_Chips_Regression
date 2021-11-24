@@ -109,38 +109,30 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost("연예 뉴스 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "연예 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("연예 관련, 최근 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "연예 관련, 최근 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertTrue(FLOtxt.contains("연예 뉴스"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "연예 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		String src = util.getAttribute(By.xpath(xPath.키워드뉴스이미지_web), "src");
-		Assert.assertTrue(src.contains("news_motion.gif"));
+		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
-		boolean 뉴스컨텐츠제목 = util.isElementPresent(By.xpath(xPath.키워드뉴스타이틀_web));
-		Assert.assertTrue(뉴스컨텐츠제목);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -156,8 +148,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.재생버튼_web));
-		Assert.assertTrue(재생버튼);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0846")
@@ -173,8 +164,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.일시정지버튼_web));
-		Assert.assertTrue(재생버튼);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0847")
@@ -188,8 +178,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 일시정지확인 = util.isElementPresent(By.xpath(xPath.재생버튼_web));
-		Assert.assertTrue(일시정지확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 
 	}
 	
@@ -204,8 +193,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 재생확인 = util.isElementPresent(By.xpath(xPath.일시정지버튼_web));
-		Assert.assertTrue(재생확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 
 	}
 	
@@ -216,8 +204,8 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("좋아요 해줘", ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("뉴스 서비스에서는 사용할 수 없는 기능입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "뉴스 서비스에서는 사용할 수 없는 기능입니다."));
+		
 
 	}
 	
@@ -228,8 +216,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("좋아요 취소", ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("뉴스 서비스에서는 사용할 수 없는 기능입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "뉴스 서비스에서는 사용할 수 없는 기능입니다."));
 
 	}
 	
@@ -253,6 +240,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "다음기사 이동 확인");
 		Assert.assertFalse(현재기사.contentEquals(다음기사));
+		
 
 	}
 	
@@ -333,14 +321,10 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("뉴스 꺼줘", ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "뉴스카드 종료되고 메인화면 확인");
-		boolean temperature = util.isElementPresent(By.id("temperature"));
-		Assert.assertTrue(temperature);
-		boolean temperature_format = util.isElementPresent(By.id("temperature_format"));
-		Assert.assertTrue(temperature_format);
-		boolean location = util.isElementPresent(By.id("location"));
-		Assert.assertTrue(location);
-		boolean weatherImageView = util.isElementPresent(By.id("weatherImageView"));
-		Assert.assertTrue(weatherImageView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature_format")));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("location")));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("weatherImageView")));
 
 	}
 }
