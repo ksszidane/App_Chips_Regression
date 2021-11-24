@@ -92,7 +92,7 @@ public class 기본기능_02_홈화면최초진입 extends Chips_TestCase {
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("coach_mark")));
 		
 		test.log(Status.INFO, "호출어 안내 코치 마크 텍스트 확인 확인");
-		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "‘아리아’라고 불러보세요!"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.코치마크문구), "‘아리아’라고 불러보세요!"));
 	}
 
 }
