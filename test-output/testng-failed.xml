@@ -18,16 +18,15 @@
     <parameter name="TestPlace" value="out"/>
     <parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
     <classes>
-      <class name="Chips_004_생활정보.생활정보_14_뉴스">
+      <class name="Chips_008_CarLife.CarLife_01_스타벅스">
         <methods>
           <include name="setupClass"/>
           <include name="tearDownClass"/>
           <include name="BeforeMethod"/>
-          <include name="TC_0815_2_Chips_뉴스_TBS뉴스_확인" invocation-numbers="0"/>
-          <include name="TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인" invocation-numbers="0"/>
           <include name="AfterMethod"/>
+          <include name="TC_1243_스타벅스_미지원_확인" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_14_뉴스 -->
+      </class> <!-- Chips_008_CarLife.CarLife_01_스타벅스 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->

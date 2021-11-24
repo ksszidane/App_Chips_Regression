@@ -301,7 +301,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "셔플 버튼 클릭");
 		util.click(By.xpath(xPath.FLO랜덤버튼));
-		Thread.sleep(10000);
+		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "이전 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "한곡 재생시에는 지원하지 않는 기능입니다."));
@@ -325,7 +325,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "셔플 버튼 클릭");
 		util.click(By.xpath(xPath.FLO랜덤버튼));
-		Thread.sleep(10000);
+		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "셔플 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "한곡 재생시에는 지원하지 않는 기능입니다."));
@@ -337,7 +337,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
 		util.SWFsendPost_playStatus("다음 곡", ServerName, AccessToken, "music");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "다음 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "한곡 재생시에는 지원하지 않는 기능입니다."));
