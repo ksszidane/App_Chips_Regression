@@ -263,7 +263,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
+		Assert.assertFalse(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 
 	}
 	
@@ -496,6 +496,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, SK텔레콤 뉴스 들려줘 - 발화");
@@ -535,6 +536,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 세종병원 화재 뉴스 브리핑 해줘 - 발화");
+		util.SWFsendPost("세종병원 화재 뉴스 브리핑 해줘", ServerName, AccessToken);
 		util.SWFsendPost("세종병원 화재 뉴스 브리핑 해줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "세종병원 화재 재생 TTS 확인");
