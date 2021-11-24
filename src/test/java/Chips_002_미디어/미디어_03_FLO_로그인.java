@@ -109,55 +109,42 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		util.SWFsendPost("빅뱅 노래 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "아티스트 노래 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("BIGBANG의"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "BIGBANG의"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "FLO");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "FLO"));
 		
 		test.log(Status.INFO, "앨범아트 확인");
-		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(앨범아트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "곡명 확인");
-		boolean 곡명 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(곡명);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "아티스트 확인");
-		boolean 아티스트 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(아티스트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO아티스트)));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 		test.log(Status.INFO, "반복 버튼 확인");
-		boolean 반복 = util.isElementPresent(By.xpath(xPath.FLO반복버튼));
-		Assert.assertTrue(반복);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO반복버튼)));
 		
 		test.log(Status.INFO, "랜덤 버튼 확인");
-		boolean 랜덤 = util.isElementPresent(By.xpath(xPath.FLO랜덤버튼));
-		Assert.assertTrue(랜덤);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO랜덤버튼)));
 		
 		test.log(Status.INFO, "재생시간 확인");
-		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
-		Assert.assertTrue(재생시간);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
 		util.context("NATIVE_APP");
 		
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
 	}
 	
@@ -168,55 +155,42 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		util.SWFsendPost("서태지 음악 재생", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "아티스트 노래 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("서태지"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "서태지"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "FLO");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "FLO"));
 		
 		test.log(Status.INFO, "앨범아트 확인");
-		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(앨범아트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "곡명 확인");
-		boolean 곡명 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(곡명);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "아티스트 확인");
-		boolean 아티스트 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(아티스트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO아티스트)));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 		test.log(Status.INFO, "반복 버튼 확인");
-		boolean 반복 = util.isElementPresent(By.xpath(xPath.FLO반복버튼));
-		Assert.assertTrue(반복);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO반복버튼)));
 		
 		test.log(Status.INFO, "랜덤 버튼 확인");
-		boolean 랜덤 = util.isElementPresent(By.xpath(xPath.FLO랜덤버튼));
-		Assert.assertTrue(랜덤);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO랜덤버튼)));
 		
 		test.log(Status.INFO, "재생시간 확인");
-		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
-		Assert.assertTrue(재생시간);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
 		util.context("NATIVE_APP");
 		
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
 	}
 	
@@ -230,55 +204,42 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		util.SWFsendPost("뮤직메이트에서 최신 곡 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "최신음악 노래 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최신 음악을"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최신 음악을"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "최신 음악");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "최신 음악"));
 		
 		test.log(Status.INFO, "앨범아트 확인");
-		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(앨범아트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "곡명 확인");
-		boolean 곡명 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(곡명);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "아티스트 확인");
-		boolean 아티스트 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(아티스트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO아티스트)));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 		test.log(Status.INFO, "반복 버튼 확인");
-		boolean 반복 = util.isElementPresent(By.xpath(xPath.FLO반복버튼));
-		Assert.assertTrue(반복);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO반복버튼)));
 		
 		test.log(Status.INFO, "랜덤 버튼 확인");
-		boolean 랜덤 = util.isElementPresent(By.xpath(xPath.FLO랜덤버튼));
-		Assert.assertTrue(랜덤);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO랜덤버튼)));
 		
 		test.log(Status.INFO, "재생시간 확인");
-		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
-		Assert.assertTrue(재생시간);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
 		util.context("NATIVE_APP");
 		
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
 	}
 	
@@ -292,55 +253,42 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		util.SWFsendPost("인기 플로 노래 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "인기음악 노래 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("Flo 실시간 차트를"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "Flo 실시간 차트를"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "실시간 차트");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "실시간 차트"));
 		
 		test.log(Status.INFO, "앨범아트 확인");
-		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(앨범아트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "곡명 확인");
-		boolean 곡명 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(곡명);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "아티스트 확인");
-		boolean 아티스트 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(아티스트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO아티스트)));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 		test.log(Status.INFO, "반복 버튼 확인");
-		boolean 반복 = util.isElementPresent(By.xpath(xPath.FLO반복버튼));
-		Assert.assertTrue(반복);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO반복버튼)));
 		
 		test.log(Status.INFO, "랜덤 버튼 확인");
-		boolean 랜덤 = util.isElementPresent(By.xpath(xPath.FLO랜덤버튼));
-		Assert.assertTrue(랜덤);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO랜덤버튼)));
 		
 		test.log(Status.INFO, "재생시간 확인");
-		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
-		Assert.assertTrue(재생시간);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
 		util.context("NATIVE_APP");
 		
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
 	}
 	
@@ -351,55 +299,42 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		util.SWFsendPost("jeebanoff의 LEAVE ME 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "가수+곡 노래 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("jeebanoff (지바노프)의 LEAVE ME. "));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "jeebanoff (지바노프)의 LEAVE ME. "));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "FLO");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "FLO"));
 		
 		test.log(Status.INFO, "앨범아트 확인");
-		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(앨범아트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "곡명 확인");
-		boolean 곡명 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(곡명);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "아티스트 확인");
-		boolean 아티스트 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(아티스트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO아티스트)));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 		test.log(Status.INFO, "반복 버튼 확인");
-		boolean 반복 = util.isElementPresent(By.xpath(xPath.FLO반복버튼));
-		Assert.assertTrue(반복);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO반복버튼)));
 		
 		test.log(Status.INFO, "랜덤 버튼 확인");
-		boolean 랜덤 = util.isElementPresent(By.xpath(xPath.FLO랜덤버튼));
-		Assert.assertTrue(랜덤);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO랜덤버튼)));
 		
 		test.log(Status.INFO, "재생시간 확인");
-		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
-		Assert.assertTrue(재생시간);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
 		util.context("NATIVE_APP");
 		
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
 	}
 	
@@ -410,62 +345,48 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		util.SWFsendPost("좋아요 음악 틀어", ServerName, AccessToken);
 		
 		test.log(Status.INFO, " 좋아요 노래 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("당신이 Flo에서 좋아요 하신 음악을"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "당신이 Flo에서 좋아요 하신 음악을"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "좋아요 한 음악");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "좋아요 한 음악"));
 		
 		test.log(Status.INFO, "앨범아트 확인");
-		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(앨범아트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "곡명 확인");
-		boolean 곡명 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(곡명);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "아티스트 확인");
-		boolean 아티스트 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(아티스트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO아티스트)));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 		test.log(Status.INFO, "반복 버튼 확인");
-		boolean 반복 = util.isElementPresent(By.xpath(xPath.FLO반복버튼));
-		Assert.assertTrue(반복);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO반복버튼)));
 		
 		test.log(Status.INFO, "랜덤 버튼 확인");
-		boolean 랜덤 = util.isElementPresent(By.xpath(xPath.FLO랜덤버튼));
-		Assert.assertTrue(랜덤);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO랜덤버튼)));
 		
 		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 좋아요버튼활성화 = util.isElementPresent(By.xpath(xPath.좋아요On_web));
-		Assert.assertTrue(좋아요버튼활성화);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.좋아요On_web)));
 		util.context("NATIVE_APP");
 		
 		test.log(Status.INFO, "재생시간 확인");
-		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
-		Assert.assertTrue(재생시간);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
 		
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
 	}
 	
@@ -477,55 +398,42 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		util.SWFsendPost("플레이리스트 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "최신음악 노래 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("Flo에서 ee 내 리스트"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "Flo에서 ee 내 리스트"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "내 리스트");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "내 리스트"));
 		
 		test.log(Status.INFO, "앨범아트 확인");
-		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(앨범아트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "곡명 확인");
-		boolean 곡명 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(곡명);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "아티스트 확인");
-		boolean 아티스트 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(아티스트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO아티스트)));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 		test.log(Status.INFO, "반복 버튼 확인");
-		boolean 반복 = util.isElementPresent(By.xpath(xPath.FLO반복버튼));
-		Assert.assertTrue(반복);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO반복버튼)));
 		
 		test.log(Status.INFO, "랜덤 버튼 확인");
-		boolean 랜덤 = util.isElementPresent(By.xpath(xPath.FLO랜덤버튼));
-		Assert.assertTrue(랜덤);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO랜덤버튼)));
 		
 		test.log(Status.INFO, "재생시간 확인");
-		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
-		Assert.assertTrue(재생시간);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
 		util.context("NATIVE_APP");
 		
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
 	}
 	
@@ -536,55 +444,42 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		util.SWFsendPost("최근에 들은 음악 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "최신음악 노래 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최근에 Flo에서 들은 음악을"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근에 Flo에서 들은 음악을"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "최근들은 음악");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "최근들은 음악"));
 		
 		test.log(Status.INFO, "앨범아트 확인");
-		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(앨범아트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "곡명 확인");
-		boolean 곡명 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(곡명);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "아티스트 확인");
-		boolean 아티스트 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(아티스트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO아티스트)));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 		test.log(Status.INFO, "반복 버튼 확인");
-		boolean 반복 = util.isElementPresent(By.xpath(xPath.FLO반복버튼));
-		Assert.assertTrue(반복);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO반복버튼)));
 		
 		test.log(Status.INFO, "랜덤 버튼 확인");
-		boolean 랜덤 = util.isElementPresent(By.xpath(xPath.FLO랜덤버튼));
-		Assert.assertTrue(랜덤);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO랜덤버튼)));
 		
 		test.log(Status.INFO, "재생시간 확인");
-		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
-		Assert.assertTrue(재생시간);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
 		util.context("NATIVE_APP");
 		
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
 	}
 	
@@ -602,15 +497,13 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		
 		test.log(Status.INFO, "셔플 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("셔플할게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "셔플할게요."));
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 랜덤재생 = util.isElementPresent(By.xpath(xPath.랜덤재생On_web));
-		Assert.assertTrue(랜덤재생);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생On_web)));
 		
 		
 	}
@@ -623,15 +516,13 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		
 		test.log(Status.INFO, "셔플 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("셔플을 해제했어요"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "셔플을 해제했어요"));
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 랜덤재생해제 = util.isElementPresent(By.xpath(xPath.랜덤재생Off_web));
-		Assert.assertTrue(랜덤재생해제);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생Off_web)));
 		util.context("NATIVE_APP");
 		
 	}

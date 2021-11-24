@@ -110,18 +110,15 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("SBS 러브FM 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
-		Thread.sleep(5000);
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 러브FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "러브FM 재생중 버튼 확인 ");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.SBS러브FM_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.SBS러브FM_일시정지_web)));
 		
 	}
 	
@@ -133,9 +130,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("SBS 파워FM 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 파워FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "파워FM 재생중 버튼 확인 ");
@@ -143,8 +139,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.sbs파워FM_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_일시정지_web)));
 		
 	}
 	
@@ -156,9 +151,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("TBS FM 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBS FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "TBSFM 재생중 버튼 확인 ");
@@ -166,8 +160,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.TBSFM_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.TBSFM_일시정지_web)));
 		
 	}
 	
@@ -179,9 +172,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("TBS eFM 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBS eFM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "TBSeFM 재생중 버튼 확인 ");
@@ -189,8 +181,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.TBSeFM_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.TBSeFM_일시정지_web)));
 		
 	}
 	
@@ -202,9 +193,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("TBN 강원교통방송 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 강원교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "TBN강원교통방송 재생중 버튼 확인 ");
@@ -212,8 +202,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.tbn강원_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_일시정지_web)));
 		
 	}
 	
@@ -225,9 +214,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("TBN 경남교통방송 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 경남교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "TBN경남교통방송 재생중 버튼 확인 ");
@@ -235,8 +223,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.tbn경남_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn경남_일시정지_web)));
 		
 	}
 	
@@ -248,9 +235,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("TBN 경북교통방송 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 경북교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "TBN경북교통방송 재생중 버튼 확인 ");
@@ -258,8 +244,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.tbn경북_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn경북_일시정지_web)));
 		
 	}
 	
@@ -271,9 +256,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("TBN 경인교통방송 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 경인교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "TBN경인교통방송 재생중 버튼 확인 ");
@@ -281,8 +265,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.tbn경인_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn경인_일시정지_web)));
 		
 	}
 	
@@ -294,9 +277,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("TBN 광주교통방송 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 광주교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "TBN광주교통방송 재생중 버튼 확인 ");
@@ -304,8 +286,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.tbn광주_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn광주_일시정지_web)));
 		
 	}
 	
@@ -317,9 +298,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("TBN 대구교통방송 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 대구교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "TBN대구교통방송 재생중 버튼 확인 ");
@@ -327,8 +307,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.tbn대구_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn대구_일시정지_web)));
 		
 	}
 	
@@ -340,9 +319,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("TBN 대전교통방송 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 대전교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "TBN대전교통방송 재생중 버튼 확인 ");
@@ -350,8 +328,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.tbn대전_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn대전_일시정지_web)));
 		
 	}
 	
@@ -363,9 +340,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("TBN 부산교통방송 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 부산교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "TBN부산교통방송 재생중 버튼 확인 ");
@@ -373,8 +349,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.tbn부산_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn부산_일시정지_web)));
 		
 	}
 	
@@ -386,9 +361,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("TBN 울산교통방송 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 울산교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "TBN울산교통방송 재생중 버튼 확인 ");
@@ -396,8 +370,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.tbn울산_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn울산_일시정지_web)));
 		
 	}
 	
@@ -409,9 +382,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("TBN 전북교통방송 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 전북교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "TBN전북교통방송 재생중 버튼 확인 ");
@@ -419,8 +391,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.tbn전북_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn전북_일시정지_web)));
 		
 	}
 	
@@ -432,9 +403,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("TBN 제주교통방송 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 제주교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "TBN제주교통방송 재생중 버튼 확인 ");
@@ -442,8 +412,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.tbn제주_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn제주_일시정지_web)));
 		
 	}
 	
@@ -455,9 +424,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("Arirang FM 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "Arirang FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "아리랑 FM  재생중 버튼 확인 ");
@@ -465,8 +433,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.아리랑FM_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.아리랑FM_일시정지_web)));
 		
 	}
 	
@@ -478,9 +445,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("극동방송 FM 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "극동방송 FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "극동방송 FM 라디오 재생중 버튼 확인 ");
@@ -488,8 +454,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.극동방송_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.극동방송_일시정지_web)));
 		
 	}
 	
@@ -501,9 +466,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("BBS 불교방송 FM 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "BBS 불교방송 FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "BBS 불교방송 FM 재생중 버튼 확인 ");
@@ -511,8 +475,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.불교방송_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.불교방송_일시정지_web)));
 		
 	}
 	
@@ -524,9 +487,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("BBS 불교방송 FM 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "BBS 불교방송 FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "BBS 불교방송 FM 재생중 버튼 확인 ");
@@ -534,8 +496,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.불교방송_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.불교방송_일시정지_web)));
 		
 	}
 	
@@ -547,9 +508,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("CBS 음악FM 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "CBS 음악FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "CBS 음악FM 재생중 버튼 확인 ");
@@ -557,8 +517,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.CBS음악FM_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.CBS음악FM_일시정지_web)));
 		
 	}
 	
@@ -570,9 +529,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("CBS 표준FM 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "CBS 표준FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "CBS 표준FM  재생중 버튼 확인 ");
@@ -580,8 +538,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.CBS표준FM_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.CBS표준FM_일시정지_web)));
 		
 	}
 	
@@ -593,9 +550,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("CBS 표준FM 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "CBS 표준FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "CBS 표준FM  재생중 버튼 확인 ");
@@ -603,8 +559,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.CBS표준FM_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.CBS표준FM_일시정지_web)));
 		
 	}
 	
@@ -616,9 +571,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("KBS 1 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS 1 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "KBS 1 라디오 재생중 버튼 확인 ");
@@ -626,8 +580,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.KBS1_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.KBS1_일시정지_web)));
 		
 	}
 	
@@ -639,9 +592,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("KBS 2 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS 2 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "KBS 1 라디오 재생중 버튼 확인 ");
@@ -649,8 +601,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.KBS2_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.KBS2_일시정지_web)));
 		
 	}
 	
@@ -662,9 +613,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("KBS 3 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS 3 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "KBS 3 라디오 재생중 버튼 확인 ");
@@ -672,8 +622,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.KBS3_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.KBS3_일시정지_web)));
 		
 	}
 	
@@ -685,9 +634,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("KBS ClassicFM 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS ClassicFM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "KBS ClassicFM 라디오 재생중 버튼 확인 ");
@@ -695,8 +643,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.KBS클래식_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.KBS클래식_일시정지_web)));
 		
 	}
 	
@@ -709,9 +656,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("KBS CoolFM 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS CoolFM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "KBS CoolFM 라디오 재생중 버튼 확인 ");
@@ -719,8 +665,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.KBScool_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.KBScool_일시정지_web)));
 		
 	}
 	
@@ -732,9 +677,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("KBS 2 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS 2 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "KBS 2 라디오 재생중 버튼 확인 ");
@@ -742,8 +686,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.KBS2_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.KBS2_일시정지_web)));
 		
 	}
 	
@@ -755,9 +698,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("KBS 월드 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS 월드 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "KBS 월드 라디오 재생중 버튼 확인 ");
@@ -765,8 +707,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.KBSworld_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.KBSworld_일시정지_web)));
 		
 	}
 	
@@ -778,9 +719,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("KBS 한민족방송 라디오"));
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS 한민족방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "KBS 한민족방송 라디오 재생중 버튼 확인 ");
@@ -788,8 +728,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.KBS한민족_일시정지_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.KBS한민족_일시정지_web)));
 		
 	}
 	
@@ -800,8 +739,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("동양방송 라디오 들려줘", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("현재 디바이스에서는 지원하지 않는 라디오 채널입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 디바이스에서는 지원하지 않는 라디오 채널입니다."));
 		
 	}
 	
@@ -812,8 +750,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("가톨릭평화방송 FM", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("현재 디바이스에서는 지원하지 않는 라디오 채널입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 디바이스에서는 지원하지 않는 라디오 채널입니다."));
 		
 	}
 	
@@ -824,8 +761,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("YTN 뉴스 FM 틀어줘", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("현재 디바이스에서는 지원하지 않는 라디오 채널입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 디바이스에서는 지원하지 않는 라디오 채널입니다."));
 		
 	}
 

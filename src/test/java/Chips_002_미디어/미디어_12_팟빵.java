@@ -109,51 +109,39 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost("팟캐스트", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "팟캐스트 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최근에 들은"));
-		Assert.assertTrue(tts.contains("이어서"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근에 들은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이어서"));
 		
 		test.log(Status.INFO, "팟캐스트 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "최근들은 팟캐스트");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "최근들은 팟캐스트"));
 		
 		test.log(Status.INFO, "앨범아트 확인");
-		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(앨범아트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "방송명 확인");
-		boolean 방송명 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(방송명);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "에피소드 확인");
-		boolean 에피소드 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(에피소드);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO아티스트)));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO일시정지버튼)));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 		test.log(Status.INFO, "구독 버튼 확인");
-		boolean 구독버튼 = util.isElementPresent(By.xpath(xPath.팟캐스트구독버튼));
-		Assert.assertTrue(구독버튼);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독버튼)));
 		
 		test.log(Status.INFO, "재생시간 확인");
-		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
-		Assert.assertTrue(재생시간);
-		util.context("NATIVE_APP");
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
 		
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
+		util.context("NATIVE_APP");
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
 	}
 	
@@ -164,51 +152,39 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost("팟빵", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "팟캐스트 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최근에 들은"));
-		Assert.assertTrue(tts.contains("이어서"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근에 들은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이어서"));
 		
 		test.log(Status.INFO, "팟캐스트 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "최근들은 팟캐스트");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "최근들은 팟캐스트"));
 		
 		test.log(Status.INFO, "앨범아트 확인");
-		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(앨범아트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "방송명 확인");
-		boolean 방송명 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(방송명);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "에피소드 확인");
-		boolean 에피소드 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(에피소드);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO아티스트)));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO일시정지버튼)));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 		test.log(Status.INFO, "구독 버튼 확인");
-		boolean 구독버튼 = util.isElementPresent(By.xpath(xPath.팟캐스트구독버튼));
-		Assert.assertTrue(구독버튼);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독버튼)));
 		
 		test.log(Status.INFO, "재생시간 확인");
-		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
-		Assert.assertTrue(재생시간);
-		util.context("NATIVE_APP");
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
 		
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
+		util.context("NATIVE_APP");
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
 	}
 	
@@ -219,54 +195,42 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost("김어준 뉴스 공장 팟캐스트", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "김어준의 뉴스공장 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("TBS 김어준의 뉴스공장"));
-		Assert.assertTrue(tts.contains("들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBS 김어준의 뉴스공장"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "들려드릴게요"));
 		
 		test.log(Status.INFO, "팟캐스트 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "팟캐스트");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "팟캐스트"));
 		
 		test.log(Status.INFO, "앨범아트 확인");
-		boolean 앨범아트 = util.isElementPresent(By.xpath(xPath.FLO카드앨범아트));
-		Assert.assertTrue(앨범아트);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
 		
 		test.log(Status.INFO, "방송명 확인");
-		boolean 방송명 = util.isElementPresent(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(방송명);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO제목)));
 		
 		test.log(Status.INFO, "에피소드 확인");
-		boolean 에피소드 = util.isElementPresent(By.xpath(xPath.FLO아티스트));
-		Assert.assertTrue(에피소드);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO아티스트)));
 		
 		test.log(Status.INFO, "미디어컨트롤러 확인");
-		String 일시정지 = util.getText(By.xpath(xPath.FLO일시정지버튼));
-		Assert.assertEquals(일시정지, "재생/일시정지");
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO일시정지버튼)));
 		
-		boolean 이전 = util.isElementPresent(By.xpath(xPath.FLO이전버튼));
-		Assert.assertTrue(이전);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO이전버튼)));
 
-		boolean 다음 = util.isElementPresent(By.xpath(xPath.FLO다음버튼));
-		Assert.assertTrue(다음);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO다음버튼)));
 	
 		test.log(Status.INFO, "프로그래스 바 확인");
-		boolean progress = util.isElementPresent(By.xpath(xPath.FLO프로그레스바));
-		Assert.assertTrue(progress);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 		test.log(Status.INFO, "구독버튼 비활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 구독 = util.isElementPresent(By.xpath(xPath.팟캐스트구독off_web));
-		Assert.assertTrue(구독);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독off_web)));
 		util.context("NATIVE_APP");
 		
 		test.log(Status.INFO, "재생시간 확인");
-		boolean 재생시간 = util.isElementPresent(By.xpath(xPath.FLO재생곡전체시간));
-		Assert.assertTrue(재생시간);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
 		
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
 	}
 	
@@ -277,15 +241,13 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("팟캐스트 구독", ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("구독 리스트에 추가했습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에 추가했습니다."));
 		
 		test.log(Status.INFO, "구독 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 구독 = util.isElementPresent(By.xpath(xPath.팟캐스트구독on_web));
-		Assert.assertTrue(구독);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독on_web)));
 		util.context("NATIVE_APP");
 		
 	}
@@ -297,15 +259,13 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("팟캐스트 삭제해줘", ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("구독 리스트에서 삭제 했습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에서 삭제 했습니다."));
 		
 		test.log(Status.INFO, "구독 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 구독 = util.isElementPresent(By.xpath(xPath.팟캐스트구독off_web));
-		Assert.assertTrue(구독);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독off_web)));
 		util.context("NATIVE_APP");
 		
 	}
@@ -325,8 +285,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("1분 뒤에 팟캐스트 꺼줘", ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "종료예약 미지원 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
 
 	}
 	
@@ -337,8 +296,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("오후 11시 59분에 팟캐스트 꺼줘", ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "종료예약 미지원 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
 		
 	}
 	
@@ -349,13 +307,11 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost("팟빵에서 이진우의 손에잡히는 경제", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "이진우의 손에잡히는 경제 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("이진우의 손에 잡히는 경제"));
-		Assert.assertTrue(tts.contains("들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이진우의 손에 잡히는 경제"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "들려드릴게요."));
 		
 		test.log(Status.INFO, "방송명 확인");
-		String 방송명 = util.getText(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(방송명.contains("이진우의 손에 잡히는 경제"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO제목), "이진우의 손에 잡히는 경제"));
 		
 	}
 	
@@ -366,13 +322,11 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost("팟빵에서 차이나는 클라스 재생", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "차이나는 클라스 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("차이나는 클라스"));
-		Assert.assertTrue(tts.contains("들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "차이나는 클라스"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "들려드릴게요."));
 		
 		test.log(Status.INFO, "방송명 확인");
-		String 방송명 = util.getText(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(방송명.contains("차이나는 클라스"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO제목), "차이나는 클라스"));
 		
 	}
 	
@@ -383,17 +337,14 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost("팟빵에서 김어준의 뉴스공장 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "팟캐스트 타이틀 확인");
-		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLOtxt, "팟캐스트");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "팟캐스트"));
 		
 		test.log(Status.INFO, "팟빵에서 김어준의 뉴스공장 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("김어준의 뉴스공장"));
-		Assert.assertTrue(tts.contains("들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "김어준의 뉴스공장"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "들려드릴게요."));
 		
 		test.log(Status.INFO, "방송명 확인");
-		String 방송명 = util.getText(By.xpath(xPath.FLO제목));
-		Assert.assertTrue(방송명.contains("뉴스공장"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO제목), "뉴스공장"));
 		
 	}
 	
@@ -407,8 +358,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.재생버튼_web));
-		Assert.assertTrue(재생버튼);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 		
 	}
 	
@@ -422,8 +372,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.일시정지버튼_web));
-		Assert.assertTrue(재생버튼);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 		
 	}
 	
@@ -437,8 +386,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.재생버튼_web));
-		Assert.assertTrue(재생버튼);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 		
 	}
 	
@@ -449,16 +397,14 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("재생", ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "김어준의 뉴스공장 재생 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("최근에 들은"));
-		Assert.assertTrue(tts.contains("TBS 김어준의 뉴스공장"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근에 들은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBS 김어준의 뉴스공장"));
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.일시정지버튼_web));
-		Assert.assertTrue(재생버튼);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 		
 	}
 	
@@ -470,15 +416,13 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("구독 해줘", ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("구독 리스트에 추가했습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에 추가했습니다."));
 		
 		test.log(Status.INFO, "구독 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 구독 = util.isElementPresent(By.xpath(xPath.팟캐스트구독on_web));
-		Assert.assertTrue(구독);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독on_web)));
 		util.context("NATIVE_APP");
 		
 	}
@@ -491,15 +435,13 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("구독 해제", ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("구독 리스트에서 삭제 했습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에서 삭제 했습니다."));
 		
 		test.log(Status.INFO, "구독 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
-		boolean 구독 = util.isElementPresent(By.xpath(xPath.팟캐스트구독off_web));
-		Assert.assertTrue(구독);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독off_web)));
 		util.context("NATIVE_APP");
 		
 	}
@@ -513,14 +455,10 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "팟캐스트카드 종료되고 메인화면 확인");
-		boolean temperature = util.isElementPresent(By.id("temperature"));
-		Assert.assertTrue(temperature);
-		boolean temperature_format = util.isElementPresent(By.id("temperature_format"));
-		Assert.assertTrue(temperature_format);
-		boolean location = util.isElementPresent(By.id("location"));
-		Assert.assertTrue(location);
-		boolean weatherImageView = util.isElementPresent(By.id("weatherImageView"));
-		Assert.assertTrue(weatherImageView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature_format")));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("location")));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("weatherImageView")));
 		
 		test.log(Status.INFO, "W, 팟빵에서 두시탈출 컬투쇼 틀어줘 - 발화");
 		util.SWFsendPost("팟빵에서 두시탈출 컬투쇼 틀어줘", ServerName, AccessToken);
@@ -675,14 +613,10 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "음악카드 종료되고 메인화면 확인");
-		boolean temperature = util.isElementPresent(By.id("temperature"));
-		Assert.assertTrue(temperature);
-		boolean temperature_format = util.isElementPresent(By.id("temperature_format"));
-		Assert.assertTrue(temperature_format);
-		boolean location = util.isElementPresent(By.id("location"));
-		Assert.assertTrue(location);
-		boolean weatherImageView = util.isElementPresent(By.id("weatherImageView"));
-		Assert.assertTrue(weatherImageView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature_format")));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("location")));
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("weatherImageView")));
 
 	}
 
