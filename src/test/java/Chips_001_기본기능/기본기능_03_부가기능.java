@@ -112,8 +112,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		util.SWFsendPost("FLO에서 Daft Punk 노래 들려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미디어 실행 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(util.dataCheck_Contains(tts, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
 		boolean closeSnackbar = util.isElementPresent(By.id("closeSnackbar"));
@@ -124,8 +123,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		}
         
 		test.log(Status.INFO, "FLO 카드 노출 확인"); 
-		String FLO = util.getText(By.xpath(xPath.FLO카드타이틀));
-		Assert.assertEquals(FLO, "FLO");
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "FLO"));
 		
 		Thread.sleep(3000);
 		test.log(Status.INFO,  "미디어 재생 중 W, 날씨 알려줘 - 발화");
@@ -133,16 +131,14 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		Thread.sleep(1000);
 		
 		test.log(Status.INFO, "날씨 카드 노출 확인"); 
-		String 날씨 = util.getText(By.xpath(xPath.날씨카드타이틀));
-		Assert.assertTrue(날씨.contains("날씨"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨카드타이틀), "날씨"));
 		
 		test.log(Status.INFO, "첫번쨰 FLO카드의 미디어바 pause 확인"); 
 		util.fastSwipe(131, 850, 960, 850);
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		System.out.println(util.allWindwosIndexCount());
 		util.switchToWindwosIndex(1);
-		boolean 재생버튼 = util.isElementPresent(By.xpath(xPath.재생버튼_web));
-		Assert.assertTrue(재생버튼);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 		
 		test.log(Status.INFO, "두번째 날씨카드의 이동 후 닫기"); 
 		util.fastSwipe(960, 850, 131, 850);
@@ -155,8 +151,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		System.out.println(util.allWindwosIndexCount());
 		util.switchToWindwosIndex(1);
-		boolean 재생중확인 = util.isElementPresent(By.xpath(xPath.일시정지버튼_web));
-		Assert.assertTrue(재생중확인);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 		
 		
 	}

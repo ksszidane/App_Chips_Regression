@@ -74,32 +74,25 @@ public class 기본기능_02_홈화면최초진입 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "CHIPS 로고/설정 노출 확인"); 
 		Thread.sleep(2000);
-		boolean commonAppBarLayout = util.isElementPresent(By.id("commonAppBarLayout"));
-		Assert.assertTrue(commonAppBarLayout);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("commonAppBarLayout")));
 		
 		test.log(Status.INFO, "현재 기온 노출 확인"); 
-		boolean temperature = util.isElementPresent(By.id("temperature"));
-		Assert.assertTrue(temperature);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
 		
 		test.log(Status.INFO, "현재 위치 노출 확인"); 
-		boolean location = util.isElementPresent(By.id("location"));
-		Assert.assertTrue(location);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("location")));
 		
 		test.log(Status.INFO, "날씨별 캐릭터 노출 확인"); 
-		boolean weatherImageView = util.isElementPresent(By.id("weatherImageView"));
-		Assert.assertTrue(weatherImageView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("weatherImageView")));
 		
 		test.log(Status.INFO, "CHIPS 예문 노출 확인"); 
-		boolean chipListView = util.isElementPresent(By.id("chipListView"));
-		Assert.assertTrue(chipListView);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 		
 		test.log(Status.INFO, "호출어 안내 코치 마크 노출 확인"); 
-		boolean coach_mark = util.isElementPresent(By.id("coach_mark"));
-		Assert.assertTrue(coach_mark);
+		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("coach_mark")));
 		
 		test.log(Status.INFO, "호출어 안내 코치 마크 텍스트 확인 확인");
-		String 코치마크문구 = util.getText(By.xpath(xPath.코치마크문구));
-		Assert.assertTrue(코치마크문구.contains("‘아리아’라고 불러보세요!"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "‘아리아’라고 불러보세요!"));
 	}
 
 }
