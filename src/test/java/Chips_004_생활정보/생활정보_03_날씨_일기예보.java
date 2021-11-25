@@ -353,6 +353,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 내일모레 날씨 - 발화");
 		util.SWFsendPost("내일모레 날씨", ServerName, AccessToken);
+		util.SWFsendPost("내일모레 날씨", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -716,6 +717,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 제주도 날씨 알려줘 - 발화 ");
 		util.SWFsendPost("제주도 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("제주도 날씨 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -768,6 +770,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	public void TC_0734_Chips_날씨_파주시야동동날씨_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 파주시 야동동 날씨 - 발화 ");
+		util.SWFsendPost("파주시 야동동 날씨", ServerName, AccessToken);
 		util.SWFsendPost("파주시 야동동 날씨", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
