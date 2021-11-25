@@ -70,7 +70,9 @@
 			<class name="Chips_008_CarLife.CarLife_01_스타벅스" />
 			-->
 		
-			<class name="Chips_004_생활정보.생활정보_02_감성대화" />
+			<class name="Chips_004_생활정보.생활정보_03_날씨_일기예보" />
+			<class name="Chips_004_생활정보.생활정보_14_뉴스" />
+			<class name="Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러" />
 		
 
 		</classes>
