@@ -278,6 +278,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 다음 - 발화");
 		util.SWFsendPost_playStatus("다음", ServerName, AccessToken, "news");
+		util.SWFsendPost_playStatus("다음", ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "다음 기사제목 저장");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -300,6 +301,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		String 현재기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
 		
 		test.log(Status.INFO, "W, 이전 - 발화");
+		util.SWFsendPost_playStatus("이전", ServerName, AccessToken, "news");
 		util.SWFsendPost_playStatus("이전", ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "이전 기사제목 저장");

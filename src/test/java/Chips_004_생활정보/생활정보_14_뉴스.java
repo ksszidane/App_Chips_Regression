@@ -568,7 +568,6 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0823")
 	public void TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W,  컴퓨터 뉴스 틀어줘 - 발화");
 		util.SWFsendPost("컴퓨터 뉴스 틀어줘", ServerName, AccessToken);
 		

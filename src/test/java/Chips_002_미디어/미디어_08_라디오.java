@@ -440,11 +440,6 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0353")
 	public void TC_0353_Chips_라디오_일시정지상태_채널재생_확인(Method method) throws Exception {
 		
-		test.log(Status.INFO, "play카드 닫기"); 
-	    util.view_close_btn_check();
-	    Thread.sleep(5000); 
-		
-		util.context("NATIVE_APP");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS파워FM 라디오 들려줘"));
 		Thread.sleep(3000);
 		
@@ -454,7 +449,6 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 일시정지 - 발화");
 		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "radio");
-		
 		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "radio");
 		Thread.sleep(5000);
 		

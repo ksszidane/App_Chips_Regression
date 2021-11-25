@@ -18,21 +18,15 @@
     <parameter name="TestPlace" value="out"/>
     <parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
     <classes>
-      <class name="Chips_002_미디어.미디어_09_라디오_채널확인">
+      <class name="Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러">
         <methods>
           <include name="setupClass"/>
-          <include name="TC_0379_Chips_라디오_지원채널_극동방송_확인" invocation-numbers="0"/>
-          <include name="TC_0383_Chips_라디오_지원채널_CBS표준FM_확인" invocation-numbers="0"/>
           <include name="tearDownClass"/>
-          <include name="TC_0384_Chips_라디오_지원채널_CBS표준FM_확인" invocation-numbers="0"/>
           <include name="BeforeMethod"/>
-          <include name="TC_0393_Chips_라디오_지원채널_KBS한민족방송_확인" invocation-numbers="0"/>
-          <include name="TC_0363_Chips_라디오_지원채널_교통방송FM_확인" invocation-numbers="0"/>
-          <include name="TC_0362_Chips_라디오_지원채널_SBS파워FM_확인" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-          <include name="TC_0378_Chips_라디오_지원채널_아리랑FM_확인" invocation-numbers="0"/>
+          <include name="TC_0853_Chips_뉴스_컨트롤러_다음_확인" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Chips_002_미디어.미디어_09_라디오_채널확인 -->
+      </class> <!-- Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->
