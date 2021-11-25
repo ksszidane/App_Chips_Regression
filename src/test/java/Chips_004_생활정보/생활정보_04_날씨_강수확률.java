@@ -178,6 +178,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 이번 주 비 와? - 발화");
 		util.SWFsendPost("이번 주 비 와?", ServerName, AccessToken);
@@ -197,6 +198,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 이번 주 비 와? - 발화");
 		util.SWFsendPost("이번 주 비 와?", ServerName, AccessToken);
@@ -248,6 +250,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 다음주 비 와? - 발화");
 		util.SWFsendPost("다음주 비 와?", ServerName, AccessToken);
@@ -267,6 +270,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 	    test.log(Status.INFO, "W, 다음주 비 와? - 발화");
 		util.SWFsendPost("다음주 비 와?", ServerName, AccessToken);

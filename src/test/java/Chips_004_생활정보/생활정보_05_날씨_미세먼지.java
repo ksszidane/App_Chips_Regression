@@ -128,6 +128,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 	    test.log(Status.INFO, "W, 미세먼지 - 발화");
 		util.SWFsendPost("미세먼지", ServerName, AccessToken);
@@ -144,6 +145,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 	    test.log(Status.INFO, "W, 미세먼지 - 발화");
 		util.SWFsendPost("미세먼지", ServerName, AccessToken);
@@ -160,6 +162,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 미세먼지 - 발화");
 		util.SWFsendPost("미세먼지", ServerName, AccessToken);
@@ -176,6 +179,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 미세먼지 - 발화");
 		util.SWFsendPost("미세먼지", ServerName, AccessToken);
@@ -192,6 +196,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 미세먼지 - 발화");
 		util.SWFsendPost("미세먼지", ServerName, AccessToken);
@@ -230,6 +235,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 내일 미세먼지 상태 알려줘 - 발화");
 		util.SWFsendPost("내일 미세먼지 상태 알려줘", ServerName, AccessToken);
@@ -246,6 +252,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 내일 미세먼지 상태 알려줘 - 발화");
 		util.SWFsendPost("내일 미세먼지 상태 알려줘", ServerName, AccessToken);
@@ -262,7 +269,8 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
-		
+	    Thread.sleep(5000);
+	    
 		test.log(Status.INFO, "W, 내일 미세먼지 상태 알려줘 - 발화");
 		util.SWFsendPost("내일 미세먼지 상태 알려줘", ServerName, AccessToken);
 		
@@ -275,6 +283,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 내일 미세먼지 상태 알려줘 - 발화");
 		util.SWFsendPost("내일 미세먼지 상태 알려줘", ServerName, AccessToken);

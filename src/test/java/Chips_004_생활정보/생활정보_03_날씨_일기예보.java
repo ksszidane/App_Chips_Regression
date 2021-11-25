@@ -137,7 +137,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
-		
+	    Thread.sleep(5000);
+	    
 		test.log(Status.INFO, "W, 날씨 - 발화");
 		util.SWFsendPost("날씨", ServerName, AccessToken);
 		
@@ -197,6 +198,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 일기예보 - 발화");
 		util.SWFsendPost("일기예보", ServerName, AccessToken);
@@ -255,6 +257,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 내일 날씨 - 발화");
 		util.SWFsendPost("내일 날씨", ServerName, AccessToken);
@@ -312,6 +315,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 내일 일기예보 - 발화");
 		util.SWFsendPost("내일 일기예보", ServerName, AccessToken);
@@ -370,6 +374,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 내일모레 날씨 - 발화");
 		util.SWFsendPost("내일모레 날씨", ServerName, AccessToken);
@@ -421,6 +426,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 이번 주 날씨 알려줘 - 발화");
 		util.SWFsendPost("이번 주 날씨 알려줘", ServerName, AccessToken);
@@ -440,6 +446,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 이번 주 날씨 알려줘 - 발화");
 		util.SWFsendPost("이번 주 날씨 알려줘", ServerName, AccessToken);
@@ -509,6 +516,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 다음 주 날씨 알려줘 - 발화");
 		util.SWFsendPost("다음 주 날씨 알려줘", ServerName, AccessToken);
@@ -623,6 +631,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, [오늘]요일 날씨 알려줘 - 발화  변수 : " + 오늘요일);
 		util.SWFsendPost(오늘요일+"요일 날씨 알려줘", ServerName, AccessToken);
@@ -685,6 +694,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 이번주 [오늘]요일 날씨 알려줘 - 발화  변수 : " + 오늘요일);
 		util.SWFsendPost("이번주 "+오늘요일+"요일 날씨 알려줘", ServerName, AccessToken);
@@ -735,12 +745,13 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		test.log(Status.INFO, "현재날씨 아이콘 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.날씨아이콘_web)));
 		
-		test.log(Status.INFO, "현재날씨 아이콘 확인");
+		test.log(Status.INFO, "현재온도확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.현재온도_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 제주도 날씨 알려줘 - 발화 ");
 		util.SWFsendPost("제주도 날씨 알려줘", ServerName, AccessToken);
@@ -789,12 +800,13 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		test.log(Status.INFO, "현재날씨 아이콘 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.날씨아이콘_web)));
 		
-		test.log(Status.INFO, "현재날씨 아이콘 확인");
+		test.log(Status.INFO, "현재온도 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.현재온도_web)));
 		
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
+	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 파주시 야동동 날씨 - 발화 ");
 		util.SWFsendPost("파주시 야동동 날씨", ServerName, AccessToken);
