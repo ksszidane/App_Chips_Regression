@@ -570,6 +570,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W,  컴퓨터 뉴스 틀어줘 - 발화");
 		util.SWFsendPost("컴퓨터 뉴스 틀어줘", ServerName, AccessToken);
+		util.SWFsendPost("컴퓨터 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "컴퓨터 뉴스 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "컴퓨터 관련, 최근 뉴스를 들려드릴게요."));
@@ -753,6 +754,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	public void TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 지난 주 SK텔레콤 뉴스 틀어줘 - 발화");
+		util.SWFsendPost("지난 주 SK텔레콤 뉴스 틀어줘", ServerName, AccessToken);
 		util.SWFsendPost("지난 주 SK텔레콤 뉴스 틀어줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
