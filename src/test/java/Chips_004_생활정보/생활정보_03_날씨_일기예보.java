@@ -727,7 +727,6 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 제주도 날씨 알려줘 - 발화 ");
 		util.SWFsendPost("제주도 날씨 알려줘", ServerName, AccessToken);
-		util.SWFsendPost("제주도 날씨 알려줘", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
