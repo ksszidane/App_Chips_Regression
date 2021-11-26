@@ -136,8 +136,8 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "반복 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.한곡반복_web)));
 		util.context("NATIVE_APP");
 		
@@ -186,8 +186,8 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "반복 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.한곡반복_web)));
 		util.context("NATIVE_APP");
 		
@@ -212,8 +212,8 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 
 	}
@@ -228,8 +228,8 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 
 	}
@@ -246,8 +246,8 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "좋아요 버튼 비활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.좋아요Off_web)));
 
 	}

@@ -222,8 +222,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "구독버튼 비활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독off_web)));
 		util.context("NATIVE_APP");
 		
@@ -245,8 +245,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "구독 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독on_web)));
 		util.context("NATIVE_APP");
 		
@@ -263,8 +263,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "구독 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독off_web)));
 		util.context("NATIVE_APP");
 		
@@ -356,8 +356,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 		
 	}
@@ -370,8 +370,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 		
 	}
@@ -384,8 +384,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 		
 	}
@@ -402,8 +402,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 		
 	}
@@ -420,8 +420,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "구독 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독on_web)));
 		util.context("NATIVE_APP");
 		
@@ -439,8 +439,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "구독 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독off_web)));
 		util.context("NATIVE_APP");
 		
@@ -511,8 +511,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "현재 에피소드 저장");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 현재에피소드 = util.getText(By.xpath(xPath.팟빵에피소트명_web));
 		System.out.println(현재에피소드);
 		
@@ -535,8 +535,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "현재 에피소드 저장");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 현재에피소드 = util.getText(By.xpath(xPath.팟빵에피소트명_web));
 		System.out.println(현재에피소드);
 		
@@ -552,8 +552,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "변경된 에피소드 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 변경에피소드 = util.getText(By.xpath(xPath.팟빵에피소트명_web));
 		System.out.println(변경에피소드);
 		Assert.assertFalse(현재에피소드.contains(변경에피소드));
@@ -565,8 +565,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "현재 재생시간 저장");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 현재재생시간 = util.getText(By.xpath(xPath.팟캐스트재생시간_web));
 		
 		test.log(Status.INFO, "W, 2분 앞으로 이동 - 발화");
@@ -575,8 +575,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "변경된 재생시간 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 변경재생시간 = util.getText(By.xpath(xPath.팟캐스트재생시간_web));
 		Assert.assertFalse(현재재생시간.contains(변경재생시간));
 
@@ -587,8 +587,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "현재 재생시간 저장");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 현재재생시간 = util.getText(By.xpath(xPath.팟캐스트재생시간_web));
 		
 		test.log(Status.INFO, "W, 1분 뒤로 이동 - 발화");
@@ -597,8 +597,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "변경된 재생시간 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 변경재생시간 = util.getText(By.xpath(xPath.팟캐스트재생시간_web));
 		Assert.assertFalse(현재재생시간.contains(변경재생시간));
 

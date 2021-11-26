@@ -168,8 +168,8 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), "주간 날씨"));
 		
 		test.log(Status.INFO, "날씨위치정보 확인");
@@ -185,8 +185,8 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "주간날씨 리스트 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨영역_web)));
 	
 		test.log(Status.INFO, "첫번쨰 날짜 기준 금일 요일 확인");
@@ -205,8 +205,8 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "마지막 리스트 날짜 기준 금일 요일 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.주간날씨리스트_7st요일_web), util.getDayOfWeek(+6)));
 		
 		test.log(Status.INFO, "모레날씨 최저온도 확인");
@@ -237,8 +237,8 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), "주간 날씨"));
 		
 		test.log(Status.INFO, "날씨위치정보 확인");
@@ -257,8 +257,8 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "첫번쨰 날짜 기준 금일 요일 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.주간날씨리스트_1st요일_web), "월"));
 		
 		test.log(Status.INFO, "모레날씨 최저온도 확인");
@@ -277,8 +277,8 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "모레날씨 아이콘 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨리스트_3st아이콘_web)));
 		
 		test.log(Status.INFO, "다음주 날씨 TTS 확인");

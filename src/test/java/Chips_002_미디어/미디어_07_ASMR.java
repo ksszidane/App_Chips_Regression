@@ -169,14 +169,14 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		
 		test.log(Status.INFO, "과자먹는 소리 이미지커버 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.이미지커버src), "src", "30_thumbnail.png"));
 		
 		test.log(Status.INFO, "한곡 반복 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.한곡반복_web)));
 		util.context("NATIVE_APP");
 		
@@ -201,8 +201,8 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		
 		test.log(Status.INFO, "빗소리 이미지커버 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.이미지커버src), "src", "01_thumbnail.png"));
 		
 	}
@@ -337,8 +337,8 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 
 	}
@@ -353,8 +353,8 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 
 	}
@@ -369,8 +369,8 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 
 	}
@@ -487,8 +487,8 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생On_web)));
 
 	}
@@ -539,8 +539,8 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생Off_web)));
 
 	}

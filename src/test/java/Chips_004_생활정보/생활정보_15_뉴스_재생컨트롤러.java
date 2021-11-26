@@ -116,8 +116,8 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
@@ -146,8 +146,8 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 	}
 	
@@ -162,8 +162,8 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이어의 재생 버튼 일시정지으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 	}
 	
@@ -176,8 +176,8 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 
 	}
@@ -191,8 +191,8 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 
 	}
@@ -225,8 +225,8 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "현재 기사제목 저장");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 현재기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
 		
 		test.log(Status.INFO, "W, 다음 뉴스 - 발화");
@@ -234,8 +234,8 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "다음 기사제목 저장");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 다음기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
 		
 		test.log(Status.INFO, "다음기사 이동 확인");
@@ -249,8 +249,8 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "현재 기사제목 저장");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 현재기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
 		
 		test.log(Status.INFO, "W, 이전 뉴스 - 발화");
@@ -258,8 +258,8 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "이전 기사제목 저장");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 다음기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
 		
 		test.log(Status.INFO, "이전기사 이동 확인");
@@ -272,8 +272,8 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "현재 기사제목 저장");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 현재기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
 		
 		test.log(Status.INFO, "W, 다음 - 발화");
@@ -282,8 +282,8 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "다음 기사제목 저장");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 다음기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
 		
 		test.log(Status.INFO, "다음기사 이동 확인");
@@ -296,8 +296,8 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "현재 기사제목 저장");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 현재기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
 		
 		test.log(Status.INFO, "W, 이전 - 발화");
@@ -306,8 +306,8 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "이전 기사제목 저장");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 다음기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
 		
 		test.log(Status.INFO, "이전기사 이동 확인");

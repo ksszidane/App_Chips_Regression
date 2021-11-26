@@ -378,8 +378,8 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.좋아요On_web)));
 		util.context("NATIVE_APP");
 		
@@ -501,8 +501,8 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생On_web)));
 		
 		
@@ -520,8 +520,8 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생Off_web)));
 		util.context("NATIVE_APP");
 		

@@ -117,8 +117,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 오늘날짜 = util.getKoreaDate();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), 오늘날짜 + " 날씨"));
 		
@@ -144,8 +144,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.최고온도_web)));
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
@@ -178,8 +178,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 오늘날짜 = util.getKoreaDate();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), 오늘날짜 + " 날씨"));
 		
@@ -205,8 +205,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.최고온도_web)));
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
@@ -239,8 +239,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 내일날짜 = util.getChangePreviousDate(1);
 		System.out.println(내일날짜);
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), 내일날짜 + " 날씨"));
@@ -264,8 +264,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "내일날씨 최고온도 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.최고온도_web)));
 		
 		test.log(Status.INFO, "내일날씨 최고온도 확인");
@@ -298,8 +298,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 내일날짜 = util.getChangePreviousDate(+1);
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), 내일날짜 + " 날씨"));
 		
@@ -322,8 +322,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "내일날씨 최고온도 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.최고온도_web)));
 		
 		test.log(Status.INFO, "내일날씨 최고온도 확인");
@@ -361,8 +361,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), 모레날짜 + " 날씨"));
 		
 		test.log(Status.INFO, "날씨위치정보 확인");
@@ -381,8 +381,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "첫번쨰 날짜 기준 금일 요일 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.주간날씨리스트_1st요일_web), util.getDayOfWeek(0)));
 		
 		test.log(Status.INFO, "두번쨰 날짜 기준 내일 마킹확인");
@@ -413,8 +413,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), "주간 날씨"));
 		
 		test.log(Status.INFO, "날씨위치정보 확인");
@@ -433,8 +433,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "첫번쨰 날짜 기준 금일 요일 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.주간날씨리스트_1st요일_web), util.getDayOfWeek(0)));
 		
 		test.log(Status.INFO, "두번쨰 날짜 기준 내일 마킹확인");
@@ -453,8 +453,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "모레날씨 최저온도 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨리스트_3st최저기온_web)));
 		
 		test.log(Status.INFO, "모레날씨 최고온도 확인");
@@ -483,8 +483,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), "주간 날씨"));
 		
 		test.log(Status.INFO, "날씨위치정보 확인");
@@ -503,8 +503,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "첫번쨰 날짜 기준 금일 요일 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.주간날씨리스트_1st요일_web), "월"));
 		
 		test.log(Status.INFO, "모레날씨 최저온도 확인");
@@ -523,8 +523,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "모레날씨 아이콘 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨리스트_3st아이콘_web)));
 		
 		test.log(Status.INFO, "다음주 날씨 TTS 확인");
@@ -611,8 +611,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 오늘날짜 = util.getKoreaDate();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), 오늘날짜 + " 날씨"));
 		
@@ -638,8 +638,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.최고온도_web)));
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
@@ -674,8 +674,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 오늘날짜 = util.getKoreaDate();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), 오늘날짜 + " 날씨"));
 		
@@ -701,8 +701,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.최고온도_web)));
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
@@ -730,8 +730,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 오늘날짜 = util.getKoreaDate();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), 오늘날짜 + " 날씨"));
 		
@@ -757,8 +757,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.최고온도_web)));
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
@@ -785,8 +785,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		String 오늘날짜 = util.getKoreaDate();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), 오늘날짜 + " 날씨"));
 		
@@ -812,8 +812,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.최고온도_web)));
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");

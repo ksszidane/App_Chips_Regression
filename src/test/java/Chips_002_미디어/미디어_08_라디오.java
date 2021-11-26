@@ -161,8 +161,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_일시정지_web)));
 		
 		test.log(Status.INFO, "W, 즐겨찾기 해줘 - 발화");
@@ -232,8 +232,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.라디오1st_일시정지_web)));
 
 	}
@@ -252,8 +252,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "이전 라디오 재생중 버튼 활성화");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_일시정지_web)));
 
 	}
@@ -300,8 +300,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화 - 라디오 리스트 두번째 활성화 ");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.라디오2st_일시정지_web)));
 
 	}
@@ -349,8 +349,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화 - 라디오 리스트 두번째 활성화 ");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.라디오2st_일시정지_web)));
 		
 		test.log(Status.INFO, "W, 다음 라디오 채널 - 발화");
@@ -364,8 +364,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화 - 라디오 리스트 첫번째 활성화 ");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.라디오3st_일시정지_web)));
 
 	}
@@ -454,8 +454,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 		
 		test.log(Status.INFO, "W, 라디오 틀어줘 - 발화");
@@ -464,8 +464,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이 중 일시정지 버튼 활성화 확인 ");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_일시정지_web)));
 		
 	}
@@ -488,8 +488,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 		
 		test.log(Status.INFO, "W, 이거 무슨 채널이야? - 발화");
@@ -500,8 +500,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "일시정지 유지 확인 ");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 		
 	}
