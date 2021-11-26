@@ -18,15 +18,16 @@
     <parameter name="TestPlace" value="out"/>
     <parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
     <classes>
-      <class name="Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러">
+      <class name="Chips_004_생활정보.생활정보_14_뉴스">
         <methods>
           <include name="setupClass"/>
           <include name="tearDownClass"/>
+          <include name="TC_0826_Chips_뉴스_지난주뉴스_확인" invocation-numbers="0"/>
           <include name="BeforeMethod"/>
           <include name="AfterMethod"/>
-          <include name="TC_0853_Chips_뉴스_컨트롤러_다음_확인" invocation-numbers="0"/>
+          <include name="TC_0827_Chips_뉴스_지난주연예뉴스_확인" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러 -->
+      </class> <!-- Chips_004_생활정보.생활정보_14_뉴스 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->

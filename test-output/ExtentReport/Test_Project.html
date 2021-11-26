@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test_Project</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>45/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>147/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 25 02:13:31 KST 2021</td>
+<td>Started on:</td><td>Thu Nov 25 21:24:31 KST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>951 seconds (951765 ms)</td>
+<tr><td>Total time:</td><td>2883 seconds (2883208 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,25 +75,65 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0853_Chips_뉴스_컨트롤러_다음_확인()'><b>TC_0853_Chips_뉴스_컨트롤러_다음_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0853<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0853_Chips_뉴스_컨트롤러_다음_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td><div><pre>junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertFalse(Assert.java:34)
-	at junit.framework.Assert.assertFalse(Assert.java:41)
-	at Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0853_Chips_뉴스_컨트롤러_다음_확인(생활정보_15_뉴스_재생컨트롤러.java:290)
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0826_Chips_뉴스_지난주뉴스_확인()'><b>TC_0826_Chips_뉴스_지난주뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0826<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0826_Chips_뉴스_지난주뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at unit.Utilities.findElementLocated(Utilities.java:167)
+	at unit.Utilities.getText(Utilities.java:1382)
+	at unit.Utilities.getText_Assertfunc(Utilities.java:4427)
+	at Chips_004_생활정보.생활정보_14_뉴스.TC_0826_Chips_뉴스_지난주뉴스_확인(생활정보_14_뉴스.java:659)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace366433951", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace366433951'><pre>junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertFalse(Assert.java:34)
-	at junit.framework.Assert.assertFalse(Assert.java:41)
-	at Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0853_Chips_뉴스_컨트롤러_다음_확인(생활정보_15_뉴스_재생컨트롤러.java:290)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KEI&apos;, ip: &apos;172.27.24.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: unit.Utilities
+Capabilities {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., databaseEnabled: false, desired: {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., deviceName: Android, extractChromeAndroidPackageFromContextName: true, focused: true, newCommandTimeout: 600000, platformName: android, recreateChromeDriverSessions: false, showChromedriverLog: true, udid: R33M4000CY}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N976N, deviceName: R33M4000CY, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: R33M4000CY, extractChromeAndroidPackageFromContextName: true, focused: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600000, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, recreateChromeDriverSessions: false, showChromedriverLog: true, statBarHeight: 85, takesScreenshot: true, udid: R33M4000CY, viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 4696c291-cdef-4ef1-a470-03f8b24de47e
+*** Element info: {Using=xpath, value=//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at unit.Utilities.execute(Utilities.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at unit.Utilities.findElement(Utilities.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at unit.Utilities.findElementByXPath(Utilities.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at unit.Utilities.findElement(Utilities.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1011262868", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1011262868'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at unit.Utilities.findElementLocated(Utilities.java:167)
+	at unit.Utilities.getText(Utilities.java:1382)
+	at unit.Utilities.getText_Assertfunc(Utilities.java:4427)
+	at Chips_004_생활정보.생활정보_14_뉴스.TC_0826_Chips_뉴스_지난주뉴스_확인(생활정보_14_뉴스.java:659)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -117,9 +157,179 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KEI&apos;, ip: &apos;172.27.24.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: unit.Utilities
+Capabilities {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., databaseEnabled: false, desired: {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., deviceName: Android, extractChromeAndroidPackageFromContextName: true, focused: true, newCommandTimeout: 600000, platformName: android, recreateChromeDriverSessions: false, showChromedriverLog: true, udid: R33M4000CY}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N976N, deviceName: R33M4000CY, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: R33M4000CY, extractChromeAndroidPackageFromContextName: true, focused: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600000, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, recreateChromeDriverSessions: false, showChromedriverLog: true, statBarHeight: 85, takesScreenshot: true, udid: R33M4000CY, viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 4696c291-cdef-4ef1-a470-03f8b24de47e
+*** Element info: {Using=xpath, value=//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View}
+	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at unit.Utilities.execute(Utilities.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at unit.Utilities.findElement(Utilities.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at unit.Utilities.findElementByXPath(Utilities.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at unit.Utilities.findElement(Utilities.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
 </pre></div></td>
-<td>4</td>
-<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@6cc4cdb9</td></tr>
+<td>25</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0827_Chips_뉴스_지난주연예뉴스_확인()'><b>TC_0827_Chips_뉴스_지난주연예뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0827<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0827_Chips_뉴스_지난주연예뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at unit.Utilities.findElementLocated(Utilities.java:167)
+	at unit.Utilities.getText(Utilities.java:1382)
+	at unit.Utilities.getText_Assertfunc(Utilities.java:4427)
+	at Chips_004_생활정보.생활정보_14_뉴스.TC_0827_Chips_뉴스_지난주연예뉴스_확인(생활정보_14_뉴스.java:695)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KEI&apos;, ip: &apos;172.27.24.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: unit.Utilities
+Capabilities {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., databaseEnabled: false, desired: {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., deviceName: Android, extractChromeAndroidPackageFromContextName: true, focused: true, newCommandTimeout: 600000, platformName: android, recreateChromeDriverSessions: false, showChromedriverLog: true, udid: R33M4000CY}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N976N, deviceName: R33M4000CY, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: R33M4000CY, extractChromeAndroidPackageFromContextName: true, focused: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600000, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, recreateChromeDriverSessions: false, showChromedriverLog: true, statBarHeight: 85, takesScreenshot: true, udid: R33M4000CY, viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 4696c291-cdef-4ef1-a470-03f8b24de47e
+*** Element info: {Using=xpath, value=//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at unit.Utilities.execute(Utilities.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at unit.Utilities.findElement(Utilities.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at unit.Utilities.findElementByXPath(Utilities.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at unit.Utilities.findElement(Utilities.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1140647072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1140647072'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at unit.Utilities.findElementLocated(Utilities.java:167)
+	at unit.Utilities.getText(Utilities.java:1382)
+	at unit.Utilities.getText_Assertfunc(Utilities.java:4427)
+	at Chips_004_생활정보.생활정보_14_뉴스.TC_0827_Chips_뉴스_지난주연예뉴스_확인(생활정보_14_뉴스.java:695)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-KEI&apos;, ip: &apos;172.27.24.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: unit.Utilities
+Capabilities {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., databaseEnabled: false, desired: {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., deviceName: Android, extractChromeAndroidPackageFromContextName: true, focused: true, newCommandTimeout: 600000, platformName: android, recreateChromeDriverSessions: false, showChromedriverLog: true, udid: R33M4000CY}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N976N, deviceName: R33M4000CY, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: R33M4000CY, extractChromeAndroidPackageFromContextName: true, focused: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600000, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, recreateChromeDriverSessions: false, showChromedriverLog: true, statBarHeight: 85, takesScreenshot: true, udid: R33M4000CY, viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 4696c291-cdef-4ef1-a470-03f8b24de47e
+*** Element info: {Using=xpath, value=//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View}
+	at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at unit.Utilities.execute(Utilities.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at unit.Utilities.findElement(Utilities.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at unit.Utilities.findElementByXPath(Utilities.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at unit.Utilities.findElement(Utilities.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+</pre></div></td>
+<td>37</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -131,228 +341,738 @@ function toggleAllBoxes() {
 <tr>
 <td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0812_Chips_뉴스_기본설정_CBS뉴스_확인()'><b>TC_0812_Chips_뉴스_기본설정_CBS뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0812<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0812_Chips_뉴스_기본설정_CBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>20</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0814_Chips_뉴스_CBS뉴스_확인()'><b>TC_0814_Chips_뉴스_CBS뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0814<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0814_Chips_뉴스_CBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>20</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0836_Chips_뉴스_그저께스포츠뉴스_확인()'><b>TC_0836_Chips_뉴스_그저께스포츠뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0836<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0836_Chips_뉴스_그저께스포츠뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>19</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0830_Chips_뉴스_지난달뉴스_확인()'><b>TC_0830_Chips_뉴스_지난달뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0830<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0830_Chips_뉴스_지난달뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>19</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0847_Chips_뉴스_컨트롤러_일시정지_확인()'><b>TC_0847_Chips_뉴스_컨트롤러_일시정지_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0847<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0847_Chips_뉴스_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>4</td>
-<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@6cc4cdb9</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0818_Chips_뉴스_스포츠특정뉴스_확인()'><b>TC_0818_Chips_뉴스_스포츠특정뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0818<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0818_Chips_뉴스_스포츠특정뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>19</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0844_Chips_뉴스_연예키워드뉴스재생_확인()'><b>TC_0844_Chips_뉴스_연예키워드뉴스재생_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0844<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0844_Chips_뉴스_연예키워드뉴스재생_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>23</td>
-<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@6cc4cdb9</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0826_Chips_뉴스_지난주뉴스_확인()'><b>TC_0826_Chips_뉴스_지난주뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0826<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0826_Chips_뉴스_지난주뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>20</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0849_Chips_뉴스_컨트롤러_좋아요해줘_확인()'><b>TC_0849_Chips_뉴스_컨트롤러_좋아요해줘_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0849<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0849_Chips_뉴스_컨트롤러_좋아요해줘_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>14</td>
-<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@6cc4cdb9</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0839_Chips_뉴스_미지원기간뉴스_모레_확인()'><b>TC_0839_Chips_뉴스_미지원기간뉴스_모레_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0839<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0839_Chips_뉴스_미지원기간뉴스_모레_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>20</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>64</td>
-<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@6cc4cdb9</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0845_Chips_뉴스_컨트롤러_일시정지_확인()'><b>TC_0845_Chips_뉴스_컨트롤러_일시정지_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0845<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0845_Chips_뉴스_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>4</td>
-<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@6cc4cdb9</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0815_1_Chips_뉴스_MBC뉴스_확인()'><b>TC_0815_1_Chips_뉴스_MBC뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0815_1<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0815_1_Chips_뉴스_MBC뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>28</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0850_Chips_뉴스_컨트롤러_좋아요취소_확인()'><b>TC_0850_Chips_뉴스_컨트롤러_좋아요취소_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0850<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0850_Chips_뉴스_컨트롤러_좋아요취소_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>14</td>
-<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@6cc4cdb9</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0815_2_Chips_뉴스_TBS뉴스_확인()'><b>TC_0815_2_Chips_뉴스_TBS뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0815_2<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0815_2_Chips_뉴스_TBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>20</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0851_Chips_뉴스_컨트롤러_다음뉴스_확인()'><b>TC_0851_Chips_뉴스_컨트롤러_다음뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0851<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0851_Chips_뉴스_컨트롤러_다음뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>3</td>
-<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@6cc4cdb9</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인()'><b>TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0821<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>28</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인()'><b>TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0822<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>50</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0819_Chips_뉴스_미지원채널_확인()'><b>TC_0819_Chips_뉴스_미지원채널_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0819<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0819_Chips_뉴스_미지원채널_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>14</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0838_Chips_뉴스_미지원기간뉴스_내일_확인()'><b>TC_0838_Chips_뉴스_미지원기간뉴스_내일_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0838<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0838_Chips_뉴스_미지원기간뉴스_내일_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>20</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0820_Chips_뉴스_미지원채널_확인()'><b>TC_0820_Chips_뉴스_미지원채널_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0820<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0820_Chips_뉴스_미지원채널_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>14</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0825_Chips_뉴스_키워드뉴스없음_확인()'><b>TC_0825_Chips_뉴스_키워드뉴스없음_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0825<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0825_Chips_뉴스_키워드뉴스없음_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>14</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
 <tr>
 <td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0852_Chips_뉴스_컨트롤러_이전뉴스_확인()'><b>TC_0852_Chips_뉴스_컨트롤러_이전뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0852<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0852_Chips_뉴스_컨트롤러_이전뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>3</td>
-<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@6cc4cdb9</td></tr>
+<td>6</td>
+<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@4b2c5e02</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0816_Chips_뉴스_오늘뉴스_확인()'><b>TC_0816_Chips_뉴스_오늘뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0816<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0816_Chips_뉴스_오늘뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_004_생활정보.생활정보_02_감성대화.TC_0712_Chips_감성대화_이벤트절기상황2_확인()'><b>TC_0712_Chips_감성대화_이벤트절기상황2_확인</b><br>Test class: Chips_004_생활정보.생활정보_02_감성대화<br>Test method: 칩스 리그레이션 TC : 실행_0712<br>Parameters: public void Chips_004_생활정보.생활정보_02_감성대화.TC_0712_Chips_감성대화_이벤트절기상황2_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>21</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0834_Chips_뉴스_어제뉴스_확인()'><b>TC_0834_Chips_뉴스_어제뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0834<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0834_Chips_뉴스_어제뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>20</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인()'><b>TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0829<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>22</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0854_Chips_뉴스_컨트롤러_이전_확인()'><b>TC_0854_Chips_뉴스_컨트롤러_이전_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0854<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0854_Chips_뉴스_컨트롤러_이전_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>3</td>
-<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@6cc4cdb9</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인()'><b>TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0815_2<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>19</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_02_감성대화@c667f46</td></tr>
 <tr>
 <td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0824_Chips_뉴스_NUGU토픽_확인()'><b>TC_0824_Chips_뉴스_NUGU토픽_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0824<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0824_Chips_뉴스_NUGU토픽_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>19</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0817_Chips_뉴스_연예특정뉴스_확인()'><b>TC_0817_Chips_뉴스_연예특정뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0817<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0817_Chips_뉴스_연예특정뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_004_생활정보.생활정보_08_날씨_습도.TC_0762_Chips_날씨_모레지역_습도지수_확인()'><b>TC_0762_Chips_날씨_모레지역_습도지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_08_날씨_습도<br>Test method: 칩스 리그레이션 TC : 실행_0762<br>Parameters: public void Chips_004_생활정보.생활정보_08_날씨_습도.TC_0762_Chips_날씨_모레지역_습도지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>22</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_08_날씨_습도@e25951c</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인()'><b>TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0823<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0838_Chips_뉴스_미지원기간뉴스_내일_확인()'><b>TC_0838_Chips_뉴스_미지원기간뉴스_내일_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0838<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0838_Chips_뉴스_미지원기간뉴스_내일_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>19</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
+<td>10</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0831_Chips_뉴스_지난달스포츠뉴스_확인()'><b>TC_0831_Chips_뉴스_지난달스포츠뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0831<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0831_Chips_뉴스_지난달스포츠뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0753_Chips_날씨_자외선지수부재_어제_확인()'><b>TC_0753_Chips_날씨_자외선지수부재_어제_확인</b><br>Test class: Chips_004_생활정보.생활정보_07_날씨_자외선지수<br>Test method: 칩스 리그레이션 TC : 실행_0753<br>Parameters: public void Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0753_Chips_날씨_자외선지수부재_어제_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>19</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_07_날씨_자외선지수@928763c</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0846_Chips_뉴스_컨트롤러_일시정지취소_확인()'><b>TC_0846_Chips_뉴스_컨트롤러_일시정지취소_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0846<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0846_Chips_뉴스_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0816_Chips_뉴스_오늘뉴스_확인()'><b>TC_0816_Chips_뉴스_오늘뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0816<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0816_Chips_뉴스_오늘뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>4</td>
-<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@6cc4cdb9</td></tr>
+<td>17</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인()'><b>TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0837<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0854_Chips_뉴스_컨트롤러_이전_확인()'><b>TC_0854_Chips_뉴스_컨트롤러_이전_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0854<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0854_Chips_뉴스_컨트롤러_이전_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>20</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@4b2c5e02</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0827_Chips_뉴스_지난주연예뉴스_확인()'><b>TC_0827_Chips_뉴스_지난주연예뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0827<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0827_Chips_뉴스_지난주연예뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0847_Chips_뉴스_컨트롤러_일시정지_확인()'><b>TC_0847_Chips_뉴스_컨트롤러_일시정지_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0847<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0847_Chips_뉴스_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>34</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
+<td>7</td>
+<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@4b2c5e02</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_004_생활정보.생활정보_04_날씨_강수확률.TC_0740_Chips_날씨_모레_강수확률_확인()'><b>TC_0740_Chips_날씨_모레_강수확률_확인</b><br>Test class: Chips_004_생활정보.생활정보_04_날씨_강수확률<br>Test method: 칩스 리그레이션 TC : 실행_0740<br>Parameters: public void Chips_004_생활정보.생활정보_04_날씨_강수확률.TC_0740_Chips_날씨_모레_강수확률_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>62</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_04_날씨_강수확률@6b0d80ed</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0811_Chips_뉴스_기본설정_CBS뉴스_확인()'><b>TC_0811_Chips_뉴스_기본설정_CBS뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0811<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0811_Chips_뉴스_기본설정_CBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_09_날씨_오존농도<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>21</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
+<td>54</td>
+<td>Chips_004_생활정보.생활정보_09_날씨_오존농도@15f47664</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0855_Chips_뉴스_종료_확인()'><b>TC_0855_Chips_뉴스_종료_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0855<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0855_Chips_뉴스_종료_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_004_생활정보.생활정보_04_날씨_강수확률.TC_0742_Chips_날씨_다음주날씨_확인()'><b>TC_0742_Chips_날씨_다음주날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_04_날씨_강수확률<br>Test method: 칩스 리그레이션 TC : 실행_0742<br>Parameters: public void Chips_004_생활정보.생활정보_04_날씨_강수확률.TC_0742_Chips_날씨_다음주날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>1</td>
-<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@6cc4cdb9</td></tr>
+<td>42</td>
+<td>Chips_004_생활정보.생활정보_04_날씨_강수확률@6b0d80ed</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인()'><b>TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0828<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0734_Chips_날씨_파주시야동동날씨_확인()'><b>TC_0734_Chips_날씨_파주시야동동날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_03_날씨_일기예보<br>Test method: 칩스 리그레이션 TC : 실행_0734<br>Parameters: public void Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0734_Chips_날씨_파주시야동동날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>22</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
+<td>28</td>
+<td>Chips_004_생활정보.생활정보_03_날씨_일기예보@452e19ca</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0835_Chips_뉴스_그저께뉴스_확인()'><b>TC_0835_Chips_뉴스_그저께뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0835<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0835_Chips_뉴스_그저께뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0793_Chips_날씨_지정위치특별광역시_세차지수_확인()'><b>TC_0793_Chips_날씨_지정위치특별광역시_세차지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_12_날씨_세차지수<br>Test method: 칩스 리그레이션 TC : 실행_0793<br>Parameters: public void Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0793_Chips_날씨_지정위치특별광역시_세차지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>20</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0831_Chips_뉴스_지난달연예뉴스_확인()'><b>TC_0831_Chips_뉴스_지난달연예뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0831<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0831_Chips_뉴스_지난달연예뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>19</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
-<tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인()'><b>TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0832<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>19</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_12_날씨_세차지수@2f666ebb</td></tr>
 <tr>
 <td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0813_Chips_뉴스_KBS뉴스_확인()'><b>TC_0813_Chips_뉴스_KBS뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0813<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0813_Chips_뉴스_KBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>21</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
+<td>17</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
 <tr>
-<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0815_Chips_뉴스_SBS뉴스_확인()'><b>TC_0815_Chips_뉴스_SBS뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0812<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0815_Chips_뉴스_SBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='Chips_004_생활정보.생활정보_02_감성대화.TC_0713_Chips_감성대화_피곤질병_확인()'><b>TC_0713_Chips_감성대화_피곤질병_확인</b><br>Test class: Chips_004_생활정보.생활정보_02_감성대화<br>Test method: 칩스 리그레이션 TC : 실행_0713<br>Parameters: public void Chips_004_생활정보.생활정보_02_감성대화.TC_0713_Chips_감성대화_피곤질병_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_02_감성대화@c667f46</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0730_Chips_날씨_다음주주말날씨_확인()'><b>TC_0730_Chips_날씨_다음주주말날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_03_날씨_일기예보<br>Test method: 칩스 리그레이션 TC : 실행_0730<br>Parameters: public void Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0730_Chips_날씨_다음주주말날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>13</td>
+<td>Chips_004_생활정보.생활정보_03_날씨_일기예보@452e19ca</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_13_운세.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_13_운세<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_13_운세.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>52</td>
+<td>Chips_004_생활정보.생활정보_13_운세@19976a65</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_11_날씨_일몰시간.TC_0783_Chips_날씨_오늘_일몰시간_확인()'><b>TC_0783_Chips_날씨_오늘_일몰시간_확인</b><br>Test class: Chips_004_생활정보.생활정보_11_날씨_일몰시간<br>Test method: 칩스 리그레이션 TC : 실행_0783<br>Parameters: public void Chips_004_생활정보.생활정보_11_날씨_일몰시간.TC_0783_Chips_날씨_오늘_일몰시간_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_11_날씨_일몰시간@dc9876b</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_13_운세.TC_0802_Chips_운세_생년월일등록_확인()'><b>TC_0802_Chips_운세_생년월일등록_확인</b><br>Test class: Chips_004_생활정보.생활정보_13_운세<br>Test method: 칩스 리그레이션 TC : 실행_0802<br>Parameters: public void Chips_004_생활정보.생활정보_13_운세.TC_0802_Chips_운세_생년월일등록_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>62</td>
+<td>Chips_004_생활정보.생활정보_13_운세@19976a65</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0831_Chips_뉴스_지난달스포츠뉴스_확인()'><b>TC_0831_Chips_뉴스_지난달스포츠뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0831<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0831_Chips_뉴스_지난달스포츠뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>13</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0731_Chips_날씨_현재요일날씨_확인()'><b>TC_0731_Chips_날씨_현재요일날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_03_날씨_일기예보<br>Test method: 칩스 리그레이션 TC : 실행_0731<br>Parameters: public void Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0731_Chips_날씨_현재요일날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>24</td>
+<td>Chips_004_생활정보.생활정보_03_날씨_일기예보@452e19ca</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0845_Chips_뉴스_컨트롤러_일시정지_확인()'><b>TC_0845_Chips_뉴스_컨트롤러_일시정지_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0845<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0845_Chips_뉴스_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>9</td>
+<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@4b2c5e02</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0750_Chips_날씨_내일지역_자외선지수_확인()'><b>TC_0750_Chips_날씨_내일지역_자외선지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_07_날씨_자외선지수<br>Test method: 칩스 리그레이션 TC : 실행_0750<br>Parameters: public void Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0750_Chips_날씨_내일지역_자외선지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_07_날씨_자외선지수@928763c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_08_날씨_습도.TC_0757_Chips_날씨_습도지수_확인()'><b>TC_0757_Chips_날씨_습도지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_08_날씨_습도<br>Test method: 칩스 리그레이션 TC : 실행_0757<br>Parameters: public void Chips_004_생활정보.생활정보_08_날씨_습도.TC_0757_Chips_날씨_습도지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>14</td>
+<td>Chips_004_생활정보.생활정보_08_날씨_습도@e25951c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0792_Chips_날씨_지정위치특별광역시_세차지수_확인()'><b>TC_0792_Chips_날씨_지정위치특별광역시_세차지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_12_날씨_세차지수<br>Test method: 칩스 리그레이션 TC : 실행_0792<br>Parameters: public void Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0792_Chips_날씨_지정위치특별광역시_세차지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_12_날씨_세차지수@2f666ebb</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0815_1_Chips_뉴스_MBC뉴스_확인()'><b>TC_0815_1_Chips_뉴스_MBC뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0815_1<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0815_1_Chips_뉴스_MBC뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>19</td>
-<td>Chips_004_생활정보.생활정보_14_뉴스@2438dcd</td></tr>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
 <tr>
 <td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0848_Chips_뉴스_컨트롤러_재생_확인()'><b>TC_0848_Chips_뉴스_컨트롤러_재생_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0848<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0848_Chips_뉴스_컨트롤러_재생_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>2</td>
-<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@6cc4cdb9</td></tr>
+<td>10</td>
+<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@4b2c5e02</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0855_Chips_뉴스_종료_확인()'><b>TC_0855_Chips_뉴스_종료_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0855<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0855_Chips_뉴스_종료_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>7</td>
+<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@4b2c5e02</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0836_Chips_뉴스_그저께스포츠뉴스_확인()'><b>TC_0836_Chips_뉴스_그저께스포츠뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0836<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0836_Chips_뉴스_그저께스포츠뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>10</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0729_Chips_날씨_이번주주말날씨_확인()'><b>TC_0729_Chips_날씨_이번주주말날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_03_날씨_일기예보<br>Test method: 칩스 리그레이션 TC : 실행_0729<br>Parameters: public void Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0729_Chips_날씨_이번주주말날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>16</td>
+<td>Chips_004_생활정보.생활정보_03_날씨_일기예보@452e19ca</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0799_Chips_날씨_세차지수부재_다음주_확인()'><b>TC_0799_Chips_날씨_세차지수부재_다음주_확인</b><br>Test class: Chips_004_생활정보.생활정보_12_날씨_세차지수<br>Test method: 칩스 리그레이션 TC : 실행_0799<br>Parameters: public void Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0799_Chips_날씨_세차지수부재_다음주_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_12_날씨_세차지수@2f666ebb</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_04_날씨_강수확률.TC_0738_Chips_날씨_오늘_강수확률_확인()'><b>TC_0738_Chips_날씨_오늘_강수확률_확인</b><br>Test class: Chips_004_생활정보.생활정보_04_날씨_강수확률<br>Test method: 칩스 리그레이션 TC : 실행_0738<br>Parameters: public void Chips_004_생활정보.생활정보_04_날씨_강수확률.TC_0738_Chips_날씨_오늘_강수확률_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_04_날씨_강수확률@6b0d80ed</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_08_날씨_습도.TC_0761_Chips_날씨_모레_습도지수_확인()'><b>TC_0761_Chips_날씨_모레_습도지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_08_날씨_습도<br>Test method: 칩스 리그레이션 TC : 실행_0751<br>Parameters: public void Chips_004_생활정보.생활정보_08_날씨_습도.TC_0761_Chips_날씨_모레_습도지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_08_날씨_습도@e25951c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_13_운세.TC_0805_Chips_운세_생년별운세_확인()'><b>TC_0805_Chips_운세_생년별운세_확인</b><br>Test class: Chips_004_생활정보.생활정보_13_운세<br>Test method: 칩스 리그레이션 TC : 실행_0805<br>Parameters: public void Chips_004_생활정보.생활정보_13_운세.TC_0805_Chips_운세_생년별운세_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_13_운세@19976a65</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_11_날씨_일몰시간.TC_0784_Chips_날씨_오늘지역_일몰시간_확인()'><b>TC_0784_Chips_날씨_오늘지역_일몰시간_확인</b><br>Test class: Chips_004_생활정보.생활정보_11_날씨_일몰시간<br>Test method: 칩스 리그레이션 TC : 실행_0784<br>Parameters: public void Chips_004_생활정보.생활정보_11_날씨_일몰시간.TC_0784_Chips_날씨_오늘지역_일몰시간_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_11_날씨_일몰시간@dc9876b</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0850_Chips_뉴스_컨트롤러_좋아요취소_확인()'><b>TC_0850_Chips_뉴스_컨트롤러_좋아요취소_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0850<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0850_Chips_뉴스_컨트롤러_좋아요취소_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@4b2c5e02</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0853_Chips_뉴스_컨트롤러_다음_확인()'><b>TC_0853_Chips_뉴스_컨트롤러_다음_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0853<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0853_Chips_뉴스_컨트롤러_다음_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@4b2c5e02</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0774_Chips_날씨_오존지수부재_지역아님_확인()'><b>TC_0774_Chips_날씨_오존지수부재_지역아님_확인</b><br>Test class: Chips_004_생활정보.생활정보_09_날씨_오존농도<br>Test method: 칩스 리그레이션 TC : 실행_0766<br>Parameters: public void Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0774_Chips_날씨_오존지수부재_지역아님_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_09_날씨_오존농도@15f47664</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_08_날씨_습도.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_08_날씨_습도<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_08_날씨_습도.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>52</td>
+<td>Chips_004_생활정보.생활정보_08_날씨_습도@e25951c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_05_날씨_미세먼지.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_05_날씨_미세먼지<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_05_날씨_미세먼지.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>52</td>
+<td>Chips_004_생활정보.생활정보_05_날씨_미세먼지@6f8e8894</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0728_Chips_날씨_다음주날씨_확인()'><b>TC_0728_Chips_날씨_다음주날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_03_날씨_일기예보<br>Test method: 칩스 리그레이션 TC : 실행_0728<br>Parameters: public void Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0728_Chips_날씨_다음주날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>44</td>
+<td>Chips_004_생활정보.생활정보_03_날씨_일기예보@452e19ca</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0725_Chips_날씨_내일날씨_확인()'><b>TC_0725_Chips_날씨_내일날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_03_날씨_일기예보<br>Test method: 칩스 리그레이션 TC : 실행_0725<br>Parameters: public void Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0725_Chips_날씨_내일날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>27</td>
+<td>Chips_004_생활정보.생활정보_03_날씨_일기예보@452e19ca</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0834_Chips_뉴스_어제뉴스_확인()'><b>TC_0834_Chips_뉴스_어제뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0834<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0834_Chips_뉴스_어제뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>14</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_13_운세.TC_0806_Chips_운세_생년별운세_확인()'><b>TC_0806_Chips_운세_생년별운세_확인</b><br>Test class: Chips_004_생활정보.생활정보_13_운세<br>Test method: 칩스 리그레이션 TC : 실행_0806<br>Parameters: public void Chips_004_생활정보.생활정보_13_운세.TC_0806_Chips_운세_생년별운세_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_13_운세@19976a65</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인()'><b>TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0828<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>13</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_10_날씨_일출시간.TC_0775_Chips_날씨_일출시간_확인()'><b>TC_0775_Chips_날씨_일출시간_확인</b><br>Test class: Chips_004_생활정보.생활정보_10_날씨_일출시간<br>Test method: 칩스 리그레이션 TC : 실행_0775<br>Parameters: public void Chips_004_생활정보.생활정보_10_날씨_일출시간.TC_0775_Chips_날씨_일출시간_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_10_날씨_일출시간@471a9022</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0787_Chips_날씨_세차지수_확인()'><b>TC_0787_Chips_날씨_세차지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_12_날씨_세차지수<br>Test method: 칩스 리그레이션 TC : 실행_0787<br>Parameters: public void Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0787_Chips_날씨_세차지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_12_날씨_세차지수@2f666ebb</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_08_날씨_습도.TC_0765_Chips_날씨_습도지수부재_지역외_확인()'><b>TC_0765_Chips_날씨_습도지수부재_지역외_확인</b><br>Test class: Chips_004_생활정보.생활정보_08_날씨_습도<br>Test method: 칩스 리그레이션 TC : 실행_0765<br>Parameters: public void Chips_004_생활정보.생활정보_08_날씨_습도.TC_0765_Chips_날씨_습도지수부재_지역외_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_08_날씨_습도@e25951c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0815_2_Chips_뉴스_TBS뉴스_확인()'><b>TC_0815_2_Chips_뉴스_TBS뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0815_2<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0815_2_Chips_뉴스_TBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>19</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0819_Chips_뉴스_미지원채널_확인()'><b>TC_0819_Chips_뉴스_미지원채널_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0819<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0819_Chips_뉴스_미지원채널_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0846_Chips_뉴스_컨트롤러_일시정지취소_확인()'><b>TC_0846_Chips_뉴스_컨트롤러_일시정지취소_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0846<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0846_Chips_뉴스_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>15</td>
+<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@4b2c5e02</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0820_Chips_뉴스_미지원채널_확인()'><b>TC_0820_Chips_뉴스_미지원채널_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0820<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0820_Chips_뉴스_미지원채널_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인()'><b>TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0829<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>15</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_05_날씨_미세먼지.TC_0744_Chips_날씨_내일미세먼지_확인()'><b>TC_0744_Chips_날씨_내일미세먼지_확인</b><br>Test class: Chips_004_생활정보.생활정보_05_날씨_미세먼지<br>Test method: 칩스 리그레이션 TC : 실행_0744<br>Parameters: public void Chips_004_생활정보.생활정보_05_날씨_미세먼지.TC_0744_Chips_날씨_내일미세먼지_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>77</td>
+<td>Chips_004_생활정보.생활정보_05_날씨_미세먼지@6f8e8894</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0769_Chips_날씨_내일_오존지수_확인()'><b>TC_0769_Chips_날씨_내일_오존지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_09_날씨_오존농도<br>Test method: 칩스 리그레이션 TC : 실행_0769<br>Parameters: public void Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0769_Chips_날씨_내일_오존지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_09_날씨_오존농도@15f47664</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0773Chips_날씨_오존지수부재_지역외_확인()'><b>TC_0773Chips_날씨_오존지수부재_지역외_확인</b><br>Test class: Chips_004_생활정보.생활정보_09_날씨_오존농도<br>Test method: 칩스 리그레이션 TC : 실행_0765<br>Parameters: public void Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0773Chips_날씨_오존지수부재_지역외_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_09_날씨_오존농도@15f47664</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_02_감성대화.TC_0710_Chips_감성대화_안부인사_확인()'><b>TC_0710_Chips_감성대화_안부인사_확인</b><br>Test class: Chips_004_생활정보.생활정보_02_감성대화<br>Test method: 칩스 리그레이션 TC : 실행_0710<br>Parameters: public void Chips_004_생활정보.생활정보_02_감성대화.TC_0710_Chips_감성대화_안부인사_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_02_감성대화@c667f46</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0747_Chips_날씨_자외선지수_확인()'><b>TC_0747_Chips_날씨_자외선지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_07_날씨_자외선지수<br>Test method: 칩스 리그레이션 TC : 실행_0747<br>Parameters: public void Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0747_Chips_날씨_자외선지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_07_날씨_자외선지수@928763c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_10_날씨_일출시간.TC_0780_Chips_날씨_내일지역_일출시간_확인()'><b>TC_0780_Chips_날씨_내일지역_일출시간_확인</b><br>Test class: Chips_004_생활정보.생활정보_10_날씨_일출시간<br>Test method: 칩스 리그레이션 TC : 실행_0778<br>Parameters: public void Chips_004_생활정보.생활정보_10_날씨_일출시간.TC_0780_Chips_날씨_내일지역_일출시간_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_10_날씨_일출시간@471a9022</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0844_Chips_뉴스_연예키워드뉴스재생_확인()'><b>TC_0844_Chips_뉴스_연예키워드뉴스재생_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0844<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0844_Chips_뉴스_연예키워드뉴스재생_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>17</td>
+<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@4b2c5e02</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_04_날씨_강수확률.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_04_날씨_강수확률<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_04_날씨_강수확률.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>52</td>
+<td>Chips_004_생활정보.생활정보_04_날씨_강수확률@6b0d80ed</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0726_Chips_날씨_모레날씨_확인()'><b>TC_0726_Chips_날씨_모레날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_03_날씨_일기예보<br>Test method: 칩스 리그레이션 TC : 실행_0725<br>Parameters: public void Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0726_Chips_날씨_모레날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>32</td>
+<td>Chips_004_생활정보.생활정보_03_날씨_일기예보@452e19ca</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0733_Chips_날씨_제주도날씨_확인()'><b>TC_0733_Chips_날씨_제주도날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_03_날씨_일기예보<br>Test method: 칩스 리그레이션 TC : 실행_0733<br>Parameters: public void Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0733_Chips_날씨_제주도날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>27</td>
+<td>Chips_004_생활정보.생활정보_03_날씨_일기예보@452e19ca</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0756_Chips_날씨_자외선지수부재_지역아님_확인()'><b>TC_0756_Chips_날씨_자외선지수부재_지역아님_확인</b><br>Test class: Chips_004_생활정보.생활정보_07_날씨_자외선지수<br>Test method: 칩스 리그레이션 TC : 실행_0756<br>Parameters: public void Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0756_Chips_날씨_자외선지수부재_지역아님_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_07_날씨_자외선지수@928763c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0818_Chips_뉴스_스포츠특정뉴스_확인()'><b>TC_0818_Chips_뉴스_스포츠특정뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0818<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0818_Chips_뉴스_스포츠특정뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>10</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0748_Chips_날씨_지역_자외선지수_확인()'><b>TC_0748_Chips_날씨_지역_자외선지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_07_날씨_자외선지수<br>Test method: 칩스 리그레이션 TC : 실행_0748<br>Parameters: public void Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0748_Chips_날씨_지역_자외선지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_07_날씨_자외선지수@928763c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_13_운세.TC_0801_Chips_운세_생년월일미등록_확인()'><b>TC_0801_Chips_운세_생년월일미등록_확인</b><br>Test class: Chips_004_생활정보.생활정보_13_운세<br>Test method: 칩스 리그레이션 TC : 실행_0801<br>Parameters: public void Chips_004_생활정보.생활정보_13_운세.TC_0801_Chips_운세_생년월일미등록_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_13_운세@19976a65</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_06_날씨_현재기온.TC_0745_Chips_날씨_현재온도_추워_확인()'><b>TC_0745_Chips_날씨_현재온도_추워_확인</b><br>Test class: Chips_004_생활정보.생활정보_06_날씨_현재기온<br>Test method: 칩스 리그레이션 TC : 실행_0745<br>Parameters: public void Chips_004_생활정보.생활정보_06_날씨_현재기온.TC_0745_Chips_날씨_현재온도_추워_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_06_날씨_현재기온@3cfdd820</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_04_날씨_강수확률.TC_0739_Chips_날씨_내일_강수확률_확인()'><b>TC_0739_Chips_날씨_내일_강수확률_확인</b><br>Test class: Chips_004_생활정보.생활정보_04_날씨_강수확률<br>Test method: 칩스 리그레이션 TC : 실행_0739<br>Parameters: public void Chips_004_생활정보.생활정보_04_날씨_강수확률.TC_0739_Chips_날씨_내일_강수확률_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_04_날씨_강수확률@6b0d80ed</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_13_운세.TC_0808_Chips_운세_다음주_미지원_확인()'><b>TC_0808_Chips_운세_다음주_미지원_확인</b><br>Test class: Chips_004_생활정보.생활정보_13_운세<br>Test method: 칩스 리그레이션 TC : 실행_0808<br>Parameters: public void Chips_004_생활정보.생활정보_13_운세.TC_0808_Chips_운세_다음주_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_13_운세@19976a65</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0789_Chips_날씨_지정위치읍면동_세차지수_확인()'><b>TC_0789_Chips_날씨_지정위치읍면동_세차지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_12_날씨_세차지수<br>Test method: 칩스 리그레이션 TC : 실행_0789<br>Parameters: public void Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0789_Chips_날씨_지정위치읍면동_세차지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_12_날씨_세차지수@2f666ebb</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_10_날씨_일출시간.TC_0777_Chips_날씨_오늘_일출시간_확인()'><b>TC_0777_Chips_날씨_오늘_일출시간_확인</b><br>Test class: Chips_004_생활정보.생활정보_10_날씨_일출시간<br>Test method: 칩스 리그레이션 TC : 실행_0777<br>Parameters: public void Chips_004_생활정보.생활정보_10_날씨_일출시간.TC_0777_Chips_날씨_오늘_일출시간_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_10_날씨_일출시간@471a9022</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_13_운세.TC_0807_Chips_운세_이번주_미지원_확인()'><b>TC_0807_Chips_운세_이번주_미지원_확인</b><br>Test class: Chips_004_생활정보.생활정보_13_운세<br>Test method: 칩스 리그레이션 TC : 실행_0807<br>Parameters: public void Chips_004_생활정보.생활정보_13_운세.TC_0807_Chips_운세_이번주_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_13_운세@19976a65</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0817_Chips_뉴스_연예특정뉴스_확인()'><b>TC_0817_Chips_뉴스_연예특정뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0817<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0817_Chips_뉴스_연예특정뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>20</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_10_날씨_일출시간.TC_0778_Chips_날씨_오늘지역_일출시간_확인()'><b>TC_0778_Chips_날씨_오늘지역_일출시간_확인</b><br>Test class: Chips_004_생활정보.생활정보_10_날씨_일출시간<br>Test method: 칩스 리그레이션 TC : 실행_0778<br>Parameters: public void Chips_004_생활정보.생활정보_10_날씨_일출시간.TC_0778_Chips_날씨_오늘지역_일출시간_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_10_날씨_일출시간@471a9022</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0814_Chips_뉴스_CBS뉴스_확인()'><b>TC_0814_Chips_뉴스_CBS뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0814<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0814_Chips_뉴스_CBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>14</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0800_Chips_날씨_세차지수부재_모레_확인()'><b>TC_0800_Chips_날씨_세차지수부재_모레_확인</b><br>Test class: Chips_004_생활정보.생활정보_12_날씨_세차지수<br>Test method: 칩스 리그레이션 TC : 실행_0800<br>Parameters: public void Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0800_Chips_날씨_세차지수부재_모레_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_12_날씨_세차지수@2f666ebb</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인()'><b>TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0815_2<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>21</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0723_Chips_날씨_오늘날씨_확인()'><b>TC_0723_Chips_날씨_오늘날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_03_날씨_일기예보<br>Test method: 칩스 리그레이션 TC : 실행_0723<br>Parameters: public void Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0723_Chips_날씨_오늘날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>28</td>
+<td>Chips_004_생활정보.생활정보_03_날씨_일기예보@452e19ca</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0811_Chips_뉴스_기본설정_CBS뉴스_확인()'><b>TC_0811_Chips_뉴스_기본설정_CBS뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0811<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0811_Chips_뉴스_기본설정_CBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>15</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0839_Chips_뉴스_미지원기간뉴스_모레_확인()'><b>TC_0839_Chips_뉴스_미지원기간뉴스_모레_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0839<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0839_Chips_뉴스_미지원기간뉴스_모레_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>6</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_11_날씨_일몰시간.TC_0786_Chips_날씨_내일지역_일몰시간_확인()'><b>TC_0786_Chips_날씨_내일지역_일몰시간_확인</b><br>Test class: Chips_004_생활정보.생활정보_11_날씨_일몰시간<br>Test method: 칩스 리그레이션 TC : 실행_0786<br>Parameters: public void Chips_004_생활정보.생활정보_11_날씨_일몰시간.TC_0786_Chips_날씨_내일지역_일몰시간_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_11_날씨_일몰시간@dc9876b</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0767_Chips_날씨_오존지수_확인()'><b>TC_0767_Chips_날씨_오존지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_09_날씨_오존농도<br>Test method: 칩스 리그레이션 TC : 실행_0767<br>Parameters: public void Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0767_Chips_날씨_오존지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>14</td>
+<td>Chips_004_생활정보.생활정보_09_날씨_오존농도@15f47664</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_06_날씨_현재기온.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_06_날씨_현재기온<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_06_날씨_현재기온.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>53</td>
+<td>Chips_004_생활정보.생활정보_06_날씨_현재기온@3cfdd820</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인()'><b>TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0832<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>10</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_10_날씨_일출시간.TC_0779_Chips_날씨_내일_일출시간_확인()'><b>TC_0779_Chips_날씨_내일_일출시간_확인</b><br>Test class: Chips_004_생활정보.생활정보_10_날씨_일출시간<br>Test method: 칩스 리그레이션 TC : 실행_0777<br>Parameters: public void Chips_004_생활정보.생활정보_10_날씨_일출시간.TC_0779_Chips_날씨_내일_일출시간_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_10_날씨_일출시간@471a9022</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0825_Chips_뉴스_키워드뉴스없음_확인()'><b>TC_0825_Chips_뉴스_키워드뉴스없음_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0825<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0825_Chips_뉴스_키워드뉴스없음_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0727_Chips_날씨_이번주날씨_확인()'><b>TC_0727_Chips_날씨_이번주날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_03_날씨_일기예보<br>Test method: 칩스 리그레이션 TC : 실행_0727<br>Parameters: public void Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0727_Chips_날씨_이번주날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>49</td>
+<td>Chips_004_생활정보.생활정보_03_날씨_일기예보@452e19ca</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>57</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_13_운세.TC_0804_Chips_운세_띠별운세_확인()'><b>TC_0804_Chips_운세_띠별운세_확인</b><br>Test class: Chips_004_생활정보.생활정보_13_운세<br>Test method: 칩스 리그레이션 TC : 실행_0804<br>Parameters: public void Chips_004_생활정보.생활정보_13_운세.TC_0804_Chips_운세_띠별운세_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_13_운세@19976a65</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0749_Chips_날씨_내일_자외선지수_확인()'><b>TC_0749_Chips_날씨_내일_자외선지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_07_날씨_자외선지수<br>Test method: 칩스 리그레이션 TC : 실행_0749<br>Parameters: public void Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0749_Chips_날씨_내일_자외선지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_07_날씨_자외선지수@928763c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0815_Chips_뉴스_SBS뉴스_확인()'><b>TC_0815_Chips_뉴스_SBS뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0812<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0815_Chips_뉴스_SBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>14</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_08_날씨_습도.TC_0763_Chips_날씨_습도지수부재_어제_확인()'><b>TC_0763_Chips_날씨_습도지수부재_어제_확인</b><br>Test class: Chips_004_생활정보.생활정보_08_날씨_습도<br>Test method: 칩스 리그레이션 TC : 실행_0763<br>Parameters: public void Chips_004_생활정보.생활정보_08_날씨_습도.TC_0763_Chips_날씨_습도지수부재_어제_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_08_날씨_습도@e25951c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0790_Chips_날씨_지정위치읍면동_세차지수_확인()'><b>TC_0790_Chips_날씨_지정위치읍면동_세차지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_12_날씨_세차지수<br>Test method: 칩스 리그레이션 TC : 실행_0790<br>Parameters: public void Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0790_Chips_날씨_지정위치읍면동_세차지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_12_날씨_세차지수@2f666ebb</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_02_감성대화.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_02_감성대화<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_02_감성대화.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>53</td>
+<td>Chips_004_생활정보.생활정보_02_감성대화@c667f46</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_11_날씨_일몰시간.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_11_날씨_일몰시간<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_11_날씨_일몰시간.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>53</td>
+<td>Chips_004_생활정보.생활정보_11_날씨_일몰시간@dc9876b</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0755_Chips_날씨_자외선지수부재_지역외_확인()'><b>TC_0755_Chips_날씨_자외선지수부재_지역외_확인</b><br>Test class: Chips_004_생활정보.생활정보_07_날씨_자외선지수<br>Test method: 칩스 리그레이션 TC : 실행_0755<br>Parameters: public void Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0755_Chips_날씨_자외선지수부재_지역외_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>14</td>
+<td>Chips_004_생활정보.생활정보_07_날씨_자외선지수@928763c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0851_Chips_뉴스_컨트롤러_다음뉴스_확인()'><b>TC_0851_Chips_뉴스_컨트롤러_다음뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0851<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0851_Chips_뉴스_컨트롤러_다음뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>6</td>
+<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@4b2c5e02</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_04_날씨_강수확률.TC_0741_Chips_날씨_이번주날씨_확인()'><b>TC_0741_Chips_날씨_이번주날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_04_날씨_강수확률<br>Test method: 칩스 리그레이션 TC : 실행_0741<br>Parameters: public void Chips_004_생활정보.생활정보_04_날씨_강수확률.TC_0741_Chips_날씨_이번주날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>55</td>
+<td>Chips_004_생활정보.생활정보_04_날씨_강수확률@6b0d80ed</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_11_날씨_일몰시간.TC_0781_Chips_날씨_일몰시간_확인()'><b>TC_0781_Chips_날씨_일몰시간_확인</b><br>Test class: Chips_004_생활정보.생활정보_11_날씨_일몰시간<br>Test method: 칩스 리그레이션 TC : 실행_0781<br>Parameters: public void Chips_004_생활정보.생활정보_11_날씨_일몰시간.TC_0781_Chips_날씨_일몰시간_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_11_날씨_일몰시간@dc9876b</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_05_날씨_미세먼지.TC_0743_Chips_날씨_오늘미세먼지_확인()'><b>TC_0743_Chips_날씨_오늘미세먼지_확인</b><br>Test class: Chips_004_생활정보.생활정보_05_날씨_미세먼지<br>Test method: 칩스 리그레이션 TC : 실행_0743<br>Parameters: public void Chips_004_생활정보.생활정보_05_날씨_미세먼지.TC_0743_Chips_날씨_오늘미세먼지_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>104</td>
+<td>Chips_004_생활정보.생활정보_05_날씨_미세먼지@6f8e8894</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0796_Chips_날씨_세차지수부재_지역외_확인()'><b>TC_0796_Chips_날씨_세차지수부재_지역외_확인</b><br>Test class: Chips_004_생활정보.생활정보_12_날씨_세차지수<br>Test method: 칩스 리그레이션 TC : 실행_0796<br>Parameters: public void Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0796_Chips_날씨_세차지수부재_지역외_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_12_날씨_세차지수@2f666ebb</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_13_운세.TC_0807_Chips_운세_생년별운세_확인()'><b>TC_0807_Chips_운세_생년별운세_확인</b><br>Test class: Chips_004_생활정보.생활정보_13_운세<br>Test method: 칩스 리그레이션 TC : 실행_0807<br>Parameters: public void Chips_004_생활정보.생활정보_13_운세.TC_0807_Chips_운세_생년별운세_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_13_운세@19976a65</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0770_Chips_날씨_내일지역_오존지수_확인()'><b>TC_0770_Chips_날씨_내일지역_오존지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_09_날씨_오존농도<br>Test method: 칩스 리그레이션 TC : 실행_0770<br>Parameters: public void Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0770_Chips_날씨_내일지역_오존지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_09_날씨_오존농도@15f47664</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0849_Chips_뉴스_컨트롤러_좋아요해줘_확인()'><b>TC_0849_Chips_뉴스_컨트롤러_좋아요해줘_확인</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0849<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0849_Chips_뉴스_컨트롤러_좋아요해줘_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@4b2c5e02</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_03_날씨_일기예보<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>53</td>
+<td>Chips_004_생활정보.생활정보_03_날씨_일기예보@452e19ca</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_08_날씨_습도.TC_0758_Chips_날씨_지역_습도지수_확인()'><b>TC_0758_Chips_날씨_지역_습도지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_08_날씨_습도<br>Test method: 칩스 리그레이션 TC : 실행_0758<br>Parameters: public void Chips_004_생활정보.생활정보_08_날씨_습도.TC_0758_Chips_날씨_지역_습도지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_08_날씨_습도@e25951c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_02_감성대화.TC_0721_Chips_감성대화_고객센터번호_확인()'><b>TC_0721_Chips_감성대화_고객센터번호_확인</b><br>Test class: Chips_004_생활정보.생활정보_02_감성대화<br>Test method: 칩스 리그레이션 TC : 실행_0721<br>Parameters: public void Chips_004_생활정보.생활정보_02_감성대화.TC_0721_Chips_감성대화_고객센터번호_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_02_감성대화@c667f46</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_02_감성대화.TC_0711_Chips_감성대화_이벤트절기상황1_확인()'><b>TC_0711_Chips_감성대화_이벤트절기상황1_확인</b><br>Test class: Chips_004_생활정보.생활정보_02_감성대화<br>Test method: 칩스 리그레이션 TC : 실행_0711<br>Parameters: public void Chips_004_생활정보.생활정보_02_감성대화.TC_0711_Chips_감성대화_이벤트절기상황1_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_02_감성대화@c667f46</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인()'><b>TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0822<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>10</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_08_날씨_습도.TC_0760_Chips_날씨_내일지역_습도지수_확인()'><b>TC_0760_Chips_날씨_내일지역_습도지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_08_날씨_습도<br>Test method: 칩스 리그레이션 TC : 실행_0760<br>Parameters: public void Chips_004_생활정보.생활정보_08_날씨_습도.TC_0760_Chips_날씨_내일지역_습도지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>14</td>
+<td>Chips_004_생활정보.생활정보_08_날씨_습도@e25951c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_04_날씨_강수확률.TC_0737_Chips_날씨_현재_강수확률_확인()'><b>TC_0737_Chips_날씨_현재_강수확률_확인</b><br>Test class: Chips_004_생활정보.생활정보_04_날씨_강수확률<br>Test method: 칩스 리그레이션 TC : 실행_0737<br>Parameters: public void Chips_004_생활정보.생활정보_04_날씨_강수확률.TC_0737_Chips_날씨_현재_강수확률_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_04_날씨_강수확률@6b0d80ed</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>53</td>
+<td>Chips_004_생활정보.생활정보_15_뉴스_재생컨트롤러@4b2c5e02</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_10_날씨_일출시간.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_10_날씨_일출시간<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_10_날씨_일출시간.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>52</td>
+<td>Chips_004_생활정보.생활정보_10_날씨_일출시간@471a9022</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0754_Chips_날씨_자외선지수부재_특정일_확인()'><b>TC_0754_Chips_날씨_자외선지수부재_특정일_확인</b><br>Test class: Chips_004_생활정보.생활정보_07_날씨_자외선지수<br>Test method: 칩스 리그레이션 TC : 실행_0754<br>Parameters: public void Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0754_Chips_날씨_자외선지수부재_특정일_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_07_날씨_자외선지수@928763c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0830_Chips_뉴스_지난달뉴스_확인()'><b>TC_0830_Chips_뉴스_지난달뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0830<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0830_Chips_뉴스_지난달뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>13</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_06_날씨_현재기온.TC_0746_Chips_날씨_현재온도_더워_확인()'><b>TC_0746_Chips_날씨_현재온도_더워_확인</b><br>Test class: Chips_004_생활정보.생활정보_06_날씨_현재기온<br>Test method: 칩스 리그레이션 TC : 실행_0746<br>Parameters: public void Chips_004_생활정보.생활정보_06_날씨_현재기온.TC_0746_Chips_날씨_현재온도_더워_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_06_날씨_현재기온@3cfdd820</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0724_Chips_날씨_내일날씨_확인()'><b>TC_0724_Chips_날씨_내일날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_03_날씨_일기예보<br>Test method: 칩스 리그레이션 TC : 실행_0724<br>Parameters: public void Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0724_Chips_날씨_내일날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>26</td>
+<td>Chips_004_생활정보.생활정보_03_날씨_일기예보@452e19ca</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0768_Chips_날씨_지역_오존지수_확인()'><b>TC_0768_Chips_날씨_지역_오존지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_09_날씨_오존농도<br>Test method: 칩스 리그레이션 TC : 실행_0768<br>Parameters: public void Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0768_Chips_날씨_지역_오존지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>14</td>
+<td>Chips_004_생활정보.생활정보_09_날씨_오존농도@15f47664</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0791_Chips_날씨_지정위치읍면동_세차지수_확인()'><b>TC_0791_Chips_날씨_지정위치읍면동_세차지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_12_날씨_세차지수<br>Test method: 칩스 리그레이션 TC : 실행_0791<br>Parameters: public void Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0791_Chips_날씨_지정위치읍면동_세차지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_12_날씨_세차지수@2f666ebb</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_12_날씨_세차지수<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>53</td>
+<td>Chips_004_생활정보.생활정보_12_날씨_세차지수@2f666ebb</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_08_날씨_습도.TC_0764_Chips_날씨_습도지수부재_특정일_확인()'><b>TC_0764_Chips_날씨_습도지수부재_특정일_확인</b><br>Test class: Chips_004_생활정보.생활정보_08_날씨_습도<br>Test method: 칩스 리그레이션 TC : 실행_0764<br>Parameters: public void Chips_004_생활정보.생활정보_08_날씨_습도.TC_0764_Chips_날씨_습도지수부재_특정일_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_08_날씨_습도@e25951c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_11_날씨_일몰시간.TC_0785_Chips_날씨_내일_일몰시간_확인()'><b>TC_0785_Chips_날씨_내일_일몰시간_확인</b><br>Test class: Chips_004_생활정보.생활정보_11_날씨_일몰시간<br>Test method: 칩스 리그레이션 TC : 실행_0785<br>Parameters: public void Chips_004_생활정보.생활정보_11_날씨_일몰시간.TC_0785_Chips_날씨_내일_일몰시간_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_11_날씨_일몰시간@dc9876b</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0788_Chips_날씨_오늘세차지수_확인()'><b>TC_0788_Chips_날씨_오늘세차지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_12_날씨_세차지수<br>Test method: 칩스 리그레이션 TC : 실행_0788<br>Parameters: public void Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0788_Chips_날씨_오늘세차지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_12_날씨_세차지수@2f666ebb</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_10_날씨_일출시간.TC_0776_Chips_날씨_지역_일출시간_확인()'><b>TC_0776_Chips_날씨_지역_일출시간_확인</b><br>Test class: Chips_004_생활정보.생활정보_10_날씨_일출시간<br>Test method: 칩스 리그레이션 TC : 실행_0776<br>Parameters: public void Chips_004_생활정보.생활정보_10_날씨_일출시간.TC_0776_Chips_날씨_지역_일출시간_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_10_날씨_일출시간@471a9022</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0732_Chips_날씨_현재요일날씨_확인()'><b>TC_0732_Chips_날씨_현재요일날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_03_날씨_일기예보<br>Test method: 칩스 리그레이션 TC : 실행_0732<br>Parameters: public void Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0732_Chips_날씨_현재요일날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>26</td>
+<td>Chips_004_생활정보.생활정보_03_날씨_일기예보@452e19ca</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_11_날씨_일몰시간.TC_0782_Chips_날씨_지역_일몰시간_확인()'><b>TC_0782_Chips_날씨_지역_일몰시간_확인</b><br>Test class: Chips_004_생활정보.생활정보_11_날씨_일몰시간<br>Test method: 칩스 리그레이션 TC : 실행_0782<br>Parameters: public void Chips_004_생활정보.생활정보_11_날씨_일몰시간.TC_0782_Chips_날씨_지역_일몰시간_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_11_날씨_일몰시간@dc9876b</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0772_Chips_날씨_오존지수부재_특정일_확인()'><b>TC_0772_Chips_날씨_오존지수부재_특정일_확인</b><br>Test class: Chips_004_생활정보.생활정보_09_날씨_오존농도<br>Test method: 칩스 리그레이션 TC : 실행_0764<br>Parameters: public void Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0772_Chips_날씨_오존지수부재_특정일_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_09_날씨_오존농도@15f47664</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0797_Chips_날씨_세차지수부재_지역아님_확인()'><b>TC_0797_Chips_날씨_세차지수부재_지역아님_확인</b><br>Test class: Chips_004_생활정보.생활정보_12_날씨_세차지수<br>Test method: 칩스 리그레이션 TC : 실행_0797<br>Parameters: public void Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0797_Chips_날씨_세차지수부재_지역아님_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_12_날씨_세차지수@2f666ebb</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_08_날씨_습도.TC_0759_Chips_날씨_내일_습도지수_확인()'><b>TC_0759_Chips_날씨_내일_습도지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_08_날씨_습도<br>Test method: 칩스 리그레이션 TC : 실행_0759<br>Parameters: public void Chips_004_생활정보.생활정보_08_날씨_습도.TC_0759_Chips_날씨_내일_습도지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_08_날씨_습도@e25951c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_13_운세.TC_0809_Chips_운세_다음달_미지원_확인()'><b>TC_0809_Chips_운세_다음달_미지원_확인</b><br>Test class: Chips_004_생활정보.생활정보_13_운세<br>Test method: 칩스 리그레이션 TC : 실행_0809<br>Parameters: public void Chips_004_생활정보.생활정보_13_운세.TC_0809_Chips_운세_다음달_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_13_운세@19976a65</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_08_날씨_습도.TC_0766_Chips_날씨_습도지수부재_지역아님_확인()'><b>TC_0766_Chips_날씨_습도지수부재_지역아님_확인</b><br>Test class: Chips_004_생활정보.생활정보_08_날씨_습도<br>Test method: 칩스 리그레이션 TC : 실행_0766<br>Parameters: public void Chips_004_생활정보.생활정보_08_날씨_습도.TC_0766_Chips_날씨_습도지수부재_지역아님_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>5</td>
+<td>Chips_004_생활정보.생활정보_08_날씨_습도@e25951c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_13_운세.TC_0803_Chips_운세_띠별운세_확인()'><b>TC_0803_Chips_운세_띠별운세_확인</b><br>Test class: Chips_004_생활정보.생활정보_13_운세<br>Test method: 칩스 리그레이션 TC : 실행_0803<br>Parameters: public void Chips_004_생활정보.생활정보_13_운세.TC_0803_Chips_운세_띠별운세_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_13_운세@19976a65</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_02_감성대화.TC_0714_Chips_감성대화_감사_확인()'><b>TC_0714_Chips_감성대화_감사_확인</b><br>Test class: Chips_004_생활정보.생활정보_02_감성대화<br>Test method: 칩스 리그레이션 TC : 실행_0714<br>Parameters: public void Chips_004_생활정보.생활정보_02_감성대화.TC_0714_Chips_감성대화_감사_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_02_감성대화@c667f46</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0752_Chips_날씨_모레지역_자외선지수_확인()'><b>TC_0752_Chips_날씨_모레지역_자외선지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_07_날씨_자외선지수<br>Test method: 칩스 리그레이션 TC : 실행_0752<br>Parameters: public void Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0752_Chips_날씨_모레지역_자외선지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_07_날씨_자외선지수@928763c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인()'><b>TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0837<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>6</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인()'><b>TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0823<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>15</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0722_Chips_날씨_오늘날씨_확인()'><b>TC_0722_Chips_날씨_오늘날씨_확인</b><br>Test class: Chips_004_생활정보.생활정보_03_날씨_일기예보<br>Test method: 칩스 리그레이션 TC : 실행_0722<br>Parameters: public void Chips_004_생활정보.생활정보_03_날씨_일기예보.TC_0722_Chips_날씨_오늘날씨_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>34</td>
+<td>Chips_004_생활정보.생활정보_03_날씨_일기예보@452e19ca</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인()'><b>TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0821<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>23</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0771_Chips_날씨_오존지수부재_어제_확인()'><b>TC_0771_Chips_날씨_오존지수부재_어제_확인</b><br>Test class: Chips_004_생활정보.생활정보_09_날씨_오존농도<br>Test method: 칩스 리그레이션 TC : 실행_0771<br>Parameters: public void Chips_004_생활정보.생활정보_09_날씨_오존농도.TC_0771_Chips_날씨_오존지수부재_어제_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_09_날씨_오존농도@15f47664</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0835_Chips_뉴스_그저께뉴스_확인()'><b>TC_0835_Chips_뉴스_그저께뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0835<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0835_Chips_뉴스_그저께뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>6</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0798_Chips_날씨_세차지수부재_이번주_확인()'><b>TC_0798_Chips_날씨_세차지수부재_이번주_확인</b><br>Test class: Chips_004_생활정보.생활정보_12_날씨_세차지수<br>Test method: 칩스 리그레이션 TC : 실행_0798<br>Parameters: public void Chips_004_생활정보.생활정보_12_날씨_세차지수.TC_0798_Chips_날씨_세차지수부재_이번주_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>8</td>
+<td>Chips_004_생활정보.생활정보_12_날씨_세차지수@2f666ebb</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0751_Chips_날씨_모레_자외선지수_확인()'><b>TC_0751_Chips_날씨_모레_자외선지수_확인</b><br>Test class: Chips_004_생활정보.생활정보_07_날씨_자외선지수<br>Test method: 칩스 리그레이션 TC : 실행_0751<br>Parameters: public void Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0751_Chips_날씨_모레_자외선지수_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>11</td>
+<td>Chips_004_생활정보.생활정보_07_날씨_자외선지수@928763c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0000_앱실행과AccessToken얻기()'><b>TC_0000_앱실행과AccessToken얻기</b><br>Test class: Chips_004_생활정보.생활정보_07_날씨_자외선지수<br>Test method: 칩스 리그레이션 TC : 실행_0000<br>Parameters: public void Chips_004_생활정보.생활정보_07_날씨_자외선지수.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>54</td>
+<td>Chips_004_생활정보.생활정보_07_날씨_자외선지수@928763c</td></tr>
+<tr>
+<td title='Chips_004_생활정보.생활정보_14_뉴스.TC_0831_Chips_뉴스_지난달연예뉴스_확인()'><b>TC_0831_Chips_뉴스_지난달연예뉴스_확인</b><br>Test class: Chips_004_생활정보.생활정보_14_뉴스<br>Test method: 칩스 리그레이션 TC : 실행_0831<br>Parameters: public void Chips_004_생활정보.생활정보_14_뉴스.TC_0831_Chips_뉴스_지난달연예뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>10</td>
+<td>Chips_004_생활정보.생활정보_14_뉴스@a1f72f5</td></tr>
 </table><p>
 </body>
 </html>

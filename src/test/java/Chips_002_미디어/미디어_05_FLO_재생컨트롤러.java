@@ -157,8 +157,8 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 
 	}
@@ -173,8 +173,8 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 
 	}
@@ -189,8 +189,8 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 
 
@@ -272,8 +272,8 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.좋아요Off_web)));
 
 	}
@@ -322,8 +322,8 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생On_web)));
 
 	}
@@ -371,8 +371,8 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.waitForPageLoaded();
 		util.switchToWindwosURL(xPath.Webview_URL);
+		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생Off_web)));
 		util.context("NATIVE_APP");
 		
@@ -421,11 +421,11 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0255")
 	public void TC_0255_Chips_FLO_컨트롤러_종료_확인(Method method) throws Exception {
 		
-		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 음악 꺼줘 - 발화");
 		util.SWFsendPost("꺼줘", ServerName, AccessToken);
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
+		util.context("NATIVE_APP");
 		test.log(Status.INFO, "음악카드 종료되고 메인화면 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature_format")));
