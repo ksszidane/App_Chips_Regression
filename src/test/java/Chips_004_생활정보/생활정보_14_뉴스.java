@@ -991,6 +991,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 그제 스포츠 뉴스 틀어줘 - 발화");
 		util.SWFsendPost_playStatus("그제 스포츠 뉴스 틀어줘", ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("그제 스포츠 뉴스 틀어줘", ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "스포츠 관련 뉴스를 들려드릴게요."));
