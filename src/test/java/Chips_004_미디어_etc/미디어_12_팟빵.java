@@ -305,8 +305,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0452")
 	public void TC_0452_Chips_팟빵_티맵미지원컨텐츠_재생_확인(Method method) throws Exception {
 		 
-		test.log(Status.INFO, "W, 팟빵에서 이진우의 손에잡히는 경제 - 발화");
-		util.SWFsendPost_playStatus("팟빵에서 이진우의 손에잡히는 경제", ServerName, AccessToken, "podcast");
+		test.log(Status.INFO, "W, 팟빵에서 이진우의 손에잡히는 경제 재생 - 발화");
+		util.SWFsendPost_playStatus("팟빵에서 이진우의 손에잡히는 경제 재생", ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "이진우의 손에잡히는 경제 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이진우의 손에 잡히는 경제"));
@@ -424,7 +424,6 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에 추가했습니다."));
-		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "구독 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
