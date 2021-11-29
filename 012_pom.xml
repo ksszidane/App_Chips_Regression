@@ -11,8 +11,7 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
-	<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
 	<repositories>
@@ -71,7 +70,7 @@
 						</property>
 					</properties>
 					<suiteXmlFiles>
-                    	<suiteXmlFile>006_생활정보_날씨_suite.xml</suiteXmlFile>
+                    	<suiteXmlFile>012_CarLife_suite.xml</suiteXmlFile>
                  	 </suiteXmlFiles>
 					<workingDirectory>target/</workingDirectory>
 					<argLine>

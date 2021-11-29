@@ -7,7 +7,7 @@
   <version>1.0.0</version>
   <packaging>jar</packaging>
 	
-  <name>android_ChipsApp</name>
+  <name>android_nuguApp</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -71,7 +71,7 @@
 						</property>
 					</properties>
 					<suiteXmlFiles>
-                    	<suiteXmlFile>006_생활정보_날씨_suite.xml</suiteXmlFile>
+                    	<suiteXmlFile>011_연령특화_suite.xml</suiteXmlFile>
                  	 </suiteXmlFiles>
 					<workingDirectory>target/</workingDirectory>
 					<argLine>

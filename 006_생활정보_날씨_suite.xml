@@ -79,11 +79,22 @@
 			
 			<class name="Chips_012_CarLife.CarLife_01_스타벅스" />
 			-->
-	
-			<class name="Chips_001_기본기능.기본기능_01_기본기능" />
-			<class name="Chips_001_기본기능.기본기능_02_홈화면최초진입" />
-			<class name="Chips_001_기본기능.기본기능_03_부가기능" />
+
 		
+			<class name="Chips_006_생활정보_날씨.생활정보_03_날씨_일기예보" />
+			<class name="Chips_006_생활정보_날씨.생활정보_04_날씨_강수확률" />
+			<class name="Chips_006_생활정보_날씨.생활정보_05_날씨_미세먼지" />
+			<class name="Chips_006_생활정보_날씨.생활정보_06_날씨_현재기온" />
+			<class name="Chips_006_생활정보_날씨.생활정보_07_날씨_자외선지수" />
+			<class name="Chips_006_생활정보_날씨.생활정보_08_날씨_습도" />
+			<class name="Chips_006_생활정보_날씨.생활정보_09_날씨_오존농도" />
+			<class name="Chips_006_생활정보_날씨.생활정보_10_날씨_일출시간" />
+			<class name="Chips_006_생활정보_날씨.생활정보_11_날씨_일몰시간" />
+			<class name="Chips_006_생활정보_날씨.생활정보_12_날씨_세차지수" />
+
+
+
+
 		</classes>
 	</test>
 	

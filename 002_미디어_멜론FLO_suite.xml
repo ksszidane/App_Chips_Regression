@@ -28,7 +28,7 @@
 		-->
 		
 		<classes>
-			<!--
+		<!--
 			<class name="Chips_001_기본기능.기본기능_01_기본기능" />
 			<class name="Chips_001_기본기능.기본기능_02_홈화면최초진입" />
 			<class name="Chips_001_기본기능.기본기능_03_부가기능" />
@@ -80,10 +80,17 @@
 			<class name="Chips_012_CarLife.CarLife_01_스타벅스" />
 			-->
 	
-			<class name="Chips_001_기본기능.기본기능_01_기본기능" />
-			<class name="Chips_001_기본기능.기본기능_02_홈화면최초진입" />
-			<class name="Chips_001_기본기능.기본기능_03_부가기능" />
-		
+			
+			<class name="Chips_002_미디어_멜론FLO.미디어_01_멜론" />
+			<class name="Chips_002_미디어_멜론FLO.미디어_02_FLO_미로그인" />
+			<class name="Chips_002_미디어_멜론FLO.미디어_03_FLO_로그인" />
+			<class name="Chips_002_미디어_멜론FLO.미디어_04_FLO_장르테마" />
+			<class name="Chips_002_미디어_멜론FLO.미디어_05_FLO_재생컨트롤러" />
+			
+	
+
+
+			
 		</classes>
 	</test>
 	

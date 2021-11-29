@@ -71,7 +71,7 @@
 						</property>
 					</properties>
 					<suiteXmlFiles>
-                    	<suiteXmlFile>005_검색_suite.xml</suiteXmlFile>
+                    	<suiteXmlFile>005_편의기능_suite.xml</suiteXmlFile>
                  	 </suiteXmlFiles>
 					<workingDirectory>target/</workingDirectory>
 					<argLine>

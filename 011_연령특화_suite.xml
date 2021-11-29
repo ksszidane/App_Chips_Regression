@@ -80,10 +80,8 @@
 			<class name="Chips_012_CarLife.CarLife_01_스타벅스" />
 			-->
 	
-			<class name="Chips_001_기본기능.기본기능_01_기본기능" />
-			<class name="Chips_001_기본기능.기본기능_02_홈화면최초진입" />
-			<class name="Chips_001_기본기능.기본기능_03_부가기능" />
-		
+			<class name="Chips_011_연령특화.연령특화_01_ZEM키즈" />
+
 		</classes>
 	</test>
 	

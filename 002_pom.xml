@@ -71,7 +71,7 @@
 						</property>
 					</properties>
 					<suiteXmlFiles>
-                    	<suiteXmlFile>002_미디어_suite.xml</suiteXmlFile>
+                    	<suiteXmlFile>002_미디어_멜론FLO_suite.xml</suiteXmlFile>
                  	 </suiteXmlFiles>
 					<workingDirectory>target/</workingDirectory>
 					<argLine>

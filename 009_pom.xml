@@ -71,7 +71,7 @@
 						</property>
 					</properties>
 					<suiteXmlFiles>
-                    	<suiteXmlFile>006_생활정보_날씨_suite.xml</suiteXmlFile>
+                    	<suiteXmlFile>009_검색_suite.xml</suiteXmlFile>
                  	 </suiteXmlFiles>
 					<workingDirectory>target/</workingDirectory>
 					<argLine>
