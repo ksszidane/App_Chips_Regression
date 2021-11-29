@@ -149,7 +149,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	public void TC_0443_Chips_팟빵_재생_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 팟빵 - 발화");
-		util.SWFsendPost("팟빵", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("팟빵", ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "팟캐스트 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근에 들은"));
@@ -192,7 +192,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	public void TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 김어준 뉴스 공장 팟캐스트 - 발화");
-		util.SWFsendPost("김어준 뉴스 공장 팟캐스트", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("김어준 뉴스 공장 팟캐스트", ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "김어준의 뉴스공장 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBS 김어준의 뉴스공장"));
@@ -306,7 +306,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	public void TC_0452_Chips_팟빵_티맵미지원컨텐츠_재생_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 팟빵에서 이진우의 손에잡히는 경제 - 발화");
-		util.SWFsendPost("팟빵에서 이진우의 손에잡히는 경제", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("팟빵에서 이진우의 손에잡히는 경제", ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "이진우의 손에잡히는 경제 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이진우의 손에 잡히는 경제"));
@@ -322,7 +322,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	public void TC_0453_Chips_팟빵_티맵미지원컨텐츠_재생_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 팟빵에서 차이나는 클라스 재생 - 발화");
-		util.SWFsendPost("팟빵에서 차이나는 클라스 재생", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("팟빵에서 차이나는 클라스 재생", ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "차이나는 클라스 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "차이나는 클라스"));
@@ -337,7 +337,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	public void TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 팟빵에서 김어준의 뉴스공장 틀어줘 - 발화");
-		util.SWFsendPost("팟빵에서 김어준의 뉴스공장 틀어줘", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("팟빵에서 김어준의 뉴스공장 틀어줘", ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "팟캐스트 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "팟캐스트"));
