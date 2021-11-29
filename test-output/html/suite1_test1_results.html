@@ -12,7 +12,7 @@
 <body>
 <h1>Test_Project</h1>
 <p>
-  Test duration: 417.179s
+  Test duration: 405.064s
 </p>
 
 
@@ -25,14 +25,14 @@
             
 <tr>
   <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0460">TC_0460_Chips_팟빵_구독_확인</span>
+                  <span class="description" title="칩스 리그레이션 TC : 실행_0456">TC_0456_Chips_팟빵_컨트롤러_일시정지_확인</span>
       </td>
   <td class="duration">
-    29.041s
+    27.691s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0460_Chips_팟빵_구독_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
+          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
 
@@ -41,7 +41,7 @@
               junit.framework.Assert.fail(Assert.java:47)<br />
               junit.framework.Assert.assertTrue(Assert.java:20)<br />
               junit.framework.Assert.assertTrue(Assert.java:27)<br />
-              Chips_004_미디어_etc.미디어_12_팟빵.TC_0460_Chips_팟빵_구독_확인(미디어_12_팟빵.java:403)<br />
+              Chips_004_미디어_etc.미디어_12_팟빵.TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(미디어_12_팟빵.java:336)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -68,6 +68,238 @@
                 </div>
       </td>
 </tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="칩스 리그레이션 TC : 실행_0462">TC_0462_Chips_팟빵_이전_확인</span>
+      </td>
+  <td class="duration">
+    36.711s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0462_Chips_팟빵_이전_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
+    
+        
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[2] (tried for 10 second(s) with 500 milliseconds interval)</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br />
+              unit.Utilities.findElementLocated(Utilities.java:167)<br />
+              unit.Utilities.getText(Utilities.java:1382)<br />
+              Chips_004_미디어_etc.미디어_12_팟빵.TC_0462_Chips_팟빵_이전_확인(미디어_12_팟빵.java:443)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:28)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)<br />
+              org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)<br />
+              java.base/java.lang.Thread.run(Thread.java:832)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;DESKTOP-KEI&apos;, ip: &apos;172.27.24.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;<br/>
+Driver info: unit.Utilities<br/>
+Capabilities {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., databaseEnabled: false, desired: {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., deviceName: Android, extractChromeAndroidPackageFromContextName: true, focused: true, newCommandTimeout: 600000, platformName: android, recreateChromeDriverSessions: false, showChromedriverLog: true, udid: R33M4000CY}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N976N, deviceName: R33M4000CY, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: R33M4000CY, extractChromeAndroidPackageFromContextName: true, focused: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600000, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, recreateChromeDriverSessions: false, showChromedriverLog: true, statBarHeight: 85, takesScreenshot: true, udid: R33M4000CY, viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: 3bb896e7-55a5-4b06-b83c-7d396788f859<br/>
+*** Element info: {Using=xpath, value=//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[2]}</a><br />
+        <div class="stackTrace" id="exception-2">
+                      java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)<br />
+                      java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+                      java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+                      java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+                      io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+                      io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+                      io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+                      unit.Utilities.execute(Utilities.java:1)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+                      unit.Utilities.findElement(Utilities.java:1)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+                      io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+                      io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+                      io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+                      unit.Utilities.findElementByXPath(Utilities.java:1)<br />
+                      org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+                      unit.Utilities.findElement(Utilities.java:1)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)<br />
+                      unit.Utilities.findElementLocated(Utilities.java:167)<br />
+                      unit.Utilities.getText(Utilities.java:1382)<br />
+                      Chips_004_미디어_etc.미디어_12_팟빵.TC_0462_Chips_팟빵_이전_확인(미디어_12_팟빵.java:443)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+                      org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+                      org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+                      org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+                      org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+                      org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+                      java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+                      org.testng.TestRunner.run(TestRunner.java:596)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+                      org.testng.SuiteRunner.access$000(SuiteRunner.java:28)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)<br />
+                      org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)<br />
+                      java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)<br />
+                      java.base/java.lang.Thread.run(Thread.java:832)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="칩스 리그레이션 TC : 실행_0463">TC_0463_Chips_팟빵_다음_확인</span>
+      </td>
+  <td class="duration">
+    20.852s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0463_Chips_팟빵_다음_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
+    
+        
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[2] (tried for 10 second(s) with 500 milliseconds interval)</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br />
+              unit.Utilities.findElementLocated(Utilities.java:167)<br />
+              unit.Utilities.getText(Utilities.java:1382)<br />
+              Chips_004_미디어_etc.미디어_12_팟빵.TC_0463_Chips_팟빵_다음_확인(미디어_12_팟빵.java:467)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:28)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)<br />
+              org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)<br />
+              java.base/java.lang.Thread.run(Thread.java:832)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;DESKTOP-KEI&apos;, ip: &apos;172.27.24.217&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;<br/>
+Driver info: unit.Utilities<br/>
+Capabilities {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., databaseEnabled: false, desired: {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., deviceName: Android, extractChromeAndroidPackageFromContextName: true, focused: true, newCommandTimeout: 600000, platformName: android, recreateChromeDriverSessions: false, showChromedriverLog: true, udid: R33M4000CY}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N976N, deviceName: R33M4000CY, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: R33M4000CY, extractChromeAndroidPackageFromContextName: true, focused: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600000, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, recreateChromeDriverSessions: false, showChromedriverLog: true, statBarHeight: 85, takesScreenshot: true, udid: R33M4000CY, viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
+Session ID: 3bb896e7-55a5-4b06-b83c-7d396788f859<br/>
+*** Element info: {Using=xpath, value=//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[2]}</a><br />
+        <div class="stackTrace" id="exception-4">
+                      java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)<br />
+                      java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+                      java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)<br />
+                      java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+                      io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+                      io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+                      io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+                      unit.Utilities.execute(Utilities.java:1)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
+                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+                      unit.Utilities.findElement(Utilities.java:1)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+                      io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
+                      io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
+                      io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
+                      unit.Utilities.findElementByXPath(Utilities.java:1)<br />
+                      org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
+                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
+                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
+                      unit.Utilities.findElement(Utilities.java:1)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)<br />
+                      unit.Utilities.findElementLocated(Utilities.java:167)<br />
+                      unit.Utilities.getText(Utilities.java:1382)<br />
+                      Chips_004_미디어_etc.미디어_12_팟빵.TC_0463_Chips_팟빵_다음_확인(미디어_12_팟빵.java:467)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+                      org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+                      org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+                      org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+                      org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+                      org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+                      java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+                      org.testng.TestRunner.run(TestRunner.java:596)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+                      org.testng.SuiteRunner.access$000(SuiteRunner.java:28)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)<br />
+                      org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)<br />
+                      java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)<br />
+                      java.base/java.lang.Thread.run(Thread.java:832)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
       </table>
 
 
@@ -82,7 +314,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0000">TC_0000_앱실행과AccessToken얻기</span>
       </td>
   <td class="duration">
-    55.196s
+    53.520s
   </td>
   <td class="result">
         
@@ -97,7 +329,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0442">TC_0442_Chips_팟캐스트_재생_확인</span>
       </td>
   <td class="duration">
-    7.838s
+    11.088s
   </td>
   <td class="result">
         
@@ -112,7 +344,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0443">TC_0443_Chips_팟빵_재생_확인</span>
       </td>
   <td class="duration">
-    12.060s
+    6.701s
   </td>
   <td class="result">
         
@@ -127,7 +359,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0444">TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인</span>
       </td>
   <td class="duration">
-    25.989s
+    22.978s
   </td>
   <td class="result">
         
@@ -142,7 +374,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0445">TC_0445_Chips_팟빵_구독_확인</span>
       </td>
   <td class="duration">
-    15.041s
+    11.868s
   </td>
   <td class="result">
         
@@ -157,7 +389,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0446">TC_0446_Chips_팟빵_구독삭제_확인</span>
       </td>
   <td class="duration">
-    14.987s
+    18.064s
   </td>
   <td class="result">
         
@@ -172,7 +404,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0447">TC_0447_Chips_팟빵_재생시간이동_확인</span>
       </td>
   <td class="duration">
-    5.023s
+    5.020s
   </td>
   <td class="result">
         
@@ -187,7 +419,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0448">TC_0448_Chips_팟빵_종료예약_확인</span>
       </td>
   <td class="duration">
-    8.183s
+    5.125s
   </td>
   <td class="result">
         
@@ -202,7 +434,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0449">TC_0449_Chips_팟빵_종료예약_확인</span>
       </td>
   <td class="duration">
-    5.089s
+    5.092s
   </td>
   <td class="result">
         
@@ -217,7 +449,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0455">TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인</span>
       </td>
   <td class="duration">
-    12.313s
+    7.981s
   </td>
   <td class="result">
         
@@ -229,25 +461,10 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0456">TC_0456_Chips_팟빵_컨트롤러_일시정지_확인</span>
-      </td>
-  <td class="duration">
-    15.269s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
                   <span class="description" title="칩스 리그레이션 TC : 실행_0457">TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인</span>
       </td>
   <td class="duration">
-    8.619s
+    10.216s
   </td>
   <td class="result">
         
@@ -262,7 +479,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0458">TC_0458_Chips_팟빵_컨트롤러_일시정지_확인</span>
       </td>
   <td class="duration">
-    8.594s
+    8.532s
   </td>
   <td class="result">
         
@@ -277,7 +494,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0459">TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인</span>
       </td>
   <td class="duration">
-    9.872s
+    11.860s
   </td>
   <td class="result">
         
@@ -289,10 +506,25 @@
 </tr>
 <tr>
   <td class="method">
+                  <span class="description" title="칩스 리그레이션 TC : 실행_0460">TC_0460_Chips_팟빵_구독_확인</span>
+      </td>
+  <td class="duration">
+    13.594s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0460_Chips_팟빵_구독_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
                   <span class="description" title="칩스 리그레이션 TC : 실행_0461">TC_0461_Chips_팟빵_구독해제_확인</span>
       </td>
   <td class="duration">
-    15.061s
+    16.905s
   </td>
   <td class="result">
         
@@ -304,40 +536,10 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0462">TC_0462_Chips_팟빵_이전_확인</span>
-      </td>
-  <td class="duration">
-    42.420s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0462_Chips_팟빵_이전_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0463">TC_0463_Chips_팟빵_다음_확인</span>
-      </td>
-  <td class="duration">
-    16.195s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0463_Chips_팟빵_다음_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
                   <span class="description" title="칩스 리그레이션 TC : 실행_0463">TC_0464_Chips_팟빵_이전팟캐스트_확인</span>
       </td>
   <td class="duration">
-    31.271s
+    31.093s
   </td>
   <td class="result">
         
@@ -352,7 +554,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0465">TC_0465_Chips_팟빵_다음팟캐스트__확인</span>
       </td>
   <td class="duration">
-    28.974s
+    29.054s
   </td>
   <td class="result">
         
@@ -367,7 +569,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0466">TC_0466_Chips_팟빵_재생시간앞으로이동_확인</span>
       </td>
   <td class="duration">
-    9.717s
+    9.858s
   </td>
   <td class="result">
         
@@ -382,7 +584,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0467">TC_0467_Chips_팟빵_재생시간뒤으로이동_확인</span>
       </td>
   <td class="duration">
-    9.664s
+    9.831s
   </td>
   <td class="result">
         
@@ -397,7 +599,7 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0468">TC_0468_Chips_팟빵_종료_확인</span>
       </td>
   <td class="duration">
-    9.845s
+    9.844s
   </td>
   <td class="result">
         

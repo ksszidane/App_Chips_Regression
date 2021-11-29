@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="23" passed="22" failed="1" skipped="0">
+<testng-results ignored="0" total="23" passed="20" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-30T00:14:30 KST" name="ExtentReport" finished-at="2021-11-30T00:21:27 KST" duration-ms="417257">
+  <suite started-at="2021-11-30T00:37:44 KST" name="ExtentReport" finished-at="2021-11-30T00:44:29 KST" duration-ms="405144">
     <groups>
     </groups>
-    <test started-at="2021-11-30T00:14:30 KST" name="Test_Project" finished-at="2021-11-30T00:21:27 KST" duration-ms="417257">
+    <test started-at="2021-11-30T00:37:44 KST" name="Test_Project" finished-at="2021-11-30T00:44:29 KST" duration-ms="405144">
       <class name="Chips_004_미디어_etc.미디어_12_팟빵">
-        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:14:30 KST" name="setupClass" finished-at="2021-11-30T00:14:44 KST" duration-ms="14259" status="PASS">
+        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:37:44 KST" name="setupClass" finished-at="2021-11-30T00:37:58 KST" duration-ms="14245" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,7 +88,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:14:44 KST" name="BeforeMethod" finished-at="2021-11-30T00:14:44 KST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:37:58 KST" name="BeforeMethod" finished-at="2021-11-30T00:37:58 KST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:14:44 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-11-30T00:15:39 KST" duration-ms="55196" status="PASS">
+        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:37:58 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-11-30T00:38:52 KST" duration-ms="53520" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,18 +110,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0000_앱실행과AccessToken얻기 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:15:39 KST" name="AfterMethod" finished-at="2021-11-30T00:15:39 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:38:52 KST" name="AfterMethod" finished-at="2021-11-30T00:38:52 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=미디어_12_팟빵.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=미디어_12_팟빵.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:15:39 KST" name="BeforeMethod" finished-at="2021-11-30T00:15:39 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:38:52 KST" name="BeforeMethod" finished-at="2021-11-30T00:38:52 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -132,7 +132,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0442_Chips_팟캐스트_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:15:39 KST" name="TC_0442_Chips_팟캐스트_재생_확인" description="칩스 리그레이션 TC : 실행_0442" finished-at="2021-11-30T00:15:47 KST" duration-ms="7838" status="PASS">
+        <test-method signature="TC_0442_Chips_팟캐스트_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:38:52 KST" name="TC_0442_Chips_팟캐스트_재생_확인" description="칩스 리그레이션 TC : 실행_0442" finished-at="2021-11-30T00:39:03 KST" duration-ms="11088" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,7 +143,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0442_Chips_팟캐스트_재생_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:15:47 KST" name="BeforeMethod" finished-at="2021-11-30T00:15:47 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:39:03 KST" name="AfterMethod" finished-at="2021-11-30T00:39:03 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0442_Chips_팟캐스트_재생_확인 status=SUCCESS method=미디어_12_팟빵.TC_0442_Chips_팟캐스트_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:39:03 KST" name="BeforeMethod" finished-at="2021-11-30T00:39:03 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -154,18 +165,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:15:47 KST" name="AfterMethod" finished-at="2021-11-30T00:15:47 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0442_Chips_팟캐스트_재생_확인 status=SUCCESS method=미디어_12_팟빵.TC_0442_Chips_팟캐스트_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0443_Chips_팟빵_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:15:47 KST" name="TC_0443_Chips_팟빵_재생_확인" description="칩스 리그레이션 TC : 실행_0443" finished-at="2021-11-30T00:15:59 KST" duration-ms="12060" status="PASS">
+        <test-method signature="TC_0443_Chips_팟빵_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:39:03 KST" name="TC_0443_Chips_팟빵_재생_확인" description="칩스 리그레이션 TC : 실행_0443" finished-at="2021-11-30T00:39:10 KST" duration-ms="6701" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -176,18 +176,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0443_Chips_팟빵_재생_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:15:59 KST" name="AfterMethod" finished-at="2021-11-30T00:15:59 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:39:10 KST" name="AfterMethod" finished-at="2021-11-30T00:39:10 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0443_Chips_팟빵_재생_확인 status=SUCCESS method=미디어_12_팟빵.TC_0443_Chips_팟빵_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0443_Chips_팟빵_재생_확인 status=SUCCESS method=미디어_12_팟빵.TC_0443_Chips_팟빵_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:15:59 KST" name="BeforeMethod" finished-at="2021-11-30T00:15:59 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:39:10 KST" name="BeforeMethod" finished-at="2021-11-30T00:39:10 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -198,7 +198,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:15:59 KST" name="TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인" description="칩스 리그레이션 TC : 실행_0444" finished-at="2021-11-30T00:16:25 KST" duration-ms="25989" status="PASS">
+        <test-method signature="TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:39:10 KST" name="TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인" description="칩스 리그레이션 TC : 실행_0444" finished-at="2021-11-30T00:39:33 KST" duration-ms="22978" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -209,18 +209,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:16:25 KST" name="AfterMethod" finished-at="2021-11-30T00:16:25 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:39:33 KST" name="AfterMethod" finished-at="2021-11-30T00:39:33 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인 status=SUCCESS method=미디어_12_팟빵.TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인 status=SUCCESS method=미디어_12_팟빵.TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:16:25 KST" name="BeforeMethod" finished-at="2021-11-30T00:16:25 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:39:33 KST" name="BeforeMethod" finished-at="2021-11-30T00:39:33 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -231,7 +231,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0445_Chips_팟빵_구독_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:16:25 KST" name="TC_0445_Chips_팟빵_구독_확인" description="칩스 리그레이션 TC : 실행_0445" finished-at="2021-11-30T00:16:40 KST" duration-ms="15041" status="PASS">
+        <test-method signature="TC_0445_Chips_팟빵_구독_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:39:33 KST" name="TC_0445_Chips_팟빵_구독_확인" description="칩스 리그레이션 TC : 실행_0445" finished-at="2021-11-30T00:39:45 KST" duration-ms="11868" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -242,18 +242,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0445_Chips_팟빵_구독_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:16:40 KST" name="AfterMethod" finished-at="2021-11-30T00:16:40 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:39:45 KST" name="AfterMethod" finished-at="2021-11-30T00:39:45 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0445_Chips_팟빵_구독_확인 status=SUCCESS method=미디어_12_팟빵.TC_0445_Chips_팟빵_구독_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0445_Chips_팟빵_구독_확인 status=SUCCESS method=미디어_12_팟빵.TC_0445_Chips_팟빵_구독_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:16:40 KST" name="BeforeMethod" finished-at="2021-11-30T00:16:40 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:39:45 KST" name="BeforeMethod" finished-at="2021-11-30T00:39:45 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -264,7 +264,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0446_Chips_팟빵_구독삭제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:16:40 KST" name="TC_0446_Chips_팟빵_구독삭제_확인" description="칩스 리그레이션 TC : 실행_0446" finished-at="2021-11-30T00:16:55 KST" duration-ms="14987" status="PASS">
+        <test-method signature="TC_0446_Chips_팟빵_구독삭제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:39:45 KST" name="TC_0446_Chips_팟빵_구독삭제_확인" description="칩스 리그레이션 TC : 실행_0446" finished-at="2021-11-30T00:40:03 KST" duration-ms="18064" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -275,29 +275,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0446_Chips_팟빵_구독삭제_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:16:55 KST" name="BeforeMethod" finished-at="2021-11-30T00:16:55 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:03 KST" name="AfterMethod" finished-at="2021-11-30T00:40:03 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0447_Chips_팟빵_재생시간이동_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:16:55 KST" name="AfterMethod" finished-at="2021-11-30T00:16:55 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0446_Chips_팟빵_구독삭제_확인 status=SUCCESS method=미디어_12_팟빵.TC_0446_Chips_팟빵_구독삭제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0446_Chips_팟빵_구독삭제_확인 status=SUCCESS method=미디어_12_팟빵.TC_0446_Chips_팟빵_구독삭제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0447_Chips_팟빵_재생시간이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:16:55 KST" name="TC_0447_Chips_팟빵_재생시간이동_확인" description="칩스 리그레이션 TC : 실행_0447" finished-at="2021-11-30T00:17:00 KST" duration-ms="5023" status="PASS">
+        <test-method signature="TC_0447_Chips_팟빵_재생시간이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:03 KST" name="TC_0447_Chips_팟빵_재생시간이동_확인" description="칩스 리그레이션 TC : 실행_0447" finished-at="2021-11-30T00:40:08 KST" duration-ms="5020" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -308,18 +297,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0447_Chips_팟빵_재생시간이동_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:00 KST" name="AfterMethod" finished-at="2021-11-30T00:17:00 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:03 KST" name="BeforeMethod" finished-at="2021-11-30T00:40:03 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0447_Chips_팟빵_재생시간이동_확인 status=SUCCESS method=미디어_12_팟빵.TC_0447_Chips_팟빵_재생시간이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0447_Chips_팟빵_재생시간이동_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:08 KST" name="AfterMethod" finished-at="2021-11-30T00:40:08 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0447_Chips_팟빵_재생시간이동_확인 status=SUCCESS method=미디어_12_팟빵.TC_0447_Chips_팟빵_재생시간이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:00 KST" name="BeforeMethod" finished-at="2021-11-30T00:17:00 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:08 KST" name="BeforeMethod" finished-at="2021-11-30T00:40:08 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -330,7 +330,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0448_Chips_팟빵_종료예약_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:00 KST" name="TC_0448_Chips_팟빵_종료예약_확인" description="칩스 리그레이션 TC : 실행_0448" finished-at="2021-11-30T00:17:09 KST" duration-ms="8183" status="PASS">
+        <test-method signature="TC_0448_Chips_팟빵_종료예약_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:08 KST" name="TC_0448_Chips_팟빵_종료예약_확인" description="칩스 리그레이션 TC : 실행_0448" finished-at="2021-11-30T00:40:13 KST" duration-ms="5125" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -341,18 +341,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0448_Chips_팟빵_종료예약_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:09 KST" name="AfterMethod" finished-at="2021-11-30T00:17:09 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:13 KST" name="AfterMethod" finished-at="2021-11-30T00:40:13 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0448_Chips_팟빵_종료예약_확인 status=SUCCESS method=미디어_12_팟빵.TC_0448_Chips_팟빵_종료예약_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0448_Chips_팟빵_종료예약_확인 status=SUCCESS method=미디어_12_팟빵.TC_0448_Chips_팟빵_종료예약_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0449_Chips_팟빵_종료예약_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:09 KST" name="TC_0449_Chips_팟빵_종료예약_확인" description="칩스 리그레이션 TC : 실행_0449" finished-at="2021-11-30T00:17:14 KST" duration-ms="5089" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:13 KST" name="BeforeMethod" finished-at="2021-11-30T00:40:13 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0449_Chips_팟빵_종료예약_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0449_Chips_팟빵_종료예약_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:13 KST" name="TC_0449_Chips_팟빵_종료예약_확인" description="칩스 리그레이션 TC : 실행_0449" finished-at="2021-11-30T00:40:18 KST" duration-ms="5092" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -363,29 +374,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0449_Chips_팟빵_종료예약_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:09 KST" name="BeforeMethod" finished-at="2021-11-30T00:17:09 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:18 KST" name="AfterMethod" finished-at="2021-11-30T00:40:18 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0449_Chips_팟빵_종료예약_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:14 KST" name="AfterMethod" finished-at="2021-11-30T00:17:14 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0449_Chips_팟빵_종료예약_확인 status=SUCCESS method=미디어_12_팟빵.TC_0449_Chips_팟빵_종료예약_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0449_Chips_팟빵_종료예약_확인 status=SUCCESS method=미디어_12_팟빵.TC_0449_Chips_팟빵_종료예약_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:14 KST" name="TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인" description="칩스 리그레이션 TC : 실행_0455" finished-at="2021-11-30T00:17:26 KST" duration-ms="12313" status="PASS">
+        <test-method signature="TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:18 KST" name="TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인" description="칩스 리그레이션 TC : 실행_0455" finished-at="2021-11-30T00:40:26 KST" duration-ms="7981" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -396,7 +396,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:14 KST" name="BeforeMethod" finished-at="2021-11-30T00:17:14 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:18 KST" name="BeforeMethod" finished-at="2021-11-30T00:40:18 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -407,29 +407,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:26 KST" name="AfterMethod" finished-at="2021-11-30T00:17:26 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:26 KST" name="AfterMethod" finished-at="2021-11-30T00:40:26 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인 status=SUCCESS method=미디어_12_팟빵.TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인 status=SUCCESS method=미디어_12_팟빵.TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:26 KST" name="TC_0456_Chips_팟빵_컨트롤러_일시정지_확인" description="칩스 리그레이션 TC : 실행_0456" finished-at="2021-11-30T00:17:41 KST" duration-ms="15269" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0456_Chips_팟빵_컨트롤러_일시정지_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:26 KST" name="BeforeMethod" finished-at="2021-11-30T00:17:26 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:26 KST" name="BeforeMethod" finished-at="2021-11-30T00:40:26 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -440,121 +429,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:41 KST" name="AfterMethod" finished-at="2021-11-30T00:17:41 KST" duration-ms="0" status="PASS">
+        <test-method signature="TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:26 KST" name="TC_0456_Chips_팟빵_컨트롤러_일시정지_확인" description="칩스 리그레이션 TC : 실행_0456" finished-at="2021-11-30T00:40:54 KST" duration-ms="27691" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0456_Chips_팟빵_컨트롤러_일시정지_확인 status=SUCCESS method=미디어_12_팟빵.TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:41 KST" name="BeforeMethod" finished-at="2021-11-30T00:17:41 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:41 KST" name="TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인" description="칩스 리그레이션 TC : 실행_0457" finished-at="2021-11-30T00:17:50 KST" duration-ms="8619" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:50 KST" name="AfterMethod" finished-at="2021-11-30T00:17:50 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인 status=SUCCESS method=미디어_12_팟빵.TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0458_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:50 KST" name="TC_0458_Chips_팟빵_컨트롤러_일시정지_확인" description="칩스 리그레이션 TC : 실행_0458" finished-at="2021-11-30T00:17:58 KST" duration-ms="8594" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0458_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0458_Chips_팟빵_컨트롤러_일시정지_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:50 KST" name="BeforeMethod" finished-at="2021-11-30T00:17:50 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0458_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:58 KST" name="AfterMethod" finished-at="2021-11-30T00:17:58 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0458_Chips_팟빵_컨트롤러_일시정지_확인 status=SUCCESS method=미디어_12_팟빵.TC_0458_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:58 KST" name="BeforeMethod" finished-at="2021-11-30T00:17:58 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:17:58 KST" name="TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인" description="칩스 리그레이션 TC : 실행_0459" finished-at="2021-11-30T00:18:08 KST" duration-ms="9872" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:18:08 KST" name="AfterMethod" finished-at="2021-11-30T00:18:08 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인 status=SUCCESS method=미디어_12_팟빵.TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0460_Chips_팟빵_구독_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:18:08 KST" name="TC_0460_Chips_팟빵_구독_확인" description="칩스 리그레이션 TC : 실행_0460" finished-at="2021-11-30T00:18:37 KST" duration-ms="29041" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0460_Chips_팟빵_구독_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
@@ -564,7 +443,7 @@
 at junit.framework.Assert.fail(Assert.java:47)
 at junit.framework.Assert.assertTrue(Assert.java:20)
 at junit.framework.Assert.assertTrue(Assert.java:27)
-at Chips_004_미디어_etc.미디어_12_팟빵.TC_0460_Chips_팟빵_구독_확인(미디어_12_팟빵.java:403)
+at Chips_004_미디어_etc.미디어_12_팟빵.TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(미디어_12_팟빵.java:336)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -593,8 +472,118 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0460_Chips_팟빵_구독_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:18:08 KST" name="BeforeMethod" finished-at="2021-11-30T00:18:08 KST" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_0456_Chips_팟빵_컨트롤러_일시정지_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:54 KST" name="AfterMethod" finished-at="2021-11-30T00:40:56 KST" duration-ms="2266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0456_Chips_팟빵_컨트롤러_일시정지_확인 status=FAILURE method=미디어_12_팟빵.TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:56 KST" name="TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인" description="칩스 리그레이션 TC : 실행_0457" finished-at="2021-11-30T00:41:06 KST" duration-ms="10216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:40:56 KST" name="BeforeMethod" finished-at="2021-11-30T00:40:56 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:06 KST" name="AfterMethod" finished-at="2021-11-30T00:41:06 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인 status=SUCCESS method=미디어_12_팟빵.TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0458_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:06 KST" name="TC_0458_Chips_팟빵_컨트롤러_일시정지_확인" description="칩스 리그레이션 TC : 실행_0458" finished-at="2021-11-30T00:41:15 KST" duration-ms="8532" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0458_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0458_Chips_팟빵_컨트롤러_일시정지_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:06 KST" name="BeforeMethod" finished-at="2021-11-30T00:41:06 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0458_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:15 KST" name="AfterMethod" finished-at="2021-11-30T00:41:15 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0458_Chips_팟빵_컨트롤러_일시정지_확인 status=SUCCESS method=미디어_12_팟빵.TC_0458_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:15 KST" name="BeforeMethod" finished-at="2021-11-30T00:41:15 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:15 KST" name="TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인" description="칩스 리그레이션 TC : 실행_0459" finished-at="2021-11-30T00:41:27 KST" duration-ms="11860" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:27 KST" name="AfterMethod" finished-at="2021-11-30T00:41:27 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인 status=SUCCESS method=미디어_12_팟빵.TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:27 KST" name="BeforeMethod" finished-at="2021-11-30T00:41:27 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -605,18 +594,29 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:18:37 KST" name="AfterMethod" finished-at="2021-11-30T00:18:40 KST" duration-ms="2231" status="PASS">
+        <test-method signature="TC_0460_Chips_팟빵_구독_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:27 KST" name="TC_0460_Chips_팟빵_구독_확인" description="칩스 리그레이션 TC : 실행_0460" finished-at="2021-11-30T00:41:40 KST" duration-ms="13594" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0460_Chips_팟빵_구독_확인 status=FAILURE method=미디어_12_팟빵.TC_0460_Chips_팟빵_구독_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0460_Chips_팟빵_구독_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0460_Chips_팟빵_구독_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:40 KST" name="AfterMethod" finished-at="2021-11-30T00:41:40 KST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0460_Chips_팟빵_구독_확인 status=SUCCESS method=미디어_12_팟빵.TC_0460_Chips_팟빵_구독_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:18:40 KST" name="BeforeMethod" finished-at="2021-11-30T00:18:40 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:40 KST" name="BeforeMethod" finished-at="2021-11-30T00:41:40 KST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -627,7 +627,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0461_Chips_팟빵_구독해제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:18:40 KST" name="TC_0461_Chips_팟빵_구독해제_확인" description="칩스 리그레이션 TC : 실행_0461" finished-at="2021-11-30T00:18:55 KST" duration-ms="15061" status="PASS">
+        <test-method signature="TC_0461_Chips_팟빵_구독해제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:40 KST" name="TC_0461_Chips_팟빵_구독해제_확인" description="칩스 리그레이션 TC : 실행_0461" finished-at="2021-11-30T00:41:57 KST" duration-ms="16905" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -638,18 +638,18 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0461_Chips_팟빵_구독해제_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:18:55 KST" name="AfterMethod" finished-at="2021-11-30T00:18:55 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:57 KST" name="AfterMethod" finished-at="2021-11-30T00:41:57 KST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0461_Chips_팟빵_구독해제_확인 status=SUCCESS method=미디어_12_팟빵.TC_0461_Chips_팟빵_구독해제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0461_Chips_팟빵_구독해제_확인 status=SUCCESS method=미디어_12_팟빵.TC_0461_Chips_팟빵_구독해제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0462_Chips_팟빵_이전_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:18:55 KST" name="TC_0462_Chips_팟빵_이전_확인" description="칩스 리그레이션 TC : 실행_0462" finished-at="2021-11-30T00:19:37 KST" duration-ms="42420" status="PASS">
+        <test-method signature="TC_0462_Chips_팟빵_이전_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:57 KST" name="TC_0462_Chips_팟빵_이전_확인" description="칩스 리그레이션 TC : 실행_0462" finished-at="2021-11-30T00:42:34 KST" duration-ms="36711" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -657,10 +657,90 @@ at java.base/java.lang.Thread.run(Thread.java:832)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[2] (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[2] (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at unit.Utilities.findElementLocated(Utilities.java:167)
+at unit.Utilities.getText(Utilities.java:1382)
+at Chips_004_미디어_etc.미디어_12_팟빵.TC_0462_Chips_팟빵_이전_확인(미디어_12_팟빵.java:443)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-KEI', ip: '172.27.24.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: unit.Utilities
+Capabilities {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., databaseEnabled: false, desired: {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., deviceName: Android, extractChromeAndroidPackageFromContextName: true, focused: true, newCommandTimeout: 600000, platformName: android, recreateChromeDriverSessions: false, showChromedriverLog: true, udid: R33M4000CY}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N976N, deviceName: R33M4000CY, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: R33M4000CY, extractChromeAndroidPackageFromContextName: true, focused: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600000, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, recreateChromeDriverSessions: false, showChromedriverLog: true, statBarHeight: 85, takesScreenshot: true, udid: R33M4000CY, viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3bb896e7-55a5-4b06-b83c-7d396788f859
+*** Element info: {Using=xpath, value=//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[2]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at unit.Utilities.execute(Utilities.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at unit.Utilities.findElement(Utilities.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+at unit.Utilities.findElementByXPath(Utilities.java:1)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at unit.Utilities.findElement(Utilities.java:1)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0462_Chips_팟빵_이전_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:18:55 KST" name="BeforeMethod" finished-at="2021-11-30T00:18:55 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:41:57 KST" name="BeforeMethod" finished-at="2021-11-30T00:41:57 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -671,18 +751,18 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:19:37 KST" name="AfterMethod" finished-at="2021-11-30T00:19:37 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:42:34 KST" name="AfterMethod" finished-at="2021-11-30T00:42:34 KST" duration-ms="394" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0462_Chips_팟빵_이전_확인 status=SUCCESS method=미디어_12_팟빵.TC_0462_Chips_팟빵_이전_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0462_Chips_팟빵_이전_확인 status=FAILURE method=미디어_12_팟빵.TC_0462_Chips_팟빵_이전_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:19:37 KST" name="BeforeMethod" finished-at="2021-11-30T00:19:37 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:42:34 KST" name="BeforeMethod" finished-at="2021-11-30T00:42:34 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -693,7 +773,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0463_Chips_팟빵_다음_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:19:37 KST" name="TC_0463_Chips_팟빵_다음_확인" description="칩스 리그레이션 TC : 실행_0463" finished-at="2021-11-30T00:19:53 KST" duration-ms="16195" status="PASS">
+        <test-method signature="TC_0463_Chips_팟빵_다음_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:42:34 KST" name="TC_0463_Chips_팟빵_다음_확인" description="칩스 리그레이션 TC : 실행_0463" finished-at="2021-11-30T00:42:55 KST" duration-ms="20852" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -701,21 +781,101 @@ at java.base/java.lang.Thread.run(Thread.java:832)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[2] (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[2] (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at unit.Utilities.findElementLocated(Utilities.java:167)
+at unit.Utilities.getText(Utilities.java:1382)
+at Chips_004_미디어_etc.미디어_12_팟빵.TC_0463_Chips_팟빵_다음_확인(미디어_12_팟빵.java:467)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-KEI', ip: '172.27.24.217', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: unit.Utilities
+Capabilities {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., databaseEnabled: false, desired: {appActivity: com.skt.aidev.nugufriends.u..., appPackage: com.skt.aidev.nugufriends, automationName: UIAutomator2, chromedriverArgs: {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], w3c: true}}, chromedriverExecutable: C:\chromedriver_win32\chrom..., deviceName: Android, extractChromeAndroidPackageFromContextName: true, focused: true, newCommandTimeout: 600000, platformName: android, recreateChromeDriverSessions: false, showChromedriverLog: true, udid: R33M4000CY}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-N976N, deviceName: R33M4000CY, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: R33M4000CY, extractChromeAndroidPackageFromContextName: true, focused: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600000, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, recreateChromeDriverSessions: false, showChromedriverLog: true, statBarHeight: 85, takesScreenshot: true, udid: R33M4000CY, viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3bb896e7-55a5-4b06-b83c-7d396788f859
+*** Element info: {Using=xpath, value=//android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[2]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at unit.Utilities.execute(Utilities.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at unit.Utilities.findElement(Utilities.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+at unit.Utilities.findElementByXPath(Utilities.java:1)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at unit.Utilities.findElement(Utilities.java:1)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0463_Chips_팟빵_다음_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:19:53 KST" name="AfterMethod" finished-at="2021-11-30T00:19:53 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:42:55 KST" name="AfterMethod" finished-at="2021-11-30T00:42:55 KST" duration-ms="373" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0463_Chips_팟빵_다음_확인 status=SUCCESS method=미디어_12_팟빵.TC_0463_Chips_팟빵_다음_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0463_Chips_팟빵_다음_확인 status=FAILURE method=미디어_12_팟빵.TC_0463_Chips_팟빵_다음_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:19:53 KST" name="BeforeMethod" finished-at="2021-11-30T00:19:53 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:42:55 KST" name="BeforeMethod" finished-at="2021-11-30T00:42:55 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -726,7 +886,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0464_Chips_팟빵_이전팟캐스트_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:19:53 KST" name="TC_0464_Chips_팟빵_이전팟캐스트_확인" description="칩스 리그레이션 TC : 실행_0463" finished-at="2021-11-30T00:20:25 KST" duration-ms="31271" status="PASS">
+        <test-method signature="TC_0464_Chips_팟빵_이전팟캐스트_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:42:55 KST" name="TC_0464_Chips_팟빵_이전팟캐스트_확인" description="칩스 리그레이션 TC : 실행_0463" finished-at="2021-11-30T00:43:26 KST" duration-ms="31093" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -737,29 +897,18 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0464_Chips_팟빵_이전팟캐스트_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:20:25 KST" name="AfterMethod" finished-at="2021-11-30T00:20:25 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:43:26 KST" name="AfterMethod" finished-at="2021-11-30T00:43:26 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0464_Chips_팟빵_이전팟캐스트_확인 status=SUCCESS method=미디어_12_팟빵.TC_0464_Chips_팟빵_이전팟캐스트_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0464_Chips_팟빵_이전팟캐스트_확인 status=SUCCESS method=미디어_12_팟빵.TC_0464_Chips_팟빵_이전팟캐스트_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:20:25 KST" name="BeforeMethod" finished-at="2021-11-30T00:20:25 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0465_Chips_팟빵_다음팟캐스트__확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0465_Chips_팟빵_다음팟캐스트__확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:20:25 KST" name="TC_0465_Chips_팟빵_다음팟캐스트__확인" description="칩스 리그레이션 TC : 실행_0465" finished-at="2021-11-30T00:20:53 KST" duration-ms="28974" status="PASS">
+        <test-method signature="TC_0465_Chips_팟빵_다음팟캐스트__확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:43:26 KST" name="TC_0465_Chips_팟빵_다음팟캐스트__확인" description="칩스 리그레이션 TC : 실행_0465" finished-at="2021-11-30T00:43:56 KST" duration-ms="29054" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -770,18 +919,29 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0465_Chips_팟빵_다음팟캐스트__확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:20:53 KST" name="AfterMethod" finished-at="2021-11-30T00:20:53 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:43:26 KST" name="BeforeMethod" finished-at="2021-11-30T00:43:26 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0465_Chips_팟빵_다음팟캐스트__확인 status=SUCCESS method=미디어_12_팟빵.TC_0465_Chips_팟빵_다음팟캐스트__확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0465_Chips_팟빵_다음팟캐스트__확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:43:56 KST" name="AfterMethod" finished-at="2021-11-30T00:43:56 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0465_Chips_팟빵_다음팟캐스트__확인 status=SUCCESS method=미디어_12_팟빵.TC_0465_Chips_팟빵_다음팟캐스트__확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:20:53 KST" name="BeforeMethod" finished-at="2021-11-30T00:20:53 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:43:56 KST" name="BeforeMethod" finished-at="2021-11-30T00:43:56 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -792,7 +952,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0466_Chips_팟빵_재생시간앞으로이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:20:53 KST" name="TC_0466_Chips_팟빵_재생시간앞으로이동_확인" description="칩스 리그레이션 TC : 실행_0466" finished-at="2021-11-30T00:21:03 KST" duration-ms="9717" status="PASS">
+        <test-method signature="TC_0466_Chips_팟빵_재생시간앞으로이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:43:56 KST" name="TC_0466_Chips_팟빵_재생시간앞으로이동_확인" description="칩스 리그레이션 TC : 실행_0466" finished-at="2021-11-30T00:44:05 KST" duration-ms="9858" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -803,18 +963,29 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0466_Chips_팟빵_재생시간앞으로이동_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:21:03 KST" name="AfterMethod" finished-at="2021-11-30T00:21:03 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:44:05 KST" name="AfterMethod" finished-at="2021-11-30T00:44:05 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0466_Chips_팟빵_재생시간앞으로이동_확인 status=SUCCESS method=미디어_12_팟빵.TC_0466_Chips_팟빵_재생시간앞으로이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0466_Chips_팟빵_재생시간앞으로이동_확인 status=SUCCESS method=미디어_12_팟빵.TC_0466_Chips_팟빵_재생시간앞으로이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0467_Chips_팟빵_재생시간뒤으로이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:21:03 KST" name="TC_0467_Chips_팟빵_재생시간뒤으로이동_확인" description="칩스 리그레이션 TC : 실행_0467" finished-at="2021-11-30T00:21:13 KST" duration-ms="9664" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:44:05 KST" name="BeforeMethod" finished-at="2021-11-30T00:44:05 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0467_Chips_팟빵_재생시간뒤으로이동_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0467_Chips_팟빵_재생시간뒤으로이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:44:05 KST" name="TC_0467_Chips_팟빵_재생시간뒤으로이동_확인" description="칩스 리그레이션 TC : 실행_0467" finished-at="2021-11-30T00:44:15 KST" duration-ms="9831" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -825,29 +996,29 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0467_Chips_팟빵_재생시간뒤으로이동_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:21:03 KST" name="BeforeMethod" finished-at="2021-11-30T00:21:03 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:44:15 KST" name="AfterMethod" finished-at="2021-11-30T00:44:15 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0467_Chips_팟빵_재생시간뒤으로이동_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:21:13 KST" name="AfterMethod" finished-at="2021-11-30T00:21:13 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0467_Chips_팟빵_재생시간뒤으로이동_확인 status=SUCCESS method=미디어_12_팟빵.TC_0467_Chips_팟빵_재생시간뒤으로이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0467_Chips_팟빵_재생시간뒤으로이동_확인 status=SUCCESS method=미디어_12_팟빵.TC_0467_Chips_팟빵_재생시간뒤으로이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0468_Chips_팟빵_종료_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:21:13 KST" name="TC_0468_Chips_팟빵_종료_확인" description="칩스 리그레이션 TC : 실행_0468" finished-at="2021-11-30T00:21:23 KST" duration-ms="9845" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:44:15 KST" name="BeforeMethod" finished-at="2021-11-30T00:44:15 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0468_Chips_팟빵_종료_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0468_Chips_팟빵_종료_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:44:15 KST" name="TC_0468_Chips_팟빵_종료_확인" description="칩스 리그레이션 TC : 실행_0468" finished-at="2021-11-30T00:44:25 KST" duration-ms="9844" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -858,29 +1029,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0468_Chips_팟빵_종료_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:21:13 KST" name="BeforeMethod" finished-at="2021-11-30T00:21:13 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0468_Chips_팟빵_종료_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:21:23 KST" name="AfterMethod" finished-at="2021-11-30T00:21:23 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0468_Chips_팟빵_종료_확인 status=SUCCESS method=미디어_12_팟빵.TC_0468_Chips_팟빵_종료_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@4470fbd6]" started-at="2021-11-30T00:21:23 KST" name="tearDownClass" finished-at="2021-11-30T00:21:27 KST" duration-ms="4406" status="PASS">
+        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:44:25 KST" name="tearDownClass" finished-at="2021-11-30T00:44:29 KST" duration-ms="4273" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -946,6 +1095,17 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048]" started-at="2021-11-30T00:44:25 KST" name="AfterMethod" finished-at="2021-11-30T00:44:25 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0468_Chips_팟빵_종료_확인 status=SUCCESS method=미디어_12_팟빵.TC_0468_Chips_팟빵_종료_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@15d49048] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
       </class> <!-- Chips_004_미디어_etc.미디어_12_팟빵 -->
     </test> <!-- Test_Project -->
   </suite> <!-- ExtentReport -->
