@@ -372,7 +372,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	public void TC_0314_Chips_자체소싱_종료_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 음악 꺼줘 - 발화");
-		util.SWFsendPost("꺼줘", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("꺼줘", ServerName, AccessToken, "music");
 		Thread.sleep(5000);
 		
 		util.context("NATIVE_APP");
