@@ -327,6 +327,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		test.log(Status.INFO, "차이나는 클라스 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "차이나는 클라스"));
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "들려드릴게요."));
+		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "방송명 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO제목), "차이나는 클라스"));
@@ -338,6 +339,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "W, 팟빵에서 김어준의 뉴스공장 틀어줘 - 발화");
 		util.SWFsendPost_playStatus("팟빵에서 김어준의 뉴스공장 틀어줘", ServerName, AccessToken, "podcast");
+		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "팟캐스트 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "팟캐스트"));
@@ -424,6 +426,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에 추가했습니다."));
+		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "구독 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");

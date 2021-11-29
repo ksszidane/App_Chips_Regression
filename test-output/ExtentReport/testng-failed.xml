@@ -23,9 +23,9 @@
           <include name="setupClass"/>
           <include name="tearDownClass"/>
           <include name="BeforeMethod"/>
+          <include name="TC_0452_Chips_팟빵_티맵미지원컨텐츠_재생_확인" invocation-numbers="0"/>
           <include name="TC_0460_Chips_팟빵_구독_확인" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-          <include name="TC_0453_Chips_팟빵_티맵미지원컨텐츠_재생_확인" invocation-numbers="0"/>
         </methods>
       </class> <!-- Chips_004_미디어_etc.미디어_12_팟빵 -->
     </classes>
