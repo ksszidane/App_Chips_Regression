@@ -368,20 +368,5 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 
 	}
 	
-	@Test(description = "칩스 리그레이션 TC : 실행_0314")
-	public void TC_0314_Chips_자체소싱_종료_확인(Method method) throws Exception {
-		
-		test.log(Status.INFO, "W, 음악 꺼줘 - 발화");
-		util.SWFsendPost_playStatus("꺼줘", ServerName, AccessToken, "music");
-		Thread.sleep(5000);
-		
-		util.context("NATIVE_APP");
-		test.log(Status.INFO, "음악카드 종료되고 메인화면 확인");
-		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
-		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature_format")));
-		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("location")));
-		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("weatherImageView")));
-	}
-	
 	
 }

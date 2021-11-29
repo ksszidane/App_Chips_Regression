@@ -158,14 +158,11 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "과자 먹는 소리"));
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
-		test.log(Status.INFO, "W, 과자 먹는 소리 틀어줘 - 발화");
-		util.SWFsendPost("과자 먹는 소리 틀어줘", ServerName, AccessToken);
-		
 		test.log(Status.INFO, "ASMR 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "ASMR"));
 		
 		test.log(Status.INFO, "곡명 확인");
-		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "과자 먹는 소리"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO제목), "과자 먹는 소리"));
 		
 		test.log(Status.INFO, "과자먹는 소리 이미지커버 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -427,8 +424,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost_playStatus("좋아요 해줘", ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "좋아요 해줘 TTS 확인");
-		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
-		Assert.assertTrue(tts.contains("좋아요 기능을 지원하지 않는 곡이에요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "좋아요 기능을 지원하지 않는 곡이에요."));
 		
 	}
 	
@@ -468,6 +464,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 이전거 - 발화");
 		util.SWFsendPost_playStatus("이전 곡", ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("이전 곡", ServerName, AccessToken, "music");
 		Thread.sleep(3000);
 
 		test.log(Status.INFO, "곡명 확인");
@@ -502,6 +499,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 다음거 - 발화");
 		util.SWFsendPost_playStatus("다음 곡", ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("다음 곡", ServerName, AccessToken, "music");
 		Thread.sleep(3000);
 
 		test.log(Status.INFO, "곡명 확인");
@@ -517,6 +515,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		String 이전곡명 = util.getText(By.xpath(xPath.FLO제목));
 		
 		test.log(Status.INFO, "W, 이전거 - 발화");
+		util.SWFsendPost_playStatus("이전 곡", ServerName, AccessToken, "music");
 		util.SWFsendPost_playStatus("이전 곡", ServerName, AccessToken, "music");
 		Thread.sleep(3000);
 

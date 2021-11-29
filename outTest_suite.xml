@@ -81,16 +81,8 @@
 			<class name="Chips_012_CarLife.CarLife_01_스타벅스" />
 			-->
 
-			<class name="Chips_002_미디어.미디어_01_멜론" />
-			<class name="Chips_002_미디어.미디어_02_FLO_미로그인" />
-			<class name="Chips_002_미디어.미디어_03_FLO_로그인" />
-			<class name="Chips_002_미디어.미디어_04_FLO_장르테마" />
-			<class name="Chips_002_미디어.미디어_05_FLO_재생컨트롤러" />
-			<class name="Chips_002_미디어.미디어_06_자체소싱" />
-			<class name="Chips_002_미디어.미디어_07_ASMR" />
-			<class name="Chips_002_미디어.미디어_09_라디오_채널확인" />
-			<class name="Chips_002_미디어.미디어_11_오디오북" />
-			<class name="Chips_002_미디어.미디어_12_팟빵" />
+			<class name="Chips_004_미디어_etc.미디어_07_ASMR" />
+		
 
 		
 
