@@ -165,6 +165,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 이번 주 비 와? - 발화");
 		util.SWFsendPost("이번 주 비 와?", ServerName, AccessToken);
+		util.SWFsendPost("이번 주 비 와?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
