@@ -302,43 +302,11 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 	}
 	
-	@Test(description = "칩스 리그레이션 TC : 실행_0452")
-	public void TC_0452_Chips_팟빵_티맵미지원컨텐츠_재생_확인(Method method) throws Exception {
-		 
-		test.log(Status.INFO, "W, 팟빵에서 이진우의 손에잡히는 경제 재생 - 발화");
-		util.SWFsendPost_playStatus("팟빵에서 이진우의 손에잡히는 경제 재생", ServerName, AccessToken, "podcast");
-		
-		test.log(Status.INFO, "이진우의 손에잡히는 경제 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이진우의 손에 잡히는 경제"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "들려드릴게요."));
-		Thread.sleep(2000);
-		
-		test.log(Status.INFO, "방송명 확인");
-		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO제목), "이진우의 손에 잡히는 경제"));
-		
-	}
-	
-	@Test(description = "칩스 리그레이션 TC : 실행_0453")
-	public void TC_0453_Chips_팟빵_티맵미지원컨텐츠_재생_확인(Method method) throws Exception {
-		 
-		test.log(Status.INFO, "W, 팟빵에서 차이나는 클라스 재생 - 발화");
-		util.SWFsendPost_playStatus("팟빵에서 차이나는 클라스 재생", ServerName, AccessToken, "podcast");
-		
-		test.log(Status.INFO, "차이나는 클라스 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "차이나는 클라스"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "들려드릴게요."));
-		Thread.sleep(2000);
-		
-		test.log(Status.INFO, "방송명 확인");
-		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO제목), "차이나는 클라스"));
-		
-	}
-	
 	@Test(description = "칩스 리그레이션 TC : 실행_0455")
 	public void TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 팟빵에서 김어준의 뉴스공장 틀어줘 - 발화");
-		util.SWFsendPost_playStatus("팟빵에서 김어준의 뉴스공장 틀어줘", ServerName, AccessToken, "podcast");
+		util.SWFsendPost("팟빵에서 김어준의 뉴스공장 틀어줘", ServerName, AccessToken);
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "팟캐스트 타이틀 확인");
@@ -421,8 +389,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	public void TC_0460_Chips_팟빵_구독_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "W, 구독 해줘 - 발화");
-		util.SWFsendPost_playStatus("이 팟캐스트 구독 해줘", ServerName, AccessToken, "podcast");
+		test.log(Status.INFO, "W, 구독해줘 - 발화");
+		util.SWFsendPost_playStatus("구독해줘", ServerName, AccessToken, "podcast");
 
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에 추가했습니다."));
