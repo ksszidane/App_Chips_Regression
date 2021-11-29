@@ -242,6 +242,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에 추가했습니다."));
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "구독 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -260,6 +261,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에서 삭제 했습니다."));
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "구독 버튼 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -309,6 +311,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		test.log(Status.INFO, "이진우의 손에잡히는 경제 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이진우의 손에 잡히는 경제"));
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "들려드릴게요."));
+		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "방송명 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO제목), "이진우의 손에 잡히는 경제"));
@@ -353,6 +356,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "W, 일시정지 - 발화");
 		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "podcast");
+		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "podcast");
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -367,6 +372,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "W, 일시정지 취소 - 발화");
 		util.SWFsendPost_playStatus("일시정지 취소", ServerName, AccessToken, "podcast");
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -381,6 +387,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "W, 일시정지 - 발화");
 		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "podcast");
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
@@ -413,8 +420,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		 
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 구독 해줘 - 발화");
-		util.SWFsendPost_playStatus("구독 해줘", ServerName, AccessToken, "podcast");
-		
+		util.SWFsendPost_playStatus("이 팟캐스트 구독 해줘", ServerName, AccessToken, "podcast");
+
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에 추가했습니다."));
 		Thread.sleep(3000);
@@ -424,7 +431,6 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독on_web)));
-		util.context("NATIVE_APP");
 		
 	}
 	
@@ -434,6 +440,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 구독 해제 - 발화");
 		util.SWFsendPost_playStatus("구독 해제", ServerName, AccessToken, "podcast");
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에서 삭제 했습니다."));
@@ -494,6 +501,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		String 현재에피소드 = util.getText(By.xpath(xPath.FLO아티스트));
 		
 		test.log(Status.INFO, "W, 다음 - 발화");
+		util.SWFsendPost_playStatus("다음", ServerName, AccessToken, "music");
 		util.SWFsendPost_playStatus("다음", ServerName, AccessToken, "music");
 		Thread.sleep(4000);
 		
