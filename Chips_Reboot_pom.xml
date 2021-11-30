@@ -71,7 +71,7 @@
 						</property>
 					</properties>
 					<suiteXmlFiles>
-                    	<suiteXmlFile>Chips_Reboot.xml</suiteXmlFile>
+                    	<suiteXmlFile>Chips_Reboot_suite.xml</suiteXmlFile>
                  	 </suiteXmlFiles>
 					<workingDirectory>target/</workingDirectory>
 					<argLine>
