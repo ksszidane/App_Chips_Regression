@@ -330,6 +330,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 일시정지 - 발화");
 		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
