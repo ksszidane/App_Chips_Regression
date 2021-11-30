@@ -56,7 +56,7 @@ public class CarLife_01_스타벅스 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		
 		test.log(Status.INFO, "접근권한 허용 버튼 클릭");
 		util.click(By.xpath(xPath.접근권한허용버튼));
@@ -86,7 +86,7 @@ public class CarLife_01_스타벅스 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.context("NATIVE_APP");
+	    util.switchToContextName("NATIVE_APP");
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 

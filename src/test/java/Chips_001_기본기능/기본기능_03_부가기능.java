@@ -58,7 +58,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
@@ -88,7 +88,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.context("NATIVE_APP");
+	    util.switchToContextName("NATIVE_APP");
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -135,7 +135,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "첫번쨰 FLO카드의 미디어바 pause 확인"); 
 		util.fastSwipe(131, 850, 960, 850);
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		System.out.println(util.allWindwosIndexCount());
 		util.switchToWindwosIndex(1);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
@@ -143,12 +143,12 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		test.log(Status.INFO, "두번째 날씨카드의 이동 후 닫기"); 
 		util.fastSwipe(960, 850, 131, 850);
 		Thread.sleep(500);
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		util.click(By.xpath(xPath.두번쨰카드닫기));
 		
 		test.log(Status.INFO, "미디어 재생 확인"); 
 		Thread.sleep(500);
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		System.out.println(util.allWindwosIndexCount());
 		util.switchToWindwosIndex(1);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));

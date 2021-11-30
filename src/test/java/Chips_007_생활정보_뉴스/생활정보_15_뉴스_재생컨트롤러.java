@@ -55,7 +55,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
@@ -85,7 +85,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.context("NATIVE_APP");
+	    util.switchToContextName("NATIVE_APP");
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -115,7 +115,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "연예 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
@@ -123,7 +123,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
@@ -139,13 +139,13 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0845")
 	public void TC_0845_Chips_뉴스_컨트롤러_일시정지_확인(Method method) throws Exception {
 		 
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 일시정지 - 발화");
 		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "news");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
@@ -154,14 +154,14 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0846")
 	public void TC_0846_Chips_뉴스_컨트롤러_일시정지취소_확인(Method method) throws Exception {
 		 
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 일시정지 취소 - 발화");
 		util.SWFsendPost_playStatus("일시정지 취소", ServerName, AccessToken, "news");
 		util.SWFsendPost_playStatus("일시정지 취소", ServerName, AccessToken, "news");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 재생 버튼 일시정지으로 전환 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
@@ -175,7 +175,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
@@ -190,7 +190,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("재생", ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
@@ -224,7 +224,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0851_Chips_뉴스_컨트롤러_다음뉴스_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "현재 기사제목 저장");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		String 현재기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
@@ -233,7 +233,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus(" 다음 뉴스", ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "다음 기사제목 저장");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		String 다음기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
@@ -248,7 +248,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0852_Chips_뉴스_컨트롤러_이전뉴스_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "현재 기사제목 저장");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		String 현재기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
@@ -257,7 +257,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("이전 뉴스", ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "이전 기사제목 저장");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		String 다음기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
@@ -271,7 +271,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0853_Chips_뉴스_컨트롤러_다음_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "현재 기사제목 저장");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		String 현재기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
@@ -281,7 +281,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("다음", ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "다음 기사제목 저장");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		String 다음기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
@@ -295,7 +295,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0854_Chips_뉴스_컨트롤러_이전_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "현재 기사제목 저장");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		String 현재기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
@@ -305,7 +305,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("이전", ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "이전 기사제목 저장");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		String 다음기사 = util.getText(By.xpath(xPath.키워드뉴스타이틀_web));
@@ -318,7 +318,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0855")
 	public void TC_0855_Chips_뉴스_종료_확인(Method method) throws Exception {
 		 
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 뉴스 꺼줘 - 발화");
 		util.SWFsendPost_playStatus("뉴스 꺼줘", ServerName, AccessToken, "news");
 		

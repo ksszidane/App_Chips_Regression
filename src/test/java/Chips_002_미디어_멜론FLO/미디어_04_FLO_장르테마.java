@@ -55,7 +55,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
@@ -85,7 +85,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.context("NATIVE_APP");
+	    util.switchToContextName("NATIVE_APP");
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -142,7 +142,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -188,7 +188,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -234,7 +234,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -280,7 +280,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -326,7 +326,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 

@@ -56,7 +56,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
@@ -86,7 +86,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.context("NATIVE_APP");
+	    util.switchToContextName("NATIVE_APP");
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -157,7 +157,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
 		
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "현재위치 정보값 저장");
 		String str = util.getText(By.id("location"));
 		String[] array = str.split(" ");
@@ -168,7 +168,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.SWFsendPost("이번 주 비 와?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), "주간 날씨"));
@@ -176,7 +176,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		test.log(Status.INFO, "날씨위치정보 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.날씨위치정보_web)));
 		
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -185,7 +185,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.SWFsendPost("이번 주 비 와?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "주간날씨 리스트 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨영역_web)));
@@ -196,7 +196,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		test.log(Status.INFO, "두번쨰 날짜 기준 내일 마킹확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.주간날씨내일마킹_web), "내일"));
 		
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -205,7 +205,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.SWFsendPost("이번 주 비 와?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "마지막 리스트 날짜 기준 금일 요일 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.주간날씨리스트_7st요일_web), util.getDayOfWeek(+6)));
@@ -227,7 +227,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0742")
 	public void TC_0742_Chips_날씨_다음주날씨_확인(Method method) throws Exception {
 		 
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		//test.log(Status.INFO, "현재위치 정보값 저장");
 		//String str = util.getText(By.id("location"));
 		//String[] array = str.split(" ");
@@ -237,7 +237,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.SWFsendPost("다음주 비 와?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), "주간 날씨"));
@@ -248,7 +248,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		test.log(Status.INFO, "주간날씨 리스트 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨영역_web)));
 		
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -257,7 +257,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.SWFsendPost("다음주 비 와?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "첫번쨰 날짜 기준 금일 요일 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.주간날씨리스트_1st요일_web), "월"));
@@ -268,7 +268,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		test.log(Status.INFO, "모레날씨 최고온도 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨리스트_2st최고기온_web)));
 		
-		util.context("NATIVE_APP");
+		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -277,7 +277,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		util.SWFsendPost("다음주 비 와?", ServerName, AccessToken);
 		
 		test.log(Status.INFO, "모레날씨 아이콘 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
 		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨리스트_3st아이콘_web)));
