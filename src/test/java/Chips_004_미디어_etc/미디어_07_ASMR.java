@@ -585,7 +585,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 
 	}
 	
-	@Test(description = "칩스 리그레이션 TC : 실행_0340")
+	//@Test(description = "칩스 리그레이션 TC : 실행_0340")
 	public void TC_0340_Chips_ASMR_종료_확인(Method method) throws Exception {
 		
 		util.context("NATIVE_APP");
