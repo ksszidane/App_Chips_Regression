@@ -71,7 +71,7 @@
 						</property>
 					</properties>
 					<suiteXmlFiles>
-                    	<suiteXmlFile>007_생활정보_뉴스_suite</suiteXmlFile>
+                    	<suiteXmlFile>007_생활정보_뉴스_suite.xml</suiteXmlFile>
                  	 </suiteXmlFiles>
 					<workingDirectory>target/</workingDirectory>
 					<argLine>
