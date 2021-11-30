@@ -304,7 +304,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "이전 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "한곡 재생시에는 지원하지 않는 기능입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "한 곡 재생시에는 지원하지 않는 기능입니다."));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0309")
