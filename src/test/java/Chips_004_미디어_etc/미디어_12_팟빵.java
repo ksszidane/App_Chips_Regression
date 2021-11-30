@@ -411,7 +411,6 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		//util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 구독 해제 - 발화");
 		util.SWFsendPost_playStatus("구독 해제", ServerName, AccessToken, "podcast");
-		util.SWFsendPost_playStatus("구독 해제", ServerName, AccessToken, "podcast");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
