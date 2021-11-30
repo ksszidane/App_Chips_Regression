@@ -244,12 +244,12 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에 추가했습니다."));
 		Thread.sleep(3000);
 		
-		test.log(Status.INFO, "구독 버튼 확인");
-		util.context("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
-		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독on_web)));
-		util.context("NATIVE_APP");
+		//test.log(Status.INFO, "구독 버튼 확인");
+		//util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		//util.switchToWindwosURL(xPath.Webview_URL);
+		//util.waitForPageLoaded();
+		//Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독on_web)));
+		//util.context("NATIVE_APP");
 		
 	}
 	
@@ -389,9 +389,9 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	public void TC_0460_Chips_팟빵_구독_확인(Method method) throws Exception {
 		 
 		util.context("NATIVE_APP");
-		test.log(Status.INFO, "W, 이 팟캐스트 구독 - 발화");
-		util.SWFsendPost_playStatus("이 팟캐스트 구독", ServerName, AccessToken, "podcast");
-		util.SWFsendPost_playStatus("이 팟캐스트 구독", ServerName, AccessToken, "podcast");
+		test.log(Status.INFO, "W, 팟캐스트 구독 - 발화");
+		util.SWFsendPost_playStatus("팟캐스트 구독", ServerName, AccessToken, "podcast");
+		util.SWFsendPost_playStatus("팟캐스트 구독", ServerName, AccessToken, "podcast");
 
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에 추가했습니다."));
