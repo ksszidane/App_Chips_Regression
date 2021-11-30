@@ -323,8 +323,9 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0920")
 	public void TC_0920_Chips_누구백과_호출어생략_속성검색_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		//util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 인터스텔라 개봉일 찾아줘 - 발화");
+		util.SWFsendPost("인터스텔라 개봉일 찾아줘", ServerName, AccessToken);
 		util.SWFsendPost("인터스텔라 개봉일 찾아줘", ServerName, AccessToken);
 		
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
