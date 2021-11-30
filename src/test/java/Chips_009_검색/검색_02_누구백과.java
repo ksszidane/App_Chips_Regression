@@ -276,7 +276,6 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.context("NATIVE_APP");
 		test.log(Status.INFO, "W, 고진감래가 무슨 뜻이야 - 발화");
 		util.SWFsendPost("고진감래가 무슨 뜻이야", ServerName, AccessToken);
-		util.SWFsendPost("고진감래가 무슨 뜻이야", ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
