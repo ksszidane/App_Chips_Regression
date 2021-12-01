@@ -69,7 +69,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	    
 	    test.log(Status.INFO, "세션 만료 후 로그인 시도"); 
 	    util.click(By.id("loginButton"));
-	    Thread.sleep(1000);
+	    Thread.sleep(5000);
 	    
 	    test.log(Status.INFO, "WEBVIEW로 화면 전환");
         util.switchContext("WEBVIEW");
@@ -130,9 +130,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 
 	}
@@ -144,9 +142,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("일시정지 취소", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_일시정지_web)));
 
 	}
@@ -159,9 +155,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 
 	}
@@ -173,9 +167,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("재생", ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_일시정지_web)));
 
 	}
@@ -190,9 +182,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 강원교통방송 라디오"));
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_일시정지_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 
@@ -208,9 +198,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 파워FM 라디오"));
 		
 		test.log(Status.INFO, "이전 라디오 재생중 버튼 활성화");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_일시정지_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_재생_web)));
 
@@ -226,9 +214,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 강원교통방송 라디오"));
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_일시정지_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 
@@ -244,9 +230,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 파워FM 라디오"));
 		
 		test.log(Status.INFO, "이전 라디오 재생중 버튼 활성화");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_일시정지_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_재생_web)));
 
@@ -262,9 +246,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 강원교통방송 라디오"));
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_일시정지_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 
@@ -280,9 +262,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 파워FM 라디오"));
 		
 		test.log(Status.INFO, "이전 라디오 재생중 버튼 활성화");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_일시정지_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_재생_web)));
 
@@ -298,9 +278,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 강원교통방송 라디오"));
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_일시정지_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 
@@ -322,7 +300,9 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "W, 라디오 꺼줘 - 발화");
 		util.SWFsendPost_playStatus("라디오 꺼줘", ServerName, AccessToken, "radio");
+		Thread.sleep(5000);
 		
+		util.switchContext("NATIVE_APP");
 		test.log(Status.INFO, "라디오카드 종료되고 메인화면 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature_format")));

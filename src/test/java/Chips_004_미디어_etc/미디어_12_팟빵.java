@@ -69,7 +69,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	    
 	    test.log(Status.INFO, "세션 만료 후 로그인 시도"); 
 	    util.click(By.id("loginButton"));
-	    Thread.sleep(1000);
+	    Thread.sleep(5000);
 	    
 	    test.log(Status.INFO, "WEBVIEW로 화면 전환");
         util.switchContext("WEBVIEW");
@@ -330,9 +330,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 		
 	}
@@ -360,9 +358,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 		
 	}
@@ -378,9 +374,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBS 김어준의 뉴스공장"));
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 		
 	}
@@ -417,9 +411,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에서 삭제 했습니다."));
 		
 		test.log(Status.INFO, "구독 버튼 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독off_web)));
 		util.switchToContextName("NATIVE_APP");
 		
@@ -495,9 +487,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "현재 에피소드 저장");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		String 현재에피소드 = util.getText(By.xpath(xPath.팟빵에피소트명_web));
 		System.out.println(현재에피소드);
 		
@@ -519,9 +509,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	public void TC_0465_Chips_팟빵_다음팟캐스트__확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "현재 에피소드 저장");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		String 현재에피소드 = util.getText(By.xpath(xPath.팟빵에피소트명_web));
 		System.out.println(현재에피소드);
 		
@@ -536,9 +524,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		Thread.sleep(4000);
 		
 		test.log(Status.INFO, "변경된 에피소드 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		String 변경에피소드 = util.getText(By.xpath(xPath.팟빵에피소트명_web));
 		System.out.println(변경에피소드);
 		Assert.assertFalse(현재에피소드.contains(변경에피소드));
@@ -549,9 +535,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	public void TC_0466_Chips_팟빵_재생시간앞으로이동_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "현재 재생시간 저장");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		String 현재재생시간 = util.getText(By.xpath(xPath.팟캐스트재생시간_web));
 		
 		test.log(Status.INFO, "W, 2분 앞으로 이동 - 발화");
@@ -559,9 +543,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "변경된 재생시간 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		String 변경재생시간 = util.getText(By.xpath(xPath.팟캐스트재생시간_web));
 		Assert.assertFalse(현재재생시간.contains(변경재생시간));
 
@@ -571,9 +553,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	public void TC_0467_Chips_팟빵_재생시간뒤으로이동_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "현재 재생시간 저장");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		String 현재재생시간 = util.getText(By.xpath(xPath.팟캐스트재생시간_web));
 		
 		test.log(Status.INFO, "W, 1분 뒤로 이동 - 발화");
@@ -581,9 +561,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "변경된 재생시간 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		String 변경재생시간 = util.getText(By.xpath(xPath.팟캐스트재생시간_web));
 		Assert.assertFalse(현재재생시간.contains(변경재생시간));
 

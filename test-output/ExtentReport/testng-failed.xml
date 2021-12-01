@@ -18,26 +18,58 @@
     <parameter name="TestPlace" value="out"/>
     <parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
     <classes>
-      <class name="Chips_004_미디어_etc.미디어_12_팟빵">
+      <class name="Chips_003_미디어_라디오.미디어_10_라디오_재생컨트롤러">
         <methods>
-          <include name="setupClass"/>
-          <include name="TC_0456_Chips_팟빵_컨트롤러_일시정지_확인" invocation-numbers="0"/>
           <include name="tearDownClass"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0460_Chips_팟빵_구독_확인" invocation-numbers="0"/>
-          <include name="TC_0461_Chips_팟빵_구독해제_확인" invocation-numbers="0"/>
+          <include name="TC_0409_Chips_라디오_이전_확인"/>
           <include name="AfterMethod"/>
+          <include name="TC_0404_Chips_라디오_일시정지_확인"/>
+          <include name="TC_0408_Chips_라디오_다음_확인"/>
+          <include name="TC_0403_Chips_라디오_일시정지취소_확인"/>
+          <include name="TC_0413_Chips_라디오_종료예약_확인"/>
+          <include name="TC_0401_Chips_라디오_재생_확인"/>
+          <include name="TC_0402_Chips_라디오_일시정지_확인"/>
+          <include name="TC_0406_Chips_라디오_다음라디오채널_확인"/>
+          <include name="TC_0411_Chips_라디오_이전라디오방송_확인"/>
+          <include name="setupClass"/>
+          <include name="TC_0414_Chips_라디오_종료_확인"/>
+          <include name="BeforeMethod"/>
+          <include name="TC_0410_Chips_라디오_다음채널_확인"/>
+          <include name="TC_0405_Chips_라디오_재생_확인"/>
+          <include name="TC_0407_Chips_라디오_이전라디오채널_확인"/>
+          <include name="TC_0000_앱실행과AccessToken얻기"/>
+          <include name="TC_0412_Chips_라디오_다음라디오_확인"/>
         </methods>
-      </class> <!-- Chips_004_미디어_etc.미디어_12_팟빵 -->
-      <class name="Chips_004_미디어_etc.미디어_06_자체소싱">
+      </class> <!-- Chips_003_미디어_라디오.미디어_10_라디오_재생컨트롤러 -->
+      <class name="Chips_003_미디어_라디오.미디어_08_라디오">
         <methods>
-          <include name="setupClass"/>
-          <include name="tearDownClass"/>
-          <include name="BeforeMethod"/>
+          <include name="TC_0341_Chips_라디오_재생_확인"/>
+          <include name="TC_0350_Chips_라디오_즐겨찾기2개재생중_다음_확인"/>
+          <include name="TC_0359_Chips_라디오_실행중_즐겨찾기해제_확인"/>
+          <include name="TC_0355_Chips_라디오_대기상태_채널목록_확인"/>
           <include name="AfterMethod"/>
-          <include name="TC_0311_Chips_자체소싱_다음_확인" invocation-numbers="0"/>
+          <include name="TC_0342_Chips_라디오_좋아요재생_확인"/>
+          <include name="TC_0349_Chips_라디오_즐겨찾기1개재생중_다음_확인"/>
+          <include name="setupClass"/>
+          <include name="TC_0357_Chips_라디오_실행중_즐겨찾기_확인"/>
+          <include name="TC_0353_Chips_라디오_일시정지상태_채널재생_확인"/>
+          <include name="TC_0344_Chips_라디오_즐겨찾기있음_재생_확인"/>
+          <include name="TC_0352_Chips_라디오_종료_확인"/>
+          <include name="TC_0354_Chips_라디오_일시정지상태_채널재생_확인"/>
+          <include name="TC_0000_앱실행과AccessToken얻기"/>
+          <include name="tearDownClass"/>
+          <include name="TC_0347_Chips_라디오_다음라디오_채널_확인"/>
+          <include name="TC_0356_Chips_라디오_대기상태_채널목록_확인"/>
+          <include name="TC_0346_Chips_라디오_듣고있는라디오_채널_확인"/>
+          <include name="TC_0348_Chips_라디오_이전라디오_채널_확인"/>
+          <include name="TC_0343_Chips_라디오_즐겨찾기있음_재생_확인"/>
+          <include name="BeforeMethod"/>
+          <include name="TC_0360_Chips_라디오_즐겨찾기해제완료_즐겨찾기해제_확인"/>
+          <include name="TC_0351_Chips_라디오_종료_확인"/>
+          <include name="TC_0345_Chips_라디오_듣고있는라디오_채널_확인"/>
+          <include name="TC_0358_Chips_라디오_즐겨찾기완료_즐겨찾기실행_확인"/>
         </methods>
-      </class> <!-- Chips_004_미디어_etc.미디어_06_자체소싱 -->
+      </class> <!-- Chips_003_미디어_라디오.미디어_08_라디오 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->

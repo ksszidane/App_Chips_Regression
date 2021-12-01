@@ -69,7 +69,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	    
 	    test.log(Status.INFO, "세션 만료 후 로그인 시도"); 
 	    util.click(By.id("loginButton"));
-	    Thread.sleep(1000);
+	    Thread.sleep(5000);
 	    
 	    test.log(Status.INFO, "WEBVIEW로 화면 전환");
         util.switchContext("WEBVIEW");
@@ -413,9 +413,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "연예 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
@@ -448,9 +446,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "스포츠 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
@@ -509,9 +505,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "텔레콤"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
@@ -544,9 +538,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "세종병원 화재"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
@@ -579,9 +571,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "컴퓨터"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
@@ -613,9 +603,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "NUGU 토픽"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
@@ -695,9 +683,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), 지난주주말 + " 연예 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
@@ -729,9 +715,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "스포츠 관련 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
@@ -764,9 +748,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SK텔레콤 관련 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
@@ -831,9 +813,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "연예 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
@@ -865,9 +845,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "스포츠 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
@@ -899,9 +877,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "SK텔레콤"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
@@ -1000,9 +976,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "스포츠 뉴스"));
 		
 		test.log(Status.INFO, "뉴스 이미지 URL 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.getAttribute_Assertfunc(By.xpath(xPath.키워드뉴스이미지_web), "src", "news_motion.gif"));
 		
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");

@@ -69,7 +69,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	    
 	    test.log(Status.INFO, "세션 만료 후 로그인 시도"); 
 	    util.click(By.id("loginButton"));
-	    Thread.sleep(1000);
+	    Thread.sleep(5000);
 	    
 	    test.log(Status.INFO, "WEBVIEW로 화면 전환");
         util.switchContext("WEBVIEW");
@@ -156,9 +156,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 
 	}
@@ -172,9 +170,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 
 	}
@@ -188,9 +184,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 
 
@@ -206,6 +200,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "Flo에서 ee 내 리스트"));
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
+		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "FLO 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "내 리스트"));
 		
@@ -253,9 +248,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "당신의 Flo 좋아요 리스트에 담았습니다."));
 		
 		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.좋아요On_web)));
 
 	}
@@ -271,9 +264,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "Flo 좋아요 리스트에서 삭제했습니다."));
 		
 		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.좋아요Off_web)));
 
 	}
@@ -321,9 +312,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "셔플할게요."));
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생On_web)));
 
 	}
@@ -370,9 +359,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "셔플을 해제했어요"));
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생Off_web)));
 		util.switchToContextName("NATIVE_APP");
 		

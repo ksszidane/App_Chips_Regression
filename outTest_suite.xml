@@ -81,9 +81,8 @@
 			<class name="Chips_012_CarLife.CarLife_01_스타벅스" />
 			-->
 
-			<class name="Chips_001_기본기능.기본기능_01_기본기능" />
-			<class name="Chips_001_기본기능.기본기능_02_홈화면최초진입" />
-			<class name="Chips_001_기본기능.기본기능_03_부가기능" />
+			<class name="Chips_003_미디어_라디오.미디어_08_라디오" />
+			<class name="Chips_003_미디어_라디오.미디어_10_라디오_재생컨트롤러" />
 		
 
 		

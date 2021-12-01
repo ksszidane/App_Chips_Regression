@@ -69,7 +69,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 	    
 	    test.log(Status.INFO, "세션 만료 후 로그인 시도"); 
 	    util.click(By.id("loginButton"));
-	    Thread.sleep(1000);
+	    Thread.sleep(5000);
 	    
 	    test.log(Status.INFO, "WEBVIEW로 화면 전환");
         util.switchContext("WEBVIEW");
@@ -203,6 +203,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 뮤직메이트에서 최신 곡 틀어줘- 발화");
 		util.SWFsendPost("뮤직메이트에서 최신 곡 틀어줘", ServerName, AccessToken);
 		
+		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "최신음악 노래 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최신 음악을"));
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
@@ -377,9 +378,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO랜덤버튼)));
 		
 		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.좋아요On_web)));
 		util.switchToContextName("NATIVE_APP");
 		
@@ -519,9 +518,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "셔플을 해제했어요"));
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
-		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
-		util.switchToWindwosURL(xPath.Webview_URL);
-		util.waitForPageLoaded();
+		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생Off_web)));
 		util.switchToContextName("NATIVE_APP");
 		
