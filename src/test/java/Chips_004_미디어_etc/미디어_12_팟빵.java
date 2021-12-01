@@ -459,7 +459,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 이전 - 발화");
 		util.SWFsendPost_playStatus("이전", ServerName, AccessToken, "music");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "변경된 에피소드 확인");
 		String 변경에피소드 = util.getText(By.xpath(xPath.FLO아티스트));
@@ -479,7 +479,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("다음", ServerName, AccessToken, "music");
 		Thread.sleep(3000);
 		util.SWFsendPost_playStatus("다음", ServerName, AccessToken, "music");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "변경된 에피소드 확인");
 		String 변경에피소드 = util.getText(By.xpath(xPath.FLO아티스트));
