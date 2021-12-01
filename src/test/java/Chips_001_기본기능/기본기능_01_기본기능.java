@@ -127,7 +127,7 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 	public void TC_0068_베터리잔량_발화체크(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, 배터리 잔량 - 발화");
-		util.SWFsendPost("배터리 잔량", ServerName, AccessToken);
+		util.SWFsendPost("배터리 잔량", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "배터리 잔량 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
@@ -143,7 +143,7 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 	public void TC_0069_베터리잔량_발화체크(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, 밧데리 얼마나 남았어? - 발화");
-		util.SWFsendPost("밧데리 얼마나 남았어", ServerName, AccessToken);
+		util.SWFsendPost("밧데리 얼마나 남았어", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "배터리 잔량 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
@@ -157,7 +157,7 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 	public void TC_0079_전원제어_발화체크(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, 전원 꺼 - 발화");
-		util.SWFsendPost("전원 꺼", ServerName, AccessToken);
+		util.SWFsendPost("전원 꺼", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "전원 꺼 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.OOS_set));
@@ -171,7 +171,7 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 	public void TC_0091_환경설정_발화체크(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, 환경 설정 보여줘- 발화");
-		util.SWFsendPost("환경 설정 보여줘", ServerName, AccessToken);
+		util.SWFsendPost("환경 설정 보여줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "홈 화면 변경 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
@@ -185,13 +185,13 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 	public void TC_0094_미디어재생중_환경설정_발화체크(Method method) throws Exception {
 
 		test.log(Status.INFO, "미디어 재생상태 전환 W, SK텔레콤 뉴스 - 발화");
-		util.SWFsendPost("SK텔레콤 뉴스", ServerName, AccessToken);
+		util.SWFsendPost("SK텔레콤 뉴스", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "미디어 재생상태 전환 대기 (미디어재생전 TTS 송출 대기)");
 		Thread.sleep(4500);
 		
 		test.log(Status.INFO, "W, 환경 설정 보여줘 - 발화");
-		util.SWFsendPost("환경 설정 보여줘", ServerName, AccessToken);
+		util.SWFsendPost("환경 설정 보여줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "홈 화면 변경 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
@@ -200,7 +200,7 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "usd"));
 		
 		test.log(Status.INFO, "미디어 재생 종료");
-		util.SWFsendPost("그만", ServerName, AccessToken);
+		util.SWFsendPost("그만", Chips_001, ServerName, AccessToken);
 
 	}
 	
@@ -208,7 +208,7 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 	public void TC_0098_홈화면변경_발화체크(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, 홈 화면 변경 - 발화");
-		util.SWFsendPost("홈 화면 변경", ServerName, AccessToken);
+		util.SWFsendPost("홈 화면 변경", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "홈 화면 변경 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
@@ -222,7 +222,7 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 	public void TC_0115_나이트모드_발화체크(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, 나이트 모드 실행해줘 - 발화");
-		util.SWFsendPost("나이트 모드 실행해줘", ServerName, AccessToken);
+		util.SWFsendPost("나이트 모드 실행해줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "나이트 모드 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));

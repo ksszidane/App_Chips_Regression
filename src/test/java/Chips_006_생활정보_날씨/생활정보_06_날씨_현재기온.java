@@ -106,7 +106,7 @@ public class 생활정보_06_날씨_현재기온 extends Chips_TestCase {
 	public void TC_0745_Chips_날씨_현재온도_추워_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 지금 추워? - 발화");
-		util.SWFsendPost("지금 추워?", ServerName, AccessToken);
+		util.SWFsendPost("지금 추워?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지금 추워? TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 기온은"));
@@ -118,7 +118,7 @@ public class 생활정보_06_날씨_현재기온 extends Chips_TestCase {
 	public void TC_0746_Chips_날씨_현재온도_더워_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 지금 밖에 더워? - 발화");
-		util.SWFsendPost("지금 밖에 더워?", ServerName, AccessToken);
+		util.SWFsendPost("지금 밖에 더워?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지금 밖에 더워? TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 기온은"));

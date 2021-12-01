@@ -106,7 +106,7 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 	public void TC_0585_Chips_시간_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 시간 - 발화");
-		util.SWFsendPost("시간", ServerName, AccessToken);
+		util.SWFsendPost("시간", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "시간 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.시간_set));
@@ -122,7 +122,7 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 	public void TC_0586_Chips_날짜_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 며칠 - 발화");
-		util.SWFsendPost("며칠", ServerName, AccessToken);
+		util.SWFsendPost("며칠", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날짜 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.날짜_set));
@@ -138,7 +138,7 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 	public void TC_0587_Chips_명절날짜_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 추석이 무슨 요일이야 - 발화");
-		util.SWFsendPost("추석이 무슨 요일이야", ServerName, AccessToken);
+		util.SWFsendPost("추석이 무슨 요일이야", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날짜 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.날짜_set));
@@ -156,7 +156,7 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 	public void TC_0588_Chips_명절날짜_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 이번 주 일요일 며칠이야 - 발화");
-		util.SWFsendPost("이번 주 일요일 며칠이야", ServerName, AccessToken);
+		util.SWFsendPost("이번 주 일요일 며칠이야", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날짜 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이번 주 일요일은"));

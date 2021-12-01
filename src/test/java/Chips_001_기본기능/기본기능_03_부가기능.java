@@ -109,7 +109,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 	public void TC_0145_미디어재생중_infoPlay실행(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 노래 들려줘 - 발화");
-		util.SWFsendPost("FLO에서 Daft Punk 노래 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("FLO에서 Daft Punk 노래 들려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미디어 실행 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
@@ -127,7 +127,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		
 		Thread.sleep(3000);
 		test.log(Status.INFO,  "미디어 재생 중 W, 날씨 알려줘 - 발화");
-		util.SWFsendPost("날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("날씨 알려줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "날씨 카드 노출 확인"); 

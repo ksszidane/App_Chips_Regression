@@ -106,7 +106,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 	public void TC_0897_Chips_어학사전_도움말_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 한영사전 - 발화");
-		util.SWFsendPost("한영사전", ServerName, AccessToken);
+		util.SWFsendPost("한영사전", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "한영사전 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "궁금한 단어를 찾아보시려면 \"영어로 사과가 뭐야\" 라고 말씀해 주세요."));
@@ -123,7 +123,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 	public void TC_0898_Chips_어학사전_도움말_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 어학사전 - 발화");
-		util.SWFsendPost("어학사전", ServerName, AccessToken);
+		util.SWFsendPost("어학사전", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "어학사전 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "궁금한 단어를 찾아보시려면 \"영어로 사과가 뭐야\" 라고 말씀해 주세요."));
@@ -142,8 +142,8 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		util.switchToContextName("NATIVE_APP");
 		Thread.sleep(3000);
 		test.log(Status.INFO, "W, 영어로 경찰이 뭐야? - 발화");
-		util.SWFsendPost("영어로 경찰이 뭐야", ServerName, AccessToken);
-		util.SWFsendPost("영어로 경찰이 뭐야", ServerName, AccessToken);
+		util.SWFsendPost("영어로 경찰이 뭐야", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("영어로 경찰이 뭐야", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "어학사전 카드 원문 노출 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -163,7 +163,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 	public void TC_0900_Chips_어학사전_문장번역_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 너는 천재야를 영어로 해줘 - 발화");
-		util.SWFsendPost("너는 천재야를 영어로 해줘", ServerName, AccessToken);
+		util.SWFsendPost("너는 천재야를 영어로 해줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(1000);
 		
 		test.log(Status.INFO, "어학사전 카드 원문 노출 확인");
@@ -184,7 +184,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 	public void TC_0903_Chips_어학사전_문장번역_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 불어로 사과가 뭐야 - 발화");
-		util.SWFsendPost("불어로 사과가 뭐야", ServerName, AccessToken);
+		util.SWFsendPost("불어로 사과가 뭐야", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "불어로 사과가 뭐야 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "지금은 영어 단어 검색과 번역만 해드릴 수 있어요."));
@@ -195,7 +195,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 	public void TC_0904_Chips_어학사전_문장번역_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 불어로 사과가 뭐야 - 발화");
-		util.SWFsendPost("불어로 사과가 뭐야", ServerName, AccessToken);
+		util.SWFsendPost("불어로 사과가 뭐야", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "불어로 사과가 뭐야 해줘 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "지금은 영어 단어 검색과 번역만 해드릴 수 있어요."));

@@ -106,7 +106,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 	public void TC_0697_Chips_시간대별_메뉴추천_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 점심 메뉴 추천해줘 - 발화");
-		util.SWFsendPost("점심 메뉴 추천해줘", ServerName, AccessToken);
+		util.SWFsendPost("점심 메뉴 추천해줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "campaign Domain 확인");
 		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "campaign"));
@@ -119,7 +119,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 	public void TC_0698_Chips_제철메뉴_메뉴추천_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 제철 메뉴 추천해줘 - 발화");
-		util.SWFsendPost("제철 메뉴 추천해줘", ServerName, AccessToken);
+		util.SWFsendPost("제철 메뉴 추천해줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "campaign Domain 확인");
 		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "campaign"));
@@ -132,7 +132,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 	public void TC_0699_Chips_메뉴추천_테마1_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 술안주 추천 - 발화");
-		util.SWFsendPost("술안주 추천", ServerName, AccessToken);
+		util.SWFsendPost("술안주 추천", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "campaign Domain 확인");
 		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "campaign"));
@@ -145,7 +145,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 	public void TC_0700_Chips_메뉴추천_테마2_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 술안주 추천 - 발화");
-		util.SWFsendPost("술안주 추천", ServerName, AccessToken);
+		util.SWFsendPost("술안주 추천", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "campaign Domain 확인");
 		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "campaign"));
@@ -158,7 +158,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 	public void TC_0701_Chips_메뉴추천_특정이벤트_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 크리스마스 메뉴 추천해줘 - 발화");
-		util.SWFsendPost("크리스마스 메뉴 추천해줘", ServerName, AccessToken);
+		util.SWFsendPost("크리스마스 메뉴 추천해줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "메뉴추천 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "크리스마스"));
@@ -174,7 +174,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 	public void TC_0702_Chips_메뉴추천_테마테마_미지원_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 매콤한 볶음 요리 추천해줘 - 발화");
-		util.SWFsendPost("매콤한 볶음 요리 추천해줘", ServerName, AccessToken);
+		util.SWFsendPost("매콤한 볶음 요리 추천해줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "테마+테마 메뉴추천 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.OOS_set));
@@ -187,7 +187,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 	public void TC_0703_Chips_메뉴추천_테마테마_미지원_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 점심에 먹을 간단한 혼밥 메뉴 추천해줘 - 발화");
-		util.SWFsendPost("점심에 먹을 간단한 혼밥 메뉴 추천해줘", ServerName, AccessToken);
+		util.SWFsendPost("점심에 먹을 간단한 혼밥 메뉴 추천해줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "beep action_type 확인");
 		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "beep"));
@@ -197,10 +197,10 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 	public void TC_0704_Chips_메뉴추천_TTS재생중_중지_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 점심 메뉴 추천해줘 - 발화");
-		util.SWFsendPost("점심 메뉴 추천해줘", ServerName, AccessToken);
+		util.SWFsendPost("점심 메뉴 추천해줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "W, 그만 - 발화");
-		util.SWFsendPost("그만", ServerName, AccessToken);
+		util.SWFsendPost("그만", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "general Domain 확인");
 		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "general"));
@@ -216,7 +216,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 	public void TC_0705_Chips_메뉴추천_닫아_미지원_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 메뉴추천 닫아 - 발화");
-		util.SWFsendPost("메뉴추천 닫아", ServerName, AccessToken);
+		util.SWFsendPost("메뉴추천 닫아", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "메뉴추천 닫아 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.OOS_set));
@@ -229,7 +229,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 	public void TC_0706_Chips_메뉴추천_다시_미지원_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 메뉴추천 다시 - 발화");
-		util.SWFsendPost("메뉴추천 다시", ServerName, AccessToken);
+		util.SWFsendPost("메뉴추천 다시", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "메뉴추천 다시 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.OOS_set));
@@ -243,7 +243,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 	public void TC_0707_Chips_다른메뉴추천_미지원_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 다른 메뉴 추천해줘 - 발화");
-		util.SWFsendPost("다른 메뉴 추천해줘", ServerName, AccessToken);
+		util.SWFsendPost("다른 메뉴 추천해줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "다른 메뉴 추천해줘 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.OOS_set));
@@ -257,11 +257,11 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 	public void TC_0708_Chips_메뉴추천_TTS재생중_이거뭐야_미지원_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 점심 메뉴 추천해줘 - 발화");
-		util.SWFsendPost("점심 메뉴 추천해줘", ServerName, AccessToken);
+		util.SWFsendPost("점심 메뉴 추천해줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "W, 이거 뭐야 - 발화");
-		util.SWFsendPost("이거 뭐야", ServerName, AccessToken);
+		util.SWFsendPost("이거 뭐야", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날짜 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "재생 정보가 없습니다."));
@@ -271,7 +271,7 @@ public class 생활정보_01_메뉴추천 extends Chips_TestCase {
 	public void TC_0709_Chips_메뉴추천_도움말_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 메뉴추천 도움말 - 발화");
-		util.SWFsendPost("메뉴추천 도움말", ServerName, AccessToken);
+		util.SWFsendPost("메뉴추천 도움말", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "메뉴추천 도움말 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.메뉴추천도움말_set));

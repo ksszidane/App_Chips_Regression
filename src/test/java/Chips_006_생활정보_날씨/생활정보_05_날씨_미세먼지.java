@@ -115,8 +115,8 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 미세먼지 - 발화");
-		util.SWFsendPost("미세먼지", ServerName, AccessToken);
-		util.SWFsendPost("미세먼지", ServerName, AccessToken);
+		util.SWFsendPost("미세먼지", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("미세먼지", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -131,7 +131,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 	    test.log(Status.INFO, "W, 미세먼지 - 발화");
-		util.SWFsendPost("미세먼지", ServerName, AccessToken);
+		util.SWFsendPost("미세먼지", Chips_001, ServerName, AccessToken);
 	    
 		test.log(Status.INFO, "미세먼지 위치정보 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -148,7 +148,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 	    test.log(Status.INFO, "W, 미세먼지 - 발화");
-		util.SWFsendPost("미세먼지", ServerName, AccessToken);
+		util.SWFsendPost("미세먼지", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "미세먼지 아이콘 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -165,7 +165,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 미세먼지 - 발화");
-		util.SWFsendPost("미세먼지", ServerName, AccessToken);
+		util.SWFsendPost("미세먼지", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "초미세먼지 영역 항목 노출 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -182,7 +182,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 미세먼지 - 발화");
-		util.SWFsendPost("미세먼지", ServerName, AccessToken);
+		util.SWFsendPost("미세먼지", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "통합대기지수 영역 항목 노출 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -199,7 +199,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 미세먼지 - 발화");
-		util.SWFsendPost("미세먼지", ServerName, AccessToken);
+		util.SWFsendPost("미세먼지", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "오존 영역 항목 노출 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -221,8 +221,8 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		 
 		
 		test.log(Status.INFO, "W, 내일 미세먼지 상태 알려줘 - 발화");
-		util.SWFsendPost("내일 미세먼지 상태 알려줘", ServerName, AccessToken);
-		util.SWFsendPost("내일 미세먼지 상태 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("내일 미세먼지 상태 알려줘", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("내일 미세먼지 상태 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -238,7 +238,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 내일 미세먼지 상태 알려줘 - 발화");
-		util.SWFsendPost("내일 미세먼지 상태 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("내일 미세먼지 상태 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "미세먼지 위치정보 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -255,7 +255,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 내일 미세먼지 상태 알려줘 - 발화");
-		util.SWFsendPost("내일 미세먼지 상태 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("내일 미세먼지 상태 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "미세먼지 상태 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -272,7 +272,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 	    Thread.sleep(5000);
 	    
 		test.log(Status.INFO, "W, 내일 미세먼지 상태 알려줘 - 발화");
-		util.SWFsendPost("내일 미세먼지 상태 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("내일 미세먼지 상태 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "초미세먼지 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -286,7 +286,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 내일 미세먼지 상태 알려줘 - 발화");
-		util.SWFsendPost("내일 미세먼지 상태 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("내일 미세먼지 상태 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "초미세먼지 상태 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");

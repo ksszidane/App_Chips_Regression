@@ -106,7 +106,7 @@ public class 미디어_01_멜론 extends Chips_TestCase {
 	public void TC_0146_Chips_멜론미지원_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 멜론에서 음악 들려줘 - 발화");
-		util.SWFsendPost("멜론에서 음악 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("멜론에서 음악 들려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "멜론 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.OOS_set));
@@ -121,7 +121,7 @@ public class 미디어_01_멜론 extends Chips_TestCase {
 	public void TC_0235_Chips_멜론미지원_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 멜론에서 음악 재생 - 발화");
-		util.SWFsendPost("멜론에서 음악 재생", ServerName, AccessToken);
+		util.SWFsendPost("멜론에서 음악 재생", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "멜론 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.OOS_set));
@@ -135,7 +135,7 @@ public class 미디어_01_멜론 extends Chips_TestCase {
 	public void TC_0236_Chips_멜론미지원_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 멜론에서 플레이리스트 틀어줘 - 발화");
-		util.SWFsendPost("멜론에서 플레이리스트 틀어줘", ServerName, AccessToken);
+		util.SWFsendPost("멜론에서 플레이리스트 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "멜론 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.OOS_set));
@@ -149,7 +149,7 @@ public class 미디어_01_멜론 extends Chips_TestCase {
 	public void TC_0237_Chips_멜론미지원_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 멜론에서 좋아요 한 음악 틀어줘 - 발화");
-		util.SWFsendPost("멜론에서 좋아요 한 음악 틀어줘", ServerName, AccessToken);
+		util.SWFsendPost("멜론에서 좋아요 한 음악 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "멜론 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.OOS_set));

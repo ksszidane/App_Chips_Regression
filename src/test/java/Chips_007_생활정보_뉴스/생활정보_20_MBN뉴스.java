@@ -106,7 +106,7 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
 	public void TC_0856_Chips_MBN뉴스_시작_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, MBN 시작 - 발화");
-		util.SWFsendPost("MBN 시작", ServerName, AccessToken);
+		util.SWFsendPost("MBN 시작", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "MBN 시작 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
@@ -126,7 +126,7 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
 	public void TC_0857_Chips_MBN뉴스_실행_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, MBN 실행해줘 - 발화");
-		util.SWFsendPost("MBN 실행해줘", ServerName, AccessToken);
+		util.SWFsendPost("MBN 실행해줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "MBN 시작 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
@@ -146,7 +146,7 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
 	public void TC_0868_Chips_MBN뉴스_대기상태실행_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, MBN 오늘 뉴스 기사 읽어줘 - 발화");
-		util.SWFsendPost("MBN 오늘 뉴스 기사 읽어줘", ServerName, AccessToken);
+		util.SWFsendPost("MBN 오늘 뉴스 기사 읽어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "MBN 실행 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
@@ -197,14 +197,14 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
 	    util.view_close_btn_check();
 		
 		test.log(Status.INFO, "W, MBN 오늘 뉴스 기사 읽어줘 - 발화");
-		util.SWFsendPost("MBN 오늘 뉴스 기사 읽어줘", ServerName, AccessToken);
+		util.SWFsendPost("MBN 오늘 뉴스 기사 읽어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
 		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
 		Assert.assertEquals(FLOtxt, "MBN 뉴스");
 		
 		test.log(Status.INFO, "W, 다음 - 발화");
-		util.SWFsendPost("다음", ServerName, AccessToken);
+		util.SWFsendPost("다음", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "MBN 실행 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
@@ -219,14 +219,14 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
 	    util.view_close_btn_check();
 		
 		test.log(Status.INFO, "W, MBN 오늘 뉴스 기사 읽어줘 - 발화");
-		util.SWFsendPost("MBN 오늘 뉴스 기사 읽어줘", ServerName, AccessToken);
+		util.SWFsendPost("MBN 오늘 뉴스 기사 읽어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
 		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));
 		Assert.assertEquals(FLOtxt, "MBN 뉴스");
 		
 		test.log(Status.INFO, "W, MBN 뉴스 이전 - 발화");
-		util.SWFsendPost("MBN 뉴스 이전", ServerName, AccessToken);
+		util.SWFsendPost("MBN 뉴스 이전", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "MBN 실행 TTS 확인");
 		String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
@@ -271,7 +271,7 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
 		
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 그만 - 발화");
-		util.SWFsendPost("그만", ServerName, AccessToken);
+		util.SWFsendPost("그만", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "뉴스카드 종료되고 메인화면 확인");
 		boolean temperature = util.isElementPresent(By.id("temperature"));
@@ -290,10 +290,10 @@ public class 생활정보_20_MBN뉴스 extends Chips_TestCase {
 		
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 종료 - 발화");
-		util.SWFsendPost("종료", ServerName, AccessToken);
+		util.SWFsendPost("종료", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "W, MBN 오늘 뉴스 기사 읽어줘 - 발화");
-		util.SWFsendPost("MBN 오늘 뉴스 기사 읽어줘", ServerName, AccessToken);
+		util.SWFsendPost("MBN 오늘 뉴스 기사 읽어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
 		String FLOtxt = util.getText(By.xpath(xPath.FLO카드타이틀));

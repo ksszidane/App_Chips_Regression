@@ -106,7 +106,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 	public void TC_0801_Chips_운세_생년월일미등록_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 오늘의 운세 알려줘 - 발화");
-		util.SWFsendPost("오늘의 운세 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("오늘의 운세 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "운세 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa002, Chips_002, ServerName, Place, data.미등록운세_set));
@@ -180,7 +180,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 	    AccessToken = actn;
 		
 		test.log(Status.INFO, "W, 운세 - 발화");
-		util.SWFsendPost("운세", ServerName, AccessToken);
+		util.SWFsendPost("운세", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "운세 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "당신의 오늘의 운세를 알려드릴게요."));
@@ -191,7 +191,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 	public void TC_0803_Chips_운세_띠별운세_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 양띠 운세 알려줘 - 발화");
-		util.SWFsendPost("양띠 운세 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("양띠 운세 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "양띠 운세 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘의 양띠 운세를 알려드릴게요."));
@@ -202,7 +202,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 	public void TC_0804_Chips_운세_띠별운세_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 쥐띠 내일 운세 알려줘 - 발화");
-		util.SWFsendPost("쥐띠 내일 운세 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("쥐띠 내일 운세 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "양띠 운세 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "내일의 쥐띠 운세를 알려드릴게요."));
@@ -213,7 +213,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 	public void TC_0805_Chips_운세_생년별운세_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 1979년 1월 4일 운세 알려줘 - 발화");
-		util.SWFsendPost("1979년 1월 4일 운세 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("1979년 1월 4일 운세 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "생년 운세 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "79년 1월 4일생, 오늘의 운세를 알려드릴게요."));
@@ -224,7 +224,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 	public void TC_0806_Chips_운세_생년별운세_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 음력 81년 8월 21일 운세 - 발화");
-		util.SWFsendPost("음력 81년 8월 21일 운세", ServerName, AccessToken);
+		util.SWFsendPost("음력 81년 8월 21일 운세", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "생년 운세 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "음력 81년 8월 21일생, 오늘의 운세를 알려드릴게요."));
@@ -235,7 +235,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 	public void TC_0807_Chips_운세_생년별운세_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 01년 1월 4일 오늘의 운세 - 발화");
-		util.SWFsendPost("01년 1월 4일 오늘의 운세", ServerName, AccessToken);
+		util.SWFsendPost("01년 1월 4일 오늘의 운세", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "생년 운세 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "01년 1월 4일생, 오늘의 운세를 알려드릴게요."));
@@ -246,7 +246,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 	public void TC_0807_Chips_운세_이번주_미지원_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 이번주 운세 봐줘 - 발화");
-		util.SWFsendPost("이번주 운세 봐줘", ServerName, AccessToken);
+		util.SWFsendPost("이번주 운세 봐줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "A구간[4월~11월] | B구간[12월~3월]  체크");
 		String 미지원기간 = util.Month4to11();
@@ -265,7 +265,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 	public void TC_0808_Chips_운세_다음주_미지원_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 다음주 운세 봐줘 - 발화");
-		util.SWFsendPost("다음주 운세 봐줘", ServerName, AccessToken);
+		util.SWFsendPost("다음주 운세 봐줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "A구간[4월~11월] | B구간[12월~3월]  체크");
 		String 미지원기간 = util.Month4to11();
@@ -284,7 +284,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 	public void TC_0809_Chips_운세_다음달_미지원_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 다음달 운세 봐줘 - 발화");
-		util.SWFsendPost("다음달 운세 봐줘", ServerName, AccessToken);
+		util.SWFsendPost("다음달 운세 봐줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "A구간[4월~11월] | B구간[12월~3월]  체크");
 		String 미지원기간 = util.Month4to11();

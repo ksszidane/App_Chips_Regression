@@ -106,7 +106,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	public void TC_0300_Chips_자체소싱_재생_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 부스트 파크 들려줘 - 발화");
-		util.SWFsendPost("부스트 파크 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("부스트 파크 들려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "걸그룹 장르 노래 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "부스트파크송"));
@@ -135,7 +135,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 		test.log(Status.INFO, "반복 버튼 확인");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.한곡반복_web)));
 		util.switchToContextName("NATIVE_APP");
 		
@@ -154,7 +154,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	public void TC_0301_Chips_자체소싱_재생_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 부스트 파크 노래 들려줘 - 발화");
-		util.SWFsendPost("부스트 파크 노래 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("부스트 파크 노래 들려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "걸그룹 장르 노래 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SK텔레콤의 부스트파크송"));
@@ -183,7 +183,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO프로그레스바)));
 		
 		test.log(Status.INFO, "반복 버튼 확인");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.한곡반복_web)));
 		util.switchToContextName("NATIVE_APP");
 		
@@ -203,11 +203,11 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		 
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 일시정지 - 발화");
-		util.SWFsendPost_playStatus("일시정지 ", ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("일시정지 ", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 
 	}
@@ -217,11 +217,11 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		 
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 일시정지 취소 - 발화");
-		util.SWFsendPost_playStatus("일시정지 취소 ", ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("일시정지 취소 ", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 
 	}
@@ -231,13 +231,13 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 좋아요 해줘 - 발화");
-		util.SWFsendPost_playStatus("좋아요 해줘", ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("좋아요 해줘", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "좋아요 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "좋아요 기능을 지원하지 않는 곡이에요."));
 		
 		test.log(Status.INFO, "좋아요 버튼 비활성화 확인");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.좋아요Off_web)));
 
 	}
@@ -247,13 +247,13 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 좋아요 해제 - 발화");
-		util.SWFsendPost_playStatus("좋아요 해제", ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("좋아요 해제", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "좋아요 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "좋아요 기능을 지원하지 않는 곡이에요."));
 		
 		test.log(Status.INFO, "좋아요 버튼 비활성화 확인");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.좋아요Off_web)));
 
 	}
@@ -263,7 +263,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
-		util.SWFsendPost_playStatus("다음 곡", ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("다음 곡", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "다음 TTS 확인");
@@ -276,7 +276,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 이전 곡 - 발화");
-		util.SWFsendPost_playStatus("이전 곡", ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("이전 곡", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "이전 TTS 확인");
@@ -300,7 +300,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 이전 곡 - 발화");
-		util.SWFsendPost_playStatus("이전 곡", ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("이전 곡", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "이전 TTS 확인");
@@ -324,7 +324,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
-		util.SWFsendPost_playStatus("다음 곡", ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("다음 곡", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "다음 TTS 확인");
@@ -337,7 +337,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 20초 뒤로 이동 - 발화");
-		util.SWFsendPost_playStatus("20초 뒤로 이동", ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("20초 뒤로 이동", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "20초뒤로 이동 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "뮤직 서비스에서는 지원하지 않는 기능이에요."));
@@ -349,7 +349,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 15초 앞으로 이동 - 발화");
-		util.SWFsendPost_playStatus("15초 앞으로 이동", ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("15초 앞으로 이동", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "15초 앞으로 이동 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "뮤직 서비스에서는 지원하지 않는 기능이에요."));

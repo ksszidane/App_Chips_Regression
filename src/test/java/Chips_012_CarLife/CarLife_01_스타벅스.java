@@ -107,7 +107,7 @@ public class CarLife_01_스타벅스 extends Chips_TestCase {
 	public void TC_1243_스타벅스_미지원_확인(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, 스타벅스 커피 주문해줘 - 발화");
-		util.SWFsendPost("스타벅스 커피 주문해줘", ServerName, AccessToken);
+		util.SWFsendPost("스타벅스 커피 주문해줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스타벅스 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));

@@ -107,7 +107,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 	public void TC_0737_Chips_날씨_현재_강수확률_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 지금 비 와? - 발화");
-		util.SWFsendPost("지금 비 와?", ServerName, AccessToken);
+		util.SWFsendPost("지금 비 와?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지금 비 와? TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.지금강수확률_set));
@@ -117,7 +117,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 	public void TC_0738_Chips_날씨_오늘_강수확률_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 오늘 강수확률 - 발화");
-		util.SWFsendPost("오늘 강수확률", ServerName, AccessToken);
+		util.SWFsendPost("오늘 강수확률", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지금 비 와? TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.오늘강수확률_set));
@@ -127,7 +127,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 	public void TC_0739_Chips_날씨_내일_강수확률_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 내일 비와? - 발화");
-		util.SWFsendPost("내일 비와?", ServerName, AccessToken);
+		util.SWFsendPost("내일 비와?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지금 비 와? TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.내일강수확률_set));
@@ -143,7 +143,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		String 모레요일 = util.getDayOfWeek(2);
 		
 		test.log(Status.INFO, "W, 모레 비와? - 발화");
-		util.SWFsendPost("모레 비와?", ServerName, AccessToken);
+		util.SWFsendPost("모레 비와?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "모레 비와? TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, 모레날짜 + " " + 모레요일+ "요일은"));
@@ -164,8 +164,8 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 이번 주 비 와? - 발화");
-		util.SWFsendPost("이번 주 비 와?", ServerName, AccessToken);
-		util.SWFsendPost("이번 주 비 와?", ServerName, AccessToken);
+		util.SWFsendPost("이번 주 비 와?", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("이번 주 비 와?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -182,7 +182,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 이번 주 비 와? - 발화");
-		util.SWFsendPost("이번 주 비 와?", ServerName, AccessToken);
+		util.SWFsendPost("이번 주 비 와?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "주간날씨 리스트 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -202,7 +202,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 이번 주 비 와? - 발화");
-		util.SWFsendPost("이번 주 비 와?", ServerName, AccessToken);
+		util.SWFsendPost("이번 주 비 와?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "마지막 리스트 날짜 기준 금일 요일 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -234,7 +234,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		//String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 다음주 비 와? - 발화");
-		util.SWFsendPost("다음주 비 와?", ServerName, AccessToken);
+		util.SWFsendPost("다음주 비 와?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -254,7 +254,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 다음주 비 와? - 발화");
-		util.SWFsendPost("다음주 비 와?", ServerName, AccessToken);
+		util.SWFsendPost("다음주 비 와?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "첫번쨰 날짜 기준 금일 요일 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -274,7 +274,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 	    test.log(Status.INFO, "W, 다음주 비 와? - 발화");
-		util.SWFsendPost("다음주 비 와?", ServerName, AccessToken);
+		util.SWFsendPost("다음주 비 와?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "모레날씨 아이콘 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");

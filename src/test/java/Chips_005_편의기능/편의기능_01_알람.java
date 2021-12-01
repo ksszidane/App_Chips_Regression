@@ -106,7 +106,7 @@ public class 편의기능_01_알람 extends Chips_TestCase {
 	public void TC_0486_Chips_알람_미지원_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 알람 등록해줘 - 발화");
-		util.SWFsendPost("알람 등록해줘", ServerName, AccessToken);
+		util.SWFsendPost("알람 등록해줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "알람 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));

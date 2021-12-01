@@ -112,8 +112,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 날씨 - 발화");
-		util.SWFsendPost("날씨", ServerName, AccessToken);
-		util.SWFsendPost("날씨", ServerName, AccessToken);
+		util.SWFsendPost("날씨", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("날씨", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -140,7 +140,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    Thread.sleep(5000);
 	    
 		test.log(Status.INFO, "W, 날씨 - 발화");
-		util.SWFsendPost("날씨", ServerName, AccessToken);
+		util.SWFsendPost("날씨", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -174,7 +174,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		//String 현재위치 = array[2];
 
 		test.log(Status.INFO, "W, 일기예보 - 발화");
-		util.SWFsendPost("일기예보", ServerName, AccessToken);
+		util.SWFsendPost("일기예보", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -201,7 +201,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 일기예보 - 발화");
-		util.SWFsendPost("일기예보", ServerName, AccessToken);
+		util.SWFsendPost("일기예보", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -235,7 +235,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		//String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 내일 날씨 - 발화");
-		util.SWFsendPost("내일 날씨", ServerName, AccessToken);
+		util.SWFsendPost("내일 날씨", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -260,7 +260,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 내일 날씨 - 발화");
-		util.SWFsendPost("내일 날씨", ServerName, AccessToken);
+		util.SWFsendPost("내일 날씨", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "내일날씨 최고온도 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -294,7 +294,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		//String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 내일 일기예보 - 발화");
-		util.SWFsendPost("내일 일기예보", ServerName, AccessToken);
+		util.SWFsendPost("내일 일기예보", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -318,7 +318,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 내일 일기예보 - 발화");
-		util.SWFsendPost("내일 일기예보", ServerName, AccessToken);
+		util.SWFsendPost("내일 일기예보", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "내일날씨 최고온도 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -356,8 +356,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		String 모레요일 = util.getDayOfWeek(2);
 		
 		test.log(Status.INFO, "W, 내일모레 날씨 - 발화");
-		util.SWFsendPost("내일모레 날씨", ServerName, AccessToken);
-		util.SWFsendPost("내일모레 날씨", ServerName, AccessToken);
+		util.SWFsendPost("내일모레 날씨", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("내일모레 날씨", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -377,7 +377,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 내일모레 날씨 - 발화");
-		util.SWFsendPost("내일모레 날씨", ServerName, AccessToken);
+		util.SWFsendPost("내일모레 날씨", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "첫번쨰 날짜 기준 금일 요일 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -408,8 +408,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		//String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 이번 주 날씨 알려줘 - 발화");
-		util.SWFsendPost("이번 주 날씨 알려줘", ServerName, AccessToken);
-		util.SWFsendPost("이번 주 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("이번 주 날씨 알려줘", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("이번 주 날씨 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -429,7 +429,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 이번 주 날씨 알려줘 - 발화");
-		util.SWFsendPost("이번 주 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("이번 주 날씨 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "첫번쨰 날짜 기준 금일 요일 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -449,7 +449,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 이번 주 날씨 알려줘 - 발화");
-		util.SWFsendPost("이번 주 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("이번 주 날씨 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "모레날씨 최저온도 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -478,7 +478,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		//String 현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 다음 주 날씨 알려줘 - 발화");
-		util.SWFsendPost("다음 주 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("다음 주 날씨 알려줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(1000);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
@@ -499,7 +499,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 다음 주 날씨 알려줘 - 발화");
-		util.SWFsendPost("다음 주 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("다음 주 날씨 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "첫번쨰 날짜 기준 금일 요일 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -519,7 +519,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 다음 주 날씨 알려줘 - 발화");
-		util.SWFsendPost("다음 주 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("다음 주 날씨 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "모레날씨 아이콘 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -545,7 +545,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		String 이번주주말날짜 = util.getWeekSaturday();
 		
 		test.log(Status.INFO, "W, 이번 주 날씨 알려줘 - 발화");
-		util.SWFsendPost("이번 주 주말 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("이번 주 주말 날씨 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "다음주 날씨 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최고 기온"));
@@ -572,7 +572,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		String 다음주주말날짜 = util.getNextWeekSaturday();
 		
 		test.log(Status.INFO, "W, 다음 주 주말 날씨 알려줘 - 발화");
-		util.SWFsendPost("다음 주 주말 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("다음 주 주말 날씨 알려줘", Chips_001, ServerName, AccessToken);
 		
 		if (다음주주말날짜차이 > 10 ) {
 			test.log(Status.INFO, "조건 : 다음 주 주말이 10일 이후인 경우");
@@ -607,7 +607,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		String 오늘요일 = util.getDayOfWeek(0);
 		
 		test.log(Status.INFO, "W, [오늘]요일 날씨 알려줘 - 발화  변수 : " + 오늘요일);
-		util.SWFsendPost(오늘요일+"요일 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost(오늘요일+"요일 날씨 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -634,7 +634,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, [오늘]요일 날씨 알려줘 - 발화  변수 : " + 오늘요일);
-		util.SWFsendPost(오늘요일+"요일 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost(오늘요일+"요일 날씨 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -670,7 +670,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		String 오늘요일 = util.getDayOfWeek(0);
 		
 		test.log(Status.INFO, "W, 이번주 [오늘]요일 날씨 알려줘 - 발화  변수 : " + 오늘요일);
-		util.SWFsendPost("이번주 "+오늘요일+"요일 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("이번주 "+오늘요일+"요일 날씨 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -697,7 +697,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 이번주 [오늘]요일 날씨 알려줘 - 발화  변수 : " + 오늘요일);
-		util.SWFsendPost("이번주 "+오늘요일+"요일 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("이번주 "+오늘요일+"요일 날씨 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -726,7 +726,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 		util.switchToContextName("NATIVE_APP");
 		
 		test.log(Status.INFO, "W, 제주도 날씨 알려줘 - 발화 ");
-		util.SWFsendPost("제주도 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("제주도 날씨 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -753,7 +753,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 제주도 날씨 알려줘 - 발화 ");
-		util.SWFsendPost("제주도 날씨 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("제주도 날씨 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -780,8 +780,8 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	public void TC_0734_Chips_날씨_파주시야동동날씨_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 파주시 야동동 날씨 - 발화 ");
-		util.SWFsendPost("파주시 야동동 날씨", ServerName, AccessToken);
-		util.SWFsendPost("파주시 야동동 날씨", ServerName, AccessToken);
+		util.SWFsendPost("파주시 야동동 날씨", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("파주시 야동동 날씨", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날씨 카드 타이틀 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");
@@ -808,7 +808,7 @@ public class 생활정보_03_날씨_일기예보 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 파주시 야동동 날씨 - 발화 ");
-		util.SWFsendPost("파주시 야동동 날씨", ServerName, AccessToken);
+		util.SWFsendPost("파주시 야동동 날씨", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "오늘날씨 최고온도 확인");
 		util.switchToContextName("WEBVIEW_com.skt.aidev.nugufriends");

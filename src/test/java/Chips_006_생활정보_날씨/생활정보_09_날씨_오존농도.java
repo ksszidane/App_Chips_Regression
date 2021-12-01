@@ -115,7 +115,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 		현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 오늘 오존 어때? - 발화");
-		util.SWFsendPost("오늘 오존 어때?", ServerName, AccessToken);
+		util.SWFsendPost("오늘 오존 어때?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "오존 지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 " + 현재위치 + " 오존 농도는"));
@@ -127,7 +127,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 	public void TC_0768_Chips_날씨_지역_오존지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 오늘 부산 오존 정보 - 발화");
-		util.SWFsendPost("오늘 부산 오존 정보", ServerName, AccessToken);
+		util.SWFsendPost("오늘 부산 오존 정보", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "오존 지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 부산 오존 농도는"));
@@ -139,7 +139,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 	public void TC_0769_Chips_날씨_내일_오존지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 내일 오존 알려줘 - 발화");
-		util.SWFsendPost("내일 오존 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("내일 오존 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "자외선 지수 A구간[4월16일~10월14일] | B구간[10월15일~12월31일] | C구간[01월01일~04월15일] 체크");
 		String 오존시간대 = util.Month1015to90415();
@@ -160,7 +160,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 	public void TC_0770_Chips_날씨_내일지역_오존지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 내일 부산 오존 알려줘 - 발화");
-		util.SWFsendPost("내일 부산 오존 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("내일 부산 오존 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "자외선 지수 A구간[4월16일~10월14일] | B구간[10월15일~12월31일] | C구간[01월01일~04월15일] 체크");
 		String 오존시간대 = util.Month1015to90415();
@@ -181,7 +181,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 	public void TC_0771_Chips_날씨_오존지수부재_어제_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 어제 오존 알려줘 - 발화");
-		util.SWFsendPost("어제 오존 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("어제 오존 알려줘", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "어제 오존지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘과 내일의 오존 정보만 가지고 있어요."));
@@ -194,7 +194,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 		String 그제날짜 = util.getChangePreviousDate(-2);
 		
 		test.log(Status.INFO, "W, "+ 그제날짜 +" 오존 정보 알려줘 - 발화");
-		util.SWFsendPost(그제날짜 + " 오존 정보 알려줘", ServerName, AccessToken);
+		util.SWFsendPost(그제날짜 + " 오존 정보 알려줘", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, 그제날짜 + " 오존지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘과 내일의 오존 정보만 가지고 있어요."));
@@ -204,7 +204,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 	public void TC_0773Chips_날씨_오존지수부재_지역외_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 로스앤젤레스 오존 알려줘 - 발화");
-		util.SWFsendPost("로스앤젤레스 오존 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("로스앤젤레스 오존 알려줘", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역외 오존지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "말씀하신 지역의 오존 정보는 가지고 있지 않습니다."));
@@ -214,7 +214,7 @@ public class 생활정보_09_날씨_오존농도 extends Chips_TestCase {
 	public void TC_0774_Chips_날씨_오존지수부재_지역아님_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 하이마트 오존 어때? - 발화");
-		util.SWFsendPost("하이마트 오존 어때?", ServerName, AccessToken);
+		util.SWFsendPost("하이마트 오존 어때?", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역아닌곳 오존지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "말씀하신 지역의 오존 정보는 가지고 있지 않습니다."));

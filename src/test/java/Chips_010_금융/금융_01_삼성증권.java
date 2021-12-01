@@ -107,7 +107,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0953_Chips_삼성증권_도움말_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 삼성증권 도움말 - 발화");
-		util.SWFsendPost("삼성증권 도움말", ServerName, AccessToken);
+		util.SWFsendPost("삼성증권 도움말", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "삼성증권 도움말 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.삼성증권도움말_set));
@@ -117,7 +117,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0954_Chips_삼성증권_도움말_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 삼성증권 도움말 - 발화");
-		util.SWFsendPost("주식서비스 도움말", ServerName, AccessToken);
+		util.SWFsendPost("주식서비스 도움말", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "삼성증권 도움말 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.삼성증권도움말_set));
@@ -128,7 +128,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0955_Chips_삼성증권_도움말_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 증권 도움말 - 발화");
-		util.SWFsendPost("증권 도움말", ServerName, AccessToken);
+		util.SWFsendPost("증권 도움말", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "삼성증권 도움말 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.삼성증권도움말_set));
@@ -139,7 +139,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0956_Chips_삼성증권_도움말_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 삼성증권 - 발화");
-		util.SWFsendPost("삼성증권", ServerName, AccessToken);
+		util.SWFsendPost("삼성증권", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "삼성증권 도움말 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.삼성증권도움말_set));
@@ -150,7 +150,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0957_Chips_삼성증권_TmapPOI발화_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 현대카드 - 발화");
-		util.SWFsendPost("현대카드", ServerName, AccessToken);
+		util.SWFsendPost("현대카드", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "삼성증권 USD 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
@@ -161,7 +161,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0958_Chips_삼성증권_TmapPOI발화_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 미래에셋 대우 - 발화");
-		util.SWFsendPost("미래에셋 대우", ServerName, AccessToken);
+		util.SWFsendPost("미래에셋 대우", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "삼성증권 USD 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
@@ -176,7 +176,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		
 		if (장상태 == "장전") {
 			test.log(Status.INFO, "W, 현재 주가지수 알려줘 - 발화");
-			util.SWFsendPost("현재 주가지수 알려줘", ServerName, AccessToken);
+			util.SWFsendPost("현재 주가지수 알려줘", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장전 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "어제 코스피는"));
@@ -184,7 +184,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "포인트로 마감되었습니다."));
 		} else if (장상태 == "장전" && util.getDayOfWeek(0) == "월") {
 			test.log(Status.INFO, "W, 현재 주가지수 알려줘 - 발화");
-			util.SWFsendPost("현재 주가지수 알려줘", ServerName, AccessToken);
+			util.SWFsendPost("현재 주가지수 알려줘", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장전 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "어제는 증시 휴장일이었어요"));
@@ -214,7 +214,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			throw new SkipException("현재 [장전]상태로 장중상태 Test Skip");
 		} else if (장상태 == "장중") {
 			test.log(Status.INFO, "W, 현재 주가지수 알려줘 - 발화");
-			util.SWFsendPost("현재 주가지수 알려줘", ServerName, AccessToken);
+			util.SWFsendPost("현재 주가지수 알려줘", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장중 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 코스피는"));
@@ -243,7 +243,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			throw new SkipException("현재 [장중]상태로 장종상태 Test Skip");
 		} else if (장상태 == "장종") {
 			test.log(Status.INFO, "W, 현재 주가지수 알려줘 - 발화");
-			util.SWFsendPost("현재 주가지수 알려줘", ServerName, AccessToken);
+			util.SWFsendPost("현재 주가지수 알려줘", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장종 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 코스피는"));
@@ -260,7 +260,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		
 		if (장상태 == "장전") {
 			test.log(Status.INFO, "W, 이 시각 주가지수 얼마야? - 발화");
-			util.SWFsendPost("이 시각 주가지수 얼마야", ServerName, AccessToken);
+			util.SWFsendPost("이 시각 주가지수 얼마야", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장전 주가지수 TTS 확인");
 			String tts = util.TTS_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
@@ -269,7 +269,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			Assert.assertTrue(tts.contains("포인트로 마감되었습니다."));
 		} else if (장상태 == "장전" && util.getDayOfWeek(0) == "월") {
 			test.log(Status.INFO, "W, 이 시각 주가지수 얼마야? - 발화");
-			util.SWFsendPost("이 시각 주가지수 얼마야", ServerName, AccessToken);
+			util.SWFsendPost("이 시각 주가지수 얼마야", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장전 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "어제는 증시 휴장일이었어요"));
@@ -299,7 +299,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			throw new SkipException("현재 [장전]상태로 장중상태 Test Skip");
 		} else if (장상태 == "장중") {
 			test.log(Status.INFO, "W, 이 시각 주가지수 얼마야? - 발화");
-			util.SWFsendPost("이 시각 주가지수 얼마야", ServerName, AccessToken);
+			util.SWFsendPost("이 시각 주가지수 얼마야", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장중 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 코스피는"));
@@ -328,7 +328,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			throw new SkipException("현재 [장중]상태로 장종상태 Test Skip");
 		} else if (장상태 == "장종") {
 			test.log(Status.INFO, "W, 이 시각 주가지수 얼마야? - 발화");
-			util.SWFsendPost("이 시각 주가지수 얼마야", ServerName, AccessToken);
+			util.SWFsendPost("이 시각 주가지수 얼마야", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장종 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 코스피는"));
@@ -348,7 +348,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		
 		if (장상태 == "장전") {
 			test.log(Status.INFO, "W, "+ 오늘날짜 +" 국내 주가지수 얼마야?- 발화");
-			util.SWFsendPost(오늘날짜 +" 국내 주가지수 얼마야", ServerName, AccessToken);
+			util.SWFsendPost(오늘날짜 +" 국내 주가지수 얼마야", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장전 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "어제 코스피는"));
@@ -356,7 +356,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "포인트로 마감되었습니다."));
 		} else if (장상태 == "장전" && util.getDayOfWeek(0) == "월") {
 			test.log(Status.INFO, "W, "+ 오늘날짜 +" 국내 주가지수 얼마야?- 발화");
-			util.SWFsendPost(오늘날짜 +" 국내 주가지수 얼마야", ServerName, AccessToken);
+			util.SWFsendPost(오늘날짜 +" 국내 주가지수 얼마야", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장전 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "어제는 증시 휴장일이었어요"));
@@ -389,7 +389,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			throw new SkipException("현재 [장전]상태로 장중상태 Test Skip");
 		} else if (장상태 == "장중") {
 			test.log(Status.INFO, "W, "+ 오늘날짜 +" 국내 주가지수 얼마야?- 발화");
-			util.SWFsendPost(오늘날짜 +" 국내 주가지수 얼마야", ServerName, AccessToken);
+			util.SWFsendPost(오늘날짜 +" 국내 주가지수 얼마야", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장중 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 코스피는"));
@@ -421,7 +421,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			throw new SkipException("현재 [장중]상태로 장종상태 Test Skip");
 		} else if (장상태 == "장종") {
 			test.log(Status.INFO, "W, "+ 오늘날짜 +" 국내 주가지수 얼마야?- 발화");
-			util.SWFsendPost(오늘날짜 +" 국내 주가지수 얼마야", ServerName, AccessToken);
+			util.SWFsendPost(오늘날짜 +" 국내 주가지수 얼마야", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장종 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 코스피는"));
@@ -438,7 +438,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		
 		if (장상태 == "장전") {
 			test.log(Status.INFO, "W, 코스피 지수 알려줘 - 발화");
-			util.SWFsendPost("코스피 지수 알려줘", ServerName, AccessToken);
+			util.SWFsendPost("코스피 지수 알려줘", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장전 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "어제 코스피는"));
@@ -446,7 +446,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "포인트로 마감되었습니다."));
 		} else if (장상태 == "장전" && util.getDayOfWeek(0) == "월") {
 			test.log(Status.INFO, "W, 코스피 지수 알려줘 - 발화");
-			util.SWFsendPost("코스피 지수 알려줘", ServerName, AccessToken);
+			util.SWFsendPost("코스피 지수 알려줘", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장전 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "어제는 증시 휴장일이었어요"));
@@ -476,7 +476,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			throw new SkipException("현재 [장전]상태로 장중상태 Test Skip");
 		} else if (장상태 == "장중") {
 			test.log(Status.INFO, "W, 코스피 지수 알려줘 - 발화");
-			util.SWFsendPost("코스피 지수 알려줘", ServerName, AccessToken);
+			util.SWFsendPost("코스피 지수 알려줘", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장중 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 코스피는"));
@@ -505,7 +505,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			throw new SkipException("현재 [장중]상태로 장종상태 Test Skip");
 		} else if (장상태 == "장종") {
 			test.log(Status.INFO, "W, 코스피 지수 알려줘 - 발화");
-			util.SWFsendPost("코스피 지수 알려줘", ServerName, AccessToken);
+			util.SWFsendPost("코스피 지수 알려줘", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "장종 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 코스피는"));
@@ -522,7 +522,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		
 		if (어제요일 == "일") {
 			test.log(Status.INFO, "W, 어제 종합주가지수 알려줘 - 발화");
-			util.SWFsendPost("어제 종합주가지수 알려줘", ServerName, AccessToken);
+			util.SWFsendPost("어제 종합주가지수 알려줘", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "어제 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "어제는 증시 휴장일이었어요"));
@@ -531,7 +531,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "포인트로 마감되었습니다"));
 		} else {
 			test.log(Status.INFO, "W, 어제 종합주가지수 알려줘 - 발화");
-			util.SWFsendPost("어제 종합주가지수 알려줘", ServerName, AccessToken);
+			util.SWFsendPost("어제 종합주가지수 알려줘", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "어제 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "어제 코스피는"));
@@ -551,7 +551,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		
 		if (어제요일 == "일") {
 			test.log(Status.INFO, "W, "+ 어제날짜 +" 국내 주가지수 얼마야?- 발화");
-			util.SWFsendPost(어제날짜 +" 국내 주가지수 얼마야", ServerName, AccessToken);
+			util.SWFsendPost(어제날짜 +" 국내 주가지수 얼마야", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "어제 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "어제는 증시 휴장일이었어요"));
@@ -560,7 +560,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "포인트로 마감되었습니다"));
 		} else {
 			test.log(Status.INFO, "W, "+ 어제날짜 +" 국내 주가지수 얼마야?- 발화");
-			util.SWFsendPost(어제날짜 +" 국내 주가지수 얼마야", ServerName, AccessToken);
+			util.SWFsendPost(어제날짜 +" 국내 주가지수 얼마야", Chips_001, ServerName, AccessToken);
 			
 			test.log(Status.INFO, "어제 주가지수 TTS 확인");
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "어제 코스피는"));
@@ -576,7 +576,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		String 장상태 = util.StockTimeTable();
 		
 		test.log(Status.INFO, "W, 코스닥 지수 - 발화");
-		util.SWFsendPost("코스닥 지수", ServerName, AccessToken);
+		util.SWFsendPost("코스닥 지수", Chips_001, ServerName, AccessToken);
 		
 		if (장상태 == "장전") {
 			test.log(Status.INFO, "장전 주가지수 TTS 확인");
@@ -609,7 +609,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		String 어제요일 = util.getDayOfWeek(-1);
 		
 		test.log(Status.INFO, "W, 어제 코스닥 지수 - 발화");
-		util.SWFsendPost("어제 코스닥 지수", ServerName, AccessToken);
+		util.SWFsendPost("어제 코스닥 지수", Chips_001, ServerName, AccessToken);
 		
 		if (어제요일 == "일") {
 			test.log(Status.INFO, "어제 코스닥 TTS 확인");
@@ -629,7 +629,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0969_Chips_삼성증권_미지원기간_과거_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 그저께 주가지수 알려줘 - 발화");
-		util.SWFsendPost("그저께 주가지수 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("그저께 주가지수 알려줘", Chips_001, ServerName, AccessToken);
 		
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "가장 최근의 종합주가지수 정보만 알려드릴 수 있어요"));
 		
@@ -639,7 +639,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0970_Chips_삼성증권_미지원기간_과거_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 1월 3일 주가지수 알려줘 - 발화");
-		util.SWFsendPost("1월 3일 주가지수 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("1월 3일 주가지수 알려줘", Chips_001, ServerName, AccessToken);
 		
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "가장 최근의 종합주가지수 정보만 알려드릴 수 있어요"));
 		
@@ -649,7 +649,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0971_Chips_삼성증권_미지원기간_과거_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 지난주 종합주가지수 얼마였지? - 발화");
-		util.SWFsendPost("지난주 종합주가지수 얼마였지?", ServerName, AccessToken);
+		util.SWFsendPost("지난주 종합주가지수 얼마였지?", Chips_001, ServerName, AccessToken);
 		
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "가장 최근의 종합주가지수 정보만 알려드릴 수 있어요"));
 		
@@ -659,7 +659,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0972_Chips_삼성증권_미지원기간_미래_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 내일 종합주가지수 얼마였지? - 발화");
-		util.SWFsendPost("내일 종합주가지수 얼마였지?", ServerName, AccessToken);
+		util.SWFsendPost("내일 종합주가지수 얼마였지?", Chips_001, ServerName, AccessToken);
 		
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "가장 최근의 종합주가지수 정보만 알려드릴 수 있어요"));
 		
@@ -669,7 +669,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0973_Chips_삼성증권_미지원기간_미래_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 다음주 금요일 종합주가지수 얼마였지? - 발화");
-		util.SWFsendPost("다음주 금요일 종합주가지수 얼마였지?", ServerName, AccessToken);
+		util.SWFsendPost("다음주 금요일 종합주가지수 얼마였지?", Chips_001, ServerName, AccessToken);
 		
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "가장 최근의 종합주가지수 정보만 알려드릴 수 있어요"));
 		
@@ -679,7 +679,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0974_Chips_삼성증권_미지원기능_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 기관이 많이 거래한 종목 알려줘 - 발화");
-		util.SWFsendPost("기관이 많이 거래한 종목 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("기관이 많이 거래한 종목 알려줘", Chips_001, ServerName, AccessToken);
 		
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "외국인, 기관등의 매입, 매도를 구분해서 확인하면 종목을 알려 드릴수 있어요."));
 		
@@ -689,7 +689,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0975_Chips_삼성증권_미지원기능_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 외국인이 많이 거래한 종목 알려줘 - 발화");
-		util.SWFsendPost("외국인이 많이 거래한 종목 알려줘 ", ServerName, AccessToken);
+		util.SWFsendPost("외국인이 많이 거래한 종목 알려줘 ", Chips_001, ServerName, AccessToken);
 		
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "외국인, 기관등의 매입, 매도를 구분해서 확인하면 종목을 알려 드릴수 있어요."));
 		
@@ -699,7 +699,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0976_Chips_삼성증권_국외지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 해외 시황 알려줘. - 발화");
-		util.SWFsendPost("해외 시황 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("해외 시황 알려줘", Chips_001, ServerName, AccessToken);
 		
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "미국 다우지수는"));
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "나스닥은"));
@@ -715,7 +715,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0977_Chips_삼성증권_정국가지수_미국지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 미국 지수 알려줘 - 발화");
-		util.SWFsendPost("미국 지수 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("미국 지수 알려줘", Chips_001, ServerName, AccessToken);
 	
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "미국 다우지수는"));
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "나스닥은"));
@@ -729,7 +729,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0978_Chips_삼성증권_특정국가지수_홍콩지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 홍콩 항셍지수 알려줘 - 발화");
-		util.SWFsendPost("홍콩 항셍지수 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("홍콩 항셍지수 알려줘", Chips_001, ServerName, AccessToken);
 		
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "홍콩 항셍지수는"));
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "퍼센트"));
@@ -741,7 +741,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0979_Chips_삼성증권_특정국가지수_일본지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 일본 지수 알려줘 - 발화");
-		util.SWFsendPost("일본 지수 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("일본 지수 알려줘", Chips_001, ServerName, AccessToken);
 		
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "일본 니케이 지수는"));
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "퍼센트"));
@@ -753,7 +753,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0980_Chips_삼성증권_특정국가지수_대만지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 대만 시황 알려줘 - 발화");
-		util.SWFsendPost("대만 시황 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("대만 시황 알려줘", Chips_001, ServerName, AccessToken);
 		
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "대만 가권 지수는"));
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "퍼센트"));
@@ -780,7 +780,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		
 		} else if (장상태 == "장중") {
 			test.log(Status.INFO, "W, " + 상승종목 + " 주식시세 알려줘 - 발화");
-			util.SWFsendPost(상승종목 + " 주식시세 알려줘", ServerName, AccessToken);
+			util.SWFsendPost(상승종목 + " 주식시세 알려줘", Chips_001, ServerName, AccessToken);
 			
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 "+상승종목));
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "퍼센트 상승한"));
@@ -810,7 +810,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		
 		} else if (장상태 == "장중") {
 			test.log(Status.INFO, "W, " + 하락종목 + " 주식시세 알려줘 - 발화");
-			util.SWFsendPost(하락종목 + " 주식시세 알려줘", ServerName, AccessToken);
+			util.SWFsendPost(하락종목 + " 주식시세 알려줘", Chips_001, ServerName, AccessToken);
 			
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 "+하락종목));
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "퍼센트 하락한"));
@@ -840,7 +840,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		
 		} else if (장상태 == "장중") {
 			test.log(Status.INFO, "W, " + 보합종목 + " 주식시세 알려줘 - 발화");
-			util.SWFsendPost(보합종목 + " 주식시세 알려줘", ServerName, AccessToken);
+			util.SWFsendPost(보합종목 + " 주식시세 알려줘", Chips_001, ServerName, AccessToken);
 			
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 "+보합종목));
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "주가는 보합인"));
@@ -870,7 +870,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		
 		} else if (장상태 == "장중") {
 			test.log(Status.INFO, "W, " + 정지종목 + " 주식시세 알려줘 - 발화");
-			util.SWFsendPost(정지종목 + " 주식시세 알려줘", ServerName, AccessToken);
+			util.SWFsendPost(정지종목 + " 주식시세 알려줘", Chips_001, ServerName, AccessToken);
 
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, 정지종목));
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "거래정지 종목으로"));
@@ -904,7 +904,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			throw new SkipException("현재 [장중]상태로 장종상태 Test Skip");
 		} else if (장상태 == "장종") {
 			test.log(Status.INFO, "W, " + 상승종목 + " 주식시세 알려줘 - 발화");
-			util.SWFsendPost(상승종목 + " 주식시세 알려줘", ServerName, AccessToken);
+			util.SWFsendPost(상승종목 + " 주식시세 알려줘", Chips_001, ServerName, AccessToken);
 			
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 "+상승종목));
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "퍼센트 상승한"));
@@ -935,7 +935,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	
 		} else if (장상태 == "장종") {
 			test.log(Status.INFO, "W, " + 하락종목 + " 주식시세 알려줘 - 발화");
-			util.SWFsendPost(하락종목 + " 주식시세 알려줘", ServerName, AccessToken);
+			util.SWFsendPost(하락종목 + " 주식시세 알려줘", Chips_001, ServerName, AccessToken);
 		
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 "+하락종목));
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "퍼센트 하락한"));
@@ -966,7 +966,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		
 		} else if (장상태 == "장종") {
 			test.log(Status.INFO, "W, " + 보합종목 + " 주식시세 알려줘 - 발화");
-			util.SWFsendPost(보합종목 + " 주식시세 알려줘", ServerName, AccessToken);
+			util.SWFsendPost(보합종목 + " 주식시세 알려줘", Chips_001, ServerName, AccessToken);
 			
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘 "+보합종목));
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "보합"));
@@ -997,7 +997,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			
 		} else if (장상태 == "장종") {
 			test.log(Status.INFO, "W, " + 정지종목 + " 주식시세 알려줘 - 발화");
-			util.SWFsendPost(정지종목 + " 주식시세 알려줘", ServerName, AccessToken);
+			util.SWFsendPost(정지종목 + " 주식시세 알려줘", Chips_001, ServerName, AccessToken);
 			
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, 정지종목));
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "거래정지 종목으로"));
@@ -1014,7 +1014,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		
 		if (장상태 == "장전") {
 			test.log(Status.INFO, "W, SK텔레콤 주식시세 알려줘 - 발화");
-			util.SWFsendPost("SK텔레콤 주식시세 알려줘", ServerName, AccessToken);
+			util.SWFsendPost("SK텔레콤 주식시세 알려줘", Chips_001, ServerName, AccessToken);
 
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SK텔레콤의 어제 종가는"));
 			
@@ -1045,7 +1045,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			
 		} else if (장상태 == "장전" && util.getDayOfWeek(0) == "월") {
 			test.log(Status.INFO, "W, SK텔레콤 주식시세 알려줘 - 발화");
-			util.SWFsendPost("SK텔레콤 주식시세 알려줘", ServerName, AccessToken);
+			util.SWFsendPost("SK텔레콤 주식시세 알려줘", Chips_001, ServerName, AccessToken);
 	
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "금요일 기준"));
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SK텔레콤의 종가는"));
@@ -1066,7 +1066,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 		
 		if (util.getDayOfWeek(0) == "토") {
 			test.log(Status.INFO, "W, SK텔레콤 주식시세 알려줘 - 발화");
-			util.SWFsendPost("SK텔레콤 주식시세 알려줘", ServerName, AccessToken);
+			util.SWFsendPost("SK텔레콤 주식시세 알려줘", Chips_001, ServerName, AccessToken);
 			
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘은 증시 휴장일입니다"));
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "금요일 기준"));
@@ -1074,7 +1074,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 			
 		} else if (util.getDayOfWeek(0) == "일") {
 			test.log(Status.INFO, "W, SK텔레콤 주식시세 알려줘 - 발화");
-			util.SWFsendPost("SK텔레콤 주식시세 알려줘", ServerName, AccessToken);
+			util.SWFsendPost("SK텔레콤 주식시세 알려줘", Chips_001, ServerName, AccessToken);
 			
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "오늘은 증시 휴장일입니다"));
 			Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "금요일 기준"));
@@ -1091,7 +1091,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0992_Chips_삼성증권_종목추천_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 삼성증권에서 오늘 추천하는 종목이 뭐야? - 발화");
-		util.SWFsendPost("삼성증권에서 오늘 추천하는 종목이 뭐야", ServerName, AccessToken);
+		util.SWFsendPost("삼성증권에서 오늘 추천하는 종목이 뭐야", Chips_001, ServerName, AccessToken);
 			
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "삼성증권에서"));
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "Premium List ten으로 선정한 종목중에"));
@@ -1103,7 +1103,7 @@ public class 금융_01_삼성증권 extends Chips_TestCase {
 	public void TC_0993_Chips_삼성증권_종목추천_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 주식 추천해줘 - 발화");
-		util.SWFsendPost("주식 추천해줘", ServerName, AccessToken);
+		util.SWFsendPost("주식 추천해줘", Chips_001, ServerName, AccessToken);
 			
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "삼성증권에서"));
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "Premium List ten으로 선정한 종목중에"));

@@ -107,7 +107,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		 
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, SBS파워FM 라디오 들려줘 - 발화");
-		util.SWFsendPost("SBS파워FM 라디오 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("SBS파워FM 라디오 들려줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -129,7 +129,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	public void TC_0342_Chips_라디오_좋아요재생_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 좋아요 한 라디오 들려줘 - 발화");
-		util.SWFsendPost("좋아요 한 라디오 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("좋아요 한 라디오 들려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "좋아요한 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "즐겨찾기 한 라디오 채널이 없습니다. 누구 앱에서 자주 듣는 채널을 즐겨찾기로 등록해주세요."));
@@ -144,14 +144,14 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	    Thread.sleep(3000);
 		
 		test.log(Status.INFO, "W, 라디오 들려줘- 발화");
-		util.SWFsendPost("라디오 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("라디오 들려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "최근에 재생한 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 파워FM 라디오"));
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "W, 다음 라디오 채널 - 발화");
-		util.SWFsendPost_playStatus("다음 라디오 채널", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("다음 라디오 채널", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "다음 라디오 재생 TTS 확인");
@@ -160,11 +160,11 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_일시정지_web)));
 		
 		test.log(Status.INFO, "W, 즐겨찾기 해줘 - 발화");
-		util.SWFsendPost_playStatus("즐겨찾기 해줘", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("즐겨찾기 해줘", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "즐겨찾기 라디오 재생 TTS 확인");
@@ -177,7 +177,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		 
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 즐겨찾기 한 라디오 틀어줘  - 발화");
-		util.SWFsendPost("즐겨찾기 한 라디오 틀어줘", ServerName, AccessToken);
+		util.SWFsendPost("즐겨찾기 한 라디오 틀어줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "즐겨찾기한 재생한 라디오 재생 TTS 확인");
@@ -185,7 +185,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "W, 즐겨찾기 해제 - 발화");
-		util.SWFsendPost_playStatus("즐겨찾기 해제", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("즐겨찾기 해제", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "즐겨찾기 해제 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "즐겨찾기 리스트에서 삭제하였습니다."));
@@ -197,7 +197,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		 
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 이 라디오 이름 알려줘  - 발화");
-		util.SWFsendPost_playStatus("이 라디오 이름 알려줘", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("이 라디오 이름 알려줘", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "즐겨찾기한 재생한 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이 라디오는  TBN 강원교통방송  입니다."));
@@ -209,7 +209,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		 
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 지금 듣고 있는 방송이 뭐야?  - 발화");
-		util.SWFsendPost_playStatus("지금 듣고 있는 방송이 뭐야", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("지금 듣고 있는 방송이 뭐야", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "즐겨찾기한 재생한 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이 라디오는  TBN 강원교통방송  입니다."));
@@ -221,7 +221,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		 
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 다음 라디오 채널  - 발화");
-		util.SWFsendPost_playStatus("다음 라디오 채널", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("다음 라디오 채널", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "다음 채널 라디오 재생 TTS 확인");
@@ -229,7 +229,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.라디오1st_일시정지_web)));
 
 	}
@@ -239,7 +239,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		 
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 이전 라디오 채널  - 발화");
-		util.SWFsendPost_playStatus("이전 라디오 채널", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("이전 라디오 채널", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "이전 채널 라디오 재생 TTS 확인");
@@ -247,7 +247,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "이전 라디오 재생중 버튼 활성화");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_일시정지_web)));
 
 	}
@@ -261,13 +261,13 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, KBS CoolFM 라디오 들려줘- 발화");
-		util.SWFsendPost_playStatus("KBS CoolFM 라디오 들려줘", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("KBS CoolFM 라디오 들려줘", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "채널 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS CoolFM 라디오"));
 		
 		test.log(Status.INFO, "W, 즐겨찾기 해줘 - 발화");
-		util.SWFsendPost_playStatus("즐겨찾기 해줘", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("즐겨찾기 해줘", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "즐겨찾기 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "즐겨찾기 리스트에 추가했습니다."));
@@ -277,14 +277,14 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	    Thread.sleep(5000);
 	    
 	    test.log(Status.INFO, "W, 즐겨찾기한 라디오 들려줘 - 발화");
-		util.SWFsendPost("즐겨찾기한 라디오 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("즐겨찾기한 라디오 들려줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "즐겨찾기한 채널 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS CoolFM 라디오"));
 		
 		test.log(Status.INFO, "W, 다음 라디오 채널 - 발화");
-		util.SWFsendPost_playStatus("다음 라디오 채널", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("다음 라디오 채널", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "다음 라디오 재생 TTS 확인");
@@ -293,7 +293,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화 - 라디오 리스트 두번째 활성화 ");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.라디오2st_일시정지_web)));
 
 	}
@@ -307,14 +307,14 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	    Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, CBS 라디오 들려줘- 발화");
-		util.SWFsendPost("CBS 라디오 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("CBS 라디오 들려줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "채널 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "CBS 음악FM 라디오"));
 		
 		test.log(Status.INFO, "W, 즐겨찾기 해줘 - 발화");
-		util.SWFsendPost_playStatus("즐겨찾기 해줘", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("즐겨찾기 해줘", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "즐겨찾기 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "즐겨찾기 리스트에 추가했습니다."));
@@ -324,14 +324,14 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	    Thread.sleep(5000);
 	    
 	    test.log(Status.INFO, "W, 즐겨찾기한 라디오 들려줘 - 발화");
-		util.SWFsendPost("즐겨찾기한 라디오 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("즐겨찾기한 라디오 들려줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "즐겨찾기한 채널 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "CBS 음악FM 라디오"));
 		
 		test.log(Status.INFO, "W, 다음 라디오 채널 - 발화");
-		util.SWFsendPost_playStatus("다음 라디오 채널", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("다음 라디오 채널", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "다음 라디오 재생 TTS 확인");
@@ -340,11 +340,11 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화 - 라디오 리스트 두번째 활성화 ");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.라디오2st_일시정지_web)));
 		
 		test.log(Status.INFO, "W, 다음 라디오 채널 - 발화");
-		util.SWFsendPost_playStatus("다음 라디오 채널", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("다음 라디오 채널", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "다음 라디오 재생 TTS 확인");
@@ -353,7 +353,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화 - 라디오 리스트 첫번째 활성화 ");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.라디오3st_일시정지_web)));
 
 	}
@@ -367,21 +367,21 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	    Thread.sleep(5000); 
 		
 		test.log(Status.INFO, "W, CBS 라디오 들려줘 - 발화");
-		util.SWFsendPost("CBS 라디오 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("CBS 라디오 들려줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "CBS 음악FM 라디오"));
 		
 		test.log(Status.INFO, "W, 즐겨찾기 해제 - 발화");
-		util.SWFsendPost_playStatus("즐겨찾기 해제", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("즐겨찾기 해제", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "즐겨찾기 해제 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "즐겨찾기 리스트에서 삭제하였습니다."));
 		
 		test.log(Status.INFO, "W, 그만 - 발화");
-		util.SWFsendPost_playStatus("그만", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("그만", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "라디오카드 종료되고 메인화면 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
@@ -401,22 +401,24 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	    Thread.sleep(5000); 
 		
 		test.log(Status.INFO, "W, KBS 라디오 들려줘 - 발화");
-		util.SWFsendPost("KBS 라디오 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("KBS 라디오 들려줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS CoolFM 라디오"));
 		
 		test.log(Status.INFO, "W, 즐겨찾기 해제 - 발화");
-		util.SWFsendPost_playStatus("즐겨찾기 해제", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("즐겨찾기 해제", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "즐겨찾기 해제 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "즐겨찾기 리스트에서 삭제하였습니다."));
 		
 		test.log(Status.INFO, "W, 라디오 종료 - 발화");
-		util.SWFsendPost("라디오 종료", ServerName, AccessToken);
+		util.SWFsendPost_playStatus("라디오 종료", Chips_001, ServerName, AccessToken, "radio");
+		Thread.sleep(3000);
 		
+		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "라디오카드 종료되고 메인화면 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature_format")));
@@ -428,7 +430,11 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0353")
 	public void TC_0353_Chips_라디오_일시정지상태_채널재생_확인(Method method) throws Exception {
 		
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS파워FM 라디오 들려줘"));
+		test.log(Status.INFO, "W, SBS파워FM 라디오 들려줘 - 발화");
+		util.SWFsendPost("SBS 파워FM 라디오 들려줘", Chips_001, ServerName, AccessToken);
+		Thread.sleep(3000);
+		
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 파워FM 라디오를 들려드릴게요."));
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -436,20 +442,20 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "W, 일시정지 - 발화");
-		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("일시정지", Chips_001, ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("일시정지", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 		
 		test.log(Status.INFO, "W, 라디오 틀어줘 - 발화");
-		util.SWFsendPost_playStatus("라디오 틀어줘", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("라디오 틀어줘", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "플레이 중 일시정지 버튼 활성화 확인 ");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_일시정지_web)));
 		
 	}
@@ -459,7 +465,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, SBS파워FM 라디오 들려줘 - 발화");
-		util.SWFsendPost("SBS파워FM 라디오 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("SBS파워FM 라디오 들려줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -467,21 +473,21 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "W, 일시정지 - 발화");
-		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("일시정지", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 		
 		test.log(Status.INFO, "W, 이거 무슨 채널이야? - 발화");
-		util.SWFsendPost_playStatus("이거 무슨 채널이야", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("이거 무슨 채널이야", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "채널 안내 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이 라디오는  SBS 파워FM  입니다."));
 		
 		test.log(Status.INFO, "일시정지 유지 확인 ");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 		
 	}
@@ -491,11 +497,11 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 라디오 종료 - 발화");
-		util.SWFsendPost_playStatus("라디오 종료", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("라디오 꺼줘", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 라디오 뭐뭐 있어? - 발화");
-		util.SWFsendPost("라디오 뭐뭐 있어", ServerName, AccessToken);
+		util.SWFsendPost("라디오 뭐뭐 있어", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "채널 안내 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "8개 방송국, 27개의 채널이 있습니다. SBS, KBS, CBS, TBS, 아리랑, 불교방송, 극동방송, TBN 라디오를 들을 수 있어요."));
@@ -517,7 +523,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, 라디오 리스트 - 발화");
-		util.SWFsendPost("라디오 리스트", ServerName, AccessToken);
+		util.SWFsendPost("라디오 리스트", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "채널 안내 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "8개 방송국, 27개의 채널이 있습니다. SBS, KBS, CBS, TBS, 아리랑, 불교방송, 극동방송, TBN 라디오를 들을 수 있어요."));
@@ -540,14 +546,14 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		util.switchToContextName("NATIVE_APP");
 		test.log(Status.INFO, "W, SBS파워FM 라디오 들려줘 - 발화");
-		util.SWFsendPost("SBS파워FM 라디오 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("SBS파워FM 라디오 들려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 파워FM 라디오"));
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "W, 즐겨찾기 해줘 - 발화");
-		util.SWFsendPost_playStatus("즐겨찾기 해줘", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("즐겨찾기 해줘", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "즐겨찾기 라디오 재생 TTS 확인");
@@ -559,7 +565,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	public void TC_0358_Chips_라디오_즐겨찾기완료_즐겨찾기실행_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 즐겨찾기 해줘 - 발화");
-		util.SWFsendPost_playStatus("즐겨찾기 해줘", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("즐겨찾기 해줘", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "즐겨찾기 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이미 즐겨찾기로 등록된 채널입니다."));
@@ -570,7 +576,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	public void TC_0359_Chips_라디오_실행중_즐겨찾기해제_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 즐겨찾기 해제 - 발화");
-		util.SWFsendPost_playStatus("즐겨찾기 해제", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("즐겨찾기 해제", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "즐겨찾기해제 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "즐겨찾기 리스트에서 삭제하였습니다."));
@@ -581,7 +587,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	public void TC_0360_Chips_라디오_즐겨찾기해제완료_즐겨찾기해제_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 즐겨찾기 해제 - 발화");
-		util.SWFsendPost_playStatus("즐겨찾기 해제", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("즐겨찾기 해제", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "즐겨찾기해제 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "즐겨찾기 한 채널이 아닙니다."));

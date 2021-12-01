@@ -115,7 +115,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 		현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 세차하기 어때? - 발화");
-		util.SWFsendPost("세차하기 어때?", ServerName, AccessToken);
+		util.SWFsendPost("세차하기 어때?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "세차지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, 현재위치 + " 지역"));
@@ -127,7 +127,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	public void TC_0788_Chips_날씨_오늘세차지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 오늘 세차지수 알려줘 - 발화");
-		util.SWFsendPost("오늘 세차지수 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("오늘 세차지수 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "세차지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, 현재위치 + " 지역"));
@@ -139,7 +139,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	public void TC_0789_Chips_날씨_지정위치읍면동_세차지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 강원도 강릉시 세차지수 어때 - 발화");
-		util.SWFsendPost("강원도 강릉시 세차지수 어때", ServerName, AccessToken);
+		util.SWFsendPost("강원도 강릉시 세차지수 어때", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지정위치 세차지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "강원도 강릉시 지역"));
@@ -151,7 +151,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	public void TC_0790_Chips_날씨_지정위치읍면동_세차지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 제주시 애월읍 세차지수 - 발화");
-		util.SWFsendPost("제주시 애월읍 세차지수", ServerName, AccessToken);
+		util.SWFsendPost("제주시 애월읍 세차지수", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지정위치 세차지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "제주시 애월읍 지역"));
@@ -163,7 +163,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	public void TC_0791_Chips_날씨_지정위치읍면동_세차지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 중랑구 신내동 세차지수 - 발화");
-		util.SWFsendPost("중랑구 신내동 세차지수", ServerName, AccessToken);
+		util.SWFsendPost("중랑구 신내동 세차지수", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지정위치 세차지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "중랑구 신내동 지역"));
@@ -175,7 +175,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	public void TC_0792_Chips_날씨_지정위치특별광역시_세차지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 세종특별자치시 세차지수 몇이야? - 발화");
-		util.SWFsendPost("세종특별자치시 세차지수 몇이야?", ServerName, AccessToken);
+		util.SWFsendPost("세종특별자치시 세차지수 몇이야?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지정위치 세차지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "세종특별자치시 지역"));
@@ -187,7 +187,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	public void TC_0793_Chips_날씨_지정위치특별광역시_세차지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 울산광역시 세차해도 돼? - 발화");
-		util.SWFsendPost("울산광역시 세차해도 돼?", ServerName, AccessToken);
+		util.SWFsendPost("울산광역시 세차해도 돼?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지정위치 세차지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "울산광역시 지역"));
@@ -199,7 +199,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	public void TC_0796_Chips_날씨_세차지수부재_지역외_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 로스앤젤레스 세차지수 알려줘 - 발화");
-		util.SWFsendPost("로스앤젤레스 세차지수 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("로스앤젤레스 세차지수 알려줘", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역외 세차지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "말씀하신 지역의 세차지수 정보는 가지고 있지 않습니다."));
@@ -209,7 +209,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	public void TC_0797_Chips_날씨_세차지수부재_지역아님_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 하이마트 세차지수 어때? - 발화");
-		util.SWFsendPost("하이마트 세차지수 어때?", ServerName, AccessToken);
+		util.SWFsendPost("하이마트 세차지수 어때?", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역아닌곳 세차지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "말씀하신 지역의 세차지수 정보는 가지고 있지 않습니다."));
@@ -219,7 +219,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	public void TC_0798_Chips_날씨_세차지수부재_이번주_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 이번주 세차지수 정보 - 발화");
-		util.SWFsendPost("이번주 세차지수 정보", ServerName, AccessToken);
+		util.SWFsendPost("이번주 세차지수 정보", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역아닌곳 세차지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘의 세차지수 정보만 가지고 있습니다."));
@@ -229,7 +229,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	public void TC_0799_Chips_날씨_세차지수부재_다음주_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 다음주 세차지수 정보 - 발화");
-		util.SWFsendPost("다음주 세차지수 정보", ServerName, AccessToken);
+		util.SWFsendPost("다음주 세차지수 정보", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역아닌곳 세차지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘의 세차지수 정보만 가지고 있습니다."));
@@ -239,7 +239,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	public void TC_0800_Chips_날씨_세차지수부재_모레_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 모레 세차 할까? - 발화");
-		util.SWFsendPost("모레 세차 할까?", ServerName, AccessToken);
+		util.SWFsendPost("모레 세차 할까?", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역아닌곳 세차지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘의 세차지수 정보만 가지고 있습니다."));

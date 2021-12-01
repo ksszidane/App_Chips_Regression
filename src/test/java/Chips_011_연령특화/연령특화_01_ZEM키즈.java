@@ -106,7 +106,7 @@ public class 연령특화_01_ZEM키즈 extends Chips_TestCase {
 	public void TC_1062_ZEM키즈_미지원_확인(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, ZEM 키즈 열어줘 - 발화");
-		util.SWFsendPost("ZEM 키즈 열어줘", ServerName, AccessToken);
+		util.SWFsendPost("ZEM 키즈 열어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ZEM 키즈 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));

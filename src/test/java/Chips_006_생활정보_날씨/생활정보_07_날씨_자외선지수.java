@@ -115,7 +115,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 		현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 자외선 지수 - 발화");
-		util.SWFsendPost("자외선 지수", ServerName, AccessToken);
+		util.SWFsendPost("자외선 지수", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "자외선 지수 A구간[00:00~18:00] | B구간[18:00~24:00] 체크");
 		String 자외선시간대 = util.Hour00to18();
@@ -135,7 +135,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 	public void TC_0748_Chips_날씨_지역_자외선지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 오늘 부산 자외선 지수 알려줘 - 발화");
-		util.SWFsendPost("오늘 부산 자외선 지수 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("오늘 부산 자외선 지수 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "자외선 지수 A구간[00:00~18:00] | B구간[18:00~24:00] 체크");
 		String 자외선시간대 = util.Hour00to18();
@@ -162,7 +162,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 		현재위치 = array[2];
 		
 		test.log(Status.INFO, "W, 내일 자외선 어때? - 발화");
-		util.SWFsendPost("내일 자외선 어때?", ServerName, AccessToken);
+		util.SWFsendPost("내일 자외선 어때?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "[00:00~18:00] 시간대 자외선지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "내일 " + 현재위치 + " 자외선 지수는"));
@@ -173,7 +173,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 	public void TC_0750_Chips_날씨_내일지역_자외선지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 내일 부산 자외선 상태 - 발화");
-		util.SWFsendPost("내일 부산 자외선 상태", ServerName, AccessToken);
+		util.SWFsendPost("내일 부산 자외선 상태", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "내일 부산 자외선지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "내일 부산 자외선 지수는"));
@@ -184,7 +184,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 	public void TC_0751_Chips_날씨_모레_자외선지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 모레 자외선 지수 - 발화");
-		util.SWFsendPost("모레 자외선 지수", ServerName, AccessToken);
+		util.SWFsendPost("모레 자외선 지수", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "자외선 지수 A구간[00:00~06:00] | B구간[06:00~24:00] 체크");
 		String 자외선시간대 = util.Hour00to06();
@@ -205,7 +205,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 	public void TC_0752_Chips_날씨_모레지역_자외선지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 모레 부산 자외선 지수 강해? - 발화");
-		util.SWFsendPost("모레 부산 자외선 지수 강해?", ServerName, AccessToken);
+		util.SWFsendPost("모레 부산 자외선 지수 강해?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "자외선 지수 A구간[00:00~18:00] | B구간[18:00~24:00] 체크");
 		String 자외선시간대 = util.Hour00to06();
@@ -226,7 +226,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 	public void TC_0753_Chips_날씨_자외선지수부재_어제_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 어제 자외선 지수 알려줘 - 발화");
-		util.SWFsendPost("어제 자외선 지수 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("어제 자외선 지수 알려줘", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "어제 자외선지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘부터 모레까지의 자외선 지수 정보만 가지고 있어요."));
@@ -239,7 +239,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 		String 그제날짜 = util.getChangePreviousDate(-2);
 		
 		test.log(Status.INFO, "W, "+ 그제날짜 +" 자외선 지수 알려줘 - 발화");
-		util.SWFsendPost(그제날짜 + " 자외선 지수 알려줘", ServerName, AccessToken);
+		util.SWFsendPost(그제날짜 + " 자외선 지수 알려줘", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, 그제날짜 + " 자외선지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘부터 모레까지의 자외선 지수 정보만 가지고 있어요."));
@@ -249,7 +249,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 	public void TC_0755_Chips_날씨_자외선지수부재_지역외_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 로스앤젤레스 자외선 지수 알려줘 - 발화");
-		util.SWFsendPost("로스앤젤레스 자외선 지수 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("로스앤젤레스 자외선 지수 알려줘", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역외 자외선지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "말씀하신 지역의 자외선 지수 정보는 가지고 있지 않습니다."));
@@ -259,7 +259,7 @@ public class 생활정보_07_날씨_자외선지수 extends Chips_TestCase {
 	public void TC_0756_Chips_날씨_자외선지수부재_지역아님_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 하이마트 자외선 지수 알려줘 - 발화");
-		util.SWFsendPost("하이마트 자외선 지수 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("하이마트 자외선 지수 알려줘", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역아닌곳 자외선지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "말씀하신 지역의 자외선 지수 정보는 가지고 있지 않습니다."));

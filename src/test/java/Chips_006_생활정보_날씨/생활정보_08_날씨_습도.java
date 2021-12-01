@@ -116,7 +116,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 		System.out.println("현재위치:"+현재위치);
 		
 		test.log(Status.INFO, "W, 오늘 습도 어때? - 발화");
-		util.SWFsendPost("오늘 습도 어때?", ServerName, AccessToken);
+		util.SWFsendPost("오늘 습도 어때?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "자외선 지수 A구간[5월~9월] | B구간[10월~4월] 체크");
 		String 습도시간대 = util.Month5to9();
@@ -137,7 +137,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 	public void TC_0758_Chips_날씨_지역_습도지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 오늘 부산 습도 정보 - 발화");
-		util.SWFsendPost("오늘 부산 습도 정보", ServerName, AccessToken);
+		util.SWFsendPost("오늘 부산 습도 정보", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "자외선 지수 A구간[5월~9월] | B구간[10월~4월] 체크");
 		String 습도시간대 = util.Month5to9();
@@ -158,7 +158,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 	public void TC_0759_Chips_날씨_내일_습도지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 내일 습도 알려줘 - 발화");
-		util.SWFsendPost("내일 습도 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("내일 습도 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "자외선 지수 A구간[5월~9월] | B구간[10월~4월] 체크");
 		String 습도시간대 = util.Month5to9();
@@ -179,7 +179,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 	public void TC_0760_Chips_날씨_내일지역_습도지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 내일 부산 습도 얼마야? - 발화");
-		util.SWFsendPost("내일 부산 습도 얼마야?", ServerName, AccessToken);
+		util.SWFsendPost("내일 부산 습도 얼마야?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "자외선 지수 A구간[5월~9월] | B구간[10월~4월] 체크");
 		String 습도시간대 = util.Month5to9();
@@ -200,7 +200,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 	public void TC_0761_Chips_날씨_모레_습도지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 모레 습도 상태 - 발화");
-		util.SWFsendPost("모레 습도 상태", ServerName, AccessToken);
+		util.SWFsendPost("모레 습도 상태", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "습도 지수 A구간[5월~9월] | B구간[10월~4월] 체크");
 		String 습도시간대 = util.Month5to9();
@@ -223,7 +223,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 	public void TC_0762_Chips_날씨_모레지역_습도지수_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 모레 부산 습도 상태 - 발화");
-		util.SWFsendPost("모레 부산 습도 상태", ServerName, AccessToken);
+		util.SWFsendPost("모레 부산 습도 상태", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "습도 지수 A구간[5월~9월] | B구간[10월~4월] 체크");
 		String 습도시간대 = util.Month5to9();
@@ -246,7 +246,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 	public void TC_0763_Chips_날씨_습도지수부재_어제_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 어제 습도 알려줘 - 발화");
-		util.SWFsendPost("어제 습도 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("어제 습도 알려줘", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "어제 습도지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘부터 모레까지의 습도 정보만 가지고 있어요."));
@@ -259,7 +259,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 		String 그제날짜 = util.getChangePreviousDate(-2);
 		
 		test.log(Status.INFO, "W, "+ 그제날짜 +" 습도 정보 알려줘 - 발화");
-		util.SWFsendPost(그제날짜 + " 습도 정보 알려줘", ServerName, AccessToken);
+		util.SWFsendPost(그제날짜 + " 습도 정보 알려줘", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, 그제날짜 + " 습도지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "저는 오늘부터 모레까지의 습도 정보만 가지고 있어요."));
@@ -269,7 +269,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 	public void TC_0765_Chips_날씨_습도지수부재_지역외_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 로스앤젤레스 습도 알려줘 - 발화");
-		util.SWFsendPost("로스앤젤레스 습도 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("로스앤젤레스 습도 알려줘", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역외 습도지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "말씀하신 지역의 습도 정보는 가지고 있지 않습니다."));
@@ -279,7 +279,7 @@ public class 생활정보_08_날씨_습도 extends Chips_TestCase {
 	public void TC_0766_Chips_날씨_습도지수부재_지역아님_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 하이마트 습도 어때? - 발화");
-		util.SWFsendPost("하이마트 습도 어때?", ServerName, AccessToken);
+		util.SWFsendPost("하이마트 습도 어때?", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역아닌곳 습도지수 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "말씀하신 지역의 습도 정보는 가지고 있지 않습니다."));

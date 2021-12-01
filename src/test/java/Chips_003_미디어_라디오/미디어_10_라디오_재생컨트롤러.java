@@ -106,7 +106,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0401_Chips_라디오_재생_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, SBS파워FM 라디오 틀어줘 - 발화");
-		util.SWFsendPost("SBS파워FM 라디오 틀어줘", ServerName, AccessToken);
+		util.SWFsendPost("SBS파워FM 라디오 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 파워FM 라디오"));
@@ -127,10 +127,10 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0402_Chips_라디오_일시정지_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 일시정지 - 발화");
-		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("일시정지", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 
 	}
@@ -139,10 +139,10 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0403_Chips_라디오_일시정지취소_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 일시정지 취소- 발화");
-		util.SWFsendPost_playStatus("일시정지 취소", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("일시정지 취소", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_일시정지_web)));
 
 	}
@@ -151,11 +151,11 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0404_Chips_라디오_일시정지_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 일시정지 - 발화");
-		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("일시정지", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("일시정지", Chips_001, ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("일시정지", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 
 	}
@@ -164,10 +164,10 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0405_Chips_라디오_재생_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 재생 - 발화");
-		util.SWFsendPost_playStatus("재생", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("재생", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_일시정지_web)));
 
 	}
@@ -176,13 +176,13 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0406_Chips_라디오_다음라디오채널_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 다음 라디오 채널 - 발화");
-		util.SWFsendPost_playStatus("다음 라디오 채널", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("다음 라디오 채널", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "다음 채널 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 강원교통방송 라디오"));
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_일시정지_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 
@@ -192,13 +192,13 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0407_Chips_라디오_이전라디오채널_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 이전 라디오 채널 - 발화");
-		util.SWFsendPost_playStatus("이전 라디오 채널", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("이전 라디오 채널", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "이전 채널 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 파워FM 라디오"));
 		
 		test.log(Status.INFO, "이전 라디오 재생중 버튼 활성화");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_일시정지_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_재생_web)));
 
@@ -208,13 +208,13 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0408_Chips_라디오_다음_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 다음 - 발화");
-		util.SWFsendPost_playStatus("다음", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("다음", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "다음 채널 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 강원교통방송 라디오"));
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_일시정지_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 
@@ -224,13 +224,13 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0409_Chips_라디오_이전_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 이전 - 발화");
-		util.SWFsendPost_playStatus("이전", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("이전", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "이전 채널 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 파워FM 라디오"));
 		
 		test.log(Status.INFO, "이전 라디오 재생중 버튼 활성화");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_일시정지_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_재생_web)));
 
@@ -240,13 +240,13 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0410_Chips_라디오_다음채널_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 다음 채널 - 발화");
-		util.SWFsendPost_playStatus("다음 채널", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("다음 채널", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "다음 채널 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 강원교통방송 라디오"));
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_일시정지_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 
@@ -256,13 +256,13 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0411_Chips_라디오_이전라디오방송_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 이전 라디오 방송 - 발화");
-		util.SWFsendPost_playStatus("이전 라디오 방송", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("이전 라디오 방송", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "이전 채널 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 파워FM 라디오"));
 		
 		test.log(Status.INFO, "이전 라디오 재생중 버튼 활성화");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_일시정지_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_재생_web)));
 
@@ -272,13 +272,13 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0412_Chips_라디오_다음라디오_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 다음 라디오 - 발화");
-		util.SWFsendPost_playStatus("다음 라디오", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("다음 라디오", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "다음 채널 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 강원교통방송 라디오"));
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화");
-		util.switchContext("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.tbn강원_일시정지_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 
@@ -288,7 +288,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0413_Chips_라디오_종료예약_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 2분 뒤에 라디오 꺼줘 - 발화");
-		util.SWFsendPost_playStatus("2분 뒤에 라디오 꺼줘", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("2분 뒤에 라디오 꺼줘", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "종료예약 미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
@@ -299,7 +299,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0414_Chips_라디오_종료_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 라디오 꺼줘 - 발화");
-		util.SWFsendPost_playStatus("라디오 꺼줘", ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("라디오 꺼줘", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(5000);
 		
 		util.switchContext("NATIVE_APP");

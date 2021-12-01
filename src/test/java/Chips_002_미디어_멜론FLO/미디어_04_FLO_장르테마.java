@@ -106,7 +106,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 	public void TC_0230_Chips_FLO_장르_걸그룹노래_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 걸그룹 노래 틀어줘 - 발화");
-		util.SWFsendPost("걸그룹 노래 틀어줘", ServerName, AccessToken);
+		util.SWFsendPost("걸그룹 노래 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "걸그룹 장르 노래 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "걸그룹의 활기찬 노래"));
@@ -152,7 +152,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 	public void TC_0231_Chips_FLO_장르_크로스오버음악_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 크로스오버 음악 틀어줘 - 발화");
-		util.SWFsendPost("크로스오버 음악 틀어줘", ServerName, AccessToken);
+		util.SWFsendPost("크로스오버 음악 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "걸그룹 장르 노래 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "크로스오버를"));
@@ -198,7 +198,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 	public void TC_0232_Chips_FLO_테마_공룡테마_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 공룡 노래 들려줘 - 발화");
-		util.SWFsendPost("공룡 노래 들려줘", ServerName, AccessToken);
+		util.SWFsendPost("공룡 노래 들려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "공룡노래 테마 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "유아동요의 공룡"));
@@ -244,7 +244,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 	public void TC_0233_Chips_FLO_테마_매장음악_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 매장 음악 틀어줘 - 발화");
-		util.SWFsendPost("매장 음악 틀어줘", ServerName, AccessToken);
+		util.SWFsendPost("매장 음악 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "매장 음악 테마 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "매장 음악을"));
@@ -290,7 +290,7 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 	public void TC_0234_Chips_FLO_큐레이션_신나는음악_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 신나는 음악 틀어줘 - 발화");
-		util.SWFsendPost("신나는 음악 틀어줘", ServerName, AccessToken);
+		util.SWFsendPost("신나는 음악 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "신나는음악 큐레이션 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "신나는, 노래를"));

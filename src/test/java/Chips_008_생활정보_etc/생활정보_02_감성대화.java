@@ -106,7 +106,7 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 	public void TC_0710_Chips_감성대화_안부인사_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 안녕 - 발화");
-		util.SWFsendPost("안녕", ServerName, AccessToken);
+		util.SWFsendPost("안녕", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
 		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
@@ -119,7 +119,7 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 	public void TC_0711_Chips_감성대화_이벤트절기상황1_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 월요일이 또 왔어 - 발화");
-		util.SWFsendPost("월요일이 또 왔어", ServerName, AccessToken);
+		util.SWFsendPost("월요일이 또 왔어", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
 		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
@@ -132,7 +132,7 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 	public void TC_0712_Chips_감성대화_이벤트절기상황2_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 불금이야 - 발화");
-		util.SWFsendPost("불금이야", ServerName, AccessToken);
+		util.SWFsendPost("불금이야", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
 		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
@@ -145,7 +145,7 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 	public void TC_0713_Chips_감성대화_피곤질병_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 피곤해 죽겠어 - 발화");
-		util.SWFsendPost("피곤해 죽겠어", ServerName, AccessToken);
+		util.SWFsendPost("피곤해 죽겠어", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
 		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
@@ -158,7 +158,7 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 	public void TC_0714_Chips_감성대화_감사_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 고마워 - 발화");
-		util.SWFsendPost("고마워", ServerName, AccessToken);
+		util.SWFsendPost("고마워", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
 		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
@@ -171,7 +171,7 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 	public void TC_0721_Chips_감성대화_고객센터번호_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 고객센터 번호 알려줘 - 발화");
-		util.SWFsendPost("고객센터 번호 알려줘", ServerName, AccessToken);
+		util.SWFsendPost("고객센터 번호 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "고객센터 번호미지원 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
