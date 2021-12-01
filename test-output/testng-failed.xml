@@ -18,15 +18,62 @@
     <parameter name="TestPlace" value="out"/>
     <parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
     <classes>
-      <class name="Chips_004_미디어_etc.미디어_12_팟빵">
+      <class name="Chips_004_미디어_etc.미디어_07_ASMR">
         <methods>
-          <include name="setupClass"/>
-          <include name="tearDownClass"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0460_Chips_팟빵_구독_확인" invocation-numbers="0"/>
+          <include name="TC_0330_Chips_ASMR_좋아요취소_확인"/>
+          <include name="TC_0331_Chips_ASMR_다음ASMR_확인"/>
+          <include name="TC_0338_Chips_ASMR_20초뒤로_확인"/>
+          <include name="TC_0334_Chips_ASMR_다음ASMR_확인"/>
           <include name="AfterMethod"/>
+          <include name="TC_0339_Chips_ASMR_15초앞으로_확인"/>
+          <include name="TC_0327_Chips_ASMR_일시정지_확인"/>
+          <include name="TC_0326_Chips_ASMR_일시정지취소_확인"/>
+          <include name="TC_0321_Chips_ASMR_다음ASMR_확인"/>
+          <include name="TC_0325_Chips_ASMR_일시정지_확인"/>
+          <include name="TC_0316_Chips_ASMR_과자먹는소리재생_확인"/>
+          <include name="setupClass"/>
+          <include name="TC_0322_Chips_ASMR_이전ASMR_확인"/>
+          <include name="TC_0333_Chips_ASMR_셔플_확인"/>
+          <include name="TC_0337_Chips_ASMR_다음ASMR_확인"/>
+          <include name="TC_0317_Chips_ASMR_빗소리_확인"/>
+          <include name="TC_0332_Chips_ASMR_이전ASMR_확인"/>
+          <include name="TC_0336_Chips_ASMR_셔플해제_확인"/>
+          <include name="tearDownClass"/>
+          <include name="TC_0000_앱실행과AccessToken얻기"/>
+          <include name="TC_0320_Chips_ASMR_이노래뭐야_확인"/>
+          <include name="TC_0329_Chips_ASMR_좋아요_확인"/>
+          <include name="TC_0328_Chips_ASMR_재생_확인"/>
+          <include name="BeforeMethod"/>
+          <include name="TC_0319_Chips_ASMR_자연의소리_반복확인"/>
+          <include name="TC_0324_Chips_ASMR_재생_확인"/>
+          <include name="TC_0335_Chips_ASMR_이전ASMR_확인"/>
+          <include name="TC_0315_Chips_ASMR_재생_확인"/>
+          <include name="TC_0318_Chips_ASMR_힐링사운드_확인"/>
         </methods>
-      </class> <!-- Chips_004_미디어_etc.미디어_12_팟빵 -->
+      </class> <!-- Chips_004_미디어_etc.미디어_07_ASMR -->
+      <class name="Chips_004_미디어_etc.미디어_06_자체소싱">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="TC_0310_Chips_자체소싱_셔플_확인"/>
+          <include name="TC_0306_Chips_자체소싱_다음_확인"/>
+          <include name="TC_0301_Chips_자체소싱_재생_확인"/>
+          <include name="AfterMethod"/>
+          <include name="TC_0308_Chips_자체소싱_셔플_확인"/>
+          <include name="TC_0302_Chips_자체소싱_일시정지_확인"/>
+          <include name="setupClass"/>
+          <include name="TC_0312_Chips_자체소싱_20초뒤로_확인"/>
+          <include name="TC_0303_Chips_자체소싱_일시정지취소_확인"/>
+          <include name="BeforeMethod"/>
+          <include name="TC_0307_Chips_자체소싱_이전_확인"/>
+          <include name="TC_0300_Chips_자체소싱_재생_확인"/>
+          <include name="TC_0000_앱실행과AccessToken얻기"/>
+          <include name="TC_0305_Chips_컨트롤러_좋아요취소_확인"/>
+          <include name="TC_0309_Chips_자체소싱_이전_확인"/>
+          <include name="TC_0313_Chips_자체소싱_15초앞으로_확인"/>
+          <include name="TC_0311_Chips_자체소싱_다음_확인"/>
+          <include name="TC_0304_Chips_컨트롤러_좋아요_확인"/>
+        </methods>
+      </class> <!-- Chips_004_미디어_etc.미디어_06_자체소싱 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->

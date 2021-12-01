@@ -432,6 +432,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 팟캐스트 꺼줘 - 발화");
 		util.SWFsendPost_playStatus("팟캐스트 꺼줘", ServerName, AccessToken, "podcast");
 		Thread.sleep(3000);
+		util.SWFsendPost_playStatus("팟캐스트 꺼줘", ServerName, AccessToken, "podcast");
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "팟캐스트카드 종료되고 메인화면 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
@@ -473,8 +475,11 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 다음 - 발화");
 		util.SWFsendPost_playStatus("다음", ServerName, AccessToken, "music");
+		Thread.sleep(3000);
 		util.SWFsendPost_playStatus("다음", ServerName, AccessToken, "music");
-		Thread.sleep(4000);
+		Thread.sleep(3000);
+		util.SWFsendPost_playStatus("다음", ServerName, AccessToken, "music");
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "변경된 에피소드 확인");
 		String 변경에피소드 = util.getText(By.xpath(xPath.FLO아티스트));

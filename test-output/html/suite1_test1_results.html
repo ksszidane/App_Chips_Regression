@@ -12,48 +12,60 @@
 <body>
 <h1>Test_Project</h1>
 <p>
-  Test duration: 1068.872s
+  Test duration: -134338551667.416s
 </p>
 
-
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">Chips_004_미디어_etc.미디어_12_팟빵</td>
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">Chips_004_미디어_etc.미디어_06_자체소싱</td>
       </tr>
             
 <tr>
   <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0460">TC_0460_Chips_팟빵_구독_확인</span>
+                  setupClass
       </td>
   <td class="duration">
-    28.058s
+    5.692s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0460_Chips_팟빵_구독_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
+          <i>Method arguments: </i><span class="arguments">"Android", "Chips", "http://0.0.0.0:4723/wd/hub", "STG", "Chips", "out", "R33M4000CY", "ALDF3NYA6C0D0C654DD2", "ALDF5TR5SNGZ8175DA16", "ALDFH3D1Q7W6071EFE41", "ALDFH6OQ9HG79986A4FA", "ALDFHFMQC3RB935B4B02", "ALDFHFMSG34WDF6CD40E", "ALDFHDFEBVOC7F098039", "ALDG3Q4IA9EW3633F8EA"</span><br />
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>junit.framework.AssertionFailedError</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: Connection refused: no further information<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;DESKTOP-KEI&apos;, ip: &apos;192.168.55.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;<br/>
+Driver info: driver.version: AndroidDriver</b></a><br />
     <div class="stackTrace" id="exception-0">
-              junit.framework.Assert.fail(Assert.java:47)<br />
-              junit.framework.Assert.assertTrue(Assert.java:20)<br />
-              junit.framework.Assert.assertTrue(Assert.java:27)<br />
-              Chips_004_미디어_etc.미디어_12_팟빵.TC_0460_Chips_팟빵_구독_확인(미디어_12_팟빵.java:404)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:259)<br />
+              java.base/java.util.Optional.orElseGet(Optional.java:362)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:258)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              unit.Utilities.execute(Utilities.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)<br />
+              io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:338)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)<br />
+              io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)<br />
+              io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:99)<br />
+              io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:96)<br />
+              unit.Utilities.&lt;init&gt;(Utilities.java:143)<br />
+              TestNG_Set.Chips_TestCase.setupClass(Chips_TestCase.java:95)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
               java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
               org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
-              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
-              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
-              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
-              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
-              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)<br />
+              org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)<br />
+              org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)<br />
+              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)<br />
               java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
               org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
               org.testng.TestRunner.run(TestRunner.java:596)<br />
@@ -65,14 +77,1385 @@
               java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)<br />
               java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)<br />
               java.base/java.lang.Thread.run(Thread.java:832)<br />
-                </div>
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.net.ConnectException: Connection refused: no further information</a><br />
+        <div class="stackTrace" id="exception-1">
+                      java.base/sun.nio.ch.Net.pollConnect(Native Method)<br />
+                      java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660)<br />
+                      java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)<br />
+                      java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)<br />
+                      java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)<br />
+                      java.base/java.net.Socket.connect(Socket.java:648)<br />
+                      okhttp3.internal.platform.Platform.connectSocket(Platform.kt:127)<br />
+                      okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:268)<br />
+                      okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:176)<br />
+                      okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:236)<br />
+                      okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:109)<br />
+                      okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:77)<br />
+                      okhttp3.internal.connection.Transmitter.newExchange$okhttp(Transmitter.kt:162)<br />
+                      okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:35)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)<br />
+                      okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:82)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)<br />
+                      okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:84)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)<br />
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:71)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)<br />
+                      okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.kt:184)<br />
+                      okhttp3.RealCall.execute(RealCall.kt:66)<br />
+                      org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)<br />
+                      io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)<br />
+                      org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+                      io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)<br />
+                      io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)<br />
+                      io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+                      io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+                      io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+                      unit.Utilities.execute(Utilities.java:1)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)<br />
+                      io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:338)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)<br />
+                      io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)<br />
+                      io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)<br />
+                      io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:99)<br />
+                      io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:96)<br />
+                      unit.Utilities.&lt;init&gt;(Utilities.java:143)<br />
+                      TestNG_Set.Chips_TestCase.setupClass(Chips_TestCase.java:95)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)<br />
+                      org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)<br />
+                      org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)<br />
+                      org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)<br />
+                      java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+                      org.testng.TestRunner.run(TestRunner.java:596)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+                      org.testng.SuiteRunner.access$000(SuiteRunner.java:28)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)<br />
+                      org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)<br />
+                      java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)<br />
+                      java.base/java.lang.Thread.run(Thread.java:832)<br />
+                  </div>
+          </div>
       </td>
 </tr>
-      </table>
+          <tr class="group">
+        <td colspan="3">Chips_004_미디어_etc.미디어_07_ASMR</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  setupClass
+      </td>
+  <td class="duration">
+    4.588s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Android", "Chips", "http://0.0.0.0:4723/wd/hub", "STG", "Chips", "out", "R33M4000CY", "ALDF3NYA6C0D0C654DD2", "ALDF5TR5SNGZ8175DA16", "ALDFH3D1Q7W6071EFE41", "ALDFH6OQ9HG79986A4FA", "ALDFHFMQC3RB935B4B02", "ALDFHFMSG34WDF6CD40E", "ALDFHDFEBVOC7F098039", "ALDG3Q4IA9EW3633F8EA"</span><br />
+    
+        
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: Connection refused: no further information<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;DESKTOP-KEI&apos;, ip: &apos;192.168.55.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;<br/>
+Driver info: driver.version: AndroidDriver</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:259)<br />
+              java.base/java.util.Optional.orElseGet(Optional.java:362)<br />
+              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:258)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+              unit.Utilities.execute(Utilities.java:1)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)<br />
+              io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:338)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)<br />
+              io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)<br />
+              io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)<br />
+              io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:99)<br />
+              io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:96)<br />
+              unit.Utilities.&lt;init&gt;(Utilities.java:143)<br />
+              TestNG_Set.Chips_TestCase.setupClass(Chips_TestCase.java:95)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)<br />
+              org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)<br />
+              org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)<br />
+              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+              org.testng.TestRunner.run(TestRunner.java:596)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:28)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)<br />
+              org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)<br />
+              java.base/java.lang.Thread.run(Thread.java:832)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse">java.net.ConnectException: Connection refused: no further information</a><br />
+        <div class="stackTrace" id="exception-3">
+                      java.base/sun.nio.ch.Net.pollConnect(Native Method)<br />
+                      java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660)<br />
+                      java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)<br />
+                      java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)<br />
+                      java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)<br />
+                      java.base/java.net.Socket.connect(Socket.java:648)<br />
+                      okhttp3.internal.platform.Platform.connectSocket(Platform.kt:127)<br />
+                      okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:268)<br />
+                      okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:176)<br />
+                      okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:236)<br />
+                      okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:109)<br />
+                      okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:77)<br />
+                      okhttp3.internal.connection.Transmitter.newExchange$okhttp(Transmitter.kt:162)<br />
+                      okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:35)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)<br />
+                      okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:82)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)<br />
+                      okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:84)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)<br />
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:71)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)<br />
+                      okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.kt:184)<br />
+                      okhttp3.RealCall.execute(RealCall.kt:66)<br />
+                      org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)<br />
+                      io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)<br />
+                      org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+                      io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)<br />
+                      io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)<br />
+                      io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
+                      io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
+                      io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
+                      unit.Utilities.execute(Utilities.java:1)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)<br />
+                      io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:338)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)<br />
+                      io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)<br />
+                      io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)<br />
+                      io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:99)<br />
+                      io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:96)<br />
+                      unit.Utilities.&lt;init&gt;(Utilities.java:143)<br />
+                      TestNG_Set.Chips_TestCase.setupClass(Chips_TestCase.java:95)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)<br />
+                      org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)<br />
+                      org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)<br />
+                      org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)<br />
+                      java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+                      org.testng.TestRunner.run(TestRunner.java:596)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+                      org.testng.SuiteRunner.access$000(SuiteRunner.java:28)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)<br />
+                      org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)<br />
+                      java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)<br />
+                      java.base/java.lang.Thread.run(Thread.java:832)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+    
+          <tr><td colspan="3">&nbsp;</td></tr>
+      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
+                    <tr>
+          <td colspan="3" class="group">Chips_004_미디어_etc.미디어_06_자체소싱</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.486s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.513s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.473s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.578s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.564s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.524s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.589s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.444s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.539s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.571s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.594s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.497s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.452s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.583s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275017.459s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.514s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.498s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.427s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.487s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.584s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.453s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.460s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.475s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.525s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.540s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.446s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.567s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.590s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.574s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275017.579s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  tearDownClass
+      </td>
+  <td class="duration">
+    -1638275017.595s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+              <tr>
+          <td colspan="3" class="group">Chips_004_미디어_etc.미디어_07_ASMR</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.306s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.201s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.255s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.213s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.309s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.272s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.244s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.223s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.277s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.236s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.268s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.190s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.264s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.248s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.232s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.241s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.259s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.206s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.196s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.312s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.228s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.293s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.209s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.252s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  AfterMethod
+      </td>
+  <td class="duration">
+    -1638275022.216s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.187s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.210s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.269s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.206s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.202s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.218s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.224s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.245s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.192s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.241s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.309s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.265s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.253s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.249s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.214s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.237s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.233s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.281s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.229s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.273s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.295s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.256s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.261s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.307s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  BeforeMethod
+      </td>
+  <td class="duration">
+    -1638275022.197s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  tearDownClass
+      </td>
+  <td class="duration">
+    -1638275022.313s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+            </table>
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
           <tr>
         <td colspan="3" class="group">Chips_004_미디어_etc.미디어_06_자체소싱</td>
       </tr>
@@ -82,10 +1465,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0000">TC_0000_앱실행과AccessToken얻기</span>
       </td>
   <td class="duration">
-    54.118s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -97,10 +1480,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0300">TC_0300_Chips_자체소싱_재생_확인</span>
       </td>
   <td class="duration">
-    21.710s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0300_Chips_자체소싱_재생_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -112,10 +1495,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0301">TC_0301_Chips_자체소싱_재생_확인</span>
       </td>
   <td class="duration">
-    15.855s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0301_Chips_자체소싱_재생_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -127,10 +1510,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0302">TC_0302_Chips_자체소싱_일시정지_확인</span>
       </td>
   <td class="duration">
-    9.048s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0302_Chips_자체소싱_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -142,10 +1525,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0241">TC_0303_Chips_자체소싱_일시정지취소_확인</span>
       </td>
   <td class="duration">
-    10.635s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0303_Chips_자체소싱_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -157,10 +1540,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0304">TC_0304_Chips_컨트롤러_좋아요_확인</span>
       </td>
   <td class="duration">
-    11.858s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0304_Chips_컨트롤러_좋아요_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -172,10 +1555,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0305">TC_0305_Chips_컨트롤러_좋아요취소_확인</span>
       </td>
   <td class="duration">
-    8.808s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0305_Chips_컨트롤러_좋아요취소_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -187,10 +1570,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0306">TC_0306_Chips_자체소싱_다음_확인</span>
       </td>
   <td class="duration">
-    11.711s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0306_Chips_자체소싱_다음_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -202,10 +1585,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0307">TC_0307_Chips_자체소싱_이전_확인</span>
       </td>
   <td class="duration">
-    7.109s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0307_Chips_자체소싱_이전_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -217,10 +1600,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0308">TC_0308_Chips_자체소싱_셔플_확인</span>
       </td>
   <td class="duration">
-    3.605s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0308_Chips_자체소싱_셔플_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -232,10 +1615,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0309">TC_0309_Chips_자체소싱_이전_확인</span>
       </td>
   <td class="duration">
-    7.159s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0309_Chips_자체소싱_이전_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -247,10 +1630,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0310">TC_0310_Chips_자체소싱_셔플_확인</span>
       </td>
   <td class="duration">
-    4.295s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0310_Chips_자체소싱_셔플_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -262,10 +1645,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0311">TC_0311_Chips_자체소싱_다음_확인</span>
       </td>
   <td class="duration">
-    7.107s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0311_Chips_자체소싱_다음_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -277,10 +1660,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0312">TC_0312_Chips_자체소싱_20초뒤로_확인</span>
       </td>
   <td class="duration">
-    5.099s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0312_Chips_자체소싱_20초뒤로_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -292,10 +1675,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0313">TC_0313_Chips_자체소싱_15초앞으로_확인</span>
       </td>
   <td class="duration">
-    5.118s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0313_Chips_자체소싱_15초앞으로_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -311,10 +1694,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0000">TC_0000_앱실행과AccessToken얻기</span>
       </td>
   <td class="duration">
-    53.298s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -326,10 +1709,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0315">TC_0315_Chips_ASMR_재생_확인</span>
       </td>
   <td class="duration">
-    24.624s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0315_Chips_ASMR_재생_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -341,10 +1724,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0316">TC_0316_Chips_ASMR_과자먹는소리재생_확인</span>
       </td>
   <td class="duration">
-    21.403s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0316_Chips_ASMR_과자먹는소리재생_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -356,10 +1739,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0317">TC_0317_Chips_ASMR_빗소리_확인</span>
       </td>
   <td class="duration">
-    9.824s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0317_Chips_ASMR_빗소리_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -371,10 +1754,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0318">TC_0318_Chips_ASMR_힐링사운드_확인</span>
       </td>
   <td class="duration">
-    11.097s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0318_Chips_ASMR_힐링사운드_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -386,10 +1769,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0319">TC_0319_Chips_ASMR_자연의소리_반복확인</span>
       </td>
   <td class="duration">
-    12.345s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0319_Chips_ASMR_자연의소리_반복확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -401,10 +1784,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0319">TC_0320_Chips_ASMR_이노래뭐야_확인</span>
       </td>
   <td class="duration">
-    10.018s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0320_Chips_ASMR_이노래뭐야_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -416,10 +1799,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0321">TC_0321_Chips_ASMR_다음ASMR_확인</span>
       </td>
   <td class="duration">
-    12.430s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0321_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -431,10 +1814,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0322">TC_0322_Chips_ASMR_이전ASMR_확인</span>
       </td>
   <td class="duration">
-    12.532s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0322_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -446,10 +1829,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0324">TC_0324_Chips_ASMR_재생_확인</span>
       </td>
   <td class="duration">
-    19.698s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0324_Chips_ASMR_재생_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -461,10 +1844,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0325">TC_0325_Chips_ASMR_일시정지_확인</span>
       </td>
   <td class="duration">
-    9.555s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0325_Chips_ASMR_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -476,10 +1859,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0326">TC_0326_Chips_ASMR_일시정지취소_확인</span>
       </td>
   <td class="duration">
-    10.629s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0326_Chips_ASMR_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -491,10 +1874,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0327">TC_0327_Chips_ASMR_일시정지_확인</span>
       </td>
   <td class="duration">
-    10.506s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0327_Chips_ASMR_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -506,10 +1889,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0328">TC_0328_Chips_ASMR_재생_확인</span>
       </td>
   <td class="duration">
-    14.594s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0328_Chips_ASMR_재생_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -521,10 +1904,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0329">TC_0329_Chips_ASMR_좋아요_확인</span>
       </td>
   <td class="duration">
-    5.098s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0329_Chips_ASMR_좋아요_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -536,10 +1919,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0329">TC_0330_Chips_ASMR_좋아요취소_확인</span>
       </td>
   <td class="duration">
-    5.117s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0330_Chips_ASMR_좋아요취소_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -551,10 +1934,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0331">TC_0331_Chips_ASMR_다음ASMR_확인</span>
       </td>
   <td class="duration">
-    10.142s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0331_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -566,10 +1949,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0332">TC_0332_Chips_ASMR_이전ASMR_확인</span>
       </td>
   <td class="duration">
-    15.743s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0332_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -581,10 +1964,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0333">TC_0333_Chips_ASMR_셔플_확인</span>
       </td>
   <td class="duration">
-    8.457s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0333_Chips_ASMR_셔플_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -596,10 +1979,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0334">TC_0334_Chips_ASMR_다음ASMR_확인</span>
       </td>
   <td class="duration">
-    16.949s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0334_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -611,10 +1994,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0335">TC_0335_Chips_ASMR_이전ASMR_확인</span>
       </td>
   <td class="duration">
-    15.434s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0335_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -626,10 +2009,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0336">TC_0336_Chips_ASMR_셔플해제_확인</span>
       </td>
   <td class="duration">
-    17.560s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0336_Chips_ASMR_셔플해제_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -641,10 +2024,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0337">TC_0337_Chips_ASMR_다음ASMR_확인</span>
       </td>
   <td class="duration">
-    11.615s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0337_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -656,10 +2039,10 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0312">TC_0338_Chips_ASMR_20초뒤로_확인</span>
       </td>
   <td class="duration">
-    5.141s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0338_Chips_ASMR_20초뒤로_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
@@ -671,400 +2054,18 @@
                   <span class="description" title="칩스 리그레이션 TC : 실행_0313">TC_0339_Chips_ASMR_15초앞으로_확인</span>
       </td>
   <td class="duration">
-    5.095s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0339_Chips_ASMR_15초앞으로_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
     
         
 
       </td>
 </tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0340">TC_0340_Chips_ASMR_종료_확인</span>
-      </td>
-  <td class="duration">
-    8.287s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0340_Chips_ASMR_종료_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">Chips_004_미디어_etc.미디어_11_오디오북</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0000">TC_0000_앱실행과AccessToken얻기</span>
-      </td>
-  <td class="duration">
-    52.498s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_11_오디오북.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0415">TC_0415_Chips_오디오북_미지원_확인</span>
-      </td>
-  <td class="duration">
-    5.159s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_11_오디오북.TC_0415_Chips_오디오북_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">Chips_004_미디어_etc.미디어_12_팟빵</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0000">TC_0000_앱실행과AccessToken얻기</span>
-      </td>
-  <td class="duration">
-    52.618s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0442">TC_0442_Chips_팟캐스트_재생_확인</span>
-      </td>
-  <td class="duration">
-    18.827s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0442_Chips_팟캐스트_재생_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0443">TC_0443_Chips_팟빵_재생_확인</span>
-      </td>
-  <td class="duration">
-    6.578s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0443_Chips_팟빵_재생_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0444">TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인</span>
-      </td>
-  <td class="duration">
-    25.902s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0445">TC_0445_Chips_팟빵_구독_확인</span>
-      </td>
-  <td class="duration">
-    18.014s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0445_Chips_팟빵_구독_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0446">TC_0446_Chips_팟빵_구독삭제_확인</span>
-      </td>
-  <td class="duration">
-    12.048s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0446_Chips_팟빵_구독삭제_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0447">TC_0447_Chips_팟빵_재생시간이동_확인</span>
-      </td>
-  <td class="duration">
-    5.029s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0447_Chips_팟빵_재생시간이동_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0448">TC_0448_Chips_팟빵_종료예약_확인</span>
-      </td>
-  <td class="duration">
-    5.088s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0448_Chips_팟빵_종료예약_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0449">TC_0449_Chips_팟빵_종료예약_확인</span>
-      </td>
-  <td class="duration">
-    5.108s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0449_Chips_팟빵_종료예약_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0455">TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인</span>
-      </td>
-  <td class="duration">
-    14.244s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0456">TC_0456_Chips_팟빵_컨트롤러_일시정지_확인</span>
-      </td>
-  <td class="duration">
-    15.315s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0457">TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인</span>
-      </td>
-  <td class="duration">
-    8.649s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0458">TC_0458_Chips_팟빵_컨트롤러_일시정지_확인</span>
-      </td>
-  <td class="duration">
-    8.547s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0458_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0459">TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인</span>
-      </td>
-  <td class="duration">
-    9.897s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0461">TC_0461_Chips_팟빵_구독해제_확인</span>
-      </td>
-  <td class="duration">
-    16.928s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0461_Chips_팟빵_구독해제_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0462">TC_0462_Chips_팟빵_이전_확인</span>
-      </td>
-  <td class="duration">
-    42.189s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0462_Chips_팟빵_이전_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0463">TC_0463_Chips_팟빵_다음_확인</span>
-      </td>
-  <td class="duration">
-    15.449s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0463_Chips_팟빵_다음_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0463">TC_0464_Chips_팟빵_이전팟캐스트_확인</span>
-      </td>
-  <td class="duration">
-    31.226s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0464_Chips_팟빵_이전팟캐스트_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0465">TC_0465_Chips_팟빵_다음팟캐스트__확인</span>
-      </td>
-  <td class="duration">
-    29.013s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0465_Chips_팟빵_다음팟캐스트__확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0466">TC_0466_Chips_팟빵_재생시간앞으로이동_확인</span>
-      </td>
-  <td class="duration">
-    9.830s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0466_Chips_팟빵_재생시간앞으로이동_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0467">TC_0467_Chips_팟빵_재생시간뒤으로이동_확인</span>
-      </td>
-  <td class="duration">
-    9.853s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0467_Chips_팟빵_재생시간뒤으로이동_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="칩스 리그레이션 TC : 실행_0468">TC_0468_Chips_팟빵_종료_확인</span>
-      </td>
-  <td class="duration">
-    9.826s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0468_Chips_팟빵_종료_확인(java.lang.reflect.Method) throws java.lang.Exception</span><br />
-    
-        
-
-      </td>
-</tr>
       </table>
+
   
 </body>
 </html>
