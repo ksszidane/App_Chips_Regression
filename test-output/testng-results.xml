@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="65" passed="65" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-01T15:09:31 KST" name="ExtentReport" finished-at="2021-12-01T15:29:39 KST" duration-ms="1208878">
+  <suite started-at="2021-12-01T17:10:32 KST" name="ExtentReport" finished-at="2021-12-01T17:15:48 KST" duration-ms="316013">
     <groups>
     </groups>
-    <test started-at="2021-12-01T15:09:31 KST" name="Test_Project" finished-at="2021-12-01T15:29:39 KST" duration-ms="1208878">
-      <class name="Chips_004_미디어_etc.미디어_06_자체소싱">
-        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:09:31 KST" name="setupClass" finished-at="2021-12-01T15:09:48 KST" duration-ms="17533" status="PASS">
+    <test started-at="2021-12-01T17:10:32 KST" name="Test_Project" finished-at="2021-12-01T17:15:48 KST" duration-ms="316013">
+      <class name="Chips_001_기본기능.기본기능_02_홈화면최초진입">
+        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_001_기본기능.기본기능_02_홈화면최초진입@4470fbd6]" started-at="2021-12-01T17:12:48 KST" name="setupClass" finished-at="2021-12-01T17:13:01 KST" duration-ms="12955" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,502 +88,73 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:09:48 KST" name="BeforeMethod" finished-at="2021-12-01T15:09:48 KST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_02_홈화면최초진입@4470fbd6]" started-at="2021-12-01T17:13:01 KST" name="BeforeMethod" finished-at="2021-12-01T17:13:01 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_02_홈화면최초진입.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:09:48 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-12-01T15:10:45 KST" duration-ms="56755" status="PASS">
+        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_02_홈화면최초진입@4470fbd6]" started-at="2021-12-01T17:13:01 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-12-01T17:13:37 KST" duration-ms="35734" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_02_홈화면최초진입.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0000_앱실행과AccessToken얻기 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:10:45 KST" name="AfterMethod" finished-at="2021-12-01T15:10:45 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_001_기본기능.기본기능_02_홈화면최초진입@4470fbd6]" started-at="2021-12-01T17:13:37 KST" name="AfterMethod" finished-at="2021-12-01T17:13:37 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=미디어_06_자체소싱.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=기본기능_02_홈화면최초진입.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_02_홈화면최초진입@4470fbd6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:10:45 KST" name="BeforeMethod" finished-at="2021-12-01T15:10:45 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_02_홈화면최초진입@4470fbd6]" started-at="2021-12-01T17:13:37 KST" name="BeforeMethod" finished-at="2021-12-01T17:13:37 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0300_Chips_자체소싱_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_02_홈화면최초진입.TC_0138_홈화면최초진입확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0300_Chips_자체소싱_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:10:45 KST" name="TC_0300_Chips_자체소싱_재생_확인" description="칩스 리그레이션 TC : 실행_0300" finished-at="2021-12-01T15:11:11 KST" duration-ms="25777" status="PASS">
+        <test-method signature="TC_0138_홈화면최초진입확인(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_02_홈화면최초진입@4470fbd6]" started-at="2021-12-01T17:13:37 KST" name="TC_0138_홈화면최초진입확인" description="칩스 리그레이션 TC : 실행_0138" finished-at="2021-12-01T17:13:40 KST" duration-ms="2928" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0300_Chips_자체소싱_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_02_홈화면최초진입.TC_0138_홈화면최초진입확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0300_Chips_자체소싱_재생_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:11:11 KST" name="AfterMethod" finished-at="2021-12-01T15:11:11 KST" duration-ms="1" status="PASS">
+        </test-method> <!-- TC_0138_홈화면최초진입확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_001_기본기능.기본기능_02_홈화면최초진입@4470fbd6]" started-at="2021-12-01T17:13:40 KST" name="AfterMethod" finished-at="2021-12-01T17:13:40 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0300_Chips_자체소싱_재생_확인 status=SUCCESS method=미디어_06_자체소싱.TC_0300_Chips_자체소싱_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0301_Chips_자체소싱_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:11:11 KST" name="TC_0301_Chips_자체소싱_재생_확인" description="칩스 리그레이션 TC : 실행_0301" finished-at="2021-12-01T15:11:31 KST" duration-ms="20458" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0301_Chips_자체소싱_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0301_Chips_자체소싱_재생_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:11:11 KST" name="BeforeMethod" finished-at="2021-12-01T15:11:11 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0301_Chips_자체소싱_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:11:31 KST" name="AfterMethod" finished-at="2021-12-01T15:11:31 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0301_Chips_자체소싱_재생_확인 status=SUCCESS method=미디어_06_자체소싱.TC_0301_Chips_자체소싱_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0138_홈화면최초진입확인 status=SUCCESS method=기본기능_02_홈화면최초진입.TC_0138_홈화면최초진입확인(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_02_홈화면최초진입@4470fbd6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0302_Chips_자체소싱_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:11:31 KST" name="TC_0302_Chips_자체소싱_일시정지_확인" description="칩스 리그레이션 TC : 실행_0302" finished-at="2021-12-01T15:11:43 KST" duration-ms="12090" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0302_Chips_자체소싱_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0302_Chips_자체소싱_일시정지_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:11:31 KST" name="BeforeMethod" finished-at="2021-12-01T15:11:31 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0302_Chips_자체소싱_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:11:43 KST" name="AfterMethod" finished-at="2021-12-01T15:11:43 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0302_Chips_자체소싱_일시정지_확인 status=SUCCESS method=미디어_06_자체소싱.TC_0302_Chips_자체소싱_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:11:43 KST" name="BeforeMethod" finished-at="2021-12-01T15:11:43 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0303_Chips_자체소싱_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0303_Chips_자체소싱_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:11:43 KST" name="TC_0303_Chips_자체소싱_일시정지취소_확인" description="칩스 리그레이션 TC : 실행_0241" finished-at="2021-12-01T15:11:57 KST" duration-ms="13685" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0303_Chips_자체소싱_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0303_Chips_자체소싱_일시정지취소_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:11:57 KST" name="AfterMethod" finished-at="2021-12-01T15:11:57 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0303_Chips_자체소싱_일시정지취소_확인 status=SUCCESS method=미디어_06_자체소싱.TC_0303_Chips_자체소싱_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0304_Chips_컨트롤러_좋아요_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:11:57 KST" name="TC_0304_Chips_컨트롤러_좋아요_확인" description="칩스 리그레이션 TC : 실행_0304" finished-at="2021-12-01T15:12:13 KST" duration-ms="16075" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0304_Chips_컨트롤러_좋아요_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0304_Chips_컨트롤러_좋아요_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:11:57 KST" name="BeforeMethod" finished-at="2021-12-01T15:11:57 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0304_Chips_컨트롤러_좋아요_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:13 KST" name="AfterMethod" finished-at="2021-12-01T15:12:13 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0304_Chips_컨트롤러_좋아요_확인 status=SUCCESS method=미디어_06_자체소싱.TC_0304_Chips_컨트롤러_좋아요_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:13 KST" name="BeforeMethod" finished-at="2021-12-01T15:12:13 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0305_Chips_컨트롤러_좋아요취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0305_Chips_컨트롤러_좋아요취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:13 KST" name="TC_0305_Chips_컨트롤러_좋아요취소_확인" description="칩스 리그레이션 TC : 실행_0305" finished-at="2021-12-01T15:12:25 KST" duration-ms="11958" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0305_Chips_컨트롤러_좋아요취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0305_Chips_컨트롤러_좋아요취소_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:25 KST" name="BeforeMethod" finished-at="2021-12-01T15:12:25 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0306_Chips_자체소싱_다음_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:25 KST" name="AfterMethod" finished-at="2021-12-01T15:12:25 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0305_Chips_컨트롤러_좋아요취소_확인 status=SUCCESS method=미디어_06_자체소싱.TC_0305_Chips_컨트롤러_좋아요취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0306_Chips_자체소싱_다음_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:25 KST" name="TC_0306_Chips_자체소싱_다음_확인" description="칩스 리그레이션 TC : 실행_0306" finished-at="2021-12-01T15:12:35 KST" duration-ms="10153" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0306_Chips_자체소싱_다음_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0306_Chips_자체소싱_다음_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:35 KST" name="AfterMethod" finished-at="2021-12-01T15:12:35 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0306_Chips_자체소싱_다음_확인 status=SUCCESS method=미디어_06_자체소싱.TC_0306_Chips_자체소싱_다음_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0307_Chips_자체소싱_이전_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:35 KST" name="TC_0307_Chips_자체소싱_이전_확인" description="칩스 리그레이션 TC : 실행_0307" finished-at="2021-12-01T15:12:44 KST" duration-ms="8597" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0307_Chips_자체소싱_이전_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0307_Chips_자체소싱_이전_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:35 KST" name="BeforeMethod" finished-at="2021-12-01T15:12:35 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0307_Chips_자체소싱_이전_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:44 KST" name="AfterMethod" finished-at="2021-12-01T15:12:44 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0307_Chips_자체소싱_이전_확인 status=SUCCESS method=미디어_06_자체소싱.TC_0307_Chips_자체소싱_이전_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:44 KST" name="BeforeMethod" finished-at="2021-12-01T15:12:44 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0308_Chips_자체소싱_셔플_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0308_Chips_자체소싱_셔플_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:44 KST" name="TC_0308_Chips_자체소싱_셔플_확인" description="칩스 리그레이션 TC : 실행_0308" finished-at="2021-12-01T15:12:50 KST" duration-ms="5841" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0308_Chips_자체소싱_셔플_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0308_Chips_자체소싱_셔플_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:50 KST" name="AfterMethod" finished-at="2021-12-01T15:12:50 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0308_Chips_자체소싱_셔플_확인 status=SUCCESS method=미디어_06_자체소싱.TC_0308_Chips_자체소싱_셔플_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:50 KST" name="BeforeMethod" finished-at="2021-12-01T15:12:50 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0309_Chips_자체소싱_이전_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0309_Chips_자체소싱_이전_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:12:50 KST" name="TC_0309_Chips_자체소싱_이전_확인" description="칩스 리그레이션 TC : 실행_0309" finished-at="2021-12-01T15:13:02 KST" duration-ms="12713" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0309_Chips_자체소싱_이전_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0309_Chips_자체소싱_이전_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:13:02 KST" name="AfterMethod" finished-at="2021-12-01T15:13:02 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0309_Chips_자체소싱_이전_확인 status=SUCCESS method=미디어_06_자체소싱.TC_0309_Chips_자체소싱_이전_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:13:02 KST" name="BeforeMethod" finished-at="2021-12-01T15:13:02 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0310_Chips_자체소싱_셔플_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0310_Chips_자체소싱_셔플_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:13:02 KST" name="TC_0310_Chips_자체소싱_셔플_확인" description="칩스 리그레이션 TC : 실행_0310" finished-at="2021-12-01T15:13:20 KST" duration-ms="17759" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0310_Chips_자체소싱_셔플_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0310_Chips_자체소싱_셔플_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:13:20 KST" name="BeforeMethod" finished-at="2021-12-01T15:13:20 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0311_Chips_자체소싱_다음_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:13:20 KST" name="AfterMethod" finished-at="2021-12-01T15:13:20 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0310_Chips_자체소싱_셔플_확인 status=SUCCESS method=미디어_06_자체소싱.TC_0310_Chips_자체소싱_셔플_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0311_Chips_자체소싱_다음_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:13:20 KST" name="TC_0311_Chips_자체소싱_다음_확인" description="칩스 리그레이션 TC : 실행_0311" finished-at="2021-12-01T15:13:29 KST" duration-ms="9364" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0311_Chips_자체소싱_다음_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0311_Chips_자체소싱_다음_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:13:29 KST" name="AfterMethod" finished-at="2021-12-01T15:13:29 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0311_Chips_자체소싱_다음_확인 status=SUCCESS method=미디어_06_자체소싱.TC_0311_Chips_자체소싱_다음_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:13:29 KST" name="BeforeMethod" finished-at="2021-12-01T15:13:29 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0312_Chips_자체소싱_20초뒤로_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0312_Chips_자체소싱_20초뒤로_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:13:29 KST" name="TC_0312_Chips_자체소싱_20초뒤로_확인" description="칩스 리그레이션 TC : 실행_0312" finished-at="2021-12-01T15:13:36 KST" duration-ms="6622" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0312_Chips_자체소싱_20초뒤로_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0312_Chips_자체소싱_20초뒤로_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:13:36 KST" name="AfterMethod" finished-at="2021-12-01T15:13:36 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0312_Chips_자체소싱_20초뒤로_확인 status=SUCCESS method=미디어_06_자체소싱.TC_0312_Chips_자체소싱_20초뒤로_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:13:36 KST" name="BeforeMethod" finished-at="2021-12-01T15:13:36 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0313_Chips_자체소싱_15초앞으로_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0313_Chips_자체소싱_15초앞으로_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:13:36 KST" name="TC_0313_Chips_자체소싱_15초앞으로_확인" description="칩스 리그레이션 TC : 실행_0313" finished-at="2021-12-01T15:13:43 KST" duration-ms="6611" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_06_자체소싱.TC_0313_Chips_자체소싱_15초앞으로_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0313_Chips_자체소싱_15초앞으로_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:13:43 KST" name="AfterMethod" finished-at="2021-12-01T15:13:43 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0313_Chips_자체소싱_15초앞으로_확인 status=SUCCESS method=미디어_06_자체소싱.TC_0313_Chips_자체소싱_15초앞으로_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_004_미디어_etc.미디어_06_자체소싱@61710c6]" started-at="2021-12-01T15:13:43 KST" name="tearDownClass" finished-at="2021-12-01T15:13:47 KST" duration-ms="4641" status="PASS">
+        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_001_기본기능.기본기능_02_홈화면최초진입@4470fbd6]" started-at="2021-12-01T17:13:40 KST" name="tearDownClass" finished-at="2021-12-01T17:13:44 KST" duration-ms="3918" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -649,9 +220,9 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- Chips_004_미디어_etc.미디어_06_자체소싱 -->
-      <class name="Chips_004_미디어_etc.미디어_11_오디오북">
-        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_004_미디어_etc.미디어_11_오디오북@68878f6d]" started-at="2021-12-01T15:20:56 KST" name="setupClass" finished-at="2021-12-01T15:21:10 KST" duration-ms="13394" status="PASS">
+      </class> <!-- Chips_001_기본기능.기본기능_02_홈화면최초진입 -->
+      <class name="Chips_001_기본기능.기본기능_03_부가기능">
+        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_001_기본기능.기본기능_03_부가기능@15d49048]" started-at="2021-12-01T17:13:44 KST" name="setupClass" finished-at="2021-12-01T17:13:57 KST" duration-ms="13125" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -732,73 +303,62 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_11_오디오북@68878f6d]" started-at="2021-12-01T15:21:10 KST" name="BeforeMethod" finished-at="2021-12-01T15:21:10 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_03_부가기능@15d49048]" started-at="2021-12-01T17:13:57 KST" name="BeforeMethod" finished-at="2021-12-01T17:13:57 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_11_오디오북.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_03_부가기능.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_11_오디오북@68878f6d]" started-at="2021-12-01T15:21:10 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-12-01T15:22:07 KST" duration-ms="56875" status="PASS">
+        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_03_부가기능@15d49048]" started-at="2021-12-01T17:13:57 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-12-01T17:14:53 KST" duration-ms="56093" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_11_오디오북.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_03_부가기능.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0000_앱실행과AccessToken얻기 -->
-        <test-method signature="TC_0415_Chips_오디오북_미지원_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_11_오디오북@68878f6d]" started-at="2021-12-01T15:22:07 KST" name="TC_0415_Chips_오디오북_미지원_확인" description="칩스 리그레이션 TC : 실행_0415" finished-at="2021-12-01T15:22:12 KST" duration-ms="5144" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_001_기본기능.기본기능_03_부가기능@15d49048]" started-at="2021-12-01T17:14:53 KST" name="AfterMethod" finished-at="2021-12-01T17:14:53 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_11_오디오북.TC_0415_Chips_오디오북_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=기본기능_03_부가기능.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_03_부가기능@15d49048] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0415_Chips_오디오북_미지원_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_11_오디오북@68878f6d]" started-at="2021-12-01T15:22:07 KST" name="BeforeMethod" finished-at="2021-12-01T15:22:07 KST" duration-ms="0" status="PASS">
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_03_부가기능@15d49048]" started-at="2021-12-01T17:14:53 KST" name="BeforeMethod" finished-at="2021-12-01T17:14:53 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_11_오디오북.TC_0415_Chips_오디오북_미지원_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_03_부가기능.TC_0145_미디어재생중_infoPlay실행(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_11_오디오북@68878f6d]" started-at="2021-12-01T15:22:07 KST" name="AfterMethod" finished-at="2021-12-01T15:22:07 KST" duration-ms="0" status="PASS">
+        <test-method signature="TC_0145_미디어재생중_infoPlay실행(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_03_부가기능@15d49048]" started-at="2021-12-01T17:14:53 KST" name="TC_0145_미디어재생중_infoPlay실행" description="칩스 리그레이션 TC : 실행_0145" finished-at="2021-12-01T17:15:44 KST" duration-ms="50808" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=미디어_11_오디오북.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_11_오디오북@68878f6d] output={null}]]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_03_부가기능.TC_0145_미디어재생중_infoPlay실행(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_11_오디오북@68878f6d]" started-at="2021-12-01T15:22:12 KST" name="AfterMethod" finished-at="2021-12-01T15:22:12 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0415_Chips_오디오북_미지원_확인 status=SUCCESS method=미디어_11_오디오북.TC_0415_Chips_오디오북_미지원_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_11_오디오북@68878f6d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_004_미디어_etc.미디어_11_오디오북@68878f6d]" started-at="2021-12-01T15:22:12 KST" name="tearDownClass" finished-at="2021-12-01T15:22:16 KST" duration-ms="4008" status="PASS">
+        </test-method> <!-- TC_0145_미디어재생중_infoPlay실행 -->
+        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_001_기본기능.기본기능_03_부가기능@15d49048]" started-at="2021-12-01T17:15:44 KST" name="tearDownClass" finished-at="2021-12-01T17:15:48 KST" duration-ms="4211" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -864,9 +424,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- Chips_004_미디어_etc.미디어_11_오디오북 -->
-      <class name="Chips_004_미디어_etc.미디어_12_팟빵">
-        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:22:16 KST" name="setupClass" finished-at="2021-12-01T15:22:29 KST" duration-ms="13435" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_001_기본기능.기본기능_03_부가기능@15d49048]" started-at="2021-12-01T17:15:44 KST" name="AfterMethod" finished-at="2021-12-01T17:15:44 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0145_미디어재생중_infoPlay실행 status=SUCCESS method=기본기능_03_부가기능.TC_0145_미디어재생중_infoPlay실행(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_03_부가기능@15d49048] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+      </class> <!-- Chips_001_기본기능.기본기능_03_부가기능 -->
+      <class name="Chips_001_기본기능.기본기능_01_기본기능">
+        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:10:32 KST" name="setupClass" finished-at="2021-12-01T17:10:46 KST" duration-ms="14201" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -947,766 +518,304 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:22:29 KST" name="BeforeMethod" finished-at="2021-12-01T15:22:29 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:10:46 KST" name="BeforeMethod" finished-at="2021-12-01T17:10:46 KST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:22:29 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-12-01T15:23:25 KST" duration-ms="55725" status="PASS">
+        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:10:46 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-12-01T17:11:42 KST" duration-ms="55846" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0000_앱실행과AccessToken얻기 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:23:25 KST" name="AfterMethod" finished-at="2021-12-01T15:23:25 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:11:42 KST" name="AfterMethod" finished-at="2021-12-01T17:11:42 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=미디어_12_팟빵.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=기본기능_01_기본기능.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:23:25 KST" name="BeforeMethod" finished-at="2021-12-01T15:23:25 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:11:42 KST" name="BeforeMethod" finished-at="2021-12-01T17:11:42 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0442_Chips_팟캐스트_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0009_MIC버튼호출(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0442_Chips_팟캐스트_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:23:25 KST" name="TC_0442_Chips_팟캐스트_재생_확인" description="칩스 리그레이션 TC : 실행_0442" finished-at="2021-12-01T15:23:43 KST" duration-ms="18647" status="PASS">
+        <test-method signature="TC_0009_MIC버튼호출(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:11:42 KST" name="TC_0009_MIC버튼호출" description="칩스 리그레이션 TC : 실행_0009" finished-at="2021-12-01T17:11:45 KST" duration-ms="3077" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0442_Chips_팟캐스트_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0009_MIC버튼호출(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0442_Chips_팟캐스트_재생_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:23:43 KST" name="AfterMethod" finished-at="2021-12-01T15:23:43 KST" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_0009_MIC버튼호출 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:11:45 KST" name="AfterMethod" finished-at="2021-12-01T17:11:45 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0442_Chips_팟캐스트_재생_확인 status=SUCCESS method=미디어_12_팟빵.TC_0442_Chips_팟캐스트_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0009_MIC버튼호출 status=SUCCESS method=기본기능_01_기본기능.TC_0009_MIC버튼호출(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:23:43 KST" name="BeforeMethod" finished-at="2021-12-01T15:23:43 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:11:45 KST" name="BeforeMethod" finished-at="2021-12-01T17:11:45 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0443_Chips_팟빵_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0068_베터리잔량_발화체크(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0443_Chips_팟빵_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:23:43 KST" name="TC_0443_Chips_팟빵_재생_확인" description="칩스 리그레이션 TC : 실행_0443" finished-at="2021-12-01T15:23:52 KST" duration-ms="8410" status="PASS">
+        <test-method signature="TC_0068_베터리잔량_발화체크(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:11:45 KST" name="TC_0068_베터리잔량_발화체크" description="칩스 리그레이션 TC : 실행_0068" finished-at="2021-12-01T17:11:50 KST" duration-ms="5130" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0443_Chips_팟빵_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0068_베터리잔량_발화체크(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0443_Chips_팟빵_재생_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:23:52 KST" name="AfterMethod" finished-at="2021-12-01T15:23:52 KST" duration-ms="1" status="PASS">
+        </test-method> <!-- TC_0068_베터리잔량_발화체크 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:11:50 KST" name="AfterMethod" finished-at="2021-12-01T17:11:50 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0443_Chips_팟빵_재생_확인 status=SUCCESS method=미디어_12_팟빵.TC_0443_Chips_팟빵_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0068_베터리잔량_발화체크 status=SUCCESS method=기본기능_01_기본기능.TC_0068_베터리잔량_발화체크(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:23:52 KST" name="BeforeMethod" finished-at="2021-12-01T15:23:52 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:11:50 KST" name="BeforeMethod" finished-at="2021-12-01T17:11:50 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0069_베터리잔량_발화체크(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:23:52 KST" name="TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인" description="칩스 리그레이션 TC : 실행_0444" finished-at="2021-12-01T15:24:16 KST" duration-ms="23646" status="PASS">
+        <test-method signature="TC_0069_베터리잔량_발화체크(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:11:50 KST" name="TC_0069_베터리잔량_발화체크" description="칩스 리그레이션 TC : 실행_0069" finished-at="2021-12-01T17:11:56 KST" duration-ms="5202" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0069_베터리잔량_발화체크(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:16 KST" name="AfterMethod" finished-at="2021-12-01T15:24:16 KST" duration-ms="1" status="PASS">
+        </test-method> <!-- TC_0069_베터리잔량_발화체크 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:11:56 KST" name="AfterMethod" finished-at="2021-12-01T17:11:56 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인 status=SUCCESS method=미디어_12_팟빵.TC_0444_Chips_팟빵_방송명으로팟캐스트_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0069_베터리잔량_발화체크 status=SUCCESS method=기본기능_01_기본기능.TC_0069_베터리잔량_발화체크(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:16 KST" name="BeforeMethod" finished-at="2021-12-01T15:24:16 KST" duration-ms="0" status="PASS">
+        <test-method signature="TC_0079_전원제어_발화체크(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:11:56 KST" name="TC_0079_전원제어_발화체크" description="칩스 리그레이션 TC : 실행_0079" finished-at="2021-12-01T17:12:01 KST" duration-ms="5114" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0445_Chips_팟빵_구독_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0079_전원제어_발화체크(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0079_전원제어_발화체크 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:11:56 KST" name="BeforeMethod" finished-at="2021-12-01T17:11:56 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0079_전원제어_발화체크(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0445_Chips_팟빵_구독_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:16 KST" name="TC_0445_Chips_팟빵_구독_확인" description="칩스 리그레이션 TC : 실행_0445" finished-at="2021-12-01T15:24:24 KST" duration-ms="8094" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:12:01 KST" name="AfterMethod" finished-at="2021-12-01T17:12:01 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0445_Chips_팟빵_구독_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0445_Chips_팟빵_구독_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:24 KST" name="AfterMethod" finished-at="2021-12-01T15:24:24 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0445_Chips_팟빵_구독_확인 status=SUCCESS method=미디어_12_팟빵.TC_0445_Chips_팟빵_구독_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0079_전원제어_발화체크 status=SUCCESS method=기본기능_01_기본기능.TC_0079_전원제어_발화체크(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0446_Chips_팟빵_구독삭제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:24 KST" name="TC_0446_Chips_팟빵_구독삭제_확인" description="칩스 리그레이션 TC : 실행_0446" finished-at="2021-12-01T15:24:40 KST" duration-ms="16226" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:12:01 KST" name="BeforeMethod" finished-at="2021-12-01T17:12:01 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0446_Chips_팟빵_구독삭제_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0446_Chips_팟빵_구독삭제_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:24 KST" name="BeforeMethod" finished-at="2021-12-01T15:24:24 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0446_Chips_팟빵_구독삭제_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0091_환경설정_발화체크(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:40 KST" name="BeforeMethod" finished-at="2021-12-01T15:24:40 KST" duration-ms="1" status="PASS">
+        <test-method signature="TC_0091_환경설정_발화체크(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:12:01 KST" name="TC_0091_환경설정_발화체크" description="칩스 리그레이션 TC : 실행_0091" finished-at="2021-12-01T17:12:10 KST" duration-ms="9226" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0447_Chips_팟빵_재생시간이동_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0091_환경설정_발화체크(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0091_환경설정_발화체크 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:12:10 KST" name="AfterMethod" finished-at="2021-12-01T17:12:10 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0091_환경설정_발화체크 status=SUCCESS method=기본기능_01_기본기능.TC_0091_환경설정_발화체크(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:12:10 KST" name="BeforeMethod" finished-at="2021-12-01T17:12:10 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0094_미디어재생중_환경설정_발화체크(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:40 KST" name="AfterMethod" finished-at="2021-12-01T15:24:40 KST" duration-ms="0" status="PASS">
+        <test-method signature="TC_0094_미디어재생중_환경설정_발화체크(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:12:10 KST" name="TC_0094_미디어재생중_환경설정_발화체크" description="칩스 리그레이션 TC : 실행_0094" finished-at="2021-12-01T17:12:30 KST" duration-ms="19682" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0446_Chips_팟빵_구독삭제_확인 status=SUCCESS method=미디어_12_팟빵.TC_0446_Chips_팟빵_구독삭제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0094_미디어재생중_환경설정_발화체크(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0094_미디어재생중_환경설정_발화체크 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:12:30 KST" name="AfterMethod" finished-at="2021-12-01T17:12:30 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0094_미디어재생중_환경설정_발화체크 status=SUCCESS method=기본기능_01_기본기능.TC_0094_미디어재생중_환경설정_발화체크(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0447_Chips_팟빵_재생시간이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:40 KST" name="TC_0447_Chips_팟빵_재생시간이동_확인" description="칩스 리그레이션 TC : 실행_0447" finished-at="2021-12-01T15:24:45 KST" duration-ms="5017" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:12:30 KST" name="BeforeMethod" finished-at="2021-12-01T17:12:30 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0447_Chips_팟빵_재생시간이동_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0447_Chips_팟빵_재생시간이동_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:45 KST" name="AfterMethod" finished-at="2021-12-01T15:24:45 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0447_Chips_팟빵_재생시간이동_확인 status=SUCCESS method=미디어_12_팟빵.TC_0447_Chips_팟빵_재생시간이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0448_Chips_팟빵_종료예약_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:45 KST" name="TC_0448_Chips_팟빵_종료예약_확인" description="칩스 리그레이션 TC : 실행_0448" finished-at="2021-12-01T15:24:54 KST" duration-ms="9181" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0448_Chips_팟빵_종료예약_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0448_Chips_팟빵_종료예약_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:45 KST" name="BeforeMethod" finished-at="2021-12-01T15:24:45 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0448_Chips_팟빵_종료예약_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0098_홈화면변경_발화체크(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:54 KST" name="BeforeMethod" finished-at="2021-12-01T15:24:54 KST" duration-ms="1" status="PASS">
+        <test-method signature="TC_0098_홈화면변경_발화체크(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:12:30 KST" name="TC_0098_홈화면변경_발화체크" description="칩스 리그레이션 TC : 실행_0098" finished-at="2021-12-01T17:12:39 KST" duration-ms="9195" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0449_Chips_팟빵_종료예약_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0098_홈화면변경_발화체크(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0098_홈화면변경_발화체크 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:12:39 KST" name="AfterMethod" finished-at="2021-12-01T17:12:39 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0098_홈화면변경_발화체크 status=SUCCESS method=기본기능_01_기본기능.TC_0098_홈화면변경_발화체크(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0115_나이트모드_발화체크(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:12:39 KST" name="TC_0115_나이트모드_발화체크" description="칩스 리그레이션 TC : 실행_0115" finished-at="2021-12-01T17:12:44 KST" duration-ms="5145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0115_나이트모드_발화체크(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0115_나이트모드_발화체크 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:12:39 KST" name="BeforeMethod" finished-at="2021-12-01T17:12:39 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_001_기본기능.기본기능_01_기본기능.TC_0115_나이트모드_발화체크(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:54 KST" name="AfterMethod" finished-at="2021-12-01T15:24:54 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:12:44 KST" name="AfterMethod" finished-at="2021-12-01T17:12:44 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0448_Chips_팟빵_종료예약_확인 status=SUCCESS method=미디어_12_팟빵.TC_0448_Chips_팟빵_종료예약_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0115_나이트모드_발화체크 status=SUCCESS method=기본기능_01_기본기능.TC_0115_나이트모드_발화체크(java.lang.reflect.Method)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0449_Chips_팟빵_종료예약_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:54 KST" name="TC_0449_Chips_팟빵_종료예약_확인" description="칩스 리그레이션 TC : 실행_0449" finished-at="2021-12-01T15:24:59 KST" duration-ms="5088" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0449_Chips_팟빵_종료예약_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0449_Chips_팟빵_종료예약_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:59 KST" name="AfterMethod" finished-at="2021-12-01T15:24:59 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0449_Chips_팟빵_종료예약_확인 status=SUCCESS method=미디어_12_팟빵.TC_0449_Chips_팟빵_종료예약_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:59 KST" name="TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인" description="칩스 리그레이션 TC : 실행_0455" finished-at="2021-12-01T15:25:13 KST" duration-ms="13525" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:24:59 KST" name="BeforeMethod" finished-at="2021-12-01T15:24:59 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:25:13 KST" name="TC_0456_Chips_팟빵_컨트롤러_일시정지_확인" description="칩스 리그레이션 TC : 실행_0456" finished-at="2021-12-01T15:25:32 KST" duration-ms="18890" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0456_Chips_팟빵_컨트롤러_일시정지_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:25:13 KST" name="BeforeMethod" finished-at="2021-12-01T15:25:13 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:25:13 KST" name="AfterMethod" finished-at="2021-12-01T15:25:13 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인 status=SUCCESS method=미디어_12_팟빵.TC_0455_Chips_팟빵_컨트롤러_에피소드_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:25:32 KST" name="AfterMethod" finished-at="2021-12-01T15:25:32 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0456_Chips_팟빵_컨트롤러_일시정지_확인 status=SUCCESS method=미디어_12_팟빵.TC_0456_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:25:32 KST" name="BeforeMethod" finished-at="2021-12-01T15:25:32 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:25:32 KST" name="TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인" description="칩스 리그레이션 TC : 실행_0457" finished-at="2021-12-01T15:25:42 KST" duration-ms="10170" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:25:42 KST" name="AfterMethod" finished-at="2021-12-01T15:25:42 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인 status=SUCCESS method=미디어_12_팟빵.TC_0457_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:25:42 KST" name="BeforeMethod" finished-at="2021-12-01T15:25:42 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0458_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0458_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:25:42 KST" name="TC_0458_Chips_팟빵_컨트롤러_일시정지_확인" description="칩스 리그레이션 TC : 실행_0458" finished-at="2021-12-01T15:25:52 KST" duration-ms="10055" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0458_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0458_Chips_팟빵_컨트롤러_일시정지_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:25:52 KST" name="BeforeMethod" finished-at="2021-12-01T15:25:52 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:25:52 KST" name="AfterMethod" finished-at="2021-12-01T15:25:52 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0458_Chips_팟빵_컨트롤러_일시정지_확인 status=SUCCESS method=미디어_12_팟빵.TC_0458_Chips_팟빵_컨트롤러_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:25:52 KST" name="TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인" description="칩스 리그레이션 TC : 실행_0459" finished-at="2021-12-01T15:26:03 KST" duration-ms="11345" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:26:03 KST" name="AfterMethod" finished-at="2021-12-01T15:26:03 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인 status=SUCCESS method=미디어_12_팟빵.TC_0459_Chips_팟빵_컨트롤러_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:26:03 KST" name="BeforeMethod" finished-at="2021-12-01T15:26:03 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0460_Chips_팟빵_구독_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0460_Chips_팟빵_구독_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:26:03 KST" name="TC_0460_Chips_팟빵_구독_확인" description="칩스 리그레이션 TC : 실행_0460" finished-at="2021-12-01T15:26:18 KST" duration-ms="15305" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0460_Chips_팟빵_구독_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0460_Chips_팟빵_구독_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:26:18 KST" name="AfterMethod" finished-at="2021-12-01T15:26:18 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0460_Chips_팟빵_구독_확인 status=SUCCESS method=미디어_12_팟빵.TC_0460_Chips_팟빵_구독_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:26:18 KST" name="BeforeMethod" finished-at="2021-12-01T15:26:18 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0461_Chips_팟빵_구독해제_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0461_Chips_팟빵_구독해제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:26:18 KST" name="TC_0461_Chips_팟빵_구독해제_확인" description="칩스 리그레이션 TC : 실행_0461" finished-at="2021-12-01T15:26:34 KST" duration-ms="15039" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0461_Chips_팟빵_구독해제_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0461_Chips_팟빵_구독해제_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:26:34 KST" name="AfterMethod" finished-at="2021-12-01T15:26:34 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0461_Chips_팟빵_구독해제_확인 status=SUCCESS method=미디어_12_팟빵.TC_0461_Chips_팟빵_구독해제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0462_Chips_팟빵_이전_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:26:34 KST" name="TC_0462_Chips_팟빵_이전_확인" description="칩스 리그레이션 TC : 실행_0462" finished-at="2021-12-01T15:27:26 KST" duration-ms="52826" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0462_Chips_팟빵_이전_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0462_Chips_팟빵_이전_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:26:34 KST" name="BeforeMethod" finished-at="2021-12-01T15:26:34 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0462_Chips_팟빵_이전_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:27:26 KST" name="AfterMethod" finished-at="2021-12-01T15:27:26 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0462_Chips_팟빵_이전_확인 status=SUCCESS method=미디어_12_팟빵.TC_0462_Chips_팟빵_이전_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0463_Chips_팟빵_다음_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:27:26 KST" name="TC_0463_Chips_팟빵_다음_확인" description="칩스 리그레이션 TC : 실행_0463" finished-at="2021-12-01T15:27:53 KST" duration-ms="27055" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0463_Chips_팟빵_다음_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0463_Chips_팟빵_다음_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:27:26 KST" name="BeforeMethod" finished-at="2021-12-01T15:27:26 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0463_Chips_팟빵_다음_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:27:53 KST" name="AfterMethod" finished-at="2021-12-01T15:27:53 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0463_Chips_팟빵_다음_확인 status=SUCCESS method=미디어_12_팟빵.TC_0463_Chips_팟빵_다음_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:27:53 KST" name="BeforeMethod" finished-at="2021-12-01T15:27:53 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0464_Chips_팟빵_이전팟캐스트_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0464_Chips_팟빵_이전팟캐스트_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:27:53 KST" name="TC_0464_Chips_팟빵_이전팟캐스트_확인" description="칩스 리그레이션 TC : 실행_0463" finished-at="2021-12-01T15:28:26 KST" duration-ms="32734" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0464_Chips_팟빵_이전팟캐스트_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0464_Chips_팟빵_이전팟캐스트_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:28:26 KST" name="AfterMethod" finished-at="2021-12-01T15:28:26 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0464_Chips_팟빵_이전팟캐스트_확인 status=SUCCESS method=미디어_12_팟빵.TC_0464_Chips_팟빵_이전팟캐스트_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0465_Chips_팟빵_다음팟캐스트__확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:28:26 KST" name="TC_0465_Chips_팟빵_다음팟캐스트__확인" description="칩스 리그레이션 TC : 실행_0465" finished-at="2021-12-01T15:28:58 KST" duration-ms="32165" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0465_Chips_팟빵_다음팟캐스트__확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0465_Chips_팟빵_다음팟캐스트__확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:28:26 KST" name="BeforeMethod" finished-at="2021-12-01T15:28:26 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0465_Chips_팟빵_다음팟캐스트__확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:28:58 KST" name="AfterMethod" finished-at="2021-12-01T15:28:58 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0465_Chips_팟빵_다음팟캐스트__확인 status=SUCCESS method=미디어_12_팟빵.TC_0465_Chips_팟빵_다음팟캐스트__확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0466_Chips_팟빵_재생시간앞으로이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:28:58 KST" name="TC_0466_Chips_팟빵_재생시간앞으로이동_확인" description="칩스 리그레이션 TC : 실행_0466" finished-at="2021-12-01T15:29:11 KST" duration-ms="12742" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0466_Chips_팟빵_재생시간앞으로이동_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0466_Chips_팟빵_재생시간앞으로이동_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:28:58 KST" name="BeforeMethod" finished-at="2021-12-01T15:28:58 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0466_Chips_팟빵_재생시간앞으로이동_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:29:11 KST" name="AfterMethod" finished-at="2021-12-01T15:29:11 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0466_Chips_팟빵_재생시간앞으로이동_확인 status=SUCCESS method=미디어_12_팟빵.TC_0466_Chips_팟빵_재생시간앞으로이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:29:11 KST" name="BeforeMethod" finished-at="2021-12-01T15:29:11 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0467_Chips_팟빵_재생시간뒤으로이동_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0467_Chips_팟빵_재생시간뒤으로이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:29:11 KST" name="TC_0467_Chips_팟빵_재생시간뒤으로이동_확인" description="칩스 리그레이션 TC : 실행_0467" finished-at="2021-12-01T15:29:24 KST" duration-ms="12744" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0467_Chips_팟빵_재생시간뒤으로이동_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0467_Chips_팟빵_재생시간뒤으로이동_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:29:24 KST" name="AfterMethod" finished-at="2021-12-01T15:29:24 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0467_Chips_팟빵_재생시간뒤으로이동_확인 status=SUCCESS method=미디어_12_팟빵.TC_0467_Chips_팟빵_재생시간뒤으로이동_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:29:24 KST" name="BeforeMethod" finished-at="2021-12-01T15:29:24 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0468_Chips_팟빵_종료_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0468_Chips_팟빵_종료_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:29:24 KST" name="TC_0468_Chips_팟빵_종료_확인" description="칩스 리그레이션 TC : 실행_0468" finished-at="2021-12-01T15:29:35 KST" duration-ms="11310" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_12_팟빵.TC_0468_Chips_팟빵_종료_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0468_Chips_팟빵_종료_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:29:35 KST" name="AfterMethod" finished-at="2021-12-01T15:29:35 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0468_Chips_팟빵_종료_확인 status=SUCCESS method=미디어_12_팟빵.TC_0468_Chips_팟빵_종료_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_004_미디어_etc.미디어_12_팟빵@41488b16]" started-at="2021-12-01T15:29:35 KST" name="tearDownClass" finished-at="2021-12-01T15:29:39 KST" duration-ms="4361" status="PASS">
+        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_001_기본기능.기본기능_01_기본기능@6d5620ce]" started-at="2021-12-01T17:12:44 KST" name="tearDownClass" finished-at="2021-12-01T17:12:48 KST" duration-ms="4307" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1772,981 +881,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- Chips_004_미디어_etc.미디어_12_팟빵 -->
-      <class name="Chips_004_미디어_etc.미디어_07_ASMR">
-        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:13:47 KST" name="setupClass" finished-at="2021-12-01T15:14:01 KST" duration-ms="13491" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Android]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Chips]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[http://0.0.0.0:4723/wd/hub]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[STG]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Chips]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[out]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[R33M4000CY]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[ALDF3NYA6C0D0C654DD2]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[ALDF5TR5SNGZ8175DA16]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[ALDFH3D1Q7W6071EFE41]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[ALDFH6OQ9HG79986A4FA]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[ALDFHFMQC3RB935B4B02]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[ALDFHFMSG34WDF6CD40E]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[ALDFHDFEBVOC7F098039]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[ALDG3Q4IA9EW3633F8EA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:14:01 KST" name="BeforeMethod" finished-at="2021-12-01T15:14:01 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:14:01 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-12-01T15:14:58 KST" duration-ms="57572" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0000_앱실행과AccessToken얻기 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:14:58 KST" name="AfterMethod" finished-at="2021-12-01T15:14:58 KST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=미디어_07_ASMR.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0315_Chips_ASMR_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:14:58 KST" name="TC_0315_Chips_ASMR_재생_확인" description="칩스 리그레이션 TC : 실행_0315" finished-at="2021-12-01T15:15:21 KST" duration-ms="22943" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0315_Chips_ASMR_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0315_Chips_ASMR_재생_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:14:58 KST" name="BeforeMethod" finished-at="2021-12-01T15:14:58 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0315_Chips_ASMR_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0316_Chips_ASMR_과자먹는소리재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:15:21 KST" name="TC_0316_Chips_ASMR_과자먹는소리재생_확인" description="칩스 리그레이션 TC : 실행_0316" finished-at="2021-12-01T15:15:45 KST" duration-ms="24022" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0316_Chips_ASMR_과자먹는소리재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0316_Chips_ASMR_과자먹는소리재생_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:15:21 KST" name="BeforeMethod" finished-at="2021-12-01T15:15:21 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0316_Chips_ASMR_과자먹는소리재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:15:21 KST" name="AfterMethod" finished-at="2021-12-01T15:15:21 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0315_Chips_ASMR_재생_확인 status=SUCCESS method=미디어_07_ASMR.TC_0315_Chips_ASMR_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:15:45 KST" name="AfterMethod" finished-at="2021-12-01T15:15:45 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0316_Chips_ASMR_과자먹는소리재생_확인 status=SUCCESS method=미디어_07_ASMR.TC_0316_Chips_ASMR_과자먹는소리재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:15:45 KST" name="BeforeMethod" finished-at="2021-12-01T15:15:45 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0317_Chips_ASMR_빗소리_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0317_Chips_ASMR_빗소리_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:15:45 KST" name="TC_0317_Chips_ASMR_빗소리_확인" description="칩스 리그레이션 TC : 실행_0317" finished-at="2021-12-01T15:16:02 KST" duration-ms="16756" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0317_Chips_ASMR_빗소리_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0317_Chips_ASMR_빗소리_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:02 KST" name="AfterMethod" finished-at="2021-12-01T15:16:02 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0317_Chips_ASMR_빗소리_확인 status=SUCCESS method=미디어_07_ASMR.TC_0317_Chips_ASMR_빗소리_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:02 KST" name="BeforeMethod" finished-at="2021-12-01T15:16:02 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0318_Chips_ASMR_힐링사운드_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0318_Chips_ASMR_힐링사운드_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:02 KST" name="TC_0318_Chips_ASMR_힐링사운드_확인" description="칩스 리그레이션 TC : 실행_0318" finished-at="2021-12-01T15:16:16 KST" duration-ms="13619" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0318_Chips_ASMR_힐링사운드_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0318_Chips_ASMR_힐링사운드_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:16 KST" name="AfterMethod" finished-at="2021-12-01T15:16:16 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0318_Chips_ASMR_힐링사운드_확인 status=SUCCESS method=미디어_07_ASMR.TC_0318_Chips_ASMR_힐링사운드_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:16 KST" name="BeforeMethod" finished-at="2021-12-01T15:16:16 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0319_Chips_ASMR_자연의소리_반복확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0319_Chips_ASMR_자연의소리_반복확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:16 KST" name="TC_0319_Chips_ASMR_자연의소리_반복확인" description="칩스 리그레이션 TC : 실행_0319" finished-at="2021-12-01T15:16:28 KST" duration-ms="11868" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0319_Chips_ASMR_자연의소리_반복확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0319_Chips_ASMR_자연의소리_반복확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:28 KST" name="AfterMethod" finished-at="2021-12-01T15:16:28 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0319_Chips_ASMR_자연의소리_반복확인 status=SUCCESS method=미디어_07_ASMR.TC_0319_Chips_ASMR_자연의소리_반복확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0320_Chips_ASMR_이노래뭐야_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:28 KST" name="TC_0320_Chips_ASMR_이노래뭐야_확인" description="칩스 리그레이션 TC : 실행_0319" finished-at="2021-12-01T15:16:42 KST" duration-ms="14362" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0320_Chips_ASMR_이노래뭐야_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0320_Chips_ASMR_이노래뭐야_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:28 KST" name="BeforeMethod" finished-at="2021-12-01T15:16:28 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0320_Chips_ASMR_이노래뭐야_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:42 KST" name="AfterMethod" finished-at="2021-12-01T15:16:42 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0320_Chips_ASMR_이노래뭐야_확인 status=SUCCESS method=미디어_07_ASMR.TC_0320_Chips_ASMR_이노래뭐야_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0321_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:42 KST" name="TC_0321_Chips_ASMR_다음ASMR_확인" description="칩스 리그레이션 TC : 실행_0321" finished-at="2021-12-01T15:16:51 KST" duration-ms="8990" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0321_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0321_Chips_ASMR_다음ASMR_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:42 KST" name="BeforeMethod" finished-at="2021-12-01T15:16:42 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0321_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:51 KST" name="AfterMethod" finished-at="2021-12-01T15:16:51 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0321_Chips_ASMR_다음ASMR_확인 status=SUCCESS method=미디어_07_ASMR.TC_0321_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0322_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:51 KST" name="TC_0322_Chips_ASMR_이전ASMR_확인" description="칩스 리그레이션 TC : 실행_0322" finished-at="2021-12-01T15:17:01 KST" duration-ms="10121" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0322_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0322_Chips_ASMR_이전ASMR_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:16:51 KST" name="BeforeMethod" finished-at="2021-12-01T15:16:51 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0322_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:17:01 KST" name="AfterMethod" finished-at="2021-12-01T15:17:01 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0322_Chips_ASMR_이전ASMR_확인 status=SUCCESS method=미디어_07_ASMR.TC_0322_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0324_Chips_ASMR_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:17:01 KST" name="TC_0324_Chips_ASMR_재생_확인" description="칩스 리그레이션 TC : 실행_0324" finished-at="2021-12-01T15:17:20 KST" duration-ms="18578" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0324_Chips_ASMR_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0324_Chips_ASMR_재생_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:17:01 KST" name="BeforeMethod" finished-at="2021-12-01T15:17:01 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0324_Chips_ASMR_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:17:20 KST" name="BeforeMethod" finished-at="2021-12-01T15:17:20 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0325_Chips_ASMR_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:17:20 KST" name="AfterMethod" finished-at="2021-12-01T15:17:20 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0324_Chips_ASMR_재생_확인 status=SUCCESS method=미디어_07_ASMR.TC_0324_Chips_ASMR_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0325_Chips_ASMR_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:17:20 KST" name="TC_0325_Chips_ASMR_일시정지_확인" description="칩스 리그레이션 TC : 실행_0325" finished-at="2021-12-01T15:17:37 KST" duration-ms="17746" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0325_Chips_ASMR_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0325_Chips_ASMR_일시정지_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:17:37 KST" name="BeforeMethod" finished-at="2021-12-01T15:17:37 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0326_Chips_ASMR_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:17:37 KST" name="AfterMethod" finished-at="2021-12-01T15:17:37 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0325_Chips_ASMR_일시정지_확인 status=SUCCESS method=미디어_07_ASMR.TC_0325_Chips_ASMR_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0326_Chips_ASMR_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:17:37 KST" name="TC_0326_Chips_ASMR_일시정지취소_확인" description="칩스 리그레이션 TC : 실행_0326" finished-at="2021-12-01T15:17:51 KST" duration-ms="13853" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0326_Chips_ASMR_일시정지취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0326_Chips_ASMR_일시정지취소_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:17:51 KST" name="AfterMethod" finished-at="2021-12-01T15:17:51 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0326_Chips_ASMR_일시정지취소_확인 status=SUCCESS method=미디어_07_ASMR.TC_0326_Chips_ASMR_일시정지취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:17:51 KST" name="BeforeMethod" finished-at="2021-12-01T15:17:51 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0327_Chips_ASMR_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0327_Chips_ASMR_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:17:51 KST" name="TC_0327_Chips_ASMR_일시정지_확인" description="칩스 리그레이션 TC : 실행_0327" finished-at="2021-12-01T15:18:05 KST" duration-ms="13672" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0327_Chips_ASMR_일시정지_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0327_Chips_ASMR_일시정지_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:05 KST" name="AfterMethod" finished-at="2021-12-01T15:18:05 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0327_Chips_ASMR_일시정지_확인 status=SUCCESS method=미디어_07_ASMR.TC_0327_Chips_ASMR_일시정지_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0328_Chips_ASMR_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:05 KST" name="TC_0328_Chips_ASMR_재생_확인" description="칩스 리그레이션 TC : 실행_0328" finished-at="2021-12-01T15:18:30 KST" duration-ms="25150" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0328_Chips_ASMR_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0328_Chips_ASMR_재생_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:05 KST" name="BeforeMethod" finished-at="2021-12-01T15:18:05 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0328_Chips_ASMR_재생_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:30 KST" name="AfterMethod" finished-at="2021-12-01T15:18:30 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0328_Chips_ASMR_재생_확인 status=SUCCESS method=미디어_07_ASMR.TC_0328_Chips_ASMR_재생_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:30 KST" name="BeforeMethod" finished-at="2021-12-01T15:18:30 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0329_Chips_ASMR_좋아요_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0329_Chips_ASMR_좋아요_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:30 KST" name="TC_0329_Chips_ASMR_좋아요_확인" description="칩스 리그레이션 TC : 실행_0329" finished-at="2021-12-01T15:18:41 KST" duration-ms="10650" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0329_Chips_ASMR_좋아요_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0329_Chips_ASMR_좋아요_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:41 KST" name="AfterMethod" finished-at="2021-12-01T15:18:41 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0329_Chips_ASMR_좋아요_확인 status=SUCCESS method=미디어_07_ASMR.TC_0329_Chips_ASMR_좋아요_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:41 KST" name="BeforeMethod" finished-at="2021-12-01T15:18:41 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0330_Chips_ASMR_좋아요취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0330_Chips_ASMR_좋아요취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:41 KST" name="TC_0330_Chips_ASMR_좋아요취소_확인" description="칩스 리그레이션 TC : 실행_0329" finished-at="2021-12-01T15:18:47 KST" duration-ms="6581" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0330_Chips_ASMR_좋아요취소_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0330_Chips_ASMR_좋아요취소_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:47 KST" name="AfterMethod" finished-at="2021-12-01T15:18:47 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0330_Chips_ASMR_좋아요취소_확인 status=SUCCESS method=미디어_07_ASMR.TC_0330_Chips_ASMR_좋아요취소_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0331_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:47 KST" name="TC_0331_Chips_ASMR_다음ASMR_확인" description="칩스 리그레이션 TC : 실행_0331" finished-at="2021-12-01T15:18:58 KST" duration-ms="10649" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0331_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0331_Chips_ASMR_다음ASMR_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:47 KST" name="BeforeMethod" finished-at="2021-12-01T15:18:47 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0331_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:58 KST" name="AfterMethod" finished-at="2021-12-01T15:18:58 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0331_Chips_ASMR_다음ASMR_확인 status=SUCCESS method=미디어_07_ASMR.TC_0331_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:58 KST" name="BeforeMethod" finished-at="2021-12-01T15:18:58 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0332_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0332_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:18:58 KST" name="TC_0332_Chips_ASMR_이전ASMR_확인" description="칩스 리그레이션 TC : 실행_0332" finished-at="2021-12-01T15:19:13 KST" duration-ms="15000" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0332_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0332_Chips_ASMR_이전ASMR_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:19:13 KST" name="AfterMethod" finished-at="2021-12-01T15:19:13 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0332_Chips_ASMR_이전ASMR_확인 status=SUCCESS method=미디어_07_ASMR.TC_0332_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0333_Chips_ASMR_셔플_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:19:13 KST" name="TC_0333_Chips_ASMR_셔플_확인" description="칩스 리그레이션 TC : 실행_0333" finished-at="2021-12-01T15:19:29 KST" duration-ms="15560" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0333_Chips_ASMR_셔플_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0333_Chips_ASMR_셔플_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:19:13 KST" name="BeforeMethod" finished-at="2021-12-01T15:19:13 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0333_Chips_ASMR_셔플_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:19:29 KST" name="AfterMethod" finished-at="2021-12-01T15:19:29 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0333_Chips_ASMR_셔플_확인 status=SUCCESS method=미디어_07_ASMR.TC_0333_Chips_ASMR_셔플_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:19:29 KST" name="BeforeMethod" finished-at="2021-12-01T15:19:29 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0334_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0334_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:19:29 KST" name="TC_0334_Chips_ASMR_다음ASMR_확인" description="칩스 리그레이션 TC : 실행_0334" finished-at="2021-12-01T15:19:47 KST" duration-ms="18623" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0334_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0334_Chips_ASMR_다음ASMR_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:19:47 KST" name="AfterMethod" finished-at="2021-12-01T15:19:47 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0334_Chips_ASMR_다음ASMR_확인 status=SUCCESS method=미디어_07_ASMR.TC_0334_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0335_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:19:47 KST" name="TC_0335_Chips_ASMR_이전ASMR_확인" description="칩스 리그레이션 TC : 실행_0335" finished-at="2021-12-01T15:20:02 KST" duration-ms="15123" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0335_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0335_Chips_ASMR_이전ASMR_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:19:47 KST" name="BeforeMethod" finished-at="2021-12-01T15:19:47 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0335_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:20:02 KST" name="BeforeMethod" finished-at="2021-12-01T15:20:02 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0336_Chips_ASMR_셔플해제_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:20:02 KST" name="AfterMethod" finished-at="2021-12-01T15:20:02 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0335_Chips_ASMR_이전ASMR_확인 status=SUCCESS method=미디어_07_ASMR.TC_0335_Chips_ASMR_이전ASMR_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0336_Chips_ASMR_셔플해제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:20:02 KST" name="TC_0336_Chips_ASMR_셔플해제_확인" description="칩스 리그레이션 TC : 실행_0336" finished-at="2021-12-01T15:20:18 KST" duration-ms="15279" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0336_Chips_ASMR_셔플해제_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0336_Chips_ASMR_셔플해제_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:20:18 KST" name="AfterMethod" finished-at="2021-12-01T15:20:18 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0336_Chips_ASMR_셔플해제_확인 status=SUCCESS method=미디어_07_ASMR.TC_0336_Chips_ASMR_셔플해제_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:20:18 KST" name="BeforeMethod" finished-at="2021-12-01T15:20:18 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0337_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0337_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:20:18 KST" name="TC_0337_Chips_ASMR_다음ASMR_확인" description="칩스 리그레이션 TC : 실행_0337" finished-at="2021-12-01T15:20:31 KST" duration-ms="13148" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0337_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0337_Chips_ASMR_다음ASMR_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:20:31 KST" name="AfterMethod" finished-at="2021-12-01T15:20:31 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0337_Chips_ASMR_다음ASMR_확인 status=SUCCESS method=미디어_07_ASMR.TC_0337_Chips_ASMR_다음ASMR_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0338_Chips_ASMR_20초뒤로_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:20:31 KST" name="TC_0338_Chips_ASMR_20초뒤로_확인" description="칩스 리그레이션 TC : 실행_0312" finished-at="2021-12-01T15:20:45 KST" duration-ms="14777" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0338_Chips_ASMR_20초뒤로_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0338_Chips_ASMR_20초뒤로_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:20:31 KST" name="BeforeMethod" finished-at="2021-12-01T15:20:31 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0338_Chips_ASMR_20초뒤로_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:20:45 KST" name="AfterMethod" finished-at="2021-12-01T15:20:45 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0338_Chips_ASMR_20초뒤로_확인 status=SUCCESS method=미디어_07_ASMR.TC_0338_Chips_ASMR_20초뒤로_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:20:45 KST" name="BeforeMethod" finished-at="2021-12-01T15:20:45 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0339_Chips_ASMR_15초앞으로_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0339_Chips_ASMR_15초앞으로_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:20:45 KST" name="TC_0339_Chips_ASMR_15초앞으로_확인" description="칩스 리그레이션 TC : 실행_0313" finished-at="2021-12-01T15:20:52 KST" duration-ms="6627" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_004_미디어_etc.미디어_07_ASMR.TC_0339_Chips_ASMR_15초앞으로_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0339_Chips_ASMR_15초앞으로_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:20:52 KST" name="AfterMethod" finished-at="2021-12-01T15:20:52 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0339_Chips_ASMR_15초앞으로_확인 status=SUCCESS method=미디어_07_ASMR.TC_0339_Chips_ASMR_15초앞으로_확인(java.lang.reflect.Method)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_004_미디어_etc.미디어_07_ASMR@2f01783a]" started-at="2021-12-01T15:20:52 KST" name="tearDownClass" finished-at="2021-12-01T15:20:56 KST" duration-ms="4157" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[STG]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Chips]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[out]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[R33M4000CY]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[ALDF3NYA6C0D0C654DD2]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[ALDF5TR5SNGZ8175DA16]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[ALDFH3D1Q7W6071EFE41]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[ALDFH6OQ9HG79986A4FA]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[ALDFHFMQC3RB935B4B02]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[ALDFHFMSG34WDF6CD40E]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[ALDFHDFEBVOC7F098039]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[ALDG3Q4IA9EW3633F8EA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- Chips_004_미디어_etc.미디어_07_ASMR -->
+      </class> <!-- Chips_001_기본기능.기본기능_01_기본기능 -->
     </test> <!-- Test_Project -->
   </suite> <!-- ExtentReport -->
 </testng-results>
