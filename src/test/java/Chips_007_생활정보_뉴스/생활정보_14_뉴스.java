@@ -674,13 +674,13 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 지난 주 연예 뉴스 틀어줘 - 발화");
 		util.SWFsendPost_playStatus("지난 주 연예 뉴스 틀어줘",  Chips_001, ServerName, AccessToken, "news");
+		util.SWFsendPost_playStatus("지난 주 연예 뉴스 틀어줘",  Chips_001, ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "연예 뉴스 재생 TTS 확인");
 		String 지난주주말 = util.getLastWeekSunday();
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, 지난주주말));
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "연예 관련 뉴스를 들려드릴게요."));
 		
-		util.switchToNative();
 		test.log(Status.INFO, "뉴스 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), 지난주주말 + " 연예 뉴스"));
 		
