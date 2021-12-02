@@ -55,7 +55,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 	    
 	    //test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
@@ -85,7 +85,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.switchToContextName("NATIVE_APP");
+	    util.switchToNative();
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -139,7 +139,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0899")
 	public void TC_0899_Chips_어학사전_단어번역_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		Thread.sleep(3000);
 		test.log(Status.INFO, "W, 영어로 경찰이 뭐야? - 발화");
 		util.SWFsendPost("영어로 경찰이 뭐야", Chips_001, ServerName, AccessToken);

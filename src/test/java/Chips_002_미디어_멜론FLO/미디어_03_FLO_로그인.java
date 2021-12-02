@@ -55,7 +55,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 		//util.chips_update_check(ServerName);
@@ -85,7 +85,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.switchToContextName("NATIVE_APP");
+	    util.switchToNative();
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -142,7 +142,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -188,7 +188,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -203,7 +203,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 뮤직메이트에서 최신 곡 틀어줘- 발화");
 		util.SWFsendPost("뮤직메이트에서 최신 곡 틀어줘", Chips_001, ServerName, AccessToken);
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "최신음악 노래 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최신 음악을"));
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
@@ -238,7 +238,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -287,7 +287,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -333,7 +333,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -380,7 +380,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.좋아요On_web)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
@@ -392,7 +392,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0226")
 	public void TC_0226_Chips_FLO로그인_플레이리스트_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 플레이리스트 틀어줘 - 발화");
 		util.SWFsendPost("플레이리스트 틀어줘", Chips_001, ServerName, AccessToken);
 		
@@ -430,7 +430,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -476,7 +476,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -510,7 +510,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0229")
 	public void TC_0229_Chips_FLO로그인_셔플해제_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "셔플 버튼 클릭");
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		
@@ -520,7 +520,7 @@ public class 미디어_03_FLO_로그인 extends Chips_TestCase {
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생Off_web)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 	}
 

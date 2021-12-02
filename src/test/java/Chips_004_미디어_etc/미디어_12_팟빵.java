@@ -55,7 +55,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 		//util.chips_update_check(ServerName);
@@ -85,7 +85,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.switchToContextName("NATIVE_APP");
+	    util.switchToNative();
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -140,7 +140,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
 	}
@@ -183,7 +183,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
 	}
@@ -223,7 +223,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		test.log(Status.INFO, "구독버튼 비활성화 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독off_web)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
@@ -247,7 +247,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		//util.switchToWindwosURL(xPath.Webview_URL);
 		//util.waitForPageLoaded();
 		//Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독on_web)));
-		//util.switchToContextName("NATIVE_APP");
+		//util.switchToNative();
 		
 	}
 	
@@ -266,7 +266,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		//util.switchToWindwosURL(xPath.Webview_URL);
 		//util.waitForPageLoaded();
 		//Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독off_web)));
-		//util.switchToContextName("NATIVE_APP");
+		//util.switchToNative();
 		
 	}
 	
@@ -378,7 +378,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0460")
 	public void TC_0460_Chips_팟빵_구독_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 팟캐스트 구독 - 발화");
 		util.SWFsendPost_playStatus("팟캐스트 구독", Chips_001, ServerName, AccessToken, "podcast");
 		util.SWFsendPost_playStatus("팟캐스트 구독", Chips_001, ServerName, AccessToken, "podcast");
@@ -398,7 +398,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0461")
 	public void TC_0461_Chips_팟빵_구독해제_확인(Method method) throws Exception {
 		 
-		//util.switchToContextName("NATIVE_APP");
+		//util.switchToNative();
 		test.log(Status.INFO, "W, 구독 해제 - 발화");
 		util.SWFsendPost_playStatus("구독 해제", Chips_001, ServerName, AccessToken, "podcast");
 		Thread.sleep(3000);
@@ -409,14 +409,14 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		test.log(Status.INFO, "구독 버튼 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.팟캐스트구독off_web)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0462")
 	public void TC_0462_Chips_팟빵_이전_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 팟캐스트 꺼줘 - 발화");
 		util.SWFsendPost_playStatus("팟캐스트 꺼줘", Chips_001, ServerName, AccessToken, "podcast");
 		Thread.sleep(3000);
@@ -433,7 +433,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost("팟빵에서 두시탈출 컬투쇼 틀어줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "현재 에피소드 저장");
 		String 현재에피소드 = util.getText(By.xpath(xPath.FLO아티스트));
 		
@@ -566,7 +566,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0468")
 	public void TC_0468_Chips_팟빵_종료_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 팟캐스트 꺼줘 - 발화");
 		util.SWFsendPost_playStatus("팟캐스트 꺼줘", Chips_001, ServerName, AccessToken, "podcast");
 		Thread.sleep(3000);

@@ -55,7 +55,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 		//util.chips_update_check(ServerName);
@@ -85,7 +85,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.switchToContextName("NATIVE_APP");
+	    util.switchToNative();
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -142,7 +142,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -171,14 +171,14 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		test.log(Status.INFO, "한곡 반복 버튼 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.한곡반복_web)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0317")
 	public void TC_0317_Chips_ASMR_빗소리_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 빗소리 들려줘 - 발화");
 		util.SWFsendPost("빗소리 들려줘", Chips_001, ServerName, AccessToken);
 		
@@ -201,7 +201,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0318")
 	public void TC_0318_Chips_ASMR_힐링사운드_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 힐링 사운드 재생 - 발화");
 		util.SWFsendPost("힐링 사운드 재생", Chips_001, ServerName, AccessToken);
 		
@@ -217,7 +217,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0319")
 	public void TC_0319_Chips_ASMR_자연의소리_반복확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 자연의 소리 반복해서 틀어줘 - 발화");
 		util.SWFsendPost("자연의 소리 반복해서 틀어줘", Chips_001, ServerName, AccessToken);
 		
@@ -312,7 +312,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -321,7 +321,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0325")
 	public void TC_0325_Chips_ASMR_일시정지_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 일시정지 - 발화");
 		util.SWFsendPost_playStatus("일시정지", Chips_001, ServerName, AccessToken, "music");
 		util.SWFsendPost_playStatus("일시정지", Chips_001, ServerName, AccessToken, "music");
@@ -336,7 +336,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0326")
 	public void TC_0326_Chips_ASMR_일시정지취소_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 일시정지 취소 - 발화");
 		util.SWFsendPost_playStatus("일시정지 취소", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
@@ -350,7 +350,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0327")
 	public void TC_0327_Chips_ASMR_일시정지_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 일시정지 - 발화");
 		util.SWFsendPost_playStatus("일시정지", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
@@ -364,7 +364,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0328")
 	public void TC_0328_Chips_ASMR_재생_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 자연의 소리 틀어줘 - 발화");
 		util.SWFsendPost("자연의 소리 틀어줘", Chips_001, ServerName, AccessToken);
 		
@@ -399,7 +399,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -408,7 +408,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0329")
 	public void TC_0329_Chips_ASMR_좋아요_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 좋아요 해줘 - 발화");
 		util.SWFsendPost_playStatus("좋아요 해줘", Chips_001, ServerName, AccessToken, "music");
 		
@@ -420,7 +420,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0329")
 	public void TC_0330_Chips_ASMR_좋아요취소_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 좋아요 취소 - 발화");
 		util.SWFsendPost_playStatus("좋아요 취소", Chips_001, ServerName, AccessToken, "music");
 		
@@ -480,7 +480,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0334")
 	public void TC_0334_Chips_ASMR_다음ASMR_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "곡명 확인");
 		String 이전곡명 = util.getText(By.xpath(xPath.FLO제목));
 		
@@ -515,7 +515,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0336")
 	public void TC_0336_Chips_ASMR_셔플해제_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "셔플 버튼 클릭");
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		
@@ -532,7 +532,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0337")
 	public void TC_0337_Chips_ASMR_다음ASMR_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "곡명 확인");
 		String 이전곡명 = util.getText(By.xpath(xPath.FLO제목));
 		
@@ -549,7 +549,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0312")
 	public void TC_0338_Chips_ASMR_20초뒤로_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 20초 뒤로 이동 - 발화");
 		util.SWFsendPost_playStatus("20초 뒤로 이동", Chips_001, ServerName, AccessToken, "music");
 		
@@ -561,7 +561,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0313")
 	public void TC_0339_Chips_ASMR_15초앞으로_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 15초 앞으로 이동 - 발화");
 		util.SWFsendPost_playStatus("15초 앞으로 이동", Chips_001, ServerName, AccessToken, "music");
 		
@@ -573,7 +573,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	//@Test(description = "칩스 리그레이션 TC : 실행_0340")
 	public void TC_0340_Chips_ASMR_종료_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, ASMR 꺼줘 - 발화");
 		util.SWFsendPost("꺼줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);

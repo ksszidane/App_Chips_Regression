@@ -55,7 +55,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 		//util.chips_update_check(ServerName);
@@ -85,7 +85,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.switchToContextName("NATIVE_APP");
+	    util.switchToNative();
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -137,14 +137,14 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		test.log(Status.INFO, "반복 버튼 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.한곡반복_web)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		test.log(Status.INFO, "랜덤 버튼 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO랜덤버튼)));
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -185,14 +185,14 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		test.log(Status.INFO, "반복 버튼 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.한곡반복_web)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		test.log(Status.INFO, "랜덤 버튼 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO랜덤버튼)));
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -201,7 +201,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0302")
 	public void TC_0302_Chips_자체소싱_일시정지_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 일시정지 - 발화");
 		util.SWFsendPost_playStatus("일시정지 ", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
@@ -215,7 +215,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0241")
 	public void TC_0303_Chips_자체소싱_일시정지취소_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 일시정지 취소 - 발화");
 		util.SWFsendPost_playStatus("일시정지 취소 ", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
@@ -229,7 +229,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0304")
 	public void TC_0304_Chips_컨트롤러_좋아요_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 좋아요 해줘 - 발화");
 		util.SWFsendPost_playStatus("좋아요 해줘", Chips_001, ServerName, AccessToken, "music");
 		
@@ -245,7 +245,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0305")
 	public void TC_0305_Chips_컨트롤러_좋아요취소_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 좋아요 해제 - 발화");
 		util.SWFsendPost_playStatus("좋아요 해제", Chips_001, ServerName, AccessToken, "music");
 		
@@ -261,7 +261,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0306")
 	public void TC_0306_Chips_자체소싱_다음_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
 		util.SWFsendPost_playStatus("다음 곡", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
@@ -274,7 +274,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0307")
 	public void TC_0307_Chips_자체소싱_이전_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 이전 곡 - 발화");
 		util.SWFsendPost_playStatus("이전 곡", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
@@ -286,7 +286,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0308")
 	public void TC_0308_Chips_자체소싱_셔플_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "셔플 버튼 클릭");
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		Thread.sleep(2000);
@@ -298,7 +298,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0309")
 	public void TC_0309_Chips_자체소싱_이전_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 이전 곡 - 발화");
 		util.SWFsendPost_playStatus("이전 곡", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
@@ -310,7 +310,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0310")
 	public void TC_0310_Chips_자체소싱_셔플_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "셔플 버튼 클릭");
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		Thread.sleep(2000);
@@ -322,7 +322,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0311")
 	public void TC_0311_Chips_자체소싱_다음_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
 		util.SWFsendPost_playStatus("다음 곡", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
@@ -335,7 +335,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0312")
 	public void TC_0312_Chips_자체소싱_20초뒤로_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 20초 뒤로 이동 - 발화");
 		util.SWFsendPost_playStatus("20초 뒤로 이동", Chips_001, ServerName, AccessToken, "music");
 		
@@ -347,7 +347,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0313")
 	public void TC_0313_Chips_자체소싱_15초앞으로_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 15초 앞으로 이동 - 발화");
 		util.SWFsendPost_playStatus("15초 앞으로 이동", Chips_001, ServerName, AccessToken, "music");
 		

@@ -56,7 +56,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
@@ -86,7 +86,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.switchToContextName("NATIVE_APP");
+	    util.switchToNative();
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -125,7 +125,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		String 오늘날짜 = util.getKoreaDate();
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), 오늘날짜 + " 미세먼지"));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -142,7 +142,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		test.log(Status.INFO, "미세먼지 상태 문구 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.메세먼지상태Text_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -159,7 +159,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		test.log(Status.INFO, "미세먼지 농도  확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.메세먼지농도_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -176,7 +176,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.초미세먼지상태_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.초미세먼지농도_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -193,7 +193,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.통합대기지수상태_web)));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.통합대기지수농도_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -232,7 +232,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		System.out.println("getChangePreviousDate : "+내일날짜);
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.날씨타이틀_web), 내일날짜 + " 미세먼지"));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -249,7 +249,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		test.log(Status.INFO, "미세먼지 타이틀 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.내일미세먼지_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -266,7 +266,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		test.log(Status.INFO, "미세먼지 아이콘 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.내일미세먼지아이콘_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -280,7 +280,7 @@ public class 생활정보_05_날씨_미세먼지 extends Chips_TestCase {
 		util.waitForPageLoaded();
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.내일초미세먼지_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);

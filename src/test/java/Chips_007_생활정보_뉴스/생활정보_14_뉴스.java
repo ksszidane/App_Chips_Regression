@@ -55,7 +55,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
@@ -85,7 +85,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.switchToContextName("NATIVE_APP");
+	    util.switchToNative();
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -402,7 +402,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0817")
 	public void TC_0817_Chips_뉴스_연예특정뉴스_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 연예 뉴스 알려줘 - 발화");
 		util.SWFsendPost("연예 뉴스 알려줘",  Chips_001, ServerName, AccessToken);
 		
@@ -419,7 +419,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
@@ -435,7 +435,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0818")
 	public void TC_0818_Chips_뉴스_스포츠특정뉴스_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 스포츠 데일리 브리핑 해줘 - 발화");
 		util.SWFsendPost("스포츠 데일리 브리핑 해줘",  Chips_001, ServerName, AccessToken);
 		
@@ -452,7 +452,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
@@ -494,7 +494,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, SK텔레콤 뉴스 들려줘 - 발화");
 		util.SWFsendPost("SK텔레콤 뉴스 들려줘", Chips_001, ServerName, AccessToken);
 		
@@ -511,7 +511,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
@@ -544,7 +544,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
@@ -577,7 +577,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
@@ -609,7 +609,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
@@ -689,7 +689,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
@@ -721,7 +721,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
@@ -754,7 +754,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
@@ -819,7 +819,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
@@ -851,7 +851,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
@@ -883,7 +883,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
@@ -982,7 +982,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		

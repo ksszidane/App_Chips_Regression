@@ -55,7 +55,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 		//util.chips_update_check(ServerName);
@@ -85,7 +85,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.switchToContextName("NATIVE_APP");
+	    util.switchToNative();
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -142,7 +142,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -164,7 +164,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0241")
 	public void TC_0241_Chips_FLO_컨트롤러_일시정지취소_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 일시정지 취소 - 발화");
 		util.SWFsendPost("일시정지 취소", Chips_001, ServerName, AccessToken);
 		Thread.sleep(2000);
@@ -178,7 +178,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0242")
 	public void TC_0242_Chips_FLO_컨트롤러_일시정지_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 일시정지 - 발화");
 		util.SWFsendPost("일시정지", Chips_001, ServerName, AccessToken);
 		Thread.sleep(2000);
@@ -200,7 +200,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "Flo에서 ee 내 리스트"));
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "FLO 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "내 리스트"));
 		
@@ -231,7 +231,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "재생시간 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO재생곡전체시간)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("chipListView")));
 
@@ -240,7 +240,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0244")
 	public void TC_0244_Chips_FLO_컨트롤러_좋아요_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 좋아요 해줘 - 발화");
 		util.SWFsendPost_playStatus("좋아요 해줘", Chips_001, ServerName, AccessToken, "music");
 		
@@ -256,7 +256,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0245")
 	public void TC_0245_Chips_FLO_컨트롤러_좋아요취소_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 좋아요 삭제 - 발화");
 		util.SWFsendPost_playStatus("좋아요 삭제", Chips_001, ServerName, AccessToken, "music");
 		
@@ -272,7 +272,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0246")
 	public void TC_0246_Chips_FLO_컨트롤러_다음_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
 		util.SWFsendPost_playStatus("다음 곡", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
@@ -288,7 +288,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0247")
 	public void TC_0247_Chips_FLO_컨트롤러_이전_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 이전 곡 - 발화");
 		util.SWFsendPost_playStatus("이전 곡", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
@@ -304,7 +304,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0248")
 	public void TC_0248_Chips_FLO_컨트롤러_셔플_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "셔플 버튼 클릭");
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		
@@ -320,7 +320,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0249")
 	public void TC_0249_Chips_FLO_컨트롤러_다음_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
 		util.SWFsendPost_playStatus("다음 곡", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
@@ -351,7 +351,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0251")
 	public void TC_0251_Chips_FLO로그인_셔플해제_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "셔플 버튼 클릭");
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		
@@ -361,14 +361,14 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생Off_web)));
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0252")
 	public void TC_0252_Chips_FLO_컨트롤러_다음_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 다음 곡 - 발화");
 		util.SWFsendPost_playStatus("다음 곡", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
@@ -384,7 +384,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0253")
 	public void TC_0253_Chips_FLO_컨트롤러_20초뒤로_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 20초 뒤로 이동 - 발화");
 		util.SWFsendPost_playStatus("20초 뒤로 이동", Chips_001, ServerName, AccessToken, "music");
 		
@@ -396,7 +396,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0254")
 	public void TC_0254_Chips_FLO_컨트롤러_15초앞으로_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 15초 앞으로 이동 - 발화");
 		util.SWFsendPost_playStatus("15초 앞으로 이동", Chips_001, ServerName, AccessToken, "music");
 		
@@ -412,7 +412,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost("꺼줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(5000);
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "음악카드 종료되고 메인화면 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature_format")));

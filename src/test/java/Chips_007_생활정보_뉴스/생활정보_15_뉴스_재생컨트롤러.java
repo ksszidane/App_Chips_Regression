@@ -55,7 +55,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
@@ -85,7 +85,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.switchToContextName("NATIVE_APP");
+	    util.switchToNative();
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -121,7 +121,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		test.log(Status.INFO, "뉴스컨텐츠제목 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.키워드뉴스타이틀_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "미디어컨트롤러 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO일시정지버튼), "재생/일시정지"));
 		
@@ -137,7 +137,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0845")
 	public void TC_0845_Chips_뉴스_컨트롤러_일시정지_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 일시정지 - 발화");
 		util.SWFsendPost_playStatus("일시정지",  Chips_001, ServerName, AccessToken, "news");
 		Thread.sleep(2000);
@@ -150,7 +150,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0846")
 	public void TC_0846_Chips_뉴스_컨트롤러_일시정지취소_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 일시정지 취소 - 발화");
 		util.SWFsendPost_playStatus("일시정지 취소",  Chips_001, ServerName, AccessToken, "news");
 		util.SWFsendPost_playStatus("일시정지 취소",  Chips_001, ServerName, AccessToken, "news");
@@ -292,7 +292,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0855")
 	public void TC_0855_Chips_뉴스_종료_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 뉴스 꺼줘 - 발화");
 		util.SWFsendPost_playStatus("뉴스 꺼줘",  Chips_001, ServerName, AccessToken, "news");
 		

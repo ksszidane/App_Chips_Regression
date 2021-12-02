@@ -58,7 +58,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
@@ -88,7 +88,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.switchToContextName("NATIVE_APP");
+	    util.switchToNative();
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -143,7 +143,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		test.log(Status.INFO, "두번째 날씨카드의 이동 후 닫기"); 
 		util.fastSwipe(960, 850, 131, 850);
 		Thread.sleep(500);
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		util.click(By.xpath(xPath.두번쨰카드닫기));
 		
 		test.log(Status.INFO, "미디어 재생 확인"); 

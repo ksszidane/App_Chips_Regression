@@ -55,7 +55,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 		//util.chips_update_check(ServerName);
@@ -85,7 +85,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.switchToContextName("NATIVE_APP");
+	    util.switchToNative();
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -572,7 +572,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0390")
 	public void TC_0390_Chips_라디오_지원채널_KBScoolFM_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, KBS CoolFM 들려줘 - 발화");
 		util.SWFsendPost_playStatus("KBS CoolFM 들려줘", Chips_001, ServerName, AccessToken, "radio");
 		

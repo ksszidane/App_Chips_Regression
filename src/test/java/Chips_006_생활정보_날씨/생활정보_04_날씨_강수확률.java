@@ -56,7 +56,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 	    //util.chips_update_check(ServerName);
@@ -86,7 +86,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.switchToContextName("NATIVE_APP");
+	    util.switchToNative();
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -157,7 +157,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "현재위치 정보값 저장");
 		String str = util.getText(By.id("location"));
 		String[] array = str.split(" ");
@@ -176,7 +176,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		test.log(Status.INFO, "날씨위치정보 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.날씨위치정보_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -196,7 +196,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		test.log(Status.INFO, "두번쨰 날짜 기준 내일 마킹확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.주간날씨내일마킹_web), "내일"));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -227,7 +227,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0742")
 	public void TC_0742_Chips_날씨_다음주날씨_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		//test.log(Status.INFO, "현재위치 정보값 저장");
 		//String str = util.getText(By.id("location"));
 		//String[] array = str.split(" ");
@@ -248,7 +248,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		test.log(Status.INFO, "주간날씨 리스트 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨영역_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -268,7 +268,7 @@ public class 생활정보_04_날씨_강수확률 extends Chips_TestCase {
 		test.log(Status.INFO, "모레날씨 최고온도 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.주간날씨리스트_2st최고기온_web)));
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);

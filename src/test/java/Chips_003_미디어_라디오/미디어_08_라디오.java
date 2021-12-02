@@ -55,7 +55,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		adb.ChipsApp_permission_LOCATION_On(udid);
 		
 		test.log(Status.INFO, "AppActivity으로 화면 확인");
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 	    
 		//test.log(Status.INFO, "Chips 업데이트 팝업 확인");
 		//util.chips_update_check(ServerName);
@@ -85,7 +85,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
         }
 	    
 	    test.log(Status.INFO, "NATIVE로 화면 확인");
-	    util.switchToContextName("NATIVE_APP");
+	    util.switchToNative();
 	    util.ProgressBar_Loading();
 	    
 	    test.log(Status.INFO, "위치 서비스 사용 설정 안내 팝업 확인"); 
@@ -105,7 +105,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0341")
 	public void TC_0341_Chips_라디오_재생_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, SBS파워FM 라디오 들려줘 - 발화");
 		util.SWFsendPost("SBS파워FM 라디오 들려줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
@@ -175,7 +175,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0344")
 	public void TC_0344_Chips_라디오_즐겨찾기있음_재생_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 즐겨찾기 한 라디오 틀어줘  - 발화");
 		util.SWFsendPost("즐겨찾기 한 라디오 틀어줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
@@ -195,7 +195,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0345")
 	public void TC_0345_Chips_라디오_듣고있는라디오_채널_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 이 라디오 이름 알려줘  - 발화");
 		util.SWFsendPost_playStatus("이 라디오 이름 알려줘", Chips_001, ServerName, AccessToken, "radio");
 		
@@ -207,7 +207,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0346")
 	public void TC_0346_Chips_라디오_듣고있는라디오_채널_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 지금 듣고 있는 방송이 뭐야?  - 발화");
 		util.SWFsendPost_playStatus("지금 듣고 있는 방송이 뭐야", Chips_001, ServerName, AccessToken, "radio");
 		
@@ -219,7 +219,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0347")
 	public void TC_0347_Chips_라디오_다음라디오_채널_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 다음 라디오 채널  - 발화");
 		util.SWFsendPost_playStatus("다음 라디오 채널", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
@@ -237,7 +237,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0348")
 	public void TC_0348_Chips_라디오_이전라디오_채널_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 이전 라디오 채널  - 발화");
 		util.SWFsendPost_playStatus("이전 라디오 채널", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
@@ -301,7 +301,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0350")
 	public void TC_0350_Chips_라디오_즐겨찾기2개재생중_다음_확인(Method method) throws Exception {
 		 
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
@@ -361,7 +361,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0351")
 	public void TC_0351_Chips_라디오_종료_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000); 
@@ -395,7 +395,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0352")
 	public void TC_0352_Chips_라디오_종료_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
 	    Thread.sleep(5000); 
@@ -418,7 +418,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("라디오 종료", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "라디오카드 종료되고 메인화면 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature_format")));
@@ -463,7 +463,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0354")
 	public void TC_0354_Chips_라디오_일시정지상태_채널재생_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, SBS파워FM 라디오 들려줘 - 발화");
 		util.SWFsendPost("SBS파워FM 라디오 들려줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
@@ -495,7 +495,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0355")
 	public void TC_0355_Chips_라디오_대기상태_채널목록_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 라디오 종료 - 발화");
 		util.SWFsendPost_playStatus("라디오 꺼줘", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(5000);
@@ -521,7 +521,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0356")
 	public void TC_0356_Chips_라디오_대기상태_채널목록_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, 라디오 리스트 - 발화");
 		util.SWFsendPost("라디오 리스트", Chips_001, ServerName, AccessToken);
 		
@@ -544,7 +544,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0357")
 	public void TC_0357_Chips_라디오_실행중_즐겨찾기_확인(Method method) throws Exception {
 		
-		util.switchToContextName("NATIVE_APP");
+		util.switchToNative();
 		test.log(Status.INFO, "W, SBS파워FM 라디오 들려줘 - 발화");
 		util.SWFsendPost("SBS파워FM 라디오 들려줘", Chips_001, ServerName, AccessToken);
 		
