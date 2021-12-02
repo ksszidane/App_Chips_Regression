@@ -127,7 +127,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		
 		Thread.sleep(3000);
 		test.log(Status.INFO,  "미디어 재생 중 W, 날씨 알려줘 - 발화");
-		util.SWFsendPost("날씨 알려줘", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost_playStatus("날씨 알려줘", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "날씨 카드 노출 확인"); 
