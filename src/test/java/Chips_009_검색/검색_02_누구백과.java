@@ -247,6 +247,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.switchToNative();
 		test.log(Status.INFO, "W, 이순신이 누구야 - 발화");
 		util.SWFsendPost("이순신이 누구야", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("이순신이 누구야", Chips_001, ServerName, AccessToken);
 		
 		util.context("WEBVIEW_com.skt.aidev.nugufriends");
 		util.switchToWindwosURL(xPath.Webview_URL);
