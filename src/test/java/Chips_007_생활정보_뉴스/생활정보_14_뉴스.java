@@ -404,7 +404,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		
 		util.switchToNative();
 		test.log(Status.INFO, "W, 연예 뉴스 알려줘 - 발화");
-		util.SWFsendPost("연예 뉴스 알려줘",  Chips_001, ServerName, AccessToken);
+		util.SWFsendPost_playStatus("연예 뉴스 알려줘",  Chips_001, ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "연예 뉴스 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "연예 관련, 최근 뉴스를 들려드릴게요."));
