@@ -18,16 +18,20 @@
     <parameter name="TestPlace" value="out"/>
     <parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
     <classes>
-      <class name="Chips_001_기본기능.기본기능_03_부가기능">
+      <class name="Chips_007_생활정보_뉴스.생활정보_14_뉴스">
         <methods>
           <include name="setupClass"/>
           <include name="tearDownClass"/>
+          <include name="TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인" invocation-numbers="0"/>
           <include name="BeforeMethod"/>
-          <include name="TC_0145_미디어재생중_infoPlay실행"/>
+          <include name="TC_0818_Chips_뉴스_스포츠특정뉴스_확인" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
+          <include name="TC_0820_Chips_뉴스_미지원채널_확인" invocation-numbers="0"/>
+          <include name="TC_0817_Chips_뉴스_연예특정뉴스_확인" invocation-numbers="0"/>
+          <include name="TC_0819_Chips_뉴스_미지원채널_확인" invocation-numbers="0"/>
+          <include name="TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Chips_001_기본기능.기본기능_03_부가기능 -->
+      </class> <!-- Chips_007_생활정보_뉴스.생활정보_14_뉴스 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->

@@ -643,6 +643,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		test.log(Status.INFO, "지난주 뉴스 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
 		
+		util.switchToNative();
 		test.log(Status.INFO, "뉴스 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "CBS 뉴스"));
 		
@@ -679,6 +680,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, 지난주주말));
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "연예 관련 뉴스를 들려드릴게요."));
 		
+		util.switchToNative();
 		test.log(Status.INFO, "뉴스 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), 지난주주말 + " 연예 뉴스"));
 		

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+<testng-results ignored="0" total="33" passed="33" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-02T11:55:22 KST" name="ExtentReport" finished-at="2021-12-02T11:58:43 KST" duration-ms="200579">
+  <suite started-at="2021-12-02T18:57:38 KST" name="ExtentReport" finished-at="2021-12-02T19:07:22 KST" duration-ms="583951">
     <groups>
     </groups>
-    <test started-at="2021-12-02T11:55:22 KST" name="Test_Project" finished-at="2021-12-02T11:58:43 KST" duration-ms="200579">
-      <class name="Chips_009_검색.검색_02_누구백과">
-        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:55:22 KST" name="setupClass" finished-at="2021-12-02T11:55:36 KST" duration-ms="14075" status="PASS">
+    <test started-at="2021-12-02T18:57:38 KST" name="Test_Project" finished-at="2021-12-02T19:07:22 KST" duration-ms="583951">
+      <class name="Chips_007_생활정보_뉴스.생활정보_14_뉴스">
+        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:57:38 KST" name="setupClass" finished-at="2021-12-02T18:57:53 KST" duration-ms="14799" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,436 +88,1096 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:55:36 KST" name="BeforeMethod" finished-at="2021-12-02T11:55:36 KST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:57:53 KST" name="BeforeMethod" finished-at="2021-12-02T18:57:53 KST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:55:36 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-12-02T11:56:28 KST" duration-ms="51962" status="PASS">
+        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:57:53 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-12-02T18:58:48 KST" duration-ms="55393" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0000_앱실행과AccessToken얻기 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:28 KST" name="AfterMethod" finished-at="2021-12-02T11:56:28 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:58:48 KST" name="AfterMethod" finished-at="2021-12-02T18:58:48 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=검색_02_누구백과.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0000_앱실행과AccessToken얻기 status=SUCCESS method=생활정보_14_뉴스.TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:28 KST" name="BeforeMethod" finished-at="2021-12-02T11:56:28 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:58:48 KST" name="BeforeMethod" finished-at="2021-12-02T18:58:48 KST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0909_Chips_누구백과_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0811_Chips_뉴스_기본설정_CBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0909_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:28 KST" name="TC_0909_Chips_누구백과_도움말_확인" description="칩스 리그레이션 TC : 실행_0909" finished-at="2021-12-02T11:56:37 KST" duration-ms="9196" status="PASS">
+        <test-method signature="TC_0811_Chips_뉴스_기본설정_CBS뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:58:48 KST" name="TC_0811_Chips_뉴스_기본설정_CBS뉴스_확인" description="칩스 리그레이션 TC : 실행_0811" finished-at="2021-12-02T18:59:02 KST" duration-ms="13398" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0909_Chips_누구백과_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0811_Chips_뉴스_기본설정_CBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0909_Chips_누구백과_도움말_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:37 KST" name="AfterMethod" finished-at="2021-12-02T11:56:37 KST" duration-ms="1" status="PASS">
+        </test-method> <!-- TC_0811_Chips_뉴스_기본설정_CBS뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:59:02 KST" name="AfterMethod" finished-at="2021-12-02T18:59:02 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0909_Chips_누구백과_도움말_확인 status=SUCCESS method=검색_02_누구백과.TC_0909_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0811_Chips_뉴스_기본설정_CBS뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0811_Chips_뉴스_기본설정_CBS뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:37 KST" name="BeforeMethod" finished-at="2021-12-02T11:56:37 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:59:02 KST" name="BeforeMethod" finished-at="2021-12-02T18:59:02 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0910_Chips_누구백과_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0812_Chips_뉴스_기본설정_CBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0910_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:37 KST" name="TC_0910_Chips_누구백과_도움말_확인" description="칩스 리그레이션 TC : 실행_0910" finished-at="2021-12-02T11:56:43 KST" duration-ms="5113" status="PASS">
+        <test-method signature="TC_0812_Chips_뉴스_기본설정_CBS뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:59:02 KST" name="TC_0812_Chips_뉴스_기본설정_CBS뉴스_확인" description="칩스 리그레이션 TC : 실행_0812" finished-at="2021-12-02T18:59:14 KST" duration-ms="12237" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0910_Chips_누구백과_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0812_Chips_뉴스_기본설정_CBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0910_Chips_누구백과_도움말_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:43 KST" name="AfterMethod" finished-at="2021-12-02T11:56:43 KST" duration-ms="1" status="PASS">
+        </test-method> <!-- TC_0812_Chips_뉴스_기본설정_CBS뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:59:14 KST" name="AfterMethod" finished-at="2021-12-02T18:59:14 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0910_Chips_누구백과_도움말_확인 status=SUCCESS method=검색_02_누구백과.TC_0910_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0812_Chips_뉴스_기본설정_CBS뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0812_Chips_뉴스_기본설정_CBS뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:43 KST" name="BeforeMethod" finished-at="2021-12-02T11:56:43 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:59:14 KST" name="BeforeMethod" finished-at="2021-12-02T18:59:14 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0911_Chips_누구백과_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0813_Chips_뉴스_KBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0911_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:43 KST" name="TC_0911_Chips_누구백과_도움말_확인" description="칩스 리그레이션 TC : 실행_0911" finished-at="2021-12-02T11:56:48 KST" duration-ms="5104" status="PASS">
+        <test-method signature="TC_0813_Chips_뉴스_KBS뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:59:14 KST" name="TC_0813_Chips_뉴스_KBS뉴스_확인" description="칩스 리그레이션 TC : 실행_0813" finished-at="2021-12-02T18:59:25 KST" duration-ms="11618" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0911_Chips_누구백과_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0813_Chips_뉴스_KBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0911_Chips_누구백과_도움말_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:48 KST" name="AfterMethod" finished-at="2021-12-02T11:56:48 KST" duration-ms="2" status="PASS">
+        </test-method> <!-- TC_0813_Chips_뉴스_KBS뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:59:25 KST" name="AfterMethod" finished-at="2021-12-02T18:59:25 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0911_Chips_누구백과_도움말_확인 status=SUCCESS method=검색_02_누구백과.TC_0911_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0813_Chips_뉴스_KBS뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0813_Chips_뉴스_KBS뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:48 KST" name="BeforeMethod" finished-at="2021-12-02T11:56:48 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:59:25 KST" name="BeforeMethod" finished-at="2021-12-02T18:59:25 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0912_Chips_누구백과_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0814_Chips_뉴스_CBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0912_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:48 KST" name="TC_0912_Chips_누구백과_도움말_확인" description="칩스 리그레이션 TC : 실행_0912" finished-at="2021-12-02T11:56:53 KST" duration-ms="5115" status="PASS">
+        <test-method signature="TC_0814_Chips_뉴스_CBS뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:59:25 KST" name="TC_0814_Chips_뉴스_CBS뉴스_확인" description="칩스 리그레이션 TC : 실행_0814" finished-at="2021-12-02T18:59:37 KST" duration-ms="12005" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0912_Chips_누구백과_도움말_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0814_Chips_뉴스_CBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0912_Chips_누구백과_도움말_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:53 KST" name="AfterMethod" finished-at="2021-12-02T11:56:53 KST" duration-ms="1" status="PASS">
+        </test-method> <!-- TC_0814_Chips_뉴스_CBS뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:59:37 KST" name="AfterMethod" finished-at="2021-12-02T18:59:37 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0912_Chips_누구백과_도움말_확인 status=SUCCESS method=검색_02_누구백과.TC_0912_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0814_Chips_뉴스_CBS뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0814_Chips_뉴스_CBS뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0913_Chips_누구백과_위키에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:53 KST" name="TC_0913_Chips_누구백과_위키에서_확인" description="칩스 리그레이션 TC : 실행_0913" finished-at="2021-12-02T11:57:05 KST" duration-ms="12224" status="PASS">
+        <test-method signature="TC_0815_1_Chips_뉴스_MBC뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:59:37 KST" name="TC_0815_1_Chips_뉴스_MBC뉴스_확인" description="칩스 리그레이션 TC : 실행_0815_1" finished-at="2021-12-02T19:00:04 KST" duration-ms="26943" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0913_Chips_누구백과_위키에서_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0815_1_Chips_뉴스_MBC뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0913_Chips_누구백과_위키에서_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:53 KST" name="BeforeMethod" finished-at="2021-12-02T11:56:53 KST" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_0815_1_Chips_뉴스_MBC뉴스_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T18:59:37 KST" name="BeforeMethod" finished-at="2021-12-02T18:59:37 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0913_Chips_누구백과_위키에서_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0815_1_Chips_뉴스_MBC뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:05 KST" name="AfterMethod" finished-at="2021-12-02T11:57:05 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:00:04 KST" name="AfterMethod" finished-at="2021-12-02T19:00:04 KST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0913_Chips_누구백과_위키에서_확인 status=SUCCESS method=검색_02_누구백과.TC_0913_Chips_누구백과_위키에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0815_1_Chips_뉴스_MBC뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0815_1_Chips_뉴스_MBC뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:05 KST" name="BeforeMethod" finished-at="2021-12-02T11:57:05 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:00:04 KST" name="BeforeMethod" finished-at="2021-12-02T19:00:04 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0914_Chips_누구백과_위키에서_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0815_2_Chips_뉴스_TBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0914_Chips_누구백과_위키에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:05 KST" name="TC_0914_Chips_누구백과_위키에서_확인" description="칩스 리그레이션 TC : 실행_0914" finished-at="2021-12-02T11:57:18 KST" duration-ms="13272" status="PASS">
+        <test-method signature="TC_0815_2_Chips_뉴스_TBS뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:00:04 KST" name="TC_0815_2_Chips_뉴스_TBS뉴스_확인" description="칩스 리그레이션 TC : 실행_0815_2" finished-at="2021-12-02T19:00:19 KST" duration-ms="14698" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0914_Chips_누구백과_위키에서_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0815_2_Chips_뉴스_TBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0914_Chips_누구백과_위키에서_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:18 KST" name="AfterMethod" finished-at="2021-12-02T11:57:18 KST" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_0815_2_Chips_뉴스_TBS뉴스_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:00:19 KST" name="BeforeMethod" finished-at="2021-12-02T19:00:19 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0914_Chips_누구백과_위키에서_확인 status=SUCCESS method=검색_02_누구백과.TC_0914_Chips_누구백과_위키에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:18 KST" name="BeforeMethod" finished-at="2021-12-02T11:57:18 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0915_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0915_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:18 KST" name="TC_0915_Chips_누구백과_누구백과에서_확인" description="칩스 리그레이션 TC : 실행_0915" finished-at="2021-12-02T11:57:29 KST" duration-ms="11213" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:00:19 KST" name="AfterMethod" finished-at="2021-12-02T19:00:19 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0915_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0915_Chips_누구백과_누구백과에서_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:29 KST" name="AfterMethod" finished-at="2021-12-02T11:57:29 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0915_Chips_누구백과_누구백과에서_확인 status=SUCCESS method=검색_02_누구백과.TC_0915_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0815_2_Chips_뉴스_TBS뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0815_2_Chips_뉴스_TBS뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0916_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:29 KST" name="TC_0916_Chips_누구백과_누구백과에서_확인" description="칩스 리그레이션 TC : 실행_0916" finished-at="2021-12-02T11:57:41 KST" duration-ms="11305" status="PASS">
+        <test-method signature="TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:00:19 KST" name="TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인" description="칩스 리그레이션 TC : 실행_0815_2" finished-at="2021-12-02T19:00:38 KST" duration-ms="18505" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0916_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0916_Chips_누구백과_누구백과에서_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:29 KST" name="BeforeMethod" finished-at="2021-12-02T11:57:29 KST" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:00:38 KST" name="AfterMethod" finished-at="2021-12-02T19:00:38 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0916_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[[TestResult name=TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0815_2_Chips_뉴스_연합뉴스뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:00:38 KST" name="BeforeMethod" finished-at="2021-12-02T19:00:38 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0815_Chips_뉴스_SBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:41 KST" name="AfterMethod" finished-at="2021-12-02T11:57:41 KST" duration-ms="1" status="PASS">
+        <test-method signature="TC_0815_Chips_뉴스_SBS뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:00:38 KST" name="TC_0815_Chips_뉴스_SBS뉴스_확인" description="칩스 리그레이션 TC : 실행_0812" finished-at="2021-12-02T19:00:52 KST" duration-ms="13968" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0916_Chips_누구백과_누구백과에서_확인 status=SUCCESS method=검색_02_누구백과.TC_0916_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce] output={null}]]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0815_Chips_뉴스_SBS뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0815_Chips_뉴스_SBS뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:00:52 KST" name="AfterMethod" finished-at="2021-12-02T19:00:52 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0815_Chips_뉴스_SBS뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0815_Chips_뉴스_SBS뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:41 KST" name="BeforeMethod" finished-at="2021-12-02T11:57:41 KST" duration-ms="1" status="PASS">
+        <test-method signature="TC_0816_Chips_뉴스_오늘뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:00:52 KST" name="TC_0816_Chips_뉴스_오늘뉴스_확인" description="칩스 리그레이션 TC : 실행_0816" finished-at="2021-12-02T19:01:04 KST" duration-ms="12033" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0917_Chips_누구백과_호출어생략_키워드_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0816_Chips_뉴스_오늘뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0816_Chips_뉴스_오늘뉴스_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:00:52 KST" name="BeforeMethod" finished-at="2021-12-02T19:00:52 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0816_Chips_뉴스_오늘뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0917_Chips_누구백과_호출어생략_키워드_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:41 KST" name="TC_0917_Chips_누구백과_호출어생략_키워드_확인" description="칩스 리그레이션 TC : 실행_0917" finished-at="2021-12-02T11:57:56 KST" duration-ms="15176" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:01:04 KST" name="AfterMethod" finished-at="2021-12-02T19:01:04 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0917_Chips_누구백과_호출어생략_키워드_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0917_Chips_누구백과_호출어생략_키워드_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:56 KST" name="AfterMethod" finished-at="2021-12-02T11:57:56 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0917_Chips_누구백과_호출어생략_키워드_확인 status=SUCCESS method=검색_02_누구백과.TC_0917_Chips_누구백과_호출어생략_키워드_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0816_Chips_뉴스_오늘뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0816_Chips_뉴스_오늘뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:56 KST" name="BeforeMethod" finished-at="2021-12-02T11:57:56 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:01:04 KST" name="BeforeMethod" finished-at="2021-12-02T19:01:04 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0918_Chips_누구백과_호출어생략_키워드_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0817_Chips_뉴스_연예특정뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0918_Chips_누구백과_호출어생략_키워드_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:56 KST" name="TC_0918_Chips_누구백과_호출어생략_키워드_확인" description="칩스 리그레이션 TC : 실행_0918" finished-at="2021-12-02T11:58:11 KST" duration-ms="15251" status="PASS">
+        <test-method signature="TC_0817_Chips_뉴스_연예특정뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:01:04 KST" name="TC_0817_Chips_뉴스_연예특정뉴스_확인" description="칩스 리그레이션 TC : 실행_0817" finished-at="2021-12-02T19:01:26 KST" duration-ms="22195" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0918_Chips_누구백과_호출어생략_키워드_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0817_Chips_뉴스_연예특정뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0918_Chips_누구백과_호출어생략_키워드_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:11 KST" name="AfterMethod" finished-at="2021-12-02T11:58:11 KST" duration-ms="1" status="PASS">
+        </test-method> <!-- TC_0817_Chips_뉴스_연예특정뉴스_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:01:26 KST" name="BeforeMethod" finished-at="2021-12-02T19:01:26 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_0918_Chips_누구백과_호출어생략_키워드_확인 status=SUCCESS method=검색_02_누구백과.TC_0918_Chips_누구백과_호출어생략_키워드_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:11 KST" name="BeforeMethod" finished-at="2021-12-02T11:58:11 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0919_Chips_누구백과_호출어생략_속성검색_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0818_Chips_뉴스_스포츠특정뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0919_Chips_누구백과_호출어생략_속성검색_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:11 KST" name="TC_0919_Chips_누구백과_호출어생략_속성검색_확인" description="칩스 리그레이션 TC : 실행_0919" finished-at="2021-12-02T11:58:23 KST" duration-ms="11417" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:01:26 KST" name="AfterMethod" finished-at="2021-12-02T19:01:26 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0919_Chips_누구백과_호출어생략_속성검색_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0919_Chips_누구백과_호출어생략_속성검색_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:23 KST" name="AfterMethod" finished-at="2021-12-02T11:58:23 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0919_Chips_누구백과_호출어생략_속성검색_확인 status=SUCCESS method=검색_02_누구백과.TC_0919_Chips_누구백과_호출어생략_속성검색_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0817_Chips_뉴스_연예특정뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0817_Chips_뉴스_연예특정뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:23 KST" name="BeforeMethod" finished-at="2021-12-02T11:58:23 KST" duration-ms="1" status="PASS">
+        <test-method signature="TC_0818_Chips_뉴스_스포츠특정뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:01:26 KST" name="TC_0818_Chips_뉴스_스포츠특정뉴스_확인" description="칩스 리그레이션 TC : 실행_0818" finished-at="2021-12-02T19:01:43 KST" duration-ms="16715" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0920_Chips_누구백과_호출어생략_속성검색_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0818_Chips_뉴스_스포츠특정뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0818_Chips_뉴스_스포츠특정뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:01:43 KST" name="AfterMethod" finished-at="2021-12-02T19:01:43 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0818_Chips_뉴스_스포츠특정뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0818_Chips_뉴스_스포츠특정뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0819_Chips_뉴스_미지원채널_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:01:43 KST" name="TC_0819_Chips_뉴스_미지원채널_확인" description="칩스 리그레이션 TC : 실행_0819" finished-at="2021-12-02T19:01:52 KST" duration-ms="9224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0819_Chips_뉴스_미지원채널_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0819_Chips_뉴스_미지원채널_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:01:43 KST" name="BeforeMethod" finished-at="2021-12-02T19:01:43 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0819_Chips_뉴스_미지원채널_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0920_Chips_누구백과_호출어생략_속성검색_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:23 KST" name="TC_0920_Chips_누구백과_호출어생략_속성검색_확인" description="칩스 리그레이션 TC : 실행_0920" finished-at="2021-12-02T11:58:38 KST" duration-ms="15306" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:01:52 KST" name="AfterMethod" finished-at="2021-12-02T19:01:52 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0920_Chips_누구백과_호출어생략_속성검색_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0920_Chips_누구백과_호출어생략_속성검색_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:38 KST" name="AfterMethod" finished-at="2021-12-02T11:58:38 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_0920_Chips_누구백과_호출어생략_속성검색_확인 status=SUCCESS method=검색_02_누구백과.TC_0920_Chips_누구백과_호출어생략_속성검색_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce] output={null}]]]>
+                <![CDATA[[TestResult name=TC_0819_Chips_뉴스_미지원채널_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0819_Chips_뉴스_미지원채널_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:38 KST" name="tearDownClass" finished-at="2021-12-02T11:58:43 KST" duration-ms="4767" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:01:52 KST" name="BeforeMethod" finished-at="2021-12-02T19:01:52 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0820_Chips_뉴스_미지원채널_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0820_Chips_뉴스_미지원채널_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:01:52 KST" name="TC_0820_Chips_뉴스_미지원채널_확인" description="칩스 리그레이션 TC : 실행_0820" finished-at="2021-12-02T19:02:05 KST" duration-ms="13360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0820_Chips_뉴스_미지원채널_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0820_Chips_뉴스_미지원채널_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:02:05 KST" name="AfterMethod" finished-at="2021-12-02T19:02:05 KST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0820_Chips_뉴스_미지원채널_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0820_Chips_뉴스_미지원채널_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:02:05 KST" name="BeforeMethod" finished-at="2021-12-02T19:02:05 KST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:02:05 KST" name="TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인" description="칩스 리그레이션 TC : 실행_0821" finished-at="2021-12-02T19:02:32 KST" duration-ms="26697" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:02:32 KST" name="AfterMethod" finished-at="2021-12-02T19:02:32 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:02:32 KST" name="BeforeMethod" finished-at="2021-12-02T19:02:32 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:02:32 KST" name="TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인" description="칩스 리그레이션 TC : 실행_0822" finished-at="2021-12-02T19:02:51 KST" duration-ms="19554" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:02:51 KST" name="AfterMethod" finished-at="2021-12-02T19:02:51 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:02:51 KST" name="TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인" description="칩스 리그레이션 TC : 실행_0823" finished-at="2021-12-02T19:03:12 KST" duration-ms="20720" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:02:51 KST" name="BeforeMethod" finished-at="2021-12-02T19:02:51 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:03:12 KST" name="AfterMethod" finished-at="2021-12-02T19:03:12 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0823_Chips_뉴스_컴퓨터_키워드뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0824_Chips_뉴스_NUGU토픽_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:03:12 KST" name="TC_0824_Chips_뉴스_NUGU토픽_확인" description="칩스 리그레이션 TC : 실행_0824" finished-at="2021-12-02T19:03:31 KST" duration-ms="19066" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0824_Chips_뉴스_NUGU토픽_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0824_Chips_뉴스_NUGU토픽_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:03:12 KST" name="BeforeMethod" finished-at="2021-12-02T19:03:12 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0824_Chips_뉴스_NUGU토픽_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:03:31 KST" name="AfterMethod" finished-at="2021-12-02T19:03:31 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0824_Chips_뉴스_NUGU토픽_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0824_Chips_뉴스_NUGU토픽_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:03:31 KST" name="BeforeMethod" finished-at="2021-12-02T19:03:31 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0825_Chips_뉴스_키워드뉴스없음_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0825_Chips_뉴스_키워드뉴스없음_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:03:31 KST" name="TC_0825_Chips_뉴스_키워드뉴스없음_확인" description="칩스 리그레이션 TC : 실행_0825" finished-at="2021-12-02T19:03:36 KST" duration-ms="5126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0825_Chips_뉴스_키워드뉴스없음_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0825_Chips_뉴스_키워드뉴스없음_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:03:36 KST" name="AfterMethod" finished-at="2021-12-02T19:03:36 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0825_Chips_뉴스_키워드뉴스없음_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0825_Chips_뉴스_키워드뉴스없음_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:03:36 KST" name="BeforeMethod" finished-at="2021-12-02T19:03:36 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0826_Chips_뉴스_지난주뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0826_Chips_뉴스_지난주뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:03:36 KST" name="TC_0826_Chips_뉴스_지난주뉴스_확인" description="칩스 리그레이션 TC : 실행_0826" finished-at="2021-12-02T19:03:56 KST" duration-ms="19745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0826_Chips_뉴스_지난주뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0826_Chips_뉴스_지난주뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:03:56 KST" name="AfterMethod" finished-at="2021-12-02T19:03:56 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0826_Chips_뉴스_지난주뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0826_Chips_뉴스_지난주뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:03:56 KST" name="BeforeMethod" finished-at="2021-12-02T19:03:56 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0827_Chips_뉴스_지난주연예뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0827_Chips_뉴스_지난주연예뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:03:56 KST" name="TC_0827_Chips_뉴스_지난주연예뉴스_확인" description="칩스 리그레이션 TC : 실행_0827" finished-at="2021-12-02T19:04:12 KST" duration-ms="15968" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0827_Chips_뉴스_지난주연예뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0827_Chips_뉴스_지난주연예뉴스_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:04:12 KST" name="BeforeMethod" finished-at="2021-12-02T19:04:12 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:04:12 KST" name="AfterMethod" finished-at="2021-12-02T19:04:12 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0827_Chips_뉴스_지난주연예뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0827_Chips_뉴스_지난주연예뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:04:12 KST" name="TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인" description="칩스 리그레이션 TC : 실행_0828" finished-at="2021-12-02T19:04:31 KST" duration-ms="19313" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:04:31 KST" name="AfterMethod" finished-at="2021-12-02T19:04:31 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:04:31 KST" name="BeforeMethod" finished-at="2021-12-02T19:04:31 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:04:31 KST" name="TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인" description="칩스 리그레이션 TC : 실행_0829" finished-at="2021-12-02T19:04:52 KST" duration-ms="20300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:04:52 KST" name="AfterMethod" finished-at="2021-12-02T19:04:52 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0829_Chips_뉴스_지난주SK텔레콤뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:04:52 KST" name="BeforeMethod" finished-at="2021-12-02T19:04:52 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0830_Chips_뉴스_지난달뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0830_Chips_뉴스_지난달뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:04:52 KST" name="TC_0830_Chips_뉴스_지난달뉴스_확인" description="칩스 리그레이션 TC : 실행_0830" finished-at="2021-12-02T19:05:10 KST" duration-ms="18520" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0830_Chips_뉴스_지난달뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0830_Chips_뉴스_지난달뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:05:10 KST" name="AfterMethod" finished-at="2021-12-02T19:05:10 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0830_Chips_뉴스_지난달뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0830_Chips_뉴스_지난달뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0831_Chips_뉴스_지난달스포츠뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:05:10 KST" name="TC_0831_Chips_뉴스_지난달스포츠뉴스_확인" description="칩스 리그레이션 TC : 실행_0831" finished-at="2021-12-02T19:05:34 KST" duration-ms="23660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0831_Chips_뉴스_지난달스포츠뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0831_Chips_뉴스_지난달스포츠뉴스_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:05:10 KST" name="BeforeMethod" finished-at="2021-12-02T19:05:10 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0831_Chips_뉴스_지난달스포츠뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:05:34 KST" name="AfterMethod" finished-at="2021-12-02T19:05:34 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0831_Chips_뉴스_지난달스포츠뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0831_Chips_뉴스_지난달스포츠뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:05:34 KST" name="BeforeMethod" finished-at="2021-12-02T19:05:34 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0831_Chips_뉴스_지난달연예뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0831_Chips_뉴스_지난달연예뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:05:34 KST" name="TC_0831_Chips_뉴스_지난달연예뉴스_확인" description="칩스 리그레이션 TC : 실행_0831" finished-at="2021-12-02T19:05:49 KST" duration-ms="15350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0831_Chips_뉴스_지난달연예뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0831_Chips_뉴스_지난달연예뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:05:49 KST" name="AfterMethod" finished-at="2021-12-02T19:05:49 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0831_Chips_뉴스_지난달연예뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0831_Chips_뉴스_지난달연예뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:05:49 KST" name="TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인" description="칩스 리그레이션 TC : 실행_0832" finished-at="2021-12-02T19:06:09 KST" duration-ms="19615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:05:49 KST" name="BeforeMethod" finished-at="2021-12-02T19:05:49 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:09 KST" name="AfterMethod" finished-at="2021-12-02T19:06:09 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0832_Chips_뉴스_지난달SK텔레콤뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:09 KST" name="BeforeMethod" finished-at="2021-12-02T19:06:09 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0834_Chips_뉴스_어제뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0834_Chips_뉴스_어제뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:09 KST" name="TC_0834_Chips_뉴스_어제뉴스_확인" description="칩스 리그레이션 TC : 실행_0834" finished-at="2021-12-02T19:06:25 KST" duration-ms="15996" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0834_Chips_뉴스_어제뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0834_Chips_뉴스_어제뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:25 KST" name="AfterMethod" finished-at="2021-12-02T19:06:25 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0834_Chips_뉴스_어제뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0834_Chips_뉴스_어제뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0835_Chips_뉴스_그제뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:25 KST" name="TC_0835_Chips_뉴스_그제뉴스_확인" description="칩스 리그레이션 TC : 실행_0835" finished-at="2021-12-02T19:06:32 KST" duration-ms="6858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0835_Chips_뉴스_그제뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0835_Chips_뉴스_그제뉴스_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:25 KST" name="BeforeMethod" finished-at="2021-12-02T19:06:25 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0835_Chips_뉴스_그제뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:32 KST" name="BeforeMethod" finished-at="2021-12-02T19:06:32 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0836_Chips_뉴스_그제스포츠뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0836_Chips_뉴스_그제스포츠뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:32 KST" name="TC_0836_Chips_뉴스_그제스포츠뉴스_확인" description="칩스 리그레이션 TC : 실행_0836" finished-at="2021-12-02T19:06:52 KST" duration-ms="20381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0836_Chips_뉴스_그제스포츠뉴스_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0836_Chips_뉴스_그제스포츠뉴스_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:32 KST" name="AfterMethod" finished-at="2021-12-02T19:06:32 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0835_Chips_뉴스_그제뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0835_Chips_뉴스_그제뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:52 KST" name="AfterMethod" finished-at="2021-12-02T19:06:52 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0836_Chips_뉴스_그제스포츠뉴스_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0836_Chips_뉴스_그제스포츠뉴스_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:52 KST" name="TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인" description="칩스 리그레이션 TC : 실행_0837" finished-at="2021-12-02T19:06:59 KST" duration-ms="7389" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인 -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:52 KST" name="BeforeMethod" finished-at="2021-12-02T19:06:52 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:59 KST" name="AfterMethod" finished-at="2021-12-02T19:06:59 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:59 KST" name="BeforeMethod" finished-at="2021-12-02T19:06:59 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0838_Chips_뉴스_미지원기간뉴스_내일_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0838_Chips_뉴스_미지원기간뉴스_내일_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:06:59 KST" name="TC_0838_Chips_뉴스_미지원기간뉴스_내일_확인" description="칩스 리그레이션 TC : 실행_0838" finished-at="2021-12-02T19:07:10 KST" duration-ms="10993" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0838_Chips_뉴스_미지원기간뉴스_내일_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0838_Chips_뉴스_미지원기간뉴스_내일_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:07:10 KST" name="AfterMethod" finished-at="2021-12-02T19:07:10 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0838_Chips_뉴스_미지원기간뉴스_내일_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0838_Chips_뉴스_미지원기간뉴스_내일_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:07:10 KST" name="BeforeMethod" finished-at="2021-12-02T19:07:10 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0839_Chips_뉴스_미지원기간뉴스_모레_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0839_Chips_뉴스_미지원기간뉴스_모레_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:07:10 KST" name="TC_0839_Chips_뉴스_미지원기간뉴스_모레_확인" description="칩스 리그레이션 TC : 실행_0839" finished-at="2021-12-02T19:07:17 KST" duration-ms="6864" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_007_생활정보_뉴스.생활정보_14_뉴스.TC_0839_Chips_뉴스_미지원기간뉴스_모레_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0839_Chips_뉴스_미지원기간뉴스_모레_확인 -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:07:17 KST" name="AfterMethod" finished-at="2021-12-02T19:07:17 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_0839_Chips_뉴스_미지원기간뉴스_모레_확인 status=SUCCESS method=생활정보_14_뉴스.TC_0839_Chips_뉴스_미지원기간뉴스_모레_확인(java.lang.reflect.Method)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_007_생활정보_뉴스.생활정보_14_뉴스@730d2164]" started-at="2021-12-02T19:07:17 KST" name="tearDownClass" finished-at="2021-12-02T19:07:22 KST" duration-ms="4613" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -583,7 +1243,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- Chips_009_검색.검색_02_누구백과 -->
+      </class> <!-- Chips_007_생활정보_뉴스.생활정보_14_뉴스 -->
     </test> <!-- Test_Project -->
   </suite> <!-- ExtentReport -->
 </testng-results>
