@@ -638,7 +638,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	public void TC_0826_Chips_뉴스_지난주뉴스_확인(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, 지난 주 뉴스 틀어줘 - 발화");
-		util.SWFsendPost("지난 주 뉴스 틀어줘",  Chips_001, ServerName, AccessToken);
+		util.SWFsendPost_playStatus("지난 주 뉴스 틀어줘",  Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "지난주 뉴스 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
@@ -672,7 +672,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	public void TC_0827_Chips_뉴스_지난주연예뉴스_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 지난 주 연예 뉴스 틀어줘 - 발화");
-		util.SWFsendPost("지난 주 연예 뉴스 틀어줘",  Chips_001, ServerName, AccessToken);
+		util.SWFsendPost_playStatus("지난 주 연예 뉴스 틀어줘",  Chips_001, ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "연예 뉴스 재생 TTS 확인");
 		String 지난주주말 = util.getLastWeekSunday();
@@ -706,7 +706,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	public void TC_0828_Chips_뉴스_N월첫째주스포츠뉴스_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 1월 첫째주 스포츠 뉴스 틀어줘 - 발화");
-		util.SWFsendPost("1월 첫째주 스포츠 뉴스 틀어줘",  Chips_001, ServerName, AccessToken);
+		util.SWFsendPost_playStatus("1월 첫째주 스포츠 뉴스 틀어줘",  Chips_001, ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "스포츠 뉴스"));
@@ -771,7 +771,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	public void TC_0830_Chips_뉴스_지난달뉴스_확인(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, 지난달 뉴스 틀어줘 - 발화");
-		util.SWFsendPost("지난달 뉴스 틀어줘",  Chips_001, ServerName, AccessToken);
+		util.SWFsendPost_playStatus("지난달 뉴스 틀어줘",  Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "지난달 뉴스 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
@@ -900,7 +900,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	public void TC_0834_Chips_뉴스_어제뉴스_확인(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, 어제 뉴스 틀어줘 - 발화");
-		util.SWFsendPost("어제 뉴스 틀어줘",  Chips_001, ServerName, AccessToken);
+		util.SWFsendPost_playStatus("어제 뉴스 틀어줘",  Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "어제 뉴스 TTS 확인");;
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
@@ -999,7 +999,7 @@ public class 생활정보_14_뉴스 extends Chips_TestCase {
 	public void TC_0837_Chips_뉴스_미지원기간뉴스_과거특정일_확인(Method method) throws Exception {
 
 		test.log(Status.INFO, "W, 2018년 1월 1일 뉴스 틀어줘 - 발화");
-		util.SWFsendPost("2018년 1월 1일 뉴스 틀어줘",  Chips_001, ServerName, AccessToken);
+		util.SWFsendPost_playStatus("2018년 1월 1일 뉴스 틀어줘",  Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "2018년 1월 1일 뉴스 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근 업데이트된 뉴스를 제공하고 있어요. 최신 CBS 주요 뉴스를 들려드릴게요."));
