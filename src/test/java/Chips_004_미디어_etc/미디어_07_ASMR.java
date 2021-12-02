@@ -252,6 +252,10 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		test.log(Status.INFO, "W, 다음거 - 발화");
 		util.SWFsendPost_playStatus("다음 곡", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(2000);
+		
+		test.log(Status.INFO, "W, 다음거 - 발화");
+		util.SWFsendPost_playStatus("다음 곡", Chips_001, ServerName, AccessToken, "music");
+		Thread.sleep(2000);
 
 		test.log(Status.INFO, "곡명 확인");
 		String 다음곡명 = util.getText(By.xpath(xPath.FLO제목));
@@ -264,6 +268,10 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		
 		test.log(Status.INFO, "곡명 확인");
 		String 이전곡명 = util.getText(By.xpath(xPath.FLO제목));
+		
+		test.log(Status.INFO, "W, 이전거 - 발화");
+		util.SWFsendPost_playStatus("이전 곡", Chips_001, ServerName, AccessToken, "music");
+		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "W, 이전거 - 발화");
 		util.SWFsendPost_playStatus("이전 곡", Chips_001, ServerName, AccessToken, "music");

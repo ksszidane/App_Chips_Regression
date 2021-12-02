@@ -105,8 +105,8 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0401")
 	public void TC_0401_Chips_라디오_재생_확인(Method method) throws Exception {
 		 
-		test.log(Status.INFO, "W, SBS파워FM 라디오 틀어줘 - 발화");
-		util.SWFsendPost("SBS파워FM 라디오 틀어줘", Chips_001, ServerName, AccessToken);
+		test.log(Status.INFO, "W, SBS 파워FM 라디오 틀어줘 - 발화");
+		util.SWFsendPost("SBS 파워FM 라디오 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 파워FM 라디오"));

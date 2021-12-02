@@ -450,8 +450,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.sbs파워FM_재생_web)));
 		
-		test.log(Status.INFO, "W, 라디오 틀어줘 - 발화");
-		util.SWFsendPost_playStatus("라디오 틀어줘", Chips_001, ServerName, AccessToken, "radio");
+		test.log(Status.INFO, "W, 라디오 다시 틀어줘 - 발화");
+		util.SWFsendPost_playStatus("라디오 다시 틀어줘", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "플레이 중 일시정지 버튼 활성화 확인 ");
@@ -465,7 +465,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		util.switchToNative();
 		test.log(Status.INFO, "W, SBS파워FM 라디오 들려줘 - 발화");
-		util.SWFsendPost("SBS파워FM 라디오 들려줘", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("SBS 파워FM 라디오 들려줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -473,6 +473,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
 		test.log(Status.INFO, "W, 일시정지 - 발화");
+		util.SWFsendPost_playStatus("일시정지", Chips_001, ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("일시정지", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(5000);
 		
@@ -497,6 +498,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		util.switchToNative();
 		test.log(Status.INFO, "W, 라디오 종료 - 발화");
+		util.SWFsendPost_playStatus("라디오 꺼줘", Chips_001, ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("라디오 꺼줘", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(5000);
 		
@@ -524,10 +526,10 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		util.switchToNative();
 		test.log(Status.INFO, "W, 라디오 리스트 - 발화");
 		util.SWFsendPost("라디오 리스트", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("라디오 리스트", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "채널 안내 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "8개 방송국, 27개의 채널이 있습니다. SBS, KBS, CBS, TBS, 아리랑, 불교방송, 극동방송, TBN 라디오를 들을 수 있어요."));
-		
 		
 		test.log(Status.INFO, "라디오 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.라디오타이틀), "라디오"));

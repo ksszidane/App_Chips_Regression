@@ -18,20 +18,44 @@
     <parameter name="TestPlace" value="out"/>
     <parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
     <classes>
-      <class name="Chips_007_생활정보_뉴스.생활정보_14_뉴스">
+      <class name="Chips_003_미디어_라디오.미디어_09_라디오_채널확인">
         <methods>
+          <include name="TC_0389_Chips_라디오_지원채널_KBS클래식FM_확인"/>
+          <include name="TC_0383_Chips_라디오_지원채널_CBS표준FM_확인"/>
+          <include name="tearDownClass"/>
+          <include name="TC_0382_Chips_라디오_지원채널_CBS음악FM_확인"/>
+          <include name="TC_0391_Chips_라디오_지원채널_KBSHappyFM_확인"/>
+          <include name="TC_0376_Chips_라디오_지원채널_TBN제주교통방송_확인" invocation-numbers="0"/>
+          <include name="TC_0392_Chips_라디오_지원채널_KBSworld_확인"/>
+          <include name="AfterMethod"/>
+          <include name="TC_0388_Chips_라디오_지원채널_KBS3라디오_확인"/>
+          <include name="TC_0380_Chips_라디오_지원채널_불교방송_확인"/>
+          <include name="TC_0384_Chips_라디오_지원채널_CBS표준FM_확인"/>
+          <include name="TC_0386_Chips_라디오_지원채널_KBS1라디오_확인"/>
+          <include name="TC_0393_Chips_라디오_지원채널_KBS한민족방송_확인"/>
+          <include name="setupClass"/>
+          <include name="BeforeMethod"/>
+          <include name="TC_0399_Chips_라디오_미지원채널_YTN뉴스FM_확인"/>
+          <include name="TC_0396_Chips_라디오_미지원채널_동양방송_확인"/>
+          <include name="TC_0378_Chips_라디오_지원채널_아리랑FM_확인"/>
+          <include name="TC_0379_Chips_라디오_지원채널_극동방송_확인"/>
+          <include name="TC_0381_Chips_라디오_지원채널_BBSFM_확인"/>
+          <include name="TC_0387_Chips_라디오_지원채널_KBS2라디오_확인"/>
+          <include name="TC_0398_Chips_라디오_미지원채널_가톨릭평화방송_확인"/>
+          <include name="TC_0390_Chips_라디오_지원채널_KBScoolFM_확인"/>
+        </methods>
+      </class> <!-- Chips_003_미디어_라디오.미디어_09_라디오_채널확인 -->
+      <class name="Chips_003_미디어_라디오.미디어_10_라디오_재생컨트롤러">
+        <methods>
+          <include name="TC_0411_Chips_라디오_이전라디오방송_확인" invocation-numbers="0"/>
           <include name="setupClass"/>
           <include name="tearDownClass"/>
-          <include name="TC_0821_Chips_뉴스_SK텔레콤_키워드뉴스_확인" invocation-numbers="0"/>
+          <include name="TC_0409_Chips_라디오_이전_확인" invocation-numbers="0"/>
           <include name="BeforeMethod"/>
-          <include name="TC_0818_Chips_뉴스_스포츠특정뉴스_확인" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-          <include name="TC_0820_Chips_뉴스_미지원채널_확인" invocation-numbers="0"/>
-          <include name="TC_0817_Chips_뉴스_연예특정뉴스_확인" invocation-numbers="0"/>
-          <include name="TC_0819_Chips_뉴스_미지원채널_확인" invocation-numbers="0"/>
-          <include name="TC_0822_Chips_뉴스_세종병원화재_키워드뉴스_확인" invocation-numbers="0"/>
+          <include name="TC_0410_Chips_라디오_다음채널_확인" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Chips_007_생활정보_뉴스.생활정보_14_뉴스 -->
+      </class> <!-- Chips_003_미디어_라디오.미디어_10_라디오_재생컨트롤러 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->
