@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-02T11:28:00 KST" name="ExtentReport" finished-at="2021-12-02T11:31:53 KST" duration-ms="233041">
+  <suite started-at="2021-12-02T11:55:22 KST" name="ExtentReport" finished-at="2021-12-02T11:58:43 KST" duration-ms="200579">
     <groups>
     </groups>
-    <test started-at="2021-12-02T11:28:00 KST" name="Test_Project" finished-at="2021-12-02T11:31:53 KST" duration-ms="233041">
+    <test started-at="2021-12-02T11:55:22 KST" name="Test_Project" finished-at="2021-12-02T11:58:43 KST" duration-ms="200579">
       <class name="Chips_009_검색.검색_02_누구백과">
-        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:28:00 KST" name="setupClass" finished-at="2021-12-02T11:28:14 KST" duration-ms="14126" status="PASS">
+        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:55:22 KST" name="setupClass" finished-at="2021-12-02T11:55:36 KST" duration-ms="14075" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,7 +88,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:28:14 KST" name="BeforeMethod" finished-at="2021-12-02T11:28:14 KST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:55:36 KST" name="BeforeMethod" finished-at="2021-12-02T11:55:36 KST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:28:14 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-12-02T11:29:06 KST" duration-ms="52436" status="PASS">
+        <test-method signature="TC_0000_앱실행과AccessToken얻기(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:55:36 KST" name="TC_0000_앱실행과AccessToken얻기" description="칩스 리그레이션 TC : 실행_0000" finished-at="2021-12-02T11:56:28 KST" duration-ms="51962" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,7 +110,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0000_앱실행과AccessToken얻기 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:06 KST" name="AfterMethod" finished-at="2021-12-02T11:29:06 KST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:28 KST" name="AfterMethod" finished-at="2021-12-02T11:56:28 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,7 +121,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:06 KST" name="BeforeMethod" finished-at="2021-12-02T11:29:06 KST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:28 KST" name="BeforeMethod" finished-at="2021-12-02T11:56:28 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -132,7 +132,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0909_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:06 KST" name="TC_0909_Chips_누구백과_도움말_확인" description="칩스 리그레이션 TC : 실행_0909" finished-at="2021-12-02T11:29:15 KST" duration-ms="9252" status="PASS">
+        <test-method signature="TC_0909_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:28 KST" name="TC_0909_Chips_누구백과_도움말_확인" description="칩스 리그레이션 TC : 실행_0909" finished-at="2021-12-02T11:56:37 KST" duration-ms="9196" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,7 +143,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0909_Chips_누구백과_도움말_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:15 KST" name="AfterMethod" finished-at="2021-12-02T11:29:15 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:37 KST" name="AfterMethod" finished-at="2021-12-02T11:56:37 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -154,7 +154,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:15 KST" name="BeforeMethod" finished-at="2021-12-02T11:29:15 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:37 KST" name="BeforeMethod" finished-at="2021-12-02T11:56:37 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +165,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0910_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:15 KST" name="TC_0910_Chips_누구백과_도움말_확인" description="칩스 리그레이션 TC : 실행_0910" finished-at="2021-12-02T11:29:21 KST" duration-ms="5106" status="PASS">
+        <test-method signature="TC_0910_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:37 KST" name="TC_0910_Chips_누구백과_도움말_확인" description="칩스 리그레이션 TC : 실행_0910" finished-at="2021-12-02T11:56:43 KST" duration-ms="5113" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -176,7 +176,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0910_Chips_누구백과_도움말_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:21 KST" name="AfterMethod" finished-at="2021-12-02T11:29:21 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:43 KST" name="AfterMethod" finished-at="2021-12-02T11:56:43 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -187,7 +187,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:21 KST" name="BeforeMethod" finished-at="2021-12-02T11:29:21 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:43 KST" name="BeforeMethod" finished-at="2021-12-02T11:56:43 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -198,7 +198,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0911_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:21 KST" name="TC_0911_Chips_누구백과_도움말_확인" description="칩스 리그레이션 TC : 실행_0911" finished-at="2021-12-02T11:29:26 KST" duration-ms="5097" status="PASS">
+        <test-method signature="TC_0911_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:43 KST" name="TC_0911_Chips_누구백과_도움말_확인" description="칩스 리그레이션 TC : 실행_0911" finished-at="2021-12-02T11:56:48 KST" duration-ms="5104" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -209,7 +209,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0911_Chips_누구백과_도움말_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:26 KST" name="AfterMethod" finished-at="2021-12-02T11:29:26 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:48 KST" name="AfterMethod" finished-at="2021-12-02T11:56:48 KST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -220,7 +220,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:26 KST" name="BeforeMethod" finished-at="2021-12-02T11:29:26 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:48 KST" name="BeforeMethod" finished-at="2021-12-02T11:56:48 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -231,7 +231,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0912_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:26 KST" name="TC_0912_Chips_누구백과_도움말_확인" description="칩스 리그레이션 TC : 실행_0912" finished-at="2021-12-02T11:29:31 KST" duration-ms="5104" status="PASS">
+        <test-method signature="TC_0912_Chips_누구백과_도움말_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:48 KST" name="TC_0912_Chips_누구백과_도움말_확인" description="칩스 리그레이션 TC : 실행_0912" finished-at="2021-12-02T11:56:53 KST" duration-ms="5115" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -242,7 +242,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0912_Chips_누구백과_도움말_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:31 KST" name="AfterMethod" finished-at="2021-12-02T11:29:31 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:53 KST" name="AfterMethod" finished-at="2021-12-02T11:56:53 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -253,18 +253,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:31 KST" name="BeforeMethod" finished-at="2021-12-02T11:29:31 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0913_Chips_누구백과_위키에서_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0913_Chips_누구백과_위키에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:31 KST" name="TC_0913_Chips_누구백과_위키에서_확인" description="칩스 리그레이션 TC : 실행_0913" finished-at="2021-12-02T11:29:48 KST" duration-ms="17483" status="PASS">
+        <test-method signature="TC_0913_Chips_누구백과_위키에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:53 KST" name="TC_0913_Chips_누구백과_위키에서_확인" description="칩스 리그레이션 TC : 실행_0913" finished-at="2021-12-02T11:57:05 KST" duration-ms="12224" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -275,7 +264,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0913_Chips_누구백과_위키에서_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:48 KST" name="AfterMethod" finished-at="2021-12-02T11:29:48 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:56:53 KST" name="BeforeMethod" finished-at="2021-12-02T11:56:53 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0913_Chips_누구백과_위키에서_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:05 KST" name="AfterMethod" finished-at="2021-12-02T11:57:05 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -286,7 +286,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:48 KST" name="BeforeMethod" finished-at="2021-12-02T11:29:48 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:05 KST" name="BeforeMethod" finished-at="2021-12-02T11:57:05 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -297,7 +297,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0914_Chips_누구백과_위키에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:29:48 KST" name="TC_0914_Chips_누구백과_위키에서_확인" description="칩스 리그레이션 TC : 실행_0914" finished-at="2021-12-02T11:30:07 KST" duration-ms="18766" status="PASS">
+        <test-method signature="TC_0914_Chips_누구백과_위키에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:05 KST" name="TC_0914_Chips_누구백과_위키에서_확인" description="칩스 리그레이션 TC : 실행_0914" finished-at="2021-12-02T11:57:18 KST" duration-ms="13272" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -308,7 +308,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0914_Chips_누구백과_위키에서_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:30:07 KST" name="AfterMethod" finished-at="2021-12-02T11:30:07 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:18 KST" name="AfterMethod" finished-at="2021-12-02T11:57:18 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -319,7 +319,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0915_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:30:07 KST" name="TC_0915_Chips_누구백과_누구백과에서_확인" description="칩스 리그레이션 TC : 실행_0915" finished-at="2021-12-02T11:30:24 KST" duration-ms="16658" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:18 KST" name="BeforeMethod" finished-at="2021-12-02T11:57:18 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0915_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0915_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:18 KST" name="TC_0915_Chips_누구백과_누구백과에서_확인" description="칩스 리그레이션 TC : 실행_0915" finished-at="2021-12-02T11:57:29 KST" duration-ms="11213" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -330,29 +341,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0915_Chips_누구백과_누구백과에서_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:30:07 KST" name="BeforeMethod" finished-at="2021-12-02T11:30:07 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0915_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:30:24 KST" name="BeforeMethod" finished-at="2021-12-02T11:30:24 KST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0916_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:30:24 KST" name="AfterMethod" finished-at="2021-12-02T11:30:24 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:29 KST" name="AfterMethod" finished-at="2021-12-02T11:57:29 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -363,7 +352,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0916_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:30:24 KST" name="TC_0916_Chips_누구백과_누구백과에서_확인" description="칩스 리그레이션 TC : 실행_0916" finished-at="2021-12-02T11:30:40 KST" duration-ms="16695" status="PASS">
+        <test-method signature="TC_0916_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:29 KST" name="TC_0916_Chips_누구백과_누구백과에서_확인" description="칩스 리그레이션 TC : 실행_0916" finished-at="2021-12-02T11:57:41 KST" duration-ms="11305" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -374,7 +363,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0916_Chips_누구백과_누구백과에서_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:30:40 KST" name="AfterMethod" finished-at="2021-12-02T11:30:40 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:29 KST" name="BeforeMethod" finished-at="2021-12-02T11:57:29 KST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0916_Chips_누구백과_누구백과에서_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:41 KST" name="AfterMethod" finished-at="2021-12-02T11:57:41 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -385,7 +385,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method signature="TC_0917_Chips_누구백과_호출어생략_키워드_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:30:40 KST" name="TC_0917_Chips_누구백과_호출어생략_키워드_확인" description="칩스 리그레이션 TC : 실행_0917" finished-at="2021-12-02T11:30:57 KST" duration-ms="16865" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:41 KST" name="BeforeMethod" finished-at="2021-12-02T11:57:41 KST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0917_Chips_누구백과_호출어생략_키워드_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_0917_Chips_누구백과_호출어생략_키워드_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:41 KST" name="TC_0917_Chips_누구백과_호출어생략_키워드_확인" description="칩스 리그레이션 TC : 실행_0917" finished-at="2021-12-02T11:57:56 KST" duration-ms="15176" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -396,18 +407,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0917_Chips_누구백과_호출어생략_키워드_확인 -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:30:40 KST" name="BeforeMethod" finished-at="2021-12-02T11:30:40 KST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void Chips_009_검색.검색_02_누구백과.TC_0917_Chips_누구백과_호출어생략_키워드_확인(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:30:57 KST" name="AfterMethod" finished-at="2021-12-02T11:30:57 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:56 KST" name="AfterMethod" finished-at="2021-12-02T11:57:56 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -418,7 +418,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:30:57 KST" name="BeforeMethod" finished-at="2021-12-02T11:30:57 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:56 KST" name="BeforeMethod" finished-at="2021-12-02T11:57:56 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -429,7 +429,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0918_Chips_누구백과_호출어생략_키워드_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:30:57 KST" name="TC_0918_Chips_누구백과_호출어생략_키워드_확인" description="칩스 리그레이션 TC : 실행_0918" finished-at="2021-12-02T11:31:14 KST" duration-ms="17061" status="PASS">
+        <test-method signature="TC_0918_Chips_누구백과_호출어생략_키워드_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:57:56 KST" name="TC_0918_Chips_누구백과_호출어생략_키워드_확인" description="칩스 리그레이션 TC : 실행_0918" finished-at="2021-12-02T11:58:11 KST" duration-ms="15251" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -440,7 +440,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0918_Chips_누구백과_호출어생략_키워드_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:31:14 KST" name="AfterMethod" finished-at="2021-12-02T11:31:14 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:11 KST" name="AfterMethod" finished-at="2021-12-02T11:58:11 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -451,7 +451,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:31:14 KST" name="BeforeMethod" finished-at="2021-12-02T11:31:14 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:11 KST" name="BeforeMethod" finished-at="2021-12-02T11:58:11 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -462,7 +462,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0919_Chips_누구백과_호출어생략_속성검색_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:31:14 KST" name="TC_0919_Chips_누구백과_호출어생략_속성검색_확인" description="칩스 리그레이션 TC : 실행_0919" finished-at="2021-12-02T11:31:31 KST" duration-ms="16726" status="PASS">
+        <test-method signature="TC_0919_Chips_누구백과_호출어생략_속성검색_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:11 KST" name="TC_0919_Chips_누구백과_호출어생략_속성검색_확인" description="칩스 리그레이션 TC : 실행_0919" finished-at="2021-12-02T11:58:23 KST" duration-ms="11417" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -473,7 +473,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0919_Chips_누구백과_호출어생략_속성검색_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:31:31 KST" name="AfterMethod" finished-at="2021-12-02T11:31:31 KST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:23 KST" name="AfterMethod" finished-at="2021-12-02T11:58:23 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -484,7 +484,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:31:31 KST" name="BeforeMethod" finished-at="2021-12-02T11:31:31 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:23 KST" name="BeforeMethod" finished-at="2021-12-02T11:58:23 KST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -495,7 +495,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="TC_0920_Chips_누구백과_호출어생략_속성검색_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:31:31 KST" name="TC_0920_Chips_누구백과_호출어생략_속성검색_확인" description="칩스 리그레이션 TC : 실행_0920" finished-at="2021-12-02T11:31:48 KST" duration-ms="17275" status="PASS">
+        <test-method signature="TC_0920_Chips_누구백과_호출어생략_속성검색_확인(java.lang.reflect.Method)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:23 KST" name="TC_0920_Chips_누구백과_호출어생략_속성검색_확인" description="칩스 리그레이션 TC : 실행_0920" finished-at="2021-12-02T11:58:38 KST" duration-ms="15306" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -506,7 +506,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0920_Chips_누구백과_호출어생략_속성검색_확인 -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:31:48 KST" name="AfterMethod" finished-at="2021-12-02T11:31:48 KST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:38 KST" name="AfterMethod" finished-at="2021-12-02T11:58:38 KST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -517,7 +517,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:31:48 KST" name="tearDownClass" finished-at="2021-12-02T11:31:53 KST" duration-ms="4309" status="PASS">
+        <test-method is-config="true" signature="tearDownClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Chips_009_검색.검색_02_누구백과@6d5620ce]" started-at="2021-12-02T11:58:38 KST" name="tearDownClass" finished-at="2021-12-02T11:58:43 KST" duration-ms="4767" status="PASS">
           <params>
             <param index="0">
               <value>
