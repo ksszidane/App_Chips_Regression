@@ -106,7 +106,7 @@ public class 생활정보_13_운세 extends Chips_TestCase {
 	public void TC_0801_Chips_운세_생년월일미등록_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 오늘의 운세 알려줘 - 발화");
-		util.SWFsendPost("오늘의 운세 알려줘", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("오늘의 운세 알려줘", Chips_002, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "운세 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa002, Chips_002, ServerName, Place, data.미등록운세_set));

@@ -107,7 +107,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 	public void TC_0213_Chips_FLO미로그인_뮤직메이트로실행_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W,  뮤직메이트에서 노래 틀어줘 - 발화");
-		util.SWFsendPost("뮤직메이트에서 노래 틀어줘", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("뮤직메이트에서 노래 틀어줘", Chips_002, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
@@ -157,7 +157,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 	public void TC_0214_Chips_FLO미로그인_음악실행_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W,  음악 재생- 발화");
-		util.SWFsendPost("음악 재생", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("음악 재생", Chips_002, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
@@ -206,7 +206,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 	public void TC_0215_Chips_FLO미로그인_뮤직플레이_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 뮤직 플레이- 발화");
-		util.SWFsendPost("뮤직 플레이", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("뮤직 플레이", Chips_002, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
@@ -256,7 +256,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 	public void TC_0216_Chips_FLO미로그인_방송음악_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 놀면뭐하니 노래 들려줘- 발화");
-		util.SWFsendPost("놀면뭐하니 노래 들려줘", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("놀면뭐하니 노래 들려줘", Chips_002, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
@@ -306,7 +306,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 	public void TC_0217_Chips_FLO미로그인_최신음악_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 플로에서 최신 곡 틀어줘 - 발화");
-		util.SWFsendPost("플로에서 최신 곡 틀어줘", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("플로에서 최신 곡 틀어줘", Chips_002, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
@@ -356,7 +356,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 	public void TC_0218_Chips_FLO미로그인_아티스트곡_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 봄여름가을겨울의 거리의 악사 들려줘 - 발화");
-		util.SWFsendPost("봄여름가을겨울의 거리의 악사 들려줘", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("봄여름가을겨울의 거리의 악사 들려줘", Chips_002, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
@@ -382,7 +382,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 	public void TC_0219_Chips_FLO미로그인_음원없음_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 세군데 식당 노래 틀어줘 - 발화");
-		util.SWFsendPost("세군데 식당 노래 틀어줘", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("세군데 식당 노래 틀어줘", Chips_002, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "원하시는 음악을 찾지 못했습니다. 다시 말씀해 주세요."));
