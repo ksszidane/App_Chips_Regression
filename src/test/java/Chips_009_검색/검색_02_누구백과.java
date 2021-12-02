@@ -151,8 +151,9 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 위키에서 인도 수도 찾아줘 - 발화");
 		util.SWFsendPost("위키에서 인도 수도 찾아줘", Chips_001, ServerName, AccessToken);
-		
-		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
+	
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToWindwosURL(xPath.Webview_URL);
 		
 		test.log(Status.INFO, "누구백과 카드 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과카드타이틀_web), "NUGU 백과"));
@@ -175,7 +176,8 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 위키에서 서울의 면적 찾아줘 - 발화");
 		util.SWFsendPost("위키에서 서울의 면적 찾아줘", Chips_001, ServerName, AccessToken);
 		
-		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToWindwosURL(xPath.Webview_URL);
 		
 		test.log(Status.INFO, "누구백과 카드 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과카드타이틀_web), "NUGU 백과"));
@@ -198,7 +200,8 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 누구백과에서 인도 수도 찾아줘 - 발화");
 		util.SWFsendPost("누구백과에서 인도 수도 찾아줘", Chips_001, ServerName, AccessToken);
 		
-		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToWindwosURL(xPath.Webview_URL);
 		
 		test.log(Status.INFO, "누구백과 카드 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과카드타이틀_web), "NUGU 백과"));
@@ -221,7 +224,8 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 누구백과에서 서울의 면적 찾아줘 - 발화");
 		util.SWFsendPost("누구백과에서 서울의 면적 찾아줘", Chips_001, ServerName, AccessToken);
 		
-		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToWindwosURL(xPath.Webview_URL);
 		
 		test.log(Status.INFO, "누구백과 카드 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과카드타이틀_web), "NUGU 백과"));
@@ -290,7 +294,8 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 아이유의 본명을 알려줘 - 발화");
 		util.SWFsendPost("아이유의 본명을 알려줘", Chips_001, ServerName, AccessToken);
 		
-		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
+		util.context("WEBVIEW_com.skt.aidev.nugufriends");
+		util.switchToWindwosURL(xPath.Webview_URL);
 		
 		test.log(Status.INFO, "누구백과 카드 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과카드타이틀_web), "NUGU 백과"));
