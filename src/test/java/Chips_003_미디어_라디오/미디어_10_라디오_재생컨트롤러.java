@@ -128,6 +128,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 		 
 		test.log(Status.INFO, "W, 일시정지 - 발화");
 		util.SWFsendPost_playStatus("일시정지", Chips_001, ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("일시정지", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
@@ -139,6 +140,7 @@ public class 미디어_10_라디오_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0403_Chips_라디오_일시정지취소_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 일시정지 취소- 발화");
+		util.SWFsendPost_playStatus("일시정지 취소", Chips_001, ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("일시정지 취소", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "일시정지 중 플레이 버튼 활성화 확인 ");

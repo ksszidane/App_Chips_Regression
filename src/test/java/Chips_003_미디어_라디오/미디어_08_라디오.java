@@ -106,8 +106,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	public void TC_0341_Chips_라디오_재생_확인(Method method) throws Exception {
 		 
 		util.switchToNative();
-		test.log(Status.INFO, "W, SBS파워FM 라디오 들려줘 - 발화");
-		util.SWFsendPost("SBS파워FM 라디오 들려줘", Chips_001, ServerName, AccessToken);
+		test.log(Status.INFO, "W, SBS 파워FM 라디오 들려줘 - 발화");
+		util.SWFsendPost("SBS 파워FM 라디오 들려줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");

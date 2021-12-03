@@ -156,7 +156,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
-		
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 
 	}
@@ -170,7 +170,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
-		
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.일시정지버튼_web)));
 
 	}
@@ -184,7 +184,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
-		
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.재생버튼_web)));
 
 
@@ -248,7 +248,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "당신의 Flo 좋아요 리스트에 담았습니다."));
 		
 		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
-		
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.좋아요On_web)));
 
 	}
@@ -264,7 +264,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "Flo 좋아요 리스트에서 삭제했습니다."));
 		
 		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
-		
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.좋아요Off_web)));
 
 	}
@@ -312,7 +312,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "셔플할게요."));
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
-		
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생On_web)));
 
 	}
@@ -359,7 +359,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "셔플을 해제했어요"));
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
-		
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.랜덤재생Off_web)));
 		util.switchToNative();
 		

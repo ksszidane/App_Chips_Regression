@@ -320,7 +320,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		}
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
-		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "FLO"));
+		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "최신 음악"));
 		
 		test.log(Status.INFO, "앨범아트 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
