@@ -408,8 +408,8 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	@Test(description = "칩스 리그레이션 TC : 실행_0255")
 	public void TC_0255_Chips_FLO_컨트롤러_종료_확인(Method method) throws Exception {
 		
-		test.log(Status.INFO, "W, 음악 꺼줘 - 발화");
-		util.SWFsendPost("꺼줘", Chips_001, ServerName, AccessToken);
+		test.log(Status.INFO, "W, 음악 종료 - 발화");
+		util.SWFsendPost("음악 종료", Chips_001, ServerName, AccessToken);
 		Thread.sleep(5000);
 		
 		util.switchToNative();
