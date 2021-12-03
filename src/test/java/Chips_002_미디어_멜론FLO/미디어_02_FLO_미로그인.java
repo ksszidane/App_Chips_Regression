@@ -356,7 +356,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 	public void TC_0218_Chips_FLO미로그인_아티스트곡_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 봄여름가을겨울의 거리의 악사 들려줘 - 발화");
-		util.SWFsendPost_playStatus("봄여름가을겨울의 거리의 악사 들려줘", Chips_002, ServerName, AccessToken, "music");
+		util.SWFsendPost_playStatus("봄여름가을겨울의 거리의 악사", Chips_002, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));

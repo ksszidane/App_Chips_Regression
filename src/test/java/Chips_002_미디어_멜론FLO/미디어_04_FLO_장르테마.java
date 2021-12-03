@@ -148,13 +148,13 @@ public class 미디어_04_FLO_장르테마 extends Chips_TestCase {
 
 	}
 	
-	@Test(description = "칩스 리그레이션 TC : 실행_0231")
+	//@Test(description = "칩스 리그레이션 TC : 실행_0231")
 	public void TC_0231_Chips_FLO_장르_크로스오버음악_확인(Method method) throws Exception {
 		 
 		test.log(Status.INFO, "W, 크로스오버 음악 틀어줘 - 발화");
 		util.SWFsendPost("크로스오버 음악 틀어줘", Chips_001, ServerName, AccessToken);
 		
-		test.log(Status.INFO, "걸그룹 장르 노래 재생 TTS 확인");
+		test.log(Status.INFO, "크로스오버 장르 노래 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "크로스오버를"));
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		
