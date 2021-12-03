@@ -381,7 +381,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "즐겨찾기 리스트에서 삭제하였습니다."));
 		
 		test.log(Status.INFO, "W, 그만 - 발화");
-		util.SWFsendPost_playStatus("그만", Chips_001, ServerName, AccessToken, "radio");
+		util.SWFsendPost("그만", Chips_001, ServerName, AccessToken);
+		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "라디오카드 종료되고 메인화면 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
@@ -415,7 +416,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "즐겨찾기 리스트에서 삭제하였습니다."));
 		
 		test.log(Status.INFO, "W, 라디오 종료 - 발화");
-		util.SWFsendPost_playStatus("라디오 종료", Chips_001, ServerName, AccessToken, "radio");
+		util.SWFsendPost("라디오 종료", Chips_001, ServerName, AccessToken);
 		Thread.sleep(3000);
 		
 		util.switchToNative();
@@ -498,8 +499,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		util.switchToNative();
 		test.log(Status.INFO, "W, 라디오 종료 - 발화");
-		util.SWFsendPost_playStatus("라디오 꺼줘", Chips_001, ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("라디오 꺼줘", Chips_001, ServerName, AccessToken, "radio");
+		util.SWFsendPost("라디오 꺼줘", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("라디오 꺼줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "W, 라디오 뭐뭐 있어? - 발화");
@@ -512,7 +513,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.라디오타이틀), "라디오"));
 		
 		test.log(Status.INFO, "라디오카드 7초뒤 종료되고 메인화면 확인");
-		Thread.sleep(7000);
+		Thread.sleep(8000);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature_format")));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("location")));
@@ -535,7 +536,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.라디오타이틀), "라디오"));
 		
 		test.log(Status.INFO, "라디오카드 7초뒤 종료되고 메인화면 확인");
-		Thread.sleep(7000);
+		Thread.sleep(8000);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature")));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("temperature_format")));
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.id("location")));
