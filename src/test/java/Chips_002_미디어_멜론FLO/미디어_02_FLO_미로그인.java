@@ -369,6 +369,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 			Thread.sleep(1000);
 		}
 		
+		util.switchToNative();
 		test.log(Status.INFO, "가수 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO제목), "거리의 악사"));
 		
