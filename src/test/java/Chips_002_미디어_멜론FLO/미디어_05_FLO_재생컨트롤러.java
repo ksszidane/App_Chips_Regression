@@ -409,7 +409,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	public void TC_0255_Chips_FLO_컨트롤러_종료_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, 음악 종료 - 발화");
-		util.SWFsendPost("음악 종료", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost("꺼줘", Chips_001, ServerName, AccessToken);
 		Thread.sleep(5000);
 		
 		util.switchToNative();
