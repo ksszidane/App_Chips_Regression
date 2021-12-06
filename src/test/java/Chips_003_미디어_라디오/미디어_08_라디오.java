@@ -294,7 +294,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화 - 라디오 리스트 두번째 활성화 ");
-		util.switchToWindwosIndex(1);
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.라디오2st_일시정지_web)));
 
 	}
