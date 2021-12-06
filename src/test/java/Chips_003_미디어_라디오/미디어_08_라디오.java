@@ -261,8 +261,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    Thread.sleep(5000);
 		
-		test.log(Status.INFO, "W, KBS CoolFM 라디오 들려줘- 발화");
-		util.SWFsendPost_playStatus("KBS CoolFM 라디오 들려줘", Chips_001, ServerName, AccessToken, "radio");
+		test.log(Status.INFO, "W, KBS Cool FM 라디오 들려줘- 발화");
+		util.SWFsendPost_playStatus("KBS Cool FM 라디오 들려줘", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "채널 라디오 재생 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS CoolFM 라디오"));
@@ -294,7 +294,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화 - 라디오 리스트 두번째 활성화 ");
-		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
+		util.switchToWindwosIndex(1);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.라디오2st_일시정지_web)));
 
 	}
@@ -341,7 +341,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화 - 라디오 리스트 두번째 활성화 ");
-		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
+		util.switchToWindwosIndex(1);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.라디오2st_일시정지_web)));
 		
 		test.log(Status.INFO, "W, 다음 라디오 채널 - 발화");
@@ -353,8 +353,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
 		Thread.sleep(5000);
 		
-		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화 - 라디오 리스트 첫번째 활성화 ");
-		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
+		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화 - 라디오 리스트 세번째 활성화 ");
+		util.switchToWindwosIndex(1);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.라디오3st_일시정지_web)));
 
 	}
@@ -418,8 +418,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "즐겨찾기 리스트에서 삭제하였습니다."));
 		
 		test.log(Status.INFO, "W, 라디오 종료 - 발화");
-		util.SWFsendPost("라디오 종료", Chips_001, ServerName, AccessToken);
-		util.SWFsendPost("라디오 종료", Chips_001, ServerName, AccessToken);
+		util.SWFsendPost_playStatus("라디오 종료", Chips_001, ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("라디오 종료", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(3000);
 		
 		util.switchToNative();
