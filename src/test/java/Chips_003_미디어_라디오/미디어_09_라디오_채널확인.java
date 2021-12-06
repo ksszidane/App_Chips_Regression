@@ -342,6 +342,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, TBN 전북 교통방송 들려줘 - 발화");
 		util.SWFsendPost_playStatus("TBN 전북 교통방송 들려줘", Chips_001, ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("TBN 전북 교통방송 들려줘", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
@@ -359,6 +360,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	public void TC_0376_Chips_라디오_지원채널_TBN제주교통방송_확인(Method method) throws Exception {
 		
 		test.log(Status.INFO, "W, TBN 제주 교통방송 들려줘 - 발화");
+		util.SWFsendPost_playStatus("TBN 제주 교통방송 들려줘", Chips_001, ServerName, AccessToken, "radio");
 		util.SWFsendPost_playStatus("TBN 제주 교통방송 들려줘", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(7000);
 		
