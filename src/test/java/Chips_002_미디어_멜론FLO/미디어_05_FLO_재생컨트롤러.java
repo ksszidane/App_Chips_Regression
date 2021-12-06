@@ -410,6 +410,8 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "W, 음악 종료 - 발화");
 		util.SWFsendPost_playStatus("노래 꺼줘", Chips_001, ServerName, AccessToken, "music");
+		test.log(Status.INFO, "W, 음악 종료 - 발화");
+		util.SWFsendPost_playStatus("노래 꺼줘", Chips_001, ServerName, AccessToken, "music");
 		Thread.sleep(5000);
 		
 		util.switchToNative();

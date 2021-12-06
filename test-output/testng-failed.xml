@@ -20,173 +20,91 @@
     <classes>
       <class name="Chips_002_미디어_멜론FLO.미디어_02_FLO_미로그인">
         <methods>
-          <include name="TC_0219_Chips_FLO미로그인_음원없음_확인"/>
+          <include name="TC_0219_Chips_FLO미로그인_음원없음_확인" invocation-numbers="0"/>
           <include name="setupClass"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
+          <include name="TC_0000_앱실행과AccessToken얻기" invocation-numbers="0"/>
           <include name="tearDownClass"/>
-          <include name="TC_0214_Chips_FLO미로그인_음악실행_확인"/>
-          <include name="TC_0217_Chips_FLO미로그인_최신음악_확인"/>
+          <include name="TC_0214_Chips_FLO미로그인_음악실행_확인" invocation-numbers="0"/>
+          <include name="TC_0217_Chips_FLO미로그인_최신음악_확인" invocation-numbers="0"/>
           <include name="BeforeMethod"/>
-          <include name="TC_0216_Chips_FLO미로그인_방송음악_확인"/>
-          <include name="TC_0213_Chips_FLO미로그인_뮤직메이트로실행_확인"/>
-          <include name="TC_0215_Chips_FLO미로그인_뮤직플레이_확인"/>
+          <include name="TC_0216_Chips_FLO미로그인_방송음악_확인" invocation-numbers="0"/>
+          <include name="TC_0213_Chips_FLO미로그인_뮤직메이트로실행_확인" invocation-numbers="0"/>
+          <include name="TC_0215_Chips_FLO미로그인_뮤직플레이_확인" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-          <include name="TC_0218_Chips_FLO미로그인_아티스트곡_확인"/>
+          <include name="TC_0218_Chips_FLO미로그인_아티스트곡_확인" invocation-numbers="0"/>
         </methods>
       </class> <!-- Chips_002_미디어_멜론FLO.미디어_02_FLO_미로그인 -->
-      <class name="Chips_003_미디어_라디오.미디어_09_라디오_채널확인">
-        <methods>
-          <include name="TC_0389_Chips_라디오_지원채널_KBS클래식FM_확인"/>
-          <include name="TC_0383_Chips_라디오_지원채널_CBS표준FM_확인"/>
-          <include name="TC_0391_Chips_라디오_지원채널_KBSHappyFM_확인"/>
-          <include name="TC_0369_Chips_라디오_지원채널_TBN경인교통방송_확인"/>
-          <include name="TC_0370_Chips_라디오_지원채널_TBN광주교통방송_확인"/>
-          <include name="TC_0375_Chips_라디오_지원채널_TBN전북교통방송_확인"/>
-          <include name="TC_0373_Chips_라디오_지원채널_TBN부산교통방송_확인"/>
-          <include name="TC_0392_Chips_라디오_지원채널_KBSworld_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0388_Chips_라디오_지원채널_KBS3라디오_확인"/>
-          <include name="TC_0380_Chips_라디오_지원채널_불교방송_확인"/>
-          <include name="TC_0386_Chips_라디오_지원채널_KBS1라디오_확인"/>
-          <include name="setupClass"/>
-          <include name="TC_0363_Chips_라디오_지원채널_교통방송FM_확인"/>
-          <include name="TC_0399_Chips_라디오_미지원채널_YTN뉴스FM_확인"/>
-          <include name="TC_0368_Chips_라디오_지원채널_TBN경북교통방송_확인"/>
-          <include name="TC_0396_Chips_라디오_미지원채널_동양방송_확인"/>
-          <include name="TC_0378_Chips_라디오_지원채널_아리랑FM_확인"/>
-          <include name="TC_0372_Chips_라디오_지원채널_TBN대전교통방송_확인"/>
-          <include name="TC_0379_Chips_라디오_지원채널_극동방송_확인"/>
-          <include name="TC_0381_Chips_라디오_지원채널_BBSFM_확인"/>
-          <include name="TC_0387_Chips_라디오_지원채널_KBS2라디오_확인"/>
-          <include name="TC_0362_Chips_라디오_지원채널_SBS파워FM_확인"/>
-          <include name="TC_0364_Chips_라디오_지원채널_TBSeFM_확인"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0366_Chips_라디오_지원채널_TBN강원교통방송_확인"/>
-          <include name="TC_0382_Chips_라디오_지원채널_CBS음악FM_확인"/>
-          <include name="TC_0367_Chips_라디오_지원채널_TBN경남교통방송_확인"/>
-          <include name="TC_0376_Chips_라디오_지원채널_TBN제주교통방송_확인"/>
-          <include name="TC_0374_Chips_라디오_지원채널_TBN울산교통방송_확인"/>
-          <include name="TC_0384_Chips_라디오_지원채널_CBS표준FM_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0393_Chips_라디오_지원채널_KBS한민족방송_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0371_Chips_라디오_지원채널_TBN대구교통방송_확인"/>
-          <include name="TC_0398_Chips_라디오_미지원채널_가톨릭평화방송_확인"/>
-          <include name="TC_0361_Chips_라디오_지원채널_SBS러브FM_확인"/>
-          <include name="TC_0390_Chips_라디오_지원채널_KBScoolFM_확인"/>
-        </methods>
-      </class> <!-- Chips_003_미디어_라디오.미디어_09_라디오_채널확인 -->
       <class name="Chips_002_미디어_멜론FLO.미디어_05_FLO_재생컨트롤러">
         <methods>
-          <include name="TC_0247_Chips_FLO_컨트롤러_이전_확인"/>
+          <include name="TC_0247_Chips_FLO_컨트롤러_이전_확인" invocation-numbers="0"/>
           <include name="tearDownClass"/>
-          <include name="TC_0240_Chips_FLO_컨트롤러_일시정지_확인"/>
-          <include name="TC_0244_Chips_FLO_컨트롤러_좋아요_확인"/>
-          <include name="TC_0246_Chips_FLO_컨트롤러_다음_확인"/>
-          <include name="TC_0255_Chips_FLO_컨트롤러_종료_확인"/>
+          <include name="TC_0240_Chips_FLO_컨트롤러_일시정지_확인" invocation-numbers="0"/>
+          <include name="TC_0244_Chips_FLO_컨트롤러_좋아요_확인" invocation-numbers="0"/>
+          <include name="TC_0246_Chips_FLO_컨트롤러_다음_확인" invocation-numbers="0"/>
+          <include name="TC_0255_Chips_FLO_컨트롤러_종료_확인" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-          <include name="TC_0254_Chips_FLO_컨트롤러_15초앞으로_확인"/>
-          <include name="TC_0239_Chips_FLO_컨트롤러_음악재생_확인"/>
+          <include name="TC_0254_Chips_FLO_컨트롤러_15초앞으로_확인" invocation-numbers="0"/>
+          <include name="TC_0239_Chips_FLO_컨트롤러_음악재생_확인" invocation-numbers="0"/>
           <include name="setupClass"/>
-          <include name="TC_0250_Chips_FLO_컨트롤러_이전_확인"/>
-          <include name="TC_0241_Chips_FLO_컨트롤러_일시정지취소_확인"/>
+          <include name="TC_0250_Chips_FLO_컨트롤러_이전_확인" invocation-numbers="0"/>
+          <include name="TC_0241_Chips_FLO_컨트롤러_일시정지취소_확인" invocation-numbers="0"/>
           <include name="BeforeMethod"/>
-          <include name="TC_0249_Chips_FLO_컨트롤러_다음_확인"/>
-          <include name="TC_0251_Chips_FLO로그인_셔플해제_확인"/>
-          <include name="TC_0252_Chips_FLO_컨트롤러_다음_확인"/>
-          <include name="TC_0245_Chips_FLO_컨트롤러_좋아요취소_확인"/>
-          <include name="TC_0243_Chips_FLO_컨트롤러_음악재생_확인"/>
-          <include name="TC_0253_Chips_FLO_컨트롤러_20초뒤로_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0242_Chips_FLO_컨트롤러_일시정지_확인"/>
-          <include name="TC_0248_Chips_FLO_컨트롤러_셔플_확인"/>
+          <include name="TC_0249_Chips_FLO_컨트롤러_다음_확인" invocation-numbers="0"/>
+          <include name="TC_0251_Chips_FLO로그인_셔플해제_확인" invocation-numbers="0"/>
+          <include name="TC_0252_Chips_FLO_컨트롤러_다음_확인" invocation-numbers="0"/>
+          <include name="TC_0245_Chips_FLO_컨트롤러_좋아요취소_확인" invocation-numbers="0"/>
+          <include name="TC_0243_Chips_FLO_컨트롤러_음악재생_확인" invocation-numbers="0"/>
+          <include name="TC_0253_Chips_FLO_컨트롤러_20초뒤로_확인" invocation-numbers="0"/>
+          <include name="TC_0000_앱실행과AccessToken얻기" invocation-numbers="0"/>
+          <include name="TC_0242_Chips_FLO_컨트롤러_일시정지_확인" invocation-numbers="0"/>
+          <include name="TC_0248_Chips_FLO_컨트롤러_셔플_확인" invocation-numbers="0"/>
         </methods>
       </class> <!-- Chips_002_미디어_멜론FLO.미디어_05_FLO_재생컨트롤러 -->
       <class name="Chips_002_미디어_멜론FLO.미디어_03_FLO_로그인">
         <methods>
-          <include name="TC_0227_Chips_FLO로그인_최근들은음악_확인"/>
-          <include name="TC_0221_Chips_FLO로그인_아티스트노래_확인"/>
+          <include name="TC_0227_Chips_FLO로그인_최근들은음악_확인" invocation-numbers="0"/>
+          <include name="TC_0221_Chips_FLO로그인_아티스트노래_확인" invocation-numbers="0"/>
           <include name="tearDownClass"/>
-          <include name="TC_0220_Chips_FLO로그인_아티스트노래_확인"/>
-          <include name="TC_0224_Chips_FLO로그인_가수곡_확인"/>
-          <include name="TC_0222_Chips_FLO로그인_최신음악_확인"/>
+          <include name="TC_0220_Chips_FLO로그인_아티스트노래_확인" invocation-numbers="0"/>
+          <include name="TC_0224_Chips_FLO로그인_가수곡_확인" invocation-numbers="0"/>
+          <include name="TC_0222_Chips_FLO로그인_최신음악_확인" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-          <include name="TC_0228_Chips_FLO로그인_셔플해줘_확인"/>
-          <include name="TC_0226_Chips_FLO로그인_플레이리스트_확인"/>
+          <include name="TC_0228_Chips_FLO로그인_셔플해줘_확인" invocation-numbers="0"/>
+          <include name="TC_0226_Chips_FLO로그인_플레이리스트_확인" invocation-numbers="0"/>
           <include name="setupClass"/>
-          <include name="TC_0229_Chips_FLO로그인_셔플해제_확인"/>
+          <include name="TC_0229_Chips_FLO로그인_셔플해제_확인" invocation-numbers="0"/>
           <include name="BeforeMethod"/>
-          <include name="TC_0223_Chips_FLO로그인_실시간차트_확인"/>
-          <include name="TC_0225_Chips_FLO로그인_좋아요노래_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
+          <include name="TC_0223_Chips_FLO로그인_실시간차트_확인" invocation-numbers="0"/>
+          <include name="TC_0225_Chips_FLO로그인_좋아요노래_확인" invocation-numbers="0"/>
+          <include name="TC_0000_앱실행과AccessToken얻기" invocation-numbers="0"/>
         </methods>
       </class> <!-- Chips_002_미디어_멜론FLO.미디어_03_FLO_로그인 -->
-      <class name="Chips_003_미디어_라디오.미디어_08_라디오">
-        <methods>
-          <include name="TC_0341_Chips_라디오_재생_확인"/>
-          <include name="TC_0350_Chips_라디오_즐겨찾기2개재생중_다음_확인"/>
-          <include name="TC_0359_Chips_라디오_실행중_즐겨찾기해제_확인"/>
-          <include name="TC_0355_Chips_라디오_대기상태_채널목록_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0342_Chips_라디오_좋아요재생_확인"/>
-          <include name="TC_0349_Chips_라디오_즐겨찾기1개재생중_다음_확인"/>
-          <include name="setupClass"/>
-          <include name="TC_0357_Chips_라디오_실행중_즐겨찾기_확인"/>
-          <include name="TC_0353_Chips_라디오_일시정지상태_채널재생_확인"/>
-          <include name="TC_0344_Chips_라디오_즐겨찾기있음_재생_확인"/>
-          <include name="TC_0352_Chips_라디오_종료_확인"/>
-          <include name="TC_0354_Chips_라디오_일시정지상태_채널재생_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="tearDownClass"/>
-          <include name="TC_0347_Chips_라디오_다음라디오_채널_확인"/>
-          <include name="TC_0356_Chips_라디오_대기상태_채널목록_확인"/>
-          <include name="TC_0346_Chips_라디오_듣고있는라디오_채널_확인"/>
-          <include name="TC_0348_Chips_라디오_이전라디오_채널_확인"/>
-          <include name="TC_0343_Chips_라디오_즐겨찾기있음_재생_확인"/>
-          <include name="BeforeMethod"/>
-          <include name="TC_0360_Chips_라디오_즐겨찾기해제완료_즐겨찾기해제_확인"/>
-          <include name="TC_0351_Chips_라디오_종료_확인"/>
-          <include name="TC_0345_Chips_라디오_듣고있는라디오_채널_확인"/>
-          <include name="TC_0358_Chips_라디오_즐겨찾기완료_즐겨찾기실행_확인"/>
-        </methods>
-      </class> <!-- Chips_003_미디어_라디오.미디어_08_라디오 -->
       <class name="Chips_002_미디어_멜론FLO.미디어_04_FLO_장르테마">
         <methods>
           <include name="setupClass"/>
           <include name="tearDownClass"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
+          <include name="TC_0000_앱실행과AccessToken얻기" invocation-numbers="0"/>
           <include name="BeforeMethod"/>
-          <include name="TC_0232_Chips_FLO_테마_공룡테마_확인"/>
-          <include name="TC_0233_Chips_FLO_테마_매장음악_확인"/>
-          <include name="TC_0234_Chips_FLO_큐레이션_신나는음악_확인"/>
-          <include name="TC_0230_Chips_FLO_장르_걸그룹노래_확인"/>
+          <include name="TC_0232_Chips_FLO_테마_공룡테마_확인" invocation-numbers="0"/>
+          <include name="TC_0233_Chips_FLO_테마_매장음악_확인" invocation-numbers="0"/>
+          <include name="TC_0234_Chips_FLO_큐레이션_신나는음악_확인" invocation-numbers="0"/>
+          <include name="TC_0230_Chips_FLO_장르_걸그룹노래_확인" invocation-numbers="0"/>
           <include name="AfterMethod"/>
-          <include name="TC_0231_Chips_FLO_장르_크로스오버음악_확인"/>
         </methods>
       </class> <!-- Chips_002_미디어_멜론FLO.미디어_04_FLO_장르테마 -->
-      <class name="Chips_003_미디어_라디오.미디어_10_라디오_재생컨트롤러">
+      <class name="Chips_002_미디어_멜론FLO.미디어_01_멜론">
         <methods>
-          <include name="tearDownClass"/>
-          <include name="TC_0409_Chips_라디오_이전_확인"/>
-          <include name="AfterMethod"/>
-          <include name="TC_0404_Chips_라디오_일시정지_확인"/>
-          <include name="TC_0408_Chips_라디오_다음_확인"/>
-          <include name="TC_0403_Chips_라디오_일시정지취소_확인"/>
-          <include name="TC_0413_Chips_라디오_종료예약_확인"/>
-          <include name="TC_0401_Chips_라디오_재생_확인"/>
-          <include name="TC_0402_Chips_라디오_일시정지_확인"/>
-          <include name="TC_0406_Chips_라디오_다음라디오채널_확인"/>
-          <include name="TC_0411_Chips_라디오_이전라디오방송_확인"/>
           <include name="setupClass"/>
-          <include name="TC_0414_Chips_라디오_종료_확인"/>
+          <include name="tearDownClass"/>
+          <include name="TC_0146_Chips_멜론미지원_확인" invocation-numbers="0"/>
           <include name="BeforeMethod"/>
-          <include name="TC_0410_Chips_라디오_다음채널_확인"/>
-          <include name="TC_0405_Chips_라디오_재생_확인"/>
-          <include name="TC_0407_Chips_라디오_이전라디오채널_확인"/>
-          <include name="TC_0000_앱실행과AccessToken얻기"/>
-          <include name="TC_0412_Chips_라디오_다음라디오_확인"/>
+          <include name="TC_0237_Chips_멜론미지원_확인" invocation-numbers="0"/>
+          <include name="TC_0235_Chips_멜론미지원_확인" invocation-numbers="0"/>
+          <include name="TC_0000_앱실행과AccessToken얻기" invocation-numbers="0"/>
+          <include name="AfterMethod"/>
+          <include name="TC_0236_Chips_멜론미지원_확인" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Chips_003_미디어_라디오.미디어_10_라디오_재생컨트롤러 -->
+      </class> <!-- Chips_002_미디어_멜론FLO.미디어_01_멜론 -->
     </classes>
   </test> <!-- Test_Project(failed) -->
 </suite> <!-- Failed suite [ExtentReport] -->
