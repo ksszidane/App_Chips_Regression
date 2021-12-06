@@ -322,7 +322,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "play카드 닫기"); 
 	    util.view_close_btn_check();
-	    Thread.sleep(5000);
+	    Thread.sleep(10000);
 	    
 	    test.log(Status.INFO, "W, 즐겨찾기한 라디오 들려줘 - 발화");
 		util.SWFsendPost("즐겨찾기한 라디오 들려줘", Chips_001, ServerName, AccessToken);
@@ -341,7 +341,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화 - 라디오 리스트 두번째 활성화 ");
-		util.switchToWindwosIndex(1);
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.라디오2st_일시정지_web)));
 		
 		test.log(Status.INFO, "W, 다음 라디오 채널 - 발화");
@@ -354,7 +354,7 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		Thread.sleep(5000);
 		
 		test.log(Status.INFO, "다음 라디오 재생중 버튼 활성화 - 라디오 리스트 세번째 활성화 ");
-		util.switchToWindwosIndex(1);
+		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.라디오3st_일시정지_web)));
 
 	}
@@ -531,7 +531,6 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		test.log(Status.INFO, "W, 라디오 리스트 - 발화");
 		util.SWFsendPost("라디오 리스트", Chips_001, ServerName, AccessToken);
 		util.SWFsendPost("라디오 리스트", Chips_001, ServerName, AccessToken);
-		Thread.sleep(8000);
 		
 		test.log(Status.INFO, "채널 안내 TTS 확인");
 		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "8개 방송국, 27개의 채널이 있습니다. SBS, KBS, CBS, TBS, 아리랑, 불교방송, 극동방송, TBN 라디오를 들을 수 있어요."));
