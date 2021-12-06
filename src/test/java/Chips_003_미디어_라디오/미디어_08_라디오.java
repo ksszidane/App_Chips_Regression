@@ -503,8 +503,8 @@ public class 미디어_08_라디오 extends Chips_TestCase {
 		util.switchToNative();
 		test.log(Status.INFO, "W, 라디오 종료 - 발화");
 		util.SWFsendPost_playStatus("라디오 꺼줘", Chips_001, ServerName, AccessToken, "radio");
-		util.SWFsendPost_playStatus("라디오 꺼줘", Chips_001, ServerName, AccessToken, "radio");
-		Thread.sleep(5000);
+		util.SWFsendPost_playStatus("라디오 종료", Chips_001, ServerName, AccessToken, "radio");
+		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "W, 라디오 뭐뭐 있어? - 발화");
 		util.SWFsendPost("라디오 뭐뭐 있어", Chips_001, ServerName, AccessToken);

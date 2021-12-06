@@ -582,6 +582,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.switchToNative();
 		test.log(Status.INFO, "W, KBS CoolFM 들려줘 - 발화");
 		util.SWFsendPost_playStatus("KBS CoolFM 들려줘", Chips_001, ServerName, AccessToken, "radio");
+		util.SWFsendPost_playStatus("KBS CoolFM 들려줘", Chips_001, ServerName, AccessToken, "radio");
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
