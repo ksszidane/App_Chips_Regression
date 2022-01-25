@@ -159,7 +159,8 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("15 더하기 94", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "15 더하기 94는, 109 입니다."));
+		//Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "15 더하기 94는, 109 입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "15 + 94 = 109"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0554")
@@ -169,7 +170,8 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("12 플러스 3은?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "12 더하기 3은, 15 입니다."));
+		//Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "12 더하기 3은, 15 입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "12 + 3 = 15"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0555")
@@ -179,7 +181,8 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("85 빼기 13", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "85 빼기 13은, 72 입니다."));
+		//Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "85 빼기 13은, 72 입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "85 - 13 = 72"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0556")
@@ -189,7 +192,8 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("12 마이너스 3은?", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "12 빼기 3은, 9 입니다."));
+		//Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "12 빼기 3은, 9 입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "12 - 3 = 9"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0557")
@@ -199,7 +203,8 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("10 나누기 3", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "10 나누기 3은, 3.33333 입니다."));
+		//Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "10 나누기 3은, 3.33333 입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "10 ÷ 3 = 3.3333333333"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0558")
@@ -219,7 +224,8 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("14 곱하기 14", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "14 곱하기 14는, 196 입니다."));
+		//Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "14 곱하기 14는, 196 입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "14 × 14 = 196"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0560")
@@ -239,7 +245,8 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("5분의 1 더하기 3은?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 미연산값 안내 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "일~경, 미만의 자연수만 말씀해 주세요."));
+		//Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "일~경, 미만의 자연수만 말씀해 주세요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "(1/5) + 3 = 3.2"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0562")
@@ -249,7 +256,8 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("마이너스5 더하기 3은?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 미연산값 안내 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "일~경, 미만의 자연수만 말씀해 주세요."));
+		//Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "일~경, 미만의 자연수만 말씀해 주세요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "(-5) + 3 = -2"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0563")
@@ -259,7 +267,8 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("3 더하기 2 곱하기 7은?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 미연산값 안내 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "두 개의 숫자만, 계산할 수 있어요."));
+		//Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "두 개의 숫자만, 계산할 수 있어요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "3 + 2 × 7 = 17"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0564")
@@ -269,7 +278,8 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		util.SWFsendPost("2 곱하기 3 곱하기 마이너스9는?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "사칙연산 미연산값 안내 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "두 개의 숫자만, 계산할 수 있어요."));
+		//Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "두 개의 숫자만, 계산할 수 있어요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "2 × 3 × (-9) = -54"));
 	}
 
 }
