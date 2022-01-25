@@ -204,7 +204,7 @@ public class 편의기능_02_사칙연산 extends Chips_TestCase {
 		
 		test.log(Status.INFO, "사칙연산 사용 안내 TTS 확인");
 		//Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "10 나누기 3은, 3.33333 입니다."));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "10 ÷ 3 = 3.3333333333"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.나누기10_3_set));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0558")
