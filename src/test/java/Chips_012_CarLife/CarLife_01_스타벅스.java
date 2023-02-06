@@ -35,7 +35,7 @@ public class CarLife_01_스타벅스 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -110,10 +110,10 @@ public class CarLife_01_스타벅스 extends Chips_TestCase {
 		util.SWFsendPost("스타벅스 커피 주문해줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "스타벅스 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.CHIPS_USD_set));
 		
 		test.log(Status.INFO, "usd action_type 확인");
-		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "usd"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "usd"));
 		
 
 	}

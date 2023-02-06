@@ -34,7 +34,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -109,8 +109,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost("팟캐스트", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "팟캐스트 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근에 들은"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이어서"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "최근에 들은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "이어서"));
 		
 		test.log(Status.INFO, "팟캐스트 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "최근들은 팟캐스트"));
@@ -152,8 +152,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("팟빵", Chips_001, ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "팟캐스트 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근에 들은"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "이어서"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "최근에 들은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "이어서"));
 		
 		test.log(Status.INFO, "팟캐스트 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "최근들은 팟캐스트"));
@@ -195,8 +195,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("김어준 뉴스 공장 팟캐스트", Chips_001, ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "김어준의 뉴스공장 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBS 김어준의 뉴스공장"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "들려드릴게요"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "TBS 김어준의 뉴스공장"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "들려드릴게요"));
 		
 		test.log(Status.INFO, "팟캐스트 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "팟캐스트"));
@@ -239,7 +239,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("팟캐스트 구독", Chips_001, ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에 추가했습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "구독 리스트에 추가했습니다."));
 		Thread.sleep(3000);
 		
 		//test.log(Status.INFO, "구독 버튼 확인");
@@ -258,7 +258,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("팟캐스트 삭제해줘", Chips_001, ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에서 삭제 했습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "구독 리스트에서 삭제 했습니다."));
 		Thread.sleep(3000);
 		
 		//test.log(Status.INFO, "구독 버튼 확인");
@@ -285,7 +285,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("1분 뒤에 팟캐스트 꺼줘", Chips_001, ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "종료예약 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.CHIPS_USD_set));
 
 	}
 	
@@ -296,7 +296,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("오후 11시 59분에 팟캐스트 꺼줘", Chips_001, ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "종료예약 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.CHIPS_USD_set));
 		
 	}
 	
@@ -311,8 +311,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "팟캐스트"));
 		
 		test.log(Status.INFO, "팟빵에서 김어준의 뉴스공장 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "김어준의 뉴스공장"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "김어준의 뉴스공장"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "들려드릴게요."));
 		
 		test.log(Status.INFO, "방송명 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO제목), "뉴스공장"));
@@ -366,8 +366,8 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("재생", Chips_001, ServerName, AccessToken, "podcast");
 		
 		test.log(Status.INFO, "김어준의 뉴스공장 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "최근에 들은"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "김어준의 뉴스공장"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "최근에 들은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "김어준의 뉴스공장"));
 		
 		test.log(Status.INFO, "플레이어의 일시정지 버튼 재생버튼으로 전환 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
@@ -384,7 +384,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("팟캐스트 구독", Chips_001, ServerName, AccessToken, "podcast");
 
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에 추가했습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "구독 리스트에 추가했습니다."));
 		Thread.sleep(2000);
 		
 		//test.log(Status.INFO, "구독 버튼 확인");
@@ -404,7 +404,7 @@ public class 미디어_12_팟빵 extends Chips_TestCase {
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "구독 팟캐스트 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "구독 리스트에서 삭제 했습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "구독 리스트에서 삭제 했습니다."));
 		
 		test.log(Status.INFO, "구독 버튼 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);

@@ -34,7 +34,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -109,8 +109,8 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost("플레이리스트 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "플레이리스트 노래 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "Flo에서 ee 내 리스트"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "Flo에서 ee 내 리스트"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "내 리스트"));
@@ -197,8 +197,8 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost("내 리스트 재생", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "플레이리스트 노래 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "Flo에서 ee 내 리스트"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "Flo에서 ee 내 리스트"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.음악시작_set));
 		
 		util.switchToNative();
 		test.log(Status.INFO, "FLO 타이틀 확인");
@@ -245,7 +245,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("좋아요 해줘", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "좋아요 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "당신의 Flo 좋아요 리스트에 담았습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "당신의 Flo 좋아요 리스트에 담았습니다."));
 		
 		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
@@ -261,7 +261,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("좋아요 삭제", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "좋아요한 취소 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "Flo 좋아요 리스트에서 삭제했습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "Flo 좋아요 리스트에서 삭제했습니다."));
 		
 		test.log(Status.INFO, "좋아요 버튼 활성화 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
@@ -309,7 +309,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		
 		test.log(Status.INFO, "셔플 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "셔플할게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "셔플할게요."));
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
@@ -356,7 +356,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		
 		test.log(Status.INFO, "셔플 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "셔플을 해제했어요"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "셔플을 해제했어요"));
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
@@ -389,7 +389,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("20초 뒤로 이동", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "20초뒤로 이동 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "뮤직 서비스에서는 지원하지 않는 기능이에요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "뮤직 서비스에서는 지원하지 않는 기능이에요."));
 
 	}
 	
@@ -401,7 +401,7 @@ public class 미디어_05_FLO_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("15초 앞으로 이동", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "15초 앞으로 이동 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "뮤직 서비스에서는 지원하지 않는 기능이에요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "뮤직 서비스에서는 지원하지 않는 기능이에요."));
 
 	}
 	

@@ -34,7 +34,7 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -130,10 +130,10 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 		util.SWFsendPost("배터리 잔량", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "배터리 잔량 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.CHIPS_USD_set));
 		
 		test.log(Status.INFO, "usd action_type 확인");
-		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "usd"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "usd"));
 		
 		
 
@@ -146,10 +146,10 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 		util.SWFsendPost("밧데리 얼마나 남았어", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "배터리 잔량 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.CHIPS_USD_set));
 		
 		test.log(Status.INFO, "usd action_type 확인");
-		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "usd"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "usd"));
 
 	}
 	
@@ -160,10 +160,10 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 		util.SWFsendPost("전원 꺼", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "전원 꺼 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.OOS_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.OOS_set));
 		
 		test.log(Status.INFO, "oos action_type 확인");
-		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "oos"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "oos"));
 
 	}
 	
@@ -174,10 +174,10 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 		util.SWFsendPost("환경 설정 보여줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "홈 화면 변경 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.CHIPS_USD_set));
 		
 		test.log(Status.INFO, "usd action_type 확인");
-		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "usd"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "usd"));
 
 	}
 	
@@ -194,10 +194,10 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 		util.SWFsendPost("환경 설정 보여줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "홈 화면 변경 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.CHIPS_USD_set));
 		
 		test.log(Status.INFO, "usd action_type 확인");
-		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "usd"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "usd"));
 		
 		test.log(Status.INFO, "미디어 재생 종료");
 		util.SWFsendPost("그만", Chips_001, ServerName, AccessToken);
@@ -211,10 +211,10 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 		util.SWFsendPost("홈 화면 변경", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "홈 화면 변경 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.CHIPS_USD_set));
 		
 		test.log(Status.INFO, "usd action_type 확인");
-		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "usd"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "usd"));
 
 	}
 	
@@ -225,10 +225,10 @@ public class 기본기능_01_기본기능 extends Chips_TestCase {
 		util.SWFsendPost("나이트 모드 실행해줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "나이트 모드 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.CHIPS_USD_set));
 		
 		test.log(Status.INFO, "usd action_type 확인");
-		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "usd"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "usd"));
 
 	}
     

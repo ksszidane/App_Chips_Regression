@@ -34,7 +34,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -109,8 +109,8 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		util.SWFsendPost("부스트 파크 들려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "걸그룹 장르 노래 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "부스트파크송"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "부스트파크송"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		test.log(Status.INFO, "자체소싱 타이틀 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드타이틀)));
@@ -157,8 +157,8 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		util.SWFsendPost("부스트 파크 노래 들려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "걸그룹 장르 노래 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SK텔레콤의 부스트파크송"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "SK텔레콤의 부스트파크송"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "음악"));
@@ -234,7 +234,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("좋아요 해줘", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "좋아요 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "좋아요 기능을 지원하지 않는 곡이에요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "좋아요 기능을 지원하지 않는 곡이에요."));
 		
 		test.log(Status.INFO, "좋아요 버튼 비활성화 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
@@ -250,7 +250,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("좋아요 해제", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "좋아요 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "좋아요 기능을 지원하지 않는 곡이에요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "좋아요 기능을 지원하지 않는 곡이에요."));
 		
 		test.log(Status.INFO, "좋아요 버튼 비활성화 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
@@ -267,7 +267,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "다음 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.한곡재생_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.한곡재생_set));
 
 	}
 	
@@ -280,7 +280,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "이전 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.한곡재생_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.한곡재생_set));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0308")
@@ -292,7 +292,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "이전 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.한곡재생_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.한곡재생_set));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0309")
@@ -304,7 +304,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "이전 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.한곡재생_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.한곡재생_set));
 	}
 
 	@Test(description = "칩스 리그레이션 TC : 실행_0310")
@@ -316,7 +316,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "셔플 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.한곡재생_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.한곡재생_set));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0311")
@@ -328,7 +328,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		Thread.sleep(2000);
 		
 		test.log(Status.INFO, "다음 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.한곡재생_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.한곡재생_set));
 
 	}
 	
@@ -340,7 +340,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("20초 뒤로 이동", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "20초뒤로 이동 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "뮤직 서비스에서는 지원하지 않는 기능이에요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "뮤직 서비스에서는 지원하지 않는 기능이에요."));
 
 	}
 	
@@ -352,7 +352,7 @@ public class 미디어_06_자체소싱 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("15초 앞으로 이동", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "15초 앞으로 이동 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "뮤직 서비스에서는 지원하지 않는 기능이에요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "뮤직 서비스에서는 지원하지 않는 기능이에요."));
 
 	}
 	

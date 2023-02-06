@@ -9,6 +9,7 @@
 		<parameter name="AppName" value="Chips" />
 		<parameter name="Server" value="STG" /> <!-- 서버값 대문자로  : PRD, RTG, STG -->
 		<parameter name="TestPlace" value="in" /> <!-- 사내 : in  // 사외 : out-->
+		<parameter name="Service" value="nugu" /> <!--  nugu / adot-->
 		<parameter name="deviceID_Chips" value="ALDFHFMQC3RB935B4B02"/>
 		<parameter name="deviceID_Chips10" value="ALDFHFMSG34WDF6CD40E"/>
 		<parameter name="userID_ksszidane" value="ALDF3NYA6C0D0C654DD2"/>

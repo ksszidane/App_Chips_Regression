@@ -34,7 +34,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -109,14 +109,14 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost("ASMR 플레이", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ASMR 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "ASMR"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "ASMR"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		test.log(Status.INFO, "W, ASMR 플레이 - 발화");
 		util.SWFsendPost("ASMR 플레이", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ASMR 타이틀 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "ASMR"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "ASMR"));
 		
 		test.log(Status.INFO, "앨범아트 확인");
 		Assert.assertTrue(util.isElementPresent_Assertfunc(By.xpath(xPath.FLO카드앨범아트)));
@@ -155,8 +155,8 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost("과자 먹는 소리 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ASMR 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "과자 먹는 소리"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "과자 먹는 소리"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		test.log(Status.INFO, "ASMR 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "ASMR"));
@@ -183,8 +183,8 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost("빗소리 들려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ASMR 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "빗소리"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "빗소리"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		test.log(Status.INFO, "ASMR 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "ASMR"));
@@ -206,8 +206,8 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost("힐링 사운드 재생", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ASMR 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "힐링사운드"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "힐링사운드"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		test.log(Status.INFO, "ASMR 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "ASMR"));
@@ -222,7 +222,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost("자연의 소리 반복해서 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "ASMR 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "자연의 소리 반복해드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "자연의 소리 반복해드릴게요."));
 		
 		test.log(Status.INFO, "ASMR 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "ASMR"));
@@ -239,7 +239,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost_playStatus("이 노래 뭐야", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "이 노래 뭐야 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, 곡명));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  곡명));
 		
 	}
 	
@@ -290,8 +290,8 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost("자연의 소리 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "자연의 소리 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "자연의소리"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "자연의소리"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		test.log(Status.INFO, "ASMR 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "ASMR"));
@@ -377,8 +377,8 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost("자연의 소리 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "자연의 소리 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "자연의소리"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "자연의소리"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		test.log(Status.INFO, "ASMR 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "ASMR"));
@@ -421,7 +421,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost_playStatus("좋아요 해줘", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "좋아요 해줘 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "좋아요 기능을 지원하지 않는 곡이에요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "좋아요 기능을 지원하지 않는 곡이에요."));
 		
 	}
 	
@@ -433,7 +433,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost_playStatus("좋아요 취소", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "좋아요 해줘 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "좋아요 기능을 지원하지 않는 곡이에요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "좋아요 기능을 지원하지 않는 곡이에요."));
 		
 	}
 	
@@ -477,7 +477,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		
 		test.log(Status.INFO, "셔플 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "셔플할게요"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "셔플할게요"));
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
 		util.switchContextURL("WEBVIEW_com.skt.aidev.nugufriends", xPath.Webview_URL);
@@ -528,7 +528,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.click(By.xpath(xPath.FLO랜덤버튼));
 		
 		test.log(Status.INFO, "셔플 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "셔플을 해제했어요"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "셔플을 해제했어요"));
 		Thread.sleep(3000);
 		
 		test.log(Status.INFO, "랜덤 버튼 활성화 확인");
@@ -562,7 +562,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost_playStatus("20초 뒤로 이동", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "20초뒤로 이동 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "뮤직 서비스에서는 지원하지 않는 기능이에요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "뮤직 서비스에서는 지원하지 않는 기능이에요."));
 
 	}
 	
@@ -574,7 +574,7 @@ public class 미디어_07_ASMR extends Chips_TestCase {
 		util.SWFsendPost_playStatus("15초 앞으로 이동", Chips_001, ServerName, AccessToken, "music");
 		
 		test.log(Status.INFO, "15초 앞으로 이동 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "뮤직 서비스에서는 지원하지 않는 기능이에요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "뮤직 서비스에서는 지원하지 않는 기능이에요."));
 
 	}
 	

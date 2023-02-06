@@ -34,7 +34,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -110,8 +110,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 러브FM 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "SBS 러브FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "러브FM 재생중 버튼 확인 ");
@@ -129,8 +129,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "SBS 파워FM 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "SBS 파워FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "파워FM 재생중 버튼 확인 ");
@@ -147,8 +147,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBS FM 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "TBS FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "TBSFM 재생중 버튼 확인 ");
@@ -165,8 +165,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBS eFM 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "TBS eFM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "TBSeFM 재생중 버튼 확인 ");
@@ -183,8 +183,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 강원교통방송 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "TBN 강원교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "TBN강원교통방송 재생중 버튼 확인 ");
@@ -201,8 +201,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 경남교통방송 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "TBN 경남교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "TBN경남교통방송 재생중 버튼 확인 ");
@@ -219,8 +219,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 경북교통방송 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "TBN 경북교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "TBN경북교통방송 재생중 버튼 확인 ");
@@ -237,8 +237,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 경인교통방송 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "TBN 경인교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "TBN경인교통방송 재생중 버튼 확인 ");
@@ -255,8 +255,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 광주교통방송 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "TBN 광주교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "TBN광주교통방송 재생중 버튼 확인 ");
@@ -273,8 +273,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 대구교통방송 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "TBN 대구교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "TBN대구교통방송 재생중 버튼 확인 ");
@@ -291,8 +291,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 대전교통방송 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "TBN 대전교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "TBN대전교통방송 재생중 버튼 확인 ");
@@ -309,8 +309,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 부산교통방송 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "TBN 부산교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "TBN부산교통방송 재생중 버튼 확인 ");
@@ -327,8 +327,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 울산교통방송 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "TBN 울산교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "TBN울산교통방송 재생중 버튼 확인 ");
@@ -346,8 +346,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 전북교통방송 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "TBN 전북교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "TBN전북교통방송 재생중 버튼 확인 ");
@@ -365,8 +365,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "TBN 제주교통방송 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "TBN 제주교통방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "TBN제주교통방송 재생중 버튼 확인 ");
@@ -383,8 +383,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "Arirang FM 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "Arirang FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "아리랑 FM  재생중 버튼 확인 ");
@@ -401,8 +401,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "극동방송 FM 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "극동방송 FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "극동방송 FM 라디오 재생중 버튼 확인 ");
@@ -419,8 +419,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "BBS 불교방송 FM 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "BBS 불교방송 FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "BBS 불교방송 FM 재생중 버튼 확인 ");
@@ -437,8 +437,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "BBS 불교방송 FM 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "BBS 불교방송 FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "BBS 불교방송 FM 재생중 버튼 확인 ");
@@ -455,8 +455,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "CBS 음악FM 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "CBS 음악FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "CBS 음악FM 재생중 버튼 확인 ");
@@ -473,8 +473,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "CBS 표준FM 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "CBS 표준FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "CBS 표준FM  재생중 버튼 확인 ");
@@ -491,8 +491,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "CBS 표준FM 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "CBS 표준FM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "CBS 표준FM  재생중 버튼 확인 ");
@@ -510,8 +510,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS 1 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "KBS 1 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "KBS 1 라디오 재생중 버튼 확인 ");
@@ -529,8 +529,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS 2 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "KBS 2 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "KBS 1 라디오 재생중 버튼 확인 ");
@@ -548,8 +548,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS 3 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "KBS 3 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "KBS 3 라디오 재생중 버튼 확인 ");
@@ -566,8 +566,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS ClassicFM 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "KBS ClassicFM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "KBS ClassicFM 라디오 재생중 버튼 확인 ");
@@ -586,8 +586,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS CoolFM 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "KBS CoolFM 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "KBS CoolFM 라디오 재생중 버튼 확인 ");
@@ -604,8 +604,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS 2 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "KBS 2 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "KBS 2 라디오 재생중 버튼 확인 ");
@@ -622,8 +622,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS 월드 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "KBS 월드 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "KBS 월드 라디오 재생중 버튼 확인 ");
@@ -640,8 +640,8 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		Thread.sleep(7000);
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "KBS 한민족방송 라디오"));
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "KBS 한민족방송 라디오"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.음악시작_set));
 		
 		Thread.sleep(2000);
 		test.log(Status.INFO, "KBS 한민족방송 라디오 재생중 버튼 확인 ");
@@ -657,7 +657,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("동양방송 라디오 들려줘", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 디바이스에서는 지원하지 않는 라디오 채널입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "현재 디바이스에서는 지원하지 않는 라디오 채널입니다."));
 		
 	}
 	
@@ -668,7 +668,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("가톨릭평화방송 FM", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 디바이스에서는 지원하지 않는 라디오 채널입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "현재 디바이스에서는 지원하지 않는 라디오 채널입니다."));
 		
 	}
 	
@@ -679,7 +679,7 @@ public class 미디어_09_라디오_채널확인 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("YTN 뉴스 FM 틀어줘", Chips_001, ServerName, AccessToken, "radio");
 		
 		test.log(Status.INFO, "라디오 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "현재 디바이스에서는 지원하지 않는 라디오 채널입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "현재 디바이스에서는 지원하지 않는 라디오 채널입니다."));
 		
 	}
 

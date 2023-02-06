@@ -34,7 +34,7 @@ public class 미디어_01_멜론 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -109,10 +109,10 @@ public class 미디어_01_멜론 extends Chips_TestCase {
 		util.SWFsendPost("멜론에서 음악 들려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "멜론 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.OOS_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.OOS_set));
 		
 		test.log(Status.INFO, "oos action_type 확인");
-		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "oos"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "oos"));
 		
 		
 	}
@@ -124,10 +124,10 @@ public class 미디어_01_멜론 extends Chips_TestCase {
 		util.SWFsendPost("멜론에서 음악 재생", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "멜론 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.OOS_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.OOS_set));
 		
 		test.log(Status.INFO, "oos action_type 확인");
-		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "oos"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "oos"));
 		
 	}
 	
@@ -138,10 +138,10 @@ public class 미디어_01_멜론 extends Chips_TestCase {
 		util.SWFsendPost("멜론에서 플레이리스트 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "멜론 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.OOS_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.OOS_set));
 		
 		test.log(Status.INFO, "oos action_type 확인");
-		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "oos"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "oos"));
 		
 	}
 	
@@ -152,10 +152,10 @@ public class 미디어_01_멜론 extends Chips_TestCase {
 		util.SWFsendPost("멜론에서 좋아요 한 음악 틀어줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "멜론 미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.OOS_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.OOS_set));
 		
 		test.log(Status.INFO, "oos action_type 확인");
-		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "oos"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "oos"));
 		
 	}
 

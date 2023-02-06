@@ -34,7 +34,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa002, Chips_002, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa002, Chips_002, ServerName, Place, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -110,7 +110,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		util.SWFsendPost("뮤직메이트에서 노래 틀어줘", Chips_002, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, Service, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
 		
 		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
 		boolean closeSnackbar = util.isElementPresent(By.id("closeSnackbar"));
@@ -160,7 +160,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		util.SWFsendPost("음악 재생", Chips_002, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, Service, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
 		
 		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
 		boolean closeSnackbar = util.isElementPresent(By.id("closeSnackbar"));
@@ -209,7 +209,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		util.SWFsendPost("뮤직 플레이", Chips_002, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, Service, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
 		
 		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
 		boolean closeSnackbar = util.isElementPresent(By.id("closeSnackbar"));
@@ -260,7 +260,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		util.SWFsendPost("놀면뭐하니 노래 들려줘", Chips_002, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, Service, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
 		
 		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
 		boolean closeSnackbar = util.isElementPresent(By.id("closeSnackbar"));
@@ -311,7 +311,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		util.SWFsendPost("플로에서 최신 곡 틀어줘", Chips_002, ServerName, AccessToken);  
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, Service, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
 		
 		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
 		boolean closeSnackbar = util.isElementPresent(By.id("closeSnackbar"));
@@ -362,7 +362,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		util.SWFsendPost("봄여름가을겨울의 거리의 악사 들려줘", Chips_002, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, Service, "설정에서 Flo에 로그인하면 전곡을 들으실 수 있어요. 지금은, 1분만 들려드릴게요."));
 		
 		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
 		boolean closeSnackbar = util.isElementPresent(By.id("closeSnackbar"));
@@ -389,7 +389,7 @@ public class 미디어_02_FLO_미로그인 extends Chips_TestCase {
 		util.SWFsendPost("세군데 식당 노래 틀어줘", Chips_002, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미로그인 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, "원하시는 음악을 찾지 못했습니다. 다시 말씀해 주세요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa002, Chips_002, ServerName, Place, Service, "원하시는 음악을 찾지 못했습니다. 다시 말씀해 주세요."));
 
 	}
 

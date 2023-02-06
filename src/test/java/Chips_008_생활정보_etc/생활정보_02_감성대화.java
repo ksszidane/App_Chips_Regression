@@ -34,7 +34,7 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -109,10 +109,10 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		util.SWFsendPost("안녕", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
-		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "chitchat"));
 		
 		test.log(Status.INFO, "greet_001 intent 확인");
-		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "greet_001"));
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "greet_001"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0711")
@@ -122,10 +122,10 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		util.SWFsendPost("월요일이 또 왔어", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
-		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "chitchat"));
 		
 		test.log(Status.INFO, "company.day_001 intent 확인");
-		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "company.day_001"));
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "company.day_001"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0712")
@@ -135,10 +135,10 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		util.SWFsendPost("불금이야", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
-		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "chitchat"));
 		
 		test.log(Status.INFO, "event.date_002 intent 확인");
-		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "event.date_002"));
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "event.date_002"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0713")
@@ -148,10 +148,10 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		util.SWFsendPost("피곤해 죽겠어", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
-		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "chitchat"));
 		
 		test.log(Status.INFO, "sickness.tired_001 intent 확인");
-		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "sickness.tired_001"));
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "sickness.tired_001"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0714")
@@ -161,10 +161,10 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		util.SWFsendPost("고마워", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "chitchat Domain 확인");
-		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "chitchat"));
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "chitchat"));
 		
 		test.log(Status.INFO, "thanks_001 intent 확인");
-		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "thanks_001"));
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "thanks_001"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0721")
@@ -174,10 +174,10 @@ public class 생활정보_02_감성대화 extends Chips_TestCase {
 		util.SWFsendPost("고객센터 번호 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "고객센터 번호미지원 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, data.CHIPS_USD_set));
+		Assert.assertTrue(util.TTS_Assertfunc_EqualsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.CHIPS_USD_set));
 		
 		test.log(Status.INFO, "usd action_type 확인");
-		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, "usd"));
+		Assert.assertTrue(util.actionType_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "usd"));
 		
 	
 	}

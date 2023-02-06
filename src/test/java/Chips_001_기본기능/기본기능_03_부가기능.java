@@ -35,7 +35,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -112,7 +112,7 @@ public class 기본기능_03_부가기능 extends Chips_TestCase {
 		util.SWFsendPost("FLO에서 Daft Punk 노래 들려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "FLO 미디어 실행 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, data.음악시작_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.음악시작_set));
 		
 		test.log(Status.INFO, "FLO 이용권 안내 배너 닫기");
 		boolean closeSnackbar = util.isElementPresent(By.id("closeSnackbar"));
