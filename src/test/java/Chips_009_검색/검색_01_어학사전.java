@@ -34,7 +34,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -109,13 +109,13 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		util.SWFsendPost("한영사전", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "한영사전 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "궁금한 단어를 찾아보시려면 \"영어로 사과가 뭐야\" 라고 말씀해 주세요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "궁금한 단어를 찾아보시려면 \"영어로 사과가 뭐야\" 라고 말씀해 주세요."));
 		
 		test.log(Status.INFO, "한영사전 도메인확인 확인");
-		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "general"));
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "general"));
 		
 		test.log(Status.INFO, "한영사전 인텐트 확인 확인");
-		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "ask.help"));
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "ask.help"));
 		
 	}
 	
@@ -126,13 +126,13 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		util.SWFsendPost("어학사전", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "어학사전 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "궁금한 단어를 찾아보시려면 \"영어로 사과가 뭐야\" 라고 말씀해 주세요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "궁금한 단어를 찾아보시려면 \"영어로 사과가 뭐야\" 라고 말씀해 주세요."));
 		
 		test.log(Status.INFO, "어학사전 도메인확인 확인");
-		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "general"));
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "general"));
 		
 		test.log(Status.INFO, "어학사전 인텐트 확인 확인");
-		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "ask.help"));
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "ask.help"));
 		
 	}
 	
@@ -155,7 +155,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.영문번역_web), "police"));
 		
 		test.log(Status.INFO, "영어로 경찰이 뭐야? TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "경찰은 영어로"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "경찰은 영어로"));
 		
 	}
 	
@@ -176,7 +176,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.영문번역_web), "you are a genius"));
 		
 		test.log(Status.INFO, "너는 천재야를 영어로 해줘 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "너는 천재야는 영어로"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "너는 천재야는 영어로"));
 		
 	}
 	
@@ -187,7 +187,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		util.SWFsendPost("불어로 사과가 뭐야", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "불어로 사과가 뭐야 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "지금은 영어 단어 검색과 번역만 해드릴 수 있어요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "지금은 영어 단어 검색과 번역만 해드릴 수 있어요."));
 		
 	}
 	
@@ -198,7 +198,7 @@ public class 검색_01_어학사전 extends Chips_TestCase {
 		util.SWFsendPost("불어로 사과가 뭐야", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "불어로 사과가 뭐야 해줘 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "지금은 영어 단어 검색과 번역만 해드릴 수 있어요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "지금은 영어 단어 검색과 번역만 해드릴 수 있어요."));
 		
 	}
 

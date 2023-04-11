@@ -34,7 +34,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -109,7 +109,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost("연예 뉴스 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "연예 뉴스 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "연예 관련, 최근 뉴스를 들려드릴게요."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "연예 관련, 최근 뉴스를 들려드릴게요."));
 		
 		test.log(Status.INFO, "뉴스 타이틀 확인");
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.FLO카드타이틀), "연예 뉴스"));
@@ -195,7 +195,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("좋아요 해줘",  Chips_001, ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "뉴스 서비스에서는 사용할 수 없는 기능입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "뉴스 서비스에서는 사용할 수 없는 기능입니다."));
 		
 
 	}
@@ -207,7 +207,7 @@ public class 생활정보_15_뉴스_재생컨트롤러 extends Chips_TestCase {
 		util.SWFsendPost_playStatus("좋아요 취소",  Chips_001, ServerName, AccessToken, "news");
 		
 		test.log(Status.INFO, "스포츠 뉴스 재생 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "뉴스 서비스에서는 사용할 수 없는 기능입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "뉴스 서비스에서는 사용할 수 없는 기능입니다."));
 
 	}
 	

@@ -34,7 +34,7 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -109,13 +109,13 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 		util.SWFsendPost("시간", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "시간 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.시간_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Service,  data.시간_set));
 		
 		test.log(Status.INFO, "schedule Domain 확인");
-		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "schedule"));
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "schedule"));
 		
 		test.log(Status.INFO, "ask.clock intent 확인");
-		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "ask.clock"));
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "ask.clock"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0586")
@@ -125,13 +125,13 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 		util.SWFsendPost("며칠", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날짜 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.날짜_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Service,  data.날짜_set));
 		
 		test.log(Status.INFO, "play_nugu_calendar Domain 확인");
-		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "play_nugu_calendar"));
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "play_nugu_calendar"));
 		
 		test.log(Status.INFO, "ask.date intent 확인");
-		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "ask.date"));
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "ask.date"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0587")
@@ -141,15 +141,15 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 		util.SWFsendPost("추석이 무슨 요일이야", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날짜 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service,  data.날짜_set));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "추석은"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "요일"));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Service,  data.날짜_set));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "추석은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "요일"));
 		
 		test.log(Status.INFO, "play_nugu_calendar Domain 확인");;
-		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "play_nugu_calendar"));
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "play_nugu_calendar"));
 		
 		test.log(Status.INFO, "ask.date.weekday intent 확인");
-		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "ask.date.weekday"));
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "ask.date.weekday"));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0588")
@@ -159,14 +159,14 @@ public class 편의기능_03_날짜시간 extends Chips_TestCase {
 		util.SWFsendPost("이번 주 일요일 며칠이야", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "날짜 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "이번 주 일요일은"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "일"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "이번 주 일요일은"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "일"));
 		
 		test.log(Status.INFO, "play_nugu_calendar Domain 확인");
-		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "play_nugu_calendar"));
+		Assert.assertTrue(util.Domain_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "play_nugu_calendar"));
 		
 		test.log(Status.INFO, "ask.date intent 확인");
-		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "ask.date"));
+		Assert.assertTrue(util.intent_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "ask.date"));
 	}
 
 }

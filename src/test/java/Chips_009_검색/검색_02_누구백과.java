@@ -34,7 +34,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -109,7 +109,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.SWFsendPost("누구 백과 찾아줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.백과도움말_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Service, data.백과도움말_set));
 		
 	}
 	
@@ -120,7 +120,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.SWFsendPost("위키 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.백과도움말_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Service, data.백과도움말_set));
 		
 	}
 	
@@ -131,7 +131,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.SWFsendPost("위키에서 찾아줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.백과도움말_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Service, data.백과도움말_set));
 		
 	}
 	
@@ -142,7 +142,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		util.SWFsendPost("누구백과 도움말", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Place, Service, data.백과도움말_set));
+		Assert.assertTrue(util.TTS_Assertfunc_ContainsSet(nuguqa001, Chips_001, ServerName, Service, data.백과도움말_set));
 		
 	}
 	
@@ -165,7 +165,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "인도의 수도는 뉴델리입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "인도의 수도는 뉴델리입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "인도의 수도는 뉴델리입니다."));
 		
 	}
 	
@@ -189,7 +189,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "서울특별시의 면적은 605.20 ㎢입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "서울특별시의 면적은 605.20 ㎢입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "서울특별시의 면적은 605.20 ㎢입니다."));
 		
 	}
 	
@@ -213,7 +213,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "인도의 수도는 뉴델리입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "인도의 수도는 뉴델리입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "인도의 수도는 뉴델리입니다."));
 		
 	}
 	
@@ -237,7 +237,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "서울특별시의 면적은 605.20 ㎢입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "서울특별시의 면적은 605.20 ㎢입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "서울특별시의 면적은 605.20 ㎢입니다."));
 		
 	}
 	
@@ -262,7 +262,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "이순신은 조선의 장군입니다"));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "이순신은 조선의 장군입니다"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "이순신은 조선의 장군입니다"));
 		
 	}
 	
@@ -287,7 +287,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "고진감래는, 고생 끝에 낙이 찾아온다는 뜻"));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "고진감래는, 고생 끝에 낙이 찾아온다는 뜻"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "고진감래는, 고생 끝에 낙이 찾아온다는 뜻"));
 		
 	}
 	
@@ -311,7 +311,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "가수 아이유의 본명은 이지은입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "가수 아이유의 본명은 이지은입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "가수 아이유의 본명은 이지은입니다."));
 		
 	}
 	
@@ -336,7 +336,7 @@ public class 검색_02_누구백과 extends Chips_TestCase {
 		Assert.assertTrue(util.getText_Assertfunc(By.xpath(xPath.백과내용_web), "영화 인터스텔라의 개봉일은 2014년 10월 26일입니다."));
 		
 		test.log(Status.INFO, "누구 백과 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service, "영화 인터스텔라의 개봉일은 2014년 10월 26일입니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service, "영화 인터스텔라의 개봉일은 2014년 10월 26일입니다."));
 		
 	}
 

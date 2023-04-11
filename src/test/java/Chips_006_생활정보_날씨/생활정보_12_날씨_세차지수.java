@@ -35,7 +35,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 	    util.view_close_btn_check();
 	    
 	    test.log(Status.INFO, "transaction id 얻기"); 
-	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Place, Service);
+	    String tid = util.TransactionID_JsonParsing(nuguqa001, Chips_001, ServerName, Service);
 	    
 	    test.log(Status.INFO, "acceesToken 얻기"); 
 	    String actn = util.acceesToken_JsonParsing(ServerName, Place, tid);
@@ -118,8 +118,8 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 		util.SWFsendPost("세차하기 어때?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "세차지수 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  현재위치 + " 지역"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "세차"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  현재위치 + " 지역"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "세차"));
 	
 	}
 	
@@ -130,8 +130,8 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 		util.SWFsendPost("오늘 세차지수 알려줘", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "세차지수 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  현재위치 + " 지역"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "세차"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  현재위치 + " 지역"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "세차"));
 	
 	}
 	
@@ -142,8 +142,8 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 		util.SWFsendPost("강원도 강릉시 세차지수 어때", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지정위치 세차지수 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "강원도 강릉시 지역"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "세차"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "강원도 강릉시 지역"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "세차"));
 	
 	}
 	
@@ -154,8 +154,8 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 		util.SWFsendPost("제주시 애월읍 세차지수", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지정위치 세차지수 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "제주시 애월읍 지역"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "세차"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "제주시 애월읍 지역"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "세차"));
 	
 	}
 	
@@ -166,8 +166,8 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 		util.SWFsendPost("중랑구 신내동 세차지수", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지정위치 세차지수 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "중랑구 신내동 지역"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "세차"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "중랑구 신내동 지역"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "세차"));
 	
 	}
 	
@@ -178,8 +178,8 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 		util.SWFsendPost("세종특별자치시 세차지수 몇이야?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지정위치 세차지수 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "세종특별자치시 지역"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "세차"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "세종특별자치시 지역"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "세차"));
 	
 	}
 	
@@ -190,8 +190,8 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 		util.SWFsendPost("울산광역시 세차해도 돼?", Chips_001, ServerName, AccessToken);
 		
 		test.log(Status.INFO, "지정위치 세차지수 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "울산광역시 지역"));
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "세차"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "울산광역시 지역"));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "세차"));
 	
 	}
 	
@@ -202,7 +202,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 		util.SWFsendPost("로스앤젤레스 세차지수 알려줘", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역외 세차지수 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "말씀하신 지역의 세차지수 정보는 가지고 있지 않습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "말씀하신 지역의 세차지수 정보는 가지고 있지 않습니다."));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0797")
@@ -212,7 +212,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 		util.SWFsendPost("하이마트 세차지수 어때?", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역아닌곳 세차지수 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "말씀하신 지역의 세차지수 정보는 가지고 있지 않습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "말씀하신 지역의 세차지수 정보는 가지고 있지 않습니다."));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0798")
@@ -222,7 +222,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 		util.SWFsendPost("이번주 세차지수 정보", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역아닌곳 세차지수 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "저는 오늘의 세차지수 정보만 가지고 있습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "저는 오늘의 세차지수 정보만 가지고 있습니다."));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0799")
@@ -232,7 +232,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 		util.SWFsendPost("다음주 세차지수 정보", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역아닌곳 세차지수 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "저는 오늘의 세차지수 정보만 가지고 있습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "저는 오늘의 세차지수 정보만 가지고 있습니다."));
 	}
 	
 	@Test(description = "칩스 리그레이션 TC : 실행_0800")
@@ -242,7 +242,7 @@ public class 생활정보_12_날씨_세차지수 extends Chips_TestCase {
 		util.SWFsendPost("모레 세차 할까?", Chips_001, ServerName, AccessToken);
 
 		test.log(Status.INFO, "지역아닌곳 세차지수 TTS 확인");
-		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Place, Service,  "저는 오늘의 세차지수 정보만 가지고 있습니다."));
+		Assert.assertTrue(util.TTS_Assertfunc(nuguqa001, Chips_001, ServerName, Service,  "저는 오늘의 세차지수 정보만 가지고 있습니다."));
 	}
 
 }
